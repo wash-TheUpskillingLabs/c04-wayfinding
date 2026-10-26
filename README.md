@@ -80,6 +80,27 @@ One GitHub issue per piece of evidence. Title it `Interview:`, `Case:` or `Recor
 
 **No names, recordings or transcripts in this repo.** Write "a former mentor," not who. Keep raw notes on your own computer. This repo is public.
 
+## Context and field maps
+
+Alongside archaeology, the pod maps **who is in this problem**. Dorst calls it two steps:
+
+- **Context** is the inner circle: the players at The Labs who affect this problem today, or who would have to be part of any solution.
+- **Field** is the wider world: everyone around the problem who isn't in the room. Libraries, employers, funders, agencies, universities, other programs, the next cohort.
+
+Both maps live in one file, `research/players.md`, with a diagram of the two circles at the top. [**Build or update the maps with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt=I%27m+in+the+Wayfinding+pod+of+Build+Cycle+C04.+Read+README.md+first%2C+then+every+issue+and+file+in+research%2F.+Help+me+build+or+update+our+context+and+field+maps+in+research%2Fplayers.md%3A+one+entry+per+player+in+the+format+the+README+gives%2C+split+into+Context+%28inner+circle%29+and+Field+%28wider+world%29.+Ask+me+about+any+player+I+add.+Then+draw+both+circles+as+a+Mermaid+diagram+at+the+top+of+the+file.+Use+roles+and+organization+names%2C+never+individual+people%27s+names.+Then+open+a+pull+request.)
+
+**One entry per player** (a role or an organization, never a named individual):
+
+1. **Player and type.** For example "Library branch staff (institution)" or "A first-time upskiller (person)".
+2. **Who they are, and where people meet them.**
+3. **Context or field?**
+4. **What they bring.** Which community capitals (natural, cultural, human, social, political, financial, built), and how much.
+5. **What they want.** What they're really after, in their words if you have them. This feeds the themes.
+6. **What they've tried** about this problem, and how it went.
+7. **How they see the problem.** Their frame, as best you can tell.
+
+Start with who you know, then let every interview add players: ask each person *who else should I talk to?*
+
 ## Where research and prototypes go
 
 Everything the pod learns lives in this repo. Three places:
@@ -102,8 +123,8 @@ To use the links, sign in at [claude.ai/code](https://claude.ai/code) with your 
 
 | Due | What | Who |
 |---|---|---|
-| **Mon Nov 2** | One interview logged per builder in residence. The pod posts one issue titled "What surprised us": three things. | Builders |
-| **Sat Nov 7, group day** | *Due at the start:* all archaeology logged, at least two interviews and one case or record per builder. *At the session:* the pod reads everything, sorts the inner and outer circles, names three to five themes, writes the paradox into this README as *because* statements, and sets it aside. **Each builder leaves with one frame**, written as *If we treat this as if it were a problem of [theme], then…* | Pod |
+| **Mon Nov 2** | One interview logged per builder in residence. A first draft of the **context map** in `research/players.md`: who's in the inner circle. The pod posts one issue titled "What surprised us": three things. | Builders |
+| **Sat Nov 7, group day** | *Due at the start:* all archaeology logged, at least two interviews and one case or record per builder. The **context and field maps** drafted, with every player's "what they want" filled in where you can. *At the session:* the pod reads everything, sorts the inner and outer circles, names three to five themes, writes the paradox into this README as *because* statements, and sets it aside. **Each builder leaves with one frame**, written as *If we treat this as if it were a problem of [theme], then…* | Pod |
 | **Nov 8 to 13** | **Rapid prototype of each frame.** A branch in the region's OLOS fork, deployed to a Vercel preview, using the shared Supabase. Rough is fine. Put it in front of three real people and write down what they did. | Builders, with their agent |
 | **Sat Nov 14, group day** | *Due at the start:* each builder's **project proposal**, as an issue (format below). *At the session:* proposals pitched. **The room votes.** Approved projects get a team; contributors choose where to go. | Everyone |
 | **Mon Nov 23** | First release to the preview link, used by at least three real people. | Project teams |
