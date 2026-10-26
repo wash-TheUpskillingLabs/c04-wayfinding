@@ -80,6 +80,22 @@ One GitHub issue per piece of evidence. Title it `Interview:`, `Case:` or `Recor
 
 **No names, recordings or transcripts in this repo.** Write "a former mentor," not who. Keep raw notes on your own computer. This repo is public.
 
+## Where research and prototypes go
+
+Everything the pod learns lives in this repo. Three places:
+
+| What | Where | How |
+|---|---|---|
+| **A quick find** | A new issue, titled `Interview:`, `Case:` or `Record:` | Fastest. Use the form in "How to turn it in" above. |
+| **A longer write-up** | A file in `research/` | Case studies, interview notes (no names), records with numbers. [**Write it up with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt=I%27m+in+the+Wayfinding+pod+of+Build+Cycle+C04.+Read+README.md+first.+Help+me+write+up+a+piece+of+research+as+a+file+in+research%2F%3A+ask+me+whether+it%27s+an+interview%2C+case+study+or+record%2C+then+ask+me+the+questions+in+the+README%27s+%27How+to+turn+it+in%27+section+one+at+a+time.+Write+it+to+research%2F%3Ctype%3E-%3Cshortname%3E.md.+Use+roles%2C+never+names.+Then+open+a+pull+request.) |
+| **A rapid prototype** | A folder in `prototypes/` | [**Start a prototype with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt=I%27m+a+builder+in+the+Wayfinding+pod+of+Build+Cycle+C04.+Read+README.md+first.+Help+me+make+a+rapid+prototype%3A+a+quick%2C+rough+probe+to+show+people+so+we+learn+how+they+react+to+our+problem+situation.+Ask+me+what+I+want+to+learn+and+who+I%27ll+show+it+to.+Then+build+it+as+a+single+page+at+prototypes%2F%3Cshortname%3E%2Findex.html+and+add+a+short+prototypes%2F%3Cshortname%3E%2FREADME.md+saying+what+it+tests+and+what+we+learned.+Use+only+made-up+data%3A+no+real+names%2C+emails%2C+addresses+or+quotes+that+identify+anyone.+Then+open+a+pull+request.) |
+
+**Rapid prototypes, starting now.** You don't have to wait for frames to make something. While you're saturating in the problem situation, a rough prototype is a research tool: show it to someone and watch what they do. A clickable page, a fake form, a mock dashboard. Made in an hour with Claude, thrown away without regret. Each one gets a short README: what it tests, who saw it, what we learned. These are probes, not solutions. The solution comes after the paradox.
+
+Prototypes here use **made-up data only**. Once the region's OLOS instance is up, prototypes that need real accounts or a database move there.
+
+To use the links, sign in at [claude.ai/code](https://claude.ai/code) with your Claude account and connect GitHub once.
+
 ## What's due when
 
 | Due | What | Who |
