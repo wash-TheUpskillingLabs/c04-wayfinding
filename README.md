@@ -12,7 +12,7 @@ The first two weeks are research. On Nov 7 we write the paradox and frame the pr
 
 ## Work with Claude
 
-Each link opens Claude Code in your browser with this repo selected and the instructions loaded. Sign in at [claude.ai/code](https://claude.ai/code) with your Claude account and connect GitHub once. Claude coaches: it asks questions and writes up what you found. It won't do the research or the thinking for you.
+Each link opens Claude Code in your browser with this repo selected and the instructions loaded. Sign in at [claude.ai/code](https://claude.ai/code) with your Claude account and connect GitHub once. **This is upskilling, so the deal is: you do the thinking, Claude does the clerical work.** You decide who to talk to, what to ask, what you heard and what it means. Claude formats, files, removes names, draws diagrams and opens pull requests. You always go first with your own rough attempt; Claude responds with questions and points out what's missing, and doesn't rewrite it into its own. If you ever feel Claude did the thinking for you, say so in your pod's repo, and we'll fix the prompt.
 
 | When | Link |
 |---|---|
