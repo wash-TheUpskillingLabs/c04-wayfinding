@@ -10,6 +10,19 @@ We use **frame creation**, a research method from designer Kees Dorst (*Frame In
 
 The first two weeks are research. On Nov 7 we write the paradox and frame the problem. The next week we test frames with rapid prototypes. On Nov 14 the room votes on project proposals. The last three weeks we build. By **Dec 8**, each approved project ships one working change to how The Labs runs, built on OLOS, used by real people, and written up.
 
+## Work with Claude
+
+Each link opens Claude Code in your browser with this repo selected and the instructions loaded. Sign in at [claude.ai/code](https://claude.ai/code) with your Claude account and connect GitHub once. Claude coaches: it asks questions and writes up what you found. It won't do the research or the thinking for you.
+
+| When | Link |
+|---|---|
+| Now | [**Plan or log an interview, find a case study, log a record**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Farchaeology.md) |
+| Now | [**Build or update the context and field maps**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fplayers.md) |
+| Now | [**Write up a longer piece of research**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fwriteup.md) |
+| After Mon Nov 2 | [**Start a rapid prototype**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fprototype.md) |
+
+More links (themes, paradox, frames, proposals) arrive before each step.
+
 ## Where we started
 
 On sensemaking day (Oct 24) we worked from intuition. We went looking for the paradox and came away with hunches. Here's how the pod first put it:
@@ -87,7 +100,7 @@ Alongside archaeology, the pod maps **who is in this problem**. Dorst calls it t
 - **Context** is the inner circle: the players at The Labs who affect this problem today, or who would have to be part of any solution.
 - **Field** is the wider world: everyone around the problem who isn't in the room. Libraries, employers, funders, agencies, universities, other programs, the next cohort.
 
-Both maps live in one file, `research/players.md`, with a diagram of the two circles at the top. [**Build or update the maps with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt=I%27m+in+the+Wayfinding+pod+of+Build+Cycle+C04.+Read+README.md+first%2C+then+every+issue+and+file+in+research%2F.+Help+me+build+or+update+our+context+and+field+maps+in+research%2Fplayers.md%3A+one+entry+per+player+in+the+format+the+README+gives%2C+split+into+Context+%28inner+circle%29+and+Field+%28wider+world%29.+Ask+me+about+any+player+I+add.+Then+draw+both+circles+as+a+Mermaid+diagram+at+the+top+of+the+file.+Use+roles+and+organization+names%2C+never+individual+people%27s+names.+Then+open+a+pull+request.)
+Both maps live in one file, `research/players.md`, with a diagram of the two circles at the top. [**Build or update the maps with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fplayers.md)
 
 **One entry per player** (a role or an organization, never a named individual):
 
@@ -108,8 +121,8 @@ Everything the pod learns lives in this repo. Three places:
 | What | Where | How |
 |---|---|---|
 | **A quick find** | A new issue, titled `Interview:`, `Case:` or `Record:` | Fastest. Use the form in "How to turn it in" above. |
-| **A longer write-up** | A file in `research/` | Case studies, interview notes (no names), records with numbers. [**Write it up with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt=I%27m+in+the+Wayfinding+pod+of+Build+Cycle+C04.+Read+README.md+first.+Help+me+write+up+a+piece+of+research+as+a+file+in+research%2F%3A+ask+me+whether+it%27s+an+interview%2C+case+study+or+record%2C+then+ask+me+the+questions+in+the+README%27s+%27How+to+turn+it+in%27+section+one+at+a+time.+Write+it+to+research%2F%3Ctype%3E-%3Cshortname%3E.md.+Use+roles%2C+never+names.+Then+open+a+pull+request.) |
-| **A rapid prototype** (after Nov 2) | A folder in `prototypes/` | [**Start a prototype with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt=I%27m+a+builder+in+the+Wayfinding+pod+of+Build+Cycle+C04.+Read+README.md+first.+Help+me+make+a+rapid+prototype%3A+a+quick%2C+rough+probe+to+show+people+so+we+learn+how+they+react+to+our+problem+situation.+Ask+me+what+I+want+to+learn+and+who+I%27ll+show+it+to.+Then+build+it+as+a+single+page+at+prototypes%2F%3Cshortname%3E%2Findex.html+and+add+a+short+prototypes%2F%3Cshortname%3E%2FREADME.md+saying+what+it+tests+and+what+we+learned.+Use+only+made-up+data%3A+no+real+names%2C+emails%2C+addresses+or+quotes+that+identify+anyone.+Then+open+a+pull+request.) |
+| **A longer write-up** | A file in `research/` | Case studies, interview notes (no names), records with numbers. [**Write it up with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fwriteup.md) |
+| **A rapid prototype** (after Nov 2) | A folder in `prototypes/` | [**Start a prototype with Claude**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fprototype.md) |
 
 **Archaeology first.** This week is for finding out how the problem came to be: interviews, case studies, records. Don't build yet. You can't probe a problem you haven't started to understand.
 
