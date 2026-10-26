@@ -20,6 +20,7 @@ Each link opens Claude Code in your browser with this repo selected and the inst
 | Now | [**Build or update the context and field maps**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fplayers.md) |
 | Now | [**Write up a longer piece of research**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fwriteup.md) |
 | After Mon Nov 2 | [**Start a rapid prototype**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fprototype.md) |
+| Anytime | [**Build or update our pod's website**](https://claude.ai/code?repositories=wash-TheUpskillingLabs%2Fc04-wayfinding&prompt_url=https%3A%2F%2Fraw.githubusercontent.com%2Fwash-TheUpskillingLabs%2Fc04%2Fmain%2Fprompts%2Fsite.md) |
 
 More links (themes, paradox, frames, proposals) arrive before each step.
 
