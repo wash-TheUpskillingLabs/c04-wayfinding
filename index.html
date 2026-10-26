@@ -3,46 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wayfinding · Build Cycle C04</title>
-<meta name="description" content="Wayfinding, a Research Pod in Build Cycle C04 of The Upskilling Labs of Greater Washington.">
+<title>Wayfinding</title>
+<meta name="description" content="Wayfinding: a Research Pod in Build Cycle C04, The Upskilling Labs of Greater Washington. How does an adaptive, self-directed experience stay legible to the people in it, and to the people deciding whether to back it?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@300..800,0..100&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#fbfaf7; --ink:#1d1d1b; --muted:#5f5d57; --line:#e3e0d8; --accent:#1f5c4a; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#141412; --ink:#efede7; --muted:#a8a59c; --line:#2c2b27; --accent:#7cc4a8; } }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:56px 20px 80px; }
-  .eyebrow { color:var(--muted); font-size:14px; letter-spacing:.04em; text-transform:uppercase; margin:0 0 8px; }
-  h1 { font-size:40px; line-height:1.1; margin:0 0 16px; }
-  .question { font-size:22px; line-height:1.4; margin:0 0 32px; }
-  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); border-top:1px solid var(--line); padding-top:24px; margin:40px 0 12px; }
-  ul { list-style:none; padding:0; margin:0; }
-  li { padding:12px 0; border-bottom:1px solid var(--line); }
-  a { color:var(--accent); }
-  .meta { display:block; color:var(--muted); font-size:15px; }
-  footer { margin-top:56px; color:var(--muted); font-size:14px; }
+/* The Labs' design rules, as the brand states them.
+   Tokens: ink #00141b, navy #03232a, forest #005f68, teal #0094a0 (focus and accents only),
+   teal-deep #007882 (links and actions on light), paper #f6f4ef (the only light page background),
+   gold #cfab67 (the regional metal; the one thing to notice), red #e11d2a (reserved for "Join The Labs").
+   One radius, 14px, on every rectangular container. No pills. Genuine circles only for dots. A 4px baseline.
+   Geologica throughout; display sizes use the SHRP axis on dark. Text is tinted from the ground, never neutral grey.
+   Structure comes from spacing and hairline rules. Lists are lists, not card grids.
+   Don't: all-caps eyebrows, meta strings joined with middle dots, arrows appended to links,
+   gradient text, glow blobs, coloured left borders, 01/02/03 numbering, fade-up reveals.
+   Voice: the friend who went first. Dry, specific, generous. Names and dates, never adjectives. */
+:root {
+  --ink:#00141b; --navy:#03232a; --forest:#005f68; --teal:#0094a0; --teal-deep:#007882;
+  --paper:#f6f4ef; --gold:#cfab67; --red:#e11d2a;
+  --on-paper:#00141b; --on-paper-2:#3d4a4f; --rule:rgba(0,20,27,.14);
+  --on-dark:rgba(255,255,255,.95); --on-dark-2:rgba(255,255,255,.64); --rule-dark:rgba(255,255,255,.16);
+  --r:14px; --max:720px; --g:clamp(16px,5vw,48px);
+  --font:"Geologica",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+* { box-sizing:border-box; }
+html { background:var(--paper); }
+body { margin:0; font-family:var(--font); font-size:17px; line-height:28px; color:var(--on-paper); background:var(--paper); -webkit-font-smoothing:antialiased; font-synthesis:none; }
+a { color:var(--teal-deep); text-decoration-thickness:1px; text-underline-offset:3px; }
+a:focus-visible, button:focus-visible { outline:2px solid var(--teal); outline-offset:3px; }
+.wrap { max-width:var(--max); margin:0 auto; padding:0 var(--g); }
+
+.cover { background:var(--ink); color:var(--on-dark); padding:48px 0 56px; }
+.lockup { font-size:15px; line-height:20px; font-weight:500; color:var(--on-dark-2); margin:0 0 56px; }
+.cover h1 { font-size:clamp(44px,8vw,72px); line-height:1.02; font-weight:640; letter-spacing:-.03em; font-variation-settings:"SHRP" 100; margin:0 0 24px; text-wrap:balance; }
+.cover .q { font-size:clamp(21px,3vw,26px); line-height:1.35; font-weight:400; color:var(--on-dark); margin:0; max-width:34ch; text-wrap:pretty; }
+.cover .mark { display:block; width:168px; height:168px; margin:40px 0 0; }
+@media (min-width:900px) {
+  .cover .wrap { display:grid; grid-template-columns:1fr 168px; column-gap:48px; align-items:end; }
+  .cover .lockup { grid-column:1 / -1; }
+  .cover .mark { margin:0; }
+}
+
+main section { padding:40px 0 8px; border-bottom:1px solid var(--rule); }
+main section:last-of-type { border-bottom:0; }
+h2 { font-size:26px; line-height:32px; font-weight:600; letter-spacing:-.02em; font-variation-settings:"SHRP" 60; margin:0 0 16px; text-wrap:balance; }
+p { margin:0 0 20px; color:var(--on-paper); text-wrap:pretty; }
+p.quiet { color:var(--on-paper-2); }
+ul { list-style:none; margin:0 0 20px; padding:0; }
+ul li { padding:12px 0; border-top:1px solid var(--rule); }
+ul li:last-child { border-bottom:1px solid var(--rule); }
+li .meta { display:block; color:var(--on-paper-2); font-size:15px; line-height:24px; }
+li time { display:inline-block; min-width:9ch; color:var(--on-paper-2); }
+.btn { display:inline-block; background:var(--teal-deep); color:#fff; text-decoration:none; font-weight:600; font-size:16px; line-height:24px; padding:12px 20px; border-radius:var(--r); margin:4px 0 24px; }
+.btn:hover { background:#00868f; }
+
+footer { background:var(--navy); color:var(--on-dark-2); font-size:15px; line-height:24px; padding:32px 0 40px; margin-top:56px; }
+footer a { color:var(--on-dark); }
+footer p { color:inherit; margin:0 0 8px; }
+@media (prefers-reduced-motion: no-preference) { a, .btn { transition:background .15s cubic-bezier(.32,.72,0,1), color .15s cubic-bezier(.32,.72,0,1); } }
 </style>
 </head>
 <body>
-<main>
-  <p class="eyebrow">Build Cycle C04 · Research Pod</p>
-  <h1>Wayfinding</h1>
-  <p class="question">How does an adaptive, self-directed experience stay legible to the people in it, and to the people deciding whether to back it?</p>
+<header class="cover">
+  <div class="wrap">
+    <p class="lockup">The Upskilling Labs of Greater Washington</p>
+    <div>
+      <h1>Wayfinding</h1>
+      <p class="q">How does an adaptive, self-directed experience stay legible to the people in it, and to the people deciding whether to back it?</p>
+    </div>
+    <!-- Two circles: context (inner) and field (outer), drawn in the world's marks: people as dots, places as squares, knowledge as rings. Gold is the one thing to notice. -->
+    <svg class="mark" viewBox="0 0 168 168" aria-hidden="true">
+      <circle cx="84" cy="84" r="80" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1"/>
+      <circle cx="84" cy="84" r="40" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+      <circle cx="84" cy="84" r="3.5" fill="#cfab67"/>
+      <circle cx="104" cy="70" r="2.6" fill="rgba(255,255,255,.9)"/>
+      <circle cx="66" cy="98" r="2.6" fill="rgba(255,255,255,.9)"/>
+      <rect x="92" y="104" width="6" height="6" fill="#0094a0"/>
+      <circle cx="30" cy="60" r="2.4" fill="rgba(255,255,255,.7)"/>
+      <circle cx="140" cy="110" r="2.4" fill="rgba(255,255,255,.7)"/>
+      <rect x="118" y="34" width="6" height="6" fill="#0094a0"/>
+      <circle cx="52" cy="140" r="4" fill="none" stroke="#cfab67" stroke-width="1.5"/>
+      <circle cx="132" cy="56" r="2.4" fill="rgba(255,255,255,.7)"/>
+      <circle cx="40" cy="112" r="2.4" fill="rgba(255,255,255,.7)"/>
+    </svg>
+  </div>
+</header>
 
-  <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04">Build Cycle C04</a>, The Upskilling Labs of Greater Washington. We find out why the problem is hard before we build anything.</p>
+<main class="wrap">
+  <section>
+    <h2>What we're asking</h2>
+    <p>Every cohort, problem and person is different, so the experience adapts. Participants can't feel progress in something that keeps changing, and funders can't back what they can't point to. We're finding out how to make progress visible without freezing it.</p>
+    <p class="quiet">We're a Research Pod in Build Cycle C04, six weeks in which neighbors pick a hard problem about The Labs, research it properly, and build something real in response. Oct 24 to Dec 8, 2026.</p>
+  </section>
 
-  <h2>Prototypes</h2>
-  <p>Rough probes we show people to learn how they react. Made-up data only.</p>
-  <ul id="prototypes">
-    <!-- PROTOTYPES: one <li> per prototype, newest first. Format:
-    <li><a href="/prototypes/shortname/">Prototype name</a><span class="meta">The one question it tests</span></li>
-    -->
-    <li class="meta">None yet. The first ones arrive after Nov 2.</li>
-  </ul>
+  <section>
+    <h2>Prototypes</h2>
+    <p class="quiet">Rough probes we show people to learn how they react. Made-up data only.</p>
+    <ul id="prototypes">
+      <!-- PROTOTYPES: one <li> per prototype, newest first. Format:
+      <li><a href="/prototypes/shortname/">Prototype name</a><span class="meta">The one question it tests. Shown to three people, Nov 9.</span></li>
+      -->
+      <li><span class="meta">None yet. The first ones come after Nov 2, once we've talked to people.</span></li>
+    </ul>
+  </section>
 
-  <h2>Follow the research</h2>
-  <p><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding">The pod's repo</a> has everything we've found, and how to join.</p>
+  <section>
+    <h2>Where we are</h2>
+    <ul>
+      <li><time>Oct 26</time>Talking to people who've lived this problem, here and elsewhere.</li>
+      <li><time>Nov 7</time>We write down why it's hard, in one paradox.</li>
+      <li><time>Nov 14</time>Project proposals, and the room votes.</li>
+      <li><time>Dec 8</time>We ship something people at The Labs use.</li>
+    </ul>
+  </section>
 
-  <footer>This is a prototype we're building as we use it. Licensed CC BY 4.0.</footer>
+  <section>
+    <h2>Join the pod</h2>
+    <p>You don't need to code. If you know something about this problem, or want to find something out, say so and a maintainer will give you one thing to go learn.</p>
+    <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1">Comment on Start here</a>
+    <p class="quiet">Everything we find is in <a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding">the pod's repo</a>.</p>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
+    <p>This page is a prototype we're building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
+  </div>
+</footer>
 </body>
 </html>
