@@ -34,7 +34,9 @@ As the pod first wrote it:
 
 In the field survey, the theme reached from the most tensions (six of eight) was **seeing**: to see the whole, and to be seen.
 
-**Who seems to be involved:** Upskillers · the next cohort · funders · employers · library hosts
+**Who seems to be involved:** Upskillers · organizers and facilitators · maintainers of ongoing projects · the next cohort · funders · employers · library hosts
+
+**The problem as the organizers see it.** The steering committee's account is [Record #4](https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/4): the cognitive load of knowing what's next, The Labs seen only through the Cycle, information that stayed in silos, and organizer delays that became participant emergencies. Treat it as one account to test, not as settled fact.
 
 We own the thresholds: the moments between the parts of The Labs, before, during and after a Cycle, and the record and notifications that make the routes legible. What happens inside each part is [Scaffolding](https://github.com/wash-TheUpskillingLabs/c04-scaffolding). Where it all lives, OLOS as the source of truth, is [Front Door](https://github.com/wash-TheUpskillingLabs/c04-frontdoor). We read each other's repos every week.
 
@@ -76,9 +78,10 @@ Archaeology means finding out how this became a problem and what has already bee
 
 **Where to look first**
 
-- **Other programs** that show progress without freezing it: open badges, portfolio schools, community programs that report to funders. What do they show, to whom, and does it work?
-- **Our own record.** Every pin, portfolio, credential and report The Labs has produced. What funders and library hosts asked for, and what we sent back.
-- **How this became a problem here.** Who first said progress and belonging were hard to see, and what they were looking at.
+- **The thresholds.** Arriving at The Labs for the first time. Preparing for a Cycle. The gaps between sessions. Forming a team ([#3](https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/3)). The end of a Cycle and what comes after, including joining a maintained project. Ask people where they got lost, and what they did next.
+- **How information actually moved.** Where people learned what was next and what was expected: Slack, Zoom, email, word of mouth. When instructions arrived, and how much time that left participants.
+- **Our own record.** Every pin, portfolio, credential and report The Labs has produced. What funders and library hosts asked for, and what we sent back. What someone could see of their own progress.
+- **Other programs** that keep a changing experience easy to navigate: how apps and services build in the "plumbing" that gets people to what's next, open badges and portfolios, open-source projects that bring newcomers in.
 - **The survey.** Every response behind the "seeing" theme. Count them. Quote them.
 
 **How to turn it in**
