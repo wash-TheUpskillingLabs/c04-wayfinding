@@ -1,6 +1,6 @@
 # Wayfinding
 
-**How does an adaptive, self-directed experience stay legible to the people in it, and to the people deciding whether to back it?**
+**How do people find their way between the parts of The Labs, and what do they need to see to choose the route that fits them?**
 
 ## What this is
 
@@ -36,7 +36,7 @@ In the field survey, the theme reached from the most tensions (six of eight) was
 
 **Who seems to be involved:** Upskillers · the next cohort · funders · employers · library hosts
 
-We own what someone can tell from outside the room, or later. What happens in the room is [Scaffolding](https://github.com/wash-TheUpskillingLabs/c04-scaffolding). We read each other's repos every week.
+We own the thresholds: the moments between the parts of The Labs, before, during and after a Cycle, and the record and notifications that make the routes legible. What happens inside each part is [Scaffolding](https://github.com/wash-TheUpskillingLabs/c04-scaffolding). Where it all lives, OLOS as the source of truth, is [Front Door](https://github.com/wash-TheUpskillingLabs/c04-frontdoor). We read each other's repos every week.
 
 ## Why we build on OLOS
 
