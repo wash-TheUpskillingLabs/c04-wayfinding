@@ -374,3 +374,37 @@ sup a:hover { color:var(--ink); }
 .flow > h3 + * { --d:32px; }
 .flow > h3 + :is(p, .t) { --d:40px; }
 .plan > li > .t b { font-weight:800; }
+
+/* ---- Ma: space does the separating. No rules between sections. ---- */
+.sec { padding-top:96px; padding-bottom:0; }
+.sec::before { display:none; }
+main { padding-bottom:128px; }
+.cover { padding-bottom:96px; }
+.hero { padding-top:96px; }
+.hero .ctas { margin-top:48px; display:flex; flex-direction:column; align-items:flex-start; gap:0; }
+.way-hint { margin-top:calc(28px - var(--cap)); color:var(--on-ink-2); }
+@media (min-width:1024px) {
+  .sec { padding-top:192px; }
+  main > .sec:first-child { padding-top:160px; }
+  main { padding-bottom:192px; }
+  .cover { padding-bottom:160px; }
+  .hero { padding-top:160px; }
+  .sec > .flow, footer .flow { grid-column:5 / span 6; }
+  .hero .sub { grid-column:1 / span 6; }
+}
+.flow p, .flow h3, .flow figcaption { max-width:60ch; }
+
+/* The route diagram, now on paper */
+.route-fig .route .rl { fill:var(--ink); }
+.route-fig .route .p { fill:var(--ink); opacity:.3; }
+.route-fig .route .stn { fill:var(--paper); stroke:var(--ink); }
+
+/* ---- Three ways in: a timetable you can compare at a glance ---- */
+.ways > li { border-top:1px solid var(--rule); padding:31px 0 32px; }
+.ways > li:last-child { border-bottom:1px solid var(--rule); padding-bottom:31px; }
+.way-time { margin-top:calc(var(--capr) - var(--cap)); color:var(--ink-2); font-weight:700; font-variant-numeric:tabular-nums; }
+.way-name { margin-top:calc(32px - var(--cap)); }
+.way-what { margin-top:calc(36px - var(--cap)); }
+.way > .btn { margin-top:24px; }
+.flow > .ways + p { --d:44px; }
+.flow > .ways + p.t-small { --d:44px; }

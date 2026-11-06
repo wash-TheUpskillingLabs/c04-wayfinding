@@ -210,20 +210,16 @@ def post_list(ps):
 def build_home(ps):
     secs = sections(os.path.join(C, "home"))
     for s in secs: s["body"] = s["body"].replace("{{latest_posts}}", post_list(ps[:3]))
-    route = open(os.path.join(C, "home", "route.svg"), encoding="utf-8").read().strip()
     h1 = "People don’t get lost in the room. They get lost on the way to the next one."
     page = head("Wayfinding", "Wayfinding: a Research Pod in Build Cycle C04, The Upskilling Labs of Greater Washington. How do people find their way between the parts of The Labs, and what do they need to see to choose the route that fits them?", "/")
     page += herebar() + f'''<header class="cover" id="top">
 {signhead("/")}  <div class="grid hero">
     <h1{lsb(h1)}>{h1}</h1>
-    <p class="t-lead sub">Anyone should be able to see where they are and choose where to go next. We’re rebuilding The Labs so they can, from the first workshop to whatever comes after. Follow along, contribute, or lead a project.</p>
+    <p class="t-lead sub">We’re rebuilding how The Labs gets people from their first workshop to whatever comes next.</p>
     <div class="ctas">
-      <a class="btn light" href="#follow"><span class="t">Follow the pod</span><span class="tile blue">{ic("a-d", "down")}</span></a>
-      <a class="link" href="#contribute">{ic("a-d", "down")}<span class="t">Become a contributor</span></a>
-      <a class="link" href="#lead">{ic("a-d", "down")}<span class="t">Lead a project</span></a>
+      <a class="btn light" href="#ways"><span class="t">Find your way in</span><span class="tile blue">{ic("a-d", "down")}</span></a>
+      <p class="t-small way-hint">Three ways in, from one minute to a few hours a week.</p>
     </div>
-    <figure class="anim herofig">{route}</figure>
-    <figcaption id="route-cap">Twelve past participants told us one thing they’d change. Nine named a moment between the parts, shown here in red where they stopped.</figcaption>
   </div>
 </header>
 
