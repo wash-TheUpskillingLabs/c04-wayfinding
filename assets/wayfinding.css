@@ -409,3 +409,37 @@ figure.proto img.snap { display:block; width:100%; height:auto; border-radius:va
 figure.proto a { display:block; }
 figure.proto a:focus-visible { outline-offset:6px; }
 .flow > figure + p { --d:44px; }
+
+/* ---- Blog carousel: post cards in a row that scrolls and snaps ---- */
+@media (min-width:1024px) { .sec:has(.carousel) > .flow { grid-column:5 / -1; } }
+.carousel { min-width:0; }
+.cards { display:grid; grid-auto-flow:column; grid-auto-columns:min(336px, 84%); column-gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; overscroll-behavior-x:contain; scrollbar-width:none; }
+.cards::-webkit-scrollbar { display:none; }
+.cards > li { scroll-snap-align:start; display:flex; }
+.card { display:flex; flex-direction:column; width:100%; background:var(--paper); color:var(--ink); text-decoration:none; border-radius:var(--r); overflow:hidden; position:relative; }
+.card::after { content:""; position:absolute; inset:0; border-radius:var(--r); box-shadow:inset 0 0 0 1px var(--rule); pointer-events:none; }
+.card:focus-visible { outline:none; }
+.card:hover::after, .card:focus-visible::after { box-shadow:inset 0 0 0 2px var(--blue); }
+.card-cover { display:block; width:100%; height:192px; object-fit:cover; object-position:center; background:var(--ink); flex:none; }
+.card-icon { display:grid; place-items:center; color:var(--paper); }
+.card-icon svg.i { width:72px; height:72px; stroke-width:2; }
+.card-body { display:flex; flex-direction:column; flex:1; padding:24px; }
+.card-body > time { margin-top:calc(var(--capr) - var(--cap)); color:var(--ink-2); font-weight:700; }
+.card-title { margin-top:calc(32px - var(--cap)); }
+.card-dek { margin-top:calc(32px - var(--cap)); color:var(--ink-2); }
+.card-read { margin-top:auto; padding-top:30px; display:flex; align-items:flex-end; gap:8px; font-weight:800; }
+.card-read svg.i { width:18px; height:18px; color:var(--blue); margin:-4px 0; }
+.card:hover .card-read { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.carousel-nav { display:flex; align-items:center; gap:24px; margin-top:24px; }
+.carousel-nav[hidden], .cbtn[hidden] { display:none; }
+.cbtn { all:unset; box-sizing:border-box; display:inline-flex; align-items:center; gap:8px; height:44px; padding:0 16px; border-radius:var(--r); box-shadow:inset 0 0 0 1px var(--rule); cursor:pointer; font-family:var(--font); color:var(--ink); font-weight:700; }
+.cbtn:hover { box-shadow:inset 0 0 0 2px var(--blue); }
+.cbtn:focus-visible { outline:3px solid var(--ink); outline-offset:3px; }
+.cbtn[disabled] { opacity:.35; cursor:default; box-shadow:inset 0 0 0 1px var(--rule); }
+.cbtn svg.i { width:18px; height:18px; color:var(--blue); }
+.carousel-nav .all { display:inline-flex; align-items:center; gap:8px; margin-left:auto; height:44px; font-weight:800; color:var(--ink); text-decoration:none; }
+.carousel-nav .all .t { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.carousel-nav .all svg.i { width:18px; height:18px; color:var(--blue); }
+.flow > .carousel { --d:40px; }
+.carousel-nav .all, .cbtn { white-space:nowrap; }
+@media (max-width:520px) { .carousel-nav { gap:12px; } .cbtn { padding:0 12px; } }

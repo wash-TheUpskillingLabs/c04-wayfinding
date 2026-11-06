@@ -39,6 +39,8 @@ ICONS = {
     "a-l": '<path d="M21 12H5M11 6l-6 6 6 6"/>',
     # disclosure: opens or closes something here. Not an arrow, never a link.
     "chev": '<path d="M6 9l6 6 6-6"/>',
+    "chev-l": '<path d="M15 6l-6 6 6 6"/>',
+    "chev-r": '<path d="M9 6l6 6-6 6"/>',
     # pictograms: what a section is about
     "info": '<path d="M12 10v10M9 20h6M10 10h2M12 4v2"/>',
     "ppl": '<path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/>',
@@ -115,7 +117,7 @@ def head(title, desc, path):
 {sprite()}'''
 
 def sitenav(current):
-    items = [("/", "The pod"), ("/blog/", "Blog")]
+    items = [("/", "The pod"), ("/about/", "About"), ("/blog/", "Blog")]
     out = []
     for href, label in items:
         cur = current == href or (href == "/blog/" and current.startswith("/blog/"))
@@ -198,9 +200,22 @@ def post_list(ps):
   <li><time class="t t-small num" datetime="{p["date"]}">{nice_date(p["date"])}</time><p class="t-h3"><a href="/blog/{p["slug"]}/">{p["title"]}</a></p><p class="t-body">{p["dek"]}</p></li>''' for p in ps)
     return f'<ul class="rows posts">{lis}\n</ul>'
 
+def post_carousel(ps):
+    """Blog post cards in a row that scrolls sideways and snaps. Works with no script;
+    the script reveals Previous and Next."""
+    cards = []
+    for p in ps:
+        if p.get("cover"):
+            cover = f'<img class="card-cover" src="{p["cover"]}" alt="" loading="lazy">'
+        else:
+            cover = f'<span class="card-cover card-icon" aria-hidden="true">{ic(p.get("icon", "note"))}</span>'
+        cards.append(f'''  <li><a class="card" href="/blog/{p["slug"]}/">{cover}<span class="card-body"><time class="t t-small num" datetime="{p["date"]}">{nice_date(p["date"])}</time><span class="t t-h3 card-title">{p["title"]}</span><span class="t t-small card-dek">{p["dek"]}</span><span class="card-read"><span class="t t-small">Read the post</span>{ic("a-r")}</span></span></a></li>''')
+    nav = f'<div class="carousel-nav" hidden><button type="button" class="cbtn cprev">{ic("chev-l")}<span class="t">Previous</span></button><button type="button" class="cbtn cnext"><span class="t">Next</span>{ic("chev-r")}</button><a class="all" href="/blog/"><span class="t">All posts</span>{ic("a-r")}</a></div>'
+    return f'<div class="carousel" role="region" aria-roledescription="carousel" aria-label="Blog posts">\n<ul class="cards">\n' + "\n".join(cards) + f'\n</ul>\n{nav}\n</div>'
+
 def build_home(ps):
     secs = sections(os.path.join(C, "home"))
-    for s in secs: s["body"] = s["body"].replace("{{latest_posts}}", post_list(ps[:3]))
+    for s in secs: s["body"] = s["body"].replace("{{latest_posts}}", post_list(ps[:3])).replace("{{post_carousel}}", post_carousel(ps))
     h1 = "People don’t get lost in the room. They get lost on the way to the next one."
     page = head("Wayfinding", "Wayfinding: a Research Pod in Build Cycle C04, The Upskilling Labs of Greater Washington. How do people find their way between the parts of The Labs, and what do they need to see to choose the route that fits them?", "/")
     page += herebar() + f'''<header class="cover" id="top">
@@ -250,6 +265,22 @@ def build_blog(ps):
 {signhead("/blog/")}  <div class="grid hero">
     <h1{lsb("Blog")}>Blog</h1>
     <p class="t-lead dek">Notes from the pod as we work: what we read, who we talked to, what we built, and what broke.</p>
+  </div>
+</header>
+
+<main id="main">
+'''
+    page += "".join(section(s, secs[i + 1] if i + 1 < len(secs) else None) for i, s in enumerate(secs))
+    page += "</main>\n\n" + footer()
+    return page
+
+def build_about(ps):
+    secs = sections(os.path.join(C, "about"))
+    page = head("About | Wayfinding", "About the Wayfinding pod: what we believe, where people get lost at The Labs, how we work and what we're building.", "/about/")
+    page += herebar() + f'''<header class="cover short" id="top">
+{signhead("/about/")}  <div class="grid hero">
+    <h1{lsb("About")}>About the pod</h1>
+    <p class="t-lead dek">Wayfinding is one of three Research Pods in Build Cycle C04. We study how people find their way between the parts of The Labs, and build what helps them choose the route that fits.</p>
   </div>
 </header>
 
@@ -310,6 +341,7 @@ def write(rel, text):
 if __name__ == "__main__":
     ps = posts()
     write("index.html", build_home(ps))
+    write("about/index.html", build_about(ps))
     write("blog/index.html", build_blog(ps))
     for p in ps: write(f"blog/{p['slug']}/index.html", build_post(p))
     write("blog/feed.xml", build_feed(ps))

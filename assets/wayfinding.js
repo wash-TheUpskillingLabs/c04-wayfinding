@@ -14,6 +14,27 @@
 
   figures();
 
+  /* Blog carousel: reveal Previous and Next, scroll a card at a time. */
+  document.querySelectorAll('.carousel').forEach(function (c) {
+    var list = c.querySelector('.cards'), nav = c.querySelector('.carousel-nav');
+    var prev = c.querySelector('.cprev'), next = c.querySelector('.cnext');
+    if (!list || !nav) return;
+    nav.hidden = false;
+    var step = function () { var li = list.querySelector('li'); return li ? li.getBoundingClientRect().width + 24 : list.clientWidth; };
+    var sync = function () {
+      var fits = list.scrollWidth <= list.clientWidth + 4;
+      prev.hidden = next.hidden = fits;
+      prev.disabled = list.scrollLeft < 4;
+      next.disabled = list.scrollLeft + list.clientWidth > list.scrollWidth - 4;
+    };
+    var smooth = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    prev.addEventListener('click', function () { list.scrollBy({ left: -step(), behavior: smooth }); });
+    next.addEventListener('click', function () { list.scrollBy({ left: step(), behavior: smooth }); });
+    list.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  });
+
   /* You are here: the bar names the section you're in and opens every stop. */
   var bar = document.querySelector('.herebar');
   var secs = Array.prototype.slice.call(document.querySelectorAll('main .sec'));
