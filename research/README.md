@@ -1,6 +1,35 @@
 # Archaeology library: theory, cases and failure modes
 
-Desk research logged Nov 5, 2026, for the archaeology step. Every claim in each file links to its source; check the source before you lean on a number.
+Desk research logged Nov 5–6, 2026, for the archaeology step. Every claim in each file links to its source; check the source before you lean on a number.
+
+## Start here
+
+**[Synthesis: what the research says about the thresholds](synthesis-thresholds.md)** reads the whole library against the product The Labs is building (kits, the Cycle, pre-cycle, post- and between-cycle, facilitators, channels) and offers candidate paradoxes for the pod to test. **[Record: alumni survey, C01–C03](record-alumni-survey-2026.md)** is the one piece of internal participant evidence.
+
+## Product design round (Nov 6)
+
+Theory and cases chosen for what a turnkey, kit-based OLOS has to get right at each threshold. Each file names what the case assumes that The Labs cannot.
+
+| File | Product part | Bears on |
+|---|---|---|
+| [Theory: Cognitive load and choice overload](theory-cognitive-load-and-choice.md) | kits | pre-cycle | post-between | channels | pre-cycle, cycle, post-cycle, interfaces |
+| [Theory: Modularity and pathways (structure versus cafeteria choice)](theory-modularity-and-pathways.md) | kits | cycle | pre-cycle | post-between | facilitators | pre-cycle, cycle, post-cycle, facilitators, interfaces |
+| [Theory: Progress, commitment and their limits](theory-progress-and-commitment.md) | cycle | pre-cycle | post-between | channels | pre-cycle, cycle, post-cycle, activation-mobilization, interfaces |
+| [Theory: Self-determination theory (Deci & Ryan)](theory-self-determination.md) | pre-cycle | post-between | facilitators | kits | pre-cycle, cycle, post-cycle, facilitators, activation-mobilization |
+| [4-H "grab and go" lesson plans and The Carpentries' two-day workshop template, kits meant for a stranger to run](case-4h-project-books-and-lesson-kits.md) | kits | facilitators | facilitators, pre-cycle, interfaces |
+| [Code Club and CoderDojo (Raspberry Pi Foundation), free project kits run by volunteers in schools and libraries](case-code-club-coderdojo.md) | kits | facilitators | pre-cycle, facilitators, activation-mobilization, interfaces |
+| [Duolingo, replacing a branching skill tree with one linear path (2022)](case-duolingo-path-redesign.md) | kits | channels | post-between | pre-cycle, cycle, activation-mobilization, interfaces |
+| [Khan Academy, retiring the Knowledge Map and then Missions in favour of linear Course Mastery](case-khan-academy-or-mastery-platform.md) | kits | channels | post-between | pre-cycle, activation-mobilization, interfaces |
+| [Boy Scouts of America / Scouting America, merit badges as a self-chosen modular catalog feeding a rank ladder](case-scouting-merit-badges.md) | kits | facilitators | post-between | cycle, post-cycle, facilitators, activation-mobilization |
+| [FIRST Robotics Competition, a global season clock delivered by local volunteer-run teams](case-first-robotics.md) | cycle | post-between | facilitators | kits | cycle, post-cycle, facilitators, activation-mobilization, pre-cycle |
+| [Google Summer of Code as a global clock that established projects onboard newcomers through](case-google-summer-of-code-as-clock.md) | cycle | facilitators | pre-cycle | pre-cycle, cycle, facilitators, activation-mobilization |
+| [Hackathons and sprints, what happens to the projects after the weekend](case-hackathons-and-sprints.md) | cycle | post-between | kits | post-cycle, cycle, activation-mobilization |
+| [National Novel Writing Month, a fixed month run through volunteer local liaisons, and its 2025 shutdown](case-nanowrimo.md) | cycle | post-between | facilitators | channels | activation-mobilization, facilitators, post-cycle, pre-cycle, interfaces |
+| [AmeriCorps and Teach For America alumni, what a service year leaves behind eight years on](case-alumni-and-between.md) | post-between | facilitators | post-cycle, activation-mobilization, facilitators |
+| [Kubernetes membership ladder and Apache's meritocracy roles, published rungs and the pruning that follows](case-contributor-ladders.md) | post-between | facilitators | post-cycle, facilitators, activation-mobilization |
+| [Outreachy, a mandatory contribution period before selection](case-outreachy-contribution-period.md) | pre-cycle | facilitators | pre-cycle, facilitators, activation-mobilization |
+| [US pre-apprenticeship, a defined on-ramp whose exit into the main program is the weak link](case-pre-apprenticeship.md) | pre-cycle | kits | pre-cycle, post-cycle, facilitators |
+| ["Summer melt" and the Castleman–Page text-message experiments, nudging people across a gap they had already committed to cross](case-summer-melt.md) | pre-cycle | channels | pre-cycle, activation-mobilization, interfaces |
 
 **How to use it.** Each case follows the README's six questions. Section 5, *what it tells us*, is left for the pod as questions: reading these against our own interviews is the pod's work, for Nov 7. Each case names a rival explanation and what we can't tell from outside.
 
