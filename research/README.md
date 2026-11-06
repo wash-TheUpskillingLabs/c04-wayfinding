@@ -8,6 +8,12 @@ Desk research logged Nov 5, 2026, for the archaeology step. Every claim in each 
 
 | File | Kind | Bears on |
 |---|---|---|
+| [Theory: Communities of practice, trajectories and boundary crossing](theory-communities-of-practice.md) | theory | pre-cycle, cycle, post-cycle, facilitators |
+| [Theory: Community building, assets and social capital](theory-community-building.md) | theory | pre-cycle, cycle, post-cycle, facilitators, activation-mobilization |
+| [Theory: Organizing, mobilizing, activation and informal structure](theory-organizing-activation-mobilization.md) | theory | activation-mobilization, facilitators, cycle, post-cycle, interfaces |
+| [Theory: Placemaking, third places and social infrastructure](theory-placemaking-third-places.md) | theory | pre-cycle, cycle, post-cycle, facilitators, activation-mobilization |
+| [Theory: Self-directed learning and autodidaxy](theory-self-directed-learning.md) | theory | pre-cycle, post-cycle, facilitators, interfaces, activation-mobilization |
+| [Theory: Wayfinding, legibility and information scent](theory-wayfinding-legibility.md) | theory | pre-cycle, cycle, post-cycle, interfaces |
 | [42 network, a teacherless peer-learning school with a selection bootcamp and deadline-based expulsion](case-42-network.md) | extreme (no teachers, peer evaluation, hard time limits) | pre-cycle, cycle, post-cycle |
 | [Conversational "heads" on organisational systems, from GitHub's ChatOps to the NYC MyCity and Air Canada chatbots](case-agent-heads.md) | failure (MyCity, Air Canada), set against an early success story (ChatOps) | interfaces, facilitators, activation-mobilization |
 | [Making progress visible, portable Open Badges versus Duolingo-style streaks](case-badges-and-streaks.md) | maximum variation (a portable, issuer-controlled record of achievement vs an in-app daily counter) | pre-cycle, post-cycle, activation-mobilization, interfaces |
@@ -34,7 +40,5 @@ Desk research logged Nov 5, 2026, for the archaeology step. Every claim in each 
 | [Toastmasters International, replacing printed manuals with the Pathways online learning system](case-toastmasters-pathways.md) | failure-mode candidate (platform-mediated learning path imposed across a volunteer-run club network) | interfaces, cycle, facilitators, pre-cycle |
 | [English Wikipedia, rejecting good-faith newcomers, then trying to welcome them back](case-wikipedia-newcomer-decline.md) | failure (also paradigmatic: the most-studied newcomer decline in open collaboration) | pre-cycle, post-cycle, facilitators, interfaces |
 | [Theory: Calm technology, information scent, and designing across channels](theory-calm-and-multichannel.md) |  | interfaces, activation-mobilization, pre-cycle, post-cycle |
-
-**Still to come:** a theory set (wayfinding and legibility, self-directed learning and autodidaxy, communities of practice, placemaking and third places, community building, organizing vs. mobilizing).
 
 **Open item from #4:** no source found yet for Netflix designers using "plumbing" for get-people-to-what's-next infrastructure. The only hit was a Netflix design director using the word in a design-tool testimonial, in a different sense. Don't cite it until it's found.
