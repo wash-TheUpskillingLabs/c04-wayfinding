@@ -7,148 +7,188 @@
 <meta name="description" content="Wayfinding: a Research Pod in Build Cycle C04, The Upskilling Labs of Greater Washington. How do people find their way between the parts of The Labs, and what do they need to see to choose the route that fits them?">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@300..800,0..100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
 <style>
-/* The Labs' design rules, as the brand states them.
-   Tokens: ink #00141b, navy #03232a, forest #005f68, teal #0094a0 (focus and accents only),
-   teal-deep #007882 (links and actions on light), paper #f6f4ef (the only light page background),
-   gold #cfab67 (the regional metal; the one thing to notice), red #e11d2a (reserved for "Join The Labs").
-   One radius, 14px, on every rectangular container. No pills. Genuine circles only for dots. A 4px baseline.
-   Geologica throughout; display sizes use the SHRP axis on dark. Text is tinted from the ground, never neutral grey.
-   Structure comes from spacing and hairline rules. Lists are lists, not card grids.
-   Don't: all-caps eyebrows, meta strings joined with middle dots, arrows appended to links,
-   gradient text, glow blobs, coloured left borders, 01/02/03 numbering, fade-up reveals.
+/* Wayfinding, the pod's own brand. Distinct from The Labs' brand on purpose: this is a sign system.
+   Palette: Swiss Style Color Picker, scheme 14 (Fabian Burghardt, fabianburghardt.de/swisscolors).
+   ink #0b3536, paper #e5e7de, signal blue #0098d8, signal red #f54123. Nothing else.
+   Contrast, measured: ink/paper 10.7. ink/blue 4.1. ink/red 3.6. paper/blue 2.6, paper/red 3.0.
+   So text is ink on paper or paper on ink, always. Blue and red never carry small text;
+   they carry signs: tiles, arrows, pictograms, the dots that matter.
+   Blue is direction (where you can go). Red is position (where you are, where people stopped).
+   Decoration is arrows and wayfinding pictograms, and only those. Every section is signed with one.
+   Inter throughout, set like signage: tight, bold headings, generous body.
+   Corners 4px, like an enamel sign. No gradients, no shadows, no card grids.
    Motion only where the data moves: a diagram may animate the change it shows, once, on first view,
    under 400ms a stage, and must read complete with motion off (prefers-reduced-motion) and with no script.
-   Voice: the friend who went first. Dry, specific, generous. Names and dates, never adjectives. */
+   Arrows may nudge 3px on hover. Voice: the friend who went first. Dry, specific, generous. */
 :root {
-  --ink:#00141b; --navy:#03232a; --forest:#005f68; --teal:#0094a0; --teal-deep:#007882;
-  --paper:#f6f4ef; --gold:#cfab67; --red:#e11d2a;
-  --on-paper:#00141b; --on-paper-2:#3d4a4f; --rule:rgba(0,20,27,.14);
-  --on-dark:rgba(255,255,255,.95); --on-dark-2:rgba(255,255,255,.64); --rule-dark:rgba(255,255,255,.16);
-  --r:14px; --max:720px; --g:clamp(16px,5vw,48px);
-  --font:"Geologica",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ink:#0b3536; --paper:#e5e7de; --blue:#0098d8; --red:#f54123;
+  --ink-2:rgba(11,53,54,.74); --rule:rgba(11,53,54,.18);
+  --on-ink:#e5e7de; --on-ink-2:rgba(229,231,222,.72); --rule-ink:rgba(229,231,222,.2);
+  --r:4px; --max:720px; --g:clamp(16px,5vw,48px);
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 * { box-sizing:border-box; }
 html { background:var(--paper); }
-body { margin:0; font-family:var(--font); font-size:17px; line-height:28px; color:var(--on-paper); background:var(--paper); -webkit-font-smoothing:antialiased; font-synthesis:none; }
-a { color:var(--teal-deep); text-decoration-thickness:1px; text-underline-offset:3px; }
-a:focus-visible, button:focus-visible { outline:2px solid var(--teal); outline-offset:3px; }
+body { margin:0; font-family:var(--font); font-size:17px; line-height:28px; color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased; font-synthesis:none; font-feature-settings:"ss01","cv11"; }
+a { color:var(--ink); text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:4px; }
+a:focus-visible { outline:3px solid var(--ink); outline-offset:3px; }
+.cover a:focus-visible, footer a:focus-visible { outline-color:var(--paper); }
 .wrap { max-width:var(--max); margin:0 auto; padding:0 var(--g); }
+svg.i { width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:2.5; stroke-linecap:square; stroke-linejoin:miter; flex:none; }
 
-.cover { background:var(--ink); color:var(--on-dark); padding:48px 0 56px; }
-.lockup { font-size:15px; line-height:20px; font-weight:500; color:var(--on-dark-2); margin:0 0 56px; }
-.cover h1 { font-size:clamp(44px,8vw,72px); line-height:1.02; font-weight:640; letter-spacing:-.03em; font-variation-settings:"SHRP" 100; margin:0 0 24px; text-wrap:balance; }
-.cover .q { font-size:clamp(21px,3vw,26px); line-height:1.35; font-weight:400; color:var(--on-dark); margin:0; max-width:34ch; text-wrap:pretty; }
-.cover .mark { display:block; width:168px; height:168px; margin:40px 0 0; }
+/* Sign tiles: the pod's decoration */
+.tile { display:inline-grid; place-items:center; width:40px; height:40px; border-radius:var(--r); background:var(--ink); color:var(--paper); flex:none; }
+.tile.blue { background:var(--blue); color:var(--ink); }
+.tile.red { background:var(--red); color:var(--ink); }
+.tile.line { background:none; color:var(--on-ink); box-shadow:inset 0 0 0 2px var(--rule-ink); }
+
+/* Hero */
+.cover { background:var(--ink); color:var(--on-ink); padding:28px 0 48px; }
+.cover .wrap { max-width:1040px; }
+.signhead { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; padding-bottom:20px; border-bottom:2px solid var(--rule-ink); margin:0 0 48px; }
+.wordmark { display:flex; align-items:center; gap:12px; margin:0; font-size:26px; line-height:32px; font-weight:800; letter-spacing:-.025em; }
+.wordmark .tile { width:44px; height:44px; }
+.wordmark small { display:block; font-size:14px; line-height:18px; font-weight:500; letter-spacing:0; color:var(--on-ink-2); }
+.signrow { display:flex; gap:6px; }
+.signrow .tile { width:36px; height:36px; }
+.signrow svg.i { width:20px; height:20px; }
+.cover h1 { font-size:clamp(40px,7vw,72px); line-height:1.02; font-weight:800; letter-spacing:-.035em; margin:0 0 24px; max-width:15ch; text-wrap:balance; }
+.cover .sub { font-size:clamp(19px,2.4vw,22px); line-height:1.45; color:var(--on-ink); max-width:44ch; margin:0 0 32px; text-wrap:pretty; }
+.cover .ctas { display:flex; flex-wrap:wrap; gap:12px 28px; align-items:center; margin:0 0 48px; }
+.cover .ctas a.link { display:inline-flex; align-items:center; gap:8px; color:var(--on-ink); font-weight:600; text-decoration:none; }
+.cover .ctas a.link svg.i { color:var(--blue); width:20px; height:20px; }
+.cover .ctas a.link span { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:4px; }
+.herogrid { display:block; }
+.bigarrow { display:none; }
 @media (min-width:900px) {
-  .cover .wrap { display:grid; grid-template-columns:1fr 168px; column-gap:48px; align-items:end; }
-  .cover .lockup { grid-column:1 / -1; }
-  .cover .mark { margin:0; }
+  .herogrid { display:grid; grid-template-columns:1fr 220px; column-gap:56px; align-items:start; }
+  .bigarrow { display:grid; place-items:center; width:220px; height:220px; border-radius:var(--r); background:var(--blue); color:var(--ink); margin-top:8px; }
+  .bigarrow svg.i { width:150px; height:150px; stroke-width:2.2; }
+}
+.cover figure { margin:0; }
+.cover figcaption { color:var(--on-ink-2); max-width:58ch; }
+.route { max-width:760px; }
+.route .rl { font-family:var(--font); font-size:15px; font-weight:500; fill:var(--on-ink-2); }
+.route .h { fill:var(--red); }
+.route .p { fill:rgba(229,231,222,.6); }
+.route .stop { fill:var(--blue); }
+
+/* Buttons are signs: a label and an arrow */
+.btn, .btn-sign { display:inline-flex; align-items:center; gap:14px; text-decoration:none; font-weight:700; font-size:17px; line-height:24px; padding:8px 8px 8px 18px; border-radius:var(--r); margin:4px 0 24px; }
+.btn { background:var(--ink); color:var(--paper); }
+.btn .tile, .btn-sign .tile { width:36px; height:36px; }
+.btn-sign { background:var(--paper); color:var(--ink); margin:0; }
+@media (prefers-reduced-motion: no-preference) {
+  .btn .tile svg, .btn-sign .tile svg, .ctas a.link svg { transition:transform .15s cubic-bezier(.32,.72,0,1); }
+  .btn:hover .tile svg, .btn-sign:hover .tile svg { transform:translateX(3px); }
+  .btn:hover .tile svg.ur, .ctas a.link:hover svg.ur { transform:translate(3px,-3px); }
+  .btn:hover .tile svg.up, .ctas a.link:hover svg.up { transform:translateY(-3px); }
 }
 
-main section { padding:40px 0 8px; border-bottom:1px solid var(--rule); }
+/* Body */
+main section { padding:48px 0 12px; border-bottom:2px solid var(--ink); }
 main section:last-of-type { border-bottom:0; }
-h2 { font-size:26px; line-height:32px; font-weight:600; letter-spacing:-.02em; font-variation-settings:"SHRP" 60; margin:0 0 16px; text-wrap:balance; }
-p { margin:0 0 20px; color:var(--on-paper); text-wrap:pretty; }
-p.quiet { color:var(--on-paper-2); }
+h2 { display:flex; align-items:center; gap:14px; font-size:28px; line-height:34px; font-weight:800; letter-spacing:-.025em; margin:0 0 20px; text-wrap:balance; scroll-margin-top:24px; }
+p { margin:0 0 20px; text-wrap:pretty; }
+p.quiet { color:var(--ink-2); }
 ul { list-style:none; margin:0 0 20px; padding:0; }
 ul li { padding:12px 0; border-top:1px solid var(--rule); }
 ul li:last-child { border-bottom:1px solid var(--rule); }
-li .meta { display:block; color:var(--on-paper-2); font-size:15px; line-height:24px; }
-li.when { display:grid; grid-template-columns:9ch 1fr; column-gap:8px; }
-li time { color:var(--on-paper-2); }
-.btn { display:inline-block; background:var(--teal-deep); color:#fff; text-decoration:none; font-weight:600; font-size:16px; line-height:24px; padding:12px 20px; border-radius:var(--r); margin:4px 0 24px; }
-.btn:hover { background:#00868f; }
+ul.steps li { display:grid; grid-template-columns:24px 1fr; column-gap:12px; }
+ul.steps li svg.i { width:20px; height:20px; margin-top:4px; color:var(--ink); }
+li .meta { display:block; color:var(--ink-2); font-size:15px; line-height:24px; }
+li.when { display:grid; grid-template-columns:76px 1fr; column-gap:8px; position:relative; }
+li time { color:var(--ink-2); font-weight:500; }
+li.when.now { font-weight:600; }
+li.when.now time { color:var(--ink); font-weight:700; }
+li.when.now::after { content:"You are here"; grid-column:2; justify-self:start; margin-top:6px; font-size:13px; line-height:20px; font-weight:700; background:var(--red); color:var(--ink); padding:2px 8px; border-radius:var(--r); }
+.track { position:relative; height:4px; background:var(--rule); margin:4px 0 20px; border-radius:2px; }
+.track span { position:absolute; left:0; top:0; bottom:0; background:var(--ink); border-radius:2px; }
+.track span::after { content:""; position:absolute; right:-7px; top:-5px; width:14px; height:14px; border-radius:50%; background:var(--red); box-shadow:0 0 0 3px var(--paper); }
 
-footer { background:var(--navy); color:var(--on-dark-2); font-size:15px; line-height:24px; padding:32px 0 40px; margin-top:56px; }
-footer a { color:var(--on-dark); }
+footer { background:var(--ink); color:var(--on-ink-2); font-size:15px; line-height:24px; padding:32px 0 40px; margin-top:56px; }
+footer .wrap { display:grid; grid-template-columns:40px 1fr; column-gap:16px; }
+footer a { color:var(--on-ink); }
 footer p { color:inherit; margin:0 0 8px; }
-@media (prefers-reduced-motion: no-preference) { a, .btn { transition:background .15s cubic-bezier(.32,.72,0,1), color .15s cubic-bezier(.32,.72,0,1); } }
 
 /* Diagrams. End state is the default; script adds .pre then .in to play the change once. */
 figure { margin:8px 0 28px; }
 figure svg { display:block; width:100%; height:auto; }
 .crow { margin:0 0 18px; } .crow svg { max-width:360px; margin:6px 0 4px; }
 .clab { font-size:15px; line-height:22px; font-weight:600; margin:0; }
-.csrc { font-size:13px; line-height:20px; color:var(--on-paper-2); margin:0; }
-.joints svg { max-width:520px; }
-.rings svg { max-width:520px; }
-figcaption { font-size:15px; line-height:24px; color:var(--on-paper-2); margin-top:12px; }
+.csrc { font-size:13px; line-height:20px; color:var(--ink-2); margin:0; }
+.joints svg, .rings svg { max-width:520px; }
+figcaption { font-size:15px; line-height:24px; color:var(--ink-2); margin-top:12px; }
 .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
-.lbl { font-family:var(--font); font-size:13px; fill:var(--on-paper-2); }
-.lbl-strong { font-family:var(--font); font-size:13px; font-weight:600; fill:var(--on-paper); }
-.cliff .d { fill:var(--teal-deep); opacity:.16; }
-.cliff .k { fill:var(--teal-deep); }
-.joints .m { fill:var(--teal-deep); }
-.joints .o { fill:var(--on-paper-2); opacity:.45; }
-.rings .r { fill:none; stroke:var(--rule); stroke-width:1; }
-.rings .you { fill:var(--gold); }
-.track { position:relative; height:2px; background:var(--rule); margin:4px 0 20px; }
-.track span { position:absolute; left:0; top:0; bottom:0; background:var(--teal-deep); }
-li.when.now time { color:var(--on-paper); font-weight:600; }
+.lbl { font-family:var(--font); font-size:13px; font-weight:500; fill:var(--ink-2); }
+.lbl-strong { font-family:var(--font); font-size:13px; font-weight:700; fill:var(--ink); }
+.cliff .d { fill:var(--ink); opacity:.14; }
+.cliff .k { fill:var(--ink); }
+.joints .m { fill:var(--ink); }
+.joints .o { fill:var(--ink); opacity:.3; }
+.rings .r { fill:none; stroke:var(--rule); stroke-width:2; }
+.rings .you { fill:var(--red); }
+.rings .ra { fill:none; stroke:var(--blue); stroke-width:2.5; }
 @media (prefers-reduced-motion: no-preference) {
   .pre.cliff .d { opacity:1; }
-  .in.cliff .d { opacity:.16; transition:opacity .35s cubic-bezier(.32,.72,0,1); }
+  .in.cliff .d { opacity:.14; transition:opacity .35s cubic-bezier(.32,.72,0,1); }
   .in.cliff .row1 .d { transition-delay:.1s; } .in.cliff .row2 .d { transition-delay:.6s; } .in.cliff .row3 .d { transition-delay:1.1s; }
   .pre.joints circle { transform:translate(var(--dx),var(--dy)); opacity:0; }
   .in.joints circle { transition:transform .38s cubic-bezier(.32,.72,0,1), opacity .2s; transition-delay:calc(var(--i) * 90ms); }
   .pre.rings .you { transform:translate(0,-108px); }
   .in.rings .you { animation:inward 1.2s cubic-bezier(.32,.72,0,1) forwards; }
   @keyframes inward { 0%{transform:translate(0,-108px)} 33%{transform:translate(0,-72px)} 66%{transform:translate(0,-36px)} 100%{transform:translate(0,0)} }
-}
-
-/* Hero */
-.cover { padding:40px 0 48px; }
-.cover .wrap { max-width:960px; }
-.cover h1 { font-size:clamp(40px,7vw,68px); max-width:16ch; }
-.cover .kicker { font-size:15px; line-height:20px; font-weight:600; color:var(--gold); margin:0 0 16px; }
-.cover .sub { font-size:clamp(19px,2.4vw,22px); line-height:1.45; color:var(--on-dark); max-width:42ch; margin:0 0 28px; }
-.cover .ctas { display:flex; flex-wrap:wrap; gap:16px 24px; align-items:center; margin:0 0 40px; }
-.btn-light { display:inline-block; background:var(--paper); color:var(--ink); text-decoration:none; font-weight:600; font-size:16px; line-height:24px; padding:12px 20px; border-radius:var(--r); }
-.btn-light:hover { background:#fff; }
-.cover .ctas a.link { color:var(--on-dark); font-weight:500; }
-.cover figure { margin:0; }
-.cover figcaption { color:var(--on-dark-2); max-width:56ch; }
-.route { max-width:720px; }
-.route .rl { font-family:var(--font); font-size:15px; fill:var(--on-dark-2); }
-.route .h { fill:var(--gold); }
-.route .p { fill:rgba(255,255,255,.55); }
-.cover .mark, .cover .q { display:none; }
-@media (min-width:900px) { .cover .wrap { display:block; } }
-h2.act { scroll-margin-top:24px; }
-@media (prefers-reduced-motion: no-preference) {
   .pre.herofig circle { transform:translateX(var(--dx)); opacity:0; }
   .in.herofig circle { transition:transform .9s cubic-bezier(.32,.72,0,1), opacity .2s; transition-delay:calc(var(--i) * 110ms); }
 }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="a-r" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol>
+<symbol id="a-ur" viewBox="0 0 24 24"><path d="M6 18L17 7M8 6h10v10"/></symbol>
+<symbol id="a-u" viewBox="0 0 24 24"><path d="M12 21V5M6 11l6-6 6 6"/></symbol>
+<symbol id="a-dr" viewBox="0 0 24 24"><path d="M6 6l11 11M18 8v10H8"/></symbol>
+<symbol id="fork" viewBox="0 0 24 24"><path d="M12 22v-7M12 15L5 8M12 15l7-7M4 12V7h5M15 7h5v5"/></symbol>
+<symbol id="post" viewBox="0 0 24 24"><path d="M12 22V2M12 5h7l3 3-3 3h-7M12 13H5l-3 3 3 3h7"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><path d="M12 8v4"/></symbol>
+<symbol id="info" viewBox="0 0 24 24"><path d="M12 10v10M9 20h6M10 10h2M12 4v2"/></symbol>
+<symbol id="ppl" viewBox="0 0 24 24"><path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/></symbol>
+</svg>
 <header class="cover">
   <div class="wrap">
-    <p class="lockup">The Upskilling Labs of Greater Washington</p>
-    <p class="kicker">Wayfinding, a Research Pod of Build Cycle C04</p>
+    <div class="signhead">
+      <p class="wordmark"><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span><span>Wayfinding<small>A Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington</small></span></p>
+      <div class="signrow" aria-hidden="true"><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><span class="tile red"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span></div>
+    </div>
+    <div class="herogrid">
+    <div>
     <h1>People don't get lost in the room. They get lost on the way to the next one.</h1>
     <p class="sub">We're rebuilding how The Labs gets people from their first workshop to their next step. Follow along, become a contributor, or lead one of the projects.</p>
     <div class="ctas">
-      <a class="btn-light" href="#follow">Follow the pod</a>
-      <a class="link" href="#hour">Become a contributor</a>
-      <a class="link" href="#build">Lead a project</a>
+      <a class="btn-sign" href="#follow">Follow the pod<span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
+      <a class="link" href="#hour"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg><span>Become a contributor</span></a>
+      <a class="link" href="#build"><svg class="i up" aria-hidden="true"><use href="#a-u"/></svg><span>Lead a project</span></a>
+    </div>
+    </div>
+    <div class="bigarrow" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></div>
     </div>
     <figure class="anim herofig" aria-labelledby="route-cap">
 <svg class="route" viewBox="0 0 620 150" role="img" aria-labelledby="route-cap">
-<line x1="20" y1="70" x2="600" y2="70" stroke="rgba(255,255,255,.22)" stroke-width="1"/>
-<rect x="63" y="63" width="14" height="14" fill="#0094a0"/>
+<line x1="20" y1="70" x2="596" y2="70" stroke="rgba(229,231,222,.3)" stroke-width="2"/><path d="M590 64l7 6-7 6" fill="none" stroke="rgba(229,231,222,.3)" stroke-width="2"/>
+<rect x="63" y="63" width="14" height="14" class="stop"/>
 <text class="rl" x="70" y="104" text-anchor="middle">First workshop</text>
-<rect x="223" y="63" width="14" height="14" fill="#0094a0"/>
+<rect x="223" y="63" width="14" height="14" class="stop"/>
 <text class="rl" x="230" y="104" text-anchor="middle">The Cycle</text>
-<rect x="383" y="63" width="14" height="14" fill="#0094a0"/>
+<rect x="383" y="63" width="14" height="14" class="stop"/>
 <text class="rl" x="390" y="104" text-anchor="middle">A team</text>
-<rect x="543" y="63" width="14" height="14" fill="#0094a0"/>
+<rect x="543" y="63" width="14" height="14" class="stop"/>
 <text class="rl" x="550" y="104" text-anchor="middle">After</text>
-<line x1="150" y1="78" x2="150" y2="88" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
-<line x1="310" y1="78" x2="310" y2="88" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
-<line x1="470" y1="78" x2="470" y2="88" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+<line x1="150" y1="78" x2="150" y2="88" stroke="rgba(229,231,222,.4)" stroke-width="1"/>
+<line x1="310" y1="78" x2="310" y2="88" stroke="rgba(229,231,222,.4)" stroke-width="1"/>
+<line x1="470" y1="78" x2="470" y2="88" stroke="rgba(229,231,222,.4)" stroke-width="1"/>
 <circle class="h" cx="150" cy="48" r="4.5" style="--dx:-130px;--i:0"/>
 <circle class="h" cx="150" cy="36" r="4.5" style="--dx:-130px;--i:1"/>
 <circle class="h" cx="310" cy="48" r="4.5" style="--dx:-290px;--i:2"/>
@@ -162,14 +202,14 @@ h2.act { scroll-margin-top:24px; }
 <circle class="p" cx="578" cy="48" r="4.5" style="--dx:-558px;--i:10"/>
 <circle class="p" cx="566" cy="48" r="4.5" style="--dx:-546px;--i:11"/>
 </svg>
-      <figcaption id="route-cap">Twelve past participants told us one thing they'd change. Nine named a moment between the parts, shown here in gold where they stopped.</figcaption>
+      <figcaption id="route-cap">Twelve past participants told us one thing they'd change. Nine named a moment between the parts, shown here in red where they stopped.</figcaption>
     </figure>
   </div>
 </header>
 
 <main class="wrap">
   <section>
-    <h2>Why this problem</h2>
+    <h2><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#info"/></svg></span>Why this problem</h2>
     <p>The Upskilling Labs started in DC Public Library branches in 2025. In under a year, run entirely on volunteer hours, about a thousand people have come through a pilot and three Build Cycles.</p>
     <p>When people tell us what got in their way, it's rarely what happened in the room. It's the spaces between: how to get started, what to do this week, how to join a team, where to go when the Cycle ends. Much of that comes from tools and platforms we built in a hurry, while running Cycles at the same time.</p>
     <p>It isn't just us. Programs everywhere lose most people at the edges.</p>
@@ -182,7 +222,7 @@ h2.act { scroll-margin-top:24px; }
   </section>
 
   <section>
-    <h2>What people at The Labs told us</h2>
+    <h2><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span>What people at The Labs told us</h2>
     <figure class="anim joints" aria-labelledby="joints-cap">
 <svg viewBox="0 0 380 266" role="img" aria-labelledby="joints-cap">
 <text class="lbl-strong" x="0" y="20">Twelve past participants, one thing each would change</text>
@@ -220,7 +260,7 @@ h2.act { scroll-margin-top:24px; }
   </section>
 
   <section>
-    <h2>What we're building</h2>
+    <h2><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span>What we're building</h2>
     <p>This fall, for the first time, The Upskilling Labs of Greater Washington is running a Cycle on The Labs itself, so we can fix the gaps instead of putting out fires every day. Three Research Pods are working on our own copy of OLOS, the open platform The Labs runs on. Scaffolding works on what happens inside each part. Front Door works on where it all lives. Wayfinding works on the routes between them: getting started, what comes next, and where people go when a Cycle ends.</p>
     <p>On Dec 8 the three pods show what we built. Then we offer it to the national project, and the national Board decides what meets the standard for the core every region runs on. We've committed to getting at least three projects into the core. We're aiming for all of them, so the next region starts where we finished.</p>
     <p>We're building toward a place where anyone can see where they are, choose where to go next, and find the people going there with them. You can start anywhere: a Slack thread, a GitHub issue, a calendar invite, a link a friend sent. Wherever you start, it brings you into the room with your pod, your team, your branch. And what one person learns at a branch library on a Tuesday night is something every other community can use by Wednesday.</p>
@@ -228,27 +268,27 @@ h2.act { scroll-margin-top:24px; }
   </section>
 
   <section>
-    <h2 class="act" id="follow">Follow the pod</h2>
+    <h2 class="act" id="follow"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span>Follow the pod</h2>
     <p>Everything we find goes into the pod's repo on GitHub: the research, the paradox on Nov 7, the projects that form on Nov 14, and what ships on Dec 8. Follow it and you'll see each step as it happens.</p>
-    <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding">Follow on GitHub</a>
+    <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding">Follow on GitHub<span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
     <p class="quiet">On the repo page, choose Watch, then Custom, then Issues and Pull requests. It's free; you need a GitHub account. Already in The Labs' Slack? Say hello in #c04-all.</p>
   </section>
 
   <section>
-    <h2 class="act" id="hour">Become a contributor</h2>
+    <h2 class="act" id="hour"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></span>Become a contributor</h2>
     <p>We've read 54 programs that tried something like this and mapped 50 organizations around the problem. What we're missing is people who've lived it here. You don't need to code. Pick one:</p>
-    <ul>
-      <li>Tell us about the last time you didn't know what came next at The Labs, and what you did.</li>
-      <li>If you came once and didn't come back, tell us what happened. That's the story we have least of.</li>
-      <li>List every tool you touched at The Labs, in order, from first hearing about it to your last contribution.</li>
+    <ul class="steps">
+      <li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span>Tell us about the last time you didn't know what came next at The Labs, and what you did.</span></li>
+      <li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span>If you came once and didn't come back, tell us what happened. That's the story we have least of.</span></li>
+      <li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span>List every tool you touched at The Labs, in order, from first hearing about it to your last contribution.</span></li>
     </ul>
     <p>Comment on Start here. A maintainer will reply by the next Monday with one thing to find out. What you learn goes into the record with your name on the contributors list.</p>
-    <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1">Comment on Start here</a>
+    <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1">Comment on Start here<span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
     <p class="quiet">New to GitHub? Say so in your comment. We'll walk you through it.</p>
   </section>
 
   <section>
-    <h2 class="act" id="build">Lead a project</h2>
+    <h2 class="act" id="build"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span>Lead a project</h2>
     <figure class="anim rings" aria-labelledby="rings-cap">
 <svg viewBox="0 0 600 250" role="img" aria-labelledby="rings-cap">
 <circle class="r" cx="300" cy="125" r="108"/>
@@ -260,6 +300,7 @@ h2.act { scroll-margin-top:24px; }
 <line x1="416" y1="88" x2="364" y2="98" stroke="var(--rule)"/>
 <text class="lbl-strong" x="420" y="140">Builder in residence</text>
 <line x1="416" y1="136" x2="334" y2="128" stroke="var(--rule)"/>
+<path class="ra" d="M300 30v58M294 82l6 6 6-6"/>
 <circle class="you" cx="300" cy="125" r="6"/>
 </svg>
 <figcaption id="rings-cap">Three ways in, one circle: follow, contribute, lead a project. The edge is part of the same work as the centre, and you can start at the edge.</figcaption>
@@ -267,10 +308,10 @@ h2.act { scroll-margin-top:24px; }
     <p>On Nov 14, projects form inside the pod, each led by a builder in residence. We're looking for three.</p>
     <p>A builder in residence gives 4 to 6 hours a week through Dec 8, mostly nights and weekends, with a coding agent doing the heavy lifting. Until Nov 14 you help run the research. Then you lead one project with a team you recruit, ship a working change to how The Labs runs, and present it on Dec 8 for the national core.</p>
     <p>If you've been waiting for a reason to build something real with people who'll actually use it, this is it.</p>
-    <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1">Tell a maintainer you're in</a>
+    <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1">Tell a maintainer you're in<span class="tile blue"><svg class="i up" aria-hidden="true"><use href="#a-u"/></svg></span></a>
   </section>
   <section>
-    <h2>Prototypes</h2>
+    <h2><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#fork"/></svg></span>Prototypes</h2>
     <p class="quiet">Rough probes we show people to learn how they react. Made-up data only.</p>
     <ul id="prototypes">
       <!-- PROTOTYPES: one <li> per prototype, newest first. Format:
@@ -281,7 +322,7 @@ h2.act { scroll-margin-top:24px; }
   </section>
 
   <section>
-    <h2>Where we are</h2>
+    <h2><span class="tile red" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span>Where we are</h2>
     <div class="track" aria-hidden="true"><span id="track" style="width:30%"></span></div>
     <ul id="timeline">
       <li class="when" data-d="2026-10-24"><time>Oct 24</time>Sensemaking day: we picked the problem.</li>
@@ -298,8 +339,12 @@ h2.act { scroll-margin-top:24px; }
 
 <footer>
   <div class="wrap">
+    <span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span>
+    <div>
     <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
     <p>This page is a prototype we're building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
+    <p>Palette: Swiss Style Color Picker, scheme 14, by Fabian Burghardt.</p>
+    </div>
   </div>
 </footer>
 <script>
