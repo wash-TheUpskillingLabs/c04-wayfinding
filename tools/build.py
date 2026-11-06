@@ -142,7 +142,10 @@ def linemap(secs, label="On this page"):
 
 def herebar():
     return f'''<nav class="herebar" aria-label="You are here">
-  <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true">{ic("pin")}</span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All stops</span>{ic("chev", "chev")}</button>
+  <div class="here-row">
+    <a class="here-mark" href="/"><span class="tile blue" aria-hidden="true">{ic("post")}</span><span class="t">Wayfinding</span></a>
+    <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true">{ic("pin")}</span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All stops</span>{ic("chev", "chev")}</button>
+  </div>
   <ol class="dots" id="here-dots"></ol>
   <div class="stops" id="stops" hidden><ol class="mline stops-line" id="stops-list"></ol></div>
 </nav>
