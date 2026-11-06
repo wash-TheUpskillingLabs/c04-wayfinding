@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wayfinding blog</title>
+  <subtitle>Notes from the Wayfinding pod, Build Cycle C04, The Upskilling Labs of Greater Washington.</subtitle>
+  <link href="/blog/" />
+  <link rel="self" href="/blog/feed.xml" />
+  <id>tag:c04-wayfinding,2026:blog</id>
+  <updated>2026-11-06T12:00:00-05:00</updated>
+  <author><name>The Wayfinding pod</name></author>
+  <entry>
+    <title>What 54 case studies are teaching us about wayfinding</title>
+    <link href="/blog/54-case-studies/" />
+    <id>tag:c04-wayfinding,2026-11-06:54-case-studies</id>
+    <updated>2026-11-06T12:00:00-05:00</updated>
+    <summary>Most programs design the last day. The people who stay were won on the days nobody designed. Here’s what 54 of them are teaching us.</summary>
+  </entry>
+  <entry>
+    <title>Our first prototype is a Metro map</title>
+    <link href="/blog/metro-map/" />
+    <id>tag:c04-wayfinding,2026-11-06:metro-map</id>
+    <updated>2026-11-06T12:00:00-05:00</updated>
+    <summary>An events list tells you what’s on. A map tells you whether you can get there. So the region put every library on the Metro.</summary>
+  </entry>
+</feed>
