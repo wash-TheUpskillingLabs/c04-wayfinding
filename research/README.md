@@ -4,6 +4,8 @@ Desk research logged Nov 5–6, 2026, for the archaeology step. Every claim in e
 
 ## Start here
 
+**[site-evidence.md](site-evidence.md)** is what the evidence says about recruiting volunteers online, landing pages, animated infographics and showing small-n research honestly; it informs the pod's site.
+
 **[players.md](players.md)** is the context and field map (Dorst steps 3–4), with 50 sourced field players in `players/` and two field summaries ([regional](field-map-regional.md), [national](field-map-national.md)).
 
 **[Synthesis: what the research says about the thresholds](synthesis-thresholds.md)** reads the whole library against the product The Labs is building (kits, the Cycle, pre-cycle, post- and between-cycle, facilitators, channels) and offers candidate paradoxes for the pod to test. **[Record: alumni survey, C01–C03](record-alumni-survey-2026.md)** is the one piece of internal participant evidence. **[Record: the problem owner's hypotheses](record-problem-owner-hypotheses-nov6.md)** extends #4 and is there to be tested. **[Note for the three pods](note-pod-boundaries.md)** says which pod owns which seam of the member-project idea.
