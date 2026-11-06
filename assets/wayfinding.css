@@ -15,16 +15,15 @@
      text boxes are trimmed to cap top and baseline (the ::before/::after rules below),
      line heights are multiples of 4, and every gap is measured baseline to baseline.
      A text block's margin-top is (distance from the previous baseline or edge) minus its cap height.
-   Grid: 12 columns, 24px gutters, 1200px max. Section signs take columns 1 to 3 and stay with
-   you while you read; text takes columns 4 to 10. On phones, 4 columns.
+   Grid: 12 columns, 24px gutters, 1200px max. Section signs take columns 1 to 3; text takes
+   columns 4 to 10. The You are here bar, not the signs, tracks your position. On phones, 4 columns.
 
    Wayfinding rules (tools/build.py enforces them):
      Arrows only say where a link goes. Down: this page. Right: another page here.
      Up-right: leaves this site. Up: back to the top. Left: back.
      Pictograms name sections and are never arrows. Anything clickable carries a text label;
      anything that only labels never looks clickable (no hover, no button shape).
-     Every page shows the whole route (line map), where you are (sticky sign and the
-     You are here bar, which opens every stop) and the next stop at the end of each section.
+     Every page shows where you are (the You are here bar, which opens every stop) and the next stop at the end of each section.
    Optical alignment: headings are pulled left by their first letter's side bearing (--lsb),
    bullets and tiles are centred on the cap height, not the line box.
    Corners 4px, like an enamel sign. No gradients, no shadows, no card grids.
@@ -155,7 +154,7 @@ main > .sec:first-child::before { display:none; }
 .sec > .flow > :first-child { --d:var(--capr); }
 @media (min-width:1024px) {
   .sec { padding-top:96px; padding-bottom:96px; }
-  .sign { grid-column:1 / span 3; grid-row:1; align-self:start; position:sticky; top:96px; }
+  .sign { grid-column:1 / span 3; grid-row:1; align-self:start; }
   .sign h2 { margin-top:calc(0px - var(--cap)); }
   .sign .tile { margin-top:-32px; }
   .sec > .flow > :first-child:not(p, h3, figcaption, .t) { margin-top:-24px; }

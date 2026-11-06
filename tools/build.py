@@ -15,8 +15,8 @@ The script owns the sign system, so every page follows the same rules:
   Every arrow on a link is chosen here from the link's target, never by hand.
   Pictograms name a section and are never arrows. A sign that does nothing
   never looks like a control: interactive things always carry a text label.
-  Every page shows the whole route (the line map), where you are (the sticky
-  sign, the You are here bar) and the next stop at the end of each section.
+  Every page shows where you are (the You are here bar, which opens every
+  stop) and the next stop at the end of each section.
 """
 import html, json, os, re, sys
 from datetime import date
