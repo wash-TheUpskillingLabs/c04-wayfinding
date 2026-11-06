@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What 54 programs taught us about the spaces between | Wayfinding</title>
+<meta name="description" content="Before we write a line of code, we read how everyone else lost people at the edges, and what carried the ones who stayed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/wayfinding.css">
+<link rel="alternate" type="application/atom+xml" title="Wayfinding blog" href="/blog/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="a-r" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol>
+<symbol id="a-ur" viewBox="0 0 24 24"><path d="M6 18L17 7M8 6h10v10"/></symbol>
+<symbol id="a-u" viewBox="0 0 24 24"><path d="M12 21V5M6 11l6-6 6 6"/></symbol>
+<symbol id="a-l" viewBox="0 0 24 24"><path d="M21 12H5M11 6l-6 6 6 6"/></symbol>
+<symbol id="fork" viewBox="0 0 24 24"><path d="M12 22v-7M12 15L5 8M12 15l7-7M4 12V7h5M15 7h5v5"/></symbol>
+<symbol id="post" viewBox="0 0 24 24"><path d="M12 22V2M12 5h7l3 3-3 3h-7M12 13H5l-3 3 3 3h7"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><path d="M12 8v4"/></symbol>
+<symbol id="info" viewBox="0 0 24 24"><path d="M12 10v10M9 20h6M10 10h2M12 4v2"/></symbol>
+<symbol id="ppl" viewBox="0 0 24 24"><path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/></symbol>
+<symbol id="note" viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6"/></symbol>
+</svg><div class="herebar" aria-hidden="true"><span class="tile red"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="dots" id="here-dots"></span></div>
+<header class="cover short">
+  <div class="grid">
+    <div class="signhead">
+      <a class="wordmark" href="/"><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span><span><span class="t wordmark-t wm">Wayfinding</span><span class="t t-small sub">A Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington</span></span></a>
+      <div class="signright">
+        <nav class="sitenav" aria-label="Site"><a href="/"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t">The pod</span></a><a href="/blog/" aria-current="page"><svg class="i" aria-hidden="true"><use href="#note"/></svg><span class="t">Blog</span></a></nav>
+        <div class="signrow" aria-hidden="true"><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><span class="tile red"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="grid hero">
+    <h1 style="--lsb:0.023em">What 54 programs taught us about the spaces between</h1>
+    <p class="t-lead dek">Before we write a line of code, we read how everyone else lost people at the edges, and what carried the ones who stayed.</p>
+    <p class="t-small byline">The Wayfinding pod, <time datetime="2026-11-06">Nov 6, 2026</time>. A three-minute read.</p>
+  </div>
+</header>
+
+<main id="main">
+  <section class="sec grid" aria-labelledby="first">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#info"/></svg></span><h2 id="first" style="--lsb:0.023em">Why we read first</h2></div>
+    <div class="flow">
+      <p>The Labs builds in a fixed order, and the first step is archaeology: before we decide what the problem is, we find out how it became one and what’s already been tried. So before the pod writes its paradox on Saturday, Nov 7, we read 54 programs that tried to move people from a first taste to lasting involvement, from Google Summer of Code to 4-H, and mapped 50 organizations doing related work in Greater Washington and nationally.</p>
+      <p>This post is what kept coming up. It’s a reading, not a conclusion. The paradox, and the frames that follow it, are the pod’s to write.</p>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="cliff">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span><h2 id="cliff" style="--lsb:0.057em">Everyone has the cliff</h2></div>
+    <div class="flow">
+      <p>Every program we read loses most people at the moment it ends. In Google Summer of Code, about 57% of students said they meant to keep contributing; a few months later, about 16% had.<sup><a href="#s1">1</a></sup> Of the projects from 73 hackathons, about a third had any commit after the event, and fewer than 4 in 100 were still active five months later.<sup><a href="#s2">2</a></sup></p>
+      <p>The part that stuck with us: saying you’ll stay doesn’t predict staying. In the hackathon study, a team’s stated intent to continue made no measurable difference. A route that depends on people deciding to come back is a route most people won’t take.</p>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="before">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><h2 id="before" style="--lsb:0.023em">What predicts staying happens before day one</h2></div>
+    <div class="flow">
+      <p>In both the Summer of Code data and a closer study of KDE, the students most likely to stay after the program were the ones who had already contributed before it.<sup><a href="#s1">1</a></sup> Hackathon projects lasted longer when the team’s skills were diverse and matched to the work.<sup><a href="#s2">2</a></sup> Both are settled before the event starts.</p>
+      <p>For The Labs, that points at the part we haven’t built. The Cycle is our front door today, and there’s no pre-cycle: nothing that gets someone ready, attached to a person, and doing small real work before day one.</p>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="person">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><h2 id="person" style="--lsb:0.023em">A message works when someone is behind it</h2></div>
+    <div class="flow">
+      <p>Text reminders over the summer helped admitted students actually start college, in the first trials, where counselors stood behind the texts. When campaigns scaled statewide and nationally, the effect mostly disappeared; the researcher’s own explanation is that the advising was dropped and students didn’t know or trust the sender.<sup><a href="#s3">3</a></sup></p>
+      <p>Wikipedia saw the same thing from the other side. Its newcomers were turned away by semi-automated rejection tools, and newcomers invited to the Teahouse, a help space run by people, stayed at higher rates.<sup><a href="#s4">4</a></sup> Notifications are cheap. The person is the point.</p>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="outlast">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><h2 id="outlast" style="--lsb:0.032em">The people outlast the project</h2></div>
+    <div class="flow">
+      <p>Our own alumni survey says it plainly. Asked what mattered most, almost everyone named the people. Of the eleven who joined a team, seven are still in touch with it months later.<sup><a href="#s5">5</a></sup> What ended was the shared work.</p>
+      <p>That changes what a route after the Cycle might be. Maybe not “keep your project alive”, but a visible next place to go, with people you already know.</p>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="single">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#fork"/></svg></span><h2 id="single" style="--lsb:0.04em">One leader is one point of failure</h2></div>
+    <div class="flow">
+      <p>Code Club was designed to be volunteer-led; in its trial, 10 of 14 club leaders ran the club alone.<sup><a href="#s6">6</a></sup> A third of trained Carpentries instructors hadn’t taught.<sup><a href="#s7">7</a></sup> FIRST robotics teams, 4-H clubs and open-source projects all lean on one person, and fold when that person goes.</p>
+      <p>NaNoWriMo, the November novel-writing challenge, ran on hundreds of volunteer regional leads and closed in 2025. Some of its local regions kept going under new names, on channels they owned.<sup><a href="#s8">8</a></sup> The local layer outlived the hub.</p>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="unknown">
+    <div class="sign"><span class="tile red" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><h2 id="unknown" style="--lsb:0.023em">What we don’t know yet</h2></div>
+    <div class="flow">
+      <p>Everyone who answered our survey is someone who stayed. We haven’t heard from people who came to one workshop and didn’t come back, and they’re the ones this work is for.</p>
+      <p>If that’s you, or you know them, <a href="/#contribute">tell us what happened</a>. You don’t need to code, and what you tell us goes into the record with your name on the contributors list.</p>
+      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1"><span class="t">Comment on Start here</span><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="sources">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#note"/></svg></span><h2 id="sources" style="--lsb:0.035em">Sources</h2></div>
+    <div class="flow">
+      <p class="t-small quiet">Each note links to the pod’s research file, which links to the original studies. We read some figures through a summarizing tool; if you spot one that’s off, tell us.</p>
+      <ol class="rows src">
+        <li id="s1"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/case-gsoc-outreachy-retention.md">Google Summer of Code and Outreachy retention</a></span></li>
+        <li id="s2"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/case-hackathons-and-sprints.md">Hackathons and sprints</a></span></li>
+        <li id="s3"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/case-summer-melt.md">Summer melt text reminders</a></span></li>
+        <li id="s4"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/case-wikipedia-newcomer-decline.md">Wikipedia newcomer decline</a></span></li>
+        <li id="s5"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/record-alumni-survey-2026.md">The Labs alumni survey, 2026</a></span></li>
+        <li id="s6"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/case-code-club-coderdojo.md">Code Club and CoderDojo</a></span></li>
+        <li id="s7"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/case-carpentries-instructor-pipeline.md">The Carpentries instructor pipeline</a></span></li>
+        <li id="s8"><span class="t t-small"><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/case-nanowrimo.md">NaNoWriMo</a></span></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="grid">
+    <span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span>
+    <div class="flow t-small">
+      <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
+      <p>This site is a prototype we're building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
+      <p>Set in Inter. Palette: Swiss Style Color Picker, scheme 14, by Fabian Burghardt.</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/wayfinding.js" defer></script>
+</body>
+</html>

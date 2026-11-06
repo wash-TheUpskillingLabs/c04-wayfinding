@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wayfinding blog</title>
+  <subtitle>Notes from the Wayfinding pod, Build Cycle C04, The Upskilling Labs of Greater Washington.</subtitle>
+  <link href="/blog/" />
+  <link rel="self" href="/blog/feed.xml" />
+  <id>tag:c04-wayfinding,2026:blog</id>
+  <updated>2026-11-06T12:00:00-05:00</updated>
+  <author><name>The Wayfinding pod</name></author>
+  <entry>
+    <title>What 54 programs taught us about the spaces between</title>
+    <link href="/blog/the-spaces-between/" />
+    <id>tag:c04-wayfinding,2026-11-06:the-spaces-between</id>
+    <updated>2026-11-06T12:00:00-05:00</updated>
+    <summary>Before we write a line of code, we read how everyone else lost people at the edges, and what carried the ones who stayed.</summary>
+  </entry>
+</feed>
