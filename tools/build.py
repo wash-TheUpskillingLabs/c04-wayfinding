@@ -117,7 +117,7 @@ def head(title, desc, path):
 {sprite()}'''
 
 def sitenav(current):
-    items = [("/", "The pod"), ("/blog/", "Blog")]
+    items = [("/", "The pod"), ("/about/", "About"), ("/blog/", "Blog")]
     out = []
     for href, label in items:
         cur = current == href or (href == "/blog/" and current.startswith("/blog/"))
@@ -274,6 +274,22 @@ def build_blog(ps):
     page += "</main>\n\n" + footer()
     return page
 
+def build_about(ps):
+    secs = sections(os.path.join(C, "about"))
+    page = head("About | Wayfinding", "About the Wayfinding pod: what we believe, where people get lost at The Labs, how we work and what we're building.", "/about/")
+    page += herebar() + f'''<header class="cover short" id="top">
+{signhead("/about/")}  <div class="grid hero">
+    <h1{lsb("About")}>About the pod</h1>
+    <p class="t-lead dek">Wayfinding is one of three Research Pods in Build Cycle C04. We study how people find their way between the parts of The Labs, and build what helps them choose the route that fits.</p>
+  </div>
+</header>
+
+<main id="main">
+'''
+    page += "".join(section(s, secs[i + 1] if i + 1 < len(secs) else None) for i, s in enumerate(secs))
+    page += "</main>\n\n" + footer()
+    return page
+
 def build_404():
     secs = [{"id": "routes", "title": "Ways back", "short": "Ways back", "icon": "post", "tile": "blue", "body": f'''<ul class="rows routes">
   <li><a class="route-link" href="/"><span class="t">The pod’s home page</span>{ic("a-r")}</a><span class="t t-small quiet">What we’re working on and how to join.</span></li>
@@ -325,6 +341,7 @@ def write(rel, text):
 if __name__ == "__main__":
     ps = posts()
     write("index.html", build_home(ps))
+    write("about/index.html", build_about(ps))
     write("blog/index.html", build_blog(ps))
     for p in ps: write(f"blog/{p['slug']}/index.html", build_post(p))
     write("blog/feed.xml", build_feed(ps))
