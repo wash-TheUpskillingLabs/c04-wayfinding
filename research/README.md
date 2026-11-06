@@ -41,4 +41,28 @@ Desk research logged Nov 5, 2026, for the archaeology step. Every claim in each 
 | [English Wikipedia, rejecting good-faith newcomers, then trying to welcome them back](case-wikipedia-newcomer-decline.md) | failure (also paradigmatic: the most-studied newcomer decline in open collaboration) | pre-cycle, post-cycle, facilitators, interfaces |
 | [Theory: Calm technology, information scent, and designing across channels](theory-calm-and-multichannel.md) |  | interfaces, activation-mobilization, pre-cycle, post-cycle |
 
+## Field validation
+
+Cases that test whether the **seeing** theme holds outside The Labs. Four claims:
+
+1. **It's structural:** adaptive, self-directed, volunteer-run communities generally hit visibility problems at thresholds. (Test with the cases above.)
+2. **The field needs to see:** funders, libraries, workforce boards and employers can't back, host, refer or hire without a legible picture of what happened to people.
+3. **The field has already tried legibility systems,** and they failed in known ways.
+4. **Being seen by the field turns into standing:** outside parties read the record and act on it.
+
+| File | Field claims | Evidence |
+|---|---|---|
+| [IMLS and the Public Libraries Survey, a national system that counts programs and attendance](case-imls-library-counts.md) | 2, 3 | complicates 2 |
+| [U.S. foundations and grantee reporting, from outcome demands to "trust-based" simplification](case-philanthropy-reporting-shift.md) | 2, 3, 4 | contradicts 4 |
+| [Public Library Association's Project Outcome, a standard outcome survey for library programs](case-pla-project-outcome.md) | 2, 3, 4 | complicates 2 |
+| [Federal workforce system (WIA/WIOA), counting people after they exit](case-wioa-performance-measures.md) | 2, 3, 4 | supports 2 |
+| [Alabama Talent Triad, a state-run skills registry, job-description generator and learner wallet](case-alabama-talent-triad.md) | 2, 3, 4 | supports 3; supports 2 in reverse |
+| [Comprehensive Learner Record (AACRAO, NASPA, 1EdTech), a fuller transcript that records learning outside courses](case-comprehensive-learner-record.md) | 2, 3, 4 | supports 3; complicates 2 and 4 |
+| [Credential Engine, counting and registering every US credential to make them comparable](case-credential-engine.md) | 2, 3 | supports 3; complicates 2 |
+| [Learning and Employment Records (US), portable digital skill records piloted with employers](case-learning-employment-records.md) | 2, 3, 4 | supports 3; complicates 2; contradicts 4 |
+| [GitHub and open-source activity, a public work record that hiring managers read](case-github-activity-traces.md) | 4, 3 | supports 4 narrowly; complicates 4 on depth. Employers do read public activity traces and act on them, but mostly skim volume, recency and project reputation rather than the content of the work, and still require interviews |
+| [Certificates, microcredentials and online credentials, do employers call back?](case-microcredentials-employer-response.md) | 4, 3 | mixed; contradicts 4 for added certificates on résumés in a US audit |
+| [Opportunity@Work, naming "STARs" and the "paper ceiling" to make non-degree workers visible](case-opportunity-at-work-stars.md) | 2, 4 | supports 2 |
+| [US employers and skills-based hiring, dropping degree requirements on paper vs. in hiring](case-skills-based-hiring-practice.md) | 2, 4 | complicates 2; contradicts 4 at scale. Most firms that removed degree requirements from postings kept hiring degree holders, so a changed signal on the employer side did not change who was hired |
+
 **Open item from #4:** no source found yet for Netflix designers using "plumbing" for get-people-to-what's-next infrastructure. The only hit was a Netflix design director using the word in a design-tool testimonial, in a different sense. Don't cite it until it's found.
