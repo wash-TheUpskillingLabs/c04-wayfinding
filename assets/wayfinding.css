@@ -365,3 +365,7 @@ sup a:hover { color:var(--ink); }
 .stops-line li > .t, .stops-line li[data-s="done"] > .t { color:var(--on-ink); }
 .stops-line li[data-s="done"] > .t { color:var(--on-ink-2); }
 .linemap a[aria-current] .stn { background:var(--red); }
+.flow > :is(p, figure, ul, ol, .btn, .ctas, .crow, figcaption) + :is(h3, .h3) { --d:72px; }
+.flow > h3 + * { --d:32px; }
+.flow > h3 + :is(p, .t) { --d:40px; }
+.plan > li > .t b { font-weight:800; }

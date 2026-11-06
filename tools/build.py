@@ -52,6 +52,8 @@ ICONS = {
     "calendar": '<path d="M3 5h18v16H3zM3 10h18M8 2v5M16 2v5"/>',
     "link": '<path d="M9 7a5 5 0 1 0 0 10M15 7a5 5 0 1 1 0 10M8 12h8"/>',
     "one": '<path d="M12 3v4M7 21v-6a5 5 0 0 1 10 0v6"/>',
+    "compass": '<path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+    "tool": '<path d="M14.5 6.5a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8-1.5-1.5a4 4 0 0 1-5-5L13 2z"/><path d="M3 21l6-6"/>',
     "question": '<path d="M8.5 8.5a3.5 3.5 0 1 1 5 3.2c-1 .5-1.5 1.2-1.5 2.3v1M12 19v2"/>',
 }
 
@@ -211,7 +213,7 @@ def build_home(ps):
     page += herebar() + f'''<header class="cover" id="top">
 {signhead("/")}  <div class="grid hero">
     <h1{lsb(h1)}>{h1}</h1>
-    <p class="t-lead sub">We’re rebuilding how The Labs gets people from their first workshop to their next step. Follow along, become a contributor, or lead one of the projects.</p>
+    <p class="t-lead sub">Anyone should be able to see where they are and choose where to go next. We’re rebuilding The Labs so they can, from the first workshop to whatever comes after. Follow along, contribute, or lead a project.</p>
     <div class="ctas">
       <a class="btn light" href="#follow"><span class="t">Follow the pod</span><span class="tile blue">{ic("a-d", "down")}</span></a>
       <a class="link" href="#contribute">{ic("a-d", "down")}<span class="t">Become a contributor</span></a>
