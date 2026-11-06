@@ -2,5 +2,8 @@
  "title": "Our first prototype is a Metro map",
  "dek": "An events list tells you what’s on. A map tells you whether you can get there. So the region put every library on the Metro.",
  "date": "2026-11-06",
- "byline": "The Wayfinding pod"
+ "byline": "The Wayfinding pod",
+ "icon": "pin",
+ "cover": "/assets/proto-labs-map.webp",
+ "cover_alt": "The labs map: every library in Greater Washington on the Metrorail lines."
 }
