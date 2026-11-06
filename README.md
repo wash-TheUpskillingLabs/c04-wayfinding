@@ -183,7 +183,7 @@ Licensed [CC BY 4.0](LICENSE): share it, adapt it, credit us.
 
 ## The site
 
-The pod's site is a working example of what it studies: every page shows where you are (the You are here bar, which opens every stop) and the next stop at the end of every section. The footer explains the signs.
+The pod's site is a working example of what it studies: every page shows where you are (the You are here bar, which opens every stop) and otherwise stays quiet, with space instead of rules between sections. The footer explains the signs.
 
 - **Edit the words** in `content/`. Each section of a page is one file; the comment at its top gives its title, a short name for route maps, and its pictogram.
 - **Write a blog post** by adding a folder to `content/blog/` with a `post.json` (title, dek, date, byline) and one file per section.

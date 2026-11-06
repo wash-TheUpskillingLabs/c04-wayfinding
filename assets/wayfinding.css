@@ -62,6 +62,11 @@ body, .t, p, h1, h2, h3, figcaption, .t-small, .t-lead { font-size:var(--fs); li
 /* Trim each text box to cap top and baseline. (Inter: ascent .9688em, descent .2412em, cap .7275em.) */
 .t::before, p::before, h1::before, h2::before, h3::before, figcaption::before { content:""; display:table; height:0; margin-bottom:calc(var(--fs) * .3638 - var(--lh) / 2); }
 .t::after, p::after, h1::after, h2::after, h3::after, figcaption::after { content:""; display:table; height:0; margin-top:calc(var(--fs) * .3638 - var(--lh) / 2); }
+/* Rounded to whole pixels where supported, so text blocks are exact and nothing drifts down a long page. */
+@supports (margin-top: round(nearest, 1.5px, 1px)) {
+  .t::before, p::before, h1::before, h2::before, h3::before, figcaption::before { margin-bottom:round(nearest, calc(var(--fs) * .3638 - var(--lh) / 2), 1px); }
+  .t::after, p::after, h1::after, h2::after, h3::after, figcaption::after { margin-top:round(nearest, calc(var(--fs) * .3638 - var(--lh) / 2), 1px); }
+}
 
 h1, h2, h3 { font-weight:800; margin-left:calc(var(--lsb, .057em) * -1); text-wrap:balance; }
 h1 { letter-spacing:-.025em; }
@@ -408,3 +413,13 @@ main { padding-bottom:128px; }
 .way > .btn { margin-top:24px; }
 .flow > .ways + p { --d:44px; }
 .flow > .ways + p.t-small { --d:44px; }
+
+/* More ma */
+@media (min-width:1024px) { .sec { padding-top:256px; } main > .sec:first-child { padding-top:192px; } main { padding-bottom:256px; } }
+.flow > .crow + .crow { --d:56px; }
+.flow > p + p { --d:48px; }
+figure.proto img.snap { display:block; width:100%; height:auto; border-radius:var(--r); }
+@supports (height: round(down, 10px, 4px)) { figure.proto img.snap { height:round(down, calc(100cqi * var(--ar)), 4px); object-fit:cover; } }
+figure.proto a { display:block; }
+figure.proto a:focus-visible { outline-offset:6px; }
+.flow > figure + p { --d:44px; }

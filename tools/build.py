@@ -15,8 +15,9 @@ The script owns the sign system, so every page follows the same rules:
   Every arrow on a link is chosen here from the link's target, never by hand.
   Pictograms name a section and are never arrows. A sign that does nothing
   never looks like a control: interactive things always carry a text label.
-  Every page shows where you are (the You are here bar, which opens every
-  stop) and the next stop at the end of each section.
+  Every page shows where you are: the You are here bar names the section and
+  opens every stop. Otherwise the page stays quiet (ma): space, not rules,
+  separates sections.
 """
 import html, json, os, re, sys
 from datetime import date
@@ -154,11 +155,9 @@ def herebar():
 def section(s, nxt):
     tile = f' {s["tile"]}' if s.get("tile") else ""
     body = fix_links(s["body"])
-    if nxt:
-        follow = f'<a class="next" href="#{nxt["id"]}"><span class="t t-small">Next stop</span><span class="t">{nxt["title"]}</span>{ic("a-d")}</a>'
-    else:
-        follow = f'<a class="next" href="#top"><span class="t t-small">End of the line</span><span class="t">Back to the top</span>{ic("a-u")}</a>'
-    body = "\n".join("      " + line for line in (body + "\n" + follow).splitlines())
+    # Ma: no per-section "next stop". The page reads in order, and the
+    # You are here bar names where you are and opens every stop.
+    body = "\n".join("      " + line for line in body.splitlines())
     return f'''  <section class="sec grid" aria-labelledby="{s["id"]}">
     <div class="sign"><span class="tile{tile}" aria-hidden="true">{ic(s["icon"])}</span><h2 id="{s["id"]}"{lsb(s["title"])}>{s["title"]}</h2></div>
     <div class="flow">
@@ -218,7 +217,6 @@ def build_home(ps):
     <p class="t-lead sub">We’re rebuilding how The Labs gets people from their first workshop to whatever comes next.</p>
     <div class="ctas">
       <a class="btn light" href="#ways"><span class="t">Find your way in</span><span class="tile blue">{ic("a-d", "down")}</span></a>
-      <p class="t-small way-hint">Three ways in, from one minute to a few hours a week.</p>
     </div>
   </div>
 </header>
