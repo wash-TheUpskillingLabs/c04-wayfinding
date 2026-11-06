@@ -18,6 +18,8 @@
    Structure comes from spacing and hairline rules. Lists are lists, not card grids.
    Don't: all-caps eyebrows, meta strings joined with middle dots, arrows appended to links,
    gradient text, glow blobs, coloured left borders, 01/02/03 numbering, fade-up reveals.
+   Motion only where the data moves: a diagram may animate the change it shows, once, on first view,
+   under 400ms a stage, and must read complete with motion off (prefers-reduced-motion) and with no script.
    Voice: the friend who went first. Dry, specific, generous. Names and dates, never adjectives. */
 :root {
   --ink:#00141b; --navy:#03232a; --forest:#005f68; --teal:#0094a0; --teal-deep:#007882;
@@ -63,6 +65,38 @@ footer { background:var(--navy); color:var(--on-dark-2); font-size:15px; line-he
 footer a { color:var(--on-dark); }
 footer p { color:inherit; margin:0 0 8px; }
 @media (prefers-reduced-motion: no-preference) { a, .btn { transition:background .15s cubic-bezier(.32,.72,0,1), color .15s cubic-bezier(.32,.72,0,1); } }
+
+/* Diagrams. End state is the default; script adds .pre then .in to play the change once. */
+figure { margin:8px 0 28px; }
+figure svg { display:block; width:100%; height:auto; }
+.crow { margin:0 0 18px; } .crow svg { max-width:360px; margin:6px 0 4px; }
+.clab { font-size:15px; line-height:22px; font-weight:600; margin:0; }
+.csrc { font-size:13px; line-height:20px; color:var(--on-paper-2); margin:0; }
+.joints svg { max-width:520px; }
+.rings svg { max-width:520px; }
+figcaption { font-size:15px; line-height:24px; color:var(--on-paper-2); margin-top:12px; }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.lbl { font-family:var(--font); font-size:13px; fill:var(--on-paper-2); }
+.lbl-strong { font-family:var(--font); font-size:13px; font-weight:600; fill:var(--on-paper); }
+.cliff .d { fill:var(--teal-deep); opacity:.16; }
+.cliff .k { fill:var(--teal-deep); }
+.joints .m { fill:var(--teal-deep); }
+.joints .o { fill:var(--on-paper-2); opacity:.45; }
+.rings .r { fill:none; stroke:var(--rule); stroke-width:1; }
+.rings .you { fill:var(--gold); }
+.track { position:relative; height:2px; background:var(--rule); margin:4px 0 20px; }
+.track span { position:absolute; left:0; top:0; bottom:0; background:var(--teal-deep); }
+li.when.now time { color:var(--on-paper); font-weight:600; }
+@media (prefers-reduced-motion: no-preference) {
+  .pre.cliff .d { opacity:1; }
+  .in.cliff .d { opacity:.16; transition:opacity .35s cubic-bezier(.32,.72,0,1); }
+  .in.cliff .row1 .d { transition-delay:.1s; } .in.cliff .row2 .d { transition-delay:.6s; } .in.cliff .row3 .d { transition-delay:1.1s; }
+  .pre.joints circle { transform:translate(var(--dx),var(--dy)); opacity:0; }
+  .in.joints circle { transition:transform .38s cubic-bezier(.32,.72,0,1), opacity .2s; transition-delay:calc(var(--i) * 90ms); }
+  .pre.rings .you { transform:translate(0,-108px); }
+  .in.rings .you { animation:inward 1.2s cubic-bezier(.32,.72,0,1) forwards; }
+  @keyframes inward { 0%{transform:translate(0,-108px)} 33%{transform:translate(0,-72px)} 66%{transform:translate(0,-36px)} 100%{transform:translate(0,0)} }
+}
 </style>
 </head>
 <body>
@@ -94,28 +128,103 @@ footer p { color:inherit; margin:0 0 8px; }
 <main class="wrap">
   <section>
     <h2>Why this problem</h2>
-    <p>Every cohort, problem and person is different, so the experience adapts. Participants can't feel progress in something that keeps changing, and funders can't back what they can't point to. We're finding out how to make progress visible without freezing it.</p>
-    <!-- MAINTAINER: replace the paragraph above with your own explainer. What you saw on sensemaking day, who it affects, why it matters. Your words, not ours. -->
-    <p class="quiet">We're one of three Research Pods in Build Cycle C04, six weeks in which neighbors pick a hard problem about The Labs, research it properly, and build something real in response. Oct 24 to Dec 8, 2026.</p>
+    <p>The Upskilling Labs started in DC Public Library branches in 2025. In under a year, run entirely on volunteer hours, about a thousand people have come through a pilot and three Build Cycles.</p>
+    <p>When people tell us what got in their way, it's rarely what happened in the room. It's the spaces between: how to get started, what to do this week, how to join a team, where to go when the Cycle ends. Much of that comes from tools and platforms we built in a hurry, while running Cycles at the same time.</p>
+    <p>This fall, for the first time, we're running a Cycle on The Labs itself, so we can fix the gaps instead of putting out fires every day.</p>
+  </section>
+
+  <section>
+    <h2>What Wayfinding works on</h2>
+    <p>The moments between the parts of The Labs: the first time someone walks in, getting ready for a Cycle, the weeks between sessions, joining a team, the end of a Cycle and whatever comes after.</p>
+    <p>It isn't just us. Programs everywhere lose most people at the edges.</p>
+    <figure class="anim cliff" aria-labelledby="cliff-cap">
+<div class="row1 crow"><p class="clab">Google Summer of Code students: about 16 in 100 kept contributing afterward.</p><svg viewBox="0 0 300 48" aria-hidden="true"><circle class="k" cx="6" cy="6" r="4"/><circle class="k" cx="18" cy="6" r="4"/><circle class="k" cx="30" cy="6" r="4"/><circle class="k" cx="42" cy="6" r="4"/><circle class="k" cx="54" cy="6" r="4"/><circle class="k" cx="66" cy="6" r="4"/><circle class="k" cx="78" cy="6" r="4"/><circle class="k" cx="90" cy="6" r="4"/><circle class="k" cx="102" cy="6" r="4"/><circle class="k" cx="114" cy="6" r="4"/><circle class="k" cx="126" cy="6" r="4"/><circle class="k" cx="138" cy="6" r="4"/><circle class="k" cx="150" cy="6" r="4"/><circle class="k" cx="162" cy="6" r="4"/><circle class="k" cx="174" cy="6" r="4"/><circle class="k" cx="186" cy="6" r="4"/><circle class="d" cx="198" cy="6" r="4"/><circle class="d" cx="210" cy="6" r="4"/><circle class="d" cx="222" cy="6" r="4"/><circle class="d" cx="234" cy="6" r="4"/><circle class="d" cx="246" cy="6" r="4"/><circle class="d" cx="258" cy="6" r="4"/><circle class="d" cx="270" cy="6" r="4"/><circle class="d" cx="282" cy="6" r="4"/><circle class="d" cx="294" cy="6" r="4"/><circle class="d" cx="6" cy="18" r="4"/><circle class="d" cx="18" cy="18" r="4"/><circle class="d" cx="30" cy="18" r="4"/><circle class="d" cx="42" cy="18" r="4"/><circle class="d" cx="54" cy="18" r="4"/><circle class="d" cx="66" cy="18" r="4"/><circle class="d" cx="78" cy="18" r="4"/><circle class="d" cx="90" cy="18" r="4"/><circle class="d" cx="102" cy="18" r="4"/><circle class="d" cx="114" cy="18" r="4"/><circle class="d" cx="126" cy="18" r="4"/><circle class="d" cx="138" cy="18" r="4"/><circle class="d" cx="150" cy="18" r="4"/><circle class="d" cx="162" cy="18" r="4"/><circle class="d" cx="174" cy="18" r="4"/><circle class="d" cx="186" cy="18" r="4"/><circle class="d" cx="198" cy="18" r="4"/><circle class="d" cx="210" cy="18" r="4"/><circle class="d" cx="222" cy="18" r="4"/><circle class="d" cx="234" cy="18" r="4"/><circle class="d" cx="246" cy="18" r="4"/><circle class="d" cx="258" cy="18" r="4"/><circle class="d" cx="270" cy="18" r="4"/><circle class="d" cx="282" cy="18" r="4"/><circle class="d" cx="294" cy="18" r="4"/><circle class="d" cx="6" cy="30" r="4"/><circle class="d" cx="18" cy="30" r="4"/><circle class="d" cx="30" cy="30" r="4"/><circle class="d" cx="42" cy="30" r="4"/><circle class="d" cx="54" cy="30" r="4"/><circle class="d" cx="66" cy="30" r="4"/><circle class="d" cx="78" cy="30" r="4"/><circle class="d" cx="90" cy="30" r="4"/><circle class="d" cx="102" cy="30" r="4"/><circle class="d" cx="114" cy="30" r="4"/><circle class="d" cx="126" cy="30" r="4"/><circle class="d" cx="138" cy="30" r="4"/><circle class="d" cx="150" cy="30" r="4"/><circle class="d" cx="162" cy="30" r="4"/><circle class="d" cx="174" cy="30" r="4"/><circle class="d" cx="186" cy="30" r="4"/><circle class="d" cx="198" cy="30" r="4"/><circle class="d" cx="210" cy="30" r="4"/><circle class="d" cx="222" cy="30" r="4"/><circle class="d" cx="234" cy="30" r="4"/><circle class="d" cx="246" cy="30" r="4"/><circle class="d" cx="258" cy="30" r="4"/><circle class="d" cx="270" cy="30" r="4"/><circle class="d" cx="282" cy="30" r="4"/><circle class="d" cx="294" cy="30" r="4"/><circle class="d" cx="6" cy="42" r="4"/><circle class="d" cx="18" cy="42" r="4"/><circle class="d" cx="30" cy="42" r="4"/><circle class="d" cx="42" cy="42" r="4"/><circle class="d" cx="54" cy="42" r="4"/><circle class="d" cx="66" cy="42" r="4"/><circle class="d" cx="78" cy="42" r="4"/><circle class="d" cx="90" cy="42" r="4"/><circle class="d" cx="102" cy="42" r="4"/><circle class="d" cx="114" cy="42" r="4"/><circle class="d" cx="126" cy="42" r="4"/><circle class="d" cx="138" cy="42" r="4"/><circle class="d" cx="150" cy="42" r="4"/><circle class="d" cx="162" cy="42" r="4"/><circle class="d" cx="174" cy="42" r="4"/><circle class="d" cx="186" cy="42" r="4"/><circle class="d" cx="198" cy="42" r="4"/><circle class="d" cx="210" cy="42" r="4"/><circle class="d" cx="222" cy="42" r="4"/><circle class="d" cx="234" cy="42" r="4"/><circle class="d" cx="246" cy="42" r="4"/><circle class="d" cx="258" cy="42" r="4"/><circle class="d" cx="270" cy="42" r="4"/><circle class="d" cx="282" cy="42" r="4"/><circle class="d" cx="294" cy="42" r="4"/></svg><p class="csrc">Silva et al., student and mentor surveys</p></div>
+<div class="row2 crow"><p class="clab">Hackathon projects: about 4 in 100 still active five months later.</p><svg viewBox="0 0 300 48" aria-hidden="true"><circle class="k" cx="6" cy="6" r="4"/><circle class="k" cx="18" cy="6" r="4"/><circle class="k" cx="30" cy="6" r="4"/><circle class="k" cx="42" cy="6" r="4"/><circle class="d" cx="54" cy="6" r="4"/><circle class="d" cx="66" cy="6" r="4"/><circle class="d" cx="78" cy="6" r="4"/><circle class="d" cx="90" cy="6" r="4"/><circle class="d" cx="102" cy="6" r="4"/><circle class="d" cx="114" cy="6" r="4"/><circle class="d" cx="126" cy="6" r="4"/><circle class="d" cx="138" cy="6" r="4"/><circle class="d" cx="150" cy="6" r="4"/><circle class="d" cx="162" cy="6" r="4"/><circle class="d" cx="174" cy="6" r="4"/><circle class="d" cx="186" cy="6" r="4"/><circle class="d" cx="198" cy="6" r="4"/><circle class="d" cx="210" cy="6" r="4"/><circle class="d" cx="222" cy="6" r="4"/><circle class="d" cx="234" cy="6" r="4"/><circle class="d" cx="246" cy="6" r="4"/><circle class="d" cx="258" cy="6" r="4"/><circle class="d" cx="270" cy="6" r="4"/><circle class="d" cx="282" cy="6" r="4"/><circle class="d" cx="294" cy="6" r="4"/><circle class="d" cx="6" cy="18" r="4"/><circle class="d" cx="18" cy="18" r="4"/><circle class="d" cx="30" cy="18" r="4"/><circle class="d" cx="42" cy="18" r="4"/><circle class="d" cx="54" cy="18" r="4"/><circle class="d" cx="66" cy="18" r="4"/><circle class="d" cx="78" cy="18" r="4"/><circle class="d" cx="90" cy="18" r="4"/><circle class="d" cx="102" cy="18" r="4"/><circle class="d" cx="114" cy="18" r="4"/><circle class="d" cx="126" cy="18" r="4"/><circle class="d" cx="138" cy="18" r="4"/><circle class="d" cx="150" cy="18" r="4"/><circle class="d" cx="162" cy="18" r="4"/><circle class="d" cx="174" cy="18" r="4"/><circle class="d" cx="186" cy="18" r="4"/><circle class="d" cx="198" cy="18" r="4"/><circle class="d" cx="210" cy="18" r="4"/><circle class="d" cx="222" cy="18" r="4"/><circle class="d" cx="234" cy="18" r="4"/><circle class="d" cx="246" cy="18" r="4"/><circle class="d" cx="258" cy="18" r="4"/><circle class="d" cx="270" cy="18" r="4"/><circle class="d" cx="282" cy="18" r="4"/><circle class="d" cx="294" cy="18" r="4"/><circle class="d" cx="6" cy="30" r="4"/><circle class="d" cx="18" cy="30" r="4"/><circle class="d" cx="30" cy="30" r="4"/><circle class="d" cx="42" cy="30" r="4"/><circle class="d" cx="54" cy="30" r="4"/><circle class="d" cx="66" cy="30" r="4"/><circle class="d" cx="78" cy="30" r="4"/><circle class="d" cx="90" cy="30" r="4"/><circle class="d" cx="102" cy="30" r="4"/><circle class="d" cx="114" cy="30" r="4"/><circle class="d" cx="126" cy="30" r="4"/><circle class="d" cx="138" cy="30" r="4"/><circle class="d" cx="150" cy="30" r="4"/><circle class="d" cx="162" cy="30" r="4"/><circle class="d" cx="174" cy="30" r="4"/><circle class="d" cx="186" cy="30" r="4"/><circle class="d" cx="198" cy="30" r="4"/><circle class="d" cx="210" cy="30" r="4"/><circle class="d" cx="222" cy="30" r="4"/><circle class="d" cx="234" cy="30" r="4"/><circle class="d" cx="246" cy="30" r="4"/><circle class="d" cx="258" cy="30" r="4"/><circle class="d" cx="270" cy="30" r="4"/><circle class="d" cx="282" cy="30" r="4"/><circle class="d" cx="294" cy="30" r="4"/><circle class="d" cx="6" cy="42" r="4"/><circle class="d" cx="18" cy="42" r="4"/><circle class="d" cx="30" cy="42" r="4"/><circle class="d" cx="42" cy="42" r="4"/><circle class="d" cx="54" cy="42" r="4"/><circle class="d" cx="66" cy="42" r="4"/><circle class="d" cx="78" cy="42" r="4"/><circle class="d" cx="90" cy="42" r="4"/><circle class="d" cx="102" cy="42" r="4"/><circle class="d" cx="114" cy="42" r="4"/><circle class="d" cx="126" cy="42" r="4"/><circle class="d" cx="138" cy="42" r="4"/><circle class="d" cx="150" cy="42" r="4"/><circle class="d" cx="162" cy="42" r="4"/><circle class="d" cx="174" cy="42" r="4"/><circle class="d" cx="186" cy="42" r="4"/><circle class="d" cx="198" cy="42" r="4"/><circle class="d" cx="210" cy="42" r="4"/><circle class="d" cx="222" cy="42" r="4"/><circle class="d" cx="234" cy="42" r="4"/><circle class="d" cx="246" cy="42" r="4"/><circle class="d" cx="258" cy="42" r="4"/><circle class="d" cx="270" cy="42" r="4"/><circle class="d" cx="282" cy="42" r="4"/><circle class="d" cx="294" cy="42" r="4"/></svg><p class="csrc">Nolte, Chounta and Herbsleb, CSCW 2020, 73 hackathons</p></div>
+<div class="row3 crow"><p class="clab">Online course learners: about 12 in 100 took another course the next year.</p><svg viewBox="0 0 300 48" aria-hidden="true"><circle class="k" cx="6" cy="6" r="4"/><circle class="k" cx="18" cy="6" r="4"/><circle class="k" cx="30" cy="6" r="4"/><circle class="k" cx="42" cy="6" r="4"/><circle class="k" cx="54" cy="6" r="4"/><circle class="k" cx="66" cy="6" r="4"/><circle class="k" cx="78" cy="6" r="4"/><circle class="k" cx="90" cy="6" r="4"/><circle class="k" cx="102" cy="6" r="4"/><circle class="k" cx="114" cy="6" r="4"/><circle class="k" cx="126" cy="6" r="4"/><circle class="k" cx="138" cy="6" r="4"/><circle class="d" cx="150" cy="6" r="4"/><circle class="d" cx="162" cy="6" r="4"/><circle class="d" cx="174" cy="6" r="4"/><circle class="d" cx="186" cy="6" r="4"/><circle class="d" cx="198" cy="6" r="4"/><circle class="d" cx="210" cy="6" r="4"/><circle class="d" cx="222" cy="6" r="4"/><circle class="d" cx="234" cy="6" r="4"/><circle class="d" cx="246" cy="6" r="4"/><circle class="d" cx="258" cy="6" r="4"/><circle class="d" cx="270" cy="6" r="4"/><circle class="d" cx="282" cy="6" r="4"/><circle class="d" cx="294" cy="6" r="4"/><circle class="d" cx="6" cy="18" r="4"/><circle class="d" cx="18" cy="18" r="4"/><circle class="d" cx="30" cy="18" r="4"/><circle class="d" cx="42" cy="18" r="4"/><circle class="d" cx="54" cy="18" r="4"/><circle class="d" cx="66" cy="18" r="4"/><circle class="d" cx="78" cy="18" r="4"/><circle class="d" cx="90" cy="18" r="4"/><circle class="d" cx="102" cy="18" r="4"/><circle class="d" cx="114" cy="18" r="4"/><circle class="d" cx="126" cy="18" r="4"/><circle class="d" cx="138" cy="18" r="4"/><circle class="d" cx="150" cy="18" r="4"/><circle class="d" cx="162" cy="18" r="4"/><circle class="d" cx="174" cy="18" r="4"/><circle class="d" cx="186" cy="18" r="4"/><circle class="d" cx="198" cy="18" r="4"/><circle class="d" cx="210" cy="18" r="4"/><circle class="d" cx="222" cy="18" r="4"/><circle class="d" cx="234" cy="18" r="4"/><circle class="d" cx="246" cy="18" r="4"/><circle class="d" cx="258" cy="18" r="4"/><circle class="d" cx="270" cy="18" r="4"/><circle class="d" cx="282" cy="18" r="4"/><circle class="d" cx="294" cy="18" r="4"/><circle class="d" cx="6" cy="30" r="4"/><circle class="d" cx="18" cy="30" r="4"/><circle class="d" cx="30" cy="30" r="4"/><circle class="d" cx="42" cy="30" r="4"/><circle class="d" cx="54" cy="30" r="4"/><circle class="d" cx="66" cy="30" r="4"/><circle class="d" cx="78" cy="30" r="4"/><circle class="d" cx="90" cy="30" r="4"/><circle class="d" cx="102" cy="30" r="4"/><circle class="d" cx="114" cy="30" r="4"/><circle class="d" cx="126" cy="30" r="4"/><circle class="d" cx="138" cy="30" r="4"/><circle class="d" cx="150" cy="30" r="4"/><circle class="d" cx="162" cy="30" r="4"/><circle class="d" cx="174" cy="30" r="4"/><circle class="d" cx="186" cy="30" r="4"/><circle class="d" cx="198" cy="30" r="4"/><circle class="d" cx="210" cy="30" r="4"/><circle class="d" cx="222" cy="30" r="4"/><circle class="d" cx="234" cy="30" r="4"/><circle class="d" cx="246" cy="30" r="4"/><circle class="d" cx="258" cy="30" r="4"/><circle class="d" cx="270" cy="30" r="4"/><circle class="d" cx="282" cy="30" r="4"/><circle class="d" cx="294" cy="30" r="4"/><circle class="d" cx="6" cy="42" r="4"/><circle class="d" cx="18" cy="42" r="4"/><circle class="d" cx="30" cy="42" r="4"/><circle class="d" cx="42" cy="42" r="4"/><circle class="d" cx="54" cy="42" r="4"/><circle class="d" cx="66" cy="42" r="4"/><circle class="d" cx="78" cy="42" r="4"/><circle class="d" cx="90" cy="42" r="4"/><circle class="d" cx="102" cy="42" r="4"/><circle class="d" cx="114" cy="42" r="4"/><circle class="d" cx="126" cy="42" r="4"/><circle class="d" cx="138" cy="42" r="4"/><circle class="d" cx="150" cy="42" r="4"/><circle class="d" cx="162" cy="42" r="4"/><circle class="d" cx="174" cy="42" r="4"/><circle class="d" cx="186" cy="42" r="4"/><circle class="d" cx="198" cy="42" r="4"/><circle class="d" cx="210" cy="42" r="4"/><circle class="d" cx="222" cy="42" r="4"/><circle class="d" cx="234" cy="42" r="4"/><circle class="d" cx="246" cy="42" r="4"/><circle class="d" cx="258" cy="42" r="4"/><circle class="d" cx="270" cy="42" r="4"/><circle class="d" cx="282" cy="42" r="4"/><circle class="d" cx="294" cy="42" r="4"/></svg><p class="csrc">Reich and Ruipérez-Valiente, Science 2019</p></div>
+<figcaption id="cliff-cap">Each block is 100 people or projects that started something. The lit dots are the ones still there afterward. Three programs, three different measures of staying; the shape is what repeats.</figcaption>
+</figure>
+    <p>The research points at three things people need to see when they reach one of those moments: where they are and what's next, that they're ready for it, and who's going with them.</p>
+  </section>
+
+  <section>
+    <h2>What people at The Labs told us</h2>
+    <figure class="anim joints" aria-labelledby="joints-cap">
+<svg viewBox="0 0 380 266" role="img" aria-labelledby="joints-cap">
+<text class="lbl-strong" x="0" y="20">Twelve past participants, one thing each would change</text>
+<text class="lbl" x="0" y="60">Getting in</text>
+<line x1="150" y1="68" x2="380" y2="68" stroke="var(--rule)" stroke-width="1"/>
+<circle class="m" cx="166" cy="56" r="6" style="--dx:174px;--dy:-36px;--i:0"/>
+<text class="lbl" x="0" y="90">Knowing what's next</text>
+<line x1="150" y1="98" x2="380" y2="98" stroke="var(--rule)" stroke-width="1"/>
+<circle class="m" cx="166" cy="86" r="6" style="--dx:174px;--dy:-66px;--i:1"/>
+<circle class="m" cx="184" cy="86" r="6" style="--dx:156px;--dy:-66px;--i:2"/>
+<circle class="m" cx="202" cy="86" r="6" style="--dx:138px;--dy:-66px;--i:3"/>
+<text class="lbl" x="0" y="120">Moving into a team</text>
+<line x1="150" y1="128" x2="380" y2="128" stroke="var(--rule)" stroke-width="1"/>
+<circle class="m" cx="166" cy="116" r="6" style="--dx:174px;--dy:-96px;--i:4"/>
+<circle class="m" cx="184" cy="116" r="6" style="--dx:156px;--dy:-96px;--i:5"/>
+<text class="lbl" x="0" y="150">Staying together</text>
+<line x1="150" y1="158" x2="380" y2="158" stroke="var(--rule)" stroke-width="1"/>
+<circle class="m" cx="166" cy="146" r="6" style="--dx:174px;--dy:-126px;--i:6"/>
+<text class="lbl" x="0" y="180">Choosing their role</text>
+<line x1="150" y1="188" x2="380" y2="188" stroke="var(--rule)" stroke-width="1"/>
+<circle class="m" cx="166" cy="176" r="6" style="--dx:174px;--dy:-156px;--i:7"/>
+<text class="lbl" x="0" y="210">Finding materials</text>
+<line x1="150" y1="218" x2="380" y2="218" stroke="var(--rule)" stroke-width="1"/>
+<circle class="m" cx="166" cy="206" r="6" style="--dx:174px;--dy:-186px;--i:8"/>
+<text class="lbl" x="0" y="240">Something else</text>
+<line x1="150" y1="248" x2="380" y2="248" stroke="var(--rule)" stroke-width="1"/>
+<circle class="o" cx="166" cy="236" r="6" style="--dx:174px;--dy:-216px;--i:9"/>
+<circle class="o" cx="184" cy="236" r="6" style="--dx:156px;--dy:-216px;--i:10"/>
+<circle class="o" cx="202" cy="236" r="6" style="--dx:138px;--dy:-216px;--i:11"/>
+</svg>
+<figcaption id="joints-cap">One dot per person, placed at the moment they named. Nine of twelve named a moment between the parts. The other three were about relying on AI, finding time, and nothing to change. Source: The Labs' alumni survey, Cycles 1 to 3, Sep to Oct 2026.</figcaption>
+</figure>
+    <p>Asked what mattered most, almost all of them named the people they worked with.</p>
+    <p class="quiet">Twelve isn't many, and they're the ones who stayed. People who got lost at the door didn't answer. They're who we want to hear from next.</p>
+  </section>
+
+  <section>
+    <h2>What we're building</h2>
+    <p>This Cycle, The Upskilling Labs of Greater Washington is working on The Labs itself, in three Research Pods on our own copy of OLOS, the open platform The Labs runs on. Scaffolding works on what happens inside each part. Front Door works on where it all lives. Wayfinding works on the routes between them. On Nov 14, projects form inside the pods, each led by a builder in residence.</p>
+    <p>On Dec 8 the three pods show what we built. Then we offer it to the national project, and the national Board decides what meets the standard for the core every region runs on. We've committed to getting at least three projects into the core. We're aiming for all of them, so the next region starts where we finished.</p>
+    <p>We're building toward a place where anyone can see where they are, choose where to go next, and find the people going there with them. You can start anywhere: a Slack thread, a GitHub issue, a calendar invite, a link a friend sent. Wherever you start, it brings you into the room with your pod, your team, your branch. And what one person learns at a branch library on a Tuesday night is something every other community can use by Wednesday.</p>
+    <p>That doesn't exist yet. Help us build it.</p>
   </section>
 
   <section>
     <h2>Help us find out</h2>
-    <p>Right now we're doing archaeology: finding out how this became a problem and what's already been tried, here and anywhere else. That takes people who've lived it and people willing to go ask. You don't need to code, and an hour helps. Pick one:</p>
+    <p>We've read 54 programs that tried something like this and mapped 50 organizations around the problem. What we're missing is people who've lived it here. You don't need to code, and an hour helps. Pick one:</p>
     <ul>
-      <li>Tell us when you last felt you were getting somewhere here, and what told you.</li>
-      <li>Talk to someone who has had to explain The Labs to a funder or a boss.</li>
-      <li>Find one program, anywhere, that shows progress without turning into a checklist.</li>
+      <li>Tell us about the last time you didn't know what came next at The Labs, and what you did.</li>
+      <li>If you came once and didn't come back, tell us what happened. That's the story we have least of.</li>
+      <li>List every tool you touched at The Labs, in order, from first hearing about it to your last contribution.</li>
     </ul>
-    <p>Say which one, or bring your own, and a maintainer will set you up. You'll write down what you learn, we'll read it together on Nov 7, and it goes into the record with your name on the contributors list.</p>
+    <p>Comment on Start here. A maintainer will reply by the next Monday with one thing to find out. What you learn goes into the record with your name on the contributors list.</p>
     <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1">Comment on Start here</a>
     <p class="quiet">New to GitHub? Say so in your comment. We'll walk you through it.</p>
   </section>
 
   <section>
     <h2>Go further: build with us</h2>
-    <p>Each pod is looking for two to four more builders in residence. A builder in residence gives 4 to 6 hours a week through Dec 8, mostly nights and weekends, with a coding agent doing the heavy lifting. You help run the research now. After Nov 14 you lead one project of your own, with a team you recruit, and ship a working change to how The Labs runs. You become a maintainer of this pod.</p>
-    <p>If you've been waiting for a reason to build something real with people who'll actually use it, this is the reason.</p>
+    <figure class="anim rings" aria-labelledby="rings-cap">
+<svg viewBox="0 0 600 250" role="img" aria-labelledby="rings-cap">
+<circle class="r" cx="300" cy="125" r="108"/>
+<circle class="r" cx="300" cy="125" r="72"/>
+<circle class="r" cx="300" cy="125" r="36"/>
+<text class="lbl" x="420" y="40">An hour, no code</text>
+<line x1="416" y1="36" x2="368" y2="50" stroke="var(--rule)"/>
+<text class="lbl" x="420" y="92">A weekly meeting</text>
+<line x1="416" y1="88" x2="364" y2="98" stroke="var(--rule)"/>
+<text class="lbl-strong" x="420" y="140">Builder in residence</text>
+<line x1="416" y1="136" x2="334" y2="128" stroke="var(--rule)"/>
+<circle class="you" cx="300" cy="125" r="6"/>
+</svg>
+<figcaption id="rings-cap">Three ways in, one circle. The edge is part of the same work as the centre, and you can start at the edge.</figcaption>
+</figure>
+    <p>Every project in this pod is led by a builder in residence. We're looking for three more.</p>
+    <p>A builder in residence gives 4 to 6 hours a week through Dec 8, mostly nights and weekends, with a coding agent doing the heavy lifting. Until Nov 14 you help run the research. Then you lead one project with a team you recruit, ship a working change to how The Labs runs, and present it on Dec 8 for the national core.</p>
+    <p>If you've been waiting for a reason to build something real with people who'll actually use it, this is it.</p>
     <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1">Tell a maintainer you're in</a>
   </section>
 
@@ -126,19 +235,23 @@ footer p { color:inherit; margin:0 0 8px; }
       <!-- PROTOTYPES: one <li> per prototype, newest first. Format:
       <li><a href="/prototypes/shortname/">Prototype name</a><span class="meta">The one question it tests. Shown to three people, Nov 9.</span></li>
       -->
-      <li><span class="meta">None yet. The first ones come after Nov 2, once we've talked to people.</span></li>
+      <li><span class="meta">None yet. The first ones come after Nov 7, once we've written the paradox.</span></li>
     </ul>
   </section>
 
   <section>
     <h2>Where we are</h2>
-    <ul>
-      <li class="when"><time>Oct 26</time>Talking to people who've lived this problem, here and elsewhere.</li>
-      <li class="when"><time>Nov 7</time>We write down why it's hard, in one paradox.</li>
-      <li class="when"><time>Nov 14</time>Project proposals, and the room votes.</li>
-      <li class="when"><time>Dec 8</time>We ship something people at The Labs use.</li>
+    <div class="track" aria-hidden="true"><span id="track" style="width:30%"></span></div>
+    <ul id="timeline">
+      <li class="when" data-d="2026-10-24"><time>Oct 24</time>Sensemaking day: we picked the problem.</li>
+      <li class="when" data-d="2026-10-26"><time>Oct 26</time>Archaeology: how this became a problem, and what's been tried anywhere.</li>
+      <li class="when" data-d="2026-11-07"><time>Nov 7</time>We write down why it's hard, in one paradox, and each builder leaves with a frame.</li>
+      <li class="when" data-d="2026-11-08"><time>Nov 8</time>Rapid prototypes, each tried by three real people.</li>
+      <li class="when" data-d="2026-11-14"><time>Nov 14</time>Project proposals, and the room votes.</li>
+      <li class="when" data-d="2026-11-23"><time>Nov 23</time>First releases, used by real people.</li>
+      <li class="when" data-d="2026-12-08"><time>Dec 8</time>We show what we built and offer it to the national core.</li>
     </ul>
-    <p class="quiet">Everything we find is in <a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding">the pod's repo</a>.</p>
+    <p class="quiet">Everything we find is in <a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/tree/main/research">the pod's research folder</a>.</p>
   </section>
 </main>
 
@@ -148,5 +261,26 @@ footer p { color:inherit; margin:0 0 8px; }
     <p>This page is a prototype we're building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var start = new Date('2026-10-24'), end = new Date('2026-12-08'), now = new Date();
+  var p = Math.max(0, Math.min(1, (now - start) / (end - start)));
+  document.getElementById('track').style.width = (p * 100).toFixed(1) + '%';
+  var items = document.querySelectorAll('#timeline li'), cur = null;
+  items.forEach(function (li) { if (new Date(li.dataset.d) <= now) cur = li; });
+  if (cur) cur.classList.add('now');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var figs = document.querySelectorAll('figure.anim');
+  figs.forEach(function (f) { f.classList.add('pre'); });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var f = e.target; io.unobserve(f);
+      requestAnimationFrame(function () { f.classList.add('in'); f.classList.remove('pre'); });
+    });
+  }, { threshold: 0.5 });
+  figs.forEach(function (f) { io.observe(f); });
+})();
+</script>
 </body>
 </html>
