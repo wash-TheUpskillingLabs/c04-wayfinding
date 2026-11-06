@@ -1,9 +1,10 @@
-/* Wayfinding: small, optional behaviour. Every page reads complete without it. */
+/* Wayfinding: small, optional behaviour. Every page reads and navigates completely without it:
+   the line map, next stops, back-to-top and every link are plain HTML. */
 (function () {
   var now = new Date();
   if (location.hash === '#grid') document.documentElement.classList.add('show-grid');
 
-  /* The metro line: mark stations done, here, next. */
+  /* The timeline: stations done, here, next. */
   var stops = document.querySelectorAll('#timeline li[data-d]'), here = -1;
   stops.forEach(function (li, i) { if (new Date(li.dataset.d + 'T00:00:00') <= now) here = i; });
   stops.forEach(function (li, i) {
@@ -11,39 +12,71 @@
     if (i === here) li.setAttribute('aria-current', 'step');
   });
 
-  /* You are here bar (phones): names the section you're reading. */
+  figures();
+
+  /* You are here: the bar names the section you're in and opens every stop. */
   var bar = document.querySelector('.herebar');
   var secs = Array.prototype.slice.call(document.querySelectorAll('main .sec'));
   var cover = document.querySelector('.cover');
-  if (bar && secs.length && 'IntersectionObserver' in window) {
-    var name = document.getElementById('here-name'), dots = document.getElementById('here-dots');
-    secs.forEach(function () { dots.appendChild(document.createElement('i')); });
-    var marks = dots.querySelectorAll('i');
-    var set = function (idx) {
-      var h = secs[idx].querySelector('h2');
-      name.textContent = h ? h.textContent : '';
-      marks.forEach(function (m, i) { m.className = i < idx ? 'past' : i === idx ? 'on' : ''; });
-    };
-    new IntersectionObserver(function (es) {
-      es.forEach(function (e) { bar.classList.toggle('show', !e.isIntersecting); });
-    }, { threshold: 0 }).observe(cover);
-    var vis = new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (e.isIntersecting) set(secs.indexOf(e.target)); });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    secs.forEach(function (s) { vis.observe(s); });
-    set(0);
+  var mapLinks = Array.prototype.slice.call(document.querySelectorAll('.linemap a'));
+  if (!bar || !secs.length || !cover || !('IntersectionObserver' in window)) return;
+
+  var toggle = bar.querySelector('.here-toggle'), panel = document.getElementById('stops');
+  var name = document.getElementById('here-name'), dots = document.getElementById('here-dots');
+  var list = document.getElementById('stops-list');
+  var titles = secs.map(function (s) { var h = s.querySelector('h2'); return h ? h.textContent : ''; });
+
+  secs.forEach(function (s, i) {
+    var d = document.createElement('li'); d.setAttribute('aria-hidden', 'true'); dots.appendChild(d);
+    var li = document.createElement('li');
+    li.innerHTML = '<span class="st" aria-hidden="true"></span><a class="t" href="#' + s.getAttribute('aria-labelledby') + '"></a><span class="here"><span class="t t-small">You are here</span></span>';
+    li.querySelector('a').textContent = titles[i];
+    list.appendChild(li);
+  });
+  var dotEls = dots.querySelectorAll('li'), listEls = list.querySelectorAll('li');
+
+  var current = -1;
+  function set(idx) {
+    if (idx < 0 || idx === current) return; current = idx;
+    name.textContent = titles[idx];
+    dotEls.forEach(function (m, i) { m.className = i < idx ? 'past' : i === idx ? 'on' : ''; });
+    listEls.forEach(function (li, i) {
+      li.dataset.s = i < idx ? 'done' : i === idx ? 'now' : 'later';
+      var a = li.querySelector('a');
+      if (i === idx) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
+    });
+    mapLinks.forEach(function (a, i) { if (i === idx) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); });
   }
+  function open(v) {
+    toggle.setAttribute('aria-expanded', v ? 'true' : 'false');
+    panel.hidden = !v;
+  }
+  toggle.addEventListener('click', function () { open(panel.hidden); });
+  list.addEventListener('click', function (e) { if (e.target.closest('a')) open(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) { open(false); toggle.focus(); } });
+  document.addEventListener('click', function (e) { if (!panel.hidden && !bar.contains(e.target)) open(false); });
+
+  new IntersectionObserver(function (es) {
+    es.forEach(function (e) { bar.classList.toggle('show', !e.isIntersecting); if (e.isIntersecting) open(false); });
+  }, { threshold: 0 }).observe(cover);
+  var vis = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) set(secs.indexOf(e.target)); });
+  }, { rootMargin: '-30% 0px -65% 0px' });
+  secs.forEach(function (s) { vis.observe(s); });
+  set(0);
 
   /* Diagrams play their change once, on first view. */
-  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var figs = document.querySelectorAll('figure.anim');
-  figs.forEach(function (f) { f.classList.add('pre'); });
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      var f = e.target; io.unobserve(f);
-      requestAnimationFrame(function () { f.classList.add('in'); f.classList.remove('pre'); });
-    });
-  }, { threshold: 0.4 });
-  figs.forEach(function (f) { io.observe(f); });
+  function figures() {
+    if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var figs = document.querySelectorAll('figure.anim');
+    figs.forEach(function (f) { f.classList.add('pre'); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var f = e.target; io.unobserve(f);
+        requestAnimationFrame(function () { f.classList.add('in'); f.classList.remove('pre'); });
+      });
+    }, { threshold: 0.4 });
+    figs.forEach(function (f) { io.observe(f); });
+  }
 })();

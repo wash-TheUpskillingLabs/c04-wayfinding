@@ -13,36 +13,26 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-<symbol id="a-r" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol>
-<symbol id="a-ur" viewBox="0 0 24 24"><path d="M6 18L17 7M8 6h10v10"/></symbol>
-<symbol id="a-u" viewBox="0 0 24 24"><path d="M12 21V5M6 11l6-6 6 6"/></symbol>
-<symbol id="a-l" viewBox="0 0 24 24"><path d="M21 12H5M11 6l-6 6 6 6"/></symbol>
-<symbol id="fork" viewBox="0 0 24 24"><path d="M12 22v-7M12 15L5 8M12 15l7-7M4 12V7h5M15 7h5v5"/></symbol>
-<symbol id="post" viewBox="0 0 24 24"><path d="M12 22V2M12 5h7l3 3-3 3h-7M12 13H5l-3 3 3 3h7"/></symbol>
-<symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><path d="M12 8v4"/></symbol>
-<symbol id="info" viewBox="0 0 24 24"><path d="M12 10v10M9 20h6M10 10h2M12 4v2"/></symbol>
-<symbol id="ppl" viewBox="0 0 24 24"><path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/></symbol>
-<symbol id="note" viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6"/></symbol>
-</svg><div class="herebar" aria-hidden="true"><span class="tile red"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="dots" id="here-dots"></span></div>
-<header class="cover">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="a-d" viewBox="0 0 24 24"><path d="M12 3v16M6 13l6 6 6-6"/></symbol><symbol id="a-r" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol><symbol id="a-ur" viewBox="0 0 24 24"><path d="M6 18L17 7M8 6h10v10"/></symbol><symbol id="a-u" viewBox="0 0 24 24"><path d="M12 21V5M6 11l6-6 6 6"/></symbol><symbol id="a-l" viewBox="0 0 24 24"><path d="M21 12H5M11 6l-6 6 6 6"/></symbol><symbol id="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M12 10v10M9 20h6M10 10h2M12 4v2"/></symbol><symbol id="ppl" viewBox="0 0 24 24"><path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/></symbol><symbol id="post" viewBox="0 0 24 24"><path d="M12 22V2M12 5h7l3 3-3 3h-7M12 13H5l-3 3 3 3h7"/></symbol><symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><path d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></symbol><symbol id="speech" viewBox="0 0 24 24"><path d="M3 4h18v12H10l-5 4v-4H3z"/></symbol><symbol id="flag" viewBox="0 0 24 24"><path d="M5 22V3M5 4h14l-3 4.5L19 13H5"/></symbol><symbol id="note" viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6"/></symbol><symbol id="flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4 20h16L14 9V3M7 15h10"/></symbol><symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><path d="M12 8v4"/></symbol><symbol id="cliff" viewBox="0 0 24 24"><path d="M2 6h9v14h11"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M3 5h18v16H3zM3 10h18M8 2v5M16 2v5"/></symbol><symbol id="link" viewBox="0 0 24 24"><path d="M9 7a5 5 0 1 0 0 10M15 7a5 5 0 1 1 0 10M8 12h8"/></symbol><symbol id="one" viewBox="0 0 24 24"><path d="M12 3v4M7 21v-6a5 5 0 0 1 10 0v6"/></symbol><symbol id="question" viewBox="0 0 24 24"><path d="M8.5 8.5a3.5 3.5 0 1 1 5 3.2c-1 .5-1.5 1.2-1.5 2.3v1M12 19v2"/></symbol></svg>
+<nav class="herebar" aria-label="You are here">
+  <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All stops</span><svg class="i chev" aria-hidden="true"><use href="#chev"/></svg></button>
+  <ol class="dots" id="here-dots"></ol>
+  <div class="stops" id="stops" hidden><ol class="mline stops-line" id="stops-list"></ol></div>
+</nav>
+<header class="cover" id="top">
   <div class="grid">
     <div class="signhead">
-      <a class="wordmark" href="/"><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span><span><span class="t wordmark-t wm">Wayfinding</span><span class="t t-small sub">A Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington</span></span></a>
-      <div class="signright">
-        <nav class="sitenav" aria-label="Site"><a href="/" aria-current="page"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t">The pod</span></a><a href="/blog/"><svg class="i" aria-hidden="true"><use href="#note"/></svg><span class="t">Blog</span></a></nav>
-        <div class="signrow" aria-hidden="true"><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><span class="tile red"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span></div>
-      </div>
+      <a class="wordmark" href="/"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><span><span class="t wordmark-t wm">Wayfinding</span><span class="t t-small sub">A Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington</span></span></a>
+      <nav class="sitenav" aria-label="Site"><a href="/" aria-current="page"><span class="dot" aria-hidden="true"></span><span class="t">The pod</span></a><a href="/blog/"><span class="dot" aria-hidden="true"></span><span class="t">Blog</span></a><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding" rel="noopener"><span class="t">GitHub</span><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></a></nav>
     </div>
   </div>
   <div class="grid hero">
-    <div class="h1row"><h1 style="--lsb:0.057em">People don’t get lost in the room. They get lost on the way to the next one.</h1>
-    <div class="bigarrow" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></div></div>
+    <h1 style="--lsb:0.057em">People don’t get lost in the room. They get lost on the way to the next one.</h1>
     <p class="t-lead sub">We’re rebuilding how The Labs gets people from their first workshop to their next step. Follow along, become a contributor, or lead one of the projects.</p>
     <div class="ctas">
-      <a class="btn light" href="#follow"><span class="t">Follow the pod</span><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
-      <a class="link" href="#contribute"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg><span class="t">Become a contributor</span></a>
-      <a class="link" href="#lead"><svg class="i up" aria-hidden="true"><use href="#a-u"/></svg><span class="t">Lead a project</span></a>
+      <a class="btn light" href="#follow"><span class="t">Follow the pod</span><span class="tile blue"><svg class="i down" aria-hidden="true"><use href="#a-d"/></svg></span></a>
+      <a class="link" href="#contribute"><svg class="i down" aria-hidden="true"><use href="#a-d"/></svg><span class="t">Become a contributor</span></a>
+      <a class="link" href="#lead"><svg class="i down" aria-hidden="true"><use href="#a-d"/></svg><span class="t">Lead a project</span></a>
     </div>
     <figure class="anim herofig"><svg class="snap route" viewBox="0 0 640 152" style="--ar:.2375;--mw:760px" preserveAspectRatio="xMinYMin meet" role="img" aria-labelledby="route-cap">
 <path class="ln" d="M40 92H600"/><path d="M600 80l14 12-14 12" fill="none" stroke="var(--blue)" stroke-width="6"/>
@@ -54,6 +44,10 @@
 <circle class="p" cx="612" cy="56" r="6" style="--dx:-560px;--i:9"/><circle class="p" cx="596" cy="56" r="6" style="--dx:-544px;--i:10"/><circle class="p" cx="580" cy="56" r="6" style="--dx:-528px;--i:11"/>
 </svg></figure>
     <figcaption id="route-cap">Twelve past participants told us one thing they’d change. Nine named a moment between the parts, shown here in red where they stopped.</figcaption>
+    <nav class="linemap" aria-label="On this page">
+      <p class="t t-small lm-title">On this page</p>
+      <ol><li><a href="#why"><span class="stn" aria-hidden="true"></span><span class="t t-small">Why</span></a></li><li><a href="#heard"><span class="stn" aria-hidden="true"></span><span class="t t-small">What we heard</span></a></li><li><a href="#building"><span class="stn" aria-hidden="true"></span><span class="t t-small">Building</span></a></li><li><a href="#follow"><span class="stn" aria-hidden="true"></span><span class="t t-small">Follow</span></a></li><li><a href="#contribute"><span class="stn" aria-hidden="true"></span><span class="t t-small">Contribute</span></a></li><li><a href="#lead"><span class="stn" aria-hidden="true"></span><span class="t t-small">Lead</span></a></li><li><a href="#blog-latest"><span class="stn" aria-hidden="true"></span><span class="t t-small">Blog</span></a></li><li><a href="#prototypes"><span class="stn" aria-hidden="true"></span><span class="t t-small">Prototypes</span></a></li><li><a href="#where"><span class="stn" aria-hidden="true"></span><span class="t t-small">Where we are</span></a></li></ol>
+    </nav>
   </div>
 </header>
 
@@ -70,97 +64,103 @@
         <div class="row3 crow"><p class="t">Online course learners: about 12 in 100 took another course the next year.</p><svg class="snap" viewBox="0 0 300 48" style="--ar:.16;--mw:360px" preserveAspectRatio="xMinYMin meet" aria-hidden="true"><circle class="k" cx="6" cy="6" r="4"/><circle class="k" cx="18" cy="6" r="4"/><circle class="k" cx="30" cy="6" r="4"/><circle class="k" cx="42" cy="6" r="4"/><circle class="k" cx="54" cy="6" r="4"/><circle class="k" cx="66" cy="6" r="4"/><circle class="k" cx="78" cy="6" r="4"/><circle class="k" cx="90" cy="6" r="4"/><circle class="k" cx="102" cy="6" r="4"/><circle class="k" cx="114" cy="6" r="4"/><circle class="k" cx="126" cy="6" r="4"/><circle class="k" cx="138" cy="6" r="4"/><circle class="d" cx="150" cy="6" r="4"/><circle class="d" cx="162" cy="6" r="4"/><circle class="d" cx="174" cy="6" r="4"/><circle class="d" cx="186" cy="6" r="4"/><circle class="d" cx="198" cy="6" r="4"/><circle class="d" cx="210" cy="6" r="4"/><circle class="d" cx="222" cy="6" r="4"/><circle class="d" cx="234" cy="6" r="4"/><circle class="d" cx="246" cy="6" r="4"/><circle class="d" cx="258" cy="6" r="4"/><circle class="d" cx="270" cy="6" r="4"/><circle class="d" cx="282" cy="6" r="4"/><circle class="d" cx="294" cy="6" r="4"/><circle class="d" cx="6" cy="18" r="4"/><circle class="d" cx="18" cy="18" r="4"/><circle class="d" cx="30" cy="18" r="4"/><circle class="d" cx="42" cy="18" r="4"/><circle class="d" cx="54" cy="18" r="4"/><circle class="d" cx="66" cy="18" r="4"/><circle class="d" cx="78" cy="18" r="4"/><circle class="d" cx="90" cy="18" r="4"/><circle class="d" cx="102" cy="18" r="4"/><circle class="d" cx="114" cy="18" r="4"/><circle class="d" cx="126" cy="18" r="4"/><circle class="d" cx="138" cy="18" r="4"/><circle class="d" cx="150" cy="18" r="4"/><circle class="d" cx="162" cy="18" r="4"/><circle class="d" cx="174" cy="18" r="4"/><circle class="d" cx="186" cy="18" r="4"/><circle class="d" cx="198" cy="18" r="4"/><circle class="d" cx="210" cy="18" r="4"/><circle class="d" cx="222" cy="18" r="4"/><circle class="d" cx="234" cy="18" r="4"/><circle class="d" cx="246" cy="18" r="4"/><circle class="d" cx="258" cy="18" r="4"/><circle class="d" cx="270" cy="18" r="4"/><circle class="d" cx="282" cy="18" r="4"/><circle class="d" cx="294" cy="18" r="4"/><circle class="d" cx="6" cy="30" r="4"/><circle class="d" cx="18" cy="30" r="4"/><circle class="d" cx="30" cy="30" r="4"/><circle class="d" cx="42" cy="30" r="4"/><circle class="d" cx="54" cy="30" r="4"/><circle class="d" cx="66" cy="30" r="4"/><circle class="d" cx="78" cy="30" r="4"/><circle class="d" cx="90" cy="30" r="4"/><circle class="d" cx="102" cy="30" r="4"/><circle class="d" cx="114" cy="30" r="4"/><circle class="d" cx="126" cy="30" r="4"/><circle class="d" cx="138" cy="30" r="4"/><circle class="d" cx="150" cy="30" r="4"/><circle class="d" cx="162" cy="30" r="4"/><circle class="d" cx="174" cy="30" r="4"/><circle class="d" cx="186" cy="30" r="4"/><circle class="d" cx="198" cy="30" r="4"/><circle class="d" cx="210" cy="30" r="4"/><circle class="d" cx="222" cy="30" r="4"/><circle class="d" cx="234" cy="30" r="4"/><circle class="d" cx="246" cy="30" r="4"/><circle class="d" cx="258" cy="30" r="4"/><circle class="d" cx="270" cy="30" r="4"/><circle class="d" cx="282" cy="30" r="4"/><circle class="d" cx="294" cy="30" r="4"/><circle class="d" cx="6" cy="42" r="4"/><circle class="d" cx="18" cy="42" r="4"/><circle class="d" cx="30" cy="42" r="4"/><circle class="d" cx="42" cy="42" r="4"/><circle class="d" cx="54" cy="42" r="4"/><circle class="d" cx="66" cy="42" r="4"/><circle class="d" cx="78" cy="42" r="4"/><circle class="d" cx="90" cy="42" r="4"/><circle class="d" cx="102" cy="42" r="4"/><circle class="d" cx="114" cy="42" r="4"/><circle class="d" cx="126" cy="42" r="4"/><circle class="d" cx="138" cy="42" r="4"/><circle class="d" cx="150" cy="42" r="4"/><circle class="d" cx="162" cy="42" r="4"/><circle class="d" cx="174" cy="42" r="4"/><circle class="d" cx="186" cy="42" r="4"/><circle class="d" cx="198" cy="42" r="4"/><circle class="d" cx="210" cy="42" r="4"/><circle class="d" cx="222" cy="42" r="4"/><circle class="d" cx="234" cy="42" r="4"/><circle class="d" cx="246" cy="42" r="4"/><circle class="d" cx="258" cy="42" r="4"/><circle class="d" cx="270" cy="42" r="4"/><circle class="d" cx="282" cy="42" r="4"/><circle class="d" cx="294" cy="42" r="4"/></svg><p class="t-small src">Reich and Ruipérez-Valiente, Science 2019</p></div>
       </figure>
       <figcaption id="cliff-cap">Each block is 100 people or projects that started something. The lit dots are the ones still there afterward. Three programs, three different measures of staying; the shape is what repeats.</figcaption>
+      <a class="next" href="#heard"><span class="t t-small">Next stop</span><span class="t">What people at The Labs told us</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="heard">
     <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><h2 id="heard" style="--lsb:0.023em">What people at The Labs told us</h2></div>
     <div class="flow">
       <figure class="anim joints"><svg class="snap" viewBox="0 0 380 266" style="--ar:.7;--mw:520px" preserveAspectRatio="xMinYMin meet" role="img" aria-labelledby="joints-cap">
-<text class="lbl-strong" x="0" y="20">Twelve past participants, one thing each would change</text>
-<text class="lbl" x="0" y="60">Getting in</text>
-<line x1="150" y1="68" x2="380" y2="68" stroke="var(--rule)" stroke-width="1"/>
-<circle class="m" cx="166" cy="56" r="6" style="--dx:174px;--dy:-36px;--i:0"/>
-<text class="lbl" x="0" y="90">Knowing what's next</text>
-<line x1="150" y1="98" x2="380" y2="98" stroke="var(--rule)" stroke-width="1"/>
-<circle class="m" cx="166" cy="86" r="6" style="--dx:174px;--dy:-66px;--i:1"/>
-<circle class="m" cx="184" cy="86" r="6" style="--dx:156px;--dy:-66px;--i:2"/>
-<circle class="m" cx="202" cy="86" r="6" style="--dx:138px;--dy:-66px;--i:3"/>
-<text class="lbl" x="0" y="120">Moving into a team</text>
-<line x1="150" y1="128" x2="380" y2="128" stroke="var(--rule)" stroke-width="1"/>
-<circle class="m" cx="166" cy="116" r="6" style="--dx:174px;--dy:-96px;--i:4"/>
-<circle class="m" cx="184" cy="116" r="6" style="--dx:156px;--dy:-96px;--i:5"/>
-<text class="lbl" x="0" y="150">Staying together</text>
-<line x1="150" y1="158" x2="380" y2="158" stroke="var(--rule)" stroke-width="1"/>
-<circle class="m" cx="166" cy="146" r="6" style="--dx:174px;--dy:-126px;--i:6"/>
-<text class="lbl" x="0" y="180">Choosing their role</text>
-<line x1="150" y1="188" x2="380" y2="188" stroke="var(--rule)" stroke-width="1"/>
-<circle class="m" cx="166" cy="176" r="6" style="--dx:174px;--dy:-156px;--i:7"/>
-<text class="lbl" x="0" y="210">Finding materials</text>
-<line x1="150" y1="218" x2="380" y2="218" stroke="var(--rule)" stroke-width="1"/>
-<circle class="m" cx="166" cy="206" r="6" style="--dx:174px;--dy:-186px;--i:8"/>
-<text class="lbl" x="0" y="240">Something else</text>
-<line x1="150" y1="248" x2="380" y2="248" stroke="var(--rule)" stroke-width="1"/>
-<circle class="o" cx="166" cy="236" r="6" style="--dx:174px;--dy:-216px;--i:9"/>
-<circle class="o" cx="184" cy="236" r="6" style="--dx:156px;--dy:-216px;--i:10"/>
-<circle class="o" cx="202" cy="236" r="6" style="--dx:138px;--dy:-216px;--i:11"/>
-</svg></figure>
+      <text class="lbl-strong" x="0" y="20">Twelve past participants, one thing each would change</text>
+      <text class="lbl" x="0" y="60">Getting in</text>
+      <line x1="150" y1="68" x2="380" y2="68" stroke="var(--rule)" stroke-width="1"/>
+      <circle class="m" cx="166" cy="56" r="6" style="--dx:174px;--dy:-36px;--i:0"/>
+      <text class="lbl" x="0" y="90">Knowing what's next</text>
+      <line x1="150" y1="98" x2="380" y2="98" stroke="var(--rule)" stroke-width="1"/>
+      <circle class="m" cx="166" cy="86" r="6" style="--dx:174px;--dy:-66px;--i:1"/>
+      <circle class="m" cx="184" cy="86" r="6" style="--dx:156px;--dy:-66px;--i:2"/>
+      <circle class="m" cx="202" cy="86" r="6" style="--dx:138px;--dy:-66px;--i:3"/>
+      <text class="lbl" x="0" y="120">Moving into a team</text>
+      <line x1="150" y1="128" x2="380" y2="128" stroke="var(--rule)" stroke-width="1"/>
+      <circle class="m" cx="166" cy="116" r="6" style="--dx:174px;--dy:-96px;--i:4"/>
+      <circle class="m" cx="184" cy="116" r="6" style="--dx:156px;--dy:-96px;--i:5"/>
+      <text class="lbl" x="0" y="150">Staying together</text>
+      <line x1="150" y1="158" x2="380" y2="158" stroke="var(--rule)" stroke-width="1"/>
+      <circle class="m" cx="166" cy="146" r="6" style="--dx:174px;--dy:-126px;--i:6"/>
+      <text class="lbl" x="0" y="180">Choosing their role</text>
+      <line x1="150" y1="188" x2="380" y2="188" stroke="var(--rule)" stroke-width="1"/>
+      <circle class="m" cx="166" cy="176" r="6" style="--dx:174px;--dy:-156px;--i:7"/>
+      <text class="lbl" x="0" y="210">Finding materials</text>
+      <line x1="150" y1="218" x2="380" y2="218" stroke="var(--rule)" stroke-width="1"/>
+      <circle class="m" cx="166" cy="206" r="6" style="--dx:174px;--dy:-186px;--i:8"/>
+      <text class="lbl" x="0" y="240">Something else</text>
+      <line x1="150" y1="248" x2="380" y2="248" stroke="var(--rule)" stroke-width="1"/>
+      <circle class="o" cx="166" cy="236" r="6" style="--dx:174px;--dy:-216px;--i:9"/>
+      <circle class="o" cx="184" cy="236" r="6" style="--dx:156px;--dy:-216px;--i:10"/>
+      <circle class="o" cx="202" cy="236" r="6" style="--dx:138px;--dy:-216px;--i:11"/>
+      </svg></figure>
       <figcaption id="joints-cap">One dot per person, placed at the moment they named. Nine of twelve named a moment between the parts. The other three were about relying on AI, finding time, and nothing to change. Source: The Labs’ alumni survey, Cycles 1 to 3, Sep to Oct 2026.</figcaption>
       <p>Asked what mattered most, almost all of them named the people they worked with.</p>
       <p class="quiet">Twelve isn’t many, and they’re the ones who stayed. People who got lost at the door didn’t answer. They’re who we want to hear from next.</p>
+      <a class="next" href="#building"><span class="t t-small">Next stop</span><span class="t">What we’re building</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="building">
-    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><h2 id="building" style="--lsb:0.023em">What we’re building</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><h2 id="building" style="--lsb:0.023em">What we’re building</h2></div>
     <div class="flow">
       <p>This fall, for the first time, The Upskilling Labs of Greater Washington is running a Cycle on The Labs itself, so we can fix the gaps instead of putting out fires every day. Three Research Pods are working on our own copy of OLOS, the open platform The Labs runs on. Scaffolding works on what happens inside each part. Front Door works on where it all lives. Wayfinding works on the routes between them: getting started, what comes next, and where people go when a Cycle ends.</p>
       <p>On Dec 8 the three pods show what we built. Then we offer it to the national project, and the national Board decides what meets the standard for the core every region runs on. We’ve committed to getting at least three projects into the core. We’re aiming for all of them, so the next region starts where we finished.</p>
       <p>We’re building toward a place where anyone can see where they are, choose where to go next, and find the people going there with them. You can start anywhere: a Slack thread, a GitHub issue, a calendar invite, a link a friend sent. Wherever you start, it brings you into the room with your pod, your team, your branch. And what one person learns at a branch library on a Tuesday night is something every other community can use by Wednesday.</p>
       <p>That doesn’t exist yet.</p>
+      <a class="next" href="#follow"><span class="t t-small">Next stop</span><span class="t">Follow the pod</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="follow">
-    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span><h2 id="follow" style="--lsb:0.057em">Follow the pod</h2></div>
+    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#eye"/></svg></span><h2 id="follow" style="--lsb:0.057em">Follow the pod</h2></div>
     <div class="flow">
       <p>Everything we find goes into the pod’s repo on GitHub and onto <a href="/blog/">the blog</a>: the research, the paradox on Nov 7, the projects that form on Nov 14, and what ships on Dec 8. Follow it and you’ll see each step as it happens.</p>
-      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding"><span class="t">Follow on GitHub</span><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
+      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding" rel="noopener"><span class="t">Follow on GitHub</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
       <p class="t-small quiet">On the repo page, choose Watch, then Custom, then Issues and Pull requests. It’s free; you need a GitHub account. Already in The Labs’ Slack? Say hello in #c04-all.</p>
+      <a class="next" href="#contribute"><span class="t t-small">Next stop</span><span class="t">Become a contributor</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="contribute">
-    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></span><h2 id="contribute" style="--lsb:0.057em">Become a contributor</h2></div>
+    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#speech"/></svg></span><h2 id="contribute" style="--lsb:0.057em">Become a contributor</h2></div>
     <div class="flow">
       <p>We’ve read 54 programs that tried something like this and mapped 50 organizations around the problem. What we’re missing is people who’ve lived it here. You don’t need to code. Pick one:</p>
       <ul class="rows steps">
-        <li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t">Tell us about the last time you didn’t know what came next at The Labs, and what you did.</span></li>
-        <li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t">If you came once and didn’t come back, tell us what happened. That’s the story we have least of.</span></li>
-        <li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t">List every tool you touched at The Labs, in order, from first hearing about it to your last contribution.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#speech"/></svg><span class="t">Tell us about the last time you didn’t know what came next at The Labs, and what you did.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#speech"/></svg><span class="t">If you came once and didn’t come back, tell us what happened. That’s the story we have least of.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#speech"/></svg><span class="t">List every tool you touched at The Labs, in order, from first hearing about it to your last contribution.</span></li>
       </ul>
       <p>Comment on Start here. A maintainer will reply by the next Monday with one thing to find out. What you learn goes into the record with your name on the contributors list.</p>
-      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1"><span class="t">Comment on Start here</span><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
+      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1" rel="noopener"><span class="t">Comment on Start here</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
       <p class="t-small quiet">New to GitHub? Say so in your comment. We’ll walk you through it.</p>
+      <a class="next" href="#lead"><span class="t t-small">Next stop</span><span class="t">Lead a project</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="lead">
-    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><h2 id="lead" style="--lsb:0.057em">Lead a project</h2></div>
+    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#flag"/></svg></span><h2 id="lead" style="--lsb:0.057em">Lead a project</h2></div>
     <div class="flow">
       <p>On Nov 14, projects form inside the pod, each led by a builder in residence. We’re looking for three.</p>
       <figure class="anim rings"><svg class="snap" viewBox="0 0 600 250" style="--ar:.4167;--mw:600px" preserveAspectRatio="xMinYMin meet" role="img" aria-labelledby="rings-cap">
-<circle class="r" cx="300" cy="125" r="108"/>
-<circle class="r" cx="300" cy="125" r="72"/>
-<circle class="r" cx="300" cy="125" r="36"/>
-<text class="lbl" x="420" y="40">Follow the pod</text>
-<line x1="416" y1="36" x2="368" y2="50" stroke="var(--rule)"/>
-<text class="lbl" x="420" y="92">Become a contributor</text>
-<line x1="416" y1="88" x2="364" y2="98" stroke="var(--rule)"/>
-<text class="lbl-strong" x="420" y="140">Builder in residence</text>
-<line x1="416" y1="136" x2="334" y2="128" stroke="var(--rule)"/>
-<path class="ra" d="M300 30v58M294 82l6 6 6-6"/>
-<circle class="you" cx="300" cy="125" r="6"/>
-</svg></figure>
+      <circle class="r" cx="300" cy="125" r="108"/>
+      <circle class="r" cx="300" cy="125" r="72"/>
+      <circle class="r" cx="300" cy="125" r="36"/>
+      <text class="lbl" x="420" y="40">Follow the pod</text>
+      <line x1="416" y1="36" x2="368" y2="50" stroke="var(--rule)"/>
+      <text class="lbl" x="420" y="92">Become a contributor</text>
+      <line x1="416" y1="88" x2="364" y2="98" stroke="var(--rule)"/>
+      <text class="lbl-strong" x="420" y="140">Builder in residence</text>
+      <line x1="416" y1="136" x2="334" y2="128" stroke="var(--rule)"/>
+      <path class="ra" d="M300 30v58M294 82l6 6 6-6"/>
+      <circle class="you" cx="300" cy="125" r="6"/>
+      </svg></figure>
       <figcaption id="rings-cap">Three ways in, one circle: follow, contribute, lead a project. The edge is part of the same work as the centre, and you can start at the edge.</figcaption>
       <p>A builder in residence gives 4 to 6 hours a week through Dec 8, mostly nights and weekends, with a coding agent doing the heavy lifting. Until Nov 14 you help run the research. Then you lead one project with a team you recruit, ship a working change to how The Labs runs, and present it on Dec 8 for the national core.</p>
       <p>If you’ve been waiting for a reason to build something real with people who’ll actually use it, this is it.</p>
-      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1"><span class="t">Tell a maintainer you’re in</span><span class="tile blue"><svg class="i up" aria-hidden="true"><use href="#a-u"/></svg></span></a>
+      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1" rel="noopener"><span class="t">Tell a maintainer you’re in</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
+      <a class="next" href="#blog-latest"><span class="t t-small">Next stop</span><span class="t">From the blog</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="blog-latest">
@@ -170,10 +170,11 @@
         <li><time class="t t-small num" datetime="2026-11-06">Nov 6, 2026</time><p class="t-h3"><a href="/blog/the-spaces-between/">What 54 programs taught us about the spaces between</a></p><p class="t-body">Before we write a line of code, we read how everyone else lost people at the edges, and what carried the ones who stayed.</p></li>
       </ul>
       <a class="btn" href="/blog/"><span class="t">All posts</span><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
+      <a class="next" href="#prototypes"><span class="t t-small">Next stop</span><span class="t">Prototypes</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="prototypes">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#fork"/></svg></span><h2 id="prototypes" style="--lsb:0.057em">Prototypes</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#flask"/></svg></span><h2 id="prototypes" style="--lsb:0.057em">Prototypes</h2></div>
     <div class="flow">
       <p class="quiet">Rough probes we show people to learn how they react. Made-up data only.</p>
       <ul class="rows" id="prototypes">
@@ -182,6 +183,7 @@
         -->
         <li><span class="t quiet">None yet. The first ones come after Nov 7, once we’ve written the paradox.</span></li>
       </ul>
+      <a class="next" href="#where"><span class="t t-small">Next stop</span><span class="t">Where we are</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="where">
@@ -197,16 +199,19 @@
         <li data-d="2026-12-08"><span class="st" aria-hidden="true"></span><time class="t num" datetime="2026-12-08">Dec 8</time><span class="t">We show what we built and offer it to the national core.</span><span class="here"><span class="t t-small">You are here</span></span></li>
       </ol>
       <p class="quiet">Everything we find is in <a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/tree/main/research">the pod’s research folder</a>.</p>
+      <a class="next" href="#top"><span class="t t-small">End of the line</span><span class="t">Back to the top</span><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></a>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="grid">
-    <span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span>
+    <a class="totop" href="#top"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="t t-small">Back to the top</span></a>
     <div class="flow t-small">
-      <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
-      <p>This site is a prototype we're building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
+      <p class="legend-title">How to read the signs</p>
+      <ul class="legend"><li><svg class="i" aria-hidden="true"><use href="#a-d"/></svg><span class="t t-small">Further down this page</span></li><li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t t-small">Another page on this site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg><span class="t t-small">Leaves this site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-u"/></svg><span class="t t-small">Back to the top</span></li><li><span class="here-dot" aria-hidden="true"></span><span class="t t-small">You are here</span></li></ul>
+      <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04" rel="noopener">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
+      <p>This site is a prototype we’re building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
       <p>Set in Inter. Palette: Swiss Style Color Picker, scheme 14, by Fabian Burghardt.</p>
     </div>
   </div>

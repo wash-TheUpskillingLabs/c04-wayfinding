@@ -180,3 +180,12 @@ Three to five builders in residence. Each leads one project.
 ---
 
 Licensed [CC BY 4.0](LICENSE): share it, adapt it, credit us.
+
+## The site
+
+The pod's site is a working example of what it studies: every page shows the whole route (the line map), where you are (the station sign and the You are here bar), and the next stop at the end of every section. The footer explains the signs.
+
+- **Edit the words** in `content/`. Each section of a page is one file; the comment at its top gives its title, a short name for route maps, and its pictogram.
+- **Write a blog post** by adding a folder to `content/blog/` with a `post.json` (title, dek, date, byline) and one file per section.
+- **Rebuild** with `python3 tools/build.py`, then commit the HTML it writes. The script owns the sign rules (↓ further down this page, → another page here, ↗ leaves this site, ↑ back to the top), so an arrow always tells the truth about where its link goes.
+- Add `#grid` to any page's address to see the 4px baseline grid and the 12 columns.

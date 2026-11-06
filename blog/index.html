@@ -13,26 +13,17 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-<symbol id="a-r" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol>
-<symbol id="a-ur" viewBox="0 0 24 24"><path d="M6 18L17 7M8 6h10v10"/></symbol>
-<symbol id="a-u" viewBox="0 0 24 24"><path d="M12 21V5M6 11l6-6 6 6"/></symbol>
-<symbol id="a-l" viewBox="0 0 24 24"><path d="M21 12H5M11 6l-6 6 6 6"/></symbol>
-<symbol id="fork" viewBox="0 0 24 24"><path d="M12 22v-7M12 15L5 8M12 15l7-7M4 12V7h5M15 7h5v5"/></symbol>
-<symbol id="post" viewBox="0 0 24 24"><path d="M12 22V2M12 5h7l3 3-3 3h-7M12 13H5l-3 3 3 3h7"/></symbol>
-<symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><path d="M12 8v4"/></symbol>
-<symbol id="info" viewBox="0 0 24 24"><path d="M12 10v10M9 20h6M10 10h2M12 4v2"/></symbol>
-<symbol id="ppl" viewBox="0 0 24 24"><path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/></symbol>
-<symbol id="note" viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6"/></symbol>
-</svg><div class="herebar" aria-hidden="true"><span class="tile red"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="dots" id="here-dots"></span></div>
-<header class="cover short">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="a-d" viewBox="0 0 24 24"><path d="M12 3v16M6 13l6 6 6-6"/></symbol><symbol id="a-r" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol><symbol id="a-ur" viewBox="0 0 24 24"><path d="M6 18L17 7M8 6h10v10"/></symbol><symbol id="a-u" viewBox="0 0 24 24"><path d="M12 21V5M6 11l6-6 6 6"/></symbol><symbol id="a-l" viewBox="0 0 24 24"><path d="M21 12H5M11 6l-6 6 6 6"/></symbol><symbol id="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M12 10v10M9 20h6M10 10h2M12 4v2"/></symbol><symbol id="ppl" viewBox="0 0 24 24"><path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/></symbol><symbol id="post" viewBox="0 0 24 24"><path d="M12 22V2M12 5h7l3 3-3 3h-7M12 13H5l-3 3 3 3h7"/></symbol><symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><path d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></symbol><symbol id="speech" viewBox="0 0 24 24"><path d="M3 4h18v12H10l-5 4v-4H3z"/></symbol><symbol id="flag" viewBox="0 0 24 24"><path d="M5 22V3M5 4h14l-3 4.5L19 13H5"/></symbol><symbol id="note" viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6"/></symbol><symbol id="flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4 20h16L14 9V3M7 15h10"/></symbol><symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><path d="M12 8v4"/></symbol><symbol id="cliff" viewBox="0 0 24 24"><path d="M2 6h9v14h11"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M3 5h18v16H3zM3 10h18M8 2v5M16 2v5"/></symbol><symbol id="link" viewBox="0 0 24 24"><path d="M9 7a5 5 0 1 0 0 10M15 7a5 5 0 1 1 0 10M8 12h8"/></symbol><symbol id="one" viewBox="0 0 24 24"><path d="M12 3v4M7 21v-6a5 5 0 0 1 10 0v6"/></symbol><symbol id="question" viewBox="0 0 24 24"><path d="M8.5 8.5a3.5 3.5 0 1 1 5 3.2c-1 .5-1.5 1.2-1.5 2.3v1M12 19v2"/></symbol></svg>
+<nav class="herebar" aria-label="You are here">
+  <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All stops</span><svg class="i chev" aria-hidden="true"><use href="#chev"/></svg></button>
+  <ol class="dots" id="here-dots"></ol>
+  <div class="stops" id="stops" hidden><ol class="mline stops-line" id="stops-list"></ol></div>
+</nav>
+<header class="cover short" id="top">
   <div class="grid">
     <div class="signhead">
-      <a class="wordmark" href="/"><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span><span><span class="t wordmark-t wm">Wayfinding</span><span class="t t-small sub">A Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington</span></span></a>
-      <div class="signright">
-        <nav class="sitenav" aria-label="Site"><a href="/"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t">The pod</span></a><a href="/blog/" aria-current="page"><svg class="i" aria-hidden="true"><use href="#note"/></svg><span class="t">Blog</span></a></nav>
-        <div class="signrow" aria-hidden="true"><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><span class="tile line"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><span class="tile red"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span></div>
-      </div>
+      <a class="wordmark" href="/"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><span><span class="t wordmark-t wm">Wayfinding</span><span class="t t-small sub">A Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington</span></span></a>
+      <nav class="sitenav" aria-label="Site"><a href="/"><span class="dot" aria-hidden="true"></span><span class="t">The pod</span></a><a href="/blog/" aria-current="page"><span class="dot" aria-hidden="true"></span><span class="t">Blog</span></a><a href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding" rel="noopener"><span class="t">GitHub</span><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></a></nav>
     </div>
   </div>
   <div class="grid hero">
@@ -48,23 +39,27 @@
       <ul class="rows posts">
         <li><time class="t t-small num" datetime="2026-11-06">Nov 6, 2026</time><p class="t-h3"><a href="/blog/the-spaces-between/">What 54 programs taught us about the spaces between</a></p><p class="t-body">Before we write a line of code, we read how everyone else lost people at the edges, and what carried the ones who stayed.</p></li>
       </ul>
+      <a class="next" href="#subscribe"><span class="t t-small">Next stop</span><span class="t">Get new posts</span><svg class="i" aria-hidden="true"><use href="#a-d"/></svg></a>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="subscribe">
-    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span><h2 id="subscribe" style="--lsb:0.04em">Get new posts</h2></div>
+    <div class="sign"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#eye"/></svg></span><h2 id="subscribe" style="--lsb:0.04em">Get new posts</h2></div>
     <div class="flow">
       <p>Add <a href="/blog/feed.xml">the feed</a> to any feed reader, or watch the pod’s repo on GitHub, where every post starts as a pull request.</p>
-      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding"><span class="t">Follow on GitHub</span><span class="tile blue"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span></a>
+      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding" rel="noopener"><span class="t">Follow on GitHub</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
+      <a class="next" href="#top"><span class="t t-small">End of the line</span><span class="t">Back to the top</span><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></a>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="grid">
-    <span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-r"/></svg></span>
+    <a class="totop" href="#top"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="t t-small">Back to the top</span></a>
     <div class="flow t-small">
-      <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
-      <p>This site is a prototype we're building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
+      <p class="legend-title">How to read the signs</p>
+      <ul class="legend"><li><svg class="i" aria-hidden="true"><use href="#a-d"/></svg><span class="t t-small">Further down this page</span></li><li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t t-small">Another page on this site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg><span class="t t-small">Leaves this site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-u"/></svg><span class="t t-small">Back to the top</span></li><li><span class="here-dot" aria-hidden="true"></span><span class="t t-small">You are here</span></li></ul>
+      <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04" rel="noopener">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
+      <p>This site is a prototype we’re building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
       <p>Set in Inter. Palette: Swiss Style Color Picker, scheme 14, by Fabian Burghardt.</p>
     </div>
   </div>

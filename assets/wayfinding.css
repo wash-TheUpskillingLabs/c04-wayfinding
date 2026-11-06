@@ -16,7 +16,15 @@
      line heights are multiples of 4, and every gap is measured baseline to baseline.
      A text block's margin-top is (distance from the previous baseline or edge) minus its cap height.
    Grid: 12 columns, 24px gutters, 1200px max. Section signs take columns 1 to 3 and stay with
-   you while you read; text takes columns 4 to 10. On phones, 4 columns and a You are here bar.
+   you while you read; text takes columns 4 to 10. On phones, 4 columns.
+
+   Wayfinding rules (tools/build.py enforces them):
+     Arrows only say where a link goes. Down: this page. Right: another page here.
+     Up-right: leaves this site. Up: back to the top. Left: back.
+     Pictograms name sections and are never arrows. Anything clickable carries a text label;
+     anything that only labels never looks clickable (no hover, no button shape).
+     Every page shows the whole route (line map), where you are (sticky sign and the
+     You are here bar, which opens every stop) and the next stop at the end of each section.
    Optical alignment: headings are pulled left by their first letter's side bearing (--lsb),
    bullets and tiles are centred on the cap height, not the line box.
    Corners 4px, like an enamel sign. No gradients, no shadows, no card grids.
@@ -96,32 +104,21 @@ svg.i { width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:2.
 
 /* ---- Cover ---- */
 .cover { background:var(--ink); color:var(--on-ink); padding:32px 0 64px; }
-.signhead { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; padding-bottom:22px; border-bottom:2px solid var(--rule-ink); }
+.signhead { display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:24px; padding-bottom:22px; border-bottom:2px solid var(--rule-ink); }
 .wordmark { display:flex; align-items:flex-start; gap:16px; text-decoration:none; color:inherit; }
 .wordmark .tile { margin-top:-10px; }
 .wordmark .wm { font-weight:800; letter-spacing:-.02em; margin-left:-.023em; }
 .wordmark .sub { margin-top:calc(24px - 10px); color:var(--on-ink-2); max-width:34ch; }
-.signright { display:flex; flex-wrap:wrap; align-items:center; gap:16px 32px; }
-.sitenav { display:flex; gap:24px; }
-.sitenav a { display:inline-flex; align-items:center; gap:8px; color:var(--on-ink); font-weight:700; text-decoration:none; }
-.sitenav a svg.i { width:20px; height:20px; color:var(--blue); }
-.sitenav a[aria-current="page"] { text-decoration:underline; text-decoration-color:var(--red); text-decoration-thickness:2px; text-underline-offset:8px; }
-.signrow { display:flex; gap:8px; }
-.signrow .tile { width:36px; height:36px; }
-.signrow svg.i { width:20px; height:20px; }
 
 .hero { row-gap:0; padding-top:64px; }
 .hero .h1row { position:relative; }
 .hero h1 { margin-top:calc(0px - var(--cap) + var(--capr)); }
-.hero .bigarrow { display:none; }
 .hero .sub { margin-top:calc(52px - var(--cap)); color:var(--on-ink); max-width:40ch; }
 .hero .ctas { margin-top:32px; display:flex; flex-wrap:wrap; align-items:center; gap:16px 32px; }
 .hero figure { margin-top:56px; }
 .hero figcaption { margin-top:calc(28px - var(--cap)); color:var(--on-ink-2); max-width:62ch; }
 @media (min-width:1024px) {
   .hero h1 { max-width:calc(75% - var(--gut) / 4); }
-  .hero .bigarrow { display:grid; position:absolute; right:0; top:0; bottom:0; aspect-ratio:1; place-items:center; border-radius:var(--r); background:var(--blue); color:var(--ink); }
-  .hero .bigarrow svg.i { width:62%; height:62%; stroke-width:2.2; }
   .hero .sub, .hero .ctas { grid-column:1 / span 7; }
   .hero figure, .hero figcaption { grid-column:1 / span 10; }
 }
@@ -137,7 +134,7 @@ svg.i { width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:2.
 @media (min-width:1024px) { .cover.short .hero h1 { max-width:none; } .hero .dek, .hero .byline { grid-column:1 / span 8; } }
 
 /* ---- Buttons: a sign panel, a label and an arrow. 52px tall, so a centred cap sits on the grid. ---- */
-.btn { display:inline-flex; align-items:center; gap:16px; height:52px; padding:0 6px 0 20px; border-radius:var(--r); text-decoration:none; font-weight:700; background:var(--ink); color:var(--paper); justify-self:start; width:max-content; max-width:100%; }
+.btn { display:flex; align-items:center; gap:16px; height:52px; padding:0 6px 0 20px; border-radius:var(--r); text-decoration:none; font-weight:700; background:var(--ink); color:var(--paper); justify-self:start; width:max-content; max-width:100%; }
 .btn.light { background:var(--paper); color:var(--ink); }
 .btn .tile { width:40px; height:40px; }
 @media (prefers-reduced-motion: no-preference) {
@@ -158,7 +155,7 @@ main > .sec:first-child::before { display:none; }
 .sec > .flow > :first-child { --d:var(--capr); }
 @media (min-width:1024px) {
   .sec { padding-top:96px; padding-bottom:96px; }
-  .sign { grid-column:1 / span 3; grid-row:1; align-self:start; position:sticky; top:72px; }
+  .sign { grid-column:1 / span 3; grid-row:1; align-self:start; position:sticky; top:96px; }
   .sign h2 { margin-top:calc(0px - var(--cap)); }
   .sign .tile { margin-top:-32px; }
   .sec > .flow > :first-child:not(p, h3, figcaption, .t) { margin-top:-24px; }
@@ -196,33 +193,14 @@ main > .sec:first-child::before { display:none; }
   .mline .here { grid-column:2; }
 }
 
-/* ---- Herebar: You are here, on phones ---- */
-.herebar { position:fixed; left:0; right:0; top:0; z-index:10; display:flex; align-items:center; gap:12px; height:52px; padding:0 var(--pad); background:var(--ink); color:var(--on-ink); transform:translateY(-100%); visibility:hidden; }
-.herebar.show { transform:none; visibility:visible; }
-.herebar .tile { width:32px; height:32px; }
-.herebar .tile svg.i { width:18px; height:18px; }
-.herebar .lbl { color:var(--on-ink-2); white-space:nowrap; }
-.herebar .name { font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.herebar .dots { margin-left:auto; display:flex; align-items:center; gap:6px; flex:none; }
-.herebar .dots i { width:8px; height:8px; border-radius:50%; background:transparent; box-shadow:inset 0 0 0 2px rgba(229,231,222,.5); }
-.herebar .dots i.past { background:rgba(229,231,222,.8); box-shadow:none; }
-.herebar .dots i.on { background:var(--red); box-shadow:none; transform:scale(1.5); }
-@media (min-width:1024px) { .herebar { display:none; } }
-@media (max-width:1023px) { [id] { scroll-margin-top:84px; } }
-@media (min-width:1024px) { [id] { scroll-margin-top:72px; } }
-@media (prefers-reduced-motion: no-preference) {
-  .herebar { transition:transform .25s cubic-bezier(.32,.72,0,1), visibility .25s; }
-  .herebar .dots i { transition:transform .2s, background .2s; }
-}
-
 /* ---- Footer ---- */
 footer { background:var(--ink); color:var(--on-ink-2); padding:64px 0; }
 footer .flow > * { max-width:62ch; }
 @media (min-width:1024px) {
-  footer .tile { grid-column:1 / span 3; grid-row:1; margin-top:-14px; }
+  footer .totop { grid-column:1 / span 3; grid-row:1; align-self:start; }
   footer .flow { grid-column:4 / span 7; grid-row:1; }
 }
-@media (max-width:1023px) { footer .flow { margin-top:40px; } }
+@media (max-width:1023px) { footer .flow { margin-top:48px; } }
 footer a { color:var(--on-ink); }
 footer .flow > p + p { --d:36px; }
 
@@ -290,3 +268,100 @@ sup a { text-decoration:none; color:var(--ink-2); padding:0 1px; }
 sup a:hover { color:var(--ink); }
 .src > li:target { background:rgba(0,152,216,.12); }
 @media (max-width:420px) { .herebar .lbl { display:none; } }
+
+/* ---- Site nav: stations. Current page is a filled red station. ---- */
+.sitenav { display:flex; flex-wrap:wrap; gap:24px 28px; align-items:flex-end; margin-top:8px; }
+.sitenav a { display:inline-flex; align-items:flex-end; gap:8px; color:var(--on-ink); font-weight:700; text-decoration:none; }
+.sitenav a:hover .t { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.sitenav .dot { width:12px; height:12px; border-radius:50%; box-shadow:inset 0 0 0 3px var(--on-ink); flex:none; }
+.sitenav a[aria-current] .dot { background:var(--red); box-shadow:none; }
+.sitenav a[aria-current="page"] .t { text-decoration:underline; text-decoration-color:var(--red); text-decoration-thickness:2px; text-underline-offset:6px; }
+.sitenav a svg.i { width:20px; height:20px; color:var(--blue); margin:-4px 0; }
+
+/* ---- Line map: the whole route of a page, every station a link ---- */
+.linemap { margin-top:64px; }
+.lm-title { color:var(--on-ink-2); margin-top:calc(var(--capr) - var(--cap)); }
+.linemap ol { display:flex; margin-top:16px; overflow-x:auto; scrollbar-width:thin; padding-bottom:4px; scroll-snap-type:x proximity; }
+.linemap li { position:relative; flex:1 0 auto; min-width:112px; scroll-snap-align:start; }
+.linemap li:not(:last-child)::before { content:""; position:absolute; left:8px; right:-8px; top:6px; height:8px; background:var(--blue); }
+.linemap a { position:relative; display:block; padding:38px 16px 0 0; color:var(--on-ink); text-decoration:none; font-weight:700; }
+.linemap .stn { position:absolute; left:0; top:0; width:20px; height:20px; border-radius:50%; background:var(--paper); box-shadow:inset 0 0 0 5px var(--ink), 0 0 0 2px var(--paper); }
+.linemap a .t { white-space:nowrap; }
+.linemap a:hover .t, .linemap a:focus-visible .t { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.linemap a:hover .stn { background:var(--blue); }
+@media (min-width:1024px) { .linemap li { min-width:0; } }
+
+/* ---- You are here bar: on every screen once the cover has scrolled away. Opens every stop. ---- */
+.herebar { position:fixed; left:0; right:0; top:0; z-index:10; background:var(--ink); color:var(--on-ink); transform:translateY(-100%); visibility:hidden; }
+.herebar.show { transform:none; visibility:visible; }
+.here-toggle { all:unset; box-sizing:border-box; display:flex; align-items:center; gap:12px; height:52px; width:100%; max-width:calc(var(--max) + 2 * var(--pad)); margin:0 auto; padding:0 var(--pad); cursor:pointer; font-family:var(--font); color:var(--on-ink); }
+.here-toggle:focus-visible { outline:3px solid var(--paper); outline-offset:-6px; }
+.here-toggle .tile { width:32px; height:32px; }
+.here-toggle .tile svg.i { width:18px; height:18px; }
+.here-toggle .lbl { color:var(--on-ink-2); white-space:nowrap; }
+.here-toggle .name { font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
+.here-toggle .more { margin-left:auto; font-weight:700; white-space:nowrap; text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.here-toggle svg.chev { width:18px; height:18px; color:var(--blue); flex:none; }
+.here-toggle[aria-expanded="true"] svg.chev { transform:rotate(180deg); }
+.herebar .dots { position:absolute; left:0; right:0; bottom:0; height:4px; display:flex; gap:2px; }
+.herebar .dots li { flex:1; background:rgba(229,231,222,.18); }
+.herebar .dots li.past { background:rgba(229,231,222,.55); }
+.herebar .dots li.on { background:var(--red); }
+.stops { max-height:calc(100vh - 52px); overflow:auto; border-top:1px solid var(--rule-ink); }
+.stops-line { max-width:calc(var(--max) + 2 * var(--pad)); margin:0 auto; padding:8px var(--pad) 24px; }
+.stops-line li { grid-template-columns:24px 1fr; }
+.stops-line a { color:var(--on-ink); font-weight:700; text-decoration:none; }
+.stops-line a:hover { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.stops-line .st { background:var(--ink); box-shadow:inset 0 0 0 5px var(--on-ink); }
+.stops-line li[data-s="done"] .st { background:var(--on-ink); }
+.stops-line li[data-s="now"] .st { background:var(--red); box-shadow:inset 0 0 0 5px var(--on-ink); }
+.stops-line li[data-s="now"] a { color:var(--on-ink); }
+.stops-line li[data-s="now"] .here { display:block; }
+.stops-line li:not(:last-child)::before { background:var(--blue); }
+@media (max-width:520px) { .here-toggle .lbl { display:none; } }
+[id] { scroll-margin-top:84px; }
+@media (min-width:1024px) { [id] { scroll-margin-top:96px; } }
+@media (prefers-reduced-motion: no-preference) {
+  .herebar { transition:transform .25s cubic-bezier(.32,.72,0,1), visibility .25s; }
+  .here-toggle svg.chev { transition:transform .2s; }
+}
+
+/* ---- Next stop: the end of every section says where the route goes ---- */
+.next { display:flex; align-items:flex-end; flex-wrap:wrap; gap:4px 12px; color:var(--ink); text-decoration:none; justify-self:start; width:max-content; max-width:100%; }
+.flow > .next { --d:56px; }
+.next .t-small { color:var(--ink-2); font-weight:600; }
+.next .t:not(.t-small) { font-weight:800; text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.next svg.i { width:20px; height:20px; color:var(--blue); margin:-4px 0; }
+@media (prefers-reduced-motion: no-preference) { .next svg.i { transition:transform .15s cubic-bezier(.32,.72,0,1); } .next:hover svg.i { transform:translateY(4px); } .next[href="#top"]:hover svg.i { transform:translateY(-4px); } }
+
+/* ---- Back link (blog posts) ---- */
+.hero .back { display:inline-flex; align-items:flex-end; gap:8px; color:var(--on-ink); font-weight:700; text-decoration:none; justify-self:start; width:max-content; padding-top:2px; margin-bottom:48px; }
+.hero .back svg.i { width:18px; height:18px; color:var(--blue); margin:-4px 0; }
+.hero .back .t { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+
+/* ---- Footer: back to the top, and the legend ---- */
+.totop { display:flex; align-items:flex-start; gap:12px; color:var(--on-ink); font-weight:700; text-decoration:none; width:max-content; }
+.totop .t { margin-top:18px; text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+@media (prefers-reduced-motion: no-preference) { .totop svg.i { transition:transform .15s cubic-bezier(.32,.72,0,1); } .totop:hover svg.i { transform:translateY(-4px); } }
+.legend-title { color:var(--on-ink); font-weight:700; }
+.flow > .legend { --d:12px; }
+.flow > .legend + p { --d:48px; }
+.legend { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); column-gap:24px; }
+.legend li { display:grid; grid-template-columns:20px 1fr; column-gap:12px; align-items:start; padding-top:12px; }
+.legend li > svg.i { width:20px; height:20px; color:var(--blue); margin-top:-3px; margin-bottom:-8px; }
+.legend li > .t { margin-top:calc(var(--capr) - var(--cap)); }
+.legend .here-dot { width:12px; height:12px; border-radius:50%; background:var(--red); margin:0 0 -1px 4px; position:relative; top:1px; }
+
+/* ---- 404 routes ---- */
+.routes > li { display:grid; row-gap:0; }
+.route-link { display:inline-flex; align-items:flex-end; gap:8px; justify-self:start; font-weight:800; text-decoration:none; color:var(--ink); }
+.route-link .t { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
+.route-link svg.i { width:20px; height:20px; color:var(--blue); margin:-4px 0; }
+.routes > li > .t-small { margin-top:calc(28px - var(--cap)); }
+
+/* ---- Text links that leave the site say so ---- */
+.flow p a[href^="http"]::after, .flow .t a[href^="http"]::after { content:"\2009\2197"; color:var(--blue); font-weight:700; text-decoration:none; display:inline-block; }
+.stops-line .here { grid-column:2; }
+.stops-line li > .t, .stops-line li[data-s="done"] > .t { color:var(--on-ink); }
+.stops-line li[data-s="done"] > .t { color:var(--on-ink-2); }
+.linemap a[aria-current] .stn { background:var(--red); }
