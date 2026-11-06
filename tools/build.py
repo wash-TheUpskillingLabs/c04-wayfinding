@@ -4,7 +4,7 @@
     python3 tools/build.py
 
 Edit the words in content/. Each section is one file; the comment at its top
-names it (id, title, short label for route maps, pictogram, tile colour).
+names it (id, title, short label, pictogram, tile colour).
 A blog post is a folder in content/blog/ with post.json and its sections.
 
 The script owns the sign system, so every page follows the same rules:
@@ -133,14 +133,6 @@ def signhead(current):
   </div>
 '''
 
-def linemap(secs, label="On this page"):
-    lis = "".join(f'<li><a href="#{s["id"]}"><span class="stn" aria-hidden="true"></span><span class="t t-small">{s["short"]}</span></a></li>' for s in secs)
-    return f'''    <nav class="linemap" aria-label="{label}">
-      <p class="t t-small lm-title">{label}</p>
-      <ol>{lis}</ol>
-    </nav>
-'''
-
 def herebar():
     return f'''<nav class="herebar" aria-label="You are here">
   <div class="here-row">
@@ -238,7 +230,7 @@ def build_post(p):
     <h1{lsb(p["title"])}>{p["title"]}</h1>
     <p class="t-lead dek">{p["dek"]}</p>
     <p class="t-small byline">{p["byline"]}, <time datetime="{p["date"]}">{nice_date(p["date"])}</time>. A {mins}-minute read.</p>
-{linemap(secs, "In this post")}  </div>
+  </div>
 </header>
 
 <main id="main">

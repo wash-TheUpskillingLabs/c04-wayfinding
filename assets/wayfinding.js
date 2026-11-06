@@ -1,5 +1,5 @@
 /* Wayfinding: small, optional behaviour. Every page reads and navigates completely without it:
-   the line map, next stops, back-to-top and every link are plain HTML. */
+   back-to-top and every link are plain HTML. */
 (function () {
   var now = new Date();
   if (location.hash === '#grid') document.documentElement.classList.add('show-grid');
@@ -18,7 +18,6 @@
   var bar = document.querySelector('.herebar');
   var secs = Array.prototype.slice.call(document.querySelectorAll('main .sec'));
   var cover = document.querySelector('.cover');
-  var mapLinks = Array.prototype.slice.call(document.querySelectorAll('.linemap a'));
   if (!bar || !secs.length || !cover || !('IntersectionObserver' in window)) return;
 
   var toggle = bar.querySelector('.here-toggle'), panel = document.getElementById('stops');
@@ -45,7 +44,6 @@
       var a = li.querySelector('a');
       if (i === idx) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
     });
-    mapLinks.forEach(function (a, i) { if (i === idx) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); });
   }
   function open(v) {
     toggle.setAttribute('aria-expanded', v ? 'true' : 'false');

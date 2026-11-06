@@ -282,19 +282,6 @@ sup a:hover { color:var(--ink); }
 .sitenav a[aria-current="page"] .t { text-decoration:underline; text-decoration-color:var(--red); text-decoration-thickness:2px; text-underline-offset:6px; }
 .sitenav a svg.i { width:20px; height:20px; color:var(--blue); margin:-4px 0; }
 
-/* ---- Line map: the whole route of a page, every station a link ---- */
-.linemap { margin-top:64px; }
-.lm-title { color:var(--on-ink-2); margin-top:calc(var(--capr) - var(--cap)); }
-.linemap ol { display:flex; margin-top:16px; overflow-x:auto; scrollbar-width:thin; padding-bottom:4px; scroll-snap-type:x proximity; }
-.linemap li { position:relative; flex:1 0 auto; min-width:112px; scroll-snap-align:start; }
-.linemap li:not(:last-child)::before { content:""; position:absolute; left:8px; right:-8px; top:6px; height:8px; background:var(--blue); }
-.linemap a { position:relative; display:block; padding:38px 16px 0 0; color:var(--on-ink); text-decoration:none; font-weight:700; }
-.linemap .stn { position:absolute; left:0; top:0; width:20px; height:20px; border-radius:50%; background:var(--paper); box-shadow:inset 0 0 0 5px var(--ink), 0 0 0 2px var(--paper); }
-.linemap a .t { white-space:nowrap; }
-.linemap a:hover .t, .linemap a:focus-visible .t { text-decoration:underline; text-decoration-color:var(--blue); text-decoration-thickness:2px; text-underline-offset:6px; }
-.linemap a:hover .stn { background:var(--blue); }
-@media (min-width:1024px) { .linemap li { min-width:0; } }
-
 /* ---- You are here bar: on every screen once the cover has scrolled away. Opens every stop. ---- */
 .herebar { position:fixed; left:0; right:0; top:0; z-index:10; background:var(--ink); color:var(--on-ink); transform:translateY(-100%); visibility:hidden; }
 .herebar.show { transform:none; visibility:visible; }
@@ -374,7 +361,6 @@ sup a:hover { color:var(--ink); }
 .stops-line .here { grid-column:2; }
 .stops-line li > .t, .stops-line li[data-s="done"] > .t { color:var(--on-ink); }
 .stops-line li[data-s="done"] > .t { color:var(--on-ink-2); }
-.linemap a[aria-current] .stn { background:var(--red); }
 .flow > :is(p, figure, ul, ol, .btn, .ctas, .crow, figcaption) + :is(h3, .h3) { --d:72px; }
 .flow > h3 + * { --d:32px; }
 .flow > h3 + :is(p, .t) { --d:40px; }
