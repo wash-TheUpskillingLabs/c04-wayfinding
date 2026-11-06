@@ -221,7 +221,7 @@ def build_home(ps):
     </div>
     <figure class="anim herofig">{route}</figure>
     <figcaption id="route-cap">Twelve past participants told us one thing they’d change. Nine named a moment between the parts, shown here in red where they stopped.</figcaption>
-{linemap(secs)}  </div>
+  </div>
 </header>
 
 <main id="main">
