@@ -28,7 +28,7 @@ Put together: **a threshold is crossed when a person can see the next step, can 
 - **Modular catalogs with volunteer experts choke on expert supply and drift into "badge mills."** Scouting's own complaint form lists counselors signing off requirements never completed. About 6% of eligible Scouts reach the top rank in the best years.
 - **Structure helps only with people attached.** Guided pathways in community colleges raised early momentum where fully implemented, but a mandatory plan on its own correlated slightly negatively with persistence.
 
-*What this suggests for a kit:* a kit is not the document. It is the document plus a person trained to run it plus a room plus a visible next kit. The Labs cannot assume paid county educators (4-H), university hosts (Carpentries) or a school timetable (Code Club).
+*What the pod could test, for kits:* a kit is not the document. It is the document plus a person trained to run it plus a room plus a visible next kit. The Labs cannot assume paid county educators (4-H), university hosts (Carpentries) or a school timetable (Code Club).
 
 ### The Cycle as a shared clock
 
@@ -37,7 +37,7 @@ Put together: **a threshold is crossed when a person can see the next step, can 
 - **The clock excludes people who cannot give a season.** Google Summer of Code widened to non-students and stretchable deadlines in 2022 because a fixed summer excluded people with jobs. The Labs' own alumni survey has the same note: one respondent asked for routes that let people watch from the sidelines or play smaller roles depending on availability.
 - **The off-season is where teams recruit, train and get ready.** FIRST's mentor guide treats May–September as recruiting and training time; veteran teams lend robots to pre-rookie teams before kickoff.
 
-*What this suggests:* the Cycle's length and intensity are organizer-side costs as much as participant-side ones. Who is matched and what is prepared before day one matters more than anything inside the twelve weeks.
+*What the pod could test:* the Cycle's length and intensity are organizer-side costs as much as participant-side ones. Who is matched and what is prepared before day one matters more than anything inside the twelve weeks.
 
 ### Pre-cycle (not yet designed)
 
@@ -46,7 +46,7 @@ Put together: **a threshold is crossed when a person can see the next step, can 
 - **Nudges work only when a known local person is behind them.** Summer-melt text messages cut melt in two cities with counselors behind the texts, did nothing in a city that already had support, and failed when scaled statewide with no advisor behind the number. Peer mentors alone had no measurable effect.
 - **The first rung is the steepest, and the gate itself leaks.** A large share of Outreachy applicants dropped at the eligibility form. A Kubernetes intern with a full-time mentor still found the pre-member stage dominated by scale and fragmentation. The Labs' own alumni survey: "onboarding was tricky and joining projects was not obvious."
 
-*What this suggests:* a pre-cycle is small real work, witnessed, with a named person, and a concrete plan for day one ("if it's Tuesday at 6, I go to the branch"). Not a course.
+*What the pod could test:* a pre-cycle is small real work, witnessed, with a named person, and a concrete plan for day one ("if it's Tuesday at 6, I go to the branch"). Not a course.
 
 ### Post- and between-cycle (not yet designed)
 
@@ -56,7 +56,7 @@ Put together: **a threshold is crossed when a person can see the next step, can 
 - **Survival by handover, not by team.** Both continued projects at a corporate hackathon were taken over by other units; one had no original member left. A maintained project at The Labs may need to outlive its founding team to survive at all.
 - **The between is what holds a volunteer clock up.** NaNoWriMo's regions ran their own events between Novembers and kept going after the center closed. FIRST teams meet once or twice a week through summer. Recurse Center's "Never Graduate" keeps alumni access open with no obligation.
 
-*What this suggests:* the post-cycle route is not "keep your project going." It is a visible set of places to go next (a maintained project to join, a workshop to teach, the next Cycle's prep, a role in running things) plus a visible, honorable way to step back without disappearing.
+*What the pod could test:* the post-cycle route is not "keep your project going." It is a visible set of places to go next (a maintained project to join, a workshop to teach, the next Cycle's prep, a role in running things) plus a visible, honorable way to step back without disappearing.
 
 ### Facilitators, trainers, organizers
 
@@ -64,7 +64,7 @@ Put together: **a threshold is crossed when a person can see the next step, can 
 - **Organizer delay becomes participant emergency** (the organizers' own account, #4), and the C02 calendar shows the "Communicating in Slack" session marked "didn't happen too early in the cycle."
 - **Organizers cannot see who is active.** Extinction Rebellion said so outright; Python had 20,000 list subscribers and no idea who participated; Indivisible's map showed 6,000 groups where 2,000–3,000 existed.
 
-*What this suggests:* the kit has to make the runner's job visible and small, and the system has to show organizers who is stuck before participants feel it. The route into running things (participant → teach-back → facilitator → organizer) is itself a threshold with no map.
+*What the pod could test:* the kit has to make the runner's job visible and small, and the system has to show organizers who is stuck before participants feel it. The route into running things (participant → teach-back → facilitator → organizer) is itself a threshold with no map.
 
 ### Channels (multi-headed, headless OLOS)
 
@@ -73,7 +73,7 @@ Put together: **a threshold is crossed when a person can see the next step, can 
 - **A single-channel rule breaks the local layer:** NaNoWriMo banned local Discord and Facebook groups; volunteers left.
 - **Notifications fatigue; batching helps, and a message from a known person outperforms one from a system** (summer melt; channel-overload experiments).
 
-*What this suggests:* OLOS as source of truth, people as the sender. At thresholds especially, a person must meet a person.
+*What the pod could test:* OLOS as source of truth, people as the sender. At thresholds especially, a person must meet a person.
 
 ## What the internal evidence confirms
 
