@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What 54 programs taught us about the spaces between | Wayfinding</title>
-<meta name="description" content="Before we write a line of code, we read how everyone else lost people at the edges, and what carried the ones who stayed.">
+<title>What 54 case studies are teaching us about wayfinding | Wayfinding</title>
+<meta name="description" content="Most programs design the last day. The people who stay were won on the days nobody designed. Here’s what 54 of them are teaching us.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
@@ -31,64 +31,84 @@
   </div>
   <div class="grid hero">
     <a class="back" href="/blog/"><svg class="i" aria-hidden="true"><use href="#a-l"/></svg><span class="t t-small">All posts</span></a>
-    <h1 style="--lsb:0.023em">What 54 programs taught us about the spaces between</h1>
-    <p class="t-lead dek">Before we write a line of code, we read how everyone else lost people at the edges, and what carried the ones who stayed.</p>
+    <h1 style="--lsb:0.023em">What 54 case studies are teaching us about wayfinding</h1>
+    <p class="t-lead dek">Most programs design the last day. The people who stay were won on the days nobody designed. Here’s what 54 of them are teaching us.</p>
     <p class="t-small byline">The Wayfinding pod, <time datetime="2026-11-06">Nov 6, 2026</time>. A three-minute read.</p>
     <nav class="linemap" aria-label="In this post">
       <p class="t t-small lm-title">In this post</p>
-      <ol><li><a href="#first"><span class="stn" aria-hidden="true"></span><span class="t t-small">Why we read</span></a></li><li><a href="#cliff"><span class="stn" aria-hidden="true"></span><span class="t t-small">The cliff</span></a></li><li><a href="#before"><span class="stn" aria-hidden="true"></span><span class="t t-small">Before day one</span></a></li><li><a href="#person"><span class="stn" aria-hidden="true"></span><span class="t t-small">A person</span></a></li><li><a href="#outlast"><span class="stn" aria-hidden="true"></span><span class="t t-small">The people</span></a></li><li><a href="#single"><span class="stn" aria-hidden="true"></span><span class="t t-small">One leader</span></a></li><li><a href="#unknown"><span class="stn" aria-hidden="true"></span><span class="t t-small">Unknowns</span></a></li><li><a href="#sources"><span class="stn" aria-hidden="true"></span><span class="t t-small">Sources</span></a></li></ol>
+      <ol><li><a href="#watch"><span class="stn" aria-hidden="true"></span><span class="t t-small">We watched first</span></a></li><li><a href="#cliff"><span class="stn" aria-hidden="true"></span><span class="t t-small">The cliff</span></a></li><li><a href="#intent"><span class="stn" aria-hidden="true"></span><span class="t t-small">Saying isn’t staying</span></a></li><li><a href="#before"><span class="stn" aria-hidden="true"></span><span class="t t-small">Before day one</span></a></li><li><a href="#person"><span class="stn" aria-hidden="true"></span><span class="t t-small">A person behind it</span></a></li><li><a href="#people"><span class="stn" aria-hidden="true"></span><span class="t t-small">People stay for people</span></a></li><li><a href="#heroes"><span class="stn" aria-hidden="true"></span><span class="t t-small">Heroes</span></a></li><li><a href="#unknown"><span class="stn" aria-hidden="true"></span><span class="t t-small">Still unknown</span></a></li><li><a href="#sources"><span class="stn" aria-hidden="true"></span><span class="t t-small">Sources</span></a></li></ol>
     </nav>
   </div>
 </header>
 
 <main id="main">
-  <section class="sec grid" aria-labelledby="first">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#info"/></svg></span><h2 id="first" style="--lsb:0.023em">Why we read first</h2></div>
+  <section class="sec grid" aria-labelledby="watch">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#eye"/></svg></span><h2 id="watch" style="--lsb:0.023em">We watched before we built</h2></div>
     <div class="flow">
-      <p>The Labs builds in a fixed order, and the first step is archaeology: before we decide what the problem is, we find out how it became one and what’s already been tried. So before the pod writes its paradox on Saturday, Nov 7, we read 54 programs that tried to move people from a first taste to lasting involvement, from Google Summer of Code to 4-H, and mapped 50 organizations doing related work in Greater Washington and nationally.</p>
-      <p>This post is what kept coming up. It’s a reading, not a conclusion. The paradox, and the frames that follow it, are the pod’s to write.</p>
+      <p>Before you redesign a train station, you stand in it at rush hour and watch where people hesitate.</p>
+      <p>So before writing a line of code, we watched. Not our own station yet, but 54 others: programs that tried to move people from a first taste to something lasting, from Google Summer of Code to 4-H. We also mapped 50 organizations doing related work in Greater Washington and across the country.</p>
+      <p>This is what they keep teaching us. It’s a reading, not a verdict. The pod writes its paradox on Nov 7.</p>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="cliff">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#cliff"/></svg></span><h2 id="cliff" style="--lsb:0.057em">Everyone has the cliff</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#cliff"/></svg></span><h2 id="cliff" style="--lsb:0.032em">The cliff is the default</h2></div>
     <div class="flow">
-      <p>Every program we read loses most people at the moment it ends. In Google Summer of Code, about 57% of students said they meant to keep contributing; a few months later, about 16% had.<sup><a href="#s1">1</a></sup> Of the projects from 73 hackathons, about a third had any commit after the event, and fewer than 4 in 100 were still active five months later.<sup><a href="#s2">2</a></sup></p>
-      <p>The part that stuck with us: saying you’ll stay doesn’t predict staying. In the hackathon study, a team’s stated intent to continue made no measurable difference. A route that depends on people deciding to come back is a route most people won’t take.</p>
+      <p>Every program we read loses most of its people at the moment it ends.</p>
+      <p>Not some programs. Every one.</p>
+      <p>About 16 in 100 Google Summer of Code students were still contributing a few months later.<sup><a href="#s1">1</a></sup> Of the projects from 73 hackathons, about a third saw a single commit after the weekend, and fewer than 4 in 100 were alive five months on.<sup><a href="#s2">2</a></sup></p>
+      <p>That isn’t a failure of the people. It’s what happens when the last day of a program is designed and the day after isn’t.</p>
+    </div>
+  </section>
+  <section class="sec grid" aria-labelledby="intent">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#speech"/></svg></span><h2 id="intent" style="--lsb:0.035em">Saying isn’t staying</h2></div>
+    <div class="flow">
+      <p>Here’s the uncomfortable part. About 57% of those Summer of Code students said they meant to keep going.<sup><a href="#s1">1</a></sup> In the hackathon study, a team’s stated intention to continue made no measurable difference at all.<sup><a href="#s2">2</a></sup></p>
+      <p>We design for the person on the last day: inspired, grateful, full of plans. The person who actually has to come back is someone else. They’re tired on a Tuesday, and their inbox has opinions.</p>
+      <p>Design for that person.</p>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="before">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#calendar"/></svg></span><h2 id="before" style="--lsb:0.023em">What predicts staying happens before day one</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#calendar"/></svg></span><h2 id="before" style="--lsb:0.032em">The real work happens before day one</h2></div>
     <div class="flow">
-      <p>In both the Summer of Code data and a closer study of KDE, the students most likely to stay after the program were the ones who had already contributed before it.<sup><a href="#s1">1</a></sup> Hackathon projects lasted longer when the team’s skills were diverse and matched to the work.<sup><a href="#s2">2</a></sup> Both are settled before the event starts.</p>
-      <p>For The Labs, that points at the part we haven’t built. The Cycle is our front door today, and there’s no pre-cycle: nothing that gets someone ready, attached to a person, and doing small real work before day one.</p>
+      <p>The students most likely to stay after Summer of Code had contributed before it started.<sup><a href="#s1">1</a></sup> The hackathon projects that lasted had teams with a mix of skills, matched to the work.<sup><a href="#s2">2</a></sup> Both were settled before anyone said “go.”</p>
+      <p>That’s awkward for us, because The Labs has no “before.” The Cycle is our front door. Nothing gets someone ready, introduces them to a person, and hands them something small and real to do first.</p>
+      <p>How might we build the hallway, not just the room?</p>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="person">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><h2 id="person" style="--lsb:0.023em">A message works when someone is behind it</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#ppl"/></svg></span><h2 id="person" style="--lsb:0.023em">A message is only as good as the person behind it</h2></div>
     <div class="flow">
-      <p>Text reminders over the summer helped admitted students actually start college, in the first trials, where counselors stood behind the texts. When campaigns scaled statewide and nationally, the effect mostly disappeared; the researcher’s own explanation is that the advising was dropped and students didn’t know or trust the sender.<sup><a href="#s3">3</a></sup></p>
-      <p>Wikipedia saw the same thing from the other side. Its newcomers were turned away by semi-automated rejection tools, and newcomers invited to the Teahouse, a help space run by people, stayed at higher rates.<sup><a href="#s4">4</a></sup> Notifications are cheap. The person is the point.</p>
+      <p>About ten text messages over a summer helped admitted students actually show up to college, in the first trials, where a counselor stood behind every message. Scaled statewide and nationally, the effect mostly vanished. The researcher’s own best guess: the advising was dropped, and students didn’t know or trust the sender.<sup><a href="#s3">3</a></sup></p>
+      <p>Wikipedia learned the same thing from the other side. Its newcomers were turned away by semi-automated tools, while newcomers invited into the Teahouse, a help space run by people, stayed at higher rates.<sup><a href="#s4">4</a></sup></p>
+      <p>The message was never the point. A notification is a very cheap way of saying “someone here knows you exist,” and it only works if that’s true.</p>
     </div>
   </section>
-  <section class="sec grid" aria-labelledby="outlast">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#link"/></svg></span><h2 id="outlast" style="--lsb:0.032em">The people outlast the project</h2></div>
+  <section class="sec grid" aria-labelledby="people">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#link"/></svg></span><h2 id="people" style="--lsb:0.057em">People stay for people</h2></div>
     <div class="flow">
-      <p>Our own alumni survey says it plainly. Asked what mattered most, almost everyone named the people. Of the eleven who joined a team, seven are still in touch with it months later.<sup><a href="#s5">5</a></sup> What ended was the shared work.</p>
-      <p>That changes what a route after the Cycle might be. Maybe not “keep your project alive”, but a visible next place to go, with people you already know.</p>
+      <p>Our own alumni survey says it without prompting. Asked what mattered most, almost everyone named the people.<sup><a href="#s5">5</a></sup> Of the eleven who joined a team, seven are still in touch months later. The project ended. The people didn’t.</p>
+      <p>So maybe the question after a Cycle isn’t “how do we keep your project alive?” Maybe it’s “where do you and your people go next?”</p>
     </div>
   </section>
-  <section class="sec grid" aria-labelledby="single">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#one"/></svg></span><h2 id="single" style="--lsb:0.04em">One leader is one point of failure</h2></div>
+  <section class="sec grid" aria-labelledby="heroes">
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#one"/></svg></span><h2 id="heroes" style="--lsb:0.057em">Heroes are a single point of failure</h2></div>
     <div class="flow">
-      <p>Code Club was designed to be volunteer-led; in its trial, 10 of 14 club leaders ran the club alone.<sup><a href="#s6">6</a></sup> A third of trained Carpentries instructors hadn’t taught.<sup><a href="#s7">7</a></sup> FIRST robotics teams, 4-H clubs and open-source projects all lean on one person, and fold when that person goes.</p>
-      <p>NaNoWriMo, the November novel-writing challenge, ran on hundreds of volunteer regional leads and closed in 2025. Some of its local regions kept going under new names, on channels they owned.<sup><a href="#s8">8</a></sup> The local layer outlived the hub.</p>
+      <p>Code Club was designed to be volunteer-led; in its trial, 10 of 14 club leaders ran their club alone.<sup><a href="#s6">6</a></sup> A third of trained Carpentries instructors hadn’t taught.<sup><a href="#s7">7</a></sup> Robotics teams, 4-H clubs and open-source projects all lean on one devoted person, and quietly fold when that person moves on.</p>
+      <p>NaNoWriMo, the November novel challenge, closed in 2025. Some of its local groups simply kept going, under new names, on channels they owned.<sup><a href="#s8">8</a></sup> The center failed. The neighborhoods didn’t.</p>
+      <p>Build for the neighborhoods.</p>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="unknown">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#question"/></svg></span><h2 id="unknown" style="--lsb:0.023em">What we don’t know yet</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#question"/></svg></span><h2 id="unknown" style="--lsb:0.023em">What we still don’t know</h2></div>
     <div class="flow">
-      <p>Everyone who answered our survey is someone who stayed. We haven’t heard from people who came to one workshop and didn’t come back, and they’re the ones this work is for.</p>
-      <p>If that’s you, or you know them, <a href="/#contribute">tell us what happened</a>. You don’t need to code, and what you tell us goes into the record with your name on the contributors list.</p>
+      <p>Everyone who answered our survey is someone who stayed. We haven’t heard from the people who came to one workshop and drifted off, and they’re exactly who this is for.</p>
+      <p>So we’re carrying three questions into Saturday:</p>
+      <ul class="rows steps">
+        <li><svg class="i" aria-hidden="true"><use href="#speech"/></svg><span class="t">How might we design the day after a Cycle as carefully as the last day?</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#speech"/></svg><span class="t">How might we give people something small and real to do before day one?</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#speech"/></svg><span class="t">How might we make sure every nudge has a person behind it?</span></li>
+      </ul>
+      <p>If you came once and didn’t come back, you’re the expert here. Tell us what happened.</p>
       <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1" rel="noopener"><span class="t">Comment on Start here</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
     </div>
   </section>
