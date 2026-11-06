@@ -4,6 +4,8 @@ Desk research logged Nov 5–6, 2026, for the archaeology step. Every claim in e
 
 ## Start here
 
+**[ux/ux-index.md](ux/ux-index.md)** holds eleven world-class UX cases (wayfinding on the web, data-driven explainers, recruiting that teaches the route, one counterexample) with the pattern each contributes; they inform the pod's site, which is its first act of wayfinding.
+
 **[site-evidence.md](site-evidence.md)** is what the evidence says about recruiting volunteers online, landing pages, animated infographics and showing small-n research honestly; it informs the pod's site.
 
 **[players.md](players.md)** is the context and field map (Dorst steps 3–4), with 50 sourced field players in `players/` and two field summaries ([regional](field-map-regional.md), [national](field-map-national.md)).
