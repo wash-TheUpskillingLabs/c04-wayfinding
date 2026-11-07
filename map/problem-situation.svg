@@ -3,11 +3,11 @@
 <desc id="pm-desc">240 statements from alumni, organizers, the problem owner, the steering committee and other programs, sorted into what, who, where, why and how solved. Every statement is listed in the table that follows the map.</desc>
 <style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap");.sitmap text{font-family:Inter,system-ui,sans-serif}</style>
 <defs><radialGradient id="pm-heat"><stop offset="0" stop-color="#0b3536" stop-opacity="1"/><stop offset=".55" stop-color="#0b3536" stop-opacity=".35"/><stop offset="1" stop-color="#0b3536" stop-opacity="0"/></radialGradient>
-<path id="pm-arc-what" d="M72,1050 A500,500 0 0 1 572,550"/>
-<path id="pm-arc-who" d="M512,356 A346,346 0 0 1 858,10"/>
-<path id="pm-arc-where" d="M880,1336 A307,307 0 0 1 1187,1029"/>
-<path id="pm-arc-why" d="M1085,485 A517,517 0 0 1 1602,-32"/>
-<path id="pm-arc-how" d="M1430,1236 A486,486 0 0 1 1916,750"/>
+<path id="pm-arc-what" d="M71.2,1085.2 A502,502 0 0 1 838.2,624.4"/>
+<path id="pm-arc-who" d="M689.4,660.4 A348,348 0 0 1 711.1,40.5"/>
+<path id="pm-arc-where" d="M927.8,1167.8 A309,309 0 0 1 1475.5,1225.4"/>
+<path id="pm-arc-why" d="M1700.8,-24.5 A519,519 0 0 1 1955.8,864.7"/>
+<path id="pm-arc-how" d="M1694.3,801.3 A488,488 0 0 1 2398.0,1312.6"/>
 </defs>
 <rect width="2440" height="1760" fill="#e5e7de"/>
 <image href="https://c04-wayfinding.vercel.app/assets/proto-labs-map.webp" x="683" y="-40" width="2196" height="1817" opacity=".09" preserveAspectRatio="xMidYMid slice" style="filter:grayscale(1)"/>
@@ -57,15 +57,15 @@
 <circle cx="2043.0" cy="952.4" r="80" fill="url(#pm-heat)" opacity="0.19"/>
 </g>
 <circle cx="572" cy="1050" r="486" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
-<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-what" startOffset="8%">WHAT</textPath></text>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em" text-anchor="middle"><textPath href="#pm-arc-what" startOffset="50%">WHAT</textPath></text>
 <circle cx="858" cy="356" r="332" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
-<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-who" startOffset="8%">WHO</textPath></text>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em" text-anchor="middle"><textPath href="#pm-arc-who" startOffset="50%">WHO</textPath></text>
 <circle cx="1187" cy="1336" r="293" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
-<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-where" startOffset="8%">WHERE</textPath></text>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em" text-anchor="middle"><textPath href="#pm-arc-where" startOffset="50%">WHERE</textPath></text>
 <circle cx="1602" cy="485" r="503" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
-<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-why" startOffset="8%">WHY</textPath></text>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em" text-anchor="middle"><textPath href="#pm-arc-why" startOffset="50%">WHY</textPath></text>
 <circle cx="1916" cy="1236" r="472" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
-<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-how" startOffset="8%">HOW SOLVED</textPath></text>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em" text-anchor="middle"><textPath href="#pm-arc-how" startOffset="50%">HOW SOLVED</textPath></text>
 <g class="pm-items" font-size="9.2" fill="#0b3536">
 <g class="pm-s" data-by="A"><title>onboarding was tricky — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
 <circle cx="572.7" cy="1144.4" r="3.8" fill="#0b3536"/>

@@ -116,6 +116,27 @@ def build(statements):
                 items.append((sx, sy, lines, s["by"], s["src"], s["text"]))
     return boxes, heat, labels, items, counts
 
+def word_arc(q):
+    """An arc on the circle's rim, centred where the rim faces open paper:
+    farthest from the other circles and the poster's edges."""
+    c = CIRCLES[q]; R = c["r"] + 16
+    best, best_score = 0.0, -1e9
+    for i in range(360):
+        a = math.radians(i)
+        x, y = c["cx"] + R * math.cos(a), c["cy"] + R * math.sin(a)
+        score = min(x - 40, W - 40 - x, y - 120 if x < 700 else y - 40, H - 60 - y)
+        for q2, c2 in CIRCLES.items():
+            if q2 == q: continue
+            score = min(score, math.hypot(x - c2["cx"], y - c2["cy"]) - c2["r"])
+        if score > best_score: best, best_score = a, score
+    half = 1.1  # radians of arc on each side
+    upper = math.sin(best) < 0  # above the centre in SVG space
+    a0, a1 = (best - half, best + half) if upper else (best + half, best - half)
+    x0, y0 = c["cx"] + R * math.cos(a0), c["cy"] + R * math.sin(a0)
+    x1, y1 = c["cx"] + R * math.cos(a1), c["cy"] + R * math.sin(a1)
+    sweep = 1 if upper else 0
+    return f"M{x0:.1f},{y0:.1f} A{R},{R} 0 0 {sweep} {x1:.1f},{y1:.1f}"
+
 def esc(t): return html.escape(t, quote=True)
 
 def svg(statements, asof, underlay=None):
@@ -127,8 +148,7 @@ def svg(statements, asof, underlay=None):
     o.append('<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap");.sitmap text{font-family:Inter,system-ui,sans-serif}</style>')
     o.append('<defs><radialGradient id="pm-heat"><stop offset="0" stop-color="#0b3536" stop-opacity="1"/><stop offset=".55" stop-color="#0b3536" stop-opacity=".35"/><stop offset="1" stop-color="#0b3536" stop-opacity="0"/></radialGradient>')
     for q, c in CIRCLES.items():
-        # upper-left quarter arc, running from the left point up to the top
-        o.append(f'<path id="pm-arc-{q}" d="M{c["cx"]-c["r"]-14},{c["cy"]} A{c["r"]+14},{c["r"]+14} 0 0 1 {c["cx"]},{c["cy"]-c["r"]-14}"/>')
+        o.append(f'<path id="pm-arc-{q}" d="{word_arc(q)}"/>')
     o.append('</defs>')
     o.append(f'<rect width="{W}" height="{H}" fill="#e5e7de"/>')
     if underlay:
@@ -141,7 +161,7 @@ def svg(statements, asof, underlay=None):
     # circles and their words
     for q, c in CIRCLES.items():
         o.append(f'<circle cx="{c["cx"]}" cy="{c["cy"]}" r="{c["r"]}" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>')
-        o.append(f'<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-{q}" startOffset="8%">{c["word"]}</textPath></text>')
+        o.append(f'<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em" text-anchor="middle"><textPath href="#pm-arc-{q}" startOffset="50%">{c["word"]}</textPath></text>')
     # statements
     o.append(f'<g class="pm-items" font-size="{FS}" fill="#0b3536">')
     for x, y, lines, by, src, full in items:
