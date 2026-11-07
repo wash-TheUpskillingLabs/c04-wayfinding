@@ -3,5 +3,7 @@
  "dek": "We wrote down everything people have told us about trying to find their way around The Labs. Then we drew it. Here’s what we saw, and what we still can’t see.",
  "date": "2026-11-07",
  "byline": "The Wayfinding pod",
- "icon": "compass"
+ "icon": "compass",
+ "cover": "/assets/problem-situation-cover.webp",
+ "cover_alt": "The problem situation map: 240 statements in five overlapping circles, what, who, where, why and how solved."
 }
