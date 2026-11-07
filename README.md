@@ -187,5 +187,6 @@ The pod's site is a working example of what it studies: every page shows where y
 
 - **Edit the words** in `content/`. Each section of a page is one file; the comment at its top gives its title, a short label, and its pictogram.
 - **Write a blog post** by adding a folder to `content/blog/` with a `post.json` (title, dek, date, byline) and one file per section.
+- **Add to the problem situation map** (`/map/`) by adding a statement to `content/map/statements.json`: the question it answers (what, who, where, why, how), its theme, the words, who said it (A alumni, O organizers, P problem owner, S steering committee, X other programs) and where it is logged. The map redraws itself on the next build; `tools/sitmap.py` does the drawing. No names of real people.
 - **Rebuild** with `python3 tools/build.py`, then commit the HTML it writes. The script owns the sign rules (↓ further down this page, → another page here, ↗ leaves this site, ↑ back to the top), so an arrow always tells the truth about where its link goes.
 - Add `#grid` to any page's address to see the 4px baseline grid and the 12 columns.

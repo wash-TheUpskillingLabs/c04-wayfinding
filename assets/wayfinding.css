@@ -443,3 +443,27 @@ figure.proto a:focus-visible { outline-offset:6px; }
 .flow > .carousel { --d:40px; }
 .carousel-nav .all, .cbtn { white-space:nowrap; }
 @media (max-width:520px) { .carousel-nav { gap:12px; } .cbtn { padding:0 12px; } }
+
+/* ---------- The problem situation map ---------- */
+code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88em; line-height:1; }
+@media (min-width:1024px) {
+  .sec.full > .flow { grid-column:1 / -1; grid-row:2; margin-top:48px; }
+  .sec.full > .flow > :first-child { --d:var(--capr); }
+}
+.sitmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
+.sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.72131), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
+.sitmap .pm-s:hover text { fill:var(--red); }
+.sitmap .pm-s:hover circle[fill="#0b3536"] { fill:var(--red); }
+.sitmap .pm-word { text-transform:uppercase; }
+.pm-details > summary { display:flex; align-items:center; gap:12px; height:28px; cursor:pointer; list-style:none; font-weight:600; }
+.pm-details > summary svg.chev { width:20px; height:20px; }
+.pm-details > summary::-webkit-details-marker { display:none; }
+.pm-details[open] > summary .chev { transform:rotate(180deg); }
+.pm-table { width:100%; border-collapse:separate; border-spacing:0; margin-top:24px; }
+.pm-table th, .pm-table td { text-align:left; vertical-align:top; padding:6px 12px 7px 0; border-bottom:1px solid color-mix(in srgb, var(--ink) 20%, transparent); }
+.pm-table th { font-weight:700; }
+@media print {
+  .herebar, .sitenav, footer, .pm-details, .ctas { display:none !important; }
+  .sitmap-wrap { border:0; overflow:visible; }
+  .sitmap-wrap .sitmap { min-width:0; }
+}
