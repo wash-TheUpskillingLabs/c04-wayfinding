@@ -1,0 +1,1657 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2360 1700" width="2360" height="1700" role="img" aria-labelledby="pm-title pm-desc" class="sitmap">
+<title id="pm-title">The problem situation: how people find their way between the parts of The Labs</title>
+<desc id="pm-desc">240 statements from alumni, organizers, the problem owner, the steering committee and other programs, sorted into what, who, where, why and how solved. Every statement is listed in the table that follows the map.</desc>
+<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap");.sitmap text{font-family:Inter,system-ui,sans-serif}</style>
+<defs><radialGradient id="pm-heat"><stop offset="0" stop-color="#0b3536" stop-opacity="1"/><stop offset=".55" stop-color="#0b3536" stop-opacity=".35"/><stop offset="1" stop-color="#0b3536" stop-opacity="0"/></radialGradient>
+<path id="pm-arc-what" d="M69,1014 A483,483 0 0 1 552,531"/>
+<path id="pm-arc-who" d="M494,344 A334,334 0 0 1 828,10"/>
+<path id="pm-arc-where" d="M848,1290 A297,297 0 0 1 1145,993"/>
+<path id="pm-arc-why" d="M1046,468 A500,500 0 0 1 1546,-32"/>
+<path id="pm-arc-how" d="M1380,1193 A469,469 0 0 1 1849,724"/>
+</defs>
+<rect width="2360" height="1700" fill="#e5e7de"/>
+<image href="https://c04-wayfinding.vercel.app/assets/proto-labs-map.webp" x="661" y="-40" width="2124" height="1757" opacity=".09" preserveAspectRatio="xMidYMid slice" style="filter:grayscale(1)"/>
+<g class="pm-heat">
+<circle cx="601.6" cy="1076.5" r="197" fill="url(#pm-heat)" opacity="0.34"/>
+<circle cx="415.6" cy="992.2" r="134" fill="url(#pm-heat)" opacity="0.33"/>
+<circle cx="700.8" cy="915.8" r="125" fill="url(#pm-heat)" opacity="0.31"/>
+<circle cx="500.6" cy="1218.6" r="107" fill="url(#pm-heat)" opacity="0.26"/>
+<circle cx="438.2" cy="803.6" r="107" fill="url(#pm-heat)" opacity="0.26"/>
+<circle cx="809.8" cy="1125.9" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="288.1" cy="1128.1" r="80" fill="url(#pm-heat)" opacity="0.19"/>
+<circle cx="678.2" cy="732.2" r="71" fill="url(#pm-heat)" opacity="0.16"/>
+<circle cx="791.8" cy="384.6" r="107" fill="url(#pm-heat)" opacity="0.26"/>
+<circle cx="826.8" cy="249.8" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="911.3" cy="432.7" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="684.5" cy="333.2" r="71" fill="url(#pm-heat)" opacity="0.16"/>
+<circle cx="942.0" cy="203.3" r="71" fill="url(#pm-heat)" opacity="0.16"/>
+<circle cx="798.8" cy="522.0" r="71" fill="url(#pm-heat)" opacity="0.16"/>
+<circle cx="720.7" cy="179.8" r="62" fill="url(#pm-heat)" opacity="0.14"/>
+<circle cx="1032.1" cy="396.2" r="62" fill="url(#pm-heat)" opacity="0.14"/>
+<circle cx="1108.0" cy="1331.4" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="1143.8" cy="1193.8" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="1230.0" cy="1380.5" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="998.4" cy="1279.0" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="1272.0" cy="1156.2" r="71" fill="url(#pm-heat)" opacity="0.16"/>
+<circle cx="1115.2" cy="1471.8" r="71" fill="url(#pm-heat)" opacity="0.16"/>
+<circle cx="1502.8" cy="516.3" r="107" fill="url(#pm-heat)" opacity="0.26"/>
+<circle cx="1544.6" cy="355.8" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="1645.2" cy="573.6" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="1375.0" cy="455.1" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="1699.1" cy="299.8" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="1511.2" cy="680.1" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="1418.1" cy="272.4" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="1789.2" cy="530.2" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="1310.4" cy="594.1" r="80" fill="url(#pm-heat)" opacity="0.19"/>
+<circle cx="1639.6" cy="201.5" r="80" fill="url(#pm-heat)" opacity="0.19"/>
+<circle cx="1662.7" cy="741.1" r="80" fill="url(#pm-heat)" opacity="0.19"/>
+<circle cx="1262.9" cy="339.8" r="71" fill="url(#pm-heat)" opacity="0.16"/>
+<circle cx="1854.0" cy="367.2" r="62" fill="url(#pm-heat)" opacity="0.14"/>
+<circle cx="1897.1" cy="1253.6" r="152" fill="url(#pm-heat)" opacity="0.34"/>
+<circle cx="1716.7" cy="1171.9" r="116" fill="url(#pm-heat)" opacity="0.28"/>
+<circle cx="1993.4" cy="1097.7" r="107" fill="url(#pm-heat)" opacity="0.26"/>
+<circle cx="1799.2" cy="1391.5" r="107" fill="url(#pm-heat)" opacity="0.26"/>
+<circle cx="1738.6" cy="988.9" r="107" fill="url(#pm-heat)" opacity="0.26"/>
+<circle cx="2099.8" cy="1288.0" r="98" fill="url(#pm-heat)" opacity="0.23"/>
+<circle cx="1593.0" cy="1303.7" r="89" fill="url(#pm-heat)" opacity="0.21"/>
+<circle cx="1971.4" cy="919.6" r="80" fill="url(#pm-heat)" opacity="0.19"/>
+</g>
+<circle cx="552" cy="1014" r="469" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-what" startOffset="8%">WHAT</textPath></text>
+<circle cx="828" cy="344" r="320" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-who" startOffset="8%">WHO</textPath></text>
+<circle cx="1145" cy="1290" r="283" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-where" startOffset="8%">WHERE</textPath></text>
+<circle cx="1546" cy="468" r="486" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-why" startOffset="8%">WHY</textPath></text>
+<circle cx="1849" cy="1193" r="455" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>
+<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em"><textPath href="#pm-arc-how" startOffset="8%">HOW SOLVED</textPath></text>
+<g class="pm-items" font-size="9.2" fill="#0b3536">
+<g class="pm-s" data-by="A"><title>onboarding was tricky — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="551.0" cy="1106.1" r="3.8" fill="#0b3536"/>
+<text x="551.0" y="1108.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="557.5" y="1108.7">onboarding was tricky</text>
+</g>
+<g class="pm-s" data-by="P"><title>a passive consumption culture has emerged — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="334.9" cy="1019.1" r="3.8" fill="#0b3536"/>
+<text x="334.9" y="1021.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="341.4" y="1021.7">a passive consumption culture</text>
+<text x="341.4" y="1032.9">has emerged</text>
+</g>
+<g class="pm-s" data-by="O"><title>the biggest problem is cognitive load — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="656.1" cy="881.1" r="3.8" fill="#0b3536"/>
+<text x="656.1" y="883.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="662.6" y="883.7">the biggest problem is</text>
+<text x="662.6" y="894.9">cognitive load</text>
+</g>
+<g class="pm-s" data-by="P"><title>on a team of five, one person does the building — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="423.4" cy="1169.9" r="3.8" fill="#0b3536"/>
+<text x="423.4" y="1171.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="429.9" y="1172.4">on a team of five, one person</text>
+<text x="429.9" y="1183.6">does the building</text>
+</g>
+<g class="pm-s" data-by="X"><title>about 16 in 100 Summer of Code students kept contributing — other programs, Case library, PR #5</title>
+<circle cx="366.9" cy="827.6" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="366.9" y="829.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="373.4" y="830.2">about 16 in 100 Summer of Code</text>
+<text x="373.4" y="841.4">students kept contributing</text>
+</g>
+<g class="pm-s" data-by="P"><title>there is no non-Cycle experience at all — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="753.1" cy="1162.1" r="3.8" fill="#0b3536"/>
+<text x="753.1" y="1164.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="759.6" y="1164.6">there is no non-Cycle</text>
+<text x="759.6" y="1175.8">experience at all</text>
+</g>
+<g class="pm-s" data-by="P"><title>the pilot met four hours a week, in person, for twelve weeks — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="231.9" cy="1087.8" r="3.8" fill="#0b3536"/>
+<text x="231.9" y="1089.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="238.4" y="1090.4">the pilot met four hours a</text>
+<text x="238.4" y="1101.6">week, in person, for twelve</text>
+<text x="238.4" y="1112.8">weeks</text>
+</g>
+<g class="pm-s" data-by="P"><title>the voting math created only one pod — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="609.6" cy="703.0" r="3.8" fill="#0b3536"/>
+<text x="609.6" y="704.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="616.1" y="705.5">the voting math created only</text>
+<text x="616.1" y="716.7">one pod</text>
+</g>
+<g class="pm-s" data-by="A"><title>joining a project was not obvious — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="531.4" cy="1039.8" r="3.8" fill="#0b3536"/>
+<text x="531.4" y="1041.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="537.9" y="1042.4">joining a project was not</text>
+<text x="537.9" y="1053.6">obvious</text>
+</g>
+<g class="pm-s" data-by="P"><title>everyone waits on us to deliver what to do next and what to learn — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="352.7" cy="943.4" r="3.8" fill="#0b3536"/>
+<text x="352.7" y="945.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="359.2" y="945.9">everyone waits on us to</text>
+<text x="359.2" y="957.1">deliver what to do next and</text>
+<text x="359.2" y="968.3">what to learn</text>
+</g>
+<g class="pm-s" data-by="O"><title>participants struggle to know what’s next and what’s expected right now — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="639.3" cy="942.2" r="3.8" fill="#0b3536"/>
+<text x="639.3" y="944.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="645.8" y="944.8">participants struggle to know</text>
+<text x="645.8" y="956.0">what’s next and what’s</text>
+<text x="645.8" y="967.2">expected right now</text>
+</g>
+<g class="pm-s" data-by="P"><title>the rest consult — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="469.1" cy="1256.2" r="3.8" fill="#0b3536"/>
+<text x="469.1" y="1258.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="475.6" y="1258.8">the rest consult</text>
+</g>
+<g class="pm-s" data-by="X"><title>57% had said they meant to continue — other programs, Case library, PR #5</title>
+<circle cx="384.3" cy="768.9" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="384.3" y="770.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="390.8" y="771.5">57% had said they meant to</text>
+<text x="390.8" y="782.7">continue</text>
+</g>
+<g class="pm-s" data-by="P"><title>a profile and an account mean nothing if you’re not in a Cycle — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="788.3" cy="1067.1" r="3.8" fill="#0b3536"/>
+<text x="788.3" y="1069.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="794.8" y="1069.7">a profile and an account mean</text>
+<text x="794.8" y="1080.9">nothing if you’re not in a</text>
+<text x="794.8" y="1092.1">Cycle</text>
+</g>
+<g class="pm-s" data-by="P"><title>that momentum let us fix things ad hoc without infrastructure — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="218.9" cy="1149.4" r="3.8" fill="#0b3536"/>
+<text x="218.9" y="1151.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="225.4" y="1152.0">that momentum let us fix</text>
+<text x="225.4" y="1163.2">things ad hoc without</text>
+<text x="225.4" y="1174.4">infrastructure</text>
+</g>
+<g class="pm-s" data-by="P"><title>at least one still-active participant is really upset about it — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="602.1" cy="753.5" r="3.8" fill="#0b3536"/>
+<text x="602.1" y="755.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="608.6" y="756.0">at least one still-active</text>
+<text x="608.6" y="767.2">participant is really upset</text>
+<text x="608.6" y="778.4">about it</text>
+</g>
+<g class="pm-s" data-by="A"><title>jumping into projects felt overwhelming — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="525.1" cy="1120.5" r="3.8" fill="#0b3536"/>
+<text x="525.1" y="1122.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="531.6" y="1123.1">jumping into projects felt</text>
+<text x="531.6" y="1134.3">overwhelming</text>
+</g>
+<g class="pm-s" data-by="P"><title>people get paralyzed; they don’t think they’re supposed to go off and do it on their own — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="341.3" cy="895.3" r="3.8" fill="#0b3536"/>
+<text x="341.3" y="897.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="347.8" y="897.9">people get paralyzed; they</text>
+<text x="347.8" y="909.1">don’t think they’re supposed</text>
+<text x="347.8" y="920.3">to go off and do it on their</text>
+<text x="347.8" y="931.5">own</text>
+</g>
+<g class="pm-s" data-by="O"><title>important information didn’t flow through Slack — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="618.3" cy="854.9" r="3.8" fill="#0b3536"/>
+<text x="618.3" y="856.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="624.8" y="857.5">important information didn’t</text>
+<text x="624.8" y="868.7">flow through Slack</text>
+</g>
+<g class="pm-s" data-by="P"><title>for three Cycles, consulting was rewarded as contribution — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="442.4" cy="1274.5" r="3.8" fill="#0b3536"/>
+<text x="442.4" y="1276.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="448.9" y="1277.1">for three Cycles, consulting</text>
+<text x="448.9" y="1288.3">was rewarded as contribution</text>
+</g>
+<g class="pm-s" data-by="X"><title>of 73 hackathons’ projects, 3.6% were alive five months later — other programs, Case library, PR #5</title>
+<circle cx="382.3" cy="853.9" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="382.3" y="855.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="388.8" y="856.5">of 73 hackathons’ projects,</text>
+<text x="388.8" y="867.7">3.6% were alive five months</text>
+<text x="388.8" y="878.9">later</text>
+</g>
+<g class="pm-s" data-by="P"><title>leaving the Cycle means leaving The Labs — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="754.9" cy="1189.2" r="3.8" fill="#0b3536"/>
+<text x="754.9" y="1191.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="761.4" y="1191.7">leaving the Cycle means</text>
+<text x="761.4" y="1202.9">leaving The Labs</text>
+</g>
+<g class="pm-s" data-by="P"><title>the Cycle no longer has the in-person weekly check-in — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="228.5" cy="1061.9" r="3.8" fill="#0b3536"/>
+<text x="228.5" y="1063.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="235.0" y="1064.5">the Cycle no longer has the</text>
+<text x="235.0" y="1075.7">in-person weekly check-in</text>
+</g>
+<g class="pm-s" data-by="P"><title>edge cases like this throw people for a loop — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="613.2" cy="673.7" r="3.8" fill="#0b3536"/>
+<text x="613.2" y="675.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="619.7" y="676.3">edge cases like this throw</text>
+<text x="619.7" y="687.5">people for a loop</text>
+</g>
+<g class="pm-s" data-by="A"><title>improve “what to expect” — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="541.2" cy="1023.6" r="3.8" fill="#0b3536"/>
+<text x="541.2" y="1025.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="547.7" y="1026.2">improve “what to expect”</text>
+</g>
+<g class="pm-s" data-by="P"><title>the community is waiting for the plan to be handed down — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="198.8" cy="948.4" r="3.8" fill="#0b3536"/>
+<text x="198.8" y="950.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="205.3" y="951.0">the community is waiting for</text>
+<text x="205.3" y="962.2">the plan to be handed down</text>
+</g>
+<g class="pm-s" data-by="O"><title>it lived in Zoom meetings that weren’t very engaging — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="629.8" cy="979.1" r="3.8" fill="#0b3536"/>
+<text x="629.8" y="981.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="636.3" y="981.7">it lived in Zoom meetings that</text>
+<text x="636.3" y="992.9">weren’t very engaging</text>
+</g>
+<g class="pm-s" data-by="P"><title>asking everyone to contribute individually made people upset — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="413.1" cy="1300.8" r="3.8" fill="#0b3536"/>
+<text x="413.1" y="1302.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="419.6" y="1303.3">asking everyone to contribute</text>
+<text x="419.6" y="1314.5">individually made people upset</text>
+</g>
+<g class="pm-s" data-by="X"><title>stated intent to continue made no measurable difference — other programs, Case library, PR #5</title>
+<circle cx="351.1" cy="742.7" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="351.1" y="744.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="357.6" y="745.2">stated intent to continue made</text>
+<text x="357.6" y="756.4">no measurable difference</text>
+</g>
+<g class="pm-s" data-by="P"><title>“not ready” has nowhere to go — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="750.5" cy="1049.1" r="3.8" fill="#0b3536"/>
+<text x="750.5" y="1051.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="757.0" y="1051.7">“not ready” has nowhere to go</text>
+</g>
+<g class="pm-s" data-by="P"><title>we haven’t been able to replicate it — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="233.2" cy="1191.4" r="3.8" fill="#0b3536"/>
+<text x="233.2" y="1193.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="239.7" y="1194.0">we haven’t been able to</text>
+<text x="239.7" y="1205.2">replicate it</text>
+</g>
+<g class="pm-s" data-by="A"><title>at times did not really understand what to do next — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="582.9" cy="1159.7" r="3.8" fill="#0b3536"/>
+<text x="582.9" y="1161.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="589.4" y="1162.2">at times did not really</text>
+<text x="589.4" y="1173.4">understand what to do next</text>
+</g>
+<g class="pm-s" data-by="P"><title>no one has attempted to draw the vision out and document it — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="227.8" cy="868.9" r="3.8" fill="#0b3536"/>
+<text x="227.8" y="870.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="234.3" y="871.5">no one has attempted to draw</text>
+<text x="234.3" y="882.7">the vision out and document it</text>
+</g>
+<g class="pm-s" data-by="O"><title>the organization was siloed — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="646.1" cy="839.1" r="3.8" fill="#0b3536"/>
+<text x="646.1" y="841.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="652.6" y="841.6">the organization was siloed</text>
+</g>
+<g class="pm-s" data-by="P"><title>it was felt as a cost to community and team-building — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="427.7" cy="1327.8" r="3.8" fill="#0b3536"/>
+<text x="427.7" y="1329.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="434.2" y="1330.4">it was felt as a cost to</text>
+<text x="434.2" y="1341.6">community and team-building</text>
+</g>
+<g class="pm-s" data-by="X"><title>AmeriCorps’ effects were half gone by year eight — other programs, Case library, PR #5</title>
+<circle cx="372.7" cy="712.2" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="372.7" y="714.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="379.2" y="714.7">AmeriCorps’ effects were half</text>
+<text x="379.2" y="725.9">gone by year eight</text>
+</g>
+<g class="pm-s" data-by="O"><title>everyone sees The Labs through the Cycle; there is no before or after — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="736.2" cy="1219.1" r="3.8" fill="#0b3536"/>
+<text x="736.2" y="1221.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="742.7" y="1221.7">everyone sees The Labs through</text>
+<text x="742.7" y="1232.9">the Cycle; there is no before</text>
+<text x="742.7" y="1244.1">or after</text>
+</g>
+<g class="pm-s" data-by="A"><title>needs more structure and a common goal — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="497.6" cy="948.7" r="3.8" fill="#0b3536"/>
+<text x="497.6" y="950.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="504.1" y="951.3">needs more structure and a</text>
+<text x="504.1" y="962.5">common goal</text>
+</g>
+<g class="pm-s" data-by="P"><title>people arrive as operators and are upset the thing is underbuilt — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="182.9" cy="911.7" r="3.8" fill="#0b3536"/>
+<text x="182.9" y="913.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="189.4" y="914.3">people arrive as operators and</text>
+<text x="189.4" y="925.5">are upset the thing is</text>
+<text x="189.4" y="936.7">underbuilt</text>
+</g>
+<g class="pm-s" data-by="O"><title>too little communication across teams — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="652.2" cy="812.2" r="3.8" fill="#0b3536"/>
+<text x="652.2" y="814.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="658.7" y="814.8">too little communication</text>
+<text x="658.7" y="826.0">across teams</text>
+</g>
+<g class="pm-s" data-by="P"><title>people want to be treated as owners but not to do the work of ownership — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="441.6" cy="1356.6" r="3.8" fill="#0b3536"/>
+<text x="441.6" y="1358.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="448.1" y="1359.1">people want to be treated as</text>
+<text x="448.1" y="1370.3">owners but not to do the work</text>
+<text x="448.1" y="1381.5">of ownership</text>
+</g>
+<g class="pm-s" data-by="X"><title>72% of Teach For America teachers were out of teaching by year five — other programs, Case library, PR #5</title>
+<circle cx="392.0" cy="674.9" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="392.0" y="676.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="398.5" y="677.5">72% of Teach For America</text>
+<text x="398.5" y="688.7">teachers were out of teaching</text>
+<text x="398.5" y="699.9">by year five</text>
+</g>
+<g class="pm-s" data-by="A"><title>more guidance on what to work on in a given week — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="673.7" cy="1012.5" r="3.8" fill="#0b3536"/>
+<text x="673.7" y="1014.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="680.2" y="1015.1">more guidance on what to work</text>
+<text x="680.2" y="1026.3">on in a given week</text>
+</g>
+<g class="pm-s" data-by="P"><title>pods come in with their point of view and want to start building — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="216.9" cy="823.1" r="3.8" fill="#0b3536"/>
+<text x="216.9" y="825.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="223.4" y="825.7">pods come in with their point</text>
+<text x="223.4" y="836.9">of view and want to start</text>
+<text x="223.4" y="848.1">building</text>
+</g>
+<g class="pm-s" data-by="O"><title>too little time and too few resources — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="775.9" cy="877.9" r="3.8" fill="#0b3536"/>
+<text x="775.9" y="879.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="782.4" y="880.5">too little time and too few</text>
+<text x="782.4" y="891.7">resources</text>
+</g>
+<g class="pm-s" data-by="P"><title>people ride the coattails of the project — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="295.3" cy="1267.4" r="3.8" fill="#0b3536"/>
+<text x="295.3" y="1269.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="301.8" y="1270.0">people ride the coattails of</text>
+<text x="301.8" y="1281.2">the project</text>
+</g>
+<g class="pm-s" data-by="X"><title>the Carpentries’ online course finished 5 to 10% of starters — other programs, Case library, PR #5</title>
+<circle cx="222.7" cy="789.1" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="222.7" y="791.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="229.2" y="791.7">the Carpentries’ online course</text>
+<text x="229.2" y="802.9">finished 5 to 10% of starters</text>
+</g>
+<g class="pm-s" data-by="A"><title>moderators should step in to get teams unstuck — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="587.6" cy="1261.3" r="3.8" fill="#0b3536"/>
+<text x="587.6" y="1263.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="594.1" y="1263.9">moderators should step in to</text>
+<text x="594.1" y="1275.1">get teams unstuck</text>
+</g>
+<g class="pm-s" data-by="P"><title>nobody is really doing the desk research or synthesis — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="195.9" cy="1030.2" r="3.8" fill="#0b3536"/>
+<text x="195.9" y="1032.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="202.4" y="1032.8">nobody is really doing the</text>
+<text x="202.4" y="1044.0">desk research or synthesis</text>
+</g>
+<g class="pm-s" data-by="O"><title>organizer delays become participant emergencies — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="789.0" cy="947.2" r="3.8" fill="#0b3536"/>
+<text x="789.0" y="949.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="795.5" y="949.7">organizer delays become</text>
+<text x="795.5" y="960.9">participant emergencies</text>
+</g>
+<g class="pm-s" data-by="A"><title>a clearer roadmap from individual work into team pods — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="600.7" cy="1289.5" r="3.8" fill="#0b3536"/>
+<text x="600.7" y="1291.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="607.2" y="1292.1">a clearer roadmap from</text>
+<text x="607.2" y="1303.3">individual work into team pods</text>
+</g>
+<g class="pm-s" data-by="P"><title>the interviews don’t get done — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="361.1" cy="1044.7" r="3.8" fill="#0b3536"/>
+<text x="361.1" y="1046.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="367.6" y="1047.3">the interviews don’t get done</text>
+</g>
+<g class="pm-s" data-by="O"><title>the “Communicating in Slack” session didn’t happen; too early in the cycle — organizers, C02 calendar annotation</title>
+<circle cx="791.8" cy="827.3" r="3.8" fill="#0b3536"/>
+<text x="791.8" y="829.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="798.3" y="829.9">the “Communicating in Slack”</text>
+<text x="798.3" y="841.1">session didn’t happen; too</text>
+<text x="798.3" y="852.3">early in the cycle</text>
+</g>
+<g class="pm-s" data-by="A"><title>roles and expectations were unclear — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="584.6" cy="1318.4" r="3.8" fill="#0b3536"/>
+<text x="584.6" y="1320.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="591.1" y="1321.0">roles and expectations were</text>
+<text x="591.1" y="1332.2">unclear</text>
+</g>
+<g class="pm-s" data-by="P"><title>people are only half listening at any one time — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="107.5" cy="974.3" r="3.8" fill="#0b3536"/>
+<text x="107.5" y="976.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="114.0" y="976.9">people are only half listening</text>
+<text x="114.0" y="988.1">at any one time</text>
+</g>
+<g class="pm-s" data-by="A"><title>one person’s early setup didn’t fit the team that formed later — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="526.1" cy="801.9" r="3.8" fill="#0b3536"/>
+<text x="526.1" y="803.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="532.6" y="804.5">one person’s early setup</text>
+<text x="532.6" y="815.7">didn’t fit the team that</text>
+<text x="532.6" y="826.9">formed later</text>
+</g>
+<g class="pm-s" data-by="A"><title>course-correcting took a long time, even with Labs experts — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="790.3" cy="985.7" r="3.8" fill="#0b3536"/>
+<text x="790.3" y="987.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="796.8" y="988.3">course-correcting took a long</text>
+<text x="796.8" y="999.5">time, even with Labs experts</text>
+</g>
+<g class="pm-s" data-by="A"><title>people constantly moving in and out of the project — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="610.9" cy="1345.8" r="3.8" fill="#0b3536"/>
+<text x="610.9" y="1347.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="617.4" y="1348.4">people constantly moving in</text>
+<text x="617.4" y="1359.6">and out of the project</text>
+</g>
+<g class="pm-s" data-by="A"><title>no way to get people to commit — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="424.3" cy="1151.0" r="3.8" fill="#0b3536"/>
+<text x="424.3" y="1152.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="430.8" y="1153.6">no way to get people to commit</text>
+</g>
+<g class="pm-s" data-by="A"><title>map out pathways so people can watch from the sidelines — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="750.7" cy="1262.1" r="3.8" fill="#0b3536"/>
+<text x="750.7" y="1264.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="757.2" y="1264.7">map out pathways so people can</text>
+<text x="757.2" y="1275.9">watch from the sidelines</text>
+</g>
+<g class="pm-s" data-by="A"><title>content from past Cycles should be in one central place — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="826.6" cy="1017.8" r="3.8" fill="#0b3536"/>
+<text x="826.6" y="1019.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="833.1" y="1020.3">content from past Cycles</text>
+<text x="833.1" y="1031.5">should be in one central place</text>
+</g>
+<g class="pm-s" data-by="A"><title>links came from individual trainers, not one place; it felt ad hoc — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="600.3" cy="1374.1" r="3.8" fill="#0b3536"/>
+<text x="600.3" y="1376.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="606.8" y="1376.6">links came from individual</text>
+<text x="606.8" y="1387.8">trainers, not one place; it</text>
+<text x="606.8" y="1399.0">felt ad hoc</text>
+</g>
+<g class="pm-s" data-by="A"><title>12 answered: 7 from C03, 3 from C02, 2 from C01 — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="693.4" cy="411.3" r="3.8" fill="#0b3536"/>
+<text x="693.4" y="413.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="699.9" y="413.9">12 answered: 7 from C03, 3</text>
+<text x="699.9" y="425.1">from C02, 2 from C01</text>
+</g>
+<g class="pm-s" data-by="S"><title>The Upskilling Labs of Greater Washington, new this Cycle — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="749.5" cy="286.0" r="3.8" fill="#0b3536"/>
+<text x="749.5" y="287.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="756.0" y="288.5">The Upskilling Labs of Greater</text>
+<text x="756.0" y="299.7">Washington, new this Cycle</text>
+</g>
+<g class="pm-s" data-by="P"><title>working adults with lots of life experience — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="846.9" cy="456.7" r="3.8" fill="#0b3536"/>
+<text x="846.9" y="458.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="853.4" y="459.3">working adults with lots of</text>
+<text x="853.4" y="470.5">life experience</text>
+</g>
+<g class="pm-s" data-by="P"><title>people who came once and drifted off — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="606.1" cy="293.7" r="3.8" fill="#0b3536"/>
+<text x="606.1" y="295.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="612.6" y="296.3">people who came once and</text>
+<text x="612.6" y="307.5">drifted off</text>
+</g>
+<g class="pm-s" data-by="P"><title>the one person who builds — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="890.3" cy="174.2" r="3.8" fill="#0b3536"/>
+<text x="890.3" y="176.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="896.8" y="176.8">the one person who builds</text>
+</g>
+<g class="pm-s" data-by="P"><title>one person holds how it all fits together — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="741.9" cy="554.0" r="3.8" fill="#0b3536"/>
+<text x="741.9" y="555.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="748.4" y="556.6">one person holds how it all</text>
+<text x="748.4" y="567.8">fits together</text>
+</g>
+<g class="pm-s" data-by="O"><title>a handful of organizers, short on time and hands — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="637.6" cy="206.7" r="3.8" fill="#0b3536"/>
+<text x="637.6" y="208.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="644.1" y="209.3">a handful of organizers, short</text>
+<text x="644.1" y="220.5">on time and hands</text>
+</g>
+<g class="pm-s" data-by="P"><title>institutions and employers who need to pay attention — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="958.9" cy="366.9" r="3.8" fill="#0b3536"/>
+<text x="958.9" y="368.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="965.4" y="369.5">institutions and employers who</text>
+<text x="965.4" y="380.7">need to pay attention</text>
+</g>
+<g class="pm-s" data-by="A"><title>11 of 12 joined a project team — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="703.1" cy="363.6" r="3.8" fill="#0b3536"/>
+<text x="703.1" y="365.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="709.6" y="366.2">11 of 12 joined a project team</text>
+</g>
+<g class="pm-s" data-by="S"><title>a steering committee beginning the region’s self-organization — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="787.3" cy="314.3" r="3.8" fill="#0b3536"/>
+<text x="787.3" y="316.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="793.8" y="316.9">a steering committee beginning</text>
+<text x="793.8" y="328.1">the region’s self-organization</text>
+</g>
+<g class="pm-s" data-by="P"><title>mostly highly educated and professionally experienced — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="845.0" cy="484.1" r="3.8" fill="#0b3536"/>
+<text x="845.0" y="486.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="851.5" y="486.6">mostly highly educated and</text>
+<text x="851.5" y="497.8">professionally experienced</text>
+</g>
+<g class="pm-s" data-by="P"><title>the person who got lost at the first door — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="551.6" cy="262.5" r="3.8" fill="#0b3536"/>
+<text x="551.6" y="264.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="558.1" y="265.1">the person who got lost at the</text>
+<text x="558.1" y="276.3">first door</text>
+</g>
+<g class="pm-s" data-by="P"><title>the four who consult — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="901.7" cy="156.0" r="3.8" fill="#0b3536"/>
+<text x="901.7" y="157.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="908.2" y="158.6">the four who consult</text>
+</g>
+<g class="pm-s" data-by="P"><title>no formal authority in the organization — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="704.5" cy="483.8" r="3.8" fill="#0b3536"/>
+<text x="704.5" y="485.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="711.0" y="486.3">no formal authority in the</text>
+<text x="711.0" y="497.5">organization</text>
+</g>
+<g class="pm-s" data-by="O"><title>facilitators and moderators asked to step in — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="645.9" cy="143.2" r="3.8" fill="#0b3536"/>
+<text x="645.9" y="145.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="652.4" y="145.8">facilitators and moderators</text>
+<text x="652.4" y="157.0">asked to step in</text>
+</g>
+<g class="pm-s" data-by="P"><title>they judge us against multi-million-dollar institutions — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1009.4" cy="415.6" r="3.8" fill="#0b3536"/>
+<text x="1009.4" y="417.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1015.9" y="418.2">they judge us against</text>
+<text x="1015.9" y="429.4">multi-million-dollar</text>
+<text x="1015.9" y="440.6">institutions</text>
+</g>
+<g class="pm-s" data-by="A"><title>would recommend: median 8 of 10 — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="678.0" cy="446.2" r="3.8" fill="#0b3536"/>
+<text x="678.0" y="448.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="684.5" y="448.8">would recommend: median 8 of</text>
+<text x="684.5" y="460.0">10</text>
+</g>
+<g class="pm-s" data-by="S"><title>builders who work in Claude Code in the browser — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="785.2" cy="126.7" r="3.8" fill="#0b3536"/>
+<text x="785.2" y="128.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="791.7" y="129.3">builders who work in Claude</text>
+<text x="791.7" y="140.5">Code in the browser</text>
+</g>
+<g class="pm-s" data-by="P"><title>high-agency adults who know how to solve their own problems — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="923.3" cy="512.7" r="3.8" fill="#0b3536"/>
+<text x="923.3" y="514.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="929.8" y="515.3">high-agency adults who know</text>
+<text x="929.8" y="526.5">how to solve their own</text>
+<text x="929.8" y="537.7">problems</text>
+</g>
+<g class="pm-s" data-by="A"><title>respondents skew toward people who finished and joined teams — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="658.3" cy="95.8" r="3.8" fill="#0b3536"/>
+<text x="658.3" y="97.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="664.8" y="98.4">respondents skew toward people</text>
+<text x="664.8" y="109.6">who finished and joined teams</text>
+</g>
+<g class="pm-s" data-by="P"><title>the person who pictured themselves in a pod that never formed — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="955.3" cy="245.2" r="3.8" fill="#0b3536"/>
+<text x="955.3" y="247.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="961.8" y="247.7">the person who pictured</text>
+<text x="961.8" y="258.9">themselves in a pod that never</text>
+<text x="961.8" y="270.1">formed</text>
+</g>
+<g class="pm-s" data-by="P"><title>on the steering committee, which ends in January — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="723.4" cy="579.5" r="3.8" fill="#0b3536"/>
+<text x="723.4" y="581.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="729.9" y="582.0">on the steering committee,</text>
+<text x="729.9" y="593.2">which ends in January</text>
+</g>
+<g class="pm-s" data-by="A"><title>lasting relationships: 3–4 people for half of them — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="555.1" cy="408.2" r="3.8" fill="#0b3536"/>
+<text x="555.1" y="410.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="561.6" y="410.7">lasting relationships: 3–4</text>
+<text x="561.6" y="421.9">people for half of them</text>
+</g>
+<g class="pm-s" data-by="S"><title>pod maintainers who review every pull request — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="865.7" cy="340.4" r="3.8" fill="#0b3536"/>
+<text x="865.7" y="342.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="872.2" y="343.0">pod maintainers who review</text>
+<text x="872.2" y="354.2">every pull request</text>
+</g>
+<g class="pm-s" data-by="P"><title>they are not paying us; this is free — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="883.1" cy="550.9" r="3.8" fill="#0b3536"/>
+<text x="883.1" y="552.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="889.6" y="553.5">they are not paying us; this</text>
+<text x="889.6" y="564.7">is free</text>
+</g>
+<g class="pm-s" data-by="A"><title>7 of 11 still in touch with their team — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="532.0" cy="380.9" r="3.8" fill="#0b3536"/>
+<text x="532.0" y="382.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="538.5" y="383.5">7 of 11 still in touch with</text>
+<text x="538.5" y="394.7">their team</text>
+</g>
+<g class="pm-s" data-by="P"><title>the board, which reviews what the region changes — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="827.4" cy="98.8" r="3.8" fill="#0b3536"/>
+<text x="827.4" y="100.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="833.9" y="101.4">the board, which reviews what</text>
+<text x="833.9" y="112.6">the region changes</text>
+</g>
+<g class="pm-s" data-by="P"><title>most members, most of the time, are not in a Cycle — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="988.5" cy="455.1" r="3.8" fill="#0b3536"/>
+<text x="988.5" y="457.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="995.0" y="457.7">most members, most of the</text>
+<text x="995.0" y="468.9">time, are not in a Cycle</text>
+</g>
+<g class="pm-s" data-by="A"><title>several in new jobs, contracts or job searches — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="915.4" cy="285.1" r="3.8" fill="#0b3536"/>
+<text x="915.4" y="287.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="921.9" y="287.7">several in new jobs, contracts</text>
+<text x="921.9" y="298.9">or job searches</text>
+</g>
+<g class="pm-s" data-by="P"><title>partner organizations and sponsors interested in what gets built — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="767.9" cy="57.3" r="3.8" fill="#0b3536"/>
+<text x="767.9" y="59.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="774.4" y="59.9">partner organizations and</text>
+<text x="774.4" y="71.1">sponsors interested in what</text>
+<text x="774.4" y="82.3">gets built</text>
+</g>
+<g class="pm-s" data-by="A"><title>one is building a venture started in the Cycle — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="572.4" cy="476.4" r="3.8" fill="#0b3536"/>
+<text x="572.4" y="478.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="578.9" y="479.0">one is building a venture</text>
+<text x="578.9" y="490.2">started in the Cycle</text>
+</g>
+<g class="pm-s" data-by="O"><title>the Cycle is the point of entry — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="1090.8" cy="1290.1" r="3.8" fill="#0b3536"/>
+<text x="1090.8" y="1292.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="1097.3" y="1292.6">the Cycle is the point of</text>
+<text x="1097.3" y="1303.8">entry</text>
+</g>
+<g class="pm-s" data-by="P"><title>monthly meetups — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1105.1" cy="1170.2" r="3.8" fill="#0b3536"/>
+<text x="1105.1" y="1172.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1111.6" y="1172.7">monthly meetups</text>
+</g>
+<g class="pm-s" data-by="P"><title>the web application — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1191.6" cy="1418.1" r="3.8" fill="#0b3536"/>
+<text x="1191.6" y="1420.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1198.1" y="1420.7">the web application</text>
+</g>
+<g class="pm-s" data-by="S"><title>The Labs started in DC Public Library branches in 2025 — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="937.6" cy="1244.3" r="3.8" fill="#0b3536"/>
+<text x="937.6" y="1246.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="944.1" y="1246.9">The Labs started in DC Public</text>
+<text x="944.1" y="1258.1">Library branches in 2025</text>
+</g>
+<g class="pm-s" data-by="P"><title>there is no pre-cycle experience — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="1222.9" cy="1113.0" r="3.8" fill="#0b3536"/>
+<text x="1222.9" y="1114.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1229.4" y="1115.6">there is no pre-cycle</text>
+<text x="1229.4" y="1126.8">experience</text>
+</g>
+<g class="pm-s" data-by="S"><title>national’s pages redirect to theupskillinglabs.org — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1046.5" cy="1442.6" r="3.8" fill="#0b3536"/>
+<text x="1046.5" y="1444.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1053.0" y="1445.2">national’s pages redirect to</text>
+<text x="1053.0" y="1456.4">theupskillinglabs.org</text>
+</g>
+<g class="pm-s" data-by="P"><title>twelve weeks, an incubation sprint and a capstone — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="979.5" cy="1363.3" r="3.8" fill="#0b3536"/>
+<text x="979.5" y="1365.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="986.0" y="1365.9">twelve weeks, an incubation</text>
+<text x="986.0" y="1377.1">sprint and a capstone</text>
+</g>
+<g class="pm-s" data-by="P"><title>workshops, virtual or in person — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1086.3" cy="1217.8" r="3.8" fill="#0b3536"/>
+<text x="1086.3" y="1219.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1092.8" y="1220.4">workshops, virtual or in</text>
+<text x="1092.8" y="1231.6">person</text>
+</g>
+<g class="pm-s" data-by="P"><title>Slack — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1217.7" cy="1342.9" r="3.8" fill="#0b3536"/>
+<text x="1217.7" y="1344.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1224.2" y="1345.5">Slack</text>
+</g>
+<g class="pm-s" data-by="S"><title>every public library branch in the region, on the Metro map — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="890.9" cy="1305.7" r="3.8" fill="#0b3536"/>
+<text x="890.9" y="1307.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="897.4" y="1308.3">every public library branch in</text>
+<text x="897.4" y="1319.5">the region, on the Metro map</text>
+</g>
+<g class="pm-s" data-by="P"><title>there is no well-mapped post-cycle or between-cycle experience — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="1223.2" cy="1216.4" r="3.8" fill="#0b3536"/>
+<text x="1223.2" y="1218.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1229.7" y="1219.0">there is no well-mapped</text>
+<text x="1229.7" y="1230.2">post-cycle or between-cycle</text>
+<text x="1229.7" y="1241.4">experience</text>
+</g>
+<g class="pm-s" data-by="S"><title>the region serves its own home, cycle page, About and Get Involved — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1039.0" cy="1493.1" r="3.8" fill="#0b3536"/>
+<text x="1039.0" y="1495.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1045.5" y="1495.7">the region serves its own</text>
+<text x="1045.5" y="1506.9">home, cycle page, About and</text>
+<text x="1045.5" y="1518.1">Get Involved</text>
+</g>
+<g class="pm-s" data-by="P"><title>the sense-making and direction-setting intensives — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="1090.5" cy="1255.8" r="3.8" fill="#0b3536"/>
+<text x="1090.5" y="1257.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1097.0" y="1258.4">the sense-making and</text>
+<text x="1097.0" y="1269.6">direction-setting intensives</text>
+</g>
+<g class="pm-s" data-by="P"><title>we’ve called everything workshops; now trainings and workshops are different things — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1028.7" cy="1133.2" r="3.8" fill="#0b3536"/>
+<text x="1028.7" y="1135.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1035.2" y="1135.8">we’ve called everything</text>
+<text x="1035.2" y="1147.0">workshops; now trainings and</text>
+<text x="1035.2" y="1158.2">workshops are different things</text>
+</g>
+<g class="pm-s" data-by="P"><title>email — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1230.7" cy="1433.0" r="3.8" fill="#0b3536"/>
+<text x="1230.7" y="1434.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1237.2" y="1435.6">email</text>
+</g>
+<g class="pm-s" data-by="S"><title>an empty library is an invitation to host a workshop — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="913.6" cy="1218.0" r="3.8" fill="#0b3536"/>
+<text x="913.6" y="1219.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="920.1" y="1220.6">an empty library is an</text>
+<text x="920.1" y="1231.8">invitation to host a workshop</text>
+</g>
+<g class="pm-s" data-by="P"><title>the route into a workplace and back — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1166.6" cy="1080.4" r="3.8" fill="#0b3536"/>
+<text x="1166.6" y="1082.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1173.1" y="1082.9">the route into a workplace and</text>
+<text x="1173.1" y="1094.1">back</text>
+</g>
+<g class="pm-s" data-by="S"><title>the Ambassador program stays national — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1004.7" cy="1416.8" r="3.8" fill="#0b3536"/>
+<text x="1004.7" y="1418.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1011.2" y="1419.4">the Ambassador program stays</text>
+<text x="1011.2" y="1430.6">national</text>
+</g>
+<g class="pm-s" data-by="S"><title>pod to team at Vote 2, Nov 14 — steering committee, Record #3, team formation as a threshold</title>
+<circle cx="968.2" cy="1389.9" r="3.8" fill="#0b3536"/>
+<text x="968.2" y="1391.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="974.7" y="1392.4">pod to team at Vote 2, Nov 14</text>
+</g>
+<g class="pm-s" data-by="P"><title>a training teaches a tool; a workshop produces a work product — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1020.1" cy="1093.5" r="3.8" fill="#0b3536"/>
+<text x="1020.1" y="1095.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1026.6" y="1096.1">a training teaches a tool; a</text>
+<text x="1026.6" y="1107.3">workshop produces a work</text>
+<text x="1026.6" y="1118.5">product</text>
+</g>
+<g class="pm-s" data-by="P"><title>LinkedIn, our only social account for now — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1197.1" cy="1316.9" r="3.8" fill="#0b3536"/>
+<text x="1197.1" y="1318.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1203.6" y="1319.5">LinkedIn, our only social</text>
+<text x="1203.6" y="1330.7">account for now</text>
+</g>
+<g class="pm-s" data-by="P"><title>the pilot’s weekly four-hour room — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1016.1" cy="1068.0" r="3.8" fill="#0b3536"/>
+<text x="1016.1" y="1069.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1022.6" y="1070.6">the pilot’s weekly four-hour</text>
+<text x="1022.6" y="1081.8">room</text>
+</g>
+<g class="pm-s" data-by="S"><title>the team midpoint, Nov 26 — steering committee, Record #3, team formation as a threshold</title>
+<circle cx="920.5" cy="1336.9" r="3.8" fill="#0b3536"/>
+<text x="920.5" y="1338.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="927.0" y="1339.5">the team midpoint, Nov 26</text>
+</g>
+<g class="pm-s" data-by="P"><title>“upskilling sessions” as the broader category — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1095.7" cy="1041.9" r="3.8" fill="#0b3536"/>
+<text x="1095.7" y="1043.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1102.2" y="1044.5">“upskilling sessions” as the</text>
+<text x="1102.2" y="1055.7">broader category</text>
+</g>
+<g class="pm-s" data-by="P"><title>GitHub, where contributors open pull requests — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1220.1" cy="1453.4" r="3.8" fill="#0b3536"/>
+<text x="1220.1" y="1455.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1226.6" y="1456.0">GitHub, where contributors</text>
+<text x="1226.6" y="1467.2">open pull requests</text>
+</g>
+<g class="pm-s" data-by="P"><title>project nights in the Civic Tech DC style — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1087.4" cy="1529.8" r="3.8" fill="#0b3536"/>
+<text x="1087.4" y="1531.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1093.9" y="1532.3">project nights in the Civic</text>
+<text x="1093.9" y="1543.5">Tech DC style</text>
+</g>
+<g class="pm-s" data-by="S"><title>the showcase, Dec 8 — steering committee, Record #3, team formation as a threshold</title>
+<circle cx="1221.7" cy="1297.6" r="3.8" fill="#0b3536"/>
+<text x="1221.7" y="1299.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1228.2" y="1300.2">the showcase, Dec 8</text>
+</g>
+<g class="pm-s" data-by="S"><title>trainings, workshops, open labs, meetups and happy hours; summits are national’s — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1243.5" cy="1259.6" r="3.8" fill="#0b3536"/>
+<text x="1243.5" y="1261.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1250.0" y="1262.2">trainings, workshops, open</text>
+<text x="1250.0" y="1273.4">labs, meetups and happy hours;</text>
+<text x="1250.0" y="1284.6">summits are national’s</text>
+</g>
+<g class="pm-s" data-by="O"><title>Slack existed, but the information lived in Zoom — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="1186.6" cy="1491.6" r="3.8" fill="#0b3536"/>
+<text x="1186.6" y="1493.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="1193.1" y="1494.2">Slack existed, but the</text>
+<text x="1193.1" y="1505.4">information lived in Zoom</text>
+</g>
+<g class="pm-s" data-by="X"><title>effort drops as groups grow when contributions can’t be told apart (Ringelmann, Latané) — other programs, Case library, PR #5</title>
+<circle cx="1474.9" cy="451.9" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1474.9" y="453.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1481.4" y="454.5">effort drops as groups grow</text>
+<text x="1481.4" y="465.7">when contributions can’t be</text>
+<text x="1481.4" y="476.9">told apart (Ringelmann,</text>
+<text x="1481.4" y="488.1">Latané)</text>
+</g>
+<g class="pm-s" data-by="P"><title>this is the first time working adults are asked to do real creative leadership — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1465.1" cy="301.4" r="3.8" fill="#0b3536"/>
+<text x="1465.1" y="303.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1471.6" y="304.0">this is the first time working</text>
+<text x="1471.6" y="315.2">adults are asked to do real</text>
+<text x="1471.6" y="326.4">creative leadership</text>
+</g>
+<g class="pm-s" data-by="X"><title>competence and belonging predicted staying; choice alone did not (Deci &amp; Ryan) — other programs, Case library, PR #5</title>
+<circle cx="1583.8" cy="611.1" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1583.8" y="613.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1590.3" y="613.6">competence and belonging</text>
+<text x="1590.3" y="624.8">predicted staying; choice</text>
+<text x="1590.3" y="636.0">alone did not (Deci &amp; Ryan)</text>
+</g>
+<g class="pm-s" data-by="X"><title>10 of 14 Code Club leaders ran their club alone — other programs, Case library, PR #5</title>
+<circle cx="1303.7" cy="479.2" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1303.7" y="481.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1310.2" y="481.8">10 of 14 Code Club leaders ran</text>
+<text x="1310.2" y="493.0">their club alone</text>
+</g>
+<g class="pm-s" data-by="P"><title>the Cycle is largely a self-help, autodidactic experience — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1635.6" cy="245.4" r="3.8" fill="#0b3536"/>
+<text x="1635.6" y="247.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1642.1" y="248.0">the Cycle is largely a</text>
+<text x="1642.1" y="259.2">self-help, autodidactic</text>
+<text x="1642.1" y="270.4">experience</text>
+</g>
+<g class="pm-s" data-by="P"><title>the vision is held in one person’s head — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1441.0" cy="643.5" r="3.8" fill="#0b3536"/>
+<text x="1441.0" y="645.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1447.5" y="646.1">the vision is held in one</text>
+<text x="1447.5" y="657.3">person’s head</text>
+</g>
+<g class="pm-s" data-by="P"><title>any intervention will be built with volunteer hours — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1355.0" cy="237.7" r="3.8" fill="#0b3536"/>
+<text x="1355.0" y="239.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1361.5" y="240.3">any intervention will be built</text>
+<text x="1361.5" y="251.5">with volunteer hours</text>
+</g>
+<g class="pm-s" data-by="X"><title>people navigate by a few fixed landmarks (Lynch) — other programs, Case library, PR #5</title>
+<circle cx="1726.0" cy="495.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1726.0" y="497.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1732.5" y="498.1">people navigate by a few fixed</text>
+<text x="1732.5" y="509.3">landmarks (Lynch)</text>
+</g>
+<g class="pm-s" data-by="P"><title>we’re not doing coaching; they’re not paying us — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1248.7" cy="564.9" r="3.8" fill="#0b3536"/>
+<text x="1248.7" y="566.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1255.2" y="567.5">we’re not doing coaching;</text>
+<text x="1255.2" y="578.7">they’re not paying us</text>
+</g>
+<g class="pm-s" data-by="P"><title>we aren’t creating spaces often enough for the team to meet — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1581.1" cy="161.2" r="3.8" fill="#0b3536"/>
+<text x="1581.1" y="163.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1587.6" y="163.8">we aren’t creating spaces</text>
+<text x="1587.6" y="175.0">often enough for the team to</text>
+<text x="1587.6" y="186.2">meet</text>
+</g>
+<g class="pm-s" data-by="X"><title>summer-melt texts worked with a counselor behind them and vanished at state scale — other programs, Case library, PR #5</title>
+<circle cx="1587.7" cy="771.7" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1587.7" y="773.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1594.2" y="774.3">summer-melt texts worked with</text>
+<text x="1594.2" y="785.5">a counselor behind them and</text>
+<text x="1594.2" y="796.7">vanished at state scale</text>
+</g>
+<g class="pm-s" data-by="O"><title>the Cycle is meant to be adaptive; it changes as it goes — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="1208.9" cy="299.5" r="3.8" fill="#0b3536"/>
+<text x="1208.9" y="301.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="1215.4" y="302.1">the Cycle is meant to be</text>
+<text x="1215.4" y="313.3">adaptive; it changes as it</text>
+<text x="1215.4" y="324.5">goes</text>
+</g>
+<g class="pm-s" data-by="P"><title>“pod” and “project” keep confusing people — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1784.7" cy="394.1" r="3.8" fill="#0b3536"/>
+<text x="1784.7" y="396.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1791.2" y="396.7">“pod” and “project” keep</text>
+<text x="1791.2" y="407.9">confusing people</text>
+</g>
+<g class="pm-s" data-by="X"><title>loafing is lowest when work is identifiable and the group matters (Karau &amp; Williams) — other programs, Case library, PR #5</title>
+<circle cx="1427.4" cy="411.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1427.4" y="413.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1433.9" y="414.1">loafing is lowest when work is</text>
+<text x="1433.9" y="425.3">identifiable and the group</text>
+<text x="1433.9" y="436.5">matters (Karau &amp; Williams)</text>
+</g>
+<g class="pm-s" data-by="P"><title>ideas go into an arena and the ones with traction move forward — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1584.7" cy="398.0" r="3.8" fill="#0b3536"/>
+<text x="1584.7" y="399.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1591.2" y="400.5">ideas go into an arena and the</text>
+<text x="1591.2" y="411.7">ones with traction move</text>
+<text x="1591.2" y="422.9">forward</text>
+</g>
+<g class="pm-s" data-by="X"><title>“this matters to me” predicts persistence more than “this is fun” — other programs, Case library, PR #5</title>
+<circle cx="1620.8" cy="454.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1620.8" y="456.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1627.3" y="457.1">“this matters to me” predicts</text>
+<text x="1627.3" y="468.3">persistence more than “this is</text>
+<text x="1627.3" y="479.5">fun”</text>
+</g>
+<g class="pm-s" data-by="X"><title>a third of trained Carpentries instructors never taught — other programs, Case library, PR #5</title>
+<circle cx="1271.5" cy="416.8" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1271.5" y="418.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1278.0" y="419.4">a third of trained Carpentries</text>
+<text x="1278.0" y="430.6">instructors never taught</text>
+</g>
+<g class="pm-s" data-by="P"><title>workshops and trainings are where we give skills, and they aren’t required — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1758.6" cy="239.3" r="3.8" fill="#0b3536"/>
+<text x="1758.6" y="241.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1765.1" y="241.9">workshops and trainings are</text>
+<text x="1765.1" y="253.1">where we give skills, and they</text>
+<text x="1765.1" y="264.3">aren’t required</text>
+</g>
+<g class="pm-s" data-by="P"><title>that person has no formal authority — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1426.6" cy="704.1" r="3.8" fill="#0b3536"/>
+<text x="1426.6" y="706.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1433.1" y="706.7">that person has no formal</text>
+<text x="1433.1" y="717.9">authority</text>
+</g>
+<g class="pm-s" data-by="P"><title>managing that work is a wayfinding problem of its own — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1333.3" cy="211.5" r="3.8" fill="#0b3536"/>
+<text x="1333.3" y="213.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1339.8" y="214.0">managing that work is a</text>
+<text x="1339.8" y="225.2">wayfinding problem of its own</text>
+</g>
+<g class="pm-s" data-by="X"><title>people keep going only while the scent stays warm (Pirolli &amp; Card) — other programs, Case library, PR #5</title>
+<circle cx="1781.9" cy="452.2" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1781.9" y="454.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1788.4" y="454.8">people keep going only while</text>
+<text x="1788.4" y="466.0">the scent stays warm (Pirolli</text>
+<text x="1788.4" y="477.2">&amp; Card)</text>
+</g>
+<g class="pm-s" data-by="P"><title>there is no one whose job it is to help them navigate — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1243.7" cy="618.1" r="3.8" fill="#0b3536"/>
+<text x="1243.7" y="620.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1250.2" y="620.7">there is no one whose job it</text>
+<text x="1250.2" y="631.9">is to help them navigate</text>
+</g>
+<g class="pm-s" data-by="P"><title>individuals don’t get to synthesize what everyone else is working on — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1584.9" cy="124.0" r="3.8" fill="#0b3536"/>
+<text x="1584.9" y="125.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1591.4" y="126.6">individuals don’t get to</text>
+<text x="1591.4" y="137.8">synthesize what everyone else</text>
+<text x="1591.4" y="149.0">is working on</text>
+</g>
+<g class="pm-s" data-by="X"><title>Wikipedia newcomers met by bots left; those invited to the Teahouse stayed — other programs, Case library, PR #5</title>
+<circle cx="1604.8" cy="808.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1604.8" y="810.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1611.3" y="811.1">Wikipedia newcomers met by</text>
+<text x="1611.3" y="822.3">bots left; those invited to</text>
+<text x="1611.3" y="833.5">the Teahouse stayed</text>
+</g>
+<g class="pm-s" data-by="O"><title>most wayfinding complaints trace to organizers — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="1200.8" cy="363.8" r="3.8" fill="#0b3536"/>
+<text x="1200.8" y="365.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="1207.3" y="366.4">most wayfinding complaints</text>
+<text x="1207.3" y="377.6">trace to organizers</text>
+</g>
+<g class="pm-s" data-by="P"><title>a pod should be seen as a much bigger community, a research group — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1799.0" cy="316.9" r="3.8" fill="#0b3536"/>
+<text x="1799.0" y="318.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1805.5" y="319.5">a pod should be seen as a much</text>
+<text x="1805.5" y="330.7">bigger community, a research</text>
+<text x="1805.5" y="341.9">group</text>
+</g>
+<g class="pm-s" data-by="X"><title>about 15 people wrote 80% of Apache — other programs, Case library, PR #5</title>
+<circle cx="1433.8" cy="615.2" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1433.8" y="617.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1440.3" y="617.8">about 15 people wrote 80% of</text>
+<text x="1440.3" y="629.0">Apache</text>
+</g>
+<g class="pm-s" data-by="P"><title>people want one linear experience: one team, all the way through — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1417.1" cy="157.3" r="3.8" fill="#0b3536"/>
+<text x="1417.1" y="159.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1423.6" y="159.9">people want one linear</text>
+<text x="1423.6" y="171.1">experience: one team, all the</text>
+<text x="1423.6" y="182.3">way through</text>
+</g>
+<g class="pm-s" data-by="X"><title>self-taught never means alone: about ten helpers per project (Tough) — other programs, Case library, PR #5</title>
+<circle cx="1661.7" cy="651.4" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1661.7" y="653.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1668.2" y="654.0">self-taught never means alone:</text>
+<text x="1668.2" y="665.2">about ten helpers per project</text>
+<text x="1668.2" y="676.4">(Tough)</text>
+</g>
+<g class="pm-s" data-by="X"><title>60% of open-source maintainers have quit or considered it — other programs, Case library, PR #5</title>
+<circle cx="1244.7" cy="513.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1244.7" y="515.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1251.2" y="516.1">60% of open-source maintainers</text>
+<text x="1251.2" y="527.3">have quit or considered it</text>
+</g>
+<g class="pm-s" data-by="P"><title>the Cycle is the time to put skills into practice — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1730.8" cy="168.2" r="3.8" fill="#0b3536"/>
+<text x="1730.8" y="170.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1737.3" y="170.8">the Cycle is the time to put</text>
+<text x="1737.3" y="182.0">skills into practice</text>
+</g>
+<g class="pm-s" data-by="P"><title>no one is doing the work to extract it — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1411.8" cy="731.0" r="3.8" fill="#0b3536"/>
+<text x="1411.8" y="732.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1418.3" y="733.6">no one is doing the work to</text>
+<text x="1418.3" y="744.8">extract it</text>
+</g>
+<g class="pm-s" data-by="P"><title>the Cycle needs a really clear vision behind it — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1256.0" cy="182.2" r="3.8" fill="#0b3536"/>
+<text x="1256.0" y="184.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1262.5" y="184.7">the Cycle needs a really clear</text>
+<text x="1262.5" y="195.9">vision behind it</text>
+</g>
+<g class="pm-s" data-by="X"><title>working memory is small; the cost of “what’s next” is a packaging cost (Sweller) — other programs, Case library, PR #5</title>
+<circle cx="1725.3" cy="611.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1725.3" y="613.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1731.8" y="614.1">working memory is small; the</text>
+<text x="1731.8" y="625.3">cost of “what’s next” is a</text>
+<text x="1731.8" y="636.5">packaging cost (Sweller)</text>
+</g>
+<g class="pm-s" data-by="P"><title>we can’t promise to hold anyone’s hand — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1248.7" cy="645.5" r="3.8" fill="#0b3536"/>
+<text x="1248.7" y="647.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1255.2" y="648.1">we can’t promise to hold</text>
+<text x="1255.2" y="659.3">anyone’s hand</text>
+</g>
+<g class="pm-s" data-by="P"><title>people don’t understand the thing they’re part of or how they fit — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1573.6" cy="85.0" r="3.8" fill="#0b3536"/>
+<text x="1573.6" y="86.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1580.1" y="87.6">people don’t understand the</text>
+<text x="1580.1" y="98.8">thing they’re part of or how</text>
+<text x="1580.1" y="110.0">they fit</text>
+</g>
+<g class="pm-s" data-by="X"><title>a single-channel rule broke NaNoWriMo’s local layer — other programs, Case library, PR #5</title>
+<circle cx="1577.5" cy="701.6" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1577.5" y="703.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1584.0" y="704.2">a single-channel rule broke</text>
+<text x="1584.0" y="715.4">NaNoWriMo’s local layer</text>
+</g>
+<g class="pm-s" data-by="O"><title>the Cycle is time-bound; when we take our time, participants lose the time — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="1136.7" cy="251.8" r="3.8" fill="#0b3536"/>
+<text x="1136.7" y="253.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="1143.2" y="254.4">the Cycle is time-bound; when</text>
+<text x="1143.2" y="265.6">we take our time, participants</text>
+<text x="1143.2" y="276.8">lose the time</text>
+</g>
+<g class="pm-s" data-by="X"><title>preparation and skill mix predicted a project’s survival; intent did not — other programs, Case library, PR #5</title>
+<circle cx="1423.4" cy="759.6" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1423.4" y="761.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1429.9" y="762.2">preparation and skill mix</text>
+<text x="1429.9" y="773.4">predicted a project’s</text>
+<text x="1429.9" y="784.6">survival; intent did not</text>
+</g>
+<g class="pm-s" data-by="P"><title>that creates a problematic dependency on that team — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1434.3" cy="125.3" r="3.8" fill="#0b3536"/>
+<text x="1434.3" y="127.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1440.8" y="127.9">that creates a problematic</text>
+<text x="1440.8" y="139.1">dependency on that team</text>
+</g>
+<g class="pm-s" data-by="X"><title>capacity for self-direction depends on the situation, not the person (Candy) — other programs, Case library, PR #5</title>
+<circle cx="1804.5" cy="562.8" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1804.5" y="564.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1811.0" y="565.4">capacity for self-direction</text>
+<text x="1811.0" y="576.6">depends on the situation, not</text>
+<text x="1811.0" y="587.8">the person (Candy)</text>
+</g>
+<g class="pm-s" data-by="X"><title>FIRST retired its six-week build window over mentor workload — other programs, Case library, PR #5</title>
+<circle cx="1156.7" cy="473.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1156.7" y="475.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1163.2" y="476.1">FIRST retired its six-week</text>
+<text x="1163.2" y="487.3">build window over mentor</text>
+<text x="1163.2" y="498.5">workload</text>
+</g>
+<g class="pm-s" data-by="P"><title>people say they don’t have the skills and can’t gain them here — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1793.4" cy="276.0" r="3.8" fill="#0b3536"/>
+<text x="1793.4" y="277.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1799.9" y="278.6">people say they don’t have the</text>
+<text x="1799.9" y="289.8">skills and can’t gain them</text>
+<text x="1799.9" y="301.0">here</text>
+</g>
+<g class="pm-s" data-by="P"><title>writing down someone else’s vision feels like claiming authority — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1440.9" cy="799.4" r="3.8" fill="#0b3536"/>
+<text x="1440.9" y="801.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1447.4" y="802.0">writing down someone else’s</text>
+<text x="1447.4" y="813.2">vision feels like claiming</text>
+<text x="1447.4" y="824.4">authority</text>
+</g>
+<g class="pm-s" data-by="P"><title>we depend on an amorphous volunteer community to build it — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1272.1" cy="140.4" r="3.8" fill="#0b3536"/>
+<text x="1272.1" y="142.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1278.6" y="143.0">we depend on an amorphous</text>
+<text x="1278.6" y="154.2">volunteer community to build</text>
+<text x="1278.6" y="165.4">it</text>
+</g>
+<g class="pm-s" data-by="X"><title>a map most people can’t read gets replaced by a line (Duolingo, Khan Academy) — other programs, Case library, PR #5</title>
+<circle cx="1819.3" cy="658.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1819.3" y="660.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1825.8" y="661.1">a map most people can’t read</text>
+<text x="1825.8" y="672.3">gets replaced by a line</text>
+<text x="1825.8" y="683.5">(Duolingo, Khan Academy)</text>
+</g>
+<g class="pm-s" data-by="P"><title>we created a sandbox to enter, form teams and build community in — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1209.9" cy="672.2" r="3.8" fill="#0b3536"/>
+<text x="1209.9" y="674.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1216.4" y="674.7">we created a sandbox to enter,</text>
+<text x="1216.4" y="685.9">form teams and build community</text>
+<text x="1216.4" y="697.1">in</text>
+</g>
+<g class="pm-s" data-by="P"><title>it’s not one or the other; we need both the team and individual contribution — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1569.4" cy="46.0" r="3.8" fill="#0b3536"/>
+<text x="1569.4" y="47.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1575.9" y="48.6">it’s not one or the other; we</text>
+<text x="1575.9" y="59.8">need both the team and</text>
+<text x="1575.9" y="71.0">individual contribution</text>
+</g>
+<g class="pm-s" data-by="X"><title>Scouts’ counselors signed off requirements never completed — other programs, Case library, PR #5</title>
+<circle cx="1600.2" cy="846.7" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1600.2" y="848.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1606.7" y="849.2">Scouts’ counselors signed off</text>
+<text x="1606.7" y="860.4">requirements never completed</text>
+</g>
+<g class="pm-s" data-by="X"><title>heavy first-week activity raised the chance of stopping — other programs, Case library, PR #5</title>
+<circle cx="1218.0" cy="390.6" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1218.0" y="392.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1224.5" y="393.2">heavy first-week activity</text>
+<text x="1224.5" y="404.4">raised the chance of stopping</text>
+</g>
+<g class="pm-s" data-by="P"><title>team formation is tied at the hip to problem and project voting — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1422.8" cy="87.8" r="3.8" fill="#0b3536"/>
+<text x="1422.8" y="89.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1429.3" y="90.4">team formation is tied at the</text>
+<text x="1429.3" y="101.6">hip to problem and project</text>
+<text x="1429.3" y="112.8">voting</text>
+</g>
+<g class="pm-s" data-by="X"><title>you learn a community by doing small real work at its edge, witnessed (Lave &amp; Wenger) — other programs, Case library, PR #5</title>
+<circle cx="1782.8" cy="706.6" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1782.8" y="708.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1789.3" y="709.2">you learn a community by doing</text>
+<text x="1789.3" y="720.4">small real work at its edge,</text>
+<text x="1789.3" y="731.6">witnessed (Lave &amp; Wenger)</text>
+</g>
+<g class="pm-s" data-by="X"><title>NaNoWriMo closed in 2025; its regions kept going on channels they owned — other programs, Case library, PR #5</title>
+<circle cx="1091.2" cy="514.5" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1091.2" y="516.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1097.7" y="517.1">NaNoWriMo closed in 2025; its</text>
+<text x="1097.7" y="528.3">regions kept going on channels</text>
+<text x="1097.7" y="539.5">they owned</text>
+</g>
+<g class="pm-s" data-by="P"><title>we serve people who can’t build yet; the Cycle needs people who can — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1791.1" cy="196.6" r="3.8" fill="#0b3536"/>
+<text x="1791.1" y="198.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1797.6" y="199.1">we serve people who can’t</text>
+<text x="1797.6" y="210.3">build yet; the Cycle needs</text>
+<text x="1797.6" y="221.5">people who can</text>
+</g>
+<g class="pm-s" data-by="P"><title>documentation doesn’t count as a contribution — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1434.0" cy="838.7" r="3.8" fill="#0b3536"/>
+<text x="1434.0" y="840.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1440.5" y="841.3">documentation doesn’t count as</text>
+<text x="1440.5" y="852.5">a contribution</text>
+</g>
+<g class="pm-s" data-by="P"><title>expectations are anchored on experiences built by billion-dollar companies — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1184.4" cy="214.9" r="3.8" fill="#0b3536"/>
+<text x="1184.4" y="216.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1190.9" y="217.5">expectations are anchored on</text>
+<text x="1190.9" y="228.7">experiences built by</text>
+<text x="1190.9" y="239.9">billion-dollar companies</text>
+</g>
+<g class="pm-s" data-by="X"><title>a visible head start speeds completion; an if-then plan roughly doubles follow-through — other programs, Case library, PR #5</title>
+<circle cx="1591.5" cy="877.1" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1591.5" y="879.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1598.0" y="879.7">a visible head start speeds</text>
+<text x="1598.0" y="890.9">completion; an if-then plan</text>
+<text x="1598.0" y="902.1">roughly doubles follow-through</text>
+</g>
+<g class="pm-s" data-by="X"><title>teams set their approach in the first meeting and overhaul it at the midpoint (Gersick) — other programs, Case library, PR #5</title>
+<circle cx="1255.0" cy="709.2" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1255.0" y="711.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1261.5" y="711.7">teams set their approach in</text>
+<text x="1261.5" y="722.9">the first meeting and overhaul</text>
+<text x="1261.5" y="734.1">it at the midpoint (Gersick)</text>
+</g>
+<g class="pm-s" data-by="P"><title>we want guaranteed results but don’t know what the teams will be — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1410.7" cy="43.9" r="3.8" fill="#0b3536"/>
+<text x="1410.7" y="45.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1417.2" y="46.4">we want guaranteed results but</text>
+<text x="1417.2" y="57.6">don’t know what the teams will</text>
+<text x="1417.2" y="68.8">be</text>
+</g>
+<g class="pm-s" data-by="X"><title>groups that claim no structure run on hidden structure (Freeman) — other programs, Case library, PR #5</title>
+<circle cx="1426.4" cy="864.6" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1426.4" y="866.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1432.9" y="867.2">groups that claim no structure</text>
+<text x="1432.9" y="878.4">run on hidden structure</text>
+<text x="1432.9" y="889.6">(Freeman)</text>
+</g>
+<g class="pm-s" data-by="X"><title>Kubernetes pruned 146, then 600, then 300 inactive members — other programs, Case library, PR #5</title>
+<circle cx="1240.9" cy="745.9" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1240.9" y="747.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1247.4" y="748.5">Kubernetes pruned 146, then</text>
+<text x="1247.4" y="759.7">600, then 300 inactive members</text>
+</g>
+<g class="pm-s" data-by="X"><title>designers learn the problem by proposing solutions (Lawson, Cross) — other programs, Case library, PR #5</title>
+<circle cx="1265.6" cy="777.4" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1265.6" y="779.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1272.1" y="779.9">designers learn the problem by</text>
+<text x="1272.1" y="791.1">proposing solutions (Lawson,</text>
+<text x="1272.1" y="802.3">Cross)</text>
+</g>
+<g class="pm-s" data-by="P"><title>mini-hackathon workshops: the tool and constraints predefined — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1829.6" cy="1204.7" r="3.8" fill="#0b3536"/>
+<text x="1829.6" y="1206.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1836.1" y="1207.3">mini-hackathon workshops: the</text>
+<text x="1836.1" y="1218.5">tool and constraints</text>
+<text x="1836.1" y="1229.7">predefined</text>
+</g>
+<g class="pm-s" data-by="P"><title>treat you like a high-agency adult who solves their own problems — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1657.5" cy="1198.3" r="3.8" fill="#0b3536"/>
+<text x="1657.5" y="1200.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1664.0" y="1200.8">treat you like a high-agency</text>
+<text x="1664.0" y="1212.0">adult who solves their own</text>
+<text x="1664.0" y="1223.2">problems</text>
+</g>
+<g class="pm-s" data-by="A"><title>more structure and a common goal — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="1920.7" cy="1049.0" r="3.8" fill="#0b3536"/>
+<text x="1920.7" y="1050.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="1927.2" y="1051.6">more structure and a common</text>
+<text x="1927.2" y="1062.8">goal</text>
+</g>
+<g class="pm-s" data-by="S"><title>three doors: Learn, Build and Share — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1730.2" cy="1415.5" r="3.8" fill="#0b3536"/>
+<text x="1730.2" y="1417.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1736.7" y="1418.1">three doors: Learn, Build and</text>
+<text x="1736.7" y="1429.3">Share</text>
+</g>
+<g class="pm-s" data-by="X"><title>Recurse Center: never graduate; alumni access with no obligation — other programs, Case library, PR #5</title>
+<circle cx="1679.4" cy="1015.3" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1679.4" y="1017.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1685.9" y="1017.8">Recurse Center: never</text>
+<text x="1685.9" y="1029.0">graduate; alumni access with</text>
+<text x="1685.9" y="1040.2">no obligation</text>
+</g>
+<g class="pm-s" data-by="O"><title>an omnichannel notification strategy: Slack, email, text — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="2033.1" cy="1312.0" r="3.8" fill="#0b3536"/>
+<text x="2033.1" y="1313.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="2039.6" y="1314.6">an omnichannel notification</text>
+<text x="2039.6" y="1325.8">strategy: Slack, email, text</text>
+</g>
+<g class="pm-s" data-by="P"><title>a facilitated way for teams to form — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1523.2" cy="1260.4" r="3.8" fill="#0b3536"/>
+<text x="1523.2" y="1262.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1529.7" y="1263.0">a facilitated way for teams to</text>
+<text x="1529.7" y="1274.2">form</text>
+</g>
+<g class="pm-s" data-by="P"><title>create thirty touchpoints people are reasonably sure to come across — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1910.6" cy="879.3" r="3.8" fill="#0b3536"/>
+<text x="1910.6" y="881.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1917.1" y="881.9">create thirty touchpoints</text>
+<text x="1917.1" y="893.1">people are reasonably sure to</text>
+<text x="1917.1" y="904.3">come across</text>
+</g>
+<g class="pm-s" data-by="P"><title>everyone has a seat and is onboarded to the stack fast — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1811.2" cy="1288.2" r="3.8" fill="#0b3536"/>
+<text x="1811.2" y="1290.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1817.7" y="1290.8">everyone has a seat and is</text>
+<text x="1817.7" y="1302.0">onboarded to the stack fast</text>
+</g>
+<g class="pm-s" data-by="P"><title>say plainly: you don’t need us to tell you what to learn — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1653.5" cy="1137.2" r="3.8" fill="#0b3536"/>
+<text x="1653.5" y="1139.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1660.0" y="1139.8">say plainly: you don’t need us</text>
+<text x="1660.0" y="1151.0">to tell you what to learn</text>
+</g>
+<g class="pm-s" data-by="A"><title>weekly guidance on what to work on — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="1934.3" cy="1140.8" r="3.8" fill="#0b3536"/>
+<text x="1934.3" y="1142.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="1940.8" y="1143.4">weekly guidance on what to</text>
+<text x="1940.8" y="1154.6">work on</text>
+</g>
+<g class="pm-s" data-by="S"><title>every library on the Metro, with the nearest station and the walk — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1734.0" cy="1342.6" r="3.8" fill="#0b3536"/>
+<text x="1734.0" y="1344.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1740.5" y="1345.2">every library on the Metro,</text>
+<text x="1740.5" y="1356.4">with the nearest station and</text>
+<text x="1740.5" y="1367.6">the walk</text>
+</g>
+<g class="pm-s" data-by="X"><title>FIRST treats the off-season as recruiting and training time — other programs, Case library, PR #5</title>
+<circle cx="1675.5" cy="954.2" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1675.5" y="956.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1682.0" y="956.8">FIRST treats the off-season as</text>
+<text x="1682.0" y="968.0">recruiting and training time</text>
+</g>
+<g class="pm-s" data-by="O"><title>OLOS as the single source of truth — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="2029.0" cy="1339.4" r="3.8" fill="#0b3536"/>
+<text x="2029.0" y="1341.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="2035.5" y="1341.9">OLOS as the single source of</text>
+<text x="2035.5" y="1353.1">truth</text>
+</g>
+<g class="pm-s" data-by="P"><title>as a team, choose a research pod to belong to — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1520.3" cy="1339.9" r="3.8" fill="#0b3536"/>
+<text x="1520.3" y="1341.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1526.8" y="1342.5">as a team, choose a research</text>
+<text x="1526.8" y="1353.7">pod to belong to</text>
+</g>
+<g class="pm-s" data-by="P"><title>assume they paid attention to five or seven — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1902.4" cy="943.6" r="3.8" fill="#0b3536"/>
+<text x="1902.4" y="945.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1908.9" y="946.2">assume they paid attention to</text>
+<text x="1908.9" y="957.4">five or seven</text>
+</g>
+<g class="pm-s" data-by="P"><title>everyone produces something by the end — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1826.1" cy="1316.9" r="3.8" fill="#0b3536"/>
+<text x="1826.1" y="1318.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1832.6" y="1319.5">everyone produces something by</text>
+<text x="1832.6" y="1330.7">the end</text>
+</g>
+<g class="pm-s" data-by="P"><title>a small core offer: how to search, how to use AI tools to triage — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1650.2" cy="1100.1" r="3.8" fill="#0b3536"/>
+<text x="1650.2" y="1102.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1656.7" y="1102.7">a small core offer: how to</text>
+<text x="1656.7" y="1113.9">search, how to use AI tools to</text>
+<text x="1656.7" y="1125.1">triage</text>
+</g>
+<g class="pm-s" data-by="A"><title>moderators who step in to get teams unstuck — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="1923.8" cy="1020.8" r="3.8" fill="#0b3536"/>
+<text x="1923.8" y="1022.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="1930.3" y="1023.4">moderators who step in to get</text>
+<text x="1930.3" y="1034.6">teams unstuck</text>
+</g>
+<g class="pm-s" data-by="S"><title>a neighbor can offer to coordinate a workshop at their library — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1736.4" cy="1441.8" r="3.8" fill="#0b3536"/>
+<text x="1736.4" y="1443.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1742.9" y="1444.4">a neighbor can offer to</text>
+<text x="1742.9" y="1455.6">coordinate a workshop at their</text>
+<text x="1742.9" y="1466.8">library</text>
+</g>
+<g class="pm-s" data-by="X"><title>the Teahouse: a help space run by people — other programs, Case library, PR #5</title>
+<circle cx="1651.5" cy="927.9" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1651.5" y="929.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1658.0" y="930.5">the Teahouse: a help space run</text>
+<text x="1658.0" y="941.7">by people</text>
+</g>
+<g class="pm-s" data-by="O"><title>“plumbing”: infrastructure that gets people to what they need fast — organizers, Record #4, the organizers’ account, Oct 28</title>
+<circle cx="2030.2" cy="1205.5" r="3.8" fill="#0b3536"/>
+<text x="2030.2" y="1207.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">O</text>
+<text x="2036.7" y="1208.0">“plumbing”: infrastructure</text>
+<text x="2036.7" y="1219.2">that gets people to what they</text>
+<text x="2036.7" y="1230.4">need fast</text>
+</g>
+<g class="pm-s" data-by="P"><title>as a team, propose mini projects or select a frame — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1521.7" cy="1234.0" r="3.8" fill="#0b3536"/>
+<text x="1521.7" y="1235.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1528.2" y="1236.6">as a team, propose mini</text>
+<text x="1528.2" y="1247.8">projects or select a frame</text>
+</g>
+<g class="pm-s" data-by="P"><title>those five to seven must say the same thing — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1900.6" cy="971.0" r="3.8" fill="#0b3536"/>
+<text x="1900.6" y="972.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1907.1" y="973.6">those five to seven must say</text>
+<text x="1907.1" y="984.8">the same thing</text>
+</g>
+<g class="pm-s" data-by="P"><title>it all goes back into the commons, open source — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1897.7" cy="1170.4" r="3.8" fill="#0b3536"/>
+<text x="1897.7" y="1172.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1904.2" y="1173.0">it all goes back into the</text>
+<text x="1904.2" y="1184.2">commons, open source</text>
+</g>
+<g class="pm-s" data-by="P"><title>resources are activated and waiting; mobilized once you’ve exhausted your own — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1654.3" cy="1062.7" r="3.8" fill="#0b3536"/>
+<text x="1654.3" y="1064.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1660.8" y="1065.2">resources are activated and</text>
+<text x="1660.8" y="1076.4">waiting; mobilized once you’ve</text>
+<text x="1660.8" y="1087.6">exhausted your own</text>
+</g>
+<g class="pm-s" data-by="A"><title>a roadmap into team pods, with roles and expectations — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="2032.1" cy="1172.3" r="3.8" fill="#0b3536"/>
+<text x="2032.1" y="1174.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="2038.6" y="1174.9">a roadmap into team pods, with</text>
+<text x="2038.6" y="1186.1">roles and expectations</text>
+</g>
+<g class="pm-s" data-by="S"><title>contributors open pull requests; a maintainer reviews each — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1738.9" cy="1479.9" r="3.8" fill="#0b3536"/>
+<text x="1738.9" y="1481.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1745.4" y="1482.5">contributors open pull</text>
+<text x="1745.4" y="1493.7">requests; a maintainer reviews</text>
+<text x="1745.4" y="1504.9">each</text>
+</g>
+<g class="pm-s" data-by="X"><title>GOV.UK: step-by-step maps across departments — other programs, Case library, PR #5</title>
+<circle cx="1746.8" cy="889.6" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1746.8" y="891.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1753.3" y="892.2">GOV.UK: step-by-step maps</text>
+<text x="1753.3" y="903.4">across departments</text>
+</g>
+<g class="pm-s" data-by="P"><title>the OLOS app is the first head; other channels read from it — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="2031.3" cy="1369.3" r="3.8" fill="#0b3536"/>
+<text x="2031.3" y="1371.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="2037.8" y="1371.9">the OLOS app is the first</text>
+<text x="2037.8" y="1383.1">head; other channels read from</text>
+<text x="2037.8" y="1394.3">it</text>
+</g>
+<g class="pm-s" data-by="P"><title>create spaces for the team to meet and synthesize — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1477.0" cy="1365.3" r="3.8" fill="#0b3536"/>
+<text x="1477.0" y="1367.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1483.5" y="1367.9">create spaces for the team to</text>
+<text x="1483.5" y="1379.1">meet and synthesize</text>
+</g>
+<g class="pm-s" data-by="P"><title>some of it can be subconscious, like the direction of airport tiles — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1923.6" cy="842.2" r="3.8" fill="#0b3536"/>
+<text x="1923.6" y="844.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1930.1" y="844.8">some of it can be</text>
+<text x="1930.1" y="856.0">subconscious, like the</text>
+<text x="1930.1" y="867.2">direction of airport tiles</text>
+</g>
+<g class="pm-s" data-by="P"><title>sponsored workshops that sample a partner’s tech stack — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1895.5" cy="1420.7" r="3.8" fill="#0b3536"/>
+<text x="1895.5" y="1422.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1902.0" y="1423.3">sponsored workshops that</text>
+<text x="1902.0" y="1434.5">sample a partner’s tech stack</text>
+</g>
+<g class="pm-s" data-by="P"><title>ask: has the team discussed it? has the pod? — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1514.5" cy="1207.6" r="3.8" fill="#0b3536"/>
+<text x="1514.5" y="1209.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1521.0" y="1210.2">ask: has the team discussed</text>
+<text x="1521.0" y="1221.4">it? has the pod?</text>
+</g>
+<g class="pm-s" data-by="A"><title>guidance on tools and setup at the start of a project — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="2063.1" cy="1047.0" r="3.8" fill="#0b3536"/>
+<text x="2063.1" y="1048.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="2069.6" y="1049.6">guidance on tools and setup at</text>
+<text x="2069.6" y="1060.8">the start of a project</text>
+</g>
+<g class="pm-s" data-by="S"><title>one place to create an event and publish it everywhere (not built) — steering committee, Steering committee, Oct 28 and the region’s decision log</title>
+<circle cx="1714.5" cy="1518.9" r="3.8" fill="#0b3536"/>
+<text x="1714.5" y="1520.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1721.0" y="1521.5">one place to create an event</text>
+<text x="1721.0" y="1532.7">and publish it everywhere (not</text>
+<text x="1721.0" y="1543.9">built)</text>
+</g>
+<g class="pm-s" data-by="X"><title>the Carpentries: setup instructions before the workshop; a small fee cut no-shows — other programs, Case library, PR #5</title>
+<circle cx="1541.0" cy="1013.4" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1541.0" y="1015.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1547.5" y="1016.0">the Carpentries: setup</text>
+<text x="1547.5" y="1027.2">instructions before the</text>
+<text x="1547.5" y="1038.4">workshop; a small fee cut</text>
+<text x="1547.5" y="1049.6">no-shows</text>
+</g>
+<g class="pm-s" data-by="P"><title>turnkey, modular kits on OLOS, in a Cycle and out of one — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="2133.4" cy="1250.5" r="3.8" fill="#0b3536"/>
+<text x="2133.4" y="1252.4" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="2139.9" y="1253.1">turnkey, modular kits on OLOS,</text>
+<text x="2139.9" y="1264.3">in a Cycle and out of one</text>
+</g>
+<g class="pm-s" data-by="P"><title>better terminology than pod and project — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1490.5" cy="1396.6" r="3.8" fill="#0b3536"/>
+<text x="1490.5" y="1398.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1497.0" y="1399.1">better terminology than pod</text>
+<text x="1497.0" y="1410.3">and project</text>
+</g>
+<g class="pm-s" data-by="P"><title>prerequisite trainings, or certifying you know the tool — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1884.7" cy="1351.2" r="3.8" fill="#0b3536"/>
+<text x="1884.7" y="1353.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1891.2" y="1353.7">prerequisite trainings, or</text>
+<text x="1891.2" y="1364.9">certifying you know the tool</text>
+</g>
+<g class="pm-s" data-by="P"><title>say what we assume you already know going in — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1500.9" cy="1137.4" r="3.8" fill="#0b3536"/>
+<text x="1500.9" y="1139.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1507.4" y="1140.0">say what we assume you already</text>
+<text x="1507.4" y="1151.2">know going in</text>
+</g>
+<g class="pm-s" data-by="A"><title>past Cycles’ materials in one central place — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="2073.2" cy="1138.6" r="3.8" fill="#0b3536"/>
+<text x="2073.2" y="1140.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="2079.7" y="1141.2">past Cycles’ materials in one</text>
+<text x="2079.7" y="1152.4">central place</text>
+</g>
+<g class="pm-s" data-by="S"><title>a predictable Cycle clock, run nationally and facilitated locally — steering committee, Parked notes, Oct 28</title>
+<circle cx="1579.8" cy="1443.6" r="3.8" fill="#0b3536"/>
+<text x="1579.8" y="1445.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1586.3" y="1446.2">a predictable Cycle clock, run</text>
+<text x="1586.3" y="1457.4">nationally and facilitated</text>
+<text x="1586.3" y="1468.6">locally</text>
+</g>
+<g class="pm-s" data-by="X"><title>Code Club’s kit includes the person who runs it — other programs, Case library, PR #5</title>
+<circle cx="1748.9" cy="861.0" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1748.9" y="862.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1755.4" y="863.6">Code Club’s kit includes the</text>
+<text x="1755.4" y="874.8">person who runs it</text>
+</g>
+<g class="pm-s" data-by="P"><title>expand beyond LinkedIn to other platforms — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="2051.2" cy="1409.2" r="3.8" fill="#0b3536"/>
+<text x="2051.2" y="1411.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="2057.7" y="1411.8">expand beyond LinkedIn to</text>
+<text x="2057.7" y="1423.0">other platforms</text>
+</g>
+<g class="pm-s" data-by="P"><title>project nights, like Civic Tech DC — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1905.4" cy="1452.2" r="3.8" fill="#0b3536"/>
+<text x="1905.4" y="1454.1" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1911.9" y="1454.8">project nights, like Civic</text>
+<text x="1911.9" y="1466.0">Tech DC</text>
+</g>
+<g class="pm-s" data-by="P"><title>the Cycle can have dropouts, and that’s okay — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1503.9" cy="1107.1" r="3.8" fill="#0b3536"/>
+<text x="1503.9" y="1109.0" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1510.4" y="1109.7">the Cycle can have dropouts,</text>
+<text x="1510.4" y="1120.9">and that’s okay</text>
+</g>
+<g class="pm-s" data-by="A"><title>pathways for different learning styles and availability — alumni, Alumni survey, C01–C03, Sep–Oct 2026</title>
+<circle cx="2046.0" cy="972.4" r="3.8" fill="#0b3536"/>
+<text x="2046.0" y="974.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">A</text>
+<text x="2052.5" y="975.0">pathways for different</text>
+<text x="2052.5" y="986.2">learning styles and</text>
+<text x="2052.5" y="997.4">availability</text>
+</g>
+<g class="pm-s" data-by="S"><title>trail ratings: signs at the junctions, relative to the mountain — steering committee, Parked notes, Oct 28</title>
+<circle cx="1733.8" cy="1555.8" r="3.8" fill="#0b3536"/>
+<text x="1733.8" y="1557.7" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">S</text>
+<text x="1740.3" y="1558.4">trail ratings: signs at the</text>
+<text x="1740.3" y="1569.6">junctions, relative to the</text>
+<text x="1740.3" y="1580.8">mountain</text>
+</g>
+<g class="pm-s" data-by="X"><title>both corporate hackathon survivors were handed to other units — other programs, Case library, PR #5</title>
+<circle cx="1493.0" cy="944.7" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>
+<text x="1493.0" y="946.6" text-anchor="middle" font-size="5.2" font-weight="700" fill="#0b3536">X</text>
+<text x="1499.5" y="947.3">both corporate hackathon</text>
+<text x="1499.5" y="958.5">survivors were handed to other</text>
+<text x="1499.5" y="969.7">units</text>
+</g>
+<g class="pm-s" data-by="P"><title>the Cycle should be built up to, not the front door — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="1900.1" cy="1480.4" r="3.8" fill="#0b3536"/>
+<text x="1900.1" y="1482.3" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1906.6" y="1483.0">the Cycle should be built up</text>
+<text x="1906.6" y="1494.2">to, not the front door</text>
+</g>
+<g class="pm-s" data-by="P"><title>if you find you’re not ready, there are resources and a community — problem owner, Problem owner, Nov 7 conversation</title>
+<circle cx="1495.0" cy="1069.0" r="3.8" fill="#0b3536"/>
+<text x="1495.0" y="1070.9" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1501.5" y="1071.6">if you find you’re not ready,</text>
+<text x="1501.5" y="1082.8">there are resources and a</text>
+<text x="1501.5" y="1094.0">community</text>
+</g>
+<g class="pm-s" data-by="P"><title>member projects: ventures and civic projects The Labs partners with — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="1891.7" cy="1512.9" r="3.8" fill="#0b3536"/>
+<text x="1891.7" y="1514.8" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1898.2" y="1515.5">member projects: ventures and</text>
+<text x="1898.2" y="1526.7">civic projects The Labs</text>
+<text x="1898.2" y="1537.9">partners with</text>
+</g>
+<g class="pm-s" data-by="P"><title>a mentor network: ask, triage, escalate, match — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="2046.2" cy="1439.3" r="3.8" fill="#0b3536"/>
+<text x="2046.2" y="1441.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="2052.7" y="1441.8">a mentor network: ask, triage,</text>
+<text x="2052.7" y="1453.0">escalate, match</text>
+</g>
+<g class="pm-s" data-by="P"><title>a record of what each person has done and learned — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="1882.9" cy="1552.6" r="3.8" fill="#0b3536"/>
+<text x="1882.9" y="1554.5" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1889.4" y="1555.2">a record of what each person</text>
+<text x="1889.4" y="1566.4">has done and learned</text>
+</g>
+<g class="pm-s" data-by="P"><title>stepping back is honorable — problem owner, Problem owner, Nov 6 records</title>
+<circle cx="1867.4" cy="1004.3" r="3.8" fill="#0b3536"/>
+<text x="1867.4" y="1006.2" text-anchor="middle" font-size="5.2" font-weight="700" fill="#e5e7de">P</text>
+<text x="1873.9" y="1006.9">stepping back is honorable</text>
+</g>
+</g>
+<g class="pm-labels" font-weight="700" fill="#0b3536">
+<text x="601.6" y="1087.8" text-anchor="middle" font-size="34.0">lost at the joints</text>
+<text x="415.6" y="1002.6" text-anchor="middle" font-size="31.0">waiting to be told</text>
+<text x="700.8" y="925.6" text-anchor="middle" font-size="29.1">cognitive load</text>
+<text x="500.6" y="1213.8" text-anchor="middle" font-size="25.3">one builder, four</text>
+<text x="500.6" y="1240.4" text-anchor="middle" font-size="25.3">consultants</text>
+<text x="438.2" y="812.1" text-anchor="middle" font-size="25.3">the cliff</text>
+<text x="809.8" y="1121.8" text-anchor="middle" font-size="21.5">no life outside the</text>
+<text x="809.8" y="1144.4" text-anchor="middle" font-size="21.5">Cycle</text>
+<text x="288.1" y="1134.7" text-anchor="middle" font-size="19.6">the weekly room, gone</text>
+<text x="678.2" y="738.1" text-anchor="middle" font-size="17.7">a one-pod vote</text>
+<text x="791.8" y="393.0" text-anchor="middle" font-size="25.3">alumni who stayed</text>
+<text x="826.8" y="245.3" text-anchor="middle" font-size="23.4">the region and its</text>
+<text x="826.8" y="269.9" text-anchor="middle" font-size="23.4">builders</text>
+<text x="911.3" y="439.9" text-anchor="middle" font-size="21.5">capable adults</text>
+<text x="684.5" y="329.8" text-anchor="middle" font-size="17.7">the ones who never</text>
+<text x="684.5" y="348.4" text-anchor="middle" font-size="17.7">came back</text>
+<text x="942.0" y="199.9" text-anchor="middle" font-size="17.7">the builder and the</text>
+<text x="942.0" y="218.5" text-anchor="middle" font-size="17.7">consultants</text>
+<text x="798.8" y="518.7" text-anchor="middle" font-size="17.7">the person holding the</text>
+<text x="798.8" y="537.3" text-anchor="middle" font-size="17.7">picture</text>
+<text x="720.7" y="176.8" text-anchor="middle" font-size="15.8">organizers and</text>
+<text x="720.7" y="193.4" text-anchor="middle" font-size="15.8">facilitators</text>
+<text x="1032.1" y="401.5" text-anchor="middle" font-size="15.8">employers (assumed)</text>
+<text x="1108.0" y="1339.3" text-anchor="middle" font-size="23.4">the Cycle</text>
+<text x="1143.8" y="1201.6" text-anchor="middle" font-size="23.4">upskilling sessions</text>
+<text x="1230.0" y="1376.1" text-anchor="middle" font-size="23.4">Slack, email,</text>
+<text x="1230.0" y="1400.7" text-anchor="middle" font-size="23.4">LinkedIn, the app</text>
+<text x="998.4" y="1286.2" text-anchor="middle" font-size="21.5">the libraries</text>
+<text x="1272.0" y="1152.9" text-anchor="middle" font-size="17.7">before and after:</text>
+<text x="1272.0" y="1171.5" text-anchor="middle" font-size="17.7">nothing yet</text>
+<text x="1115.2" y="1477.7" text-anchor="middle" font-size="17.7">region and national</text>
+<text x="1502.8" y="524.8" text-anchor="middle" font-size="25.3">social loafing</text>
+<text x="1544.6" y="351.3" text-anchor="middle" font-size="23.4">idea, team and seat:</text>
+<text x="1544.6" y="375.9" text-anchor="middle" font-size="23.4">one bundle</text>
+<text x="1645.2" y="569.2" text-anchor="middle" font-size="23.4">competence, belonging,</text>
+<text x="1645.2" y="593.8" text-anchor="middle" font-size="23.4">choice</text>
+<text x="1375.0" y="463.0" text-anchor="middle" font-size="23.4">the lone hero</text>
+<text x="1699.1" y="295.7" text-anchor="middle" font-size="21.5">practice, not</text>
+<text x="1699.1" y="318.3" text-anchor="middle" font-size="21.5">instruction</text>
+<text x="1511.2" y="687.3" text-anchor="middle" font-size="21.5">the picture in one head</text>
+<text x="1418.1" y="279.6" text-anchor="middle" font-size="21.5">volunteer hours only</text>
+<text x="1789.2" y="537.4" text-anchor="middle" font-size="21.5">landmarks and scent</text>
+<text x="1310.4" y="600.7" text-anchor="middle" font-size="19.6">free, and nobody’s job</text>
+<text x="1639.6" y="208.0" text-anchor="middle" font-size="19.6">too few team meetings</text>
+<text x="1662.7" y="737.4" text-anchor="middle" font-size="19.6">a person behind the</text>
+<text x="1662.7" y="758.0" text-anchor="middle" font-size="19.6">message</text>
+<text x="1262.9" y="345.7" text-anchor="middle" font-size="17.7">adaptive by design</text>
+<text x="1854.0" y="364.2" text-anchor="middle" font-size="15.8">“pod” doesn’t say what</text>
+<text x="1854.0" y="380.8" text-anchor="middle" font-size="15.8">it is</text>
+<text x="1897.1" y="1265.0" text-anchor="middle" font-size="34.0">stations between Cycles</text>
+<text x="1716.7" y="1181.0" text-anchor="middle" font-size="27.2">treat people as adults</text>
+<text x="1993.4" y="1092.9" text-anchor="middle" font-size="25.3">more structure, a</text>
+<text x="1993.4" y="1119.5" text-anchor="middle" font-size="25.3">common goal</text>
+<text x="1799.2" y="1400.0" text-anchor="middle" font-size="25.3">the region’s first signs</text>
+<text x="1738.6" y="997.4" text-anchor="middle" font-size="25.3">proven elsewhere</text>
+<text x="2099.8" y="1295.8" text-anchor="middle" font-size="23.4">one record, many doors</text>
+<text x="1593.0" y="1299.6" text-anchor="middle" font-size="21.5">unbundle teams from</text>
+<text x="1593.0" y="1322.2" text-anchor="middle" font-size="21.5">the vote</text>
+<text x="1971.4" y="926.2" text-anchor="middle" font-size="19.6">thirty touchpoints</text>
+</g>
+<g fill="#0b3536">
+<text x="48" y="72" font-size="34" font-weight="700">The problem situation</text>
+<text x="48" y="100" font-size="15">How people find their way between the parts of The Labs. 240 statements, as of Nov 7, 2026.</text>
+<text x="48" y="140" font-size="11" font-weight="700">Who said it</text>
+<circle cx="55" cy="158" r="5.8" fill="#0b3536"/><text x="55" y="161" text-anchor="middle" font-size="7" font-weight="700" fill="#e5e7de">A</text>
+<text x="70" y="162" font-size="11">alumni</text>
+<circle cx="55" cy="178" r="5.8" fill="#0b3536"/><text x="55" y="181" text-anchor="middle" font-size="7" font-weight="700" fill="#e5e7de">O</text>
+<text x="70" y="182" font-size="11">organizers</text>
+<circle cx="55" cy="198" r="5.8" fill="#0b3536"/><text x="55" y="201" text-anchor="middle" font-size="7" font-weight="700" fill="#e5e7de">P</text>
+<text x="70" y="202" font-size="11">problem owner</text>
+<circle cx="55" cy="218" r="5.8" fill="#0b3536"/><text x="55" y="221" text-anchor="middle" font-size="7" font-weight="700" fill="#e5e7de">S</text>
+<text x="70" y="222" font-size="11">steering committee</text>
+<circle cx="55" cy="238" r="5.5" fill="none" stroke="#0b3536" stroke-width="1"/><text x="55" y="241" text-anchor="middle" font-size="7" font-weight="700">X</text>
+<text x="70" y="242" font-size="11">other programs</text>
+<text x="48" y="270" font-size="11">Darker ground: more was said there. Larger words: a theme more people named.</text>
+<text x="48" y="1672" font-size="11">What 62 · Who 31 · Where 29 · Why 62 · How Solved 56. Built from content/map/statements.json; add a line and rebuild. Wayfinding, a Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington.</text>
+</g></svg>
