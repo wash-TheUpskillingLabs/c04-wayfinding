@@ -196,7 +196,8 @@ def posts():
     for slug in sorted(os.listdir(root)):
         meta = json.load(open(os.path.join(root, slug, "post.json"), encoding="utf-8"))
         out.append({**meta, "slug": slug, "secs": sections(os.path.join(root, slug))})
-    return sorted(out, key=lambda p: p["date"], reverse=True)
+    # Newest first; "rank" in post.json breaks a tie between posts of the same day (higher first).
+    return sorted(out, key=lambda p: (p["date"], p.get("rank", 0)), reverse=True)
 
 def post_list(ps):
     lis = "".join(f'''
