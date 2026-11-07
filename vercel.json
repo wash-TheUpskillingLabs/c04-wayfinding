@@ -1,4 +1,7 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/map", "destination": "/blog/problem-situation/", "permanent": false }
+  ]
 }
