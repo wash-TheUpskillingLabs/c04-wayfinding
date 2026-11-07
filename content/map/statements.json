@@ -263,7 +263,7 @@
   "theme": "waiting to be told",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "no one has attempted to draw the vision out and document it"
+  "text": "the big picture hasn’t been drawn out and written down yet"
  },
  {
   "q": "what",
@@ -572,27 +572,6 @@
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
   "text": "facilitators and moderators asked to step in"
- },
- {
-  "q": "who",
-  "theme": "the one person who holds the vision",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "one person holds how it all fits together"
- },
- {
-  "q": "who",
-  "theme": "the one person who holds the vision",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "no formal authority in the organization"
- },
- {
-  "q": "who",
-  "theme": "the one person who holds the vision",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "on the steering committee, which ends in January"
  },
  {
   "q": "who",
@@ -939,35 +918,28 @@
  },
  {
   "q": "why",
-  "theme": "the vision lives in one person’s head",
+  "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the vision is held in one person’s head"
+  "text": "how it all fits together isn’t written down anywhere"
  },
  {
   "q": "why",
-  "theme": "the vision lives in one person’s head",
+  "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "that person has no formal authority"
+  "text": "nobody has had the job of drawing it out"
  },
  {
   "q": "why",
-  "theme": "the vision lives in one person’s head",
+  "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "no one is doing the work to extract it"
+  "text": "writing down someone else’s picture can feel like claiming authority"
  },
  {
   "q": "why",
-  "theme": "the vision lives in one person’s head",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "writing down someone else’s vision feels like claiming authority"
- },
- {
-  "q": "why",
-  "theme": "the vision lives in one person’s head",
+  "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "documentation doesn’t count as a contribution"
@@ -1219,42 +1191,42 @@
  },
  {
   "q": "why",
-  "theme": "one person carries everything",
+  "theme": "too much rests on too few people",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "10 of 14 Code Club leaders ran their club alone"
  },
  {
   "q": "why",
-  "theme": "one person carries everything",
+  "theme": "too much rests on too few people",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "a third of trained Carpentries instructors never taught"
  },
  {
   "q": "why",
-  "theme": "one person carries everything",
+  "theme": "too much rests on too few people",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "60% of open-source maintainers have quit or considered it"
  },
  {
   "q": "why",
-  "theme": "one person carries everything",
+  "theme": "too much rests on too few people",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "FIRST retired its six-week build window over mentor workload"
  },
  {
   "q": "why",
-  "theme": "one person carries everything",
+  "theme": "too much rests on too few people",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "NaNoWriMo closed in 2025; its regions kept going on channels they owned"
  },
  {
   "q": "why",
-  "theme": "one person carries everything",
+  "theme": "too much rests on too few people",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "Kubernetes pruned 146, then 600, then 300 inactive members"
