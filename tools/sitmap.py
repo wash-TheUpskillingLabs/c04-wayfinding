@@ -13,8 +13,8 @@ allowed to overlap one another or leave the circle.
 """
 import json, math, os, re, html
 
-W, H = 2360, 1700
-K = 1.38  # scale of the circle plan below
+W, H = 2440, 1760
+K = 1.43  # scale of the circle plan below
 GOLD = math.radians(137.508)
 
 # Where each circle sits. The question's word runs along its upper-left arc.
@@ -88,7 +88,7 @@ def build(statements):
             ang = i * GOLD + (0.9 if q in ("what", "how") else 2.3)
             tx, ty = c["cx"] + rr * math.cos(ang), c["cy"] + rr * math.sin(ang)
             fs = min(34, 12 + 1.9 * cnt)
-            tl = wrap(theme, 22 if len(theme) > 24 else 40)
+            tl = wrap(theme, 24 if len(theme) > 26 else 40)
             w = max(tw(l, fs, True) for l in tl) + 6
             h = fs * 1.05 * len(tl)
             pos = place_near(c, boxes, tx, ty, w, h, 0, 8)
