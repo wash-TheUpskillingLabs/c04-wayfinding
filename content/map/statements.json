@@ -183,122 +183,115 @@
  },
  {
   "q": "what",
-  "theme": "one builder, four consultants",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "on a team of five, one person does the building"
+  "text": "on a team of five, the building often falls to one person"
  },
  {
   "q": "what",
-  "theme": "one builder, four consultants",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the rest consult"
+  "text": "the rest advise"
  },
  {
   "q": "what",
-  "theme": "one builder, four consultants",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "for three Cycles, consulting was rewarded as contribution"
+  "text": "for three Cycles, advising and building counted the same"
  },
  {
   "q": "what",
-  "theme": "one builder, four consultants",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "asking everyone to contribute individually made people upset"
+  "text": "asking for individual contributions cut across the team’s sense of itself"
  },
  {
   "q": "what",
-  "theme": "one builder, four consultants",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "it was felt as a cost to community and team-building"
  },
  {
   "q": "what",
-  "theme": "one builder, four consultants",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people want to be treated as owners but not to do the work of ownership"
+  "text": "being an owner means doing the work of ownership, and volunteers have limited hours"
  },
  {
   "q": "what",
-  "theme": "one builder, four consultants",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people ride the coattails of the project"
+  "text": "people have come to expect each step to be handed to them"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "a passive consumption culture has emerged"
+  "text": "people look to The Labs to say what to do next and what to learn"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "everyone waits on us to deliver what to do next and what to learn"
+  "text": "people aren’t sure they’re allowed to go off and do it on their own"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people get paralyzed; they don’t think they’re supposed to go off and do it on their own"
+  "text": "the community is looking for the plan to be shared"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "the community is waiting for the plan to be handed down"
- },
- {
-  "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the big picture hasn’t been drawn out and written down yet"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people arrive as operators and are upset the thing is underbuilt"
+  "text": "people arrive expecting a finished product and find one still being built"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "pods come in with their point of view and want to start building"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "nobody is really doing the desk research or synthesis"
+  "text": "desk research and synthesis are taking a back seat to building"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the interviews don’t get done"
+  "text": "interviews are slow to get started"
  },
  {
   "q": "what",
-  "theme": "waiting to be told",
+  "theme": "looking for the next step",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people are only half listening at any one time"
+  "text": "people have a lot competing for their attention at any one time"
  },
  {
   "q": "what",
@@ -361,7 +354,7 @@
   "theme": "a vote that produced one pod",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "at least one still-active participant is really upset about it"
+  "text": "at least one still-active participant was disappointed"
  },
  {
   "q": "what",
@@ -519,45 +512,45 @@
  },
  {
   "q": "who",
-  "theme": "the ones who never came back",
+  "theme": "people who came once",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people who came once and drifted off"
+  "text": "people who came once and moved on"
  },
  {
   "q": "who",
-  "theme": "the ones who never came back",
+  "theme": "people who came once",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the person who got lost at the first door"
  },
  {
   "q": "who",
-  "theme": "the ones who never came back",
+  "theme": "people who came once",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "respondents skew toward people who finished and joined teams"
  },
  {
   "q": "who",
-  "theme": "the builder and the four consultants",
+  "theme": "who builds, who advises",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the one person who builds"
+  "text": "the people who build"
  },
  {
   "q": "who",
-  "theme": "the builder and the four consultants",
+  "theme": "who builds, who advises",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the four who consult"
+  "text": "the people who advise"
  },
  {
   "q": "who",
-  "theme": "the builder and the four consultants",
+  "theme": "who builds, who advises",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the person who pictured themselves in a pod that never formed"
+  "text": "people who pictured themselves in a pod that never formed"
  },
  {
   "q": "who",
@@ -886,7 +879,7 @@
   "theme": "the Cycle practices skills; it doesn’t teach them",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "we serve people who can’t build yet; the Cycle needs people who can"
+  "text": "we serve people who are still learning to build; the Cycle needs people who can"
  },
  {
   "q": "why",
@@ -1152,7 +1145,7 @@
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "loafing is lowest when work is identifiable and the group matters (Karau & Williams)"
+  "text": "effort holds up best when work is identifiable and the group matters (Karau & Williams)"
  },
  {
   "q": "why",
@@ -1397,7 +1390,7 @@
   "theme": "treat people as adults",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the Cycle can have dropouts, and that’s okay"
+  "text": "people can step away from a Cycle, and that’s okay"
  },
  {
   "q": "how",
