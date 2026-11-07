@@ -119,7 +119,7 @@ def head(title, desc, path):
 {sprite()}'''
 
 def sitenav(current):
-    items = [("/", "The pod"), ("/about/", "About"), ("/map/", "The map"), ("/blog/", "Blog")]
+    items = [("/", "The pod"), ("/about/", "About"), ("/blog/", "Blog")]
     out = []
     for href, label in items:
         cur = current == href or (href == "/blog/" and current.startswith("/blog/"))
@@ -237,8 +237,10 @@ def build_home(ps):
     page += "</main>\n\n" + footer()
     return page
 
-def build_post(p):
+def build_post(p, mapb=None):
     secs = p["secs"]
+    if mapb:
+        for sec in secs: sec["body"] = sec["body"].replace("{{map}}", mapb[0]).replace("{{total}}", str(mapb[1]))
     page = head(f'{p["title"]} | Wayfinding', p["dek"], f'/blog/{p["slug"]}/')
     words = sum(len(re.sub(r"<[^>]+>", " ", s["body"]).split()) for s in secs if s["id"] != "sources")
     mins = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"][min(9, max(0, round(words / 230) - 1))]
@@ -293,42 +295,17 @@ def build_about(ps):
     page += "</main>\n\n" + footer()
     return page
 
-def build_map():
+def map_block():
+    """The problem situation map for the blog post: the poster, its button, and every statement as a table."""
     sts = json.load(open(os.path.join(C, "map", "statements.json"), encoding="utf-8"))
     asof = date.today().strftime("%b %-d, %Y")
     pic, counts, _ = sitmap.svg(sts, asof, underlay="/assets/proto-labs-map.webp")
     write("map/problem-situation.svg", pic.replace('href="/assets/proto-labs-map.webp"', 'href="https://c04-wayfinding.vercel.app/assets/proto-labs-map.webp"'))
     total = sum(counts.values())
-    secs = [
-        {"id": "map", "title": "Every statement, in its place", "short": "The map", "icon": "pin", "tile": "red", "full": True, "body": f'''<p>Five circles, one for each question we ask of a problem situation: what gets in the way, who is involved, where it happens, why, and how people would solve it. Inside each, the themes are sized by how many statements they hold, and every statement is set in small type with a mark for who said it. The darker the ground, the more was said there. Scroll sideways on a small screen; the picture is meant to be read large.</p>
-<div class="sitmap-wrap">{pic}</div>
+    block = f'''<div class="sitmap-wrap">{pic}</div>
 <a class="btn" href="/map/problem-situation.svg"><span class="t">Open the poster</span><span class="tile blue">{ic("a-r")}</span></a>
-<details class="pm-details"><summary><span><span class="t">All {total} statements as a table</span></span>{ic("chev", "chev")}</summary>{sitmap.table(sts)}</details>'''},
-        {"id": "read", "title": "How to read it", "short": "How to read it", "icon": "eye", "tile": "", "body": f'''<p>This is the first step of Kees Dorst’s frame creation, which he calls archaeology: lay out what every party involved holds to be true, in their words, before anyone writes a paradox. The map is a reading aid, not a finding. A theme is large because more people named it, not because it matters more.</p>
-<ul class="rows">
-  <li><span class="t"><strong>What</strong> is what gets in the way, as people experience it.</span></li>
-  <li><span class="t"><strong>Who</strong> is everyone with a stake, including the people we haven’t heard from.</span></li>
-  <li><span class="t"><strong>Where</strong> is the stations and the channels: the Cycle, the sessions, the libraries, Slack, email, the app.</span></li>
-  <li><span class="t"><strong>Why</strong> is the causes people give, and what research on other programs adds.</span></li>
-  <li><span class="t"><strong>How solved</strong> is what each party proposes. Not a plan; a record of who wants what.</span></li>
-</ul>
-<p>Five voices so far: alumni (the survey of twelve past participants), organizers (their account from Oct 28), the problem owner (Nov 6 and 7), the steering committee, and other programs (the case library). The hollow mark is for other programs: evidence from outside The Labs, which can support a claim but not carry it alone. Nobody who came once and did not come back has spoken yet, and the map says so.</p>'''},
-        {"id": "add", "title": "Add to it", "short": "Add to it", "icon": "tool", "tile": "blue", "body": f'''<p>Every statement lives in one file, <code>content/map/statements.json</code>: the question it answers, its theme, the words, who said it and where that is logged. Add a line and rebuild, and the map redraws itself. An interview you log as an issue should end up here as a handful of statements, with no names.</p>
-<a class="btn" href="{REPO}/blob/main/content/map/statements.json"><span class="t">Open the statements file</span><span class="tile blue">{ic("a-ur", "ur")}</span></a>'''},
-    ]
-    page = head("The problem situation | Wayfinding", "Every statement about how people find their way between the parts of The Labs, sorted into what, who, where, why and how solved, with a mark for who said it.", "/map/")
-    page += herebar() + f'''<header class="cover short" id="top">
-{signhead("/map/")}  <div class="grid hero">
-    <h1{lsb("The")}>The problem situation</h1>
-    <p class="t-lead dek">{total} things people have said about getting lost between the parts of The Labs, laid out on one map so the pod can see what repeats, who said it, and who hasn’t spoken yet.</p>
-  </div>
-</header>
-
-<main id="main">
-'''
-    page += "".join(section(s, secs[i + 1] if i + 1 < len(secs) else None) for i, s in enumerate(secs))
-    page += "</main>\n\n" + footer()
-    return page
+<details class="pm-details"><summary><span><span class="t">All {total} statements as a table</span></span>{ic("chev", "chev")}</summary>{sitmap.table(sts)}</details>'''
+    return block, total
 
 def build_404():
     secs = [{"id": "routes", "title": "Ways back", "short": "Ways back", "icon": "post", "tile": "blue", "body": f'''<ul class="rows routes">
@@ -383,7 +360,7 @@ if __name__ == "__main__":
     write("index.html", build_home(ps))
     write("about/index.html", build_about(ps))
     write("blog/index.html", build_blog(ps))
-    for p in ps: write(f"blog/{p['slug']}/index.html", build_post(p))
+    mapb = map_block()
+    for p in ps: write(f"blog/{p['slug']}/index.html", build_post(p, mapb))
     write("blog/feed.xml", build_feed(ps))
     write("404.html", build_404())
-    write("map/index.html", build_map())
