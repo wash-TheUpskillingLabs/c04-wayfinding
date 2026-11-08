@@ -16,6 +16,8 @@ branch or a quote to the JSON and rebuild.
 import json
 
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
+# Line colours, for maps only: they say which line is which, like the Metro. Never text, never red.
+GREEN, VIOLET, SILVER = "#00a160", "#7b4fa0", "#9aa3a6"
 FONT = "Inter, system-ui, sans-serif"
 LM, LABW, COLW, GAP = 56, 190, 274, 22
 LINE_Y = 580
@@ -118,11 +120,11 @@ def svg(d):
     # so the map draws a few and puts a vertical ellipsis where there may be more.
     lines = []
     LW = 8                      # line width inside the Cycle and on the branches
-    def poly(pts, w=LW, dash=""):
-        lines.append(f'<path d="{route(pts, 14)}" fill="none" stroke="{BLUE}" stroke-width="{w}"{dash} '
+    def poly(pts, w=LW, dash="", col=BLUE):
+        lines.append(f'<path d="{route(pts, 14)}" fill="none" stroke="{col}" stroke-width="{w}"{dash} '
                      f'stroke-linejoin="round"/>')
-    def end(x, y):              # terminus: this proposal stops at the vote
-        lines.append(f'<line x1="{x}" y1="{y - 11}" x2="{x}" y2="{y + 11}" stroke="{BLUE}" stroke-width="{LW}"/>')
+    def end(x, y, col=BLUE):    # terminus: this proposal stops at the vote
+        lines.append(f'<line x1="{x}" y1="{y - 11}" x2="{x}" y2="{y + 11}" stroke="{col}" stroke-width="{LW}"/>')
     def dots(x, y):
         lines.append("".join(f'<circle cx="{x}" cy="{y + k * 12}" r="3.5" fill="{INK}"/>' for k in (-1, 0, 1)))
     def label(x, y, text):
@@ -158,15 +160,17 @@ def svg(d):
     # problem proposals share one track from the moment you join
     B = [-18, -6, 6, 18]
     fate = {-18: Y - G, -6: Y, 6: None, 18: Y + G}  # Vote 1: three go on as pods, one ends
+    hue = {-18: GREEN, -6: BLUE, 6: SILVER, 18: VIOLET}
+    podhue = {Y - G: GREEN, Y: BLUE, Y + G: VIOLET}
     for o in B:
         pts = [(J, Y), (J + 20, Y), (J + 20 + abs(o), Y + o), (P + 18, Y + o)]
         if fate[o] is None:
-            poly(pts[:-1] + [(P - 30, Y + o)])
-            end(P - 30, Y + o)
+            poly(pts[:-1] + [(P - 30, Y + o)], col=hue[o])
+            end(P - 30, Y + o, hue[o])
             continue
         dy = fate[o] - (Y + o)
         pts += [(P + 18 + abs(dy), fate[o]), (P + 18 + G + 10, fate[o])]
-        poly(pts)
+        poly(pts, col=hue[o])
     caps.append((P, Y - 18, Y + 18, True))
     label((J + P) / 2, Y - 44, pr["label"])
     front.append(small((J + P) / 2, Y + 50, pr["note"], italic=True))
@@ -182,12 +186,12 @@ def svg(d):
                 pts = [(x, c), (x + 14, c), (x + 14 + abs(o), c + o)]
                 if not last:
                     pts += [(ex - 14 - abs(o), c + o), (ex - 14, c), (ex + 1, c)]
-                    poly(pts)
+                    poly(pts, col=podhue[c])
                 elif o == 0:
-                    poly(pts + [(ex - 30, c)])   # Vote 2: the middle proposal ends here
-                    end(ex - 30, c)
+                    poly(pts + [(ex - 30, c)], col=podhue[c])   # Vote 2: the middle proposal ends here
+                    end(ex - 30, c, podhue[c])
                 else:
-                    poly(pts + [(ex + 30, c + o)])
+                    poly(pts + [(ex + 30, c + o)], col=podhue[c])
             if last:
                 caps.append((ex, c - sp, c + sp, c == Y))
         label((x + ex) / 2, Y - G / 2, st["label"])
@@ -195,11 +199,11 @@ def svg(d):
             chose(ex, st["close"])
         x = ex
     # projects build side by side, then all meet at the showcase
-    projs = [c + o for c in pods for o in (-sp, sp)]
+    projs = [(c + o, podhue[c]) for c in pods for o in (-sp, sp)]
     m = len(projs)
-    for k, q in enumerate(projs):
+    for q, col in sorted(projs, key=lambda t: t[1] == BLUE):
         dy = abs(Y - q)
-        poly([(x + 30, q), (S - 24 - dy, q), (S - 24, Y), (S, Y)])
+        poly([(x + 30, q), (S - 24 - dy, q), (S - 24, Y), (S, Y)], col=col)
     label((x + S - 60) / 2, Y - G / 2, pj["label"])
     # the dots: there may be more pods, and more projects in each, than drawn
     for dx_ in (P + 18 + G + 60, (P + 250 + P + 460) / 2, (x + S - 90) / 2):
@@ -301,6 +305,12 @@ def svg(d):
     key = [f'<text x="{LM}" y="{ky - 30}" font-size="15.118" font-weight="700" fill="{INK}">How to Read It</text>',
            f'<line x1="{LM}" y1="{ky}" x2="{LM + 90}" y2="{ky}" stroke="{BLUE}" stroke-width="10"/>'
            f'<text x="{LM + 106}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">The Journey</text>',
+           f'<line x1="{LM}" y1="{ky + 44}" x2="{LM + 26}" y2="{ky + 44}" stroke="{GREEN}" stroke-width="8"/>'
+           f'<line x1="{LM + 32}" y1="{ky + 44}" x2="{LM + 58}" y2="{ky + 44}" stroke="{BLUE}" stroke-width="8"/>'
+           f'<line x1="{LM + 64}" y1="{ky + 44}" x2="{LM + 90}" y2="{ky + 44}" stroke="{VIOLET}" stroke-width="8"/>'
+           f'<text x="{LM + 106}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Each Pod Has Its Own Line; Blue Is Yours</text>'
+           f'<line x1="{LM + 500}" y1="{ky + 44}" x2="{LM + 590}" y2="{ky + 44}" stroke="{SILVER}" stroke-width="8"/>'
+           f'<text x="{LM + 606}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">A Proposal Not Chosen</text>',
            f'<line x1="{LM + 270}" y1="{ky}" x2="{LM + 360}" y2="{ky}" stroke="{BLUE}" stroke-width="10" stroke-dasharray="20 12"/>'
            f'<text x="{LM + 376}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Planned, Not Running Yet</text>',
            f'<path d="M{LM + 640},{ky - 10} H{LM + 730} M{LM + 640},{ky + 2} H{LM + 700}" stroke="{BLUE}" stroke-width="8"/>'
