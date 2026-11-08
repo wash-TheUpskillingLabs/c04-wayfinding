@@ -13,18 +13,18 @@ allowed to overlap one another or leave their region.
 """
 import json, math, os, re, html
 
-W, H = 2440, 2260
+W, H = 2440, 1900
 GOLD = math.radians(137.508)
 
-# WHAT in the middle, the symptom; the four other questions on its right, each
-# overlapping it, and overlapping its neighbours in the chain WHO, WHY, HOW, WHERE.
+# WHAT across the top, the symptom; the four other questions in an arc below it, each
+# overlapping it and its neighbours in the chain WHO, WHY, HOW, WHERE, left to right.
 # Radii and distances are sized by how many statements each region holds.
 CIRCLES = {
-    "what":  dict(cx=1150, cy=1150, r=605, word="WHAT", line="red"),
-    "who":   dict(cx=1292, cy=463, r=392, word="WHO", line="ink"),
-    "why":   dict(cx=1797, cy=822, r=504, word="WHY", line="ink"),
-    "how":   dict(cx=1859, cy=1541, r=488, word="HOW SOLVED", line="blue"),
-    "where": dict(cx=1288, cy=1814, r=403, word="WHERE", line="ink"),
+    "what":  dict(cx=1260, cy=700, r=605, word="WHAT", line="red"),
+    "who":   dict(cx=554, cy=844, r=410, word="WHO", line="ink"),
+    "why":   dict(cx=925, cy=1343, r=504, word="WHY", line="ink"),
+    "how":   dict(cx=1623, cy=1368, r=488, word="HOW SOLVED", line="blue"),
+    "where": dict(cx=1946, cy=840, r=420, word="WHERE", line="ink"),
 }
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
 LINE = {"ink": INK, "red": RED, "blue": BLUE}
