@@ -13,10 +13,10 @@ About 1 in 12 men and 1 in 200 women have some form of colour vision deficiency,
 
 | Role | First set | Now | Swiss scheme | Contrast with paper |
 |---|---|---|---|---|
-| Your line (brand blue) | `#0098d8` | unchanged | 14 | 2.6:1, cased in ink |
+| Your line (brand blue) | `#0098d8` | unchanged | 14 | 2.6:1 |
 | Pod A (Metro Green) | indigo `#4a45d3` | green `#007500` | 11 | 4.7:1 |
-| Pod C (Metro Yellow) | wine `#8a3274` | yellow `#e6c700` | 11 | 1.3:1, cased in ink |
-| A proposal not chosen (Metro Silver) | grey `#898081` | silver `#a5a6a9` | 3 | 2.0:1, cased in ink |
+| Pod C (Metro Yellow) | wine `#8a3274` | yellow `#e6c700` | 11 | 1.3:1 |
+| A proposal not chosen (Metro Silver) | grey `#898081` | silver `#a5a6a9` | 3 | 2.0:1 |
 | Leaves; You Are Here (brand red) | `#f54123` | unchanged | 14 | 3.0:1, and always dotted or a ring |
 
 Scheme 11 is red, yellow, green and blue, very nearly the Metro's own set. Smallest difference between any two lines, in any of the four kinds of vision: **7.8** in the original set, **17.6** in the first pass, **21.0** now (pod C against red, under deuteranopia).
@@ -27,7 +27,7 @@ One pair is told apart by form, not colour: under protanopia our green and our r
 
 Colour is the last clue, not the only one. On the journey map:
 
-- every coloured line has a 1.5-pixel ink casing, so its edge clears 3:1 against the paper even where the fill doesn't, as Metro maps use keylines;
+- lines are flat colour with no outline, as on the Metro map, which runs its pale Yellow and Silver lines on white the same way. An ink casing was tried and dropped: it made the map read as a diagram rather than the Metro. Yellow, silver and blue fall under WCAG's 3:1 for graphics, so the map never asks colour alone to carry a line; the cues below do, and every line is also named in text;
 - each pod's line carries a letter in a disc, as Metro's service discs do;
 - lines keep a fixed top-to-bottom order everywhere;
 - planned things are dashed, leaving is a dotted line ending in a ring, and a proposal that wasn't chosen ends in a terminus bar;
@@ -35,6 +35,6 @@ Colour is the last clue, not the only one. On the journey map:
 
 ## To Check a New Colour
 
-Run the same simulation and keep every pair at 15 or more in CAM02-UCS under all four kinds of vision, with at least 3:1 against paper or an ink casing. Run `python3 tools/colourcheck.py` to print these numbers for the current colours.
+Run the same simulation and keep every pair at 15 or more in CAM02-UCS under all four kinds of vision, and keep a second cue (a letter, an order, a label) for any line under 3:1 against paper. Run `python3 tools/colourcheck.py` to print these numbers for the current colours.
 
 Sources: [Machado et al. 2009](https://www.inf.ufrgs.br/~oliveira/pubs_files/CVD_Simulation/CVD_Simulation.html), [colorspacious](https://colorspacious.readthedocs.io/), [WCAG 2.2, 1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html), [Colour Blind Awareness](https://www.colourblindawareness.org/colour-blindness/).

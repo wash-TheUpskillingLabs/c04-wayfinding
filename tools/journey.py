@@ -22,7 +22,7 @@ INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
 # colour science (research/journey-map-colour.md, tools/colourcheck.py): every pair of lines stays
 # at least 19 CAM02-UCS units apart under protanopia, deuteranopia and tritanopia.
 GREEN, YELLOW, SILVER = "#007500", "#e6c700", "#a5a6a9"   # pod A, pod C, a proposal not chosen
-CASE = 1.5   # an ink casing on every coloured line, so its edge always contrasts with the paper
+CASE = 0     # no casing: like the Metro, lines are flat colour (research/journey-map-colour.md)
 FONT = "Inter, system-ui, sans-serif"
 LM, LABW, COLW, GAP = 56, 190, 274, 22
 LINE_Y = 580
@@ -268,7 +268,7 @@ def svg(d):
     for k in range(mo):
         o = (k - (mo - 1) / 2) * 36
         poly([(ox, Y), (ox + 40, Y), (ox + 40 + abs(o), Y + o), (W - LM - 18, Y + o)])
-        lines.append(f'<path d="M{W - LM - 20},{Y + o - 10} L{W - LM},{Y + o} L{W - LM - 20},{Y + o + 10} Z" fill="{BLUE}" stroke="{INK}" stroke-width="{CASE}"/>')
+        lines.append(f'<path d="M{W - LM - 20},{Y + o - 10} L{W - LM},{Y + o} L{W - LM - 20},{Y + o + 10} Z" fill="{BLUE}"/>')
     for k, name in enumerate(fo.get("ends", [])):
         o = (k - (mo - 1) / 2) * 36
         front.append(small(W - LM - 26, Y + o - 9, name, "end", 600))
@@ -284,9 +284,8 @@ def svg(d):
         r, dx = 20, (1 if exa > sxa else -1)
         path = (f'M{sxa},{LINE_Y - 22} V{top + r} Q{sxa},{top} {sxa + dx * r},{top} H{exa - dx * r} '
                 f'Q{exa},{top} {exa},{top + r} V{land}')
-        front.append(f'<path d="{path}" fill="none" stroke="{INK}" stroke-width="{5 + 2 * CASE}"/>'
-                     f'<path d="{path}" fill="none" stroke="{BLUE}" stroke-width="5"/>'
-                     f'<path d="M{exa - 11},{land - 4} L{exa},{land + 16} L{exa + 11},{land - 4} Z" fill="{BLUE}" stroke="{INK}" stroke-width="{CASE}"/>')
+        front.append(f'<path d="{path}" fill="none" stroke="{BLUE}" stroke-width="5"/>'
+                     f'<path d="M{exa - 11},{land - 4} L{exa},{land + 16} L{exa + 11},{land - 4} Z" fill="{BLUE}"/>')
         lx = (sxa + exa) / 2
         tw = len(ar["label"]) * FS * 0.55 + 20
         front.append(f'<rect x="{lx - tw / 2}" y="{top - 15}" width="{tw}" height="30" fill="{PAPER}"/>'
@@ -421,6 +420,6 @@ def svg(d):
                    f'<text x="{vx + 10}" y="{ky + 3}" text-anchor="middle" font-size="12" font-weight="700" fill="{PAPER if v == "A" else INK}">{v}</text>'
                    f'<text x="{vx + 32}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">{esc(name)}</text>')
         vx += 320
-    body = head + "".join(back) + "".join(casings) + "".join(lines) + "".join(front) + "".join(key)
+    body = head + "".join(back) + "".join(casings if CASE else []) + "".join(lines) + "".join(front) + "".join(key)
     return (f'<svg class="jmap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
             f'aria-label="{esc(d["title"])}" font-family="{FONT}"><rect width="{W}" height="{H}" fill="{PAPER}"/>{body}</svg>'), W, H

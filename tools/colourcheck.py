@@ -2,7 +2,7 @@
 
 Simulates protanopia, deuteranopia and tritanopia (Machado et al. 2009, via colorspacious),
 prints the smallest CAM02-UCS difference between any two map colours under each, and each
-colour's contrast with the paper. Keep every pair at 15 or more, and every line at 3:1 or cased.
+colour's contrast with the paper. Keep every pair at 15 or more, and give any line under 3:1 a second cue (letter, order, label).
 
     pip install colorspacious
     python3 tools/colourcheck.py
@@ -43,7 +43,7 @@ def sim(h, kind):
     return np.clip(cspace_convert(c, {"name": "sRGB1+CVD", "cvd_type": kind, "severity": 100}, "sRGB1"), 0, 1)
 
 
-print("Contrast with paper (3:1 for lines, or an ink casing):")
+print("Contrast with paper (under 3:1 needs a second cue: letter, order or label):")
 for name, h in COLOURS.items():
     print(f"  {name:18s} {h}  {contrast(h, j.PAPER):.2f}:1")
 print("\nSmallest difference between two colours (CAM02-UCS; keep 15 or more):")
