@@ -14,11 +14,10 @@ INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
 FONT = "Inter, system-ui, sans-serif"
 LM, LABW, COLW, GAP = 56, 190, 274, 22
 LINE_Y = 700
-DIA_Y, DIA_H = 352, 66   # centre and half-height of the diverge/converge strip
+DIA_Y, DIA_H = 366, 82   # centre and half-height of the diverge/converge strip
 LANES = [("do", "You", 900), ("where", "Where", 1080), ("with", "With you", 1200), ("told", "What People Told Us", 1330)]
 FS, LH, TFS = 15.118, 21, 21.993
 BOTTOM = 1630
-W = LM + LABW + 10 * (COLW + GAP) - GAP + LM
 H = 1840
 
 
@@ -45,52 +44,87 @@ def load(path):
 def svg(d):
     cols = d["columns"]
     idx = {c["id"]: i for i, c in enumerate(cols)}
-    x0 = lambda i: LM + LABW + i * (COLW + GAP)
+    cw = [c.get("w", COLW) for c in cols]
+    starts = [LM + LABW + sum(cw[:i]) + i * GAP for i in range(len(cols))]
+    x0 = lambda i: starts[i]
+    W = starts[-1] + cw[-1] + LM
     cx = lambda i: x0(i) + 18
     o = []
     # the Cycle, shaded
     cyc = [i for i, c in enumerate(cols) if c.get("cycle")]
-    a, b = x0(cyc[0]) - GAP / 2, x0(cyc[-1]) + COLW + GAP / 2
+    a, b = x0(cyc[0]) - GAP / 2, x0(cyc[-1]) + cw[cyc[-1]] + GAP / 2
     o.append(f'<rect x="{a}" y="{LINE_Y - 40}" width="{b - a}" height="{BOTTOM - LINE_Y + 40}" fill="{INK}" fill-opacity=".06"/>'
              f'<text x="{a + 14}" y="{BOTTOM - 18}" font-size="13.745" font-weight="700" letter-spacing="1" fill="{INK}">THE CYCLE</text>')
     # bands: Learn, Build, Share
     for name, s, e in d["bands"]:
-        bx, ex = x0(idx[s]), x0(idx[e]) + COLW
+        bx, ex = x0(idx[s]), x0(idx[e]) + cw[idx[e]]
         o.append(f'<rect x="{bx}" y="212" width="{ex - bx}" height="6" fill="{INK}"/>'
                  f'<text x="{bx}" y="200" font-size="15.118" font-weight="700" letter-spacing="1" fill="{INK}">{esc(name).upper()}</text>')
-    # diverge and converge: where the group opens up and where it narrows
+    # diverge and converge: proposals open up, choices narrow, and the Cycle branches
     sh = d.get("shape")
     if sh:
         at = lambda spec: cx(idx[spec[0]]) + spec[1]
-        P, Hh, cy = 5, DIA_H, DIA_Y
-        def lens(x1, x2, h1, h2, hm, dashed, fill):
+        cy, P = DIA_Y, 4
+        def lens(x1, x2, y, h, h1=P, h2=P, dashed=False):
             xm = (x1 + x2) / 2
-            path = (f'M{x1},{cy - h1} Q{xm},{cy - hm * 2 + (h1 + h2) / 2} {x2},{cy - h2} '
-                    f'L{x2},{cy + h2} Q{xm},{cy + hm * 2 - (h1 + h2) / 2} {x1},{cy + h1} Z')
-            dash = ' stroke-dasharray="10 8"' if dashed else ""
-            return (f'<path d="{path}" fill="{fill}" fill-opacity="{0 if dashed else .16}" stroke="{INK}" '
-                    f'stroke-width="{2 if dashed else 3}"{dash}/>')
+            path = (f'M{x1},{y - h1} Q{xm},{y - h * 2 + (h1 + h2) / 2} {x2},{y - h2} '
+                    f'L{x2},{y + h2} Q{xm},{y + h * 2 - (h1 + h2) / 2} {x1},{y + h1} Z')
+            if dashed:
+                return f'<path d="{path}" fill="none" stroke="{INK}" stroke-width="2" stroke-dasharray="10 8"/>'
+            return f'<path d="{path}" fill="{BLUE}" fill-opacity=".16" stroke="{INK}" stroke-width="{2.5 if h > 10 else 1.5}"/>'
+        def branch(x1, y1, x2, y2, w=2.5):
+            xm = (x1 + x2) / 2
+            return (f'<path d="M{x1},{y1} C{xm},{y1} {xm},{y2} {x2},{y2}" fill="none" stroke="{INK}" '
+                    f'stroke-width="{w}"/>')
+        def close(x, text):
+            o.append(f'<line x1="{x}" y1="{cy - 104}" x2="{x}" y2="{cy + 104}" stroke="{INK}" stroke-width="1.5" stroke-dasharray="3 5"/>'
+                     f'<text x="{x}" y="{cy - 114}" text-anchor="middle" font-size="13.745" font-weight="700" '
+                     f'letter-spacing=".5" fill="{INK}">{esc(text).upper()}</text>')
+        def words(x, y, lines, italic=False):
+            for k, line in enumerate(lines):
+                o.append(f'<text x="{x}" y="{y + 5 + (k - (len(lines) - 1) / 2) * 18}" text-anchor="middle" font-size="13.745" '
+                         f'{"font-style=\"italic\" " if italic else ""}fill="{INK}">{esc(line)}</text>')
         o.append(f'<text x="{LM}" y="{cy + 5}" font-size="13.745" font-weight="700" letter-spacing="1" fill="{INK}">DIVERGE,</text>'
                  f'<text x="{LM}" y="{cy + 25}" font-size="13.745" font-weight="700" letter-spacing="1" fill="{INK}">CONVERGE</text>')
-        # in: many ways narrowing to the Cycle; out: fanning wide again
-        fi = sh["in"]
-        o.append(lens(at(fi["from"]), at(fi["to"]), Hh * .9, P, Hh * .55, True, INK))
-        o.append(f'<text x="{(at(fi["from"]) + at(fi["to"])) / 2}" y="{cy + 5}" text-anchor="middle" font-size="{FS}" '
-                 f'font-style="italic" fill="{INK}">{esc(fi["label"])}</text>')
-        fo = sh["out"]
-        o.append(lens(at(fo["from"]), at(fo["to"]), P, Hh * .9, Hh * .55, True, INK))
-        o.append(f'<text x="{(at(fo["from"]) + at(fo["to"])) / 2 + 20}" y="{cy + 5}" text-anchor="middle" font-size="{FS}" '
-                 f'font-style="italic" fill="{INK}">{esc(fo["label"])}</text>')
-        for dm in sh["diamonds"]:
-            x1, x2 = at(dm["from"]), at(dm["to"])
-            o.append(lens(x1, x2, P, P, Hh, False, BLUE))
-            lines = dm["open"]
-            for k, line in enumerate(lines):
-                o.append(f'<text x="{(x1 + x2) / 2}" y="{cy + 5 + (k - (len(lines) - 1) / 2) * 19}" text-anchor="middle" '
-                         f'font-size="13.745" fill="{INK}">{esc(line)}</text>')
-            o.append(f'<line x1="{x2}" y1="{cy - Hh - 14}" x2="{x2}" y2="{cy + Hh + 14}" stroke="{INK}" stroke-width="2"/>'
-                     f'<text x="{x2}" y="{cy - Hh - 24}" text-anchor="middle" font-size="13.745" font-weight="700" '
-                     f'letter-spacing=".5" fill="{INK}">{esc(dm["close"]).upper()}</text>')
+        fi, fo = sh["in"], sh["out"]
+        o.append(lens(at(fi["from"]), at(fi["to"]), cy, 50, h1=80, h2=P, dashed=True))
+        words((at(fi["from"]) + at(fi["to"])) / 2, cy, [fi["label"]], True)
+        o.append(lens(at(fo["from"]), at(fo["to"]), cy, 50, h1=P, h2=80, dashed=True))
+        words((at(fo["from"]) + at(fo["to"])) / 2 + 20, cy, [fo["label"]], True)
+        # problem proposals, one open field for the whole Cycle, closed by Vote 1
+        pr = sh["problem"]
+        x1, x2 = at(pr["from"]), at(pr["to"])
+        o.append(lens(x1, x2, cy, 82))
+        words((x1 + x2) / 2, cy, pr["label"])
+        close(x2, pr["close"])
+        # pods branch off Vote 1; each runs its own proposals
+        pd = sh["pods"]
+        n, gap, br = pd["n"], pd["gap"], pd["branch"]
+        ys = [cy + (k - (n - 1) / 2) * gap for k in range(n)]
+        for y in ys:
+            o.append(branch(x2, cy, x2 + br, y))
+        sx = x2 + br
+        for st in pd["stages"]:
+            ex = at(st["to"]) if isinstance(st["to"], list) else x2 + st["to"]
+            for y in ys:
+                o.append(lens(sx, ex, y, pd["h"]))
+            words((sx + ex) / 2, ys[n // 2], [st["label"]])
+            close(ex, st["close"])
+            sx = ex
+        # projects branch off Vote 2 inside each pod, build, and meet at the showcase
+        pj = sh["projects"]
+        xs = at(pj["to"])
+        for y, k in zip(ys, pj["counts"]):
+            pys = [y + (j - (k - 1) / 2) * pj["gap"] for j in range(k)]
+            for py in pys:
+                o.append(branch(sx, y, sx + br, py, 1.5))
+                o.append(lens(sx + br, xs - br, py, 6))
+                o.append(branch(xs - br, py, xs, cy, 1.5))
+        words((sx + xs) / 2, ys[0] - 34, [pj["label"]])
+        close(xs, pj["close"])
+        if sh.get("note"):
+            o.append(f'<text x="{at(pr["from"])}" y="{cy + 128}" font-size="13.745" font-style="italic" fill="{INK}" '
+                     f'fill-opacity=".75">{esc(sh["note"])}</text>')
     # arcs above the line: skips and returns
     for k, ar in enumerate(d["arcs"]):
         i, j = idx[ar["from"]], idx[ar["to"]]
@@ -146,21 +180,21 @@ def svg(d):
                 for v, q in c.get("told", []):
                     o.append(f'<rect x="{x}" y="{yy - 15}" width="20" height="20" fill="{INK if v == "A" else PAPER}" stroke="{INK}" stroke-width="2"/>'
                              f'<text x="{x + 10}" y="{yy}" text-anchor="middle" font-size="12" font-weight="700" fill="{PAPER if v == "A" else INK}">{v}</text>')
-                    for k, line in enumerate(wrap(f"“{q}”", 28)):
+                    for k, line in enumerate(wrap(f"“{q}”", int(cw[i] / 9.6))):
                         o.append(f'<text x="{x + 30}" y="{yy + k * LH}" font-size="{FS}" fill="{INK}">{esc(line)}</text>')
-                    yy += LH * len(wrap(f"“{q}”", 28)) + 18
+                    yy += LH * len(wrap(f"“{q}”", int(cw[i] / 9.6))) + 18
                 if c.get("gap") or not c.get("told"):
                     o.append(f'<text x="{x}" y="{yy}" font-size="{FS}" font-style="italic" fill="{INK}" fill-opacity=".7">'
                              f'{esc(c.get("gap", "Nothing heard yet"))}</text>')
                 continue
             yy = y
             for para in c.get(key, []):
-                for line in wrap(para, 31):
+                for line in wrap(para, int(cw[i] / 8.8)):
                     o.append(f'<text x="{x}" y="{yy}" font-size="{FS}" fill="{INK}">{esc(line)}</text>')
                     yy += LH
             if key == "do" and c.get("plan"):
                 yy += 6
-                for line in wrap("Planned: " + c["plan"][0], 31):
+                for line in wrap("Planned: " + c["plan"][0], int(cw[i] / 8.8)):
                     o.append(f'<text x="{x}" y="{yy}" font-size="{FS}" font-style="italic" fill="{INK}">{esc(line)}</text>')
                     yy += LH
     # titles under the line, left of the leak rings
@@ -182,7 +216,7 @@ def svg(d):
            f'<text x="{LM + 1116}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Skipping ahead, or coming back</text>']
     key.append(f'<path d="M{LM + 1420},{ky} Q{LM + 1465},{ky - 30} {LM + 1510},{ky} Q{LM + 1465},{ky + 30} {LM + 1420},{ky} Z" '
                f'fill="{BLUE}" fill-opacity=".16" stroke="{INK}" stroke-width="3"/>'
-               f'<text x="{LM + 1526}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Opens up, then narrows to a choice</text>')
+               f'<text x="{LM + 1526}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Proposals open up; a choice narrows them; pods and projects branch</text>')
     vx = LM + 1880
     for v, name in d["voices"]:
         key.append(f'<rect x="{vx}" y="{ky - 12}" width="20" height="20" fill="{INK if v == "A" else PAPER}" stroke="{INK}" stroke-width="2"/>'

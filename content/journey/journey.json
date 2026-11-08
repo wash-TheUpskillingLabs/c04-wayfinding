@@ -122,7 +122,7 @@
    "title": "Join a Cycle",
    "cycle": true,
    "do": [
-    "Sign up, agree your work is public, come to sensemaking"
+    "Sign up, agree your work is public, come to sensemaking and propose problems"
    ],
    "where": [
     "The app, Slack, GitHub, an in-person intensive"
@@ -151,7 +151,7 @@
    "sub": "Vote 1",
    "cycle": true,
    "do": [
-    "Vote on problem situations, join a pod, research it until you find the paradox"
+    "Vote on problem proposals and join a pod. In it, propose paradoxes, then frames, then projects"
    ],
    "where": [
     "The pod’s repo, interviews, Slack"
@@ -168,15 +168,16 @@
      "A",
      "more guidance on what to work on in a given week"
     ]
-   ]
+   ],
+   "w": 680
   },
   {
    "id": "team",
-   "title": "A team: the build",
+   "title": "A project: the build",
    "sub": "Vote 2",
    "cycle": true,
    "do": [
-    "Vote on frames, join a team, build what it chose"
+    "Vote on project proposals, join a project team, build it"
    ],
    "where": [
     "GitHub, Claude Code, open lab nights"
@@ -328,64 +329,61 @@
    ],
    "label": "many ways out"
   },
-  "diamonds": [
-   {
-    "from": [
-     "join",
-     0
-    ],
-    "to": [
-     "pod",
-     0
-    ],
-    "open": [
-     "many problem",
-     "situations"
-    ],
-    "close": "Vote 1"
-   },
-   {
-    "from": [
-     "pod",
-     0
-    ],
-    "to": [
-     "pod",
-     160
-    ],
-    "open": [
-     "research"
-    ],
-    "close": "The paradox"
-   },
-   {
-    "from": [
-     "pod",
-     160
-    ],
-    "to": [
-     "team",
-     0
-    ],
-    "open": [
-     "frames"
-    ],
-    "close": "Vote 2"
-   },
-   {
-    "from": [
-     "team",
-     0
-    ],
-    "to": [
-     "show",
-     0
-    ],
-    "open": [
-     "prototypes"
-    ],
-    "close": "Showcase"
-   }
-  ]
+  "problem": {
+   "from": [
+    "join",
+    0
+   ],
+   "to": [
+    "pod",
+    0
+   ],
+   "label": [
+    "problem",
+    "proposals"
+   ],
+   "close": "Vote 1: pods"
+  },
+  "pods": {
+   "n": 3,
+   "gap": 64,
+   "h": 22,
+   "branch": 44,
+   "stages": [
+    {
+     "to": 250,
+     "label": "paradox proposals",
+     "close": "a paradox"
+    },
+    {
+     "to": 460,
+     "label": "frame proposals",
+     "close": "frames"
+    },
+    {
+     "to": [
+      "team",
+      0
+     ],
+     "label": "project proposals",
+     "close": "Vote 2: projects"
+    }
+   ]
+  },
+  "projects": {
+   "counts": [
+    2,
+    3,
+    2
+   ],
+   "gap": 17,
+   "to": [
+    "show",
+    0
+   ],
+   "label": "projects build",
+   "close": "Showcase"
+  },
+  "note": "Three pods, as in C04. How many projects each pod forms is illustrative."
  }
 }
