@@ -53,7 +53,7 @@ def lens(x1, x2, y, h, h1=4, h2=4):
     xm = (x1 + x2) / 2
     path = (f'M{x1},{y - h1} Q{xm},{y - h * 2 + (h1 + h2) / 2} {x2},{y - h2} '
             f'L{x2},{y + h2} Q{xm},{y + h * 2 - (h1 + h2) / 2} {x1},{y + h1} Z')
-    return (f'<path d="{path}" fill="{BLUE}" fill-opacity=".14" stroke="{INK}" '
+    return (f'<path d="{path}" fill="{PAPER}" stroke="{INK}" '
             f'stroke-width="{2.5 if h > 10 else 1.5}"/>')
 
 
@@ -83,8 +83,10 @@ def svg(d):
     # the Cycle, shaded
     cyc = [i for i, c in enumerate(cols) if c.get("cycle")]
     a, b = x0(cyc[0]) - GAP / 2, x0(cyc[-1]) + cw[cyc[-1]] + GAP / 2
-    back.append(f'<rect x="{a}" y="{LINE_Y - 150}" width="{b - a}" height="{BOTTOM - LINE_Y + 150}" fill="{INK}" fill-opacity=".05"/>'
-                + small(a + 14, BOTTOM - 18, "The Cycle", "start", 700, caps=True))
+    back.append(f'<rect x="{a}" y="{LINE_Y - 150}" width="{b - a}" height="{BOTTOM - LINE_Y + 150}" rx="4" fill="none" '
+                f'stroke="{INK}" stroke-width="3"/>'
+                f'<rect x="{a}" y="{BOTTOM - 40}" width="132" height="40" fill="{INK}"/>'
+                + small(a + 16, BOTTOM - 14, "The Cycle", "start", 700, caps=True, fill=PAPER))
     # bands: Learn, Build, Share
     for name, s, e in d["bands"]:
         bx, ex = x0(idx[s]), x0(idx[e]) + cw[idx[e]]
@@ -170,7 +172,7 @@ def svg(d):
         lx = (sxa + exa) / 2
         tw = len(ar["label"]) * FS * 0.55 + 20
         front.append(f'<rect x="{lx - tw / 2}" y="{top - 15}" width="{tw}" height="30" fill="{PAPER}"/>'
-                     f'<text x="{lx}" y="{top + 5.5}" text-anchor="middle" font-size="{FS}" font-weight="600" fill="{BLUE}">{esc(ar["label"])}</text>')
+                     f'<text x="{lx}" y="{top + 5.5}" text-anchor="middle" font-size="{FS}" font-weight="600" fill="{INK}">{esc(ar["label"])}</text>')
 
     # leaks between two steps; inside the Cycle they drop from the bottom of the shape
     for s, e, label in d["leaks"]:
@@ -179,7 +181,7 @@ def svg(d):
         front.append(f'<line x1="{mx}" y1="{y0}" x2="{mx}" y2="{RING_Y - 22}" stroke="{RED}" stroke-width="7" '
                      f'stroke-dasharray="2 12" stroke-linecap="round"/>'
                      f'<circle cx="{mx}" cy="{RING_Y}" r="13" fill="{PAPER}" stroke="{RED}" stroke-width="6"/>'
-                     f'<text x="{mx + 24}" y="{RING_Y + 5.5}" font-size="{FS}" font-weight="600" fill="{RED}">{esc(label)}</text>')
+                     f'<text x="{mx + 24}" y="{RING_Y + 5.5}" font-size="{FS}" font-weight="600" fill="{INK}">{esc(label)}</text>')
 
     # stations, step numbers and titles
     for i, c in enumerate(cols):
@@ -211,8 +213,8 @@ def svg(d):
                         front.append(f'<text x="{x + 30}" y="{yy + k * LH}" font-size="{FS}" fill="{INK}">{esc(line)}</text>')
                     yy += LH * len(ql) + 18
                 if c.get("gap") or not c.get("told"):
-                    front.append(f'<text x="{x}" y="{yy}" font-size="{FS}" font-style="italic" fill="{INK}" fill-opacity=".7">'
-                                 f'{esc(c.get("gap", "Nothing heard yet"))}</text>')
+                    front.append(f'<text x="{x}" y="{yy}" font-size="{FS}" font-style="italic" fill="{INK}">'
+                                 f'{esc(c.get("gap", "Nothing Heard Yet"))}</text>')
                 continue
             for para in c.get(key, []):
                 for line in wrap(para, int(cw[i] / 8.8)):
@@ -224,7 +226,7 @@ def svg(d):
                     front.append(f'<text x="{x}" y="{yy}" font-size="{FS}" font-style="italic" fill="{INK}">{esc(line)}</text>')
                     yy += LH
     if sh.get("note"):
-        front.append(small(a + 120, BOTTOM - 18, sh["note"], "start", italic=True))
+        front.append(small(a + 150, BOTTOM - 14, sh["note"], "start", italic=True))
 
     # heading and key
     head = (f'<text x="{LM}" y="92" font-size="43.987" font-weight="700" fill="{INK}">{esc(d["title"])}</text>'
@@ -232,17 +234,17 @@ def svg(d):
     ky = H - 96
     key = [f'<text x="{LM}" y="{ky - 30}" font-size="15.118" font-weight="700" fill="{INK}">How to Read It</text>',
            f'<line x1="{LM}" y1="{ky}" x2="{LM + 90}" y2="{ky}" stroke="{BLUE}" stroke-width="10"/>'
-           f'<text x="{LM + 106}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Your path</text>',
+           f'<text x="{LM + 106}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Your Path</text>',
            f'<line x1="{LM + 270}" y1="{ky}" x2="{LM + 360}" y2="{ky}" stroke="{BLUE}" stroke-width="10" stroke-dasharray="20 12"/>'
-           f'<text x="{LM + 376}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Planned, not running yet</text>',
+           f'<text x="{LM + 376}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Planned, Not Running Yet</text>',
            lens(LM + 640, LM + 730, ky, 18) +
-           f'<text x="{LM + 746}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Proposals open up; a choice narrows them</text>',
+           f'<text x="{LM + 746}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Proposals Open, a Choice Narrows Them</text>',
            f'<line x1="{LM + 1110}" y1="{ky}" x2="{LM + 1200}" y2="{ky}" stroke="{INK}" stroke-width="1.5"/>'
-           f'<text x="{LM + 1216}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Other people’s paths</text>',
+           f'<text x="{LM + 1216}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Other People’s Paths</text>',
            f'<line x1="{LM + 1440}" y1="{ky}" x2="{LM + 1530}" y2="{ky}" stroke="{RED}" stroke-width="7" stroke-dasharray="2 12" stroke-linecap="round"/>'
-           f'<text x="{LM + 1546}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Where people leave</text>',
+           f'<text x="{LM + 1546}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Where People Leave</text>',
            f'<line x1="{LM + 1760}" y1="{ky}" x2="{LM + 1850}" y2="{ky}" stroke="{BLUE}" stroke-width="5"/>'
-           f'<text x="{LM + 1866}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Skipping ahead, or coming back</text>']
+           f'<text x="{LM + 1866}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Skipping Ahead or Coming Back</text>']
     vx = LM + 2160
     for v, name in d["voices"]:
         key.append(f'<rect x="{vx}" y="{ky - 12}" width="20" height="20" fill="{INK if v == "A" else PAPER}" stroke="{INK}" stroke-width="2"/>'
