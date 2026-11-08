@@ -73,11 +73,11 @@ Metro is one system. These four bodies of work tell us why it works, and where o
 | Principle | How the map does | What to change |
 |---|---|---|
 | **Simplicity** (Roberts, INAT: five bends or fewer) | Followed end to end, a pod's line bends about 14 times, because each proposal round fans out and back in. Measured from the drawing. | Keep the bundles for the two votes. For paradoxes and frames, consider bundles that stay parallel for the whole pod stretch instead of opening and closing three times. That says the same thing with a third of the bends. |
-| **Balance** (Roberts) | The Cycle is dense; steps 1 to 5 are sparse. | Partly honest: little exists before the Cycle yet. As steps 3 to 5 gain content, give them room. Don't stretch them out to look full. |
+| **Balance** (Roberts) | Before the Cycle, sessions are now a loop rather than three thin steps, so that side carries real weight. | Done. Sessions happen in any order, so a loop is truer than a line, and it gives the left half of the map its own shape. |
 | **Coherence** (Roberts) | One axis, left to right, and one trunk. Strong. | Keep. |
 | **Paths, nodes, districts** (Lynch) | Paths are lines, nodes are stations and votes, districts are Learn, Build and Share. | Good. |
 | **Edges** (Lynch) | The Cycle's outline is an edge, and so are the red rings. | Good. |
-| **Landmarks** (Lynch; Arthur and Passini put them at decision points) | None. Nothing marks the moments people actually remember. | Add landmarks at decision points: Sensemaking Day at step 6, the Paradox session, the Showcase. A Cycle's dates belong as data next to them, not in the drawing. |
+| **Landmarks** (Lynch; Arthur and Passini put them at decision points) | Flags mark Kickoff, Sensemaking Day, Paradox and Frames, the Project Vote and the Showcase, with C04's dates as data. | Done. |
 | **Structure matching** (Levine) | Step names are ours, not always what people see in the app, Slack or emails. | Use the same names on the map as in OLOS, Slack and the calendar. A mismatch is a wayfinding failure, not a copy issue. |
 | **Where am I, what's next** (Metro's Station Ahead Maps, Levine's you-are-here) | The static map can't know where you are. | See "The Map Is a Spec" below. |
 | **Progressive disclosure** (Metro, Legible London) | All four rows are visible at every step. That's right for a map read once, wrong for a sign. | In the app, show one step's rows at a time. |

@@ -34,55 +34,26 @@
    "told": []
   },
   {
-   "id": "first",
-   "title": "A First Session",
+   "id": "sessions",
+   "title": "Upskilling Sessions",
+   "w": 900,
    "do": [
-    "Come to a free training or workshop"
+    "Come to trainings, workshops, open labs and meetups, in any order, as often as you like"
+   ],
+   "plan": [
+    "A suggested way round, and a record of your sessions so the path makes sense looking back"
    ],
    "where": [
-    "A library branch, or online"
+    "Library branches, online, the region’s calendar"
    ],
    "with": [
-    "A trainer or facilitator, and whoever else came"
+    "Trainers, facilitators, and the regulars"
    ],
    "told": [
     [
      "A",
      "links came from individual trainers, not one place; it felt ad hoc"
-    ]
-   ],
-   "gap": "Only People Who Stayed Have Answered"
-  },
-  {
-   "id": "profile",
-   "title": "Make a Profile",
-   "do": [
-    "Make an upskiller profile and join the region, free"
-   ],
-   "plan": [
-    "What a profile gets you is still being worked out"
-   ],
-   "where": [
-    "The app"
-   ],
-   "with": [
-    "You, on your own"
-   ],
-   "told": []
-  },
-  {
-   "id": "more",
-   "title": "Keep Coming",
-   "do": [
-    "More trainings and workshops, open lab nights, meetups"
-   ],
-   "where": [
-    "Libraries, online, the region’s calendar"
-   ],
-   "with": [
-    "Regulars and trainers"
-   ],
-   "told": [
+    ],
     [
      "A",
      "content from past Cycles should be in one central place"
@@ -91,7 +62,50 @@
      "A",
      "map out pathways so people can watch from the sidelines"
     ]
-   ]
+   ],
+   "gap": "Only People Who Stayed Have Answered",
+   "loop": {
+    "h": 78,
+    "inside": [
+     "Join anywhere. Go round",
+     "as often as you like."
+    ],
+    "stations": [
+     {
+      "name": "Trainings",
+      "kind": "Learn a tool",
+      "at": [
+       0.22,
+       "top"
+      ]
+     },
+     {
+      "name": "Workshops",
+      "kind": "Work a problem",
+      "at": [
+       0.72,
+       "top"
+      ]
+     },
+     {
+      "name": "Open Labs",
+      "kind": "Build together",
+      "at": [
+       0.72,
+       "bot"
+      ]
+     },
+     {
+      "name": "Meetups and Happy Hours",
+      "kind": "Share and meet",
+      "at": [
+       0.25,
+       "bot"
+      ]
+     }
+    ],
+    "record": "Your Record (Planned): a stamp for every session"
+   }
   },
   {
    "id": "prep",
@@ -252,11 +266,14 @@
   }
  ],
  "leaks": [
-  [
-   "first",
-   "profile",
-   "Came Once"
-  ],
+  {
+   "at": [
+    "sessions",
+    280
+   ],
+   "dy": 78,
+   "label": "Came Once"
+  },
   [
    "pod",
    "team",
@@ -292,10 +309,12 @@
   },
   {
    "from": "after",
-   "to": "first",
+   "to": "sessions",
    "label": "Teach a Session",
    "kind": "people",
-   "lane": 2
+   "lane": 2,
+   "dx": 150.0,
+   "onto": "top"
   }
  ],
  "voices": [

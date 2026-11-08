@@ -136,11 +136,47 @@ def svg(d):
 
     # trunk between steps, outside the Cycle
     cyc_ids = [i for i, c in enumerate(cols) if c.get("cycle")]
+    loop_exit = {i: x0(i) + cw[i] - 40 for i, c in enumerate(cols) if c.get("loop")}
     for i in range(len(cols) - 1):
         if i in cyc_ids and i + 1 in cyc_ids:
             continue
         planned = cols[i].get("planned") or cols[i + 1].get("planned")
-        poly([(cx(i), LINE_Y), (cx(i + 1), LINE_Y)], 10, ' stroke-dasharray="20 12"' if planned else "")
+        poly([(loop_exit.get(i, cx(i)), LINE_Y), (cx(i + 1), LINE_Y)], 10, ' stroke-dasharray="20 12"' if planned else "")
+
+    # Before the Cycle there is no set order: sessions are a loop you can join anywhere and
+    # go round as often as you like. Its stations run Learn, Build, Share, the upskiller's own
+    # spiral, so the order is a suggestion you can see, not a rule. Under it, a planned record
+    # stamps each session, so the path makes sense looking back.
+    for i, c in enumerate(cols):
+        lp = c.get("loop")
+        if not lp:
+            continue
+        lx1, lx2 = cx(i), loop_exit[i]
+        top, bot, r = LINE_Y - lp["h"], LINE_Y + lp["h"], lp["h"]
+        lines.append(f'<path d="M{lx1},{LINE_Y} V{top + r} Q{lx1},{top} {lx1 + r},{top} H{lx2 - r} Q{lx2},{top} {lx2},{top + r} '
+                     f'V{bot - r} Q{lx2},{bot} {lx2 - r},{bot} H{lx1 + r} Q{lx1},{bot} {lx1},{bot - r} Z" fill="none" '
+                     f'stroke="{BLUE}" stroke-width="10"/>')
+        # the way round: arrowheads on the loop, clockwise
+        for ax, ay, dx_ in ((lx1 + (lx2 - lx1) * .5, top, 1), (lx1 + (lx2 - lx1) * .5, bot, -1)):
+            lines.append(f'<path d="M{ax - 9 * dx_},{ay - 9} L{ax + 7 * dx_},{ay} L{ax - 9 * dx_},{ay + 9} Z" fill="{PAPER}"/>')
+        n = len(lp["stations"])
+        for k, st in enumerate(lp["stations"]):
+            sx_, sy = st["at"]
+            px_, py = lx1 + (lx2 - lx1) * sx_, (top if sy == "top" else bot)
+            front.append(f'<circle cx="{px_}" cy="{py}" r="12" fill="{PAPER}" stroke="{INK}" stroke-width="5"/>')
+            if sy == "top":     # above the line, outside the loop
+                front.append(small(px_, py - 22, st["name"], weight=700) + small(px_, py - 39, st["kind"], caps=True))
+            else:               # above the line, inside the loop
+                front.append(small(px_, py - 22, st["name"], weight=700) + small(px_, py - 39, st["kind"], caps=True))
+        front.append(small((lx1 + lx2) / 2, LINE_Y - 14, lp["inside"][0], italic=True)
+                     + small((lx1 + lx2) / 2, LINE_Y + 3, lp["inside"][1], italic=True))
+        # your record, planned: a stamp for every session
+        ry, rx1 = TITLE_Y + 40, lx1 + 300
+        lines.append(f'<line x1="{rx1}" y1="{ry}" x2="{lx2}" y2="{ry}" stroke="{INK}" stroke-width="3" stroke-dasharray="10 8"/>')
+        for k in range(6):
+            sxk = rx1 + 20 + k * (lx2 - rx1 - 40) / 5
+            front.append(f'<rect x="{sxk - 7}" y="{ry - 7}" width="14" height="14" rx="2" fill="{PAPER}" stroke="{INK}" stroke-width="2.5"/>')
+        front.append(small(lx2, ry + 28, lp["record"], "end", 700))
 
     Y = LINE_Y
     # many ways in: separate lines that join the trunk at the first step
@@ -247,9 +283,13 @@ def svg(d):
                      f'<text x="{lx}" y="{top + 5.5}" text-anchor="middle" font-size="{FS}" font-weight="600" fill="{INK}">{esc(ar["label"])}</text>')
 
     # leaks between two steps; inside the Cycle they drop from the bottom of the shape
-    for s, e, label in d["leaks"]:
-        mx = x0(idx[e]) - GAP / 2
-        y0 = LINE_Y + (120 if cols[idx[e]].get("cycle") or cols[idx[s]].get("cycle") else 8)
+    for lk in d["leaks"]:
+        if isinstance(lk, dict):        # from a point, e.g. the bottom of the session loop
+            mx, y0, label = at(lk["at"]), LINE_Y + lk["dy"], lk["label"]
+        else:
+            s, e, label = lk
+            mx = x0(idx[e]) - GAP / 2
+            y0 = LINE_Y + (120 if cols[idx[e]].get("cycle") or cols[idx[s]].get("cycle") else 8)
         front.append(f'<line x1="{mx}" y1="{y0}" x2="{mx}" y2="{RING_Y - 22}" stroke="{RED}" stroke-width="7" '
                      f'stroke-dasharray="2 12" stroke-linecap="round"/>'
                      f'<circle cx="{mx}" cy="{RING_Y}" r="13" fill="{PAPER}" stroke="{RED}" stroke-width="6"/>'
@@ -266,7 +306,11 @@ def svg(d):
         r[0], r[1] = min(r[0], t), max(r[1], bm)
     for i, c in enumerate(cols):
         x = cx(i)
-        if round(x) in spans:
+        if c.get("loop"):
+            hh = c["loop"]["h"]
+            ring = (f'<rect x="{x - 30}" y="{LINE_Y - hh - 30}" width="{loop_exit[i] - x + 60}" height="{2 * hh + 60}" '
+                    f'rx="{hh + 30}" fill="none" stroke="{RED}" stroke-width="6"/>')
+        elif round(x) in spans:
             t, bm = spans[round(x)]
             ring = (f'<rect x="{x - 26}" y="{t - 26}" width="52" height="{bm - t + 52}" rx="26" fill="none" '
                     f'stroke="{RED}" stroke-width="6"/>')
