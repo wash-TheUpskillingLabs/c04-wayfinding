@@ -8,8 +8,10 @@
    Contrast, measured: ink/paper 10.7. ink/blue 4.1. ink/red 3.6. paper/blue 2.6. paper/red 3.0.
    Text is ink on paper or paper on ink, always. Blue and red never carry small text.
    Maps only may add line colours, to tell one line from another as the Metro does, from the same
-   picker: green #007500 and yellow #e6c700 (scheme 11), silver #a5a6a9 (scheme 3). Every pair stays
-   distinct under protanopia, deuteranopia and tritanopia (research/journey-map-colour.md). Lines are flat colour,
+   picker: green #007500 and yellow #e6c700 (scheme 11), silver #a5a6a9 (scheme 3). Each pod is a
+   colour family: its paradoxes branch in its colour and one shade of it, light green #3dbd5d (8),
+   navy #08327d (10), ochre #c7943e (7), and carry names (A1, A2). Lines side by side stay distinct
+   under protanopia, deuteranopia and tritanopia (research/journey-map-colour.md). Lines are flat colour,
    no outline, as on the Metro; pale lines carry a letter or label too. Never text, never instead of red.
    Blue is direction: where you can go. Red is position: where you are, where people stopped.
    Decoration is arrows, line bullets and wayfinding pictograms, and only those.

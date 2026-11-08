@@ -30,6 +30,7 @@ Read each one aloud, exactly as written.
 | 10 | Point to the moment in a Cycle when you'd vote on projects. | The Project Vote landmark, at step 6 | Landmarks |
 | 11 | You've been to three trainings and no workshops. Is there a next session the map suggests? | A workshop: the loop runs Learn, Build, Share | The suggested way round |
 | 12 | Your pod had six paradox proposals and kept three paradoxes. Were the other three cut? | No: they merged into the three in sensemaking; only a vote ends a line | Merging versus a terminus |
+| 13 | At the showcase, find a project that came from your pod's second paradox. | Any project line in B2's shade (blue), traced back to the B2 disc | Shades and branch names |
 
 ## Scoring
 

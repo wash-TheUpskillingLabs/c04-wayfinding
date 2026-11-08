@@ -22,6 +22,12 @@ INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
 # colour science (research/journey-map-colour.md, tools/colourcheck.py): every pair of lines stays
 # at least 19 CAM02-UCS units apart under protanopia, deuteranopia and tritanopia.
 GREEN, YELLOW, SILVER = "#007500", "#e6c700", "#a5a6a9"   # pod A, pod C, a proposal not chosen
+# Each pod is a colour family. Its paradoxes branch in shades of it: one keeps the pod's colour,
+# the other takes a darker or lighter shade, again from the Swiss palette (light green scheme 8,
+# navy scheme 10, ochre scheme 7). Frames and projects keep their paradox's shade, so a project
+# can be traced back to the paradox it came from. Order on the map puts light beside dark, so
+# lines that run side by side stay at least 15 CAM02-UCS apart for every kind of colour vision.
+GREEN_LT, NAVY, OCHRE = "#3dbd5d", "#08327d", "#c7943e"
 CASE = 0     # no casing: like the Metro, lines are flat colour (research/journey-map-colour.md)
 FONT = "Inter, system-ui, sans-serif"
 LM, LABW, COLW, GAP = 56, 190, 274, 22
@@ -246,21 +252,28 @@ def svg(d):
     e1, e2 = (P + st["to"] for st in pd["stages"][:2])
     T2 = at(pd["stages"][2]["to"])
     frames = sorted({g for fs in FRAME.values() for _, g in fs})
-    for c in sorted(pods, key=lambda c: c == Y):       # your pod drawn last, on top
-        col = podhue[c]
-        for o, t in PARA:
-            poly(track([(x, c), (x + 14, c), (x + 14 + abs(o), c + o), (e1 - 14 - abs(o - t), c + o),
-                        (e1 - 14, c + t), (e1 + 1, c + t)]), col=col)
+    shades = {Y - G: (GREEN, GREEN_LT), Y: (NAVY, BLUE), Y + G: (YELLOW, OCHRE)}   # upper, lower paradox
+    def shade(c, off):
+        return shades[c][0 if off < 0 else 1]
+    for c, letter in sorted(zip(pods, pd["letters"]), key=lambda t: t[0] == Y):   # your pod drawn last
+        for o, t in PARA:     # in hindsight, each proposal takes the shade of the paradox it merges into
+            poly(track([(x + 14, c), (x + 14 + abs(o), c + o), (e1 - 14 - abs(o - t), c + o),
+                        (e1 - 14, c + t), (e1 + 1, c + t)]), col=shade(c, t))
+        poly([(x - 2, c), (x + 16, c)], col=podhue[c])                 # the pod's own colour up to the split
         for p_, fs in FRAME.items():
             for f, g in fs:
-                poly(track([(e1, c + p_), (e1 + 14, c + p_), (e1 + 14 + abs(f - p_), c + f),
-                            (e2 - 14 - abs(f - g), c + f), (e2 - 14, c + g), (e2 + 1, c + g)]), col=col)
+                poly(track([(e1, c + p_), (e1 + 34, c + p_), (e1 + 34 + abs(f - p_), c + f),
+                            (e2 - 14 - abs(f - g), c + f), (e2 - 14, c + g), (e2 + 1, c + g)]), col=shade(c, p_))
+            # each paradox is named, like a branch of a Paris RER line (C1, C2): letter and number, not just shade
+            front.append(f'<circle cx="{e1 + 15}" cy="{c + p_}" r="13" fill="{PAPER}" stroke="{shade(c, p_)}" stroke-width="4"/>'
+                         f'<text x="{e1 + 15}" y="{c + p_ + 4}" text-anchor="middle" font-size="11" font-weight="700" '
+                         f'fill="{INK}">{letter}{1 if p_ < 0 else 2}</text>')
         for g in frames:
             if g == ENDS:
-                poly([(e2, c + g), (T2 - 30, c + g)], col=col)
-                end(T2 - 30, c + g, col)
+                poly([(e2, c + g), (T2 - 30, c + g)], col=shade(c, g))
+                end(T2 - 30, c + g, shade(c, g))
             else:
-                poly([(e2, c + g), (T2 + 30, c + g)], col=col)
+                poly([(e2, c + g), (T2 + 30, c + g)], col=shade(c, g))
         caps.append((T2, c + frames[0], c + frames[-1], c == Y))
     for st, (sx_, ex_) in zip(pd["stages"], ((x, e1), (e1, e2), (e2, T2))):
         label((sx_ + ex_) / 2, Y - G / 2, st["label"])
@@ -268,8 +281,8 @@ def svg(d):
             chose(ex_, st["close"])
     x = T2
     # projects build side by side, then all meet at the showcase
-    projs = [(c + g, podhue[c]) for c in pods for g in frames if g != ENDS]
-    for q, col in sorted(projs, key=lambda t: t[1] == BLUE):
+    projs = [(c + g, shade(c, g), c == Y) for c in pods for g in frames if g != ENDS]
+    for q, col, _ in sorted(projs, key=lambda t: t[2]):
         dy = abs(Y - q)
         poly([(x + 30, q), (S - 24 - dy, q), (S - 24, Y), (S, Y)], col=col)
     label((x + S - 60) / 2, Y - G / 2, pj["label"])
@@ -411,7 +424,7 @@ def svg(d):
            f'<line x1="{LM}" y1="{ky + 44}" x2="{LM + 26}" y2="{ky + 44}" stroke="{GREEN}" stroke-width="8"/>'
            f'<line x1="{LM + 32}" y1="{ky + 44}" x2="{LM + 58}" y2="{ky + 44}" stroke="{BLUE}" stroke-width="8"/>'
            f'<line x1="{LM + 64}" y1="{ky + 44}" x2="{LM + 90}" y2="{ky + 44}" stroke="{YELLOW}" stroke-width="8"/>'
-           f'<text x="{LM + 106}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Each Pod Has Its Own Line; Blue Is Yours</text>'
+           f'<text x="{LM + 106}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Each Pod Has Its Own Colour; Blue Is Yours</text>'
            f'<line x1="{LM + 500}" y1="{ky + 44}" x2="{LM + 590}" y2="{ky + 44}" stroke="{SILVER}" stroke-width="8"/>'
            f'<text x="{LM + 606}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">A Proposal Not Chosen</text>',
            f'<circle cx="{LM + 900}" cy="{ky + 44}" r="14" fill="{PAPER}" stroke="{GREEN}" stroke-width="5"/>'
@@ -420,7 +433,10 @@ def svg(d):
            f'<text x="{LM + 1386}" y="{ky + 49.5}" font-size="{FS}" font-style="italic" fill="{INK}">Not to scale: steps are evenly spaced, not by time.</text>'
            f'<path d="M{LM + 1870},{ky + 32} H{LM + 1900} L{LM + 1912},{ky + 44} H{LM + 1960} M{LM + 1870},{ky + 56} H{LM + 1900} L{LM + 1912},{ky + 44}" '
            f'fill="none" stroke="{BLUE}" stroke-width="8" stroke-linejoin="round"/>'
-           f'<text x="{LM + 1976}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Lines Merge in Sensemaking: No Vote, Nothing Cut</text>',
+           f'<text x="{LM + 1976}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Lines Merge in Sensemaking: No Vote, Nothing Cut</text>'
+           f'<path d="M{LM + 2440},{ky + 44} H{LM + 2462} L{LM + 2474},{ky + 32} H{LM + 2530}" fill="none" stroke="{GREEN}" stroke-width="8" stroke-linejoin="round"/>'
+           f'<path d="M{LM + 2462},{ky + 44} L{LM + 2474},{ky + 56} H{LM + 2530}" fill="none" stroke="{GREEN_LT}" stroke-width="8" stroke-linejoin="round"/>'
+           f'<text x="{LM + 2546}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">A Pod’s Paradoxes, A1 and A2, Branch in Shades of Its Colour; Projects Keep Their Shade</text>',
            f'<line x1="{LM + 270}" y1="{ky}" x2="{LM + 360}" y2="{ky}" stroke="{BLUE}" stroke-width="10" stroke-dasharray="20 12"/>'
            f'<text x="{LM + 376}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Planned, Not Running Yet</text>',
            f'<path d="M{LM + 640},{ky - 10} H{LM + 730} M{LM + 640},{ky + 2} H{LM + 700}" stroke="{BLUE}" stroke-width="8"/>'
