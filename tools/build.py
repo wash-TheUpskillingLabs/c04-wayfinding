@@ -22,7 +22,7 @@ The script owns the sign system, so every page follows the same rules:
 import html, json, os, re, sys
 from datetime import date
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import sitmap
+import sitmap, flow
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = os.path.join(ROOT, "content")
@@ -241,7 +241,7 @@ def build_home(ps):
 def build_post(p, mapb=None):
     secs = p["secs"]
     if mapb:
-        for sec in secs: sec["body"] = sec["body"].replace("{{map}}", mapb[0]).replace("{{total}}", str(mapb[1]))
+        for sec in secs: sec["body"] = sec["body"].replace("{{map}}", mapb[0]).replace("{{total}}", str(mapb[1])).replace("{{flow}}", mapb[2])
     page = head(f'{p["title"]} | Wayfinding', p["dek"], f'/blog/{p["slug"]}/')
     words = sum(len(re.sub(r"<[^>]+>", " ", s["body"]).split()) for s in secs if s["id"] != "sources")
     mins = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"][min(9, max(0, round(words / 230) - 1))]
@@ -308,6 +308,14 @@ def map_block():
 <details class="pm-details"><summary><span><span class="t">All {total} statements as a table</span></span>{ic("chev", "chev")}</summary>{sitmap.table(sts)}</details>'''
     return block, total
 
+def flow_block():
+    """The region chart for its blog post: the chart inline, and a link to the poster."""
+    data = flow.load(os.path.join(C, "flow", "flow.json"))
+    pic, w, h = flow.svg(data)
+    write("flow/the-region.svg", pic)
+    return f'''<div class="flow-wrap">{pic}</div>
+<a class="btn" href="/flow/the-region.svg"><span class="t">Open the chart</span><span class="tile blue">{ic("a-r")}</span></a>'''
+
 def build_404():
     secs = [{"id": "routes", "title": "Ways back", "short": "Ways back", "icon": "post", "tile": "blue", "body": f'''<ul class="rows routes">
   <li><a class="route-link" href="/"><span class="t">The pod’s home page</span>{ic("a-r")}</a><span class="t t-small quiet">What we’re working on and how to join.</span></li>
@@ -361,7 +369,7 @@ if __name__ == "__main__":
     write("index.html", build_home(ps))
     write("about/index.html", build_about(ps))
     write("blog/index.html", build_blog(ps))
-    mapb = map_block()
+    mapb = map_block() + (flow_block(),)
     for p in ps: write(f"blog/{p['slug']}/index.html", build_post(p, mapb))
     write("blog/feed.xml", build_feed(ps))
     write("404.html", build_404())

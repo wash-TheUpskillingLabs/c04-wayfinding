@@ -1,0 +1,318 @@
+{
+  "title": "How the region fits together",
+  "lanes": [
+    {
+      "id": "org",
+      "name": "How the region is organised",
+      "line": "ink",
+      "end": "stop",
+      "gives": "A platform, a brand, rooms, review, and a clock",
+      "gets": "Changes that hold up, carried back to the commons",
+      "stations": [
+        {
+          "col": 0,
+          "name": "The Upskilling Labs, Inc.",
+          "note": "Holds the brand, the board, the Ambassador program and the national site"
+        },
+        {
+          "col": 1,
+          "name": "National OLOS",
+          "note": "Gives every region the same platform; takes back what they prove"
+        },
+        {
+          "col": 2,
+          "name": "The Upskilling Labs of Greater Washington",
+          "note": "Its own fork, site and database: a place to change things without touching national"
+        },
+        {
+          "col": 3,
+          "name": "The steering committee",
+          "note": "Decides what the region becomes; ends in January"
+        },
+        {
+          "col": 4,
+          "name": "Pod maintainers",
+          "note": "Review every pull request so the region stays compatible with national"
+        },
+        {
+          "col": 5,
+          "name": "Builders in residence",
+          "note": "Three to five per pod; each turns a frame into one change"
+        },
+        {
+          "col": 6,
+          "name": "Three research pods",
+          "note": "Scaffolding, Wayfinding, Front Door: each turns a problem into a paradox and frames",
+          "link": "pods"
+        },
+        {
+          "col": 10,
+          "name": "Projects",
+          "note": "One change The Labs runs on, built on the region’s OLOS, used by a real person",
+          "link": "teams"
+        },
+        {
+          "col": 14,
+          "name": "The showcase",
+          "note": "What held up is offered upstream to national OLOS, as pull requests",
+          "link": "showcase"
+        },
+        {
+          "col": 15,
+          "name": "Employers",
+          "note": "Not asked yet. What they could read: a record of what you built",
+          "link": "after",
+          "stop": true
+        }
+      ]
+    },
+    {
+      "id": "cycle",
+      "name": "Build Cycle C04",
+      "line": "ink",
+      "end": "stop",
+      "gives": "A fixed clock, a room on group days, a vote",
+      "gets": "Problems picked, finds, prototypes, three releases",
+      "stations": [
+        {
+          "col": 4,
+          "date": "Oct 24",
+          "name": "Sensemaking day",
+          "note": "The room picks its problems",
+          "link": "sensemaking"
+        },
+        {
+          "col": 5,
+          "date": "Oct 26",
+          "name": "Archaeology",
+          "note": "How this became a problem; what’s been tried anywhere"
+        },
+        {
+          "col": 6,
+          "date": "Nov 2",
+          "name": "First interviews",
+          "note": "One per builder; the context map drafted",
+          "link": "pods"
+        },
+        {
+          "col": 7,
+          "date": "Nov 7",
+          "name": "The paradox",
+          "note": "Two truths that block the easy fix; each builder leaves with a frame",
+          "link": "paradox"
+        },
+        {
+          "col": 8,
+          "date": "Nov 8–13",
+          "name": "Rapid prototypes",
+          "note": "Each a probe, put in front of three real people",
+          "link": "prototype"
+        },
+        {
+          "col": 10,
+          "date": "Nov 14",
+          "name": "The room votes",
+          "note": "Proposals pitched; a yes gives a project a team",
+          "link": "teams"
+        },
+        {
+          "col": 11,
+          "date": "Nov 23",
+          "name": "First release",
+          "note": "Used by at least three real people"
+        },
+        {
+          "col": 12,
+          "date": "Nov 30",
+          "name": "Second release",
+          "note": "Changed by what those people did"
+        },
+        {
+          "col": 13,
+          "date": "Dec 7",
+          "name": "Final release",
+          "note": "A January maintainer named; a pull request to OLOS"
+        },
+        {
+          "col": 14,
+          "date": "Dec 8",
+          "name": "Teach-back",
+          "note": "The room learns what each team learned",
+          "link": "showcase"
+        }
+      ]
+    },
+    {
+      "id": "route",
+      "name": "A person’s route",
+      "line": "blue",
+      "end": "none",
+      "gives": "Four to six volunteer hours a week, and what you already know",
+      "gets": "Practice, a team, and a public record of what you built",
+      "stations": [
+        {
+          "col": 0,
+          "name": "You hear of it",
+          "note": "A friend, LinkedIn, a Luma listing, the Metro map"
+        },
+        {
+          "col": 1,
+          "name": "A first session",
+          "note": "You leave with a tool learned or a thing made, at a library or online"
+        },
+        {
+          "col": 2,
+          "name": "An account on the app",
+          "note": "A profile that follows you between the parts"
+        },
+        {
+          "col": 3,
+          "name": "More sessions",
+          "note": "Skills, practised: learn a tool, work a problem with others"
+        },
+        {
+          "col": 4,
+          "name": "Into a Cycle",
+          "note": "C04 by invitation to past participants",
+          "link": "sensemaking"
+        },
+        {
+          "col": 6,
+          "name": "A research pod",
+          "note": "A question, company, and the archaeology to do",
+          "link": "pods"
+        },
+        {
+          "col": 7,
+          "name": "A frame",
+          "note": "A way to see the problem that is yours",
+          "link": "paradox"
+        },
+        {
+          "col": 8,
+          "name": "A prototype",
+          "note": "Made in an hour; evidence from three people",
+          "link": "prototype"
+        },
+        {
+          "col": 10,
+          "name": "A team",
+          "note": "A team and a mandate. Or not: if the room doesn’t pick your project, your pod dissolves",
+          "link": "teams",
+          "stop": true
+        },
+        {
+          "col": 12,
+          "name": "Three weeks of building",
+          "note": "A change that ships, used by real people"
+        },
+        {
+          "col": 14,
+          "name": "The showcase",
+          "note": "A public record of what you built, and a team you stay in touch with",
+          "link": "showcase"
+        },
+        {
+          "col": 15,
+          "name": "After",
+          "note": "Nothing yet. The record counts nowhere; there is no route back in",
+          "link": "after",
+          "stop": true
+        }
+      ]
+    }
+  ],
+  "rails": [
+    {
+      "link": "sensemaking",
+      "between": [
+        "route",
+        "cycle"
+      ],
+      "dir": "up",
+      "label": "4–6 hours a week, for twelve weeks"
+    },
+    {
+      "link": "pods",
+      "between": [
+        "org",
+        "cycle"
+      ],
+      "dir": "down",
+      "label": "a question worth twelve weeks"
+    },
+    {
+      "link": "pods",
+      "between": [
+        "cycle",
+        "route"
+      ],
+      "dir": "down",
+      "label": "interviews, cases and records to find"
+    },
+    {
+      "link": "paradox",
+      "between": [
+        "cycle",
+        "route"
+      ],
+      "dir": "down",
+      "label": "one frame each"
+    },
+    {
+      "link": "prototype",
+      "between": [
+        "route",
+        "cycle"
+      ],
+      "dir": "up",
+      "label": "what three people did"
+    },
+    {
+      "link": "teams",
+      "between": [
+        "cycle",
+        "org"
+      ],
+      "dir": "up",
+      "label": "a yes, and a team"
+    },
+    {
+      "link": "teams",
+      "between": [
+        "route",
+        "cycle"
+      ],
+      "dir": "up",
+      "label": "a proposal"
+    },
+    {
+      "link": "showcase",
+      "between": [
+        "route",
+        "cycle"
+      ],
+      "dir": "up",
+      "label": "what shipped, and what you learned"
+    },
+    {
+      "link": "showcase",
+      "between": [
+        "cycle",
+        "org"
+      ],
+      "dir": "up",
+      "label": "what held up"
+    },
+    {
+      "link": "after",
+      "between": [
+        "route",
+        "org"
+      ],
+      "dir": "up",
+      "label": "nothing crosses yet",
+      "stop": true
+    }
+  ]
+}
