@@ -295,70 +295,70 @@
  },
  {
   "q": "what",
-  "theme": "drop-off when a program ends",
+  "theme": "most programs lose most people when they end",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "about 16 in 100 Summer of Code students kept contributing"
  },
  {
   "q": "what",
-  "theme": "drop-off when a program ends",
+  "theme": "most programs lose most people when they end",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "57% had said they meant to continue"
  },
  {
   "q": "what",
-  "theme": "drop-off when a program ends",
+  "theme": "most programs lose most people when they end",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "of 73 hackathons’ projects, 3.6% were alive five months later"
  },
  {
   "q": "what",
-  "theme": "drop-off when a program ends",
+  "theme": "most programs lose most people when they end",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "stated intent to continue made no measurable difference"
  },
  {
   "q": "what",
-  "theme": "drop-off when a program ends",
+  "theme": "most programs lose most people when they end",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "AmeriCorps’ effects were half gone by year eight"
  },
  {
   "q": "what",
-  "theme": "drop-off when a program ends",
+  "theme": "most programs lose most people when they end",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "72% of Teach For America teachers were out of teaching by year five"
  },
  {
   "q": "what",
-  "theme": "drop-off when a program ends",
+  "theme": "most programs lose most people when they end",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "the Carpentries’ online course finished 5 to 10% of starters"
  },
  {
   "q": "what",
-  "theme": "a vote that produced one pod",
+  "theme": "a vote that produced only one pod",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the voting math created only one pod"
  },
  {
   "q": "what",
-  "theme": "a vote that produced one pod",
+  "theme": "a vote that produced only one pod",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "at least one still-active participant was disappointed"
  },
  {
   "q": "what",
-  "theme": "a vote that produced one pod",
+  "theme": "a vote that produced only one pod",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "edge cases like this throw people for a loop"
@@ -400,385 +400,385 @@
  },
  {
   "q": "what",
-  "theme": "no more weekly in-person meeting",
+  "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the pilot met four hours a week, in person, for twelve weeks"
  },
  {
   "q": "what",
-  "theme": "no more weekly in-person meeting",
+  "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "that momentum let us fix things ad hoc without infrastructure"
  },
  {
   "q": "what",
-  "theme": "no more weekly in-person meeting",
+  "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the Cycle no longer has the in-person weekly check-in"
  },
  {
   "q": "what",
-  "theme": "no more weekly in-person meeting",
+  "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "we haven’t been able to replicate it"
  },
  {
   "q": "who",
-  "theme": "alumni who stayed",
+  "theme": "twelve alumni who finished, and mostly stayed in touch",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "12 answered: 7 from C03, 3 from C02, 2 from C01"
  },
  {
   "q": "who",
-  "theme": "alumni who stayed",
+  "theme": "twelve alumni who finished, and mostly stayed in touch",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "11 of 12 joined a project team"
  },
  {
   "q": "who",
-  "theme": "alumni who stayed",
+  "theme": "twelve alumni who finished, and mostly stayed in touch",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "would recommend: median 8 of 10"
  },
  {
   "q": "who",
-  "theme": "alumni who stayed",
+  "theme": "twelve alumni who finished, and mostly stayed in touch",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "lasting relationships: 3–4 people for half of them"
  },
  {
   "q": "who",
-  "theme": "alumni who stayed",
+  "theme": "twelve alumni who finished, and mostly stayed in touch",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "7 of 11 still in touch with their team"
  },
  {
   "q": "who",
-  "theme": "alumni who stayed",
+  "theme": "twelve alumni who finished, and mostly stayed in touch",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "several in new jobs, contracts or job searches"
  },
  {
   "q": "who",
-  "theme": "alumni who stayed",
+  "theme": "twelve alumni who finished, and mostly stayed in touch",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "one is building a venture started in the Cycle"
  },
  {
   "q": "who",
-  "theme": "capable adults",
+  "theme": "experienced adults, not paying, mostly not in a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "working adults with lots of life experience"
  },
  {
   "q": "who",
-  "theme": "capable adults",
+  "theme": "experienced adults, not paying, mostly not in a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "mostly highly educated and professionally experienced"
  },
  {
   "q": "who",
-  "theme": "capable adults",
+  "theme": "experienced adults, not paying, mostly not in a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "high-agency adults who know how to solve their own problems"
  },
  {
   "q": "who",
-  "theme": "capable adults",
+  "theme": "experienced adults, not paying, mostly not in a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "they are not paying us; this is free"
  },
  {
   "q": "who",
-  "theme": "capable adults",
+  "theme": "experienced adults, not paying, mostly not in a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "most members, most of the time, are not in a Cycle"
  },
  {
   "q": "who",
-  "theme": "people who came once",
+  "theme": "people who came once; not heard from yet",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "people who came once and moved on"
  },
  {
   "q": "who",
-  "theme": "people who came once",
+  "theme": "people who came once; not heard from yet",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the person who got lost at the first door"
  },
  {
   "q": "who",
-  "theme": "people who came once",
+  "theme": "people who came once; not heard from yet",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "respondents skew toward people who finished and joined teams"
  },
  {
   "q": "who",
-  "theme": "who builds, who advises",
+  "theme": "a few who build, more who advise",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the people who build"
  },
  {
   "q": "who",
-  "theme": "who builds, who advises",
+  "theme": "a few who build, more who advise",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the people who advise"
  },
  {
   "q": "who",
-  "theme": "who builds, who advises",
+  "theme": "a few who build, more who advise",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "people who pictured themselves in a pod that never formed"
  },
  {
   "q": "who",
-  "theme": "organizers and facilitators",
+  "theme": "a handful of organizers, short on hands",
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
   "text": "a handful of organizers, short on time and hands"
  },
  {
   "q": "who",
-  "theme": "organizers and facilitators",
+  "theme": "a handful of organizers, short on hands",
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
   "text": "facilitators and moderators asked to step in"
  },
  {
   "q": "who",
-  "theme": "the region’s committee and builders",
+  "theme": "a new region, run by a committee and a few builders",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "The Upskilling Labs of Greater Washington, new this Cycle"
  },
  {
   "q": "who",
-  "theme": "the region’s committee and builders",
+  "theme": "a new region, run by a committee and a few builders",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "a steering committee beginning the region’s self-organization"
  },
  {
   "q": "who",
-  "theme": "the region’s committee and builders",
+  "theme": "a new region, run by a committee and a few builders",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "builders who work in Claude Code in the browser"
  },
  {
   "q": "who",
-  "theme": "the region’s committee and builders",
+  "theme": "a new region, run by a committee and a few builders",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "pod maintainers who review every pull request"
  },
  {
   "q": "who",
-  "theme": "the region’s committee and builders",
+  "theme": "a new region, run by a committee and a few builders",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the board, which reviews what the region changes"
  },
  {
   "q": "who",
-  "theme": "the region’s committee and builders",
+  "theme": "a new region, run by a committee and a few builders",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "partner organizations and sponsors interested in what gets built"
  },
  {
   "q": "who",
-  "theme": "employers (not yet asked)",
+  "theme": "employers, not asked yet",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "institutions and employers who need to pay attention"
  },
  {
   "q": "who",
-  "theme": "employers (not yet asked)",
+  "theme": "employers, not asked yet",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "they judge us against multi-million-dollar institutions"
  },
  {
   "q": "where",
-  "theme": "the Cycle",
+  "theme": "the Cycle: twelve weeks and three dated gates",
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
   "text": "the Cycle is the point of entry"
  },
  {
   "q": "where",
-  "theme": "the Cycle",
+  "theme": "the Cycle: twelve weeks and three dated gates",
   "by": "P",
   "src": "Problem owner, Nov 6 records",
   "text": "twelve weeks, an incubation sprint and a capstone"
  },
  {
   "q": "where",
-  "theme": "the Cycle",
+  "theme": "the Cycle: twelve weeks and three dated gates",
   "by": "P",
   "src": "Problem owner, Nov 6 records",
   "text": "the sense-making and direction-setting intensives"
  },
  {
   "q": "where",
-  "theme": "the Cycle",
+  "theme": "the Cycle: twelve weeks and three dated gates",
   "by": "S",
   "src": "Record #3, team formation as a threshold",
   "text": "pod to team at Vote 2, Nov 14"
  },
  {
   "q": "where",
-  "theme": "the Cycle",
+  "theme": "the Cycle: twelve weeks and three dated gates",
   "by": "S",
   "src": "Record #3, team formation as a threshold",
   "text": "the team midpoint, Nov 26"
  },
  {
   "q": "where",
-  "theme": "the Cycle",
+  "theme": "the Cycle: twelve weeks and three dated gates",
   "by": "S",
   "src": "Record #3, team formation as a threshold",
   "text": "the showcase, Dec 8"
  },
  {
   "q": "where",
-  "theme": "sessions: trainings, workshops, meetups",
+  "theme": "sessions now come in kinds: trainings, workshops, meetups",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "monthly meetups"
  },
  {
   "q": "where",
-  "theme": "sessions: trainings, workshops, meetups",
+  "theme": "sessions now come in kinds: trainings, workshops, meetups",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "workshops, virtual or in person"
  },
  {
   "q": "where",
-  "theme": "sessions: trainings, workshops, meetups",
+  "theme": "sessions now come in kinds: trainings, workshops, meetups",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "we’ve called everything workshops; now trainings and workshops are different things"
  },
  {
   "q": "where",
-  "theme": "sessions: trainings, workshops, meetups",
+  "theme": "sessions now come in kinds: trainings, workshops, meetups",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "a training teaches a tool; a workshop produces a work product"
  },
  {
   "q": "where",
-  "theme": "sessions: trainings, workshops, meetups",
+  "theme": "sessions now come in kinds: trainings, workshops, meetups",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "“upskilling sessions” as the broader category"
  },
  {
   "q": "where",
-  "theme": "sessions: trainings, workshops, meetups",
+  "theme": "sessions now come in kinds: trainings, workshops, meetups",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "trainings, workshops, open labs, meetups and happy hours; summits are national’s"
  },
  {
   "q": "where",
-  "theme": "Slack, email, LinkedIn, the app",
+  "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the web application"
  },
  {
   "q": "where",
-  "theme": "Slack, email, LinkedIn, the app",
+  "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "Slack"
  },
  {
   "q": "where",
-  "theme": "Slack, email, LinkedIn, the app",
+  "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "email"
  },
  {
   "q": "where",
-  "theme": "Slack, email, LinkedIn, the app",
+  "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "LinkedIn, our only social account for now"
  },
  {
   "q": "where",
-  "theme": "Slack, email, LinkedIn, the app",
+  "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "GitHub, where contributors open pull requests"
  },
  {
   "q": "where",
-  "theme": "Slack, email, LinkedIn, the app",
+  "theme": "five channels, and the information lived in Zoom",
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
   "text": "Slack existed, but the information lived in Zoom"
  },
  {
   "q": "where",
-  "theme": "the libraries",
+  "theme": "libraries: where it began, and every branch a door",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "The Labs started in DC Public Library branches in 2025"
  },
  {
   "q": "where",
-  "theme": "the libraries",
+  "theme": "libraries: where it began, and every branch a door",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "every public library branch in the region, on the Metro map"
  },
  {
   "q": "where",
-  "theme": "the libraries",
+  "theme": "libraries: where it began, and every branch a door",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "an empty library is an invitation to host a workshop"
  },
  {
   "q": "where",
-  "theme": "the libraries",
+  "theme": "libraries: where it began, and every branch a door",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the pilot’s weekly four-hour room"
  },
  {
   "q": "where",
-  "theme": "the libraries",
+  "theme": "libraries: where it began, and every branch a door",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "project nights in the Civic Tech DC style"
@@ -806,21 +806,21 @@
  },
  {
   "q": "where",
-  "theme": "the region vs. the national organization",
+  "theme": "the region serves its own pages; national keeps the rest",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "national’s pages redirect to theupskillinglabs.org"
  },
  {
   "q": "where",
-  "theme": "the region vs. the national organization",
+  "theme": "the region serves its own pages; national keeps the rest",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "the region serves its own home, cycle page, About and Get Involved"
  },
  {
   "q": "where",
-  "theme": "the region vs. the national organization",
+  "theme": "the region serves its own pages; national keeps the rest",
   "by": "S",
   "src": "Steering committee, Oct 28 and the region’s decision log",
   "text": "the Ambassador program stays national"
@@ -1058,77 +1058,77 @@
  },
  {
   "q": "why",
-  "theme": "how people navigate: landmarks and cues",
+  "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "people navigate by a few fixed landmarks (Lynch)"
  },
  {
   "q": "why",
-  "theme": "how people navigate: landmarks and cues",
+  "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "people keep going only while the scent stays warm (Pirolli & Card)"
  },
  {
   "q": "why",
-  "theme": "how people navigate: landmarks and cues",
+  "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "working memory is small; the cost of “what’s next” is a packaging cost (Sweller)"
  },
  {
   "q": "why",
-  "theme": "how people navigate: landmarks and cues",
+  "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "a map most people can’t read gets replaced by a line (Duolingo, Khan Academy)"
  },
  {
   "q": "why",
-  "theme": "how people navigate: landmarks and cues",
+  "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "a visible head start speeds completion; an if-then plan roughly doubles follow-through"
  },
  {
   "q": "why",
-  "theme": "what keeps volunteers: skill, belonging, choice",
+  "theme": "skill and belonging keep volunteers; choice alone doesn’t",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "competence and belonging predicted staying; choice alone did not (Deci & Ryan)"
  },
  {
   "q": "why",
-  "theme": "what keeps volunteers: skill, belonging, choice",
+  "theme": "skill and belonging keep volunteers; choice alone doesn’t",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "“this matters to me” predicts persistence more than “this is fun”"
  },
  {
   "q": "why",
-  "theme": "what keeps volunteers: skill, belonging, choice",
+  "theme": "skill and belonging keep volunteers; choice alone doesn’t",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "self-taught never means alone: about ten helpers per project (Tough)"
  },
  {
   "q": "why",
-  "theme": "what keeps volunteers: skill, belonging, choice",
+  "theme": "skill and belonging keep volunteers; choice alone doesn’t",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "capacity for self-direction depends on the situation, not the person (Candy)"
  },
  {
   "q": "why",
-  "theme": "what keeps volunteers: skill, belonging, choice",
+  "theme": "skill and belonging keep volunteers; choice alone doesn’t",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "you learn a community by doing small real work at its edge, witnessed (Lave & Wenger)"
  },
  {
   "q": "why",
-  "theme": "what keeps volunteers: skill, belonging, choice",
+  "theme": "skill and belonging keep volunteers; choice alone doesn’t",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "groups that claim no structure run on hidden structure (Freeman)"
@@ -1254,394 +1254,261 @@
  },
  {
   "q": "how",
-  "theme": "one source of truth, many channels",
-  "by": "O",
-  "src": "Record #4, the organizers’ account, Oct 28",
-  "text": "an omnichannel notification strategy: Slack, email, text"
- },
- {
-  "q": "how",
-  "theme": "one source of truth, many channels",
-  "by": "O",
-  "src": "Record #4, the organizers’ account, Oct 28",
-  "text": "OLOS as the single source of truth"
- },
- {
-  "q": "how",
-  "theme": "one source of truth, many channels",
-  "by": "O",
-  "src": "Record #4, the organizers’ account, Oct 28",
-  "text": "“plumbing”: infrastructure that gets people to what they need fast"
- },
- {
-  "q": "how",
-  "theme": "one source of truth, many channels",
-  "by": "P",
-  "src": "Problem owner, Nov 6 records",
-  "text": "the OLOS app is the first head; other channels read from it"
- },
- {
-  "q": "how",
-  "theme": "one source of truth, many channels",
-  "by": "P",
-  "src": "Problem owner, Nov 6 records",
-  "text": "turnkey, modular kits on OLOS, in a Cycle and out of one"
- },
- {
-  "q": "how",
-  "theme": "one source of truth, many channels",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "expand beyond LinkedIn to other platforms"
- },
- {
-  "q": "how",
-  "theme": "more structure, a common goal",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "more structure and a common goal"
- },
- {
-  "q": "how",
-  "theme": "more structure, a common goal",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "weekly guidance on what to work on"
- },
- {
-  "q": "how",
-  "theme": "more structure, a common goal",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "moderators who step in to get teams unstuck"
- },
- {
-  "q": "how",
-  "theme": "more structure, a common goal",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "a roadmap into team pods, with roles and expectations"
- },
- {
-  "q": "how",
-  "theme": "more structure, a common goal",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "guidance on tools and setup at the start of a project"
- },
- {
-  "q": "how",
-  "theme": "more structure, a common goal",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "past Cycles’ materials in one central place"
- },
- {
-  "q": "how",
-  "theme": "more structure, a common goal",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "pathways for different learning styles and availability"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "treat you like a high-agency adult who solves their own problems"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "say plainly: you don’t need us to tell you what to learn"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "a small core offer: how to search, how to use AI tools to triage"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "resources are activated and waiting; mobilized once you’ve exhausted your own"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "ask: has the team discussed it? has the pod?"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "say what we assume you already know going in"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "people can step away from a Cycle, and that’s okay"
- },
- {
-  "q": "how",
-  "theme": "treat people as adults",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "if you find you’re not ready, there are resources and a community"
- },
- {
-  "q": "how",
-  "theme": "say it thirty times, the same way",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "create thirty touchpoints people are reasonably sure to come across"
- },
- {
-  "q": "how",
-  "theme": "say it thirty times, the same way",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "assume they paid attention to five or seven"
- },
- {
-  "q": "how",
-  "theme": "say it thirty times, the same way",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "those five to seven must say the same thing"
- },
- {
-  "q": "how",
-  "theme": "say it thirty times, the same way",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "some of it can be subconscious, like the direction of airport tiles"
- },
- {
-  "q": "how",
-  "theme": "form teams before the vote",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "a facilitated way for teams to form"
- },
- {
-  "q": "how",
-  "theme": "form teams before the vote",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "as a team, choose a research pod to belong to"
- },
- {
-  "q": "how",
-  "theme": "form teams before the vote",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "as a team, propose mini projects or select a frame"
- },
- {
-  "q": "how",
-  "theme": "form teams before the vote",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "create spaces for the team to meet and synthesize"
- },
- {
-  "q": "how",
-  "theme": "form teams before the vote",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "better terminology than pod and project"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "mini-hackathon workshops: the tool and constraints predefined"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "everyone has a seat and is onboarded to the stack fast"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "everyone produces something by the end"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "it all goes back into the commons, open source"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "sponsored workshops that sample a partner’s tech stack"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "prerequisite trainings, or certifying you know the tool"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 7 conversation",
-  "text": "project nights, like Civic Tech DC"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 6 records",
-  "text": "the Cycle should be built up to, not the front door"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 6 records",
-  "text": "member projects: ventures and civic projects The Labs partners with"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 6 records",
-  "text": "a mentor network: ask, triage, escalate, match"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 6 records",
-  "text": "a record of what each person has done and learned"
- },
- {
-  "q": "how",
-  "theme": "things to do between Cycles",
-  "by": "P",
-  "src": "Problem owner, Nov 6 records",
-  "text": "stepping back is honorable"
- },
- {
-  "q": "how",
-  "theme": "what the region has built so far",
-  "by": "S",
-  "src": "Steering committee, Oct 28 and the region’s decision log",
-  "text": "three doors: Learn, Build and Share"
- },
- {
-  "q": "how",
-  "theme": "what the region has built so far",
-  "by": "S",
-  "src": "Steering committee, Oct 28 and the region’s decision log",
-  "text": "every library on the Metro, with the nearest station and the walk"
- },
- {
-  "q": "how",
-  "theme": "what the region has built so far",
-  "by": "S",
-  "src": "Steering committee, Oct 28 and the region’s decision log",
-  "text": "a neighbor can offer to coordinate a workshop at their library"
- },
- {
-  "q": "how",
-  "theme": "what the region has built so far",
-  "by": "S",
-  "src": "Steering committee, Oct 28 and the region’s decision log",
-  "text": "contributors open pull requests; a maintainer reviews each"
- },
- {
-  "q": "how",
-  "theme": "what the region has built so far",
-  "by": "S",
-  "src": "Steering committee, Oct 28 and the region’s decision log",
-  "text": "one place to create an event and publish it everywhere (not built)"
- },
- {
-  "q": "how",
-  "theme": "what the region has built so far",
-  "by": "S",
-  "src": "Parked notes, Oct 28",
-  "text": "a predictable Cycle clock, run nationally and facilitated locally"
- },
- {
-  "q": "how",
-  "theme": "what the region has built so far",
-  "by": "S",
-  "src": "Parked notes, Oct 28",
-  "text": "trail ratings: signs at the junctions, relative to the mountain"
- },
- {
-  "q": "how",
-  "theme": "what other programs do",
+  "theme": "a person at the first contact",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "Recurse Center: never graduate; alumni access with no obligation"
+  "src": "Case library, PR #5: Wikipedia newcomers",
+  "text": "Wikipedia’s Teahouse: newcomers invited to a room where people answer stayed longer, in a controlled trial"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "a person at the first contact",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "FIRST treats the off-season as recruiting and training time"
+  "src": "Case library, PR #5: Wikipedia newcomers",
+  "text": "Teahouse answers with fewer rule links and more words kept more newcomers"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "a person at the first contact",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "the Teahouse: a help space run by people"
+  "src": "Case library, PR #5: Stack Overflow newcomers",
+  "text": "Stack Overflow: a mentor read your draft question first; those questions scored 50% higher"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "a person at the first contact",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "GOV.UK: step-by-step maps across departments"
+  "src": "Case library, PR #5: Extension and 4-H volunteers",
+  "text": "Master Gardeners: a veteran per 2–4 trainees cut first-year dropout from a quarter to 2%"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "a person at the first contact",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "the Carpentries: setup instructions before the workshop; a small fee cut no-shows"
+  "src": "Case library, PR #5: Open source newcomer barriers",
+  "text": "open source: a starter task is 71% likelier to be finished when an experienced person is in the thread"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "a person at the first contact",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "Code Club’s kit includes the person who runs it"
+  "src": "Case library, PR #5: P2PU learning circles",
+  "text": "P2PU: new facilitators who co-ran their first circle with a colleague did best, by P2PU’s account"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "a reminder at the moment it matters",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "both corporate hackathon survivors were handed to other units"
+  "src": "Case library, PR #5: Summer melt",
+  "text": "summer melt: ten texts with a counselor behind them raised college enrollment 4–7 points where there was no other help"
+ },
+ {
+  "q": "how",
+  "theme": "a reminder at the moment it matters",
+  "by": "X",
+  "src": "Case library, PR #5: GetCalFresh",
+  "text": "GetCalFresh: a text before the interview made people 55% likelier to complete it"
+ },
+ {
+  "q": "how",
+  "theme": "a reminder at the moment it matters",
+  "by": "X",
+  "src": "Case library, PR #5: GetCalFresh",
+  "text": "GetCalFresh: letting applicants pick their own interview moment raised approvals 6 points"
+ },
+ {
+  "q": "how",
+  "theme": "a reminder at the moment it matters",
+  "by": "X",
+  "src": "Case library, PR #5: GetCalFresh",
+  "text": "Louisiana: people who opted into reminders kept appointments at 52% against 29%"
+ },
+ {
+  "q": "how",
+  "theme": "a reminder at the moment it matters",
+  "by": "X",
+  "src": "Case library, PR #5: Microcredentials and employers",
+  "text": "a nudge to post a certificate you already held raised employment 6%, and 12% for the least employable"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: Code Club and CoderDojo",
+  "text": "Code Club: step-by-step projects plus notes for the leader; a trial found gains in coding skill and confidence"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: 4-H lesson kits",
+  "text": "the Carpentries: two days became the unit; 91 workshops reached 4,300 people in a year after week-long courses failed"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: P2PU learning circles",
+  "text": "P2PU: a guide, a promo kit and recipe cards; about half finished, against 5–10% taking the course alone"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: Indivisible",
+  "text": "Indivisible: a 23-page guide on Google Docs seeded 3,800 groups in seven weeks; most still met in 2019"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: Extension and 4-H volunteers",
+  "text": "Idaho 4-H: six-week sessions and a “facilitation coach” role let one or two volunteers serve 10–15 youth"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: Google Summer of Code",
+  "text": "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code; 1,000+ finished projects a year"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: Google Summer of Code",
+  "text": "Summer of Code: two project sizes and a stretchable deadline brought in people with jobs"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: FIRST Robotics",
+  "text": "FIRST: a January kickoff and the same events for every team; 3,000+ teams a year, 91% return"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: NaNoWriMo",
+  "text": "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party, for 400,000 people a year"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: NaNoWriMo",
+  "text": "NaNoWriMo: 900 liaisons with a written duty list ran 633 regions"
+ },
+ {
+  "q": "how",
+  "theme": "show the whole route and where you are",
+  "by": "X",
+  "src": "Case library, PR #5: GOV.UK step by step",
+  "text": "GOV.UK: every step on one page, the current and next highlighted; task completion and confidence rose"
+ },
+ {
+  "q": "how",
+  "theme": "show the whole route and where you are",
+  "by": "X",
+  "src": "Case library, PR #5: GOV.UK step by step",
+  "text": "GOV.UK began with the journeys that had the most drop-off; one was used 1.2 million times in six months"
+ },
+ {
+  "q": "how",
+  "theme": "show the whole route and where you are",
+  "by": "X",
+  "src": "Case library, PR #5: GetCalFresh",
+  "text": "GetCalFresh: one question per page, ten minutes on a phone; 7 million people used it"
+ },
+ {
+  "q": "how",
+  "theme": "a small stake up front",
+  "by": "X",
+  "src": "Case library, PR #5: 4-H lesson kits",
+  "text": "the Carpentries: a $20–40 fee cut no-shows from a third to 5%"
+ },
+ {
+  "q": "how",
+  "theme": "a small stake up front",
+  "by": "X",
+  "src": "Case library, PR #5: MOOC completion",
+  "text": "MOOCs: learners who paid for a certificate finished at 44–56%, against 3–6% overall"
+ },
+ {
+  "q": "how",
+  "theme": "keep the door open after it ends",
+  "by": "X",
+  "src": "Case library, PR #5: Recurse Center",
+  "text": "Recurse Center: alumni keep the chat, the calendar and the jobs board; they stayed involved for years"
+ },
+ {
+  "q": "how",
+  "theme": "keep the door open after it ends",
+  "by": "X",
+  "src": "Case library, PR #5: NaNoWriMo",
+  "text": "NaNoWriMo’s regions kept going on channels they owned; one night, 148 people wrote 404,500 words"
+ },
+ {
+  "q": "how",
+  "theme": "keep the door open after it ends",
+  "by": "X",
+  "src": "Case library, PR #5: Extension and 4-H volunteers",
+  "text": "Master Gardeners stayed for the local association, five of eight coordinators said"
+ },
+ {
+  "q": "how",
+  "theme": "hand it on instead of letting it end",
+  "by": "X",
+  "src": "Case library, PR #5: Hackathons and sprints",
+  "text": "the hackathon projects that lived were handed to other units, not kept by their teams"
+ },
+ {
+  "q": "how",
+  "theme": "hand it on instead of letting it end",
+  "by": "X",
+  "src": "Case library, PR #5: Hackathons and sprints",
+  "text": "hackathon projects with a skill mix and preparation were half as likely to stop; intent didn’t matter"
+ },
+ {
+  "q": "how",
+  "theme": "hand it on instead of letting it end",
+  "by": "X",
+  "src": "Case library, PR #5: Indivisible",
+  "text": "Indivisible groups that lasted met monthly, split work into subcommittees and replaced leaders as they left"
+ },
+ {
+  "q": "how",
+  "theme": "a network that vouches beats a certificate",
+  "by": "X",
+  "src": "Case library, PR #5: Opportunity@Work",
+  "text": "Opportunity@Work: non-degree workers moved up at 59% inside employer networks, 40% in the open market"
+ },
+ {
+  "q": "how",
+  "theme": "a network that vouches beats a certificate",
+  "by": "X",
+  "src": "Case library, PR #5: GitHub activity traces",
+  "text": "GitHub: employers read contributions to other people’s projects as an endorsement"
+ },
+ {
+  "q": "how",
+  "theme": "a network that vouches beats a certificate",
+  "by": "X",
+  "src": "Case library, PR #5: Skills-based hiring",
+  "text": "employers that really dropped degree screens kept non-degree hires 10 points longer"
+ },
+ {
+  "q": "how",
+  "theme": "one source, bundled messages",
+  "by": "X",
+  "src": "Case library, PR #5: NPR COPE",
+  "text": "NPR: content stored once and drawn by every outlet; requests went from 3.5 to 53 million"
+ },
+ {
+  "q": "how",
+  "theme": "one source, bundled messages",
+  "by": "X",
+  "src": "Case library, PR #5: Channel overload",
+  "text": "notifications bundled three times a day made people calmer and more attentive; hourly and none did not"
  }
 ]

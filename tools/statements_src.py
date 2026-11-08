@@ -73,7 +73,7 @@ add("what", "looking for the next step", "P", PO7,
     "desk research and synthesis are taking a back seat to building",
     "interviews are slow to get started",
     "people have a lot competing for their attention at any one time")
-add("what", "drop-off when a program ends", "X", LIB,
+add("what", "most programs lose most people when they end", "X", LIB,
     "about 16 in 100 Summer of Code students kept contributing",
     "57% had said they meant to continue",
     "of 73 hackathons’ projects, 3.6% were alive five months later",
@@ -81,7 +81,7 @@ add("what", "drop-off when a program ends", "X", LIB,
     "AmeriCorps’ effects were half gone by year eight",
     "72% of Teach For America teachers were out of teaching by year five",
     "the Carpentries’ online course finished 5 to 10% of starters")
-add("what", "a vote that produced one pod", "P", PO7,
+add("what", "a vote that produced only one pod", "P", PO7,
     "the voting math created only one pod",
     "at least one still-active participant was disappointed",
     "edge cases like this throw people for a loop")
@@ -92,14 +92,14 @@ add("what", "no life outside the Cycle", "P", PO7,
     "“not ready” has nowhere to go")
 add("what", "no life outside the Cycle", "O", R4,
     "everyone sees The Labs through the Cycle; there is no before or after")
-add("what", "no more weekly in-person meeting", "P", PO7,
+add("what", "the pilot’s weekly room hasn’t been replaced", "P", PO7,
     "the pilot met four hours a week, in person, for twelve weeks",
     "that momentum let us fix things ad hoc without infrastructure",
     "the Cycle no longer has the in-person weekly check-in",
     "we haven’t been able to replicate it")
 
 # ---------------- WHO ----------------
-add("who", "alumni who stayed", "A", SURVEY,
+add("who", "twelve alumni who finished, and mostly stayed in touch", "A", SURVEY,
     "12 answered: 7 from C03, 3 from C02, 2 from C01",
     "11 of 12 joined a project team",
     "would recommend: median 8 of 10",
@@ -107,67 +107,67 @@ add("who", "alumni who stayed", "A", SURVEY,
     "7 of 11 still in touch with their team",
     "several in new jobs, contracts or job searches",
     "one is building a venture started in the Cycle")
-add("who", "capable adults", "P", PO7,
+add("who", "experienced adults, not paying, mostly not in a Cycle", "P", PO7,
     "working adults with lots of life experience",
     "mostly highly educated and professionally experienced",
     "high-agency adults who know how to solve their own problems",
     "they are not paying us; this is free",
     "most members, most of the time, are not in a Cycle")
-add("who", "people who came once", "P", PO7,
+add("who", "people who came once; not heard from yet", "P", PO7,
     "people who came once and moved on",
     "the person who got lost at the first door")
-add("who", "people who came once", "A", SURVEY,
+add("who", "people who came once; not heard from yet", "A", SURVEY,
     "respondents skew toward people who finished and joined teams")
-add("who", "who builds, who advises", "P", PO7,
+add("who", "a few who build, more who advise", "P", PO7,
     "the people who build",
     "the people who advise",
     "people who pictured themselves in a pod that never formed")
-add("who", "organizers and facilitators", "O", R4,
+add("who", "a handful of organizers, short on hands", "O", R4,
     "a handful of organizers, short on time and hands",
     "facilitators and moderators asked to step in")
-add("who", "the region’s committee and builders", "S", SC,
+add("who", "a new region, run by a committee and a few builders", "S", SC,
     "The Upskilling Labs of Greater Washington, new this Cycle",
     "a steering committee beginning the region’s self-organization",
     "builders who work in Claude Code in the browser",
     "pod maintainers who review every pull request")
-add("who", "the region’s committee and builders", "P", PO7,
+add("who", "a new region, run by a committee and a few builders", "P", PO7,
     "the board, which reviews what the region changes",
     "partner organizations and sponsors interested in what gets built")
-add("who", "employers (not yet asked)", "P", PO7,
+add("who", "employers, not asked yet", "P", PO7,
     "institutions and employers who need to pay attention",
     "they judge us against multi-million-dollar institutions")
 
 # ---------------- WHERE: the stations and the channels ----------------
-add("where", "the Cycle", "O", R4,
+add("where", "the Cycle: twelve weeks and three dated gates", "O", R4,
     "the Cycle is the point of entry")
-add("where", "the Cycle", "P", PO6,
+add("where", "the Cycle: twelve weeks and three dated gates", "P", PO6,
     "twelve weeks, an incubation sprint and a capstone",
     "the sense-making and direction-setting intensives")
-add("where", "the Cycle", "S", R3,
+add("where", "the Cycle: twelve weeks and three dated gates", "S", R3,
     "pod to team at Vote 2, Nov 14",
     "the team midpoint, Nov 26",
     "the showcase, Dec 8")
-add("where", "sessions: trainings, workshops, meetups", "P", PO7,
+add("where", "sessions now come in kinds: trainings, workshops, meetups", "P", PO7,
     "monthly meetups",
     "workshops, virtual or in person",
     "we’ve called everything workshops; now trainings and workshops are different things",
     "a training teaches a tool; a workshop produces a work product",
     "“upskilling sessions” as the broader category")
-add("where", "sessions: trainings, workshops, meetups", "S", SC,
+add("where", "sessions now come in kinds: trainings, workshops, meetups", "S", SC,
     "trainings, workshops, open labs, meetups and happy hours; summits are national’s")
-add("where", "Slack, email, LinkedIn, the app", "P", PO7,
+add("where", "five channels, and the information lived in Zoom", "P", PO7,
     "the web application",
     "Slack",
     "email",
     "LinkedIn, our only social account for now",
     "GitHub, where contributors open pull requests")
-add("where", "Slack, email, LinkedIn, the app", "O", R4,
+add("where", "five channels, and the information lived in Zoom", "O", R4,
     "Slack existed, but the information lived in Zoom")
-add("where", "the libraries", "S", SC,
+add("where", "libraries: where it began, and every branch a door", "S", SC,
     "The Labs started in DC Public Library branches in 2025",
     "every public library branch in the region, on the Metro map",
     "an empty library is an invitation to host a workshop")
-add("where", "the libraries", "P", PO7,
+add("where", "libraries: where it began, and every branch a door", "P", PO7,
     "the pilot’s weekly four-hour room",
     "project nights in the Civic Tech DC style")
 add("where", "before and after a Cycle: nothing yet", "P", PO6,
@@ -175,7 +175,7 @@ add("where", "before and after a Cycle: nothing yet", "P", PO6,
     "there is no well-mapped post-cycle or between-cycle experience")
 add("where", "before and after a Cycle: nothing yet", "P", PO7,
     "the route into a workplace and back")
-add("where", "the region vs. the national organization", "S", SC,
+add("where", "the region serves its own pages; national keeps the rest", "S", SC,
     "national’s pages redirect to theupskillinglabs.org",
     "the region serves its own home, cycle page, About and Get Involved",
     "the Ambassador program stays national")
@@ -222,13 +222,13 @@ add("why", "too few team meetings", "P", PO7,
 add("why", "“pod” doesn’t say what it is", "P", PO7,
     "“pod” and “project” keep confusing people",
     "a pod should be seen as a much bigger community, a research group")
-add("why", "how people navigate: landmarks and cues", "X", LIB,
+add("why", "people navigate by a few fixed landmarks", "X", LIB,
     "people navigate by a few fixed landmarks (Lynch)",
     "people keep going only while the scent stays warm (Pirolli & Card)",
     "working memory is small; the cost of “what’s next” is a packaging cost (Sweller)",
     "a map most people can’t read gets replaced by a line (Duolingo, Khan Academy)",
     "a visible head start speeds completion; an if-then plan roughly doubles follow-through")
-add("why", "what keeps volunteers: skill, belonging, choice", "X", LIB,
+add("why", "skill and belonging keep volunteers; choice alone doesn’t", "X", LIB,
     "competence and belonging predicted staying; choice alone did not (Deci & Ryan)",
     "“this matters to me” predicts persistence more than “this is fun”",
     "self-taught never means alone: about ten helpers per project (Tough)",
@@ -256,75 +256,87 @@ add("why", "messages work only from a known person", "X", LIB,
     "a single-channel rule broke NaNoWriMo’s local layer",
     "Scouts’ counselors signed off requirements never completed")
 
-# ---------------- HOW SOLVED: what each party proposes ----------------
-add("how", "one source of truth, many channels", "O", R4,
-    "an omnichannel notification strategy: Slack, email, text",
-    "OLOS as the single source of truth",
-    "“plumbing”: infrastructure that gets people to what they need fast")
-add("how", "one source of truth, many channels", "P", PO6,
-    "the OLOS app is the first head; other channels read from it",
-    "turnkey, modular kits on OLOS, in a Cycle and out of one")
-add("how", "one source of truth, many channels", "P", PO7,
-    "expand beyond LinkedIn to other platforms")
-add("how", "more structure, a common goal", "A", SURVEY,
-    "more structure and a common goal",
-    "weekly guidance on what to work on",
-    "moderators who step in to get teams unstuck",
-    "a roadmap into team pods, with roles and expectations",
-    "guidance on tools and setup at the start of a project",
-    "past Cycles’ materials in one central place",
-    "pathways for different learning styles and availability")
-add("how", "treat people as adults", "P", PO7,
-    "treat you like a high-agency adult who solves their own problems",
-    "say plainly: you don’t need us to tell you what to learn",
-    "a small core offer: how to search, how to use AI tools to triage",
-    "resources are activated and waiting; mobilized once you’ve exhausted your own",
-    "ask: has the team discussed it? has the pod?",
-    "say what we assume you already know going in",
-    "people can step away from a Cycle, and that’s okay",
-    "if you find you’re not ready, there are resources and a community")
-add("how", "say it thirty times, the same way", "P", PO7,
-    "create thirty touchpoints people are reasonably sure to come across",
-    "assume they paid attention to five or seven",
-    "those five to seven must say the same thing",
-    "some of it can be subconscious, like the direction of airport tiles")
-add("how", "form teams before the vote", "P", PO7,
-    "a facilitated way for teams to form",
-    "as a team, choose a research pod to belong to",
-    "as a team, propose mini projects or select a frame",
-    "create spaces for the team to meet and synthesize",
-    "better terminology than pod and project")
-add("how", "things to do between Cycles", "P", PO7,
-    "mini-hackathon workshops: the tool and constraints predefined",
-    "everyone has a seat and is onboarded to the stack fast",
-    "everyone produces something by the end",
-    "it all goes back into the commons, open source",
-    "sponsored workshops that sample a partner’s tech stack",
-    "prerequisite trainings, or certifying you know the tool",
-    "project nights, like Civic Tech DC")
-add("how", "things to do between Cycles", "P", PO6,
-    "the Cycle should be built up to, not the front door",
-    "member projects: ventures and civic projects The Labs partners with",
-    "a mentor network: ask, triage, escalate, match",
-    "a record of what each person has done and learned",
-    "stepping back is honorable")
-add("how", "what the region has built so far", "S", SC,
-    "three doors: Learn, Build and Share",
-    "every library on the Metro, with the nearest station and the walk",
-    "a neighbor can offer to coordinate a workshop at their library",
-    "contributors open pull requests; a maintainer reviews each",
-    "one place to create an event and publish it everywhere (not built)")
-add("how", "what the region has built so far", "S", "Parked notes, Oct 28",
-    "a predictable Cycle clock, run nationally and facilitated locally",
-    "trail ratings: signs at the junctions, relative to the mountain")
-add("how", "what other programs do", "X", LIB,
-    "Recurse Center: never graduate; alumni access with no obligation",
-    "FIRST treats the off-season as recruiting and training time",
-    "the Teahouse: a help space run by people",
-    "GOV.UK: step-by-step maps across departments",
-    "the Carpentries: setup instructions before the workshop; a small fee cut no-shows",
-    "Code Club’s kit includes the person who runs it",
-    "both corporate hackathon survivors were handed to other units")
+# HOW SOLVED is evidence only: what one of the 51 cases in the library (PR #5) did about
+# the same gap, kept only where the case reports that it worked. Proposals, wishes and
+# the region's own first answers live in the records, not here.
+def C(name): return f"Case library, PR #5: {name}"
+
+add("how", "a person at the first contact", "X", C("Wikipedia newcomers"),
+    "Wikipedia’s Teahouse: newcomers invited to a room where people answer stayed longer, in a controlled trial",
+    "Teahouse answers with fewer rule links and more words kept more newcomers")
+add("how", "a person at the first contact", "X", C("Stack Overflow newcomers"),
+    "Stack Overflow: a mentor read your draft question first; those questions scored 50% higher")
+add("how", "a person at the first contact", "X", C("Extension and 4-H volunteers"),
+    "Master Gardeners: a veteran per 2–4 trainees cut first-year dropout from a quarter to 2%")
+add("how", "a person at the first contact", "X", C("Open source newcomer barriers"),
+    "open source: a starter task is 71% likelier to be finished when an experienced person is in the thread")
+add("how", "a person at the first contact", "X", C("P2PU learning circles"),
+    "P2PU: new facilitators who co-ran their first circle with a colleague did best, by P2PU’s account")
+
+add("how", "a reminder at the moment it matters", "X", C("Summer melt"),
+    "summer melt: ten texts with a counselor behind them raised college enrollment 4–7 points where there was no other help")
+add("how", "a reminder at the moment it matters", "X", C("GetCalFresh"),
+    "GetCalFresh: a text before the interview made people 55% likelier to complete it",
+    "GetCalFresh: letting applicants pick their own interview moment raised approvals 6 points",
+    "Louisiana: people who opted into reminders kept appointments at 52% against 29%")
+add("how", "a reminder at the moment it matters", "X", C("Microcredentials and employers"),
+    "a nudge to post a certificate you already held raised employment 6%, and 12% for the least employable")
+
+add("how", "a kit a stranger can run", "X", C("Code Club and CoderDojo"),
+    "Code Club: step-by-step projects plus notes for the leader; a trial found gains in coding skill and confidence")
+add("how", "a kit a stranger can run", "X", C("4-H lesson kits"),
+    "the Carpentries: two days became the unit; 91 workshops reached 4,300 people in a year after week-long courses failed")
+add("how", "a kit a stranger can run", "X", C("P2PU learning circles"),
+    "P2PU: a guide, a promo kit and recipe cards; about half finished, against 5–10% taking the course alone")
+add("how", "a kit a stranger can run", "X", C("Indivisible"),
+    "Indivisible: a 23-page guide on Google Docs seeded 3,800 groups in seven weeks; most still met in 2019")
+add("how", "a kit a stranger can run", "X", C("Extension and 4-H volunteers"),
+    "Idaho 4-H: six-week sessions and a “facilitation coach” role let one or two volunteers serve 10–15 youth")
+
+add("how", "a clock everyone can see", "X", C("Google Summer of Code"),
+    "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code; 1,000+ finished projects a year",
+    "Summer of Code: two project sizes and a stretchable deadline brought in people with jobs")
+add("how", "a clock everyone can see", "X", C("FIRST Robotics"),
+    "FIRST: a January kickoff and the same events for every team; 3,000+ teams a year, 91% return")
+add("how", "a clock everyone can see", "X", C("NaNoWriMo"),
+    "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party, for 400,000 people a year",
+    "NaNoWriMo: 900 liaisons with a written duty list ran 633 regions")
+
+add("how", "show the whole route and where you are", "X", C("GOV.UK step by step"),
+    "GOV.UK: every step on one page, the current and next highlighted; task completion and confidence rose",
+    "GOV.UK began with the journeys that had the most drop-off; one was used 1.2 million times in six months")
+add("how", "show the whole route and where you are", "X", C("GetCalFresh"),
+    "GetCalFresh: one question per page, ten minutes on a phone; 7 million people used it")
+
+add("how", "a small stake up front", "X", C("4-H lesson kits"),
+    "the Carpentries: a $20–40 fee cut no-shows from a third to 5%")
+add("how", "a small stake up front", "X", C("MOOC completion"),
+    "MOOCs: learners who paid for a certificate finished at 44–56%, against 3–6% overall")
+
+add("how", "keep the door open after it ends", "X", C("Recurse Center"),
+    "Recurse Center: alumni keep the chat, the calendar and the jobs board; they stayed involved for years")
+add("how", "keep the door open after it ends", "X", C("NaNoWriMo"),
+    "NaNoWriMo’s regions kept going on channels they owned; one night, 148 people wrote 404,500 words")
+add("how", "keep the door open after it ends", "X", C("Extension and 4-H volunteers"),
+    "Master Gardeners stayed for the local association, five of eight coordinators said")
+
+add("how", "hand it on instead of letting it end", "X", C("Hackathons and sprints"),
+    "the hackathon projects that lived were handed to other units, not kept by their teams",
+    "hackathon projects with a skill mix and preparation were half as likely to stop; intent didn’t matter")
+add("how", "hand it on instead of letting it end", "X", C("Indivisible"),
+    "Indivisible groups that lasted met monthly, split work into subcommittees and replaced leaders as they left")
+
+add("how", "a network that vouches beats a certificate", "X", C("Opportunity@Work"),
+    "Opportunity@Work: non-degree workers moved up at 59% inside employer networks, 40% in the open market")
+add("how", "a network that vouches beats a certificate", "X", C("GitHub activity traces"),
+    "GitHub: employers read contributions to other people’s projects as an endorsement")
+add("how", "a network that vouches beats a certificate", "X", C("Skills-based hiring"),
+    "employers that really dropped degree screens kept non-degree hires 10 points longer")
+
+add("how", "one source, bundled messages", "X", C("NPR COPE"),
+    "NPR: content stored once and drawn by every outlet; requests went from 3.5 to 53 million"),
+add("how", "one source, bundled messages", "X", C("Channel overload"),
+    "notifications bundled three times a day made people calmer and more attentive; hourly and none did not")
 
 out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "map", "statements.json")
 os.makedirs(os.path.dirname(out), exist_ok=True)
