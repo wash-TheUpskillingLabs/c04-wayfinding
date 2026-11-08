@@ -14,6 +14,18 @@
 
   figures();
 
+  /* The region chart: show one kind of line at a time. */
+  document.querySelectorAll('.flow-show').forEach(function (bar) {
+    var wrap = bar.nextElementSibling, chips = bar.querySelectorAll('.chip');
+    bar.hidden = false;
+    var pick = function (k) {
+      wrap.dataset.show = k;
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.show === k ? 'true' : 'false'); });
+    };
+    chips.forEach(function (c) { c.addEventListener('click', function () { pick(c.dataset.show); }); });
+    pick('all');
+  });
+
   /* Blog carousel: reveal Previous and Next, scroll a card at a time. */
   document.querySelectorAll('.carousel').forEach(function (c) {
     var list = c.querySelector('.cards'), nav = c.querySelector('.carousel-nav');

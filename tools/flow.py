@@ -1,163 +1,194 @@
-"""How the region fits together, as one chart in the Wayfinding sign system.
+"""The region chart: a flow network in the sign system.
 
-Rows, one above the other: how the region is organised, the Cycle's dates, a
-person's route, and, dashed, what is planned: where people gather, and the commons
-of OLOS, modules and kits. Each row is a sequence of steps. Where the same thing
-appears in two rows (a pod, the vote, the showcase) the steps share a column and a
-connector between them says what passes across. Red marks where people stop.
+Boxes are the parts of the region; labelled arrows are what passes between them. Four kinds of
+flow, each drawn its own way so one can be followed at a time:
 
-Everything is read from content/flow/flow.json; edit that and rebuild.
+  people           blue, heavy
+  work and code    ink, heavy
+  knowledge        ink, light
+  money, support   blue, light
+  leaks            red, ending in a stop (where people leave)
+
+Dashed means planned: not running yet. Data lives in content/flow/flow.json.
 """
-import json, math, html
+import json, math
 
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
-LINE = {"ink": INK, "blue": BLUE, "red": RED}
-LINE_W = 8
+W, H = 2700, 1880
+FONT = "Inter, system-ui, sans-serif"
+TITLE_FS, BODY_FS, LABEL_FS = 21.993, 15.118, 15.118
+PAD, TITLE_LH, BODY_LH = 22, 30, 22
+STYLE = {
+    "people":    (BLUE, 7),
+    "work":      (INK, 7),
+    "knowledge": (INK, 3),
+    "support":   (BLUE, 3),
+    "leak":      (RED, 7),
+}
+NAMES = [("people", "People"), ("work", "Work and code"), ("knowledge", "Knowledge"),
+         ("support", "Money and support")]
+PAR = 30  # gap between parallel arrows
 
-W = 2600
-LEFT, COL = 440, 138          # first column's x, and the step between columns
-LANE_Y0, LANE_DY = 500, 384   # first line's y, and the step between lines
-TOP = 24                      # 4px grid: everything lands on multiples of 4
-FS, LH = 13.745, 20           # station text: the site's t-small, on a 20px rhythm
-NAME_FS = 16.494              # station names: the site's body size
-WRAP = 15
-DASH = '22 14'       # a planned line, like a Metro line under construction
 
-def esc(t): return html.escape(t, quote=True)
+def esc(s):
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-def wrap(text, n=WRAP):
-    words, lines, cur = text.split(), [], ""
-    for w in words:
-        if cur and len(cur) + 1 + len(w) > n: lines.append(cur); cur = w
-        else: cur = f"{cur} {w}" if cur else w
-    if cur: lines.append(cur)
-    return lines
 
 def load(path):
-    return json.load(open(path, encoding="utf-8"))
+    with open(path) as f:
+        return json.load(f)
+
+
+def box(n):
+    h = PAD * 2 + TITLE_LH + BODY_LH * len(n.get("body", [])) + (6 if n.get("body") else 0)
+    return n["x"] - n["w"] / 2, n["y"] - h / 2, n["w"], h
+
+
+def anchor(spec, boxes, end=False):
+    """'node:side:offset' -> a point on that side of the box; [x, y] passes through."""
+    if not isinstance(spec, str):
+        return tuple(spec), None
+    k, side, off = spec.split(":")
+    x, y, w, h = boxes[k]
+    off, g = float(off), (8 if end else 0)
+    cx, cy = x + w / 2, y + h / 2
+    return {"t": ((cx + off, y - g), (0, -1)), "b": ((cx + off, y + h + g), (0, 1)),
+            "l": ((x - g, cy + off), (-1, 0)), "r": ((x + w + g, cy + off), (1, 0))}[side]
+
+
+def route(pts, r=24):
+    """A polyline with rounded corners."""
+    d = f"M{pts[0][0]:.1f},{pts[0][1]:.1f}"
+    for i in range(1, len(pts) - 1):
+        (ax, ay), (bx, by), (cx, cy) = pts[i - 1], pts[i], pts[i + 1]
+        l1, l2 = math.hypot(bx - ax, by - ay), math.hypot(cx - bx, cy - by)
+        rr = min(r, l1 / 2, l2 / 2)
+        p = (bx - (bx - ax) / l1 * rr, by - (by - ay) / l1 * rr)
+        q = (bx + (cx - bx) / l2 * rr, by + (cy - by) / l2 * rr)
+        d += f" L{p[0]:.1f},{p[1]:.1f} Q{bx:.1f},{by:.1f} {q[0]:.1f},{q[1]:.1f}"
+    d += f" L{pts[-1][0]:.1f},{pts[-1][1]:.1f}"
+    return d
+
 
 def svg(data):
-    lanes = data["lanes"]
-    ncol = max(s["col"] for l in lanes for s in l["stations"]) + 1
-    H = LANE_Y0 + sum(l.get("gap", LANE_DY) for l in lanes[1:]) + 260
-    xs = lambda col: LEFT + col * COL
-    ys, y = {}, LANE_Y0
-    for i, l in enumerate(lanes):
-        if i: y += l.get("gap", LANE_DY)
-        ys[l["id"]] = y
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="fl-title fl-desc" class="flow">',
-         f'<title id="fl-title">{esc(data["title"])}</title>',
-         '<desc id="fl-desc">Three lines: how the region is organised, the Cycle’s dates, and a person’s route through them. Stations that share a column are the same thing seen from two lines.</desc>',
-         '<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap");'
-         '.flow text{font-family:Inter,system-ui,sans-serif;font-feature-settings:"ss01","cv11"}.flow .num{font-variant-numeric:tabular-nums}</style>',
-         f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
-    # interchanges: a rail between stations that are the same thing on two lines. Each rail
-    # segment carries an arrow for what passes across it, and says what that is.
-    links = {}
-    for l in lanes:
-        for s in l["stations"]:
-            if s.get("link"): links.setdefault(s["link"], []).append((xs(s["col"]), ys[l["id"]]))
-    o.append('<g class="fl-rails">')
-    for r in data.get("rails", []):
-        a, b = r["between"]
-        x = xs(next(s["col"] for l in lanes if l["id"] == a for s in l["stations"] if s.get("link") == r["link"]))
-        ya, yb = ys[a], ys[b]
-        col = RED if r.get("stop") else INK
-        dash = ' stroke-dasharray="2 8"' if r.get("stop") else (' stroke-dasharray="8 8"' if r.get("planned") else "")
-        y0, y1 = min(ya, yb), max(ya, yb)
-        o.append(f'<line x1="{x}" y1="{y0}" x2="{x}" y2="{y1}" stroke="{col}" stroke-width="3"{dash} stroke-linecap="round"/>')
-        # the arrow: on the rail, 48px short of the station it points at
-        if r["dir"] == "up":
-            ty = y0 + 44; o.append(f'<path d="M{x - 9},{ty + 10}l9,-10 9,10" stroke="{col}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
+    nodes = {n["id"]: n for n in data["nodes"]}
+    boxes = {k: box(n) for k, n in nodes.items()}
+    outs = [tuple(o) for o in data.get("outs", [])]
+
+    lines, labels, heads = [], [], []
+    for f in data["flows"]:
+        p0, _ = anchor(f["path"][0], boxes)
+        mids = [tuple(p) for p in f["path"][1:-1]]
+        pe, _ = anchor(f["path"][-1], boxes, end=True)
+        pts = [p0] + mids + [pe]
+        # straighten: a box-side anchor next to a via point shares its axis
+        color, sw = STYLE[f["type"]]
+        leak = f["type"] == "leak"
+        if leak:  # stop short of the stop sign
+            (ax, ay), (bx, by) = pts[-2], pts[-1]
+            L = math.hypot(bx - ax, by - ay)
+            pts[-1] = (bx - (bx - ax) / L * 26, by - (by - ay) / L * 26)
+        dash = ' stroke-dasharray="18 12"' if f.get("planned") else ""
+        if leak:
+            dash = ' stroke-dasharray="2 12" stroke-linecap="round"'
+        cls = f'fl f-{f["type"]}'
+        tip = pts[-1]
+        if not leak:  # pull the line back under the arrowhead
+            (ax, ay), (bx, by) = pts[-2], pts[-1]
+            L = math.hypot(bx - ax, by - ay)
+            ux, uy = (bx - ax) / L, (by - ay) / L
+            s = 12 + sw
+            pts[-1] = (bx - ux * s, by - uy * s)
+            p1 = (bx - ux * s * 1.5 - uy * s * 0.8, by - uy * s * 1.5 + ux * s * 0.8)
+            p2 = (bx - ux * s * 1.5 + uy * s * 0.8, by - uy * s * 1.5 - ux * s * 0.8)
+            heads.append(f'<path class="{cls}" d="M{p1[0]:.1f},{p1[1]:.1f} L{bx:.1f},{by:.1f} '
+                         f'L{p2[0]:.1f},{p2[1]:.1f} Z" fill="{color}"/>')
+        lines.append(f'<path class="{cls}" d="{route(pts)}" fill="none" stroke="{color}" stroke-width="{sw}"{dash}/>')
+        # label: given, or the middle of the longest segment
+        if "at" in f:
+            lx, ly = f["at"]
         else:
-            ty = y1 - 44; o.append(f'<path d="M{x - 9},{ty - 10}l9,10 9,-10" stroke="{col}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
-        # the label, beside the rail, midway between the lines
-        nxt = min((v for v in ys.values() if v > y0), default=y1)
-        ly = (y0 + nxt) / 2        # the middle of the first gap below the rail's top
-        lines = wrap(r["label"], 18)
-        rail_xs = {xs(s["col"]) for l in lanes for s in l["stations"] if s.get("link")}
-        crowded = any(0 < ox - x < 170 for ox in rail_xs)
-        left = r["side"] == "left" if r.get("side") else (x > W - 220 or crowded)
-        for j, t in enumerate(lines):
-            o.append(f'<text x="{x - 14 if left else x + 14}" y="{ly - LH * (len(lines) - 1) / 2 + LH * j + 5:.0f}"{" text-anchor=\"end\"" if left else ""} font-size="{FS}" font-weight="700" fill="{col}">{esc(t)}</text>')
-    o.append('</g>')
-    # the region and the two things it runs, bracketed as one block
-    grp = [ys[l["id"]] for l in lanes if l.get("group") == "region"]
-    if len(grp) > 1:
-        o.append(f'<path d="M36,{min(grp) - 120}V{max(grp) + 60}" stroke="{INK}" stroke-width="4" fill="none" stroke-linecap="round"/>')
-    # the lines
-    for l in lanes:
-        y = ys[l["id"]]; col = LINE[l["line"]]
-        x0 = xs(l["stations"][0]["col"]); x1 = xs(l["stations"][-1]["col"])
-        dash = f' stroke-dasharray="{DASH}"' if l.get("planned") else ""
-        if l["end"] == "arrow":
-            x1e = x1 + COL * .9
-            o.append(f'<path d="M{x0},{y}H{x1e}" stroke="{col}" stroke-width="{LINE_W}" stroke-linecap="round" fill="none"/>')
-            o.append(f'<path d="M{x1e - 14},{y - 12}l14,12-14,12" stroke="{col}" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
-            if l.get("end_label"):
-                for j, t in enumerate(wrap(l["end_label"], 18)):
-                    o.append(f'<text x="{x1e + 6}" y="{y - 36 - LH * (1 - j)}" text-anchor="end" font-size="{FS}" font-weight="700" fill="{INK}">{esc(t)}</text>')
+            segs = list(zip(pts, pts[1:]))
+            a, b = max(segs, key=lambda s: math.hypot(s[1][0] - s[0][0], s[1][1] - s[0][1]))
+            lx, ly = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2
+        text = f["label"]
+        tw = len(text) * LABEL_FS * 0.53 + 16
+        anc = f.get("anchor", "middle")
+        rx = {"middle": lx - tw / 2, "start": lx, "end": lx - tw}[anc]
+        tx = {"middle": lx, "start": lx + 8, "end": lx - 8}[anc]
+        lc = INK if f["type"] in ("work", "knowledge") else color
+        weight = 600 if sw > 4 else 400
+        labels.append(
+            f'<g class="{cls}"><rect x="{rx:.1f}" y="{ly - 15:.1f}" width="{tw:.1f}" height="30" fill="{PAPER}"/>'
+            f'<text x="{tx:.1f}" y="{ly + 5.5:.1f}" text-anchor="{anc}" font-size="{LABEL_FS}" '
+            f'font-weight="{weight}" fill="{lc}">{esc(text)}</text></g>')
+
+    stops = []
+    for ox, oy in outs:
+        stops.append(f'<g class="fl f-leak"><circle cx="{ox}" cy="{oy}" r="14" fill="{PAPER}" '
+                     f'stroke="{RED}" stroke-width="6"/><text x="{ox}" y="{oy + 44}" text-anchor="middle" '
+                     f'font-size="{LABEL_FS}" font-weight="600" fill="{INK}">Leaves</text></g>')
+
+    blocks = []
+    for k, n in nodes.items():
+        x, y, w, h = boxes[k]
+        kind = n.get("kind", "org")
+        dash = ' stroke-dasharray="14 10"' if n.get("planned") else ""
+        if kind == "org":
+            fill, stroke, sw, tc = INK, INK, 3, PAPER
+            if n.get("planned"):
+                fill, tc = PAPER, INK
+        elif kind == "people":
+            fill, stroke, sw, tc = PAPER, BLUE, 6, INK
         else:
-            o.append(f'<path d="M{x0},{y}H{x1}" stroke="{col}" stroke-width="{LINE_W}" stroke-linecap="butt" fill="none"{dash}/>')
-            if l["end"] == "stop":
-                o.append(f'<line x1="{x1}" y1="{y - 18}" x2="{x1}" y2="{y + 18}" stroke="{col}" stroke-width="{LINE_W}" stroke-linecap="round"/>')
-        # the line's name at the left, and what the line gives and gets
-        name_lines = wrap(l["name"], 24)
-        ny = y - 60 - 28 * (len(name_lines) - 1)
-        for j, t in enumerate(name_lines):
-            o.append(f'<text x="56" y="{ny + 28 * j}" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="{INK}">{esc(t)}</text>')
-        if l.get("planned"):
-            o.append(f'<rect x="56" y="{ny - 50}" width="76" height="24" rx="4" fill="none" stroke="{INK}" stroke-width="2" stroke-dasharray="4 3"/>')
-            o.append(f'<text x="94" y="{ny - 33}" text-anchor="middle" font-size="{FS}" font-weight="800" fill="{INK}">Planned</text>')
-        gy = y - 28
-        for head, body in (("Gives", l.get("gives", "")), ("Gets", l.get("gets", ""))):
-            o.append(f'<text x="56" y="{gy}" font-size="{FS}" font-weight="800" fill="{INK}">{head}</text>')
-            for j, t in enumerate(wrap(body, 34)):
-                o.append(f'<text x="112" y="{gy + LH * j}" font-size="{FS}" fill="{INK}">{esc(t)}</text>')
-            gy += LH * len(wrap(body, 34)) + 8
-    # stations
-    for i, l in enumerate(lanes):
-        y = ys[l["id"]]; col = LINE[l["line"]]
-        for s in l["stations"]:
-            x = xs(s["col"])
-            ring = RED if s.get("stop") else col
-            shared = s.get("link") and len(links[s["link"]]) > 1
-            if shared:
-                o.append(f'<circle cx="{x}" cy="{y}" r="15" fill="{PAPER}" stroke="{INK}" stroke-width="4"/>')
-                o.append(f'<circle cx="{x}" cy="{y}" r="8" fill="none" stroke="{ring}" stroke-width="4"/>')
-            else:
-                o.append(f'<circle cx="{x}" cy="{y}" r="12" fill="{PAPER}" stroke="{ring}" stroke-width="5"/>')
-            # name and note, stacked; neighbours alternate above and below the line so
-            # they never touch. Text wears a paper halo where a rail passes behind it.
-            halo = f' stroke="{PAPER}" stroke-width="6" paint-order="stroke" stroke-linejoin="round"' if shared else ""
-            name = wrap(s["name"], WRAP); note = wrap(s.get("note", ""), 19)
-            rows = []   # (text, size, weight, opacity, class)
-            if s.get("date"): rows.append((s["date"], FS, 700, 1, ' class="num"'))
-            rows += [(t, NAME_FS, 800, 1, "") for t in name]
-            rows += [(t, FS, 400, .76, "") for t in note]
-            side = l.get("labels", "alternate")
-            below = side == "below" or (side == "alternate" and s["col"] % 2 == 0)
-            ty = y + 44 if below else y - 28 - LH * (len(rows) - 1)
-            for (t, fs, wt, op, cls) in rows:
-                o.append(f'<text{cls} x="{x}" y="{ty:.0f}" text-anchor="middle" font-size="{fs}" font-weight="{wt}" fill="{INK}"{" fill-opacity=%.2f" % op if op < 1 else ""}{halo}>{esc(t)}</text>')
-                ty += LH
-    # title and key
-    o.append(f'<text x="48" y="88" font-size="54.98" font-weight="800" letter-spacing="-.025em" fill="{INK}">{esc(data["title"])}</text>')
-    if data.get("subtitle"):
-        o.append(f'<text x="48" y="128" font-size="16.494" fill="{INK}">{esc(data["subtitle"])}</text>')
-    ky = 172
-    o.append(f'<text x="48" y="{ky}" font-size="{FS}" font-weight="800" fill="{INK}">How to read it</text>'); ky += 28
-    for colr, name in ((INK, "The region, what it runs, and the Cycle’s dates"), (BLUE, "A person’s route")):
-        o.append(f'<line x1="48" y1="{ky - 5}" x2="80" y2="{ky - 5}" stroke="{colr}" stroke-width="{LINE_W}"/>')
-        o.append(f'<text x="92" y="{ky}" font-size="{FS}" fill="{INK}">{esc(name)}</text>'); ky += 24
-    o.append(f'<circle cx="64" cy="{ky - 5}" r="7" fill="{PAPER}" stroke="{INK}" stroke-width="3"/><circle cx="64" cy="{ky - 5}" r="3" fill="none" stroke="{BLUE}" stroke-width="2.5"/>')
-    o.append(f'<text x="92" y="{ky}" font-size="{FS}" fill="{INK}">The same step in two rows</text>'); ky += 24
-    o.append(f'<line x1="64" y1="{ky - 14}" x2="64" y2="{ky + 2}" stroke="{INK}" stroke-width="3" stroke-linecap="round"/><path d="M58,{ky - 8}l6,-6 6,6" stroke="{INK}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
-    o.append(f'<text x="92" y="{ky}" font-size="{FS}" fill="{INK}">What passes between them, and which way</text>'); ky += 24
-    o.append(f'<circle cx="64" cy="{ky - 5}" r="6" fill="{PAPER}" stroke="{RED}" stroke-width="3"/>')
-    o.append(f'<text x="92" y="{ky}" font-size="{FS}" fill="{INK}">Where people stop</text>'); ky += 24
-    o.append(f'<line x1="48" y1="{ky - 5}" x2="80" y2="{ky - 5}" stroke="{INK}" stroke-width="{LINE_W}" stroke-dasharray="10 6"/>')
-    o.append(f'<text x="92" y="{ky}" font-size="{FS}" fill="{INK}">Planned: not running yet</text>')
-    o.append(f'<text x="48" y="{H - 32}" font-size="{FS}" fill="{INK}">Built from content/flow/flow.json; edit it and rebuild. Wayfinding, a Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington.</text>')
-    o.append('</svg>')
-    return "\n".join(o), W, H
+            fill, stroke, sw, tc = PAPER, INK, 3, INK
+        out = [f'<rect x="{x:.1f}" y="{y:.1f}" width="{w}" height="{h:.1f}" fill="{fill}" stroke="{stroke}" '
+               f'stroke-width="{sw}"{dash}/>']
+        ty = y + PAD + 21
+        out.append(f'<text x="{x + PAD:.1f}" y="{ty:.1f}" font-size="{TITLE_FS}" font-weight="700" fill="{tc}">'
+                   f'{esc(n["title"])}</text>')
+        ty += 8
+        for line in n.get("body", []):
+            ty += BODY_LH
+            out.append(f'<text x="{x + PAD:.1f}" y="{ty:.1f}" font-size="{BODY_FS}" fill="{tc}">{esc(line)}</text>')
+        if n.get("planned"):
+            out.append(f'<text x="{x + w - PAD:.1f}" y="{y + h - PAD:.1f}" text-anchor="end" font-size="13.745" '
+                       f'font-weight="600" fill="{tc}">Planned</text>')
+        blocks.append(f'<g class="node">{"".join(out)}</g>')
+
+    # the region and what it runs: one outline around all three
+    c, r_, g = boxes["commons"], boxes["region"], boxes["gather"]
+    top, mid = min(c[1], r_[1]) - 64, max(c[1] + c[3], r_[1] + r_[3]) + 20
+    left, right, inner, bot = c[0] - 30, r_[0] + r_[2] + 30, max(c[0] + c[2], g[0] + g[2]) + 30, g[1] + g[3] + 30
+    blocks.insert(0, f'<path d="M{left:.1f},{top:.1f} H{right:.1f} V{mid:.1f} H{inner:.1f} V{bot:.1f} H{left:.1f} Z" '
+                     f'fill="none" stroke="{INK}" stroke-width="2"/><text x="{c[0] + c[2] / 2 + 96:.1f}" y="{top + 38:.1f}" '
+                     f'font-size="15.118" font-weight="700" fill="{INK}">The region, and what it runs</text>')
+
+    # heading and key
+    head = [f'<text x="56" y="92" font-size="43.987" font-weight="700" fill="{INK}">{esc(data["title"])}</text>',
+            f'<text x="56" y="140" font-size="19.244" fill="{INK}">{esc(data["subtitle"])}</text>']
+    kx, ky = 56, H - 120
+    key = [f'<text x="{kx}" y="{ky - 28}" font-size="15.118" font-weight="700" fill="{INK}">How to read it</text>']
+    items = NAMES + [("leak", "Where people leave")]
+    for i, (t, name) in enumerate(items):
+        color, sw = STYLE[t]
+        x = kx + i * 330
+        dash = ' stroke-dasharray="2 12" stroke-linecap="round"' if t == "leak" else ""
+        key.append(f'<line x1="{x}" y1="{ky}" x2="{x + 90}" y2="{ky}" stroke="{color}" stroke-width="{sw}"{dash}/>'
+                   f'<text x="{x + 106}" y="{ky + 5.5}" font-size="15.118" fill="{INK}">{esc(name)}</text>')
+    key.append(f'<line x1="{kx}" y1="{ky + 50}" x2="{kx + 90}" y2="{ky + 50}" stroke="{INK}" stroke-width="7" '
+               f'stroke-dasharray="18 12"/><text x="{kx + 106}" y="{ky + 55.5}" font-size="15.118" fill="{INK}">'
+               f'Dashed: planned, not running yet</text>')
+    key.append(f'<rect x="{kx + 430}" y="{ky + 36}" width="40" height="28" fill="{INK}"/><text x="{kx + 486}" '
+               f'y="{ky + 55.5}" font-size="15.118" fill="{INK}">Run by the region</text>')
+    key.append(f'<rect x="{kx + 760}" y="{ky + 36}" width="40" height="28" fill="{PAPER}" stroke="{BLUE}" '
+               f'stroke-width="6"/><text x="{kx + 816}" y="{ky + 55.5}" font-size="15.118" fill="{INK}">People</text>')
+    key.append(f'<rect x="{kx + 990}" y="{ky + 36}" width="40" height="28" fill="{PAPER}" stroke="{INK}" '
+               f'stroke-width="3"/><text x="{kx + 1046}" y="{ky + 55.5}" font-size="15.118" fill="{INK}">'
+               f'Outside the region</text>')
+
+    body = "".join(head + blocks + lines + heads + stops + labels + key)
+    out = (f'<svg class="fnet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
+           f'aria-label="{esc(data["title"])}" font-family="{FONT}"><rect width="{W}" height="{H}" fill="{PAPER}"/>'
+           f'{body}</svg>')
+    return out, W, H
