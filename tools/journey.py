@@ -17,7 +17,11 @@ import json
 
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
 # Line colours, for maps only: they say which line is which, like the Metro. Never text, never red.
-GREEN, VIOLET, SILVER = "#00a160", "#7b4fa0", "#9aa3a6"
+# Chosen by colour science (research/journey-map-colour.md): under protanopia, deuteranopia and
+# tritanopia every pair of map colours stays at least 17 CAM02-UCS units apart, and each new colour
+# has at least 3:1 contrast with the paper. The names stay; the values changed.
+GREEN, VIOLET, SILVER = "#4a45d3", "#8a3274", "#898081"   # pod A indigo, pod C wine, not chosen grey
+CASE = 1.5   # an ink casing on every coloured line, so its edge always contrasts with the paper
 FONT = "Inter, system-ui, sans-serif"
 LM, LABW, COLW, GAP = 56, 190, 274, 22
 LINE_Y = 580
@@ -118,12 +122,15 @@ def svg(d):
     # chosen ones peel off at 45 degrees as pods, then projects. Every turn is 45 or 90
     # degrees with a rounded corner. How many lines there are is decided in the Cycle,
     # so the map draws a few and puts a vertical ellipsis where there may be more.
-    lines = []
+    lines, casings = [], []     # casings are drawn first, under every line, so they only show at outer edges
     LW = 8                      # line width inside the Cycle and on the branches
     def poly(pts, w=LW, dash="", col=BLUE):
-        lines.append(f'<path d="{route(pts, 14)}" fill="none" stroke="{col}" stroke-width="{w}"{dash} '
+        d_ = route(pts, 14)
+        casings.append(f'<path d="{d_}" fill="none" stroke="{INK}" stroke-width="{w + 2 * CASE}"{dash} stroke-linejoin="round"/>')
+        lines.append(f'<path d="{d_}" fill="none" stroke="{col}" stroke-width="{w}"{dash} '
                      f'stroke-linejoin="round"/>')
     def end(x, y, col=BLUE):    # terminus: this proposal stops at the vote
+        casings.append(f'<rect x="{x - LW / 2 - CASE}" y="{y - 11 - CASE}" width="{LW + 2 * CASE}" height="{22 + 2 * CASE}" fill="{INK}"/>')
         lines.append(f'<line x1="{x}" y1="{y - 11}" x2="{x}" y2="{y + 11}" stroke="{col}" stroke-width="{LW}"/>')
     def dots(x, y):
         lines.append("".join(f'<circle cx="{x}" cy="{y + k * 12}" r="3.5" fill="{INK}"/>' for k in (-1, 0, 1)))
@@ -156,6 +163,7 @@ def svg(d):
         lines.append(f'<path d="M{lx1},{LINE_Y} V{top + r} Q{lx1},{top} {lx1 + r},{top} H{lx2 - r} Q{lx2},{top} {lx2},{top + r} '
                      f'V{bot - r} Q{lx2},{bot} {lx2 - r},{bot} H{lx1 + r} Q{lx1},{bot} {lx1},{bot - r} Z" fill="none" '
                      f'stroke="{BLUE}" stroke-width="10"/>')
+        casings.append(lines[-1].replace(f'stroke="{BLUE}" stroke-width="10"', f'stroke="{INK}" stroke-width="{10 + 2 * CASE}"'))
         # the way round: arrowheads on the loop, clockwise
         for ax, ay, dx_ in ((lx1 + (lx2 - lx1) * .5, top, 1), (lx1 + (lx2 - lx1) * .5, bot, -1)):
             lines.append(f'<path d="M{ax - 9 * dx_},{ay - 9} L{ax + 7 * dx_},{ay} L{ax - 9 * dx_},{ay + 9} Z" fill="{PAPER}"/>')
@@ -259,7 +267,7 @@ def svg(d):
     for k in range(mo):
         o = (k - (mo - 1) / 2) * 36
         poly([(ox, Y), (ox + 40, Y), (ox + 40 + abs(o), Y + o), (W - LM - 18, Y + o)])
-        lines.append(f'<path d="M{W - LM - 20},{Y + o - 10} L{W - LM},{Y + o} L{W - LM - 20},{Y + o + 10} Z" fill="{BLUE}"/>')
+        lines.append(f'<path d="M{W - LM - 20},{Y + o - 10} L{W - LM},{Y + o} L{W - LM - 20},{Y + o + 10} Z" fill="{BLUE}" stroke="{INK}" stroke-width="{CASE}"/>')
     for k, name in enumerate(fo.get("ends", [])):
         o = (k - (mo - 1) / 2) * 36
         front.append(small(W - LM - 26, Y + o - 9, name, "end", 600))
@@ -275,8 +283,9 @@ def svg(d):
         r, dx = 20, (1 if exa > sxa else -1)
         path = (f'M{sxa},{LINE_Y - 22} V{top + r} Q{sxa},{top} {sxa + dx * r},{top} H{exa - dx * r} '
                 f'Q{exa},{top} {exa},{top + r} V{land}')
-        front.append(f'<path d="{path}" fill="none" stroke="{BLUE}" stroke-width="5"/>'
-                     f'<path d="M{exa - 11},{land - 4} L{exa},{land + 16} L{exa + 11},{land - 4} Z" fill="{BLUE}"/>')
+        front.append(f'<path d="{path}" fill="none" stroke="{INK}" stroke-width="{5 + 2 * CASE}"/>'
+                     f'<path d="{path}" fill="none" stroke="{BLUE}" stroke-width="5"/>'
+                     f'<path d="M{exa - 11},{land - 4} L{exa},{land + 16} L{exa + 11},{land - 4} Z" fill="{BLUE}" stroke="{INK}" stroke-width="{CASE}"/>')
         lx = (sxa + exa) / 2
         tw = len(ar["label"]) * FS * 0.55 + 20
         front.append(f'<rect x="{lx - tw / 2}" y="{top - 15}" width="{tw}" height="30" fill="{PAPER}"/>'
@@ -411,6 +420,6 @@ def svg(d):
                    f'<text x="{vx + 10}" y="{ky + 3}" text-anchor="middle" font-size="12" font-weight="700" fill="{PAPER if v == "A" else INK}">{v}</text>'
                    f'<text x="{vx + 32}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">{esc(name)}</text>')
         vx += 320
-    body = head + "".join(back) + "".join(lines) + "".join(front) + "".join(key)
+    body = head + "".join(back) + "".join(casings) + "".join(lines) + "".join(front) + "".join(key)
     return (f'<svg class="jmap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
             f'aria-label="{esc(d["title"])}" font-family="{FONT}"><rect width="{W}" height="{H}" fill="{PAPER}"/>{body}</svg>'), W, H

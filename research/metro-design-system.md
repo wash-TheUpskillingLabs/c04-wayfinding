@@ -99,4 +99,4 @@ The deepest lesson is Arthur and Passini's: information at the wrong place is as
 
 ## What Stays Ours
 
-Metro's palette is the line colours plus brown, white and concrete. Ours is ink, paper, signal blue and signal red, after the Swiss Style scheme the site was built on. Maps may add green, violet and silver to tell lines apart. Those colours are for lines only, never for text and never in place of red. Red means a position: where you are, or where people stopped. That rule is recorded at the top of `assets/wayfinding.css`.
+Metro's palette is the line colours plus brown, white and concrete. Ours is ink, paper, signal blue and signal red, after the Swiss Style scheme the site was built on. Maps may add indigo, wine and grey to tell lines apart, chosen for colour-blind readers (see `journey-map-colour.md`). Those colours are for lines only, never for text and never in place of red. Red means a position: where you are, or where people stopped. That rule is recorded at the top of `assets/wayfinding.css`.
