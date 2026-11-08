@@ -20,7 +20,6 @@
    "y": 290,
    "w": 380,
    "kind": "outside",
-   "planned": true,
    "title": "Funders and sponsors",
    "body": [
     "Foundations, companies, employers"
@@ -131,12 +130,12 @@
    "id": "partners",
    "x": 520,
    "y": 1600,
-   "w": 360,
+   "w": 380,
    "kind": "outside",
    "title": "Partners",
    "body": [
-    "Public libraries",
-    "Civic tech groups, nonprofits (planned)"
+    "Public libraries; civic tech groups and",
+    "nonprofits (planned). Agreed through national"
    ]
   },
   {
@@ -150,6 +149,19 @@
    "body": [
     "People who give back: host a workshop,",
     "teach a module, maintain a kit"
+   ]
+  },
+  {
+   "id": "sustain",
+   "x": 2420,
+   "y": 600,
+   "w": 390,
+   "kind": "people",
+   "planned": true,
+   "title": "Sustaining members",
+   "body": [
+    "Give to Greater Washington, held in",
+    "the region’s sub-account at national"
    ]
   }
  ],
@@ -511,23 +523,23 @@
   },
   {
    "type": "support",
-   "planned": true,
    "path": [
     "funders:l:0",
-    [
-     1800,
-     290
-    ],
-    [
-     1800,
-     600
-    ],
+    "national:r:0"
+   ],
+   "label": "grants and partnerships"
+  },
+  {
+   "type": "support",
+   "planned": true,
+   "path": [
+    "sustain:l:0",
     "region:r:-40"
    ],
-   "label": "grants and sponsorship",
+   "label": "for the Greater Washington brand",
    "at": [
-    1800,
-    460
+    1960,
+    600
    ]
   }
  ],
