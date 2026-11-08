@@ -151,6 +151,9 @@ def svg(data):
         for line in n.get("body", []):
             ty += BODY_LH
             out.append(f'<text x="{x + PAD:.1f}" y="{ty:.1f}" font-size="{BODY_FS}" fill="{tc}">{esc(line)}</text>')
+        if n.get("tag"):
+            out.append(f'<text x="{x + w - PAD:.1f}" y="{y + h - PAD:.1f}" text-anchor="end" font-size="13.745" '
+                       f'font-weight="600" fill="{tc}" letter-spacing="1">{esc(n["tag"]).upper()}</text>')
         if n.get("planned"):
             out.append(f'<text x="{x + w - PAD:.1f}" y="{y + h - PAD:.1f}" text-anchor="end" font-size="13.745" '
                        f'font-weight="600" fill="{tc}">Planned</text>')

@@ -10,8 +10,9 @@
    "kind": "outside",
    "title": "National",
    "body": [
-    "The brand, the board, the Ambassador program",
-    "National OLOS: built and maintained here"
+    "The brand, the Board, the charter, fundraising",
+    "National OLOS, the Ambassador program,",
+    "summits in Washington (planned)"
    ]
   },
   {
@@ -22,7 +23,8 @@
    "kind": "outside",
    "title": "Funders and sponsors",
    "body": [
-    "Foundations, companies, employers"
+    "Foundations, governments, universities,",
+    "companies"
    ]
   },
   {
@@ -37,7 +39,8 @@
     "Modules and kits (planned)",
     "Open contribution: contributor, reviewer,",
     "committer, maintainer (planned)"
-   ]
+   ],
+   "tag": "Share"
   },
   {
    "id": "region",
@@ -75,8 +78,9 @@
    "body": [
     "Trainings and workshops",
     "Neighborhood workshops, salons,",
-    "meetups, summits (planned)"
-   ]
+    "meetups (planned)"
+   ],
+   "tag": "Learn"
   },
   {
    "id": "members",
@@ -100,7 +104,8 @@
    "body": [
     "Pods, prototypes, the vote,",
     "projects, the showcase"
-   ]
+   ],
+   "tag": "Build"
   },
   {
    "id": "alumni",
@@ -142,13 +147,12 @@
    "id": "givers",
    "x": 1400,
    "y": 1600,
-   "w": 420,
+   "w": 440,
    "kind": "people",
-   "planned": true,
-   "title": "Hosts, trainers and contributors",
+   "title": "Mentors, trainers and hosts",
    "body": [
-    "People who give back: host a workshop,",
-    "teach a module, maintain a kit"
+    "Practitioners who teach a session or take a",
+    "stuck team’s question. Hosting from kits is planned"
    ]
   },
   {
@@ -205,7 +209,7 @@
     "alumni:r:0",
     "employers:l:0"
    ],
-   "label": "hired, on what they built",
+   "label": "a record an employer can read",
    "at": [
     2370,
     1008
@@ -213,7 +217,6 @@
   },
   {
    "type": "people",
-   "planned": true,
    "path": [
     "alumni:b:-60",
     [
@@ -222,7 +225,7 @@
     ],
     "givers:r:0"
    ],
-   "label": "stay on to give back",
+   "label": "some stay on as volunteers",
    "at": [
     1860,
     1600
@@ -230,7 +233,6 @@
   },
   {
    "type": "people",
-   "planned": true,
    "path": [
     "givers:l:-20",
     [
@@ -239,7 +241,7 @@
     ],
     "gather:b:100"
    ],
-   "label": "host and teach",
+   "label": "teach the sessions",
    "at": [
     1000,
     1580
@@ -274,16 +276,16 @@
    "label": "came once",
    "at": [
     895,
-    1260
+    1300
    ],
    "anchor": "start"
   },
   {
    "type": "leak",
    "path": [
-    "cycle:b:100",
+    "cycle:b:40",
     [
-     1820,
+     1760,
      1360
     ]
    ],
@@ -466,10 +468,14 @@
      960
     ],
     [
-     1760,
+     1950,
      960
     ],
-    "cycle:t:40"
+    [
+     1950,
+     1060
+    ],
+    "cycle:r:-40"
    ],
    "label": "judges and hiring managers, at the showcase",
    "at": [
@@ -503,7 +509,7 @@
     ],
     "national:l:-20"
    ],
-   "label": "changes that held up, upstream",
+   "label": "offered upstream; the Board decides",
    "at": [
     1010,
     270
@@ -515,7 +521,7 @@
     "national:b:0",
     "region:t:0"
    ],
-   "label": "the method, the Cycle’s design",
+   "label": "the practice, the Cycle’s design",
    "at": [
     1450,
     460
@@ -527,7 +533,7 @@
     "funders:l:0",
     "national:r:0"
    ],
-   "label": "grants and partnerships"
+   "label": "grants, contracts, partnerships"
   },
   {
    "type": "support",
@@ -541,6 +547,64 @@
     1960,
     600
    ]
+  },
+  {
+   "type": "knowledge",
+   "path": [
+    "givers:r:-40",
+    [
+     1660,
+     1560
+    ],
+    "cycle:b:-50"
+   ],
+   "label": "help, once a team is stuck",
+   "at": [
+    1650,
+    1470
+   ],
+   "anchor": "end"
+  },
+  {
+   "type": "knowledge",
+   "planned": true,
+   "path": [
+    "cycle:b:-120",
+    [
+     1600,
+     1250
+    ],
+    [
+     950,
+     1250
+    ],
+    [
+     950,
+     1160
+    ],
+    "gather:r:60"
+   ],
+   "label": "teach back: a workshop on a skill you used",
+   "at": [
+    1275,
+    1250
+   ]
+  },
+  {
+   "type": "leak",
+   "path": [
+    "cycle:t:140",
+    [
+     1860,
+     940
+    ]
+   ],
+   "label": "nothing published yet",
+   "at": [
+    1845,
+    1005
+   ],
+   "anchor": "end"
   }
  ],
  "outs": [
@@ -549,12 +613,16 @@
    1360
   ],
   [
-   1820,
+   2240,
    1360
   ],
   [
-   2240,
+   1760,
    1360
+  ],
+  [
+   1860,
+   940
   ]
  ]
 }
