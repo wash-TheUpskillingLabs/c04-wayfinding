@@ -22,8 +22,8 @@ GOLD = math.radians(137.508)
 CIRCLES = {
     "what":  dict(cx=1260, cy=700, r=605, word="WHAT", line="red"),
     "who":   dict(cx=554, cy=844, r=410, word="WHO", line="ink"),
-    "why":   dict(cx=925, cy=1343, r=504, word="WHY", line="ink"),
-    "how":   dict(cx=1623, cy=1368, r=488, word="HOW SOLVED", line="blue"),
+    "why":   dict(cx=955, cy=1303, r=504, word="WHY", line="ink"),
+    "how":   dict(cx=1593, cy=1328, r=488, word="HOW SOLVED", line="blue"),
     "where": dict(cx=1946, cy=840, r=420, word="WHERE", line="ink"),
 }
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
@@ -93,15 +93,22 @@ def place_near(members, boxes, ox, oy, w, h, start=0, step=3.5, strict=True):
     return None
 
 def region_centre(members):
-    """Where a region's stations start spiralling from: a lens's middle, or the part of a
-    circle that faces away from every circle it overlaps."""
+    """Where a region's stations start spiralling from: the centroid of the part of the
+    paper that is inside every member circle and outside every other, or, for a single
+    circle, the part of it that faces away from everything it overlaps."""
+    members = set(members)
     cs = [CIRCLES[q] for q in members]
-    if len(cs) == 2:
-        a, b = cs
-        d = math.hypot(b["cx"] - a["cx"], b["cy"] - a["cy"])
-        near, far = max(d - b["r"], -a["r"]), min(a["r"], d + b["r"])
-        t = (near + far) / 2
-        return a["cx"] + (b["cx"] - a["cx"]) * t / d, a["cy"] + (b["cy"] - a["cy"]) * t / d
+    if len(cs) >= 2:
+        xs = ys = n = 0
+        x0, x1 = max(c["cx"] - c["r"] for c in cs), min(c["cx"] + c["r"] for c in cs)
+        y0, y1 = max(c["cy"] - c["r"] for c in cs), min(c["cy"] + c["r"] for c in cs)
+        for i in range(60):
+            for j in range(60):
+                x, y = x0 + (x1 - x0) * (i + .5) / 60, y0 + (y1 - y0) * (j + .5) / 60
+                ins = {q for q, c in CIRCLES.items() if (x - c["cx"]) ** 2 + (y - c["cy"]) ** 2 < c["r"] ** 2}
+                if ins == members: xs += x; ys += y; n += 1
+        if n: return xs / n, ys / n
+        a = cs[0]; return a["cx"], a["cy"]
     c = cs[0]
     vx = vy = 0.0
     for q2, c2 in CIRCLES.items():
@@ -117,12 +124,12 @@ def build(statements):
     """Returns the placed boxes, station labels, statements and per-question counts."""
     regions = {}
     for s in statements:
-        key = frozenset(k for k in (s["q"], s.get("q2")) if k)
+        key = frozenset(k for k in (s["q"], s.get("q2"), s.get("q3")) if k)
         regions.setdefault(key, {}).setdefault(s["theme"], []).append(s)
     boxes, labels, items = [], [], []
     counts = {q: 0 for q in CIRCLES}
     for s in statements:
-        for k in (s["q"], s.get("q2")):
+        for k in (s["q"], s.get("q2"), s.get("q3")):
             if k: counts[k] += 1
     # overlaps first (they have the least room), then the single circles
     order = sorted(regions, key=lambda k: (-len(k), -sum(len(v) for v in regions[k].values())))
@@ -132,7 +139,7 @@ def build(statements):
         ox, oy = region_centre(key)
         n = max(1, len(themes))
         centres = []
-        reach = min(CIRCLES[q]["r"] for q in key) * (.55 if len(key) == 1 else .4)
+        reach = min(CIRCLES[q]["r"] for q in key) * {1: .55, 2: .4}.get(len(key), .25)
         for i, (theme, ss) in enumerate(themes):
             cnt = len(ss)
             rr = reach * math.sqrt((i + .5) / n)
@@ -141,9 +148,9 @@ def build(statements):
             if len(key) == 1:
                 fs = min(34, 12 + 1.9 * cnt)
                 tl = wrap(theme, 24 if len(theme) > 26 else 40)
-            else:   # an interchange: the lens is tall and narrow, so the name stacks
-                fs = min(24, 12 + 1.4 * cnt)
-                tl = wrap(theme, 15)
+            else:   # an interchange: the overlap is tight, so the name stacks
+                fs = min(24 if len(key) == 2 else 18, 12 + 1.4 * cnt)
+                tl = wrap(theme, 15 if len(key) == 2 else 12)
             w = max(tw(l, fs, True) for l in tl) + fs * .95 + 6
             h = fs * 1.05 * len(tl)
             pos = place_near(key, boxes, tx, ty, w, h, 0, 8)
@@ -175,7 +182,7 @@ def build(statements):
                 if ss: nxt.append((key, (cxl, cyl), ss))
             queue = nxt
     pass_over([t for t in placed_themes if len(t[0]) == 1])
-    pass_over([t for t in placed_themes if len(t[0]) == 2])
+    pass_over([t for t in placed_themes if len(t[0]) > 1])
     return boxes, None, labels, items, counts
 
 def word_angle(q):
@@ -252,9 +259,11 @@ def svg(statements, asof, underlay=None):
         sw = max(2.5, fs * .13)
         if len(key) == 1:
             o.append(f'<circle cx="{cx_:.1f}" cy="{cy_:.1f}" r="{rr:.1f}" fill="{PAPER}" stroke="{LINE[CIRCLES[key[0]]["line"]]}" stroke-width="{sw:.1f}"/>')
-        else:
-            o.append(f'<circle cx="{cx_:.1f}" cy="{cy_:.1f}" r="{rr + sw:.1f}" fill="{PAPER}" stroke="{LINE[CIRCLES[key[0]]["line"]]}" stroke-width="{sw:.1f}"/>')
-            o.append(f'<circle cx="{cx_:.1f}" cy="{cy_:.1f}" r="{rr - sw * .4:.1f}" fill="none" stroke="{LINE[CIRCLES[key[1]]["line"]]}" stroke-width="{sw:.1f}"/>')
+        else:   # an interchange: one ring per line, outermost first
+            step = sw * 1.4
+            o.append(f'<circle cx="{cx_:.1f}" cy="{cy_:.1f}" r="{rr + sw:.1f}" fill="{PAPER}"/>')
+            for n, q in enumerate(key):
+                o.append(f'<circle cx="{cx_:.1f}" cy="{cy_:.1f}" r="{rr + sw - step * n:.1f}" fill="none" stroke="{LINE[CIRCLES[q]["line"]]}" stroke-width="{sw:.1f}"/>')
         for j, t in enumerate(tl):
             o.append(f'<text x="{x + fs*.95:.1f}" y="{y + fs*1.05*j + fs*.86:.1f}" font-size="{fs:.1f}">{esc(t)}</text>')
     o.append('</g>')
@@ -265,7 +274,7 @@ def svg(statements, asof, underlay=None):
     o.append(f'<g fill="{INK}">')
     o.append(f'<text x="48" y="88" font-size="54.98" font-weight="800" letter-spacing="-.025em">The problem</text>')
     o.append(f'<text x="48" y="148" font-size="54.98" font-weight="800" letter-spacing="-.025em">situation</text>')
-    o.append(f'<text x="48" y="188" font-size="16.494">{len(statements)} statements, as of {esc(asof)}. A theme in an overlap counts for both questions.</text>')
+    o.append(f'<text x="48" y="188" font-size="16.494">{len(statements)} statements, as of {esc(asof)}. A theme in an overlap counts for each of its questions.</text>')
     o.append(f'<text x="48" y="236" font-size="13.745" font-weight="800">How to read the signs</text>')
     ky = 268
     for col, name in ((RED, "WHAT gets in the way: where people stop"), (INK, "WHO, WHERE and WHY"), (BLUE, "HOW SOLVED: only what worked elsewhere")):
@@ -276,7 +285,7 @@ def svg(statements, asof, underlay=None):
     o.append(f'<text x="92" y="{ky}" font-size="13.745">A theme. The bigger the name, the more was said</text>')
     ky += 24
     o.append(f'<circle cx="64" cy="{ky-5}" r="8.5" fill="{PAPER}" stroke="{RED}" stroke-width="3"/><circle cx="64" cy="{ky-5}" r="4.5" fill="none" stroke="{INK}" stroke-width="3"/>')
-    o.append(f'<text x="92" y="{ky}" font-size="13.745">An interchange: a theme that answers two questions, in their overlap</text>')
+    o.append(f'<text x="92" y="{ky}" font-size="13.745">An interchange: a theme that answers two or three questions, in their overlap</text>')
     ky += 32
     for k, name in VOICES:
         if k == "X":

@@ -15,10 +15,11 @@ S = []
 def add(q, theme, by, src, *texts):
     """q may name two questions, "what+who": the statements answer both, so the theme
     sits in the overlap of the two circles, an interchange station on both lines."""
-    q, _, q2 = q.partition("+")
+    qs = q.split("+")
     for t in texts:
-        d = {"q": q, "theme": theme, "by": by, "src": src, "text": t}
-        if q2: d["q2"] = q2
+        d = {"q": qs[0], "theme": theme, "by": by, "src": src, "text": t}
+        if len(qs) > 1: d["q2"] = qs[1]
+        if len(qs) > 2: d["q3"] = qs[2]
         S.append(d)
 
 SURVEY = "Alumni survey, C01–C03, Sep–Oct 2026"
@@ -39,11 +40,9 @@ add("what", "lost between the parts", "A", SURVEY,
     "at times did not really understand what to do next",
     "needs more structure and a common goal",
     "more guidance on what to work on in a given week",
-    "moderators should step in to get teams unstuck",
     "a clearer roadmap from individual work into team pods",
     "roles and expectations were unclear",
     "one person’s early setup didn’t fit the team that formed later",
-    "course-correcting took a long time, even with Labs experts",
     "people constantly moving in and out of the project",
     "no way to get people to commit",
     "map out pathways so people can watch from the sidelines",
@@ -60,7 +59,7 @@ add("what", "too much to keep track of", "O", R4,
     "organizer delays become participant emergencies")
 add("what", "too much to keep track of", "O", CAL,
     "the “Communicating in Slack” session didn’t happen; too early in the cycle")
-add("what+who", "the building falls to a few", "P", PO7,
+add("what+who+why", "the building falls to a few", "P", PO7,
     "on a team of five, the building often falls to one person",
     "the rest advise",
     "for three Cycles, advising and building counted the same",
@@ -90,14 +89,14 @@ add("what+why", "losing the vote means losing your team", "P", PO7,
     "the voting math created only one pod",
     "at least one still-active participant was disappointed",
     "edge cases like this throw people for a loop")
-add("what+where", "nothing before or after a Cycle", "P", PO7,
+add("what+where+how", "nothing before or after a Cycle", "P", PO7,
     "there is no non-Cycle experience at all",
     "a profile and an account mean nothing if you’re not in a Cycle",
     "leaving the Cycle means leaving The Labs",
     "“not ready” has nowhere to go")
-add("what+where", "nothing before or after a Cycle", "O", R4,
+add("what+where+how", "nothing before or after a Cycle", "O", R4,
     "everyone sees The Labs through the Cycle; there is no before or after")
-add("what+where", "the pilot’s weekly room hasn’t been replaced", "P", PO7,
+add("what+where+how", "a clock everyone can see", "P", PO7,
     "the pilot met four hours a week, in person, for twelve weeks",
     "that momentum let us fix things ad hoc without infrastructure",
     "the Cycle no longer has the in-person weekly check-in",
@@ -123,7 +122,7 @@ add("who+what", "people who came once; not heard from yet", "P", PO7,
     "the person who got lost at the first door")
 add("who+what", "people who came once; not heard from yet", "A", SURVEY,
     "respondents skew toward people who finished and joined teams")
-add("who+what", "the building falls to a few", "P", PO7,
+add("who+what+why", "the building falls to a few", "P", PO7,
     "the people who build",
     "the people who advise",
     "people who pictured themselves in a pod that never formed")
@@ -143,7 +142,7 @@ add("who", "employers, not asked yet", "P", PO7,
     "they judge us against multi-million-dollar institutions")
 
 # ---------------- WHERE: the stations and the channels ----------------
-add("where+how", "a clock everyone can see", "O", R4,
+add("where+how+what", "a clock everyone can see", "O", R4,
     "the Cycle is the point of entry")
 add("where", "the Cycle: twelve weeks and three dated gates", "P", PO6,
     "twelve weeks, an incubation sprint and a capstone",
@@ -178,7 +177,7 @@ add("where", "libraries: where it began, and every branch a door", "P", PO7,
 add("where", "before and after a Cycle: nothing yet", "P", PO6,
     "there is no pre-cycle experience",
     "there is no well-mapped post-cycle or between-cycle experience")
-add("where+what", "nothing before or after a Cycle", "P", PO7,
+add("where+what+how", "nothing before or after a Cycle", "P", PO7,
     "the route into a workplace and back")
 add("where", "the region serves its own pages; national keeps the rest", "S", SC,
     "national’s pages redirect to theupskillinglabs.org",
@@ -196,12 +195,14 @@ add("why", "the Cycle practices skills; it doesn’t teach them", "P", PO7,
     "the Cycle is the time to put skills into practice",
     "people say they don’t have the skills and can’t gain them here",
     "we serve people who are still learning to build; the Cycle needs people who can")
-add("why+who", "it’s free, and nobody’s job is to guide you", "P", PO7,
+add("why+who+what", "it’s free, and nobody’s job is to guide you", "P", PO7,
     "we’re not doing coaching; they’re not paying us",
     "there is no one whose job it is to help them navigate",
     "we can’t promise to hold anyone’s hand",
     "we created a sandbox to enter, form teams and build community in")
-add("why+what", "the big picture isn’t written down", "P", PO7,
+add("how+what+why", "the big picture isn’t written down", "X", "Case library, PR #5: GOV.UK step by step",
+    "GOV.UK: drawing the whole route was the first time the teams who owned its parts had met")
+add("why+what+how", "the big picture isn’t written down", "P", PO7,
     "how it all fits together isn’t written down anywhere",
     "nobody has had the job of drawing it out",
     "writing down someone else’s picture can feel like claiming authority",
@@ -240,7 +241,7 @@ add("why", "skill and belonging keep volunteers; choice alone doesn’t", "X", L
     "capacity for self-direction depends on the situation, not the person (Candy)",
     "you learn a community by doing small real work at its edge, witnessed (Lave & Wenger)",
     "groups that claim no structure run on hidden structure (Freeman)")
-add("why+what", "effort drops in groups", "X", LIB,
+add("why+what+who", "the building falls to a few", "X", LIB,
     "effort drops as groups grow when contributions can’t be told apart (Ringelmann, Latané)",
     "effort holds up best when work is identifiable and the group matters (Karau & Williams)",
     "about 15 people wrote 80% of Apache",
@@ -255,7 +256,10 @@ add("why", "too much rests on too few people", "X", LIB,
     "FIRST retired its six-week build window over mentor workload",
     "NaNoWriMo closed in 2025; its regions kept going on channels they owned",
     "Kubernetes pruned 146, then 600, then 300 inactive members")
-add("why+how", "a person at the first contact", "X", LIB,
+add("what+why+how", "a person at the first contact", "A", SURVEY,
+    "moderators should step in to get teams unstuck",
+    "course-correcting took a long time, even with Labs experts")
+add("why+how+what", "a person at the first contact", "X", LIB,
     "summer-melt texts worked with a counselor behind them and vanished at state scale",
     "Wikipedia newcomers met by bots left; those invited to the Teahouse stayed",
     "a single-channel rule broke NaNoWriMo’s local layer",
@@ -266,16 +270,16 @@ add("why+how", "a person at the first contact", "X", LIB,
 # the region's own first answers live in the records, not here.
 def C(name): return f"Case library, PR #5: {name}"
 
-add("how+why", "a person at the first contact", "X", C("Wikipedia newcomers"),
+add("how+why+what", "a person at the first contact", "X", C("Wikipedia newcomers"),
     "Wikipedia’s Teahouse: newcomers invited to a room where people answer stayed longer, in a controlled trial",
     "Teahouse answers with fewer rule links and more words kept more newcomers")
-add("how+why", "a person at the first contact", "X", C("Stack Overflow newcomers"),
+add("how+why+what", "a person at the first contact", "X", C("Stack Overflow newcomers"),
     "Stack Overflow: a mentor read your draft question first; those questions scored 50% higher")
-add("how+why", "a person at the first contact", "X", C("Extension and 4-H volunteers"),
+add("how+why+what", "a person at the first contact", "X", C("Extension and 4-H volunteers"),
     "Master Gardeners: a veteran per 2–4 trainees cut first-year dropout from a quarter to 2%")
-add("how+why", "a person at the first contact", "X", C("Open source newcomer barriers"),
+add("how+why+what", "a person at the first contact", "X", C("Open source newcomer barriers"),
     "open source: a starter task is 71% likelier to be finished when an experienced person is in the thread")
-add("how+why", "a person at the first contact", "X", C("P2PU learning circles"),
+add("how+why+what", "a person at the first contact", "X", C("P2PU learning circles"),
     "P2PU: new facilitators who co-ran their first circle with a colleague did best, by P2PU’s account")
 
 add("how", "a reminder at the moment it matters", "X", C("Summer melt"),
@@ -298,12 +302,12 @@ add("how+where", "a kit a stranger can run", "X", C("Indivisible"),
 add("how+where", "a kit a stranger can run", "X", C("Extension and 4-H volunteers"),
     "Idaho 4-H: six-week sessions and a “facilitation coach” role let one or two volunteers serve 10–15 youth")
 
-add("how+where", "a clock everyone can see", "X", C("Google Summer of Code"),
+add("how+where+what", "a clock everyone can see", "X", C("Google Summer of Code"),
     "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code; 1,000+ finished projects a year",
     "Summer of Code: two project sizes and a stretchable deadline brought in people with jobs")
-add("how+where", "a clock everyone can see", "X", C("FIRST Robotics"),
+add("how+where+what", "a clock everyone can see", "X", C("FIRST Robotics"),
     "FIRST: a January kickoff and the same events for every team; 3,000+ teams a year, 91% return")
-add("how+where", "a clock everyone can see", "X", C("NaNoWriMo"),
+add("how+where+what", "a clock everyone can see", "X", C("NaNoWriMo"),
     "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party, for 400,000 people a year",
     "NaNoWriMo: 900 liaisons with a written duty list ran 633 regions")
 
@@ -318,11 +322,11 @@ add("how", "a small stake up front", "X", C("4-H lesson kits"),
 add("how", "a small stake up front", "X", C("MOOC completion"),
     "MOOCs: learners who paid for a certificate finished at 44–56%, against 3–6% overall")
 
-add("how+what", "keep the door open after it ends", "X", C("Recurse Center"),
+add("how+what+where", "nothing before or after a Cycle", "X", C("Recurse Center"),
     "Recurse Center: alumni keep the chat, the calendar and the jobs board; they stayed involved for years")
-add("how+what", "keep the door open after it ends", "X", C("NaNoWriMo"),
+add("how+what+where", "nothing before or after a Cycle", "X", C("NaNoWriMo"),
     "NaNoWriMo’s regions kept going on channels they owned; one night, 148 people wrote 404,500 words")
-add("how+what", "keep the door open after it ends", "X", C("Extension and 4-H volunteers"),
+add("how+what+where", "nothing before or after a Cycle", "X", C("Extension and 4-H volunteers"),
     "Master Gardeners stayed for the local association, five of eight coordinators said")
 
 add("how+what", "hand it on instead of letting it end", "X", C("Hackathons and sprints"),
@@ -338,9 +342,9 @@ add("how", "a network that vouches beats a certificate", "X", C("GitHub activity
 add("how", "a network that vouches beats a certificate", "X", C("Skills-based hiring"),
     "employers that really dropped degree screens kept non-degree hires 10 points longer")
 
-add("how+what", "one source, bundled messages", "X", C("NPR COPE"),
+add("how+what", "one source, many channels", "X", C("NPR COPE"),
     "NPR: content stored once and drawn by every outlet; requests went from 3.5 to 53 million"),
-add("how+what", "one source, bundled messages", "X", C("Channel overload"),
+add("how+what", "one source, many channels", "X", C("Channel overload"),
     "notifications bundled three times a day made people calmer and more attentive; hourly and none did not")
 
 out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "map", "statements.json")

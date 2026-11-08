@@ -53,13 +53,6 @@
   "theme": "lost between the parts",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "moderators should step in to get teams unstuck"
- },
- {
-  "q": "what",
-  "theme": "lost between the parts",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "a clearer roadmap from individual work into team pods"
  },
  {
@@ -75,13 +68,6 @@
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
   "text": "one person’s early setup didn’t fit the team that formed later"
- },
- {
-  "q": "what",
-  "theme": "lost between the parts",
-  "by": "A",
-  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "course-correcting took a long time, even with Labs experts"
  },
  {
   "q": "what",
@@ -187,7 +173,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "on a team of five, the building often falls to one person",
-  "q2": "who"
+  "q2": "who",
+  "q3": "why"
  },
  {
   "q": "what",
@@ -195,7 +182,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the rest advise",
-  "q2": "who"
+  "q2": "who",
+  "q3": "why"
  },
  {
   "q": "what",
@@ -203,7 +191,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "for three Cycles, advising and building counted the same",
-  "q2": "who"
+  "q2": "who",
+  "q3": "why"
  },
  {
   "q": "what",
@@ -211,7 +200,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "asking for individual contributions cut across the team’s sense of itself",
-  "q2": "who"
+  "q2": "who",
+  "q3": "why"
  },
  {
   "q": "what",
@@ -219,7 +209,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "it was felt as a cost to community and team-building",
-  "q2": "who"
+  "q2": "who",
+  "q3": "why"
  },
  {
   "q": "what",
@@ -227,7 +218,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "being an owner means doing the work of ownership, and volunteers have limited hours",
-  "q2": "who"
+  "q2": "who",
+  "q3": "why"
  },
  {
   "q": "what",
@@ -378,7 +370,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "there is no non-Cycle experience at all",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
@@ -386,7 +379,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "a profile and an account mean nothing if you’re not in a Cycle",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
@@ -394,7 +388,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "leaving the Cycle means leaving The Labs",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
@@ -402,7 +397,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "“not ready” has nowhere to go",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
@@ -410,39 +406,44 @@
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
   "text": "everyone sees The Labs through the Cycle; there is no before or after",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
-  "theme": "the pilot’s weekly room hasn’t been replaced",
+  "theme": "a clock everyone can see",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the pilot met four hours a week, in person, for twelve weeks",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
-  "theme": "the pilot’s weekly room hasn’t been replaced",
+  "theme": "a clock everyone can see",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "that momentum let us fix things ad hoc without infrastructure",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
-  "theme": "the pilot’s weekly room hasn’t been replaced",
+  "theme": "a clock everyone can see",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the Cycle no longer has the in-person weekly check-in",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "what",
-  "theme": "the pilot’s weekly room hasn’t been replaced",
+  "theme": "a clock everyone can see",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "we haven’t been able to replicate it",
-  "q2": "where"
+  "q2": "where",
+  "q3": "how"
  },
  {
   "q": "who",
@@ -558,7 +559,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the people who build",
-  "q2": "what"
+  "q2": "what",
+  "q3": "why"
  },
  {
   "q": "who",
@@ -566,7 +568,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the people who advise",
-  "q2": "what"
+  "q2": "what",
+  "q3": "why"
  },
  {
   "q": "who",
@@ -574,7 +577,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "people who pictured themselves in a pod that never formed",
-  "q2": "what"
+  "q2": "what",
+  "q3": "why"
  },
  {
   "q": "who",
@@ -652,7 +656,8 @@
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
   "text": "the Cycle is the point of entry",
-  "q2": "how"
+  "q2": "how",
+  "q3": "what"
  },
  {
   "q": "where",
@@ -834,7 +839,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "the route into a workplace and back",
-  "q2": "what"
+  "q2": "what",
+  "q3": "how"
  },
  {
   "q": "where",
@@ -919,7 +925,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "we’re not doing coaching; they’re not paying us",
-  "q2": "who"
+  "q2": "who",
+  "q3": "what"
  },
  {
   "q": "why",
@@ -927,7 +934,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "there is no one whose job it is to help them navigate",
-  "q2": "who"
+  "q2": "who",
+  "q3": "what"
  },
  {
   "q": "why",
@@ -935,7 +943,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "we can’t promise to hold anyone’s hand",
-  "q2": "who"
+  "q2": "who",
+  "q3": "what"
  },
  {
   "q": "why",
@@ -943,7 +952,17 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "we created a sandbox to enter, form teams and build community in",
-  "q2": "who"
+  "q2": "who",
+  "q3": "what"
+ },
+ {
+  "q": "how",
+  "theme": "the big picture isn’t written down",
+  "by": "X",
+  "src": "Case library, PR #5: GOV.UK step by step",
+  "text": "GOV.UK: drawing the whole route was the first time the teams who owned its parts had met",
+  "q2": "what",
+  "q3": "why"
  },
  {
   "q": "why",
@@ -951,7 +970,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "how it all fits together isn’t written down anywhere",
-  "q2": "what"
+  "q2": "what",
+  "q3": "how"
  },
  {
   "q": "why",
@@ -959,7 +979,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "nobody has had the job of drawing it out",
-  "q2": "what"
+  "q2": "what",
+  "q3": "how"
  },
  {
   "q": "why",
@@ -967,7 +988,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "writing down someone else’s picture can feel like claiming authority",
-  "q2": "what"
+  "q2": "what",
+  "q3": "how"
  },
  {
   "q": "why",
@@ -975,7 +997,8 @@
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
   "text": "documentation doesn’t count as a contribution",
-  "q2": "what"
+  "q2": "what",
+  "q3": "how"
  },
  {
   "q": "why",
@@ -1193,59 +1216,66 @@
  },
  {
   "q": "why",
-  "theme": "effort drops in groups",
+  "theme": "the building falls to a few",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "effort drops as groups grow when contributions can’t be told apart (Ringelmann, Latané)",
-  "q2": "what"
+  "q2": "what",
+  "q3": "who"
  },
  {
   "q": "why",
-  "theme": "effort drops in groups",
+  "theme": "the building falls to a few",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "effort holds up best when work is identifiable and the group matters (Karau & Williams)",
-  "q2": "what"
+  "q2": "what",
+  "q3": "who"
  },
  {
   "q": "why",
-  "theme": "effort drops in groups",
+  "theme": "the building falls to a few",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "about 15 people wrote 80% of Apache",
-  "q2": "what"
+  "q2": "what",
+  "q3": "who"
  },
  {
   "q": "why",
-  "theme": "effort drops in groups",
+  "theme": "the building falls to a few",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "preparation and skill mix predicted a project’s survival; intent did not",
-  "q2": "what"
+  "q2": "what",
+  "q3": "who"
  },
  {
   "q": "why",
-  "theme": "effort drops in groups",
+  "theme": "the building falls to a few",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "heavy first-week activity raised the chance of stopping",
-  "q2": "what"
+  "q2": "what",
+  "q3": "who"
  },
  {
   "q": "why",
-  "theme": "effort drops in groups",
+  "theme": "the building falls to a few",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "teams set their approach in the first meeting and overhaul it at the midpoint (Gersick)",
-  "q2": "what"
+  "q2": "what",
+  "q3": "who"
  },
  {
   "q": "why",
-  "theme": "effort drops in groups",
+  "theme": "the building falls to a few",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "designers learn the problem by proposing solutions (Lawson, Cross)",
-  "q2": "what"
+  "q2": "what",
+  "q3": "who"
  },
  {
   "q": "why",
@@ -1290,12 +1320,31 @@
   "text": "Kubernetes pruned 146, then 600, then 300 inactive members"
  },
  {
+  "q": "what",
+  "theme": "a person at the first contact",
+  "by": "A",
+  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
+  "text": "moderators should step in to get teams unstuck",
+  "q2": "why",
+  "q3": "how"
+ },
+ {
+  "q": "what",
+  "theme": "a person at the first contact",
+  "by": "A",
+  "src": "Alumni survey, C01–C03, Sep–Oct 2026",
+  "text": "course-correcting took a long time, even with Labs experts",
+  "q2": "why",
+  "q3": "how"
+ },
+ {
   "q": "why",
   "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5",
   "text": "summer-melt texts worked with a counselor behind them and vanished at state scale",
-  "q2": "how"
+  "q2": "how",
+  "q3": "what"
  },
  {
   "q": "why",
@@ -1303,7 +1352,8 @@
   "by": "X",
   "src": "Case library, PR #5",
   "text": "Wikipedia newcomers met by bots left; those invited to the Teahouse stayed",
-  "q2": "how"
+  "q2": "how",
+  "q3": "what"
  },
  {
   "q": "why",
@@ -1311,7 +1361,8 @@
   "by": "X",
   "src": "Case library, PR #5",
   "text": "a single-channel rule broke NaNoWriMo’s local layer",
-  "q2": "how"
+  "q2": "how",
+  "q3": "what"
  },
  {
   "q": "why",
@@ -1319,7 +1370,8 @@
   "by": "X",
   "src": "Case library, PR #5",
   "text": "Scouts’ counselors signed off requirements never completed",
-  "q2": "how"
+  "q2": "how",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1327,7 +1379,8 @@
   "by": "X",
   "src": "Case library, PR #5: Wikipedia newcomers",
   "text": "Wikipedia’s Teahouse: newcomers invited to a room where people answer stayed longer, in a controlled trial",
-  "q2": "why"
+  "q2": "why",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1335,7 +1388,8 @@
   "by": "X",
   "src": "Case library, PR #5: Wikipedia newcomers",
   "text": "Teahouse answers with fewer rule links and more words kept more newcomers",
-  "q2": "why"
+  "q2": "why",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1343,7 +1397,8 @@
   "by": "X",
   "src": "Case library, PR #5: Stack Overflow newcomers",
   "text": "Stack Overflow: a mentor read your draft question first; those questions scored 50% higher",
-  "q2": "why"
+  "q2": "why",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1351,7 +1406,8 @@
   "by": "X",
   "src": "Case library, PR #5: Extension and 4-H volunteers",
   "text": "Master Gardeners: a veteran per 2–4 trainees cut first-year dropout from a quarter to 2%",
-  "q2": "why"
+  "q2": "why",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1359,7 +1415,8 @@
   "by": "X",
   "src": "Case library, PR #5: Open source newcomer barriers",
   "text": "open source: a starter task is 71% likelier to be finished when an experienced person is in the thread",
-  "q2": "why"
+  "q2": "why",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1367,7 +1424,8 @@
   "by": "X",
   "src": "Case library, PR #5: P2PU learning circles",
   "text": "P2PU: new facilitators who co-ran their first circle with a colleague did best, by P2PU’s account",
-  "q2": "why"
+  "q2": "why",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1450,7 +1508,8 @@
   "by": "X",
   "src": "Case library, PR #5: Google Summer of Code",
   "text": "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code; 1,000+ finished projects a year",
-  "q2": "where"
+  "q2": "where",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1458,7 +1517,8 @@
   "by": "X",
   "src": "Case library, PR #5: Google Summer of Code",
   "text": "Summer of Code: two project sizes and a stretchable deadline brought in people with jobs",
-  "q2": "where"
+  "q2": "where",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1466,7 +1526,8 @@
   "by": "X",
   "src": "Case library, PR #5: FIRST Robotics",
   "text": "FIRST: a January kickoff and the same events for every team; 3,000+ teams a year, 91% return",
-  "q2": "where"
+  "q2": "where",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1474,7 +1535,8 @@
   "by": "X",
   "src": "Case library, PR #5: NaNoWriMo",
   "text": "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party, for 400,000 people a year",
-  "q2": "where"
+  "q2": "where",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1482,7 +1544,8 @@
   "by": "X",
   "src": "Case library, PR #5: NaNoWriMo",
   "text": "NaNoWriMo: 900 liaisons with a written duty list ran 633 regions",
-  "q2": "where"
+  "q2": "where",
+  "q3": "what"
  },
  {
   "q": "how",
@@ -1524,27 +1587,30 @@
  },
  {
   "q": "how",
-  "theme": "keep the door open after it ends",
+  "theme": "nothing before or after a Cycle",
   "by": "X",
   "src": "Case library, PR #5: Recurse Center",
   "text": "Recurse Center: alumni keep the chat, the calendar and the jobs board; they stayed involved for years",
-  "q2": "what"
+  "q2": "what",
+  "q3": "where"
  },
  {
   "q": "how",
-  "theme": "keep the door open after it ends",
+  "theme": "nothing before or after a Cycle",
   "by": "X",
   "src": "Case library, PR #5: NaNoWriMo",
   "text": "NaNoWriMo’s regions kept going on channels they owned; one night, 148 people wrote 404,500 words",
-  "q2": "what"
+  "q2": "what",
+  "q3": "where"
  },
  {
   "q": "how",
-  "theme": "keep the door open after it ends",
+  "theme": "nothing before or after a Cycle",
   "by": "X",
   "src": "Case library, PR #5: Extension and 4-H volunteers",
   "text": "Master Gardeners stayed for the local association, five of eight coordinators said",
-  "q2": "what"
+  "q2": "what",
+  "q3": "where"
  },
  {
   "q": "how",
@@ -1593,7 +1659,7 @@
  },
  {
   "q": "how",
-  "theme": "one source, bundled messages",
+  "theme": "one source, many channels",
   "by": "X",
   "src": "Case library, PR #5: NPR COPE",
   "text": "NPR: content stored once and drawn by every outlet; requests went from 3.5 to 53 million",
@@ -1601,7 +1667,7 @@
  },
  {
   "q": "how",
-  "theme": "one source, bundled messages",
+  "theme": "one source, many channels",
   "by": "X",
   "src": "Case library, PR #5: Channel overload",
   "text": "notifications bundled three times a day made people calmer and more attentive; hourly and none did not",
