@@ -14,7 +14,7 @@ Dashed means planned: not running yet. Data lives in content/flow/flow.json.
 import json, math
 
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
-W, H = 2700, 1880
+W, H = 2700, 1920
 FONT = "Inter, system-ui, sans-serif"
 TITLE_FS, BODY_FS, LABEL_FS = 21.993, 15.118, 15.118
 PAD, TITLE_LH, BODY_LH = 22, 30, 22
@@ -163,6 +163,13 @@ def svg(data):
     blocks.insert(0, f'<path d="M{left:.1f},{top:.1f} H{right:.1f} V{mid:.1f} H{inner:.1f} V{bot:.1f} H{left:.1f} Z" '
                      f'fill="none" stroke="{INK}" stroke-width="2"/><text x="{c[0] + c[2] / 2 + 96:.1f}" y="{top + 38:.1f}" '
                      f'font-size="15.118" font-weight="700" fill="{INK}">The region, and what it runs</text>')
+    # national holds the regional association for now: one outline around both
+    n_ = boxes["national"]
+    otop, oleft, oright = n_[1] - 44, left - 26, right + 26
+    blocks.insert(0, f'<path d="M{oleft:.1f},{otop:.1f} H{oright:.1f} V{mid + 14:.1f} H{inner + 14:.1f} V{bot + 14:.1f} '
+                     f'H{oleft:.1f} Z" fill="none" stroke="{INK}" stroke-width="4"/><text x="{oleft + 16:.1f}" '
+                     f'y="{otop + 30:.1f}" font-size="15.118" font-weight="700" fill="{INK}">The Upskilling Labs: '
+                     f'national, and the region within it</text>')
 
     # heading and key
     head = [f'<text x="56" y="92" font-size="43.987" font-weight="700" fill="{INK}">{esc(data["title"])}</text>',
@@ -185,7 +192,7 @@ def svg(data):
                f'stroke-width="6"/><text x="{kx + 816}" y="{ky + 55.5}" font-size="15.118" fill="{INK}">People</text>')
     key.append(f'<rect x="{kx + 990}" y="{ky + 36}" width="40" height="28" fill="{PAPER}" stroke="{INK}" '
                f'stroke-width="3"/><text x="{kx + 1046}" y="{ky + 55.5}" font-size="15.118" fill="{INK}">'
-               f'Outside the region</text>')
+               f'Not run by the region</text>')
 
     body = "".join(head + blocks + lines + heads + stops + labels + key)
     out = (f'<svg class="fnet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '

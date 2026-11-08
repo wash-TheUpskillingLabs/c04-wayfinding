@@ -453,7 +453,7 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 .sitmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.77869), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
-.flow-wrap .fnet { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.69630), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
+.flow-wrap .fnet { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.71111), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-show { display:flex; flex-wrap:wrap; gap:8px; align-items:center; position:relative; top:-1.38px; }
 .flow-show > .t { position:relative; top:.7px; margin-right:4px; }
 .flow-show[hidden] { display:none; }

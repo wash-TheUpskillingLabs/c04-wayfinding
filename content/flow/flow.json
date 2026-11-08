@@ -5,10 +5,10 @@
   {
    "id": "national",
    "x": 1450,
-   "y": 250,
+   "y": 290,
    "w": 380,
    "kind": "outside",
-   "title": "The Upskilling Labs, national",
+   "title": "National",
    "body": [
     "The brand, the board, the Ambassador program",
     "National OLOS: built and maintained here"
@@ -17,7 +17,7 @@
   {
    "id": "funders",
    "x": 2250,
-   "y": 250,
+   "y": 290,
    "w": 380,
    "kind": "outside",
    "planned": true,
@@ -29,7 +29,7 @@
   {
    "id": "commons",
    "x": 700,
-   "y": 600,
+   "y": 640,
    "w": 440,
    "kind": "org",
    "title": "The region’s OLOS, modules and kits",
@@ -43,20 +43,21 @@
   {
    "id": "region",
    "x": 1450,
-   "y": 600,
+   "y": 640,
    "w": 440,
    "kind": "org",
    "title": "The regional association",
    "body": [
-    "With the steering committee: decides what the",
-    "region becomes, keeps its fork of OLOS current,",
-    "runs sessions and the Cycle"
+    "Part of The Upskilling Labs for now. With the",
+    "steering committee: decides what the region",
+    "becomes, keeps its fork of OLOS current, runs",
+    "sessions and the Cycle"
    ]
   },
   {
    "id": "new",
    "x": 230,
-   "y": 1060,
+   "y": 1100,
    "w": 260,
    "kind": "people",
    "title": "Newcomers",
@@ -68,7 +69,7 @@
   {
    "id": "gather",
    "x": 700,
-   "y": 1060,
+   "y": 1100,
    "w": 380,
    "kind": "org",
    "title": "Sessions and gatherings",
@@ -81,7 +82,7 @@
   {
    "id": "members",
    "x": 1230,
-   "y": 1060,
+   "y": 1100,
    "w": 240,
    "kind": "people",
    "title": "Members",
@@ -93,7 +94,7 @@
   {
    "id": "cycle",
    "x": 1720,
-   "y": 1060,
+   "y": 1100,
    "w": 300,
    "kind": "org",
    "title": "Build Cycle C04",
@@ -105,7 +106,7 @@
   {
    "id": "alumni",
    "x": 2180,
-   "y": 1060,
+   "y": 1100,
    "w": 240,
    "kind": "people",
    "title": "Alumni",
@@ -117,7 +118,7 @@
   {
    "id": "employers",
    "x": 2550,
-   "y": 1060,
+   "y": 1100,
    "w": 220,
    "kind": "outside",
    "planned": true,
@@ -129,7 +130,7 @@
   {
    "id": "partners",
    "x": 520,
-   "y": 1560,
+   "y": 1600,
    "w": 360,
    "kind": "outside",
    "title": "Partners",
@@ -141,7 +142,7 @@
   {
    "id": "givers",
    "x": 1400,
-   "y": 1560,
+   "y": 1600,
    "w": 420,
    "kind": "people",
    "planned": true,
@@ -195,7 +196,7 @@
    "label": "hired, on what they built",
    "at": [
     2370,
-    968
+    1008
    ]
   },
   {
@@ -205,14 +206,14 @@
     "alumni:b:-60",
     [
      2120,
-     1560
+     1600
     ],
     "givers:r:0"
    ],
    "label": "stay on to give back",
    "at": [
     1860,
-    1560
+    1600
    ]
   },
   {
@@ -222,14 +223,14 @@
     "givers:l:-20",
     [
      800,
-     1540
+     1580
     ],
     "gather:b:100"
    ],
    "label": "host and teach",
    "at": [
     1000,
-    1540
+    1580
    ]
   },
   {
@@ -239,14 +240,14 @@
     "partners:l:0",
     [
      230,
-     1560
+     1600
     ],
     "new:b:0"
    ],
    "label": "their patrons",
    "at": [
     230,
-    1340
+    1380
    ]
   },
   {
@@ -255,13 +256,13 @@
     "gather:b:180",
     [
      880,
-     1320
+     1360
     ]
    ],
    "label": "came once",
    "at": [
     895,
-    1220
+    1260
    ],
    "anchor": "start"
   },
@@ -271,13 +272,13 @@
     "cycle:b:100",
     [
      1820,
-     1320
+     1360
     ]
    ],
    "label": "not picked at the vote",
    "at": [
     1835,
-    1220
+    1260
    ],
    "anchor": "start"
   },
@@ -287,13 +288,13 @@
     "alumni:b:60",
     [
      2240,
-     1320
+     1360
     ]
    ],
    "label": "the program ends; nothing after",
    "at": [
     2250,
-    1220
+    1260
    ],
    "anchor": "start"
   },
@@ -311,18 +312,18 @@
     "cycle:t:-150",
     [
      1570,
-     760
+     800
     ],
     [
      840,
-     760
+     800
     ],
     "commons:b:140"
    ],
    "label": "prototypes and merged changes",
    "at": [
     1230,
-    760
+    800
    ]
   },
   {
@@ -332,18 +333,18 @@
     "givers:t:20",
     [
      1420,
-     810
+     850
     ],
     [
      760,
-     810
+     850
     ],
     "commons:b:60"
    ],
    "label": "issues, pull requests, kits",
    "at": [
     1100,
-    810
+    850
    ]
   },
   {
@@ -356,7 +357,7 @@
    "label": "kits and modules to run",
    "at": [
     660,
-    905
+    945
    ]
   },
   {
@@ -368,7 +369,7 @@
    "label": "programs for their patrons",
    "at": [
     545,
-    1250
+    1290
    ],
    "anchor": "end"
   },
@@ -381,7 +382,7 @@
    "label": "problems worth twelve weeks",
    "at": [
     1605,
-    735
+    775
    ],
    "anchor": "end"
   },
@@ -394,7 +395,7 @@
    "label": "finds, paradoxes, what each team learned",
    "at": [
     1675,
-    840
+    880
    ],
    "anchor": "start"
   },
@@ -412,14 +413,14 @@
     "alumni:t:-40",
     [
      2140,
-     600
+     640
     ],
     "region:r:0"
    ],
    "label": "what alumni tell us",
    "at": [
     2140,
-    790
+    830
    ]
   },
   {
@@ -431,7 +432,7 @@
    "label": "rooms, co-hosts",
    "at": [
     635,
-    1320
+    1360
    ],
    "anchor": "start"
   },
@@ -450,18 +451,18 @@
     "employers:t:0",
     [
      2550,
-     920
+     960
     ],
     [
      1760,
-     920
+     960
     ],
     "cycle:t:40"
    ],
    "label": "judges and hiring managers, at the showcase",
    "at": [
     2330,
-    920
+    960
    ]
   },
   {
@@ -470,14 +471,14 @@
     "national:l:20",
     [
      760,
-     270
+     310
     ],
     "commons:t:60"
    ],
    "label": "OLOS, forked to the region",
    "at": [
     1010,
-    270
+    310
    ]
   },
   {
@@ -486,14 +487,14 @@
     "commons:t:-60",
     [
      640,
-     230
+     270
     ],
     "national:l:-20"
    ],
    "label": "changes that held up, upstream",
    "at": [
     1010,
-    230
+    270
    ]
   },
   {
@@ -505,7 +506,7 @@
    "label": "the method, the Cycle’s design",
    "at": [
     1450,
-    420
+    460
    ]
   },
   {
@@ -515,33 +516,33 @@
     "funders:l:0",
     [
      1800,
-     250
+     290
     ],
     [
      1800,
-     560
+     600
     ],
     "region:r:-40"
    ],
    "label": "grants and sponsorship",
    "at": [
     1800,
-    420
+    460
    ]
   }
  ],
  "outs": [
   [
    880,
-   1320
+   1360
   ],
   [
    1820,
-   1320
+   1360
   ],
   [
    2240,
-   1320
+   1360
   ]
  ]
 }
