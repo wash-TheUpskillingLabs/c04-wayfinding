@@ -304,5 +304,88 @@
    "O",
    "Organizers"
   ]
- ]
+ ],
+ "shape": {
+  "in": {
+   "from": [
+    "hear",
+    -18
+   ],
+   "to": [
+    "join",
+    0
+   ],
+   "label": "many ways in, one door: the Cycle"
+  },
+  "out": {
+   "from": [
+    "show",
+    0
+   ],
+   "to": [
+    "after",
+    240
+   ],
+   "label": "many ways out"
+  },
+  "diamonds": [
+   {
+    "from": [
+     "join",
+     0
+    ],
+    "to": [
+     "pod",
+     0
+    ],
+    "open": [
+     "many problem",
+     "situations"
+    ],
+    "close": "Vote 1"
+   },
+   {
+    "from": [
+     "pod",
+     0
+    ],
+    "to": [
+     "pod",
+     160
+    ],
+    "open": [
+     "research"
+    ],
+    "close": "The paradox"
+   },
+   {
+    "from": [
+     "pod",
+     160
+    ],
+    "to": [
+     "team",
+     0
+    ],
+    "open": [
+     "frames"
+    ],
+    "close": "Vote 2"
+   },
+   {
+    "from": [
+     "team",
+     0
+    ],
+    "to": [
+     "show",
+     0
+    ],
+    "open": [
+     "prototypes"
+    ],
+    "close": "Showcase"
+   }
+  ]
+ }
 }
