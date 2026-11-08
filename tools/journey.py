@@ -169,14 +169,19 @@ def svg(d):
             end(P - 30, Y + o, hue[o])
             continue
         dy = fate[o] - (Y + o)
-        pts += [(P + 18 + abs(dy), fate[o]), (P + 18 + G + 10, fate[o])]
+        pts += [(P + 18 + abs(dy), fate[o]), (P + 18 + G + 56, fate[o])]
         poly(pts, col=hue[o])
     caps.append((P, Y - 18, Y + 18, True))
     label((J + P) / 2, Y - 44, pr["label"])
     front.append(small((J + P) / 2, Y + 50, pr["note"], italic=True))
 
     # inside each pod: proposals open into a bundle and merge back at a choice
-    x = P + 18 + G + 10
+    x = P + 18 + G + 56
+    # each pod is a named line: a disc with a letter, so lines read without colour (WMATA's service discs)
+    for c, letter in zip(pods, pd["letters"]):
+        dxc = P + 18 + G + 26
+        front.append(f'<circle cx="{dxc}" cy="{c}" r="17" fill="{PAPER}" stroke="{podhue[c]}" stroke-width="6"/>'
+                     f'<text x="{dxc}" y="{c + 5}" text-anchor="middle" font-size="{SFS}" font-weight="700" fill="{INK}">{letter}</text>')
     sp = 12
     for st in pd["stages"]:
         ex = at(st["to"]) if isinstance(st["to"], list) else P + st["to"]
@@ -206,20 +211,23 @@ def svg(d):
         poly([(x + 30, q), (S - 24 - dy, q), (S - 24, Y), (S, Y)], col=col)
     label((x + S - 60) / 2, Y - G / 2, pj["label"])
     # the dots: there may be more pods, and more projects in each, than drawn
-    for dx_ in (P + 18 + G + 60, (P + 250 + P + 460) / 2, (x + S - 90) / 2):
+    for dx_ in (P + 18 + G + 26, (P + 320 + P + 560) / 2, (x + S - 90) / 2):
         dots(dx_, Y + G / 2)
     dots((x + S - 90) / 2 + 60, Y)
     poly([(S, Y), (cx(idx["after"]), Y)], 10)
 
-    # many ways out: the line splits into wherever people take it
+    # many ways out: the line splits, and each way out is named for where it ends, like a Metro line
     fo = sh["out"]
     ox = cx(idx[fo["from"]])
     mo = fo["n"]
     for k in range(mo):
-        o = (k - (mo - 1) / 2) * 30
+        o = (k - (mo - 1) / 2) * 36
         poly([(ox, Y), (ox + 40, Y), (ox + 40 + abs(o), Y + o), (W - LM - 18, Y + o)])
         lines.append(f'<path d="M{W - LM - 20},{Y + o - 10} L{W - LM},{Y + o} L{W - LM - 20},{Y + o + 10} Z" fill="{BLUE}"/>')
-    front.append(small(ox + 90, Y - (mo - 1) / 2 * 30 - 16, fo["label"], "start", 600))
+    for k, name in enumerate(fo.get("ends", [])):
+        o = (k - (mo - 1) / 2) * 36
+        front.append(small(W - LM - 26, Y + o - 9, name, "end", 600))
+    front.append(small(ox + 40, Y - (mo - 1) / 2 * 36 - 34, fo["label"], "start", 700, caps=True))
 
     # arcs above: skips and returns
     for ar in d["arcs"]:
@@ -311,6 +319,10 @@ def svg(d):
            f'<text x="{LM + 106}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Each Pod Has Its Own Line; Blue Is Yours</text>'
            f'<line x1="{LM + 500}" y1="{ky + 44}" x2="{LM + 590}" y2="{ky + 44}" stroke="{SILVER}" stroke-width="8"/>'
            f'<text x="{LM + 606}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">A Proposal Not Chosen</text>',
+           f'<circle cx="{LM + 900}" cy="{ky + 44}" r="14" fill="{PAPER}" stroke="{GREEN}" stroke-width="5"/>'
+           f'<text x="{LM + 900}" y="{ky + 49}" text-anchor="middle" font-size="{SFS}" font-weight="700" fill="{INK}">A</text>'
+           f'<text x="{LM + 928}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">A Pod’s Line, by Letter as Well as Colour</text>'
+           f'<text x="{LM + 1386}" y="{ky + 49.5}" font-size="{FS}" font-style="italic" fill="{INK}">Not to scale: steps are evenly spaced, not by time.</text>',
            f'<line x1="{LM + 270}" y1="{ky}" x2="{LM + 360}" y2="{ky}" stroke="{BLUE}" stroke-width="10" stroke-dasharray="20 12"/>'
            f'<text x="{LM + 376}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Planned, Not Running Yet</text>',
            f'<path d="M{LM + 640},{ky - 10} H{LM + 730} M{LM + 640},{ky + 2} H{LM + 700}" stroke="{BLUE}" stroke-width="8"/>'

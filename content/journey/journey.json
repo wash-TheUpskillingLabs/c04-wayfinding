@@ -321,7 +321,14 @@
   "out": {
    "from": "after",
    "n": 5,
-   "label": "Many Ways Out"
+   "label": "Many Ways Out",
+   "ends": [
+    "New Job",
+    "Contract Work",
+    "Job Search",
+    "Own Venture",
+    "Teach or Mentor"
+   ]
   },
   "problem": {
    "label": "Problem Proposals",
@@ -347,6 +354,11 @@
      ],
      "label": "Project Proposals"
     }
+   ],
+   "letters": [
+    "A",
+    "B",
+    "C"
    ]
   },
   "projects": {
