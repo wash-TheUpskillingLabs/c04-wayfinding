@@ -19,14 +19,17 @@ GOLD = math.radians(137.508)
 
 # Where each circle sits. The question's word runs along its upper-left arc.
 CIRCLES = {
-    "what": dict(cx=400, cy=720, r=340, word="WHAT"),
-    "who": dict(cx=600, cy=235, r=232, word="WHO"),
-    "where": dict(cx=830, cy=920, r=220, word="WHERE"),
-    "why": dict(cx=1120, cy=325, r=352, word="WHY"),
-    "how": dict(cx=1340, cy=850, r=330, word="HOW SOLVED"),
+    "what": dict(cx=400, cy=720, r=340, word="WHAT", line="red"),
+    "who": dict(cx=590, cy=240, r=246, word="WHO", line="ink"),
+    "where": dict(cx=835, cy=945, r=250, word="WHERE", line="ink"),
+    "why": dict(cx=1120, cy=325, r=352, word="WHY", line="ink"),
+    "how": dict(cx=1340, cy=850, r=330, word="HOW SOLVED", line="blue"),
 }
 for _c in CIRCLES.values():
     _c["cx"] = round(_c["cx"] * K); _c["cy"] = round(_c["cy"] * K + 20); _c["r"] = round(_c["r"] * K)
+INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
+LINE = {"ink": INK, "red": RED, "blue": BLUE}
+LINE_W = 8      # every question is drawn as a Metro line
 VOICES = [("A", "alumni"), ("O", "organizers"), ("P", "problem owner"), ("S", "steering committee"), ("X", "other programs")]
 VOICE_NAME = dict(VOICES)
 
@@ -49,10 +52,20 @@ def wrap(text, n=WRAP):
     if cur: lines.append(cur)
     return lines
 
-def inside(c, x, y, w, h, pad=6):
+def crosses(c, x, y, w, h, band):
+    """Does the box touch this circle's line (its rim, widened by band)?"""
+    nx = min(max(c["cx"], x), x + w); ny = min(max(c["cy"], y), y + h)
+    near = math.hypot(nx - c["cx"], ny - c["cy"])
+    far = max(math.hypot(px - c["cx"], py - c["cy"]) for px, py in ((x, y), (x + w, y), (x, y + h), (x + w, y + h)))
+    return near < c["r"] + band and far > c["r"] - band
+
+def inside(c, x, y, w, h, pad=9):
+    """Inside its own line, and clear of every other line, so no stroke runs through type."""
     R = c["r"] - pad
     for px, py in ((x, y), (x + w, y), (x, y + h), (x + w, y + h)):
         if (px - c["cx"]) ** 2 + (py - c["cy"]) ** 2 > R * R: return False
+    for c2 in CIRCLES.values():
+        if c2 is not c and crosses(c2, x, y, w, h, pad): return False
     return True
 
 def hits(boxes, x, y, w, h, gap=2):
@@ -89,14 +102,14 @@ def build(statements):
             tx, ty = c["cx"] + rr * math.cos(ang), c["cy"] + rr * math.sin(ang)
             fs = min(34, 12 + 1.9 * cnt)
             tl = wrap(theme, 24 if len(theme) > 26 else 40)
-            w = max(tw(l, fs, True) for l in tl) + 6
+            w = max(tw(l, fs, True) for l in tl) + fs * .95 + 6
             h = fs * 1.05 * len(tl)
             pos = place_near(c, boxes, tx, ty, w, h, 0, 8)
             if pos is None: pos = (tx - w / 2, ty - h / 2)
             x, y = pos
             boxes.append((x, y, w, h))
             cxl, cyl = x + w / 2, y + h / 2
-            labels.append((cxl, y, tl, fs))
+            labels.append((x, y, tl, fs, q))
             heat.append((cxl, cyl, 44 + 9 * cnt, min(.34, .09 + .024 * cnt)))
             centres.append((cxl, cyl))
         # pass 2: statements, round robin so each theme keeps its nearest ground
@@ -116,89 +129,108 @@ def build(statements):
                 items.append((sx, sy, lines, s["by"], s["src"], s["text"]))
     return boxes, heat, labels, items, counts
 
-def word_arc(q):
-    """An arc on the circle's rim, centred where the rim faces open paper:
-    farthest from the other circles and the poster's edges."""
-    c = CIRCLES[q]; R = c["r"] + 16
+def word_angle(q):
+    """Where on the rim the question's sign goes: the angle facing the most open paper,
+    away from the other lines, the key in the top-left corner and the poster's edges."""
+    c = CIRCLES[q]; R = c["r"] + 60
     best, best_score = 0.0, -1e9
     for i in range(360):
         a = math.radians(i)
         x, y = c["cx"] + R * math.cos(a), c["cy"] + R * math.sin(a)
-        score = min(x - 40, W - 40 - x, y - 120 if x < 700 else y - 40, H - 60 - y)
+        score = min(x - 40, W - 40 - x, y - 40, H - 70 - y)
+        if x < 520 and y < 520: score = min(score, -100)
         for q2, c2 in CIRCLES.items():
             if q2 == q: continue
             score = min(score, math.hypot(x - c2["cx"], y - c2["cy"]) - c2["r"])
         if score > best_score: best, best_score = a, score
-    half = 1.1  # radians of arc on each side
-    upper = math.sin(best) < 0  # above the centre in SVG space
-    a0, a1 = (best - half, best + half) if upper else (best + half, best - half)
-    x0, y0 = c["cx"] + R * math.cos(a0), c["cy"] + R * math.sin(a0)
-    x1, y1 = c["cx"] + R * math.cos(a1), c["cy"] + R * math.sin(a1)
-    sweep = 1 if upper else 0
-    return f"M{x0:.1f},{y0:.1f} A{R},{R} 0 0 {sweep} {x1:.1f},{y1:.1f}"
+    return best
 
 def esc(t): return html.escape(t, quote=True)
 
+def sign_tile(q):
+    """The question's name on an enamel sign, set just outside its line where the rim faces open paper."""
+    c = CIRCLES[q]
+    fs, cap = 32.9879, 24          # the site's h2: cap height 24
+    w = tw(c["word"], fs, True) * 1.02 + 2 * 16
+    h = cap + 2 * 14
+    best = word_angle(q)
+    ux, uy = math.cos(best), math.sin(best)
+    reach = abs(w / 2 * ux) + abs(h / 2 * uy)
+    d = c["r"] + LINE_W / 2 + 10 + reach
+    x = min(max(c["cx"] + d * ux - w / 2, 24), W - 24 - w)
+    y = min(max(c["cy"] + d * uy - h / 2, 24), H - 24 - h)
+    fill = LINE[c["line"]]
+    ink_text = c["line"] != "ink"     # like .tile.red and .tile.blue: ink on the signal colours
+    return (f'<g class="pm-sign"><rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="4" fill="{fill}"/>'
+            f'<text x="{x + w / 2:.1f}" y="{y + 14 + cap:.1f}" text-anchor="middle" font-size="{fs}" font-weight="800" '
+            f'letter-spacing=".02em" fill="{INK if ink_text else PAPER}">{c["word"]}</text></g>')
+
 def svg(statements, asof, underlay=None):
+    """underlay is accepted for older callers and ignored: the sign system allows no decoration."""
     boxes, heat, labels, items, counts = build(statements)
     o = []
-    o.append(f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="pm-title pm-desc" class="sitmap">')
+    o.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="pm-title pm-desc" class="sitmap">')
     o.append('<title id="pm-title">The problem situation: how people find their way between the parts of The Labs</title>')
     o.append(f'<desc id="pm-desc">{sum(counts.values())} statements from alumni, organizers, the problem owner, the steering committee and other programs, sorted into what, who, where, why and how solved. Every statement is listed in the table that follows the map.</desc>')
-    o.append('<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap");.sitmap text{font-family:Inter,system-ui,sans-serif}</style>')
-    o.append('<defs><radialGradient id="pm-heat"><stop offset="0" stop-color="#0b3536" stop-opacity="1"/><stop offset=".55" stop-color="#0b3536" stop-opacity=".35"/><stop offset="1" stop-color="#0b3536" stop-opacity="0"/></radialGradient>')
+    o.append('<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap");'
+             '.sitmap text{font-family:Inter,system-ui,sans-serif;font-feature-settings:"ss01","cv11"}</style>')
+    o.append(f'<rect width="{W}" height="{H}" fill="{PAPER}"/>')
+    # the five lines
+    o.append('<g class="pm-lines" fill="none">')
     for q, c in CIRCLES.items():
-        o.append(f'<path id="pm-arc-{q}" d="{word_arc(q)}"/>')
-    o.append('</defs>')
-    o.append(f'<rect width="{W}" height="{H}" fill="#e5e7de"/>')
-    if underlay:
-        o.append(f'<image href="{underlay}" x="{W*0.28:.0f}" y="{-40}" width="{W*0.9:.0f}" height="{W*0.9*0.8273:.0f}" opacity=".09" preserveAspectRatio="xMidYMid slice" style="filter:grayscale(1)"/>')
-    # heat under everything
-    o.append('<g class="pm-heat">')
-    for x, y, r, op in heat:
-        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.0f}" fill="url(#pm-heat)" opacity="{op:.2f}"/>')
+        o.append(f'<circle cx="{c["cx"]}" cy="{c["cy"]}" r="{c["r"]}" stroke="{LINE[c["line"]]}" stroke-width="{LINE_W}"/>')
     o.append('</g>')
-    # circles and their words
-    for q, c in CIRCLES.items():
-        o.append(f'<circle cx="{c["cx"]}" cy="{c["cy"]}" r="{c["r"]}" fill="none" stroke="#0b3536" stroke-opacity=".55" stroke-width="1.2"/>')
-        o.append(f'<text class="pm-word" font-size="54" font-weight="800" fill="#0b3536" fill-opacity=".22" letter-spacing=".06em" text-anchor="middle"><textPath href="#pm-arc-{q}" startOffset="50%">{c["word"]}</textPath></text>')
     # statements
-    o.append(f'<g class="pm-items" font-size="{FS}" fill="#0b3536">')
+    o.append(f'<g class="pm-items" font-size="{FS}" fill="{INK}">')
     for x, y, lines, by, src, full in items:
         gx, gy = x + 4.5, y + LH * .62
         hollow = by == "X"
         o.append(f'<g class="pm-s" data-by="{by}"><title>{esc(full)} — {esc(VOICE_NAME[by])}, {esc(src)}</title>')
         if hollow:
-            o.append(f'<circle cx="{gx:.1f}" cy="{gy:.1f}" r="3.6" fill="none" stroke="#0b3536" stroke-width=".9"/>')
+            o.append(f'<circle cx="{gx:.1f}" cy="{gy:.1f}" r="3.5" fill="{PAPER}" stroke="{INK}" stroke-width="1"/>')
         else:
-            o.append(f'<circle cx="{gx:.1f}" cy="{gy:.1f}" r="3.8" fill="#0b3536"/>')
-        o.append(f'<text x="{gx:.1f}" y="{gy+1.9:.1f}" text-anchor="middle" font-size="5.2" font-weight="700" fill="{"#0b3536" if hollow else "#e5e7de"}">{by}</text>')
+            o.append(f'<circle cx="{gx:.1f}" cy="{gy:.1f}" r="3.8" fill="{INK}"/>')
+        o.append(f'<text x="{gx:.1f}" y="{gy+1.9:.1f}" text-anchor="middle" font-size="5.2" font-weight="800" fill="{INK if hollow else PAPER}">{by}</text>')
         for j, l in enumerate(lines):
             o.append(f'<text x="{x+GLYPH:.1f}" y="{y+LH*(j+.85):.1f}">{esc(l)}</text>')
         o.append('</g>')
     o.append('</g>')
-    # theme labels on top
-    o.append('<g class="pm-labels" font-weight="700" fill="#0b3536">')
-    for x, y, tl, fs in labels:
+    # themes as stations on their line
+    o.append(f'<g class="pm-stations" font-weight="800" fill="{INK}" letter-spacing="-.01em">')
+    for x, y, tl, fs, q in labels:
+        rr = fs * .3
+        o.append(f'<circle cx="{x + rr + fs*.06:.1f}" cy="{y + fs*.86 - fs*.36:.1f}" r="{rr:.1f}" fill="{PAPER}" stroke="{LINE[CIRCLES[q]["line"]]}" stroke-width="{max(2.5, fs*.13):.1f}"/>')
         for j, t in enumerate(tl):
-            o.append(f'<text x="{x:.1f}" y="{y + fs*1.05*j + fs*.86:.1f}" text-anchor="middle" font-size="{fs:.1f}">{esc(t)}</text>')
+            o.append(f'<text x="{x + fs*.95:.1f}" y="{y + fs*1.05*j + fs*.86:.1f}" font-size="{fs:.1f}">{esc(t)}</text>')
     o.append('</g>')
-    # title, legend, counts
-    o.append('<g fill="#0b3536">')
-    o.append(f'<text x="48" y="72" font-size="34" font-weight="700">The problem situation</text>')
-    o.append(f'<text x="48" y="100" font-size="15">How people find their way between the parts of The Labs. {sum(counts.values())} statements, as of {esc(asof)}.</text>')
-    o.append('<text x="48" y="140" font-size="11" font-weight="700">Who said it</text>')
-    for i, (k, name) in enumerate(VOICES):
-        yy = 162 + i * 20
+    # the question signs, outside their lines
+    for q in CIRCLES:
+        o.append(sign_tile(q))
+    # title and key, set like the site: cap heights on whole pixels, 4px steps
+    o.append(f'<g fill="{INK}">')
+    o.append(f'<text x="48" y="88" font-size="54.98" font-weight="800" letter-spacing="-.025em">The problem</text>')
+    o.append(f'<text x="48" y="148" font-size="54.98" font-weight="800" letter-spacing="-.025em">situation</text>')
+    o.append(f'<text x="48" y="188" font-size="16.494">{sum(counts.values())} statements, as of {esc(asof)}.</text>')
+    o.append(f'<text x="48" y="236" font-size="13.745" font-weight="800">How to read the signs</text>')
+    ky = 268
+    for col, name in ((RED, "WHAT gets in the way: where people stop"), (INK, "WHO, WHERE and WHY"), (BLUE, "HOW SOLVED: only what worked elsewhere")):
+        o.append(f'<line x1="48" y1="{ky-5}" x2="80" y2="{ky-5}" stroke="{col}" stroke-width="{LINE_W}"/>')
+        o.append(f'<text x="92" y="{ky}" font-size="13.745">{esc(name)}</text>')
+        ky += 24
+    o.append(f'<circle cx="64" cy="{ky-5}" r="6" fill="{PAPER}" stroke="{INK}" stroke-width="3"/>')
+    o.append(f'<text x="92" y="{ky}" font-size="13.745">A theme. The bigger the name, the more was said</text>')
+    ky += 32
+    for k, name in VOICES:
         if k == "X":
-            o.append(f'<circle cx="55" cy="{yy-4}" r="5.5" fill="none" stroke="#0b3536" stroke-width="1"/><text x="55" y="{yy-1}" text-anchor="middle" font-size="7" font-weight="700">X</text>')
+            o.append(f'<circle cx="64" cy="{ky-5}" r="6.5" fill="{PAPER}" stroke="{INK}" stroke-width="1.4"/><text x="64" y="{ky-1.6}" text-anchor="middle" font-size="9" font-weight="800">X</text>')
         else:
-            o.append(f'<circle cx="55" cy="{yy-4}" r="5.8" fill="#0b3536"/><text x="55" y="{yy-1}" text-anchor="middle" font-size="7" font-weight="700" fill="#e5e7de">{k}</text>')
-        o.append(f'<text x="70" y="{yy}" font-size="11">{esc(name)}</text>')
-    o.append(f'<text x="48" y="{162 + len(VOICES)*20 + 8}" font-size="11">Darker ground: more was said there. Larger words: a theme more people named.</text>')
-    # footer: counts per question
+            o.append(f'<circle cx="64" cy="{ky-5}" r="7" fill="{INK}"/><text x="64" y="{ky-1.6}" text-anchor="middle" font-size="9" font-weight="800" fill="{PAPER}">{k}</text>')
+        o.append(f'<text x="92" y="{ky}" font-size="13.745">{esc(name)}</text>')
+        ky += 24
     parts = " · ".join(f'{CIRCLES[q]["word"].title()} {counts.get(q, 0)}' for q in CIRCLES)
-    o.append(f'<text x="48" y="{H-28}" font-size="11">{esc(parts)}. Built from content/map/statements.json; add a line and rebuild. Wayfinding, a Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington.</text>')
+    for j, line in enumerate((parts + ".", "Built from content/map/statements.json; add a line and rebuild.",
+                              "Wayfinding, a Research Pod of Build Cycle C04,", "The Upskilling Labs of Greater Washington.")):
+        o.append(f'<text x="48" y="{H - 32 - 24 * (3 - j)}" font-size="13.745">{esc(line)}</text>')
     o.append('</g></svg>')
     return "\n".join(o), counts, items
 
