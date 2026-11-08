@@ -48,12 +48,12 @@
    "y": 640,
    "w": 440,
    "kind": "org",
-   "title": "The regional association",
+   "title": "The region’s steering committee",
    "body": [
-    "Part of The Upskilling Labs for now. With the",
-    "steering committee: decides what the region",
-    "becomes, keeps its fork of OLOS current, runs",
-    "sessions and the Cycle"
+    "Part of The Upskilling Labs for now, becoming",
+    "a regional association. Decides what the",
+    "region becomes, keeps its fork of OLOS current,",
+    "runs sessions and the Cycle"
    ]
   },
   {
@@ -149,10 +149,11 @@
    "y": 1600,
    "w": 440,
    "kind": "people",
-   "title": "Mentors, trainers and hosts",
+   "title": "Practitioners, mostly alumni",
    "body": [
-    "Practitioners who teach a session or take a",
-    "stuck team’s question. Hosting from kits is planned"
+    "Mentors, trainers and hosts: teach a session",
+    "or take a stuck team’s question. Hosting",
+    "from kits is planned"
    ]
   },
   {
@@ -212,8 +213,9 @@
    "label": "a record an employer can read",
    "at": [
     2370,
-    1008
-   ]
+    1030
+   ],
+   "owner": "Unclaimed"
   },
   {
    "type": "people",
@@ -262,7 +264,8 @@
    "at": [
     230,
     1380
-   ]
+   ],
+   "owner": "Unclaimed"
   },
   {
    "type": "leak",
@@ -307,10 +310,9 @@
    ],
    "label": "the program ends; nothing after",
    "at": [
-    2250,
-    1260
-   ],
-   "anchor": "start"
+    2240,
+    1440
+   ]
   },
   {
    "type": "work",
@@ -347,19 +349,20 @@
     "givers:t:20",
     [
      1420,
-     850
+     890
     ],
     [
      760,
-     850
+     890
     ],
     "commons:b:60"
    ],
    "label": "issues, pull requests, kits",
    "at": [
     1100,
-    850
-   ]
+    890
+   ],
+   "owner": "Unclaimed"
   },
   {
    "type": "work",
@@ -372,7 +375,8 @@
    "at": [
     660,
     945
-   ]
+   ],
+   "owner": "Unclaimed"
   },
   {
    "type": "work",
@@ -409,7 +413,7 @@
    "label": "finds, paradoxes, what each team learned",
    "at": [
     1675,
-    880
+    1000
    ],
    "anchor": "start"
   },
@@ -481,7 +485,8 @@
    "at": [
     2330,
     960
-   ]
+   ],
+   "owner": "Unclaimed"
   },
   {
    "type": "work",
@@ -533,7 +538,9 @@
     "funders:l:0",
     "national:r:0"
    ],
-   "label": "grants, contracts, partnerships"
+   "label": "grants, contracts, partnerships (not yet confirmed)",
+   "planned": true,
+   "owner": "National"
   },
   {
    "type": "support",
@@ -546,7 +553,8 @@
    "at": [
     1960,
     600
-   ]
+   ],
+   "owner": "Steering committee"
   },
   {
    "type": "knowledge",
@@ -588,7 +596,8 @@
    "at": [
     1275,
     1250
-   ]
+   ],
+   "owner": "Unclaimed"
   },
   {
    "type": "leak",
@@ -601,10 +610,66 @@
    ],
    "label": "nothing published yet",
    "at": [
-    1845,
-    1005
+    1880,
+    940
    ],
-   "anchor": "end"
+   "anchor": "start"
+  },
+  {
+   "type": "people",
+   "label": "a skill and a record, carried on",
+   "path": [
+    "alumni:r:40",
+    [
+     2370,
+     1140
+    ],
+    [
+     2370,
+     1360
+    ]
+   ],
+   "exit": true,
+   "at": [
+    2390,
+    1260
+   ],
+   "anchor": "start"
+  },
+  {
+   "type": "knowledge",
+   "label": "a working regional instance, and what it costs",
+   "path": [
+    "region:t:80",
+    "national:b:80"
+   ],
+   "at": [
+    1600,
+    420
+   ],
+   "anchor": "start"
+  },
+  {
+   "type": "knowledge",
+   "label": "the Cycle’s account, published",
+   "path": [
+    "cycle:t:60",
+    [
+     1780,
+     840
+    ],
+    [
+     900,
+     840
+    ],
+    "commons:b:180"
+   ],
+   "planned": true,
+   "owner": "Unclaimed",
+   "at": [
+    1000,
+    840
+   ]
   }
  ],
  "outs": [
@@ -623,6 +688,12 @@
   [
    1860,
    940
+  ]
+ ],
+ "exits": [
+  [
+   2370,
+   1360
   ]
  ]
 }

@@ -74,6 +74,7 @@ def svg(data):
     nodes = {n["id"]: n for n in data["nodes"]}
     boxes = {k: box(n) for k, n in nodes.items()}
     outs = [tuple(o) for o in data.get("outs", [])]
+    exits = [tuple(o) for o in data.get("exits", [])]
 
     lines, labels, heads = [], [], []
     for f in data["flows"]:
@@ -84,7 +85,7 @@ def svg(data):
         # straighten: a box-side anchor next to a via point shares its axis
         color, sw = STYLE[f["type"]]
         leak = f["type"] == "leak"
-        if leak:  # stop short of the stop sign
+        if leak or f.get("exit"):  # stop short of the stop sign or the exit ring
             (ax, ay), (bx, by) = pts[-2], pts[-1]
             L = math.hypot(bx - ax, by - ay)
             pts[-1] = (bx - (bx - ax) / L * 26, by - (by - ay) / L * 26)
@@ -93,7 +94,7 @@ def svg(data):
             dash = ' stroke-dasharray="2 12" stroke-linecap="round"'
         cls = f'fl f-{f["type"]}'
         tip = pts[-1]
-        if not leak:  # pull the line back under the arrowhead
+        if not leak and not f.get("exit"):  # pull the line back under the arrowhead
             (ax, ay), (bx, by) = pts[-2], pts[-1]
             L = math.hypot(bx - ax, by - ay)
             ux, uy = (bx - ax) / L, (by - ay) / L
@@ -112,6 +113,8 @@ def svg(data):
             a, b = max(segs, key=lambda s: math.hypot(s[1][0] - s[0][0], s[1][1] - s[0][1]))
             lx, ly = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2
         text = f["label"]
+        if f.get("count"):
+            text += f" ({f['count']})"
         tw = len(text) * LABEL_FS * 0.53 + 16
         anc = f.get("anchor", "middle")
         rx = {"middle": lx - tw / 2, "start": lx, "end": lx - tw}[anc]
@@ -122,12 +125,31 @@ def svg(data):
             f'<g class="{cls}"><rect x="{rx:.1f}" y="{ly - 15:.1f}" width="{tw:.1f}" height="30" fill="{PAPER}"/>'
             f'<text x="{tx:.1f}" y="{ly + 5.5:.1f}" text-anchor="{anc}" font-size="{LABEL_FS}" '
             f'font-weight="{weight}" fill="{lc}">{esc(text)}</text></g>')
+        if f.get("owner"):  # who holds a planned line
+            ot = f["owner"]
+            ow = len(ot) * 13.745 * 0.56 + 16
+            orx = {"middle": lx - ow / 2, "start": lx, "end": lx - ow}[anc]
+            labels.append(
+                f'<g class="{cls}"><rect x="{orx:.1f}" y="{ly + 15:.1f}" width="{ow:.1f}" height="26" fill="{PAPER}"/>'
+                f'<text x="{tx:.1f}" y="{ly + 33:.1f}" text-anchor="{anc}" font-size="13.745" font-weight="600" '
+                f'fill="{INK}" letter-spacing=".5">{esc(ot).upper()}</text></g>')
 
     stops = []
-    for ox, oy in outs:
-        stops.append(f'<g class="fl f-leak"><circle cx="{ox}" cy="{oy}" r="14" fill="{PAPER}" '
-                     f'stroke="{RED}" stroke-width="6"/><text x="{ox}" y="{oy + 44}" text-anchor="middle" '
-                     f'font-size="{LABEL_FS}" font-weight="600" fill="{INK}">Leaves</text></g>')
+    # the word sits below the ring unless the line arrives from below
+    from_below = set()
+    for f in data["flows"]:
+        if f["type"] == "leak" or f.get("exit"):
+            prev = anchor(f["path"][-2], boxes)[0]
+            end = tuple(f["path"][-1])
+            if prev[1] > end[1]:
+                from_below.add(end)
+    for ring, word, color in [(o, "Leaves", RED) for o in outs] + [(o, "Carries on", BLUE) for o in exits]:
+        ox, oy = ring
+        wy = oy - 30 if ring in from_below else oy + 44
+        cls = "f-leak" if color == RED else "f-people"
+        stops.append(f'<g class="fl {cls}"><circle cx="{ox}" cy="{oy}" r="14" fill="{PAPER}" '
+                     f'stroke="{color}" stroke-width="6"/><text x="{ox}" y="{wy}" text-anchor="middle" '
+                     f'font-size="{LABEL_FS}" font-weight="600" fill="{INK}">{word}</text></g>')
 
     blocks = []
     for k, n in nodes.items():
@@ -196,6 +218,11 @@ def svg(data):
     key.append(f'<rect x="{kx + 990}" y="{ky + 36}" width="40" height="28" fill="{PAPER}" stroke="{INK}" '
                f'stroke-width="3"/><text x="{kx + 1046}" y="{ky + 55.5}" font-size="15.118" fill="{INK}">'
                f'Not run by the region</text>')
+    key.append(f'<circle cx="{kx + 1310}" cy="{ky + 50}" r="12" fill="{PAPER}" stroke="{BLUE}" stroke-width="5"/>'
+               f'<text x="{kx + 1346}" y="{ky + 55.5}" font-size="15.118" fill="{INK}">Carried out of The Labs</text>')
+    key.append(f'<text x="{kx + 1650}" y="{ky + 55.5}" font-size="13.745" font-weight="600" fill="{INK}" '
+               f'letter-spacing=".5">UNCLAIMED</text><text x="{kx + 1760}" y="{ky + 55.5}" font-size="15.118" '
+               f'fill="{INK}">under a dashed line: nobody holds it yet, so it is yours to take</text>')
 
     body = "".join(head + blocks + lines + heads + stops + labels + key)
     out = (f'<svg class="fnet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
