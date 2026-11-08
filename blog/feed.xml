@@ -8,6 +8,13 @@
   <updated>2026-11-07T12:00:00-05:00</updated>
   <author><name>The Wayfinding pod</name></author>
   <entry>
+    <title>How the region fits together, and where your piece plugs in</title>
+    <link href="/blog/region-chart/" />
+    <id>tag:c04-wayfinding,2026-11-07:region-chart</id>
+    <updated>2026-11-07T12:00:00-05:00</updated>
+    <summary>One map of how The Upskilling Labs of Greater Washington runs today, what’s planned, and four places where value leaks. For the core contributors who will fix them.</summary>
+  </entry>
+  <entry>
     <title>Every way we’ve heard of getting lost, on one map</title>
     <link href="/blog/problem-situation/" />
     <id>tag:c04-wayfinding,2026-11-07:problem-situation</id>

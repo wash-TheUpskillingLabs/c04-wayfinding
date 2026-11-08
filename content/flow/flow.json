@@ -1,0 +1,628 @@
+{
+ "title": "How the region fits together",
+ "subtitle": "Follow one kind of line at a time: people, work and code, knowledge, or money and support. Dashed is planned.",
+ "nodes": [
+  {
+   "id": "national",
+   "x": 1450,
+   "y": 290,
+   "w": 380,
+   "kind": "outside",
+   "title": "National",
+   "body": [
+    "The brand, the Board, the charter, fundraising",
+    "National OLOS, the Ambassador program,",
+    "summits in Washington (planned)"
+   ]
+  },
+  {
+   "id": "funders",
+   "x": 2250,
+   "y": 290,
+   "w": 380,
+   "kind": "outside",
+   "title": "Funders and sponsors",
+   "body": [
+    "Foundations, governments, universities,",
+    "companies"
+   ]
+  },
+  {
+   "id": "commons",
+   "x": 700,
+   "y": 640,
+   "w": 440,
+   "kind": "org",
+   "title": "The region’s OLOS, modules and kits",
+   "body": [
+    "A fork of national OLOS, the app",
+    "Modules and kits (planned)",
+    "Open contribution: contributor, reviewer,",
+    "committer, maintainer (planned)"
+   ],
+   "tag": "Share"
+  },
+  {
+   "id": "region",
+   "x": 1450,
+   "y": 640,
+   "w": 440,
+   "kind": "org",
+   "title": "The regional association",
+   "body": [
+    "Part of The Upskilling Labs for now. With the",
+    "steering committee: decides what the region",
+    "becomes, keeps its fork of OLOS current, runs",
+    "sessions and the Cycle"
+   ]
+  },
+  {
+   "id": "new",
+   "x": 230,
+   "y": 1100,
+   "w": 260,
+   "kind": "people",
+   "title": "Newcomers",
+   "body": [
+    "Heard of it from a friend,",
+    "LinkedIn, Luma, the map"
+   ]
+  },
+  {
+   "id": "gather",
+   "x": 700,
+   "y": 1100,
+   "w": 380,
+   "kind": "org",
+   "title": "Sessions and gatherings",
+   "body": [
+    "Trainings and workshops",
+    "Neighborhood workshops, salons,",
+    "meetups (planned)"
+   ],
+   "tag": "Learn"
+  },
+  {
+   "id": "members",
+   "x": 1230,
+   "y": 1100,
+   "w": 240,
+   "kind": "people",
+   "title": "Members",
+   "body": [
+    "An account, sessions",
+    "between Cycles"
+   ]
+  },
+  {
+   "id": "cycle",
+   "x": 1720,
+   "y": 1100,
+   "w": 300,
+   "kind": "org",
+   "title": "Build Cycle C04",
+   "body": [
+    "Pods, prototypes, the vote,",
+    "projects, the showcase"
+   ],
+   "tag": "Build"
+  },
+  {
+   "id": "alumni",
+   "x": 2180,
+   "y": 1100,
+   "w": 240,
+   "kind": "people",
+   "title": "Alumni",
+   "body": [
+    "A team, a record of",
+    "what they built"
+   ]
+  },
+  {
+   "id": "employers",
+   "x": 2550,
+   "y": 1100,
+   "w": 220,
+   "kind": "outside",
+   "planned": true,
+   "title": "Employers",
+   "body": [
+    "Not asked yet"
+   ]
+  },
+  {
+   "id": "partners",
+   "x": 520,
+   "y": 1600,
+   "w": 380,
+   "kind": "outside",
+   "title": "Partners",
+   "body": [
+    "Public libraries; civic tech groups and",
+    "nonprofits (planned). Agreed through national"
+   ]
+  },
+  {
+   "id": "givers",
+   "x": 1400,
+   "y": 1600,
+   "w": 440,
+   "kind": "people",
+   "title": "Mentors, trainers and hosts",
+   "body": [
+    "Practitioners who teach a session or take a",
+    "stuck team’s question. Hosting from kits is planned"
+   ]
+  },
+  {
+   "id": "sustain",
+   "x": 2420,
+   "y": 600,
+   "w": 390,
+   "kind": "people",
+   "planned": true,
+   "title": "Sustaining members",
+   "body": [
+    "Give to Greater Washington, held in",
+    "the region’s sub-account at national"
+   ]
+  }
+ ],
+ "flows": [
+  {
+   "type": "people",
+   "path": [
+    "new:r:0",
+    "gather:l:0"
+   ],
+   "label": "a first session"
+  },
+  {
+   "type": "people",
+   "path": [
+    "gather:r:-25",
+    "members:l:-25"
+   ],
+   "label": "come back for more"
+  },
+  {
+   "type": "people",
+   "path": [
+    "members:r:-25",
+    "cycle:l:-25"
+   ],
+   "label": "join a Cycle"
+  },
+  {
+   "type": "people",
+   "path": [
+    "cycle:r:0",
+    "alumni:l:0"
+   ],
+   "label": "finish with a team"
+  },
+  {
+   "type": "people",
+   "planned": true,
+   "path": [
+    "alumni:r:0",
+    "employers:l:0"
+   ],
+   "label": "a record an employer can read",
+   "at": [
+    2370,
+    1008
+   ]
+  },
+  {
+   "type": "people",
+   "path": [
+    "alumni:b:-60",
+    [
+     2120,
+     1600
+    ],
+    "givers:r:0"
+   ],
+   "label": "some stay on as volunteers",
+   "at": [
+    1860,
+    1600
+   ]
+  },
+  {
+   "type": "people",
+   "path": [
+    "givers:l:-20",
+    [
+     800,
+     1580
+    ],
+    "gather:b:100"
+   ],
+   "label": "teach the sessions",
+   "at": [
+    1000,
+    1580
+   ]
+  },
+  {
+   "type": "people",
+   "planned": true,
+   "path": [
+    "partners:l:0",
+    [
+     230,
+     1600
+    ],
+    "new:b:0"
+   ],
+   "label": "their patrons",
+   "at": [
+    230,
+    1380
+   ]
+  },
+  {
+   "type": "leak",
+   "path": [
+    "gather:b:180",
+    [
+     880,
+     1360
+    ]
+   ],
+   "label": "came once",
+   "at": [
+    895,
+    1300
+   ],
+   "anchor": "start"
+  },
+  {
+   "type": "leak",
+   "path": [
+    "cycle:b:40",
+    [
+     1760,
+     1360
+    ]
+   ],
+   "label": "not picked at the vote",
+   "at": [
+    1835,
+    1260
+   ],
+   "anchor": "start"
+  },
+  {
+   "type": "leak",
+   "path": [
+    "alumni:b:60",
+    [
+     2240,
+     1360
+    ]
+   ],
+   "label": "the program ends; nothing after",
+   "at": [
+    2250,
+    1260
+   ],
+   "anchor": "start"
+  },
+  {
+   "type": "work",
+   "path": [
+    "region:l:-20",
+    "commons:r:-20"
+   ],
+   "label": "maintains and reviews"
+  },
+  {
+   "type": "work",
+   "path": [
+    "cycle:t:-150",
+    [
+     1570,
+     800
+    ],
+    [
+     840,
+     800
+    ],
+    "commons:b:140"
+   ],
+   "label": "prototypes and merged changes",
+   "at": [
+    1230,
+    800
+   ]
+  },
+  {
+   "type": "work",
+   "planned": true,
+   "path": [
+    "givers:t:20",
+    [
+     1420,
+     850
+    ],
+    [
+     760,
+     850
+    ],
+    "commons:b:60"
+   ],
+   "label": "issues, pull requests, kits",
+   "at": [
+    1100,
+    850
+   ]
+  },
+  {
+   "type": "work",
+   "planned": true,
+   "path": [
+    "commons:b:-40",
+    "gather:t:-40"
+   ],
+   "label": "kits and modules to run",
+   "at": [
+    660,
+    945
+   ]
+  },
+  {
+   "type": "work",
+   "path": [
+    "gather:b:-140",
+    "partners:t:40"
+   ],
+   "label": "programs for their patrons",
+   "at": [
+    545,
+    1290
+   ],
+   "anchor": "end"
+  },
+  {
+   "type": "knowledge",
+   "path": [
+    "region:b:170",
+    "cycle:t:-100"
+   ],
+   "label": "problems worth twelve weeks",
+   "at": [
+    1605,
+    775
+   ],
+   "anchor": "end"
+  },
+  {
+   "type": "knowledge",
+   "path": [
+    "cycle:t:-60",
+    "region:b:210"
+   ],
+   "label": "finds, paradoxes, what each team learned",
+   "at": [
+    1675,
+    880
+   ],
+   "anchor": "start"
+  },
+  {
+   "type": "knowledge",
+   "path": [
+    "gather:r:25",
+    "members:l:25"
+   ],
+   "label": "what they learned"
+  },
+  {
+   "type": "knowledge",
+   "path": [
+    "alumni:t:-40",
+    [
+     2140,
+     640
+    ],
+    "region:r:0"
+   ],
+   "label": "what alumni tell us",
+   "at": [
+    2140,
+    830
+   ]
+  },
+  {
+   "type": "support",
+   "path": [
+    "partners:t:100",
+    "gather:b:-80"
+   ],
+   "label": "rooms, co-hosts",
+   "at": [
+    635,
+    1360
+   ],
+   "anchor": "start"
+  },
+  {
+   "type": "support",
+   "path": [
+    "members:r:25",
+    "cycle:l:25"
+   ],
+   "label": "4–6 hours a week"
+  },
+  {
+   "type": "support",
+   "planned": true,
+   "path": [
+    "employers:t:0",
+    [
+     2550,
+     960
+    ],
+    [
+     1950,
+     960
+    ],
+    [
+     1950,
+     1060
+    ],
+    "cycle:r:-40"
+   ],
+   "label": "judges and hiring managers, at the showcase",
+   "at": [
+    2330,
+    960
+   ]
+  },
+  {
+   "type": "work",
+   "path": [
+    "national:l:20",
+    [
+     760,
+     310
+    ],
+    "commons:t:60"
+   ],
+   "label": "OLOS, forked to the region",
+   "at": [
+    1010,
+    310
+   ]
+  },
+  {
+   "type": "work",
+   "path": [
+    "commons:t:-60",
+    [
+     640,
+     270
+    ],
+    "national:l:-20"
+   ],
+   "label": "offered upstream; the Board decides",
+   "at": [
+    1010,
+    270
+   ]
+  },
+  {
+   "type": "knowledge",
+   "path": [
+    "national:b:0",
+    "region:t:0"
+   ],
+   "label": "the practice, the Cycle’s design",
+   "at": [
+    1450,
+    460
+   ]
+  },
+  {
+   "type": "support",
+   "path": [
+    "funders:l:0",
+    "national:r:0"
+   ],
+   "label": "grants, contracts, partnerships"
+  },
+  {
+   "type": "support",
+   "planned": true,
+   "path": [
+    "sustain:l:0",
+    "region:r:-40"
+   ],
+   "label": "for the Greater Washington brand",
+   "at": [
+    1960,
+    600
+   ]
+  },
+  {
+   "type": "knowledge",
+   "path": [
+    "givers:r:-40",
+    [
+     1660,
+     1560
+    ],
+    "cycle:b:-50"
+   ],
+   "label": "help, once a team is stuck",
+   "at": [
+    1650,
+    1470
+   ],
+   "anchor": "end"
+  },
+  {
+   "type": "knowledge",
+   "planned": true,
+   "path": [
+    "cycle:b:-120",
+    [
+     1600,
+     1250
+    ],
+    [
+     950,
+     1250
+    ],
+    [
+     950,
+     1160
+    ],
+    "gather:r:60"
+   ],
+   "label": "teach back: a workshop on a skill you used",
+   "at": [
+    1275,
+    1250
+   ]
+  },
+  {
+   "type": "leak",
+   "path": [
+    "cycle:t:140",
+    [
+     1860,
+     940
+    ]
+   ],
+   "label": "nothing published yet",
+   "at": [
+    1845,
+    1005
+   ],
+   "anchor": "end"
+  }
+ ],
+ "outs": [
+  [
+   880,
+   1360
+  ],
+  [
+   2240,
+   1360
+  ],
+  [
+   1760,
+   1360
+  ],
+  [
+   1860,
+   940
+  ]
+ ]
+}
