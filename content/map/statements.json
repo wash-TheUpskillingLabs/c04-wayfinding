@@ -1597,51 +1597,345 @@
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "keep the door open after it ends",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "Recurse Center: never graduate; alumni access with no obligation"
+  "src": "Case library, PR #5: Recurse Center",
+  "text": "Recurse Center: alumni keep the chat, the calendar and the jobs board"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "keep the door open after it ends",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "FIRST treats the off-season as recruiting and training time"
+  "src": "Case library, PR #5: FIRST Robotics",
+  "text": "FIRST: an off-season, April to December, for recruiting and training"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "keep the door open after it ends",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "the Teahouse: a help space run by people"
+  "src": "Case library, PR #5: NaNoWriMo",
+  "text": "NaNoWriMo’s regions kept going on channels they owned"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "show the whole route and where you are",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "GOV.UK: step-by-step maps across departments"
+  "src": "Case library, PR #5: GOV.UK step by step",
+  "text": "GOV.UK: every step on one page; the current and next step highlighted"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "show the whole route and where you are",
   "by": "X",
-  "src": "Case library, PR #5",
-  "text": "the Carpentries: setup instructions before the workshop; a small fee cut no-shows"
+  "src": "Case library, PR #5: GOV.UK step by step",
+  "text": "GOV.UK began with the journeys that had the most drop-off"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "show the whole route and where you are",
   "by": "X",
-  "src": "Case library, PR #5",
+  "src": "Case library, PR #5: Hack for LA onboarding",
+  "text": "Hack for LA: each listing says if the project can take volunteers now"
+ },
+ {
+  "q": "how",
+  "theme": "show the whole route and where you are",
+  "by": "X",
+  "src": "Case library, PR #5: Contributor ladders",
+  "text": "Kubernetes publishes what each rung takes, starting with one merged change"
+ },
+ {
+  "q": "how",
+  "theme": "show the whole route and where you are",
+  "by": "X",
+  "src": "Case library, PR #5: Outreachy contribution period",
+  "text": "Outreachy: one project list, shown to everyone the same day, one deadline"
+ },
+ {
+  "q": "how",
+  "theme": "show the whole route and where you are",
+  "by": "X",
+  "src": "Case library, PR #5: Duolingo path redesign",
+  "text": "Duolingo: one path, so nobody has to guess the right way through"
+ },
+ {
+  "q": "how",
+  "theme": "a person at the first contact",
+  "by": "X",
+  "src": "Case library, PR #5: Wikipedia newcomers",
+  "text": "Wikipedia’s Teahouse: people answer newcomers; those invited stayed longer"
+ },
+ {
+  "q": "how",
+  "theme": "a person at the first contact",
+  "by": "X",
+  "src": "Case library, PR #5: Stack Overflow newcomers",
+  "text": "Stack Overflow: a mentor read your draft question first; they scored 50% higher"
+ },
+ {
+  "q": "how",
+  "theme": "a person at the first contact",
+  "by": "X",
+  "src": "Case library, PR #5: Extension and 4-H volunteers",
+  "text": "Master Gardeners: a veteran per 2–4 trainees cut dropout from a quarter to 2%"
+ },
+ {
+  "q": "how",
+  "theme": "a person at the first contact",
+  "by": "X",
+  "src": "Case library, PR #5: Open source newcomer barriers",
+  "text": "open source: a starter task works when an experienced person is in the thread"
+ },
+ {
+  "q": "how",
+  "theme": "a person at the first contact",
+  "by": "X",
+  "src": "Case library, PR #5: Summer melt",
+  "text": "summer melt: ten texts, each with a counselor behind it, for $7 a student"
+ },
+ {
+  "q": "how",
+  "theme": "a person at the first contact",
+  "by": "X",
+  "src": "Case library, PR #5: Extinction Rebellion",
+  "text": "Extinction Rebellion added “integrator” roles to walk new members in"
+ },
+ {
+  "q": "how",
+  "theme": "a person at the first contact",
+  "by": "X",
+  "src": "Case library, PR #5: P2PU learning circles",
+  "text": "P2PU: co-facilitate your first circle with someone who has run one"
+ },
+ {
+  "q": "how",
+  "theme": "make the first step small",
+  "by": "X",
+  "src": "Case library, PR #5: Outreachy contribution period",
+  "text": "Outreachy: several small contributions before selection, not one big one"
+ },
+ {
+  "q": "how",
+  "theme": "make the first step small",
+  "by": "X",
+  "src": "Case library, PR #5: Carpentries instructor pipeline",
+  "text": "the Carpentries swapped one GitHub task for a menu of ways to get involved"
+ },
+ {
+  "q": "how",
+  "theme": "make the first step small",
+  "by": "X",
+  "src": "Case library, PR #5: Carpentries instructor pipeline",
+  "text": "the Carpentries: setup steps before the workshop; a small fee cut no-shows"
+ },
+ {
+  "q": "how",
+  "theme": "make the first step small",
+  "by": "X",
+  "src": "Case library, PR #5: Hack for LA onboarding",
+  "text": "Brigades: a low-commitment first project, like a learning group"
+ },
+ {
+  "q": "how",
+  "theme": "make the first step small",
+  "by": "X",
+  "src": "Case library, PR #5: Hack for LA onboarding",
+  "text": "Hack for LA: one central onboarding, then a community by discipline"
+ },
+ {
+  "q": "how",
+  "theme": "make the first step small",
+  "by": "X",
+  "src": "Case library, PR #5: Mozilla Hive",
+  "text": "Hive pop-ups had three depths: sample, try everything, or focus on one"
+ },
+ {
+  "q": "how",
+  "theme": "make the first step small",
+  "by": "X",
+  "src": "Case library, PR #5: GetCalFresh",
+  "text": "GetCalFresh: one question per page, ten minutes on a phone"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: Code Club and CoderDojo",
+  "text": "Code Club: step-by-step projects plus notes for the leader; leaders rated them first"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: Code Club and CoderDojo",
   "text": "Code Club’s kit includes the person who runs it"
  },
  {
   "q": "how",
-  "theme": "what other programs do",
+  "theme": "a kit a stranger can run",
   "by": "X",
-  "src": "Case library, PR #5",
+  "src": "Case library, PR #5: 4-H lesson kits",
+  "text": "4-H: “grab and go” lesson plans an untrained volunteer can deliver"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: 4-H lesson kits",
+  "text": "the Carpentries: two days became the unit; a week wore people out"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: P2PU learning circles",
+  "text": "P2PU: no subject expertise needed; a guide, a promo kit, recipe cards"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: Indivisible",
+  "text": "Indivisible: a 23-page guide on Google Docs seeded thousands of groups"
+ },
+ {
+  "q": "how",
+  "theme": "a kit a stranger can run",
+  "by": "X",
+  "src": "Case library, PR #5: Extension and 4-H volunteers",
+  "text": "Idaho 4-H: six-week project sessions for volunteers without a year to give"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: Google Summer of Code",
+  "text": "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code, a midterm check"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: Google Summer of Code",
+  "text": "Summer of Code: two project sizes and a deadline you can stretch"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: FIRST Robotics",
+  "text": "FIRST: a January kickoff and the same events for every team"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: FIRST Robotics",
+  "text": "FIRST retired its fixed stop-build day over mentor burnout"
+ },
+ {
+  "q": "how",
+  "theme": "a clock everyone can see",
+  "by": "X",
+  "src": "Case library, PR #5: NaNoWriMo",
+  "text": "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party"
+ },
+ {
+  "q": "how",
+  "theme": "write the role down, and the way out",
+  "by": "X",
+  "src": "Case library, PR #5: NaNoWriMo",
+  "text": "NaNoWriMo liaisons had a written list: forum, weekly write-in, two parties"
+ },
+ {
+  "q": "how",
+  "theme": "write the role down, and the way out",
+  "by": "X",
+  "src": "Case library, PR #5: Extension and 4-H volunteers",
+  "text": "Idaho 4-H: a “facilitation coach” role, with a signed description"
+ },
+ {
+  "q": "how",
+  "theme": "write the role down, and the way out",
+  "by": "X",
+  "src": "Case library, PR #5: FIRST Robotics",
+  "text": "FIRST: plan the handover before the lead mentor steps down"
+ },
+ {
+  "q": "how",
+  "theme": "write the role down, and the way out",
+  "by": "X",
+  "src": "Case library, PR #5: FIRST Robotics",
+  "text": "FIRST team 1551: “back when eight students commit to a month of training”"
+ },
+ {
+  "q": "how",
+  "theme": "write the role down, and the way out",
+  "by": "X",
+  "src": "Case library, PR #5: Contributor ladders",
+  "text": "Kubernetes: a quiet year and you’re pruned, with a month to appeal"
+ },
+ {
+  "q": "how",
+  "theme": "one source of truth, many channels",
+  "by": "X",
+  "src": "Case library, PR #5: NPR COPE",
+  "text": "NPR: content stored once, unformatted; every outlet draws from it"
+ },
+ {
+  "q": "how",
+  "theme": "one source of truth, many channels",
+  "by": "X",
+  "src": "Case library, PR #5: Channel overload",
+  "text": "Python folded seven channels into one forum, with an email mode"
+ },
+ {
+  "q": "how",
+  "theme": "one source of truth, many channels",
+  "by": "X",
+  "src": "Case library, PR #5: GetCalFresh",
+  "text": "GetCalFresh: name the agency, text from one number, start one-way"
+ },
+ {
+  "q": "how",
+  "theme": "hand it on instead of letting it end",
+  "by": "X",
+  "src": "Case library, PR #5: Hackathons and sprints",
   "text": "both corporate hackathon survivors were handed to other units"
+ },
+ {
+  "q": "how",
+  "theme": "hand it on instead of letting it end",
+  "by": "X",
+  "src": "Case library, PR #5: Hackathons and sprints",
+  "text": "hackathon projects lived on skill mix and preparation, not intent"
+ },
+ {
+  "q": "how",
+  "theme": "hand it on instead of letting it end",
+  "by": "X",
+  "src": "Case library, PR #5: Hack for LA onboarding",
+  "text": "Civic Tech DC: an incubator to turn a pitch into a plan with milestones"
+ },
+ {
+  "q": "how",
+  "theme": "count the crossing, not the finish",
+  "by": "X",
+  "src": "Case library, PR #5: MOOC completion",
+  "text": "MOOCs: four kinds of learner, not one completion rate"
+ },
+ {
+  "q": "how",
+  "theme": "count the crossing, not the finish",
+  "by": "X",
+  "src": "Case library, PR #5: Pre-apprenticeship",
+  "text": "most states track whether pre-apprentices enter, not only whether they finish"
+ },
+ {
+  "q": "how",
+  "theme": "count the crossing, not the finish",
+  "by": "X",
+  "src": "Case library, PR #5: Hack for LA onboarding",
+  "text": "Brigades: follow-up surveys of first-timers; task boards that list non-technical work"
  }
 ]

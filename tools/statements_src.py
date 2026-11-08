@@ -317,14 +317,108 @@ add("how", "what the region has built so far", "S", SC,
 add("how", "what the region has built so far", "S", "Parked notes, Oct 28",
     "a predictable Cycle clock, run nationally and facilitated locally",
     "trail ratings: signs at the junctions, relative to the mountain")
-add("how", "what other programs do", "X", LIB,
-    "Recurse Center: never graduate; alumni access with no obligation",
-    "FIRST treats the off-season as recruiting and training time",
-    "the Teahouse: a help space run by people",
-    "GOV.UK: step-by-step maps across departments",
-    "the Carpentries: setup instructions before the workshop; a small fee cut no-shows",
-    "Code Club’s kit includes the person who runs it",
-    "both corporate hackathon survivors were handed to other units")
+# HOW SOLVED, from the case library (PR #5): what each program did about the same gap.
+# One statement per move, the program named first, the case file as the source.
+def C(name): return f"Case library, PR #5: {name}"
+
+add("how", "keep the door open after it ends", "X", C("Recurse Center"),
+    "Recurse Center: alumni keep the chat, the calendar and the jobs board")
+add("how", "keep the door open after it ends", "X", C("FIRST Robotics"),
+    "FIRST: an off-season, April to December, for recruiting and training")
+add("how", "keep the door open after it ends", "X", C("NaNoWriMo"),
+    "NaNoWriMo’s regions kept going on channels they owned")
+
+add("how", "show the whole route and where you are", "X", C("GOV.UK step by step"),
+    "GOV.UK: every step on one page; the current and next step highlighted",
+    "GOV.UK began with the journeys that had the most drop-off")
+add("how", "show the whole route and where you are", "X", C("Hack for LA onboarding"),
+    "Hack for LA: each listing says if the project can take volunteers now")
+add("how", "show the whole route and where you are", "X", C("Contributor ladders"),
+    "Kubernetes publishes what each rung takes, starting with one merged change")
+add("how", "show the whole route and where you are", "X", C("Outreachy contribution period"),
+    "Outreachy: one project list, shown to everyone the same day, one deadline")
+add("how", "show the whole route and where you are", "X", C("Duolingo path redesign"),
+    "Duolingo: one path, so nobody has to guess the right way through")
+
+add("how", "a person at the first contact", "X", C("Wikipedia newcomers"),
+    "Wikipedia’s Teahouse: people answer newcomers; those invited stayed longer")
+add("how", "a person at the first contact", "X", C("Stack Overflow newcomers"),
+    "Stack Overflow: a mentor read your draft question first; they scored 50% higher")
+add("how", "a person at the first contact", "X", C("Extension and 4-H volunteers"),
+    "Master Gardeners: a veteran per 2–4 trainees cut dropout from a quarter to 2%")
+add("how", "a person at the first contact", "X", C("Open source newcomer barriers"),
+    "open source: a starter task works when an experienced person is in the thread")
+add("how", "a person at the first contact", "X", C("Summer melt"),
+    "summer melt: ten texts, each with a counselor behind it, for $7 a student")
+add("how", "a person at the first contact", "X", C("Extinction Rebellion"),
+    "Extinction Rebellion added “integrator” roles to walk new members in")
+add("how", "a person at the first contact", "X", C("P2PU learning circles"),
+    "P2PU: co-facilitate your first circle with someone who has run one")
+
+add("how", "make the first step small", "X", C("Outreachy contribution period"),
+    "Outreachy: several small contributions before selection, not one big one")
+add("how", "make the first step small", "X", C("Carpentries instructor pipeline"),
+    "the Carpentries swapped one GitHub task for a menu of ways to get involved",
+    "the Carpentries: setup steps before the workshop; a small fee cut no-shows")
+add("how", "make the first step small", "X", C("Hack for LA onboarding"),
+    "Brigades: a low-commitment first project, like a learning group",
+    "Hack for LA: one central onboarding, then a community by discipline")
+add("how", "make the first step small", "X", C("Mozilla Hive"),
+    "Hive pop-ups had three depths: sample, try everything, or focus on one")
+add("how", "make the first step small", "X", C("GetCalFresh"),
+    "GetCalFresh: one question per page, ten minutes on a phone")
+
+add("how", "a kit a stranger can run", "X", C("Code Club and CoderDojo"),
+    "Code Club: step-by-step projects plus notes for the leader; leaders rated them first",
+    "Code Club’s kit includes the person who runs it")
+add("how", "a kit a stranger can run", "X", C("4-H lesson kits"),
+    "4-H: “grab and go” lesson plans an untrained volunteer can deliver",
+    "the Carpentries: two days became the unit; a week wore people out")
+add("how", "a kit a stranger can run", "X", C("P2PU learning circles"),
+    "P2PU: no subject expertise needed; a guide, a promo kit, recipe cards")
+add("how", "a kit a stranger can run", "X", C("Indivisible"),
+    "Indivisible: a 23-page guide on Google Docs seeded thousands of groups")
+add("how", "a kit a stranger can run", "X", C("Extension and 4-H volunteers"),
+    "Idaho 4-H: six-week project sessions for volunteers without a year to give")
+
+add("how", "a clock everyone can see", "X", C("Google Summer of Code"),
+    "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code, a midterm check",
+    "Summer of Code: two project sizes and a deadline you can stretch")
+add("how", "a clock everyone can see", "X", C("FIRST Robotics"),
+    "FIRST: a January kickoff and the same events for every team",
+    "FIRST retired its fixed stop-build day over mentor burnout")
+add("how", "a clock everyone can see", "X", C("NaNoWriMo"),
+    "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party")
+
+add("how", "write the role down, and the way out", "X", C("NaNoWriMo"),
+    "NaNoWriMo liaisons had a written list: forum, weekly write-in, two parties")
+add("how", "write the role down, and the way out", "X", C("Extension and 4-H volunteers"),
+    "Idaho 4-H: a “facilitation coach” role, with a signed description")
+add("how", "write the role down, and the way out", "X", C("FIRST Robotics"),
+    "FIRST: plan the handover before the lead mentor steps down",
+    "FIRST team 1551: “back when eight students commit to a month of training”")
+add("how", "write the role down, and the way out", "X", C("Contributor ladders"),
+    "Kubernetes: a quiet year and you’re pruned, with a month to appeal")
+
+add("how", "one source of truth, many channels", "X", C("NPR COPE"),
+    "NPR: content stored once, unformatted; every outlet draws from it")
+add("how", "one source of truth, many channels", "X", C("Channel overload"),
+    "Python folded seven channels into one forum, with an email mode")
+add("how", "one source of truth, many channels", "X", C("GetCalFresh"),
+    "GetCalFresh: name the agency, text from one number, start one-way")
+
+add("how", "hand it on instead of letting it end", "X", C("Hackathons and sprints"),
+    "both corporate hackathon survivors were handed to other units",
+    "hackathon projects lived on skill mix and preparation, not intent")
+add("how", "hand it on instead of letting it end", "X", C("Hack for LA onboarding"),
+    "Civic Tech DC: an incubator to turn a pitch into a plan with milestones")
+
+add("how", "count the crossing, not the finish", "X", C("MOOC completion"),
+    "MOOCs: four kinds of learner, not one completion rate")
+add("how", "count the crossing, not the finish", "X", C("Pre-apprenticeship"),
+    "most states track whether pre-apprentices enter, not only whether they finish")
+add("how", "count the crossing, not the finish", "X", C("Hack for LA onboarding"),
+    "Brigades: follow-up surveys of first-timers; task boards that list non-technical work")
 
 out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "map", "statements.json")
 os.makedirs(os.path.dirname(out), exist_ok=True)

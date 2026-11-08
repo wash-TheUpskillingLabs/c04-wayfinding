@@ -451,7 +451,7 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
   .sec.full > .flow > :first-child { --d:var(--capr); }
 }
 .sitmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
-.sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.72131), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
+.sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.72308), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .sitmap .pm-s:hover text { fill:var(--red); }
 .sitmap .pm-s:hover circle[fill="#0b3536"] { fill:var(--red); }
 .sitmap .pm-word { text-transform:uppercase; }

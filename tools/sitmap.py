@@ -13,7 +13,7 @@ allowed to overlap one another or leave the circle.
 """
 import json, math, os, re, html
 
-W, H = 2440, 1760
+W, H = 2600, 1880
 K = 1.43  # scale of the circle plan below
 GOLD = math.radians(137.508)
 
@@ -23,7 +23,7 @@ CIRCLES = {
     "who": dict(cx=600, cy=235, r=232, word="WHO"),
     "where": dict(cx=830, cy=920, r=205, word="WHERE"),
     "why": dict(cx=1120, cy=325, r=352, word="WHY"),
-    "how": dict(cx=1340, cy=850, r=330, word="HOW SOLVED"),
+    "how": dict(cx=1395, cy=880, r=400, word="HOW SOLVED"),
 }
 for _c in CIRCLES.values():
     _c["cx"] = round(_c["cx"] * K); _c["cy"] = round(_c["cy"] * K + 20); _c["r"] = round(_c["r"] * K)
@@ -49,20 +49,20 @@ def wrap(text, n=WRAP):
     if cur: lines.append(cur)
     return lines
 
-def inside(c, x, y, w, h, pad=10):
+def inside(c, x, y, w, h, pad=6):
     R = c["r"] - pad
     for px, py in ((x, y), (x + w, y), (x, y + h), (x + w, y + h)):
         if (px - c["cx"]) ** 2 + (py - c["cy"]) ** 2 > R * R: return False
     return True
 
-def hits(boxes, x, y, w, h, gap=3):
+def hits(boxes, x, y, w, h, gap=2):
     for bx, by, bw, bh in boxes:
         if x < bx + bw + gap and x + w + gap > bx and y < by + bh + gap and y + h + gap > by: return True
     return False
 
-def place_near(c, boxes, ox, oy, w, h, start=0, step=6.5):
+def place_near(c, boxes, ox, oy, w, h, start=0, step=3.5):
     """First free spot on a spiral around (ox, oy), inside the circle."""
-    for k in range(start, 6000):
+    for k in range(start, 22000):
         d = step * math.sqrt(k)
         a = k * GOLD
         x = ox + d * math.cos(a) - w / 2
@@ -109,7 +109,7 @@ def build(statements):
                 lines = wrap(s["text"])
                 sw = GLYPH + max(tw(l, FS) for l in lines)
                 sh = LH * len(lines)
-                p = place_near(c, boxes, cxl, cyl, sw, sh, 1, 6.5)
+                p = place_near(c, boxes, cxl, cyl, sw, sh, 1)
                 if p is None: continue
                 sx, sy = p
                 boxes.append((sx, sy, sw, sh))
