@@ -16,11 +16,12 @@ branch or a quote to the JSON and rebuild.
 import json
 
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
-# Line colours, for maps only: they say which line is which, like the Metro. Never text, never red.
-# Chosen by colour science (research/journey-map-colour.md): under protanopia, deuteranopia and
-# tritanopia every pair of map colours stays at least 17 CAM02-UCS units apart, and each new colour
-# has at least 3:1 contrast with the paper. The names stay; the values changed.
-GREEN, VIOLET, SILVER = "#4a45d3", "#8a3274", "#898081"   # pod A indigo, pod C wine, not chosen grey
+# Line colours, for maps only: they say which line is which, like the Metro's Green, Yellow and
+# Silver lines. Never text, never red. All from the Swiss Style Color Picker: green and yellow from
+# scheme 11 (its red, yellow, green, blue is the Metro's own set), silver from scheme 3. Checked by
+# colour science (research/journey-map-colour.md, tools/colourcheck.py): every pair of lines stays
+# at least 19 CAM02-UCS units apart under protanopia, deuteranopia and tritanopia.
+GREEN, YELLOW, SILVER = "#007500", "#e6c700", "#a5a6a9"   # pod A, pod C, a proposal not chosen
 CASE = 1.5   # an ink casing on every coloured line, so its edge always contrasts with the paper
 FONT = "Inter, system-ui, sans-serif"
 LM, LABW, COLW, GAP = 56, 190, 274, 22
@@ -204,8 +205,8 @@ def svg(d):
     # problem proposals share one track from the moment you join
     B = [-18, -6, 6, 18]
     fate = {-18: Y - G, -6: Y, 6: None, 18: Y + G}  # Vote 1: three go on as pods, one ends
-    hue = {-18: GREEN, -6: BLUE, 6: SILVER, 18: VIOLET}
-    podhue = {Y - G: GREEN, Y: BLUE, Y + G: VIOLET}
+    hue = {-18: GREEN, -6: BLUE, 6: SILVER, 18: YELLOW}
+    podhue = {Y - G: GREEN, Y: BLUE, Y + G: YELLOW}
     for o in B:
         pts = [(J, Y), (J + 20, Y), (J + 20 + abs(o), Y + o), (P + 18, Y + o)]
         if fate[o] is None:
@@ -393,7 +394,7 @@ def svg(d):
            f'<text x="{LM + 106}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">The Journey</text>',
            f'<line x1="{LM}" y1="{ky + 44}" x2="{LM + 26}" y2="{ky + 44}" stroke="{GREEN}" stroke-width="8"/>'
            f'<line x1="{LM + 32}" y1="{ky + 44}" x2="{LM + 58}" y2="{ky + 44}" stroke="{BLUE}" stroke-width="8"/>'
-           f'<line x1="{LM + 64}" y1="{ky + 44}" x2="{LM + 90}" y2="{ky + 44}" stroke="{VIOLET}" stroke-width="8"/>'
+           f'<line x1="{LM + 64}" y1="{ky + 44}" x2="{LM + 90}" y2="{ky + 44}" stroke="{YELLOW}" stroke-width="8"/>'
            f'<text x="{LM + 106}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Each Pod Has Its Own Line; Blue Is Yours</text>'
            f'<line x1="{LM + 500}" y1="{ky + 44}" x2="{LM + 590}" y2="{ky + 44}" stroke="{SILVER}" stroke-width="8"/>'
            f'<text x="{LM + 606}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">A Proposal Not Chosen</text>',

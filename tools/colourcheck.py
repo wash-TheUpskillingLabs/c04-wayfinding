@@ -13,9 +13,12 @@ from colorspacious import cspace_convert, deltaE
 sys.path.insert(0, os.path.dirname(__file__))
 import journey as j
 
-COLOURS = {"your line (blue)": j.BLUE, "pod A": j.GREEN, "pod C": j.VIOLET, "not chosen": j.SILVER,
+COLOURS = {"your line (blue)": j.BLUE, "pod A": j.GREEN, "pod C": j.YELLOW, "not chosen": j.SILVER,
            "leaves (red)": j.RED, "stations (ink)": j.INK}
 FIXED = {"your line (blue)", "leaves (red)", "stations (ink)"}   # the sign system's own colours
+# Pairs told apart by form, not colour: red is only ever a dotted drop or a hollow ring, never a solid
+# line, so a green line and a red ring can share a hue for a protanope without being mistaken.
+FORM = [{"pod A", "leaves (red)"}]
 
 
 def rgb(h):
@@ -46,6 +49,11 @@ for name, h in COLOURS.items():
 print("\nSmallest difference between two colours (CAM02-UCS; keep 15 or more):")
 for label, kind in (("normal", None), ("protanopia", "protanomaly"), ("deuteranopia", "deuteranomaly"), ("tritanopia", "tritanomaly")):
     pairs = [(deltaE(sim(COLOURS[a], kind), sim(COLOURS[b], kind), input_space="sRGB1", uniform_space="CAM02-UCS"), a, b)
-             for a, b in itertools.combinations(COLOURS, 2) if not {a, b} <= FIXED]
+             for a, b in itertools.combinations(COLOURS, 2) if not {a, b} <= FIXED and {a, b} not in FORM]
     d, a, b = min(pairs)
     print(f"  {label:13s} {d:5.1f}  {a} / {b}")
+print("\nTold apart by form (dotted or ring against a solid line), shown for the record:")
+for label, kind in (("protanopia", "protanomaly"), ("deuteranopia", "deuteranomaly")):
+    for a, b in (tuple(f) for f in FORM):
+        d = deltaE(sim(COLOURS[a], kind), sim(COLOURS[b], kind), input_space="sRGB1", uniform_space="CAM02-UCS")
+        print(f"  {label:13s} {d:5.1f}  {a} / {b}")

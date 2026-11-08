@@ -7,9 +7,9 @@
    ink #0b3536, paper #e5e7de, signal blue #0098d8, signal red #f54123.
    Contrast, measured: ink/paper 10.7. ink/blue 4.1. ink/red 3.6. paper/blue 2.6. paper/red 3.0.
    Text is ink on paper or paper on ink, always. Blue and red never carry small text.
-   Maps only may add line colours, to tell one line from another as the Metro does:
-   indigo #4a45d3, wine #8a3274, grey #898081, chosen so every pair stays distinct under protanopia,
-   deuteranopia and tritanopia (research/journey-map-colour.md). Every coloured line on a map has a thin
+   Maps only may add line colours, to tell one line from another as the Metro does, from the same
+   picker: green #007500 and yellow #e6c700 (scheme 11), silver #a5a6a9 (scheme 3). Every pair stays
+   distinct under protanopia, deuteranopia and tritanopia (research/journey-map-colour.md). Every coloured line on a map has a thin
    ink casing, so its edge clears 3:1 against paper. Lines only, never text, never instead of red.
    Blue is direction: where you can go. Red is position: where you are, where people stopped.
    Decoration is arrows, line bullets and wayfinding pictograms, and only those.
