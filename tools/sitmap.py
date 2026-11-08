@@ -21,9 +21,9 @@ GOLD = math.radians(137.508)
 CIRCLES = {
     "what": dict(cx=400, cy=720, r=340, word="WHAT"),
     "who": dict(cx=600, cy=235, r=232, word="WHO"),
-    "where": dict(cx=830, cy=920, r=205, word="WHERE"),
+    "where": dict(cx=830, cy=920, r=220, word="WHERE"),
     "why": dict(cx=1120, cy=325, r=352, word="WHY"),
-    "how": dict(cx=1395, cy=880, r=400, word="HOW SOLVED"),
+    "how": dict(cx=1388, cy=878, r=410, word="HOW SOLVED"),
 }
 for _c in CIRCLES.values():
     _c["cx"] = round(_c["cx"] * K); _c["cy"] = round(_c["cy"] * K + 20); _c["r"] = round(_c["r"] * K)
