@@ -165,7 +165,7 @@
    "sub": "Vote 1: Pods Form",
    "cycle": true,
    "do": [
-    "Vote on problem proposals and join a pod. In it, propose paradoxes, then frames, then projects"
+    "Vote on problem proposals and join a pod. In it, propose paradoxes, then frames for each; sensemaking merges them into a few"
    ],
    "where": [
     "The pod’s repo, interviews, Slack"
@@ -183,7 +183,7 @@
      "more guidance on what to work on in a given week"
     ]
    ],
-   "w": 780
+   "w": 880
   },
   {
    "id": "team",
@@ -191,7 +191,7 @@
    "sub": "Vote 2: Projects Form",
    "cycle": true,
    "do": [
-    "Vote on project proposals, join a project team, build it"
+    "Vote on the frames offered as projects, register for one, build it"
    ],
    "where": [
     "GitHub, Claude Code, open lab nights"
@@ -354,24 +354,24 @@
    "note": "As many as people bring"
   },
   "pods": {
-   "gap": 90,
+   "gap": 122,
    "stages": [
     {
-     "to": 320,
+     "to": 340,
      "label": "Paradox Proposals",
-     "close": "A Paradox"
+     "close": "Paradoxes Merge"
     },
     {
-     "to": 560,
+     "to": 620,
      "label": "Frame Proposals",
-     "close": "Frames"
+     "close": "Frames Merge"
     },
     {
      "to": [
       "team",
       0
      ],
-     "label": "Project Proposals"
+     "label": "Frames Offered as Projects"
     }
    ],
    "letters": [
@@ -383,7 +383,7 @@
   "projects": {
    "label": "Projects Build"
   },
-  "note": "How many pods and projects form is decided in the Cycle, not in advance. The dots mean there may be more, or fewer."
+  "note": "How many pods, paradoxes, frames and projects form is decided in the Cycle, not in advance. The dots mean there may be more, or fewer."
  },
  "landmarks": [
   {

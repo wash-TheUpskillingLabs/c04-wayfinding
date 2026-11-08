@@ -457,7 +457,7 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 .sitmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.77869), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .journey-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
-.journey-wrap .jmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.47354), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
+.journey-wrap .jmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.49845), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .flow-wrap .fnet { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.71111), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-show { display:flex; flex-wrap:wrap; gap:8px; align-items:center; position:relative; top:-1.38px; }

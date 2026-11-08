@@ -25,14 +25,14 @@ GREEN, YELLOW, SILVER = "#007500", "#e6c700", "#a5a6a9"   # pod A, pod C, a prop
 CASE = 0     # no casing: like the Metro, lines are flat colour (research/journey-map-colour.md)
 FONT = "Inter, system-ui, sans-serif"
 LM, LABW, COLW, GAP = 56, 190, 274, 22
-LINE_Y = 580
-STEP_Y = LINE_Y - 128          # step numbers
-TITLE_Y = LINE_Y + 142         # step titles
-RING_Y = LINE_Y + 214          # leak rings
-LANES = [("do", "You", 850), ("where", "Where", 1030), ("with", "With you", 1150), ("told", "What People Told Us", 1280)]
+LINE_Y = 650
+STEP_Y = LINE_Y - 198          # step numbers
+TITLE_Y = LINE_Y + 216         # step titles
+RING_Y = LINE_Y + 288          # leak rings
+LANES = [("do", "You", 994), ("where", "Where", 1174), ("with", "With you", 1294), ("told", "What People Told Us", 1424)]
 FS, LH, TFS, SFS = 15.118, 21, 21.993, 13.745
-BOTTOM = 1580
-H = 1790
+BOTTOM = 1724
+H = 1934
 
 
 def esc(s):
@@ -108,7 +108,7 @@ def svg(d):
     # the Cycle, shaded
     cyc = [i for i, c in enumerate(cols) if c.get("cycle")]
     a, b = x0(cyc[0]) - GAP / 2, x0(cyc[-1]) + cw[cyc[-1]] + GAP / 2
-    back.append(f'<rect x="{a}" y="{LINE_Y - 150}" width="{b - a}" height="{BOTTOM - LINE_Y + 150}" rx="4" fill="none" '
+    back.append(f'<rect x="{a}" y="{LINE_Y - 220}" width="{b - a}" height="{BOTTOM - LINE_Y + 220}" rx="4" fill="none" '
                 f'stroke="{INK}" stroke-width="3"/>'
                 f'<rect x="{a}" y="{BOTTOM - 40}" width="132" height="40" fill="{INK}"/>'
                 + small(a + 16, BOTTOM - 14, "The Cycle", "start", 700, caps=True, fill=PAPER))
@@ -138,8 +138,8 @@ def svg(d):
     def label(x, y, text):
         front.append(small(x, y + 5, text, weight=600))
     def chose(x, text):
-        front.append(f'<line x1="{x}" y1="{LINE_Y - 110}" x2="{x}" y2="{LINE_Y + 110}" stroke="{INK}" '
-                     f'stroke-width="1.5" stroke-dasharray="3 5"/>' + small(x, LINE_Y - 116, text, weight=700, caps=True))
+        front.append(f'<line x1="{x}" y1="{LINE_Y - 180}" x2="{x}" y2="{LINE_Y + 180}" stroke="{INK}" '
+                     f'stroke-width="1.5" stroke-dasharray="3 5"/>' + small(x, LINE_Y - 186, text, weight=700, caps=True))
     caps = []                   # interchanges: a pill across every line it serves
 
     # trunk between steps, outside the Cycle
@@ -227,38 +227,55 @@ def svg(d):
         dxc = P + 18 + G + 26
         front.append(f'<circle cx="{dxc}" cy="{c}" r="17" fill="{PAPER}" stroke="{podhue[c]}" stroke-width="6"/>'
                      f'<text x="{dxc}" y="{c + 5}" text-anchor="middle" font-size="{SFS}" font-weight="700" fill="{INK}">{letter}</text>')
-    sp = 12
-    for st in pd["stages"]:
-        ex = at(st["to"]) if isinstance(st["to"], list) else P + st["to"]
-        last = isinstance(st["to"], list)
-        for c in pods:
-            for o in (-sp, 0, sp):
-                pts = [(x, c), (x + 14, c), (x + 14 + abs(o), c + o)]
-                if not last:
-                    pts += [(ex - 14 - abs(o), c + o), (ex - 14, c), (ex + 1, c)]
-                    poly(pts, col=podhue[c])
-                elif o == 0:
-                    poly(pts + [(ex - 30, c)], col=podhue[c])   # Vote 2: the middle proposal ends here
-                    end(ex - 30, c, podhue[c])
-                else:
-                    poly(pts + [(ex + 30, c + o)], col=podhue[c])
-            if last:
-                caps.append((ex, c - sp, c + sp, c == Y))
-        label((x + ex) / 2, Y - G / 2, st["label"])
+    # Inside each pod the line opens and closes twice, then meets Vote 2. Paradox proposals
+    # merge in sensemaking into a few paradoxes; under each paradox, frame proposals merge
+    # into a few frames; at Vote 2 each frame is offered as a project, and the ones people
+    # register for go on to build. Merging is drawn as Metro lines joining one track (no
+    # terminus): nothing is cut, ideas combine. A vote is a terminus bar: a line ends there.
+    # Counts are illustrative; the dots say there may be more or fewer.
+    PARA = [(-36, -27), (-18, -27), (18, 27), (36, 27)]                # proposal -> paradox
+    FRAME = {-27: [(-43, -35), (-27, -35), (-11, -19)],                # under each paradox:
+             27: [(11, 19), (27, 35), (43, 35)]}                        # proposal -> frame
+    ENDS = 19                                                          # the frame no one registered for
+    def track(pts):
+        out = []
+        for pt in pts:
+            if not out or pt != out[-1]:
+                out.append(pt)
+        return out
+    e1, e2 = (P + st["to"] for st in pd["stages"][:2])
+    T2 = at(pd["stages"][2]["to"])
+    frames = sorted({g for fs in FRAME.values() for _, g in fs})
+    for c in sorted(pods, key=lambda c: c == Y):       # your pod drawn last, on top
+        col = podhue[c]
+        for o, t in PARA:
+            poly(track([(x, c), (x + 14, c), (x + 14 + abs(o), c + o), (e1 - 14 - abs(o - t), c + o),
+                        (e1 - 14, c + t), (e1 + 1, c + t)]), col=col)
+        for p_, fs in FRAME.items():
+            for f, g in fs:
+                poly(track([(e1, c + p_), (e1 + 14, c + p_), (e1 + 14 + abs(f - p_), c + f),
+                            (e2 - 14 - abs(f - g), c + f), (e2 - 14, c + g), (e2 + 1, c + g)]), col=col)
+        for g in frames:
+            if g == ENDS:
+                poly([(e2, c + g), (T2 - 30, c + g)], col=col)
+                end(T2 - 30, c + g, col)
+            else:
+                poly([(e2, c + g), (T2 + 30, c + g)], col=col)
+        caps.append((T2, c + frames[0], c + frames[-1], c == Y))
+    for st, (sx_, ex_) in zip(pd["stages"], ((x, e1), (e1, e2), (e2, T2))):
+        label((sx_ + ex_) / 2, Y - G / 2, st["label"])
         if st.get("close"):
-            chose(ex, st["close"])
-        x = ex
+            chose(ex_, st["close"])
+    x = T2
     # projects build side by side, then all meet at the showcase
-    projs = [(c + o, podhue[c]) for c in pods for o in (-sp, sp)]
-    m = len(projs)
+    projs = [(c + g, podhue[c]) for c in pods for g in frames if g != ENDS]
     for q, col in sorted(projs, key=lambda t: t[1] == BLUE):
         dy = abs(Y - q)
         poly([(x + 30, q), (S - 24 - dy, q), (S - 24, Y), (S, Y)], col=col)
     label((x + S - 60) / 2, Y - G / 2, pj["label"])
-    # the dots: there may be more pods, and more projects in each, than drawn
-    for dx_ in (P + 18 + G + 26, (P + 320 + P + 560) / 2, (x + S - 90) / 2):
+    # the dots: there may be more pods, and more paradoxes, frames and projects, than drawn
+    for dx_ in (P + 18 + G + 26, (x + e1) / 2 - 30, (e1 + e2) / 2, (e2 + T2) / 2, (x + S - 90) / 2):
         dots(dx_, Y + G / 2)
-    dots((x + S - 90) / 2 + 60, Y)
     poly([(S, Y), (cx(idx["after"]), Y)], 10)
 
     # many ways out: the line splits, and each way out is named for where it ends, like a Metro line
@@ -280,7 +297,7 @@ def svg(d):
         top = 290 + ar["lane"] * 46
         sxa = cx(i) + (34 if j > i else -34)
         exa = cx(j) + ar.get("dx", -40 if j > i else 150)
-        land = LINE_Y - (150 if ar.get("onto") == "top" else 40)
+        land = LINE_Y - (220 if ar.get("onto") == "top" else 40)
         r, dx = 20, (1 if exa > sxa else -1)
         path = (f'M{sxa},{LINE_Y - 22} V{top + r} Q{sxa},{top} {sxa + dx * r},{top} H{exa - dx * r} '
                 f'Q{exa},{top} {exa},{top + r} V{land}')
@@ -298,7 +315,7 @@ def svg(d):
         else:
             s, e, label = lk
             mx = x0(idx[e]) - GAP / 2
-            y0 = LINE_Y + (120 if cols[idx[e]].get("cycle") or cols[idx[s]].get("cycle") else 8)
+            y0 = LINE_Y + (190 if cols[idx[e]].get("cycle") or cols[idx[s]].get("cycle") else 8)
         front.append(f'<line x1="{mx}" y1="{y0}" x2="{mx}" y2="{RING_Y - 22}" stroke="{RED}" stroke-width="7" '
                      f'stroke-dasharray="2 12" stroke-linecap="round"/>'
                      f'<circle cx="{mx}" cy="{RING_Y}" r="13" fill="{PAPER}" stroke="{RED}" stroke-width="6"/>'
@@ -341,7 +358,7 @@ def svg(d):
     front.append(small(LM, STEP_Y, "Step", "start", 700, caps=True))
     lm = d.get("landmarks", [])
     if lm:
-        LY = LINE_Y - 172
+        LY = LINE_Y - 242
         front.append(small(LM, LY, "Landmarks", "start", 700, caps=True))
         for l in lm:
             lx = at(l["at"])
@@ -400,7 +417,10 @@ def svg(d):
            f'<circle cx="{LM + 900}" cy="{ky + 44}" r="14" fill="{PAPER}" stroke="{GREEN}" stroke-width="5"/>'
            f'<text x="{LM + 900}" y="{ky + 49}" text-anchor="middle" font-size="{SFS}" font-weight="700" fill="{INK}">A</text>'
            f'<text x="{LM + 928}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">A Pod’s Line, by Letter as Well as Colour</text>'
-           f'<text x="{LM + 1386}" y="{ky + 49.5}" font-size="{FS}" font-style="italic" fill="{INK}">Not to scale: steps are evenly spaced, not by time.</text>',
+           f'<text x="{LM + 1386}" y="{ky + 49.5}" font-size="{FS}" font-style="italic" fill="{INK}">Not to scale: steps are evenly spaced, not by time.</text>'
+           f'<path d="M{LM + 1870},{ky + 32} H{LM + 1900} L{LM + 1912},{ky + 44} H{LM + 1960} M{LM + 1870},{ky + 56} H{LM + 1900} L{LM + 1912},{ky + 44}" '
+           f'fill="none" stroke="{BLUE}" stroke-width="8" stroke-linejoin="round"/>'
+           f'<text x="{LM + 1976}" y="{ky + 49.5}" font-size="{FS}" fill="{INK}">Lines Merge in Sensemaking: No Vote, Nothing Cut</text>',
            f'<line x1="{LM + 270}" y1="{ky}" x2="{LM + 360}" y2="{ky}" stroke="{BLUE}" stroke-width="10" stroke-dasharray="20 12"/>'
            f'<text x="{LM + 376}" y="{ky + 5.5}" font-size="{FS}" fill="{INK}">Planned, Not Running Yet</text>',
            f'<path d="M{LM + 640},{ky - 10} H{LM + 730} M{LM + 640},{ky + 2} H{LM + 700}" stroke="{BLUE}" stroke-width="8"/>'

@@ -21,7 +21,7 @@ Read each one aloud, exactly as written.
 | 1 | You just came to your first workshop. Where could you go next? | Any other session on the loop, or on to Get Ready for a Cycle | Reading the loop |
 | 2 | Where do most people actually start today? | At Join a Cycle, step 4 (the arc) | Arcs above the line |
 | 3 | Which step doesn't exist yet? | Get Ready for a Cycle, step 3 | Dashed means planned |
-| 4 | You proposed a problem and it wasn't chosen at Vote 1. What happens to it? | It ends there (the grey line stops) | Terminus bars |
+| 4 | You proposed a problem and it wasn't chosen at Vote 1. What happens to it? | It ends there (the silver line stops) | Terminus bars |
 | 5 | How many pods will the next Cycle have? | It isn't decided yet (the dots) | Open counts |
 | 6 | Your project team is stuck. Who do you go to, in order? | Your team, then your pod, then a mentor | Reading a lane |
 | 7 | Where do people most often say they got lost? | Steps 4 to 6, joining a Cycle through the project vote | Reading the quotes |
@@ -29,6 +29,7 @@ Read each one aloud, exactly as written.
 | 9 | Use Where Are You? to put yourself at step 2. What's next? | Get Ready for a Cycle, which is planned | The picker |
 | 10 | Point to the moment in a Cycle when you'd vote on projects. | The Project Vote landmark, at step 6 | Landmarks |
 | 11 | You've been to three trainings and no workshops. Is there a next session the map suggests? | A workshop: the loop runs Learn, Build, Share | The suggested way round |
+| 12 | Your pod had six paradox proposals and kept three paradoxes. Were the other three cut? | No: they merged into the three in sensemaking; only a vote ends a line | Merging versus a terminus |
 
 ## Scoring
 
