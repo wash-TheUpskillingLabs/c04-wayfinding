@@ -81,6 +81,10 @@ def svg(data):
         for j, t in enumerate(lines):
             o.append(f'<text x="{x - 14 if left else x + 14}" y="{ly - LH * (len(lines) - 1) / 2 + LH * j + 5:.0f}"{" text-anchor=\"end\"" if left else ""} font-size="{FS}" font-weight="700" fill="{col}">{esc(t)}</text>')
     o.append('</g>')
+    # the region and the two things it runs, bracketed as one block
+    grp = [ys[l["id"]] for l in lanes if l.get("group") == "region"]
+    if len(grp) > 1:
+        o.append(f'<path d="M36,{min(grp) - 120}V{max(grp) + 60}" stroke="{INK}" stroke-width="4" fill="none" stroke-linecap="round"/>')
     # the lines
     for l in lanes:
         y = ys[l["id"]]; col = LINE[l["line"]]
@@ -98,18 +102,18 @@ def svg(data):
             if l["end"] == "stop":
                 o.append(f'<line x1="{x1}" y1="{y - 18}" x2="{x1}" y2="{y + 18}" stroke="{col}" stroke-width="{LINE_W}" stroke-linecap="round"/>')
         # the line's name at the left, and what the line gives and gets
-        name_lines = wrap(l["name"], 26)
+        name_lines = wrap(l["name"], 24)
         ny = y - 60 - 28 * (len(name_lines) - 1)
         for j, t in enumerate(name_lines):
-            o.append(f'<text x="48" y="{ny + 28 * j}" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="{INK}">{esc(t)}</text>')
+            o.append(f'<text x="56" y="{ny + 28 * j}" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="{INK}">{esc(t)}</text>')
         if l.get("planned"):
-            o.append(f'<rect x="48" y="{ny - 50}" width="76" height="24" rx="4" fill="none" stroke="{INK}" stroke-width="2" stroke-dasharray="4 3"/>')
-            o.append(f'<text x="86" y="{ny - 33}" text-anchor="middle" font-size="{FS}" font-weight="800" fill="{INK}">Planned</text>')
+            o.append(f'<rect x="56" y="{ny - 50}" width="76" height="24" rx="4" fill="none" stroke="{INK}" stroke-width="2" stroke-dasharray="4 3"/>')
+            o.append(f'<text x="94" y="{ny - 33}" text-anchor="middle" font-size="{FS}" font-weight="800" fill="{INK}">Planned</text>')
         gy = y - 28
         for head, body in (("Gives", l.get("gives", "")), ("Gets", l.get("gets", ""))):
-            o.append(f'<text x="48" y="{gy}" font-size="{FS}" font-weight="800" fill="{INK}">{head}</text>')
+            o.append(f'<text x="56" y="{gy}" font-size="{FS}" font-weight="800" fill="{INK}">{head}</text>')
             for j, t in enumerate(wrap(body, 34)):
-                o.append(f'<text x="104" y="{gy + LH * j}" font-size="{FS}" fill="{INK}">{esc(t)}</text>')
+                o.append(f'<text x="112" y="{gy + LH * j}" font-size="{FS}" fill="{INK}">{esc(t)}</text>')
             gy += LH * len(wrap(body, 34)) + 8
     # stations
     for i, l in enumerate(lanes):
@@ -143,7 +147,7 @@ def svg(data):
         o.append(f'<text x="48" y="128" font-size="16.494" fill="{INK}">{esc(data["subtitle"])}</text>')
     ky = 172
     o.append(f'<text x="48" y="{ky}" font-size="{FS}" font-weight="800" fill="{INK}">How to read it</text>'); ky += 28
-    for colr, name in ((INK, "How the region is organised, and the Cycle’s dates"), (BLUE, "A person’s route")):
+    for colr, name in ((INK, "The region, what it runs, and the Cycle’s dates"), (BLUE, "A person’s route")):
         o.append(f'<line x1="48" y1="{ky - 5}" x2="80" y2="{ky - 5}" stroke="{colr}" stroke-width="{LINE_W}"/>')
         o.append(f'<text x="92" y="{ky}" font-size="{FS}" fill="{INK}">{esc(name)}</text>'); ky += 24
     o.append(f'<circle cx="64" cy="{ky - 5}" r="7" fill="{PAPER}" stroke="{INK}" stroke-width="3"/><circle cx="64" cy="{ky - 5}" r="3" fill="none" stroke="{BLUE}" stroke-width="2.5"/>')

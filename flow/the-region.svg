@@ -1,125 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 2358" width="2600" height="2358" role="img" aria-labelledby="fl-title fl-desc" class="flow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 2554" width="2600" height="2554" role="img" aria-labelledby="fl-title fl-desc" class="flow">
 <title id="fl-title">How the region fits together</title>
 <desc id="fl-desc">Three lines: how the region is organised, the Cycle’s dates, and a person’s route through them. Stations that share a column are the same thing seen from two lines.</desc>
 <style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap");.flow text{font-family:Inter,system-ui,sans-serif;font-feature-settings:"ss01","cv11"}.flow .num{font-variant-numeric:tabular-nums}</style>
-<rect width="2600" height="2358" fill="#e5e7de"/>
+<rect width="2600" height="2554" fill="#e5e7de"/>
 <g class="fl-rails">
-<line x1="992" y1="884" x2="992" y2="1268" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
-<path d="M983,938l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1006" y="1071" font-size="13.745" font-weight="700" fill="#0b3536">4–6 hours a week,</text>
-<text x="1006" y="1091" font-size="13.745" font-weight="700" fill="#0b3536">for twelve weeks</text>
-<line x1="1268" y1="500" x2="1268" y2="884" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
-<path d="M1259,830l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="578" y1="884" x2="578" y2="1424" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+<path d="M569,1370l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="592" y="1149" font-size="13.745" font-weight="700" fill="#0b3536">a kit a stranger</text>
+<text x="592" y="1169" font-size="13.745" font-weight="700" fill="#0b3536">can run</text>
+<line x1="578" y1="1424" x2="578" y2="1894" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+<path d="M569,1840l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="592" y="1654" font-size="13.745" font-weight="700" fill="#0b3536">a first session,</text>
+<text x="592" y="1674" font-size="13.745" font-weight="700" fill="#0b3536">near you</text>
+<line x1="854" y1="884" x2="854" y2="1894" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+<path d="M845,1840l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="840" y="1149" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">a module any</text>
+<text x="840" y="1169" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">trainer can teach</text>
+<line x1="1268" y1="500" x2="1268" y2="1894" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M1259,1840l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="1254" y="687" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">a question worth</text>
 <text x="1254" y="707" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">twelve weeks</text>
-<line x1="1268" y1="884" x2="1268" y2="1268" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
-<path d="M1259,1214l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1254" y="1061" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">interviews, cases</text>
-<text x="1254" y="1081" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">and records to</text>
-<text x="1254" y="1101" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">find</text>
-<line x1="1406" y1="884" x2="1406" y2="1268" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
-<path d="M1397,1214l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1392" y="1081" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">one frame each</text>
-<line x1="1544" y1="884" x2="1544" y2="1268" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<line x1="992" y1="1894" x2="992" y2="2294" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M983,2240l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1006" y="2089" font-size="13.745" font-weight="700" fill="#0b3536">4–6 hours a week,</text>
+<text x="1006" y="2109" font-size="13.745" font-weight="700" fill="#0b3536">for twelve weeks</text>
+<line x1="1268" y1="1894" x2="1268" y2="2294" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M1259,1948l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1254" y="2079" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">interviews, cases</text>
+<text x="1254" y="2099" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">and records to</text>
+<text x="1254" y="2119" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">find</text>
+<line x1="1406" y1="1894" x2="1406" y2="2294" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M1397,1948l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1392" y="2099" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">one frame each</text>
+<line x1="1544" y1="1894" x2="1544" y2="2294" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M1535,2240l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1558" y="2089" font-size="13.745" font-weight="700" fill="#0b3536">what three people</text>
+<text x="1558" y="2109" font-size="13.745" font-weight="700" fill="#0b3536">did</text>
+<line x1="1544" y1="884" x2="1544" y2="1894" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
 <path d="M1535,938l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1558" y="1071" font-size="13.745" font-weight="700" fill="#0b3536">what three people</text>
-<text x="1558" y="1091" font-size="13.745" font-weight="700" fill="#0b3536">did</text>
-<line x1="1820" y1="500" x2="1820" y2="884" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
-<path d="M1811,554l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1558" y="1149" font-size="13.745" font-weight="700" fill="#0b3536">your prototype, as</text>
+<text x="1558" y="1169" font-size="13.745" font-weight="700" fill="#0b3536">a pull request</text>
+<line x1="1820" y1="1894" x2="1820" y2="2294" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M1811,2240l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1834" y="2099" font-size="13.745" font-weight="700" fill="#0b3536">a proposal</text>
+<line x1="1820" y1="500" x2="1820" y2="1894" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M1811,1840l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="1834" y="697" font-size="13.745" font-weight="700" fill="#0b3536">a yes, and a team</text>
-<line x1="1820" y1="884" x2="1820" y2="1268" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
-<path d="M1811,938l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1834" y="1081" font-size="13.745" font-weight="700" fill="#0b3536">a proposal</text>
-<line x1="2372" y1="884" x2="2372" y2="1268" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
-<path d="M2363,938l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="2358" y="1071" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">what shipped, and</text>
-<text x="2358" y="1091" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">what you learned</text>
-<line x1="2372" y1="500" x2="2372" y2="884" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<line x1="2096" y1="884" x2="2096" y2="1894" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+<path d="M2087,938l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2110" y="1149" font-size="13.745" font-weight="700" fill="#0b3536">merged changes the</text>
+<text x="2110" y="1169" font-size="13.745" font-weight="700" fill="#0b3536">region runs on</text>
+<line x1="2372" y1="1894" x2="2372" y2="2294" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
+<path d="M2363,2240l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2358" y="2089" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">what shipped, and</text>
+<text x="2358" y="2109" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">what you learned</text>
+<line x1="2372" y1="1424" x2="2372" y2="1894" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+<path d="M2363,1478l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2358" y="1644" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">the showcase, with</text>
+<text x="2358" y="1664" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">employers in the</text>
+<text x="2358" y="1684" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">room</text>
+<line x1="2372" y1="500" x2="2372" y2="1424" stroke="#0b3536" stroke-width="3" stroke-linecap="round"/>
 <path d="M2363,554l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="2358" y="697" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">what held up</text>
-<line x1="2510" y1="500" x2="2510" y2="1268" stroke="#f54123" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
-<path d="M2501,554l9,-10 9,10" stroke="#f54123" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="2496" y="687" text-anchor="end" font-size="13.745" font-weight="700" fill="#f54123">nothing crosses</text>
-<text x="2496" y="707" text-anchor="end" font-size="13.745" font-weight="700" fill="#f54123">yet</text>
-<line x1="578" y1="1768" x2="578" y2="2098" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
-<path d="M569,1822l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="592" y="1928" font-size="13.745" font-weight="700" fill="#0b3536">a kit a stranger</text>
-<text x="592" y="1948" font-size="13.745" font-weight="700" fill="#0b3536">can run</text>
-<line x1="578" y1="1268" x2="578" y2="1768" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
-<path d="M569,1322l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="592" y="1513" font-size="13.745" font-weight="700" fill="#0b3536">a first session,</text>
-<text x="592" y="1533" font-size="13.745" font-weight="700" fill="#0b3536">near you</text>
-<line x1="854" y1="1268" x2="854" y2="2098" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
-<path d="M845,1322l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="840" y="1513" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">a module any</text>
-<text x="840" y="1533" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">trainer can teach</text>
-<line x1="1268" y1="1268" x2="1268" y2="2098" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
-<path d="M1259,2044l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1254" y="1513" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">your first issue</text>
-<text x="1254" y="1533" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">or pull request</text>
-<line x1="2096" y1="1268" x2="2096" y2="2098" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
-<path d="M2087,2044l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="2082" y="1513" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">merged changes the</text>
-<text x="2082" y="1533" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">region runs on</text>
-<line x1="2372" y1="1268" x2="2372" y2="1768" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
-<path d="M2363,1714l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="2358" y="1503" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">the showcase, with</text>
-<text x="2358" y="1523" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">employers in the</text>
-<text x="2358" y="1543" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">room</text>
-<line x1="2510" y1="1268" x2="2510" y2="2098" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
-<path d="M2501,2044l9,10 9,-10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="2496" y="1513" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">a role that keeps</text>
-<text x="2496" y="1533" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">you in</text>
+<line x1="2510" y1="884" x2="2510" y2="1894" stroke="#0b3536" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+<path d="M2501,938l9,-10 9,10" stroke="#0b3536" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2496" y="1149" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">a role that keeps</text>
+<text x="2496" y="1169" text-anchor="end" font-size="13.745" font-weight="700" fill="#0b3536">you in</text>
 </g>
+<path d="M36,380V1484" stroke="#0b3536" stroke-width="4" fill="none" stroke-linecap="round"/>
 <path d="M440,500H2510" stroke="#0b3536" stroke-width="8" stroke-linecap="butt" fill="none"/>
 <line x1="2510" y1="482" x2="2510" y2="518" stroke="#0b3536" stroke-width="8" stroke-linecap="round"/>
-<text x="48" y="412" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">How the region is</text>
-<text x="48" y="440" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">organised</text>
-<text x="48" y="472" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
-<text x="104" y="472" font-size="13.745" fill="#0b3536">A platform, a brand, rooms,</text>
-<text x="104" y="492" font-size="13.745" fill="#0b3536">review, and a clock</text>
-<text x="48" y="520" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
-<text x="104" y="520" font-size="13.745" fill="#0b3536">Changes that hold up, carried back</text>
-<text x="104" y="540" font-size="13.745" fill="#0b3536">to the commons</text>
-<path d="M992,884H2372" stroke="#0b3536" stroke-width="8" stroke-linecap="butt" fill="none"/>
-<line x1="2372" y1="866" x2="2372" y2="902" stroke="#0b3536" stroke-width="8" stroke-linecap="round"/>
-<text x="48" y="824" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">Build Cycle C04</text>
-<text x="48" y="856" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
-<text x="104" y="856" font-size="13.745" fill="#0b3536">A fixed clock, a room on group</text>
-<text x="104" y="876" font-size="13.745" fill="#0b3536">days, a vote</text>
-<text x="48" y="904" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
-<text x="104" y="904" font-size="13.745" fill="#0b3536">Problems picked, finds,</text>
-<text x="104" y="924" font-size="13.745" fill="#0b3536">prototypes, three releases</text>
-<path d="M440,1268H2510" stroke="#0098d8" stroke-width="8" stroke-linecap="butt" fill="none"/>
-<text x="48" y="1208" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">A person’s route</text>
-<text x="48" y="1240" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
-<text x="104" y="1240" font-size="13.745" fill="#0b3536">Four to six volunteer hours a</text>
-<text x="104" y="1260" font-size="13.745" fill="#0b3536">week, and what you already know</text>
-<text x="48" y="1288" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
-<text x="104" y="1288" font-size="13.745" fill="#0b3536">Practice, a team, and a public</text>
-<text x="104" y="1308" font-size="13.745" fill="#0b3536">record of what you built</text>
-<path d="M578,1768H2372" stroke="#0b3536" stroke-width="8" stroke-linecap="butt" fill="none" stroke-dasharray="22 14"/>
-<text x="48" y="1708" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">Where people gather</text>
-<rect x="48" y="1658" width="76" height="24" rx="4" fill="none" stroke="#0b3536" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="86" y="1675" text-anchor="middle" font-size="13.745" font-weight="800" fill="#0b3536">Planned</text>
-<text x="48" y="1740" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
-<text x="104" y="1740" font-size="13.745" fill="#0b3536">Rooms all over the region, hosted</text>
-<text x="104" y="1760" font-size="13.745" fill="#0b3536">by neighbours, run from a kit</text>
-<text x="48" y="1788" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
-<text x="104" y="1788" font-size="13.745" fill="#0b3536">People who know each other,</text>
-<text x="104" y="1808" font-size="13.745" fill="#0b3536">before, between and after Cycles</text>
-<path d="M578,2098H2510" stroke="#0b3536" stroke-width="8" stroke-linecap="butt" fill="none" stroke-dasharray="22 14"/>
-<line x1="2510" y1="2080" x2="2510" y2="2116" stroke="#0b3536" stroke-width="8" stroke-linecap="round"/>
-<text x="48" y="2010" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">The commons: OLOS, modules</text>
-<text x="48" y="2038" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">and kits</text>
-<rect x="48" y="1960" width="76" height="24" rx="4" fill="none" stroke="#0b3536" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="86" y="1977" text-anchor="middle" font-size="13.745" font-weight="800" fill="#0b3536">Planned</text>
-<text x="48" y="2070" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
-<text x="104" y="2070" font-size="13.745" fill="#0b3536">An open contribution model: anyone</text>
-<text x="104" y="2090" font-size="13.745" fill="#0b3536">can propose a change</text>
-<text x="48" y="2118" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
-<text x="104" y="2118" font-size="13.745" fill="#0b3536">Kits, modules and code any</text>
-<text x="104" y="2138" font-size="13.745" fill="#0b3536">neighbourhood or region can use</text>
+<text x="56" y="440" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">The region</text>
+<text x="56" y="472" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
+<text x="112" y="472" font-size="13.745" fill="#0b3536">A platform, a brand, rooms,</text>
+<text x="112" y="492" font-size="13.745" fill="#0b3536">review, and a clock</text>
+<text x="56" y="520" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
+<text x="112" y="520" font-size="13.745" fill="#0b3536">Changes that hold up, carried back</text>
+<text x="112" y="540" font-size="13.745" fill="#0b3536">to the commons</text>
+<path d="M578,884H2510" stroke="#0b3536" stroke-width="8" stroke-linecap="butt" fill="none" stroke-dasharray="22 14"/>
+<line x1="2510" y1="866" x2="2510" y2="902" stroke="#0b3536" stroke-width="8" stroke-linecap="round"/>
+<text x="56" y="796" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">What it runs: OLOS,</text>
+<text x="56" y="824" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">modules and kits</text>
+<rect x="56" y="746" width="76" height="24" rx="4" fill="none" stroke="#0b3536" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="94" y="763" text-anchor="middle" font-size="13.745" font-weight="800" fill="#0b3536">Planned</text>
+<text x="56" y="856" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
+<text x="112" y="856" font-size="13.745" fill="#0b3536">An open contribution model: anyone</text>
+<text x="112" y="876" font-size="13.745" fill="#0b3536">can propose a change</text>
+<text x="56" y="904" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
+<text x="112" y="904" font-size="13.745" fill="#0b3536">Kits, modules and code any</text>
+<text x="112" y="924" font-size="13.745" fill="#0b3536">neighbourhood or region can use</text>
+<path d="M578,1424H2372" stroke="#0b3536" stroke-width="8" stroke-linecap="butt" fill="none" stroke-dasharray="22 14"/>
+<text x="56" y="1336" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">What it runs: places to</text>
+<text x="56" y="1364" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">gather</text>
+<rect x="56" y="1286" width="76" height="24" rx="4" fill="none" stroke="#0b3536" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="94" y="1303" text-anchor="middle" font-size="13.745" font-weight="800" fill="#0b3536">Planned</text>
+<text x="56" y="1396" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
+<text x="112" y="1396" font-size="13.745" fill="#0b3536">Rooms all over the region, hosted</text>
+<text x="112" y="1416" font-size="13.745" fill="#0b3536">by neighbours, run from a kit</text>
+<text x="56" y="1444" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
+<text x="112" y="1444" font-size="13.745" fill="#0b3536">People who know each other,</text>
+<text x="112" y="1464" font-size="13.745" fill="#0b3536">before, between and after Cycles</text>
+<path d="M440,1894H2510" stroke="#0098d8" stroke-width="8" stroke-linecap="butt" fill="none"/>
+<text x="56" y="1834" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">A person’s route</text>
+<text x="56" y="1866" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
+<text x="112" y="1866" font-size="13.745" fill="#0b3536">Four to six volunteer hours a</text>
+<text x="112" y="1886" font-size="13.745" fill="#0b3536">week, and what you already know</text>
+<text x="56" y="1914" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
+<text x="112" y="1914" font-size="13.745" fill="#0b3536">Practice, a team, and a public</text>
+<text x="112" y="1934" font-size="13.745" fill="#0b3536">record of what you built</text>
+<path d="M992,2294H2372" stroke="#0b3536" stroke-width="8" stroke-linecap="butt" fill="none"/>
+<line x1="2372" y1="2276" x2="2372" y2="2312" stroke="#0b3536" stroke-width="8" stroke-linecap="round"/>
+<text x="56" y="2234" font-size="21.9919" font-weight="800" letter-spacing="-.01em" fill="#0b3536">Build Cycle C04</text>
+<text x="56" y="2266" font-size="13.745" font-weight="800" fill="#0b3536">Gives</text>
+<text x="112" y="2266" font-size="13.745" fill="#0b3536">A fixed clock, a room on group</text>
+<text x="112" y="2286" font-size="13.745" fill="#0b3536">days, a vote</text>
+<text x="56" y="2314" font-size="13.745" font-weight="800" fill="#0b3536">Gets</text>
+<text x="112" y="2314" font-size="13.745" fill="#0b3536">Problems picked, finds,</text>
+<text x="112" y="2334" font-size="13.745" fill="#0b3536">prototypes, three releases</text>
 <circle cx="440" cy="500" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
 <text x="440" y="544" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">The Upskilling</text>
 <text x="440" y="564" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Labs, Inc.</text>
@@ -193,243 +190,241 @@
 <text x="2372" y="584" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">offered upstream to</text>
 <text x="2372" y="604" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">national OLOS, as</text>
 <text x="2372" y="624" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">pull requests</text>
-<circle cx="2510" cy="500" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2510" cy="500" r="8" fill="none" stroke="#f54123" stroke-width="4"/>
-<text x="2510" y="392" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Employers</text>
-<text x="2510" y="412" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Not asked yet. What</text>
-<text x="2510" y="432" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">they could read: a</text>
-<text x="2510" y="452" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">record of what you</text>
-<text x="2510" y="472" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">built</text>
-<circle cx="992" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="992" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text class="num" x="992" y="928" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Oct 24</text>
-<text x="992" y="948" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Sensemaking day</text>
-<text x="992" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The room picks its</text>
-<text x="992" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">problems</text>
-<circle cx="1130" cy="884" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text class="num" x="1130" y="776" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Oct 26</text>
-<text x="1130" y="796" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Archaeology</text>
-<text x="1130" y="816" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>How this became a</text>
-<text x="1130" y="836" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>problem; what’s</text>
-<text x="1130" y="856" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>been tried anywhere</text>
-<circle cx="1268" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1268" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text class="num" x="1268" y="928" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 2</text>
-<text x="1268" y="948" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">First</text>
-<text x="1268" y="968" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">interviews</text>
-<text x="1268" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">One per builder;</text>
-<text x="1268" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the context map</text>
-<text x="1268" y="1028" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">drafted</text>
-<circle cx="1406" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1406" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text class="num" x="1406" y="756" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 7</text>
-<text x="1406" y="776" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The paradox</text>
-<text x="1406" y="796" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Two truths that</text>
-<text x="1406" y="816" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">block the easy fix;</text>
-<text x="1406" y="836" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">each builder leaves</text>
-<text x="1406" y="856" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">with a frame</text>
+<circle cx="2510" cy="500" r="12" fill="#e5e7de" stroke="#f54123" stroke-width="5"/>
+<text x="2510" y="412" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Employers</text>
+<text x="2510" y="432" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Not asked yet.</text>
+<text x="2510" y="452" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Nothing they could</text>
+<text x="2510" y="472" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>read reaches them</text>
+<circle cx="578" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="578" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text x="578" y="928" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Kits</text>
+<text x="578" y="948" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Modular</text>
+<text x="578" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">programmatic kits:</text>
+<text x="578" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a session in a box,</text>
+<text x="578" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">with agenda,</text>
+<text x="578" y="1028" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">materials,</text>
+<text x="578" y="1048" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">facilitator notes</text>
+<text x="578" y="1068" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and setup</text>
+<circle cx="854" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="854" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text x="854" y="928" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Learning</text>
+<text x="854" y="948" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">modules</text>
+<text x="854" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">What a training</text>
+<text x="854" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">teaches, written</text>
+<text x="854" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">once, taught by any</text>
+<text x="854" y="1028" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">trainer</text>
 <circle cx="1544" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
 <circle cx="1544" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text class="num" x="1544" y="928" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 8–13</text>
-<text x="1544" y="948" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Rapid</text>
-<text x="1544" y="968" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">prototypes</text>
-<text x="1544" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Each a probe, put</text>
-<text x="1544" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">in front of three</text>
-<text x="1544" y="1028" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">real people</text>
-<circle cx="1820" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1820" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text class="num" x="1820" y="928" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 14</text>
-<text x="1820" y="948" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The room votes</text>
-<text x="1820" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Proposals pitched;</text>
-<text x="1820" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a yes gives a</text>
-<text x="1820" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">project a team</text>
-<circle cx="1958" cy="884" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text class="num" x="1958" y="796" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Nov 23</text>
-<text x="1958" y="816" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">First release</text>
-<text x="1958" y="836" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Used by at least</text>
-<text x="1958" y="856" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>three real people</text>
-<circle cx="2096" cy="884" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text class="num" x="2096" y="928" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Nov 30</text>
-<text x="2096" y="948" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Second release</text>
-<text x="2096" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Changed by what</text>
-<text x="2096" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>those people did</text>
-<circle cx="2234" cy="884" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text class="num" x="2234" y="756" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Dec 7</text>
-<text x="2234" y="776" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Final release</text>
-<text x="2234" y="796" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>A January</text>
-<text x="2234" y="816" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>maintainer named; a</text>
-<text x="2234" y="836" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>pull request to</text>
-<text x="2234" y="856" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>OLOS</text>
-<circle cx="2372" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2372" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text class="num" x="2372" y="928" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Dec 8</text>
-<text x="2372" y="948" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Teach-back</text>
-<text x="2372" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The room learns</text>
-<text x="2372" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">what each team</text>
-<text x="2372" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">learned</text>
-<circle cx="440" cy="1268" r="12" fill="#e5e7de" stroke="#0098d8" stroke-width="5"/>
-<text x="440" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">You hear of it</text>
-<text x="440" y="1332" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>A friend, LinkedIn,</text>
-<text x="440" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>a Luma listing, the</text>
-<text x="440" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Metro map</text>
-<circle cx="578" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="578" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="578" y="1160" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A first session</text>
-<text x="578" y="1180" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">You leave with a</text>
-<text x="578" y="1200" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">tool learned or a</text>
-<text x="578" y="1220" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">thing made, at a</text>
-<text x="578" y="1240" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">library or online</text>
-<circle cx="716" cy="1268" r="12" fill="#e5e7de" stroke="#0098d8" stroke-width="5"/>
-<text x="716" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">An account on</text>
-<text x="716" y="1332" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">the app</text>
-<text x="716" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>A profile that</text>
-<text x="716" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>follows you between</text>
-<text x="716" y="1392" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>the parts</text>
-<circle cx="854" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="854" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="854" y="1160" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">More sessions</text>
-<text x="854" y="1180" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Skills, practised:</text>
-<text x="854" y="1200" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">learn a tool, work</text>
-<text x="854" y="1220" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a problem with</text>
-<text x="854" y="1240" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">others</text>
-<circle cx="992" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="992" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="992" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Into a Cycle</text>
-<text x="992" y="1332" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">C04 by invitation</text>
-<text x="992" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">to past</text>
-<text x="992" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">participants</text>
-<circle cx="1268" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1268" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="1268" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A research pod</text>
-<text x="1268" y="1332" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A question,</text>
-<text x="1268" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">company, and the</text>
-<text x="1268" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">archaeology to do</text>
-<circle cx="1406" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1406" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="1406" y="1180" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A frame</text>
-<text x="1406" y="1200" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A way to see the</text>
-<text x="1406" y="1220" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">problem that is</text>
-<text x="1406" y="1240" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">yours</text>
-<circle cx="1544" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1544" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="1544" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A prototype</text>
-<text x="1544" y="1332" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Made in an hour;</text>
-<text x="1544" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">evidence from three</text>
-<text x="1544" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">people</text>
-<circle cx="1820" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1820" cy="1268" r="8" fill="none" stroke="#f54123" stroke-width="4"/>
-<text x="1820" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A team</text>
-<text x="1820" y="1332" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A team and a</text>
-<text x="1820" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">mandate. Or not: if</text>
-<text x="1820" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the room doesn’t</text>
-<text x="1820" y="1392" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">pick your project,</text>
-<text x="1820" y="1412" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">your pod dissolves</text>
-<circle cx="2096" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2096" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="2096" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Three weeks of</text>
-<text x="2096" y="1332" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">building</text>
-<text x="2096" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A change that</text>
-<text x="2096" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">ships, used by real</text>
-<text x="2096" y="1392" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">people</text>
-<circle cx="2372" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2372" cy="1268" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
-<text x="2372" y="1312" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The showcase</text>
-<text x="2372" y="1332" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A public record of</text>
-<text x="2372" y="1352" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">what you built, and</text>
-<text x="2372" y="1372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a team you stay in</text>
-<text x="2372" y="1392" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">touch with</text>
-<circle cx="2510" cy="1268" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2510" cy="1268" r="8" fill="none" stroke="#f54123" stroke-width="4"/>
-<text x="2510" y="1160" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">After</text>
-<text x="2510" y="1180" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nothing yet. The</text>
-<text x="2510" y="1200" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">record counts</text>
-<text x="2510" y="1220" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">nowhere; there is</text>
-<text x="2510" y="1240" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">no route back in</text>
-<circle cx="578" cy="1768" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="578" cy="1768" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text x="578" y="1640" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Neighborhood</text>
-<text x="578" y="1660" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">workshops</text>
-<text x="578" y="1680" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A neighborhood team</text>
-<text x="578" y="1700" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">hosts in person, at</text>
-<text x="578" y="1720" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">their own library,</text>
-<text x="578" y="1740" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">from a kit</text>
-<circle cx="992" cy="1768" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text x="992" y="1640" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Salons</text>
-<text x="992" y="1660" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Small evenings</text>
-<text x="992" y="1680" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>around one</text>
-<text x="992" y="1700" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>question, where</text>
-<text x="992" y="1720" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>past participants</text>
-<text x="992" y="1740" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>meet newcomers</text>
-<circle cx="1682" cy="1768" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text x="1682" y="1600" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Meetups</text>
-<text x="1682" y="1620" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Planned as</text>
-<text x="1682" y="1640" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>multi-organization</text>
-<text x="1682" y="1660" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>events, co-hosted</text>
-<text x="1682" y="1680" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>with civic tech</text>
-<text x="1682" y="1700" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>groups, libraries,</text>
-<text x="1682" y="1720" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>nonprofits and</text>
-<text x="1682" y="1740" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>employers</text>
-<circle cx="2372" cy="1768" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2372" cy="1768" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text x="2372" y="1600" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Summits</text>
-<text x="2372" y="1620" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Real DC-style</text>
-<text x="2372" y="1640" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">summits: panels,</text>
-<text x="2372" y="1660" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">partners, agencies</text>
-<text x="2372" y="1680" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and employers in</text>
-<text x="2372" y="1700" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the room, with the</text>
-<text x="2372" y="1720" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">showcase on the</text>
-<text x="2372" y="1740" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">program</text>
-<circle cx="578" cy="2098" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="578" cy="2098" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text x="578" y="2142" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Kits</text>
-<text x="578" y="2162" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Modular</text>
-<text x="578" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">programmatic kits:</text>
-<text x="578" y="2202" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a session in a box,</text>
-<text x="578" y="2222" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">with agenda,</text>
-<text x="578" y="2242" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">materials,</text>
-<text x="578" y="2262" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">facilitator notes</text>
-<text x="578" y="2282" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and setup</text>
-<circle cx="854" cy="2098" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="854" cy="2098" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text x="854" y="2142" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Learning</text>
-<text x="854" y="2162" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">modules</text>
-<text x="854" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">What a training</text>
-<text x="854" y="2202" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">teaches, written</text>
-<text x="854" y="2222" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">once, taught by any</text>
-<text x="854" y="2242" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">trainer</text>
-<circle cx="1268" cy="2098" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="1268" cy="2098" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text x="1268" y="2142" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Contributor</text>
-<text x="1268" y="2162" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Opens an issue or a</text>
-<text x="1268" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">pull request to</text>
-<text x="1268" y="2202" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">OLOS, a module or a</text>
-<text x="1268" y="2222" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">kit</text>
-<circle cx="1682" cy="2098" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text x="1682" y="2142" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Reviewer</text>
-<text x="1682" y="2162" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Reviews other</text>
-<text x="1682" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>people’s changes;</text>
-<text x="1682" y="2202" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>trusted to say</text>
-<text x="1682" y="2222" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>what’s ready</text>
-<circle cx="2096" cy="2098" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2096" cy="2098" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text x="2096" y="2142" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Committer</text>
-<text x="2096" y="2162" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Can merge: changes</text>
-<text x="2096" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the region runs on</text>
-<circle cx="2510" cy="2098" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
-<circle cx="2510" cy="2098" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
-<text x="2510" y="2142" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Maintainer</text>
-<text x="2510" y="2162" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Keeps a part</text>
-<text x="2510" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">healthy over time.</text>
-<text x="2510" y="2202" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">OLOS itself is</text>
-<text x="2510" y="2222" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">maintained by the</text>
-<text x="2510" y="2242" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">steering committee</text>
-<text x="2510" y="2262" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and the regional</text>
-<text x="2510" y="2282" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">association</text>
+<text x="1544" y="928" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Contributor</text>
+<text x="1544" y="948" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Opens an issue or a</text>
+<text x="1544" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">pull request to</text>
+<text x="1544" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">OLOS, a module or a</text>
+<text x="1544" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">kit</text>
+<circle cx="1682" cy="884" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
+<text x="1682" y="928" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Reviewer</text>
+<text x="1682" y="948" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Reviews other</text>
+<text x="1682" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>people’s changes;</text>
+<text x="1682" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>trusted to say</text>
+<text x="1682" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>what’s ready</text>
+<circle cx="2096" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="2096" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text x="2096" y="928" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Committer</text>
+<text x="2096" y="948" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Can merge: changes</text>
+<text x="2096" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the region runs on</text>
+<circle cx="2510" cy="884" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="2510" cy="884" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text x="2510" y="928" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Maintainer</text>
+<text x="2510" y="948" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Keeps a part</text>
+<text x="2510" y="968" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">healthy over time.</text>
+<text x="2510" y="988" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">OLOS itself is</text>
+<text x="2510" y="1008" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">maintained by the</text>
+<text x="2510" y="1028" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">steering committee</text>
+<text x="2510" y="1048" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and the regional</text>
+<text x="2510" y="1068" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">association</text>
+<circle cx="578" cy="1424" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="578" cy="1424" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text x="578" y="1296" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Neighborhood</text>
+<text x="578" y="1316" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">workshops</text>
+<text x="578" y="1336" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A neighborhood team</text>
+<text x="578" y="1356" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">hosts in person, at</text>
+<text x="578" y="1376" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">their own library,</text>
+<text x="578" y="1396" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">from a kit</text>
+<circle cx="992" cy="1424" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
+<text x="992" y="1296" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Salons</text>
+<text x="992" y="1316" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Small evenings</text>
+<text x="992" y="1336" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>around one</text>
+<text x="992" y="1356" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>question, where</text>
+<text x="992" y="1376" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>past participants</text>
+<text x="992" y="1396" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>meet newcomers</text>
+<circle cx="1682" cy="1424" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
+<text x="1682" y="1256" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Meetups</text>
+<text x="1682" y="1276" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Planned as</text>
+<text x="1682" y="1296" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>multi-organization</text>
+<text x="1682" y="1316" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>events, co-hosted</text>
+<text x="1682" y="1336" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>with civic tech</text>
+<text x="1682" y="1356" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>groups, libraries,</text>
+<text x="1682" y="1376" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>nonprofits and</text>
+<text x="1682" y="1396" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>employers</text>
+<circle cx="2372" cy="1424" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="2372" cy="1424" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text x="2372" y="1256" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Summits</text>
+<text x="2372" y="1276" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Real DC-style</text>
+<text x="2372" y="1296" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">summits: panels,</text>
+<text x="2372" y="1316" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">partners, agencies</text>
+<text x="2372" y="1336" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and employers in</text>
+<text x="2372" y="1356" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the room, with the</text>
+<text x="2372" y="1376" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">showcase on the</text>
+<text x="2372" y="1396" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">program</text>
+<circle cx="440" cy="1894" r="12" fill="#e5e7de" stroke="#0098d8" stroke-width="5"/>
+<text x="440" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">You hear of it</text>
+<text x="440" y="1958" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>A friend, LinkedIn,</text>
+<text x="440" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>a Luma listing, the</text>
+<text x="440" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Metro map</text>
+<circle cx="578" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="578" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="578" y="1786" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A first session</text>
+<text x="578" y="1806" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">You leave with a</text>
+<text x="578" y="1826" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">tool learned or a</text>
+<text x="578" y="1846" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">thing made, at a</text>
+<text x="578" y="1866" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">library or online</text>
+<circle cx="716" cy="1894" r="12" fill="#e5e7de" stroke="#0098d8" stroke-width="5"/>
+<text x="716" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">An account on</text>
+<text x="716" y="1958" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">the app</text>
+<text x="716" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>A profile that</text>
+<text x="716" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>follows you between</text>
+<text x="716" y="2018" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>the parts</text>
+<circle cx="854" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="854" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="854" y="1786" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">More sessions</text>
+<text x="854" y="1806" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Skills, practised:</text>
+<text x="854" y="1826" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">learn a tool, work</text>
+<text x="854" y="1846" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a problem with</text>
+<text x="854" y="1866" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">others</text>
+<circle cx="992" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="992" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="992" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Into a Cycle</text>
+<text x="992" y="1958" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">C04 by invitation</text>
+<text x="992" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">to past</text>
+<text x="992" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">participants</text>
+<circle cx="1268" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1268" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="1268" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A research pod</text>
+<text x="1268" y="1958" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A question,</text>
+<text x="1268" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">company, and the</text>
+<text x="1268" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">archaeology to do</text>
+<circle cx="1406" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1406" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="1406" y="1806" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A frame</text>
+<text x="1406" y="1826" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A way to see the</text>
+<text x="1406" y="1846" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">problem that is</text>
+<text x="1406" y="1866" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">yours</text>
+<circle cx="1544" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1544" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="1544" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A prototype</text>
+<text x="1544" y="1958" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Made in an hour;</text>
+<text x="1544" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">evidence from three</text>
+<text x="1544" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">people</text>
+<circle cx="1820" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1820" cy="1894" r="8" fill="none" stroke="#f54123" stroke-width="4"/>
+<text x="1820" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A team</text>
+<text x="1820" y="1958" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A team and a</text>
+<text x="1820" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">mandate. Or not: if</text>
+<text x="1820" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the room doesn’t</text>
+<text x="1820" y="2018" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">pick your project,</text>
+<text x="1820" y="2038" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">your pod dissolves</text>
+<circle cx="2096" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="2096" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="2096" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Three weeks of</text>
+<text x="2096" y="1958" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">building</text>
+<text x="2096" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A change that</text>
+<text x="2096" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">ships, used by real</text>
+<text x="2096" y="2018" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">people</text>
+<circle cx="2372" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="2372" cy="1894" r="8" fill="none" stroke="#0098d8" stroke-width="4"/>
+<text x="2372" y="1938" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The showcase</text>
+<text x="2372" y="1958" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">A public record of</text>
+<text x="2372" y="1978" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">what you built, and</text>
+<text x="2372" y="1998" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a team you stay in</text>
+<text x="2372" y="2018" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">touch with</text>
+<circle cx="2510" cy="1894" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="2510" cy="1894" r="8" fill="none" stroke="#f54123" stroke-width="4"/>
+<text x="2510" y="1786" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">After</text>
+<text x="2510" y="1806" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nothing yet. The</text>
+<text x="2510" y="1826" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">record counts</text>
+<text x="2510" y="1846" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">nowhere; there is</text>
+<text x="2510" y="1866" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">no route back in</text>
+<circle cx="992" cy="2294" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="992" cy="2294" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text class="num" x="992" y="2338" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Oct 24</text>
+<text x="992" y="2358" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Sensemaking day</text>
+<text x="992" y="2378" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The room picks its</text>
+<text x="992" y="2398" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">problems</text>
+<circle cx="1130" cy="2294" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
+<text class="num" x="1130" y="2186" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Oct 26</text>
+<text x="1130" y="2206" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Archaeology</text>
+<text x="1130" y="2226" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>How this became a</text>
+<text x="1130" y="2246" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>problem; what’s</text>
+<text x="1130" y="2266" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>been tried anywhere</text>
+<circle cx="1268" cy="2294" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1268" cy="2294" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text class="num" x="1268" y="2338" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 2</text>
+<text x="1268" y="2358" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">First</text>
+<text x="1268" y="2378" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">interviews</text>
+<text x="1268" y="2398" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">One per builder;</text>
+<text x="1268" y="2418" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">the context map</text>
+<text x="1268" y="2438" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">drafted</text>
+<circle cx="1406" cy="2294" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1406" cy="2294" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text class="num" x="1406" y="2166" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 7</text>
+<text x="1406" y="2186" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The paradox</text>
+<text x="1406" y="2206" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Two truths that</text>
+<text x="1406" y="2226" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">block the easy fix;</text>
+<text x="1406" y="2246" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">each builder leaves</text>
+<text x="1406" y="2266" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">with a frame</text>
+<circle cx="1544" cy="2294" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1544" cy="2294" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text class="num" x="1544" y="2338" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 8–13</text>
+<text x="1544" y="2358" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Rapid</text>
+<text x="1544" y="2378" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">prototypes</text>
+<text x="1544" y="2398" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Each a probe, put</text>
+<text x="1544" y="2418" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">in front of three</text>
+<text x="1544" y="2438" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">real people</text>
+<circle cx="1820" cy="2294" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="1820" cy="2294" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text class="num" x="1820" y="2338" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Nov 14</text>
+<text x="1820" y="2358" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The room votes</text>
+<text x="1820" y="2378" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Proposals pitched;</text>
+<text x="1820" y="2398" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">a yes gives a</text>
+<text x="1820" y="2418" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">project a team</text>
+<circle cx="1958" cy="2294" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
+<text class="num" x="1958" y="2206" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Nov 23</text>
+<text x="1958" y="2226" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">First release</text>
+<text x="1958" y="2246" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Used by at least</text>
+<text x="1958" y="2266" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>three real people</text>
+<circle cx="2096" cy="2294" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
+<text class="num" x="2096" y="2338" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Nov 30</text>
+<text x="2096" y="2358" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Second release</text>
+<text x="2096" y="2378" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Changed by what</text>
+<text x="2096" y="2398" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>those people did</text>
+<circle cx="2234" cy="2294" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
+<text class="num" x="2234" y="2166" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536">Dec 7</text>
+<text x="2234" y="2186" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Final release</text>
+<text x="2234" y="2206" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>A January</text>
+<text x="2234" y="2226" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>maintainer named; a</text>
+<text x="2234" y="2246" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>pull request to</text>
+<text x="2234" y="2266" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>OLOS</text>
+<circle cx="2372" cy="2294" r="15" fill="#e5e7de" stroke="#0b3536" stroke-width="4"/>
+<circle cx="2372" cy="2294" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
+<text class="num" x="2372" y="2338" text-anchor="middle" font-size="13.745" font-weight="700" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Dec 8</text>
+<text x="2372" y="2358" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Teach-back</text>
+<text x="2372" y="2378" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">The room learns</text>
+<text x="2372" y="2398" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">what each team</text>
+<text x="2372" y="2418" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">learned</text>
 <text x="48" y="88" font-size="54.98" font-weight="800" letter-spacing="-.025em" fill="#0b3536">How the region fits together</text>
 <text x="48" y="128" font-size="16.494" fill="#0b3536">What runs today, in solid lines, and what we’re building next, dashed.</text>
 <text x="48" y="172" font-size="13.745" font-weight="800" fill="#0b3536">How to read it</text>
 <line x1="48" y1="195" x2="80" y2="195" stroke="#0b3536" stroke-width="8"/>
-<text x="92" y="200" font-size="13.745" fill="#0b3536">How the region is organised, and the Cycle’s dates</text>
+<text x="92" y="200" font-size="13.745" fill="#0b3536">The region, what it runs, and the Cycle’s dates</text>
 <line x1="48" y1="219" x2="80" y2="219" stroke="#0098d8" stroke-width="8"/>
 <text x="92" y="224" font-size="13.745" fill="#0b3536">A person’s route</text>
 <circle cx="64" cy="243" r="7" fill="#e5e7de" stroke="#0b3536" stroke-width="3"/><circle cx="64" cy="243" r="3" fill="none" stroke="#0098d8" stroke-width="2.5"/>
@@ -440,5 +435,5 @@
 <text x="92" y="296" font-size="13.745" fill="#0b3536">Where people stop</text>
 <line x1="48" y1="315" x2="80" y2="315" stroke="#0b3536" stroke-width="8" stroke-dasharray="10 6"/>
 <text x="92" y="320" font-size="13.745" fill="#0b3536">Planned: not running yet</text>
-<text x="48" y="2326" font-size="13.745" fill="#0b3536">Built from content/flow/flow.json; edit it and rebuild. Wayfinding, a Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington.</text>
+<text x="48" y="2522" font-size="13.745" fill="#0b3536">Built from content/flow/flow.json; edit it and rebuild. Wayfinding, a Research Pod of Build Cycle C04, The Upskilling Labs of Greater Washington.</text>
 </svg>

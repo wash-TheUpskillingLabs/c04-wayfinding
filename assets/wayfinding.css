@@ -453,7 +453,7 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 .sitmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.77869), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
-.flow-wrap .flow { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.90692), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
+.flow-wrap .flow { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.98231), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .sitmap .pm-s:hover text { fill:var(--red); }
 .sitmap .pm-s:hover circle[fill="#0b3536"] { fill:var(--red); }
 .sitmap .pm-word { text-transform:uppercase; }
