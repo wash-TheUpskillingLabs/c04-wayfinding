@@ -13,7 +13,7 @@ allowed to overlap one another or leave the circle.
 """
 import json, math, os, re, html
 
-W, H = 2600, 1880
+W, H = 2440, 1760
 K = 1.43  # scale of the circle plan below
 GOLD = math.radians(137.508)
 
@@ -23,7 +23,7 @@ CIRCLES = {
     "who": dict(cx=600, cy=235, r=232, word="WHO"),
     "where": dict(cx=830, cy=920, r=220, word="WHERE"),
     "why": dict(cx=1120, cy=325, r=352, word="WHY"),
-    "how": dict(cx=1388, cy=878, r=410, word="HOW SOLVED"),
+    "how": dict(cx=1340, cy=850, r=330, word="HOW SOLVED"),
 }
 for _c in CIRCLES.values():
     _c["cx"] = round(_c["cx"] * K); _c["cy"] = round(_c["cy"] * K + 20); _c["r"] = round(_c["r"] * K)
