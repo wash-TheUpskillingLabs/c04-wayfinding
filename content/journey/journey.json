@@ -73,7 +73,7 @@
     "stations": [
      {
       "name": "Trainings",
-      "kind": "Learn a tool",
+      "kind": "100% Learn, Taught by Alumni",
       "at": [
        0.22,
        "top"
@@ -310,7 +310,7 @@
   {
    "from": "after",
    "to": "sessions",
-   "label": "Teach a Session",
+   "label": "Alumni Teach Trainings: Their Share",
    "kind": "people",
    "lane": 2,
    "dx": 150.0,
