@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Our first prototype is a Metro map | Wayfinding</title>
+<title>Our First Prototype Is a Metro Map | Wayfinding</title>
 <meta name="description" content="An events list tells you what’s on. A map tells you whether you can get there. So the region put every library on the Metro.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,12 @@
 <link rel="alternate" type="application/atom+xml" title="Wayfinding blog" href="/blog/feed.xml">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to Content</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="a-d" viewBox="0 0 24 24"><path d="M12 3v16M6 13l6 6 6-6"/></symbol><symbol id="a-r" viewBox="0 0 24 24"><path d="M3 12h16M13 6l6 6-6 6"/></symbol><symbol id="a-ur" viewBox="0 0 24 24"><path d="M6 18L17 7M8 6h10v10"/></symbol><symbol id="a-u" viewBox="0 0 24 24"><path d="M12 21V5M6 11l6-6 6 6"/></symbol><symbol id="a-l" viewBox="0 0 24 24"><path d="M21 12H5M11 6l-6 6 6 6"/></symbol><symbol id="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="chev-l" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol><symbol id="chev-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M12 10v10M9 20h6M10 10h2M12 4v2"/></symbol><symbol id="ppl" viewBox="0 0 24 24"><path d="M8 3v4M3 21v-6a5 5 0 0 1 10 0v6M17 6v3M14 21v-5a3.5 3.5 0 0 1 7 0v5"/></symbol><symbol id="post" viewBox="0 0 24 24"><path d="M12 22V2M12 5h7l3 3-3 3h-7M12 13H5l-3 3 3 3h7"/></symbol><symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><path d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></symbol><symbol id="speech" viewBox="0 0 24 24"><path d="M3 4h18v12H10l-5 4v-4H3z"/></symbol><symbol id="flag" viewBox="0 0 24 24"><path d="M5 22V3M5 4h14l-3 4.5L19 13H5"/></symbol><symbol id="note" viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6"/></symbol><symbol id="flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4 20h16L14 9V3M7 15h10"/></symbol><symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><path d="M12 8v4"/></symbol><symbol id="cliff" viewBox="0 0 24 24"><path d="M2 6h9v14h11"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M3 5h18v16H3zM3 10h18M8 2v5M16 2v5"/></symbol><symbol id="link" viewBox="0 0 24 24"><path d="M9 7a5 5 0 1 0 0 10M15 7a5 5 0 1 1 0 10M8 12h8"/></symbol><symbol id="one" viewBox="0 0 24 24"><path d="M12 3v4M7 21v-6a5 5 0 0 1 10 0v6"/></symbol><symbol id="compass" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol><symbol id="tool" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8-1.5-1.5a4 4 0 0 1-5-5L13 2z"/><path d="M3 21l6-6"/></symbol><symbol id="question" viewBox="0 0 24 24"><path d="M8.5 8.5a3.5 3.5 0 1 1 5 3.2c-1 .5-1.5 1.2-1.5 2.3v1M12 19v2"/></symbol></svg>
 <nav class="herebar" aria-label="You are here">
   <div class="here-row">
     <a class="here-mark" href="/"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><span class="t">Wayfinding</span></a>
-    <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All stops</span><svg class="i chev" aria-hidden="true"><use href="#chev"/></svg></button>
+    <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><span class="t t-small lbl">You Are Here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All Stops</span><svg class="i chev" aria-hidden="true"><use href="#chev"/></svg></button>
   </div>
   <ol class="dots" id="here-dots"></ol>
   <div class="stops" id="stops" hidden><ol class="mline stops-line" id="stops-list"></ol></div>
@@ -30,8 +30,8 @@
     </div>
   </div>
   <div class="grid hero">
-    <a class="back" href="/blog/"><svg class="i" aria-hidden="true"><use href="#a-l"/></svg><span class="t t-small">All posts</span></a>
-    <h1 style="--lsb:0.04em">Our first prototype is a Metro map</h1>
+    <a class="back" href="/blog/"><svg class="i" aria-hidden="true"><use href="#a-l"/></svg><span class="t t-small">All Posts</span></a>
+    <h1 style="--lsb:0.04em">Our First Prototype Is a Metro Map</h1>
     <p class="t-lead dek">An events list tells you what’s on. A map tells you whether you can get there. So the region put every library on the Metro.</p>
     <p class="t-small byline">The Wayfinding pod, <time datetime="2026-11-06">Nov 6, 2026</time>. A two-minute read.</p>
   </div>
@@ -39,7 +39,7 @@
 
 <main id="main">
   <section class="sec grid" aria-labelledby="question">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#question"/></svg></span><h2 id="question" style="--lsb:0.032em">The question behind the question</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#question"/></svg></span><h2 id="question" style="--lsb:0.032em">The Question Behind the Question</h2></div>
     <div class="flow">
       <p>An events page answers “what’s on?”</p>
       <p>That’s rarely the question a person actually has at six on a Tuesday. The real one sounds more like: is there something near me, and can I get there after work?</p>
@@ -47,7 +47,7 @@
     </div>
   </section>
   <section class="sec grid" aria-labelledby="what">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><h2 id="what" style="--lsb:0.023em">A map people already know how to read</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#pin"/></svg></span><h2 id="what" style="--lsb:0.023em">A Map People Already Know How to Read</h2></div>
     <div class="flow">
       <figure class="proto"><img class="snap" src="/assets/proto-labs-map.webp" width="1280" height="1059" style="--ar:.8273" alt="A map of Greater Washington: the Potomac and Anacostia rivers, county lines, the Metrorail lines and their stations, and every public library branch in the region as an open ring. The two branches with a session coming up are filled and ringed." loading="lazy"></figure>
       <p>So the first prototype of literal wayfinding on the Greater Washington OLOS fork borrows it. Every public library branch across DC, Arlington, Alexandria, Falls Church and Montgomery, Prince George’s and Fairfax counties sits on the Metrorail lines, drawn alike, because the region is one place.</p>
@@ -56,7 +56,7 @@
     </div>
   </section>
   <section class="sec grid" aria-labelledby="empty">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><h2 id="empty" style="--lsb:0.023em">An empty library is an invitation</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#post"/></svg></span><h2 id="empty" style="--lsb:0.023em">An Empty Library Is an Invitation</h2></div>
     <div class="flow">
       <p>Most event maps only show where something is happening. This one shows every branch, including the ones with nothing scheduled.</p>
       <p>Tap an empty one and it doesn’t say “no events.” It asks whether you’d like to coordinate a workshop for your neighborhood. For now that’s an email; a form can follow once we know people use it.</p>
@@ -64,14 +64,14 @@
     </div>
   </section>
   <section class="sec grid" aria-labelledby="quiet">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#eye"/></svg></span><h2 id="quiet" style="--lsb:0.057em">Built to be quiet</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#eye"/></svg></span><h2 id="quiet" style="--lsb:0.057em">Built to Be Quiet</h2></div>
     <div class="flow">
       <p>The map is drawn from real geography, with no map tiles.</p>
       <p>The list of sessions stays the way in for keyboards and screen readers; the map adds where. It draws itself once when it comes into view, and with reduced motion it’s simply there.</p>
     </div>
   </section>
   <section class="sec grid" aria-labelledby="unknown">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#question"/></svg></span><h2 id="unknown" style="--lsb:0.023em">What it can’t tell us yet</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#question"/></svg></span><h2 id="unknown" style="--lsb:0.023em">What It Can’t Tell Us Yet</h2></div>
     <div class="flow">
       <p>A map can show a library is close. It can’t make someone walk in.</p>
       <p>The case studies keep telling us that people stay for people, and that a nudge only works with a person behind it. So the questions this prototype hands to the pod:</p>
@@ -84,11 +84,11 @@
     </div>
   </section>
   <section class="sec grid" aria-labelledby="try">
-    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#flask"/></svg></span><h2 id="try" style="--lsb:0.032em">Try it</h2></div>
+    <div class="sign"><span class="tile" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#flask"/></svg></span><h2 id="try" style="--lsb:0.032em">Try It</h2></div>
     <div class="flow">
       <p>It’s live on the region’s fork of OLOS, a prototype we’re building as we use it. Things will change, and the data may be reset.</p>
-      <a class="btn" href="https://c04-olos.vercel.app/#find" rel="noopener"><span class="t">Open the map</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
-      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1" rel="noopener"><span class="t">Tell us what you looked for</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
+      <a class="btn" href="https://c04-olos.vercel.app/#find" rel="noopener"><span class="t">Open the Map</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
+      <a class="btn" href="https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/1" rel="noopener"><span class="t">Tell Us What You Looked For</span><span class="tile blue"><svg class="i ur" aria-hidden="true"><use href="#a-ur"/></svg></span></a>
       <p class="t-small quiet">Map data: US Census Bureau, Open Data DC, each library system’s branch list, © OpenStreetMap contributors.</p>
     </div>
   </section>
@@ -96,10 +96,10 @@
 
 <footer>
   <div class="grid">
-    <a class="totop" href="#top"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="t t-small">Back to the top</span></a>
+    <a class="totop" href="#top"><span class="tile blue" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#a-u"/></svg></span><span class="t t-small">Back to the Top</span></a>
     <div class="flow t-small">
       <p class="legend-title">How to read the signs</p>
-      <ul class="legend"><li><svg class="i" aria-hidden="true"><use href="#a-d"/></svg><span class="t t-small">Further down this page</span></li><li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t t-small">Another page on this site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg><span class="t t-small">Leaves this site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-u"/></svg><span class="t t-small">Back to the top</span></li><li><span class="here-dot" aria-hidden="true"></span><span class="t t-small">You are here</span></li></ul>
+      <ul class="legend"><li><svg class="i" aria-hidden="true"><use href="#a-d"/></svg><span class="t t-small">Further Down This Page</span></li><li><svg class="i" aria-hidden="true"><use href="#a-r"/></svg><span class="t t-small">Another Page on This Site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-ur"/></svg><span class="t t-small">Leaves This Site</span></li><li><svg class="i" aria-hidden="true"><use href="#a-u"/></svg><span class="t t-small">Back to the Top</span></li><li><span class="here-dot" aria-hidden="true"></span><span class="t t-small">You Are Here</span></li></ul>
       <p>A Research Pod of <a href="https://github.com/wash-TheUpskillingLabs/c04" rel="noopener">Build Cycle C04</a>, The Upskilling Labs of Greater Washington.</p>
       <p>This site is a prototype we’re building as we use it. Licensed CC BY 4.0: share it, adapt it, credit us.</p>
       <p>Set in Inter. Palette: Swiss Style Color Picker, scheme 14, by Fabian Burghardt.</p>

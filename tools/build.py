@@ -115,7 +115,7 @@ def head(title, desc, path):
 <link rel="alternate" type="application/atom+xml" title="Wayfinding blog" href="/blog/feed.xml">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to Content</a>
 {sprite()}'''
 
 def sitenav(current):
@@ -141,7 +141,7 @@ def herebar():
     return f'''<nav class="herebar" aria-label="You are here">
   <div class="here-row">
     <a class="here-mark" href="/"><span class="tile blue" aria-hidden="true">{ic("post")}</span><span class="t">Wayfinding</span></a>
-    <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true">{ic("pin")}</span><span class="t t-small lbl">You are here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All stops</span>{ic("chev", "chev")}</button>
+    <button class="here-toggle" type="button" aria-expanded="false" aria-controls="stops"><span class="tile red" aria-hidden="true">{ic("pin")}</span><span class="t t-small lbl">You Are Here</span><span class="t t-small name" id="here-name"></span><span class="t t-small more">All Stops</span>{ic("chev", "chev")}</button>
   </div>
   <ol class="dots" id="here-dots"></ol>
   <div class="stops" id="stops" hidden><ol class="mline stops-line" id="stops-list"></ol></div>
@@ -164,12 +164,12 @@ def section(s, nxt):
 '''
 
 def footer():
-    legend = [("a-d", "Further down this page"), ("a-r", "Another page on this site"), ("a-ur", "Leaves this site"), ("a-u", "Back to the top")]
+    legend = [("a-d", "Further Down This Page"), ("a-r", "Another Page on This Site"), ("a-ur", "Leaves This Site"), ("a-u", "Back to the Top")]
     lis = "".join(f'<li>{ic(i)}<span class="t t-small">{t}</span></li>' for i, t in legend)
-    lis += '<li><span class="here-dot" aria-hidden="true"></span><span class="t t-small">You are here</span></li>'
+    lis += '<li><span class="here-dot" aria-hidden="true"></span><span class="t t-small">You Are Here</span></li>'
     return f'''<footer>
   <div class="grid">
-    <a class="totop" href="#top"><span class="tile blue" aria-hidden="true">{ic("a-u")}</span><span class="t t-small">Back to the top</span></a>
+    <a class="totop" href="#top"><span class="tile blue" aria-hidden="true">{ic("a-u")}</span><span class="t t-small">Back to the Top</span></a>
     <div class="flow t-small">
       <p class="legend-title">How to read the signs</p>
       <ul class="legend">{lis}</ul>
@@ -213,8 +213,8 @@ def post_carousel(ps):
             cover = f'<img class="card-cover" src="{p["cover"]}" alt="" loading="lazy">'
         else:
             cover = f'<span class="card-cover card-icon" aria-hidden="true">{ic(p.get("icon", "note"))}</span>'
-        cards.append(f'''  <li><a class="card" href="/blog/{p["slug"]}/">{cover}<span class="card-body"><time class="t t-small num" datetime="{p["date"]}">{nice_date(p["date"])}</time><span class="t t-h3 card-title">{p["title"]}</span><span class="t t-small card-dek">{p["dek"]}</span><span class="card-read"><span class="t t-small">Read the post</span>{ic("a-r")}</span></span></a></li>''')
-    nav = f'<div class="carousel-nav" hidden><button type="button" class="cbtn cprev">{ic("chev-l")}<span class="t">Previous</span></button><button type="button" class="cbtn cnext"><span class="t">Next</span>{ic("chev-r")}</button><a class="all" href="/blog/"><span class="t">All posts</span>{ic("a-r")}</a></div>'
+        cards.append(f'''  <li><a class="card" href="/blog/{p["slug"]}/">{cover}<span class="card-body"><time class="t t-small num" datetime="{p["date"]}">{nice_date(p["date"])}</time><span class="t t-h3 card-title">{p["title"]}</span><span class="t t-small card-dek">{p["dek"]}</span><span class="card-read"><span class="t t-small">Read the Post</span>{ic("a-r")}</span></span></a></li>''')
+    nav = f'<div class="carousel-nav" hidden><button type="button" class="cbtn cprev">{ic("chev-l")}<span class="t">Previous</span></button><button type="button" class="cbtn cnext"><span class="t">Next</span>{ic("chev-r")}</button><a class="all" href="/blog/"><span class="t">All Posts</span>{ic("a-r")}</a></div>'
     return f'<div class="carousel" role="region" aria-roledescription="carousel" aria-label="Blog posts">\n<ul class="cards">\n' + "\n".join(cards) + f'\n</ul>\n{nav}\n</div>'
 
 def build_home(ps):
@@ -227,7 +227,7 @@ def build_home(ps):
     <h1{lsb(h1)}>{h1}</h1>
     <p class="t-lead sub">We’re rebuilding how The Labs gets people from their first workshop to whatever comes next.</p>
     <div class="ctas">
-      <a class="btn light" href="#ways"><span class="t">Find your way in</span><span class="tile blue">{ic("a-d", "down")}</span></a>
+      <a class="btn light" href="#ways"><span class="t">Find Your Way In</span><span class="tile blue">{ic("a-d", "down")}</span></a>
     </div>
   </div>
 </header>
@@ -247,7 +247,7 @@ def build_post(p, mapb=None):
     mins = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"][min(9, max(0, round(words / 230) - 1))]
     page += herebar() + f'''<header class="cover short" id="top">
 {signhead(f'/blog/{p["slug"]}/')}  <div class="grid hero">
-    <a class="back" href="/blog/">{ic("a-l")}<span class="t t-small">All posts</span></a>
+    <a class="back" href="/blog/">{ic("a-l")}<span class="t t-small">All Posts</span></a>
     <h1{lsb(p["title"])}>{p["title"]}</h1>
     <p class="t-lead dek">{p["dek"]}</p>
     <p class="t-small byline">{p["byline"]}, <time datetime="{p["date"]}">{nice_date(p["date"])}</time>. A {mins}-minute read.</p>
@@ -304,8 +304,8 @@ def map_block():
     write("map/problem-situation.svg", pic.replace('href="/assets/proto-labs-map.webp"', 'href="https://c04-wayfinding.vercel.app/assets/proto-labs-map.webp"'))
     total = len(sts)
     block = f'''<div class="sitmap-wrap">{pic}</div>
-<a class="btn" href="/map/problem-situation.svg"><span class="t">Open the poster</span><span class="tile blue">{ic("a-r")}</span></a>
-<details class="pm-details"><summary><span><span class="t">All {total} statements as a table</span></span>{ic("chev", "chev")}</summary>{sitmap.table(sts)}</details>'''
+<a class="btn" href="/map/problem-situation.svg"><span class="t">Open the Poster</span><span class="tile blue">{ic("a-r")}</span></a>
+<details class="pm-details"><summary><span><span class="t">All {total} Statements as a Table</span></span>{ic("chev", "chev")}</summary>{sitmap.table(sts)}</details>'''
     return block, total
 
 def flow_block():
@@ -328,11 +328,11 @@ def journey_block():
 
 def build_404():
     secs = [{"id": "routes", "title": "Ways back", "short": "Ways back", "icon": "post", "tile": "blue", "body": f'''<ul class="rows routes">
-  <li><a class="route-link" href="/"><span class="t">The pod’s home page</span>{ic("a-r")}</a><span class="t t-small quiet">What we’re working on and how to join.</span></li>
-  <li><a class="route-link" href="/blog/"><span class="t">The blog</span>{ic("a-r")}</a><span class="t t-small quiet">Everything we’ve written so far.</span></li>
-  <li><a class="route-link" href="{REPO}/tree/main/research" rel="noopener"><span class="t">The research folder</span>{ic("a-ur")}</a><span class="t t-small quiet">On GitHub. Every source we’ve read.</span></li>
+  <li><a class="route-link" href="/"><span class="t">The Pod’s Home Page</span>{ic("a-r")}</a><span class="t t-small quiet">What we’re working on and how to join.</span></li>
+  <li><a class="route-link" href="/blog/"><span class="t">The Blog</span>{ic("a-r")}</a><span class="t t-small quiet">Everything we’ve written so far.</span></li>
+  <li><a class="route-link" href="{REPO}/tree/main/research" rel="noopener"><span class="t">The Research Folder</span>{ic("a-ur")}</a><span class="t t-small quiet">On GitHub. Every source we’ve read.</span></li>
 </ul>
-<p>If a link on our site brought you here, that’s our mistake. <a href="{REPO}/issues/new?title=Broken%20link" rel="noopener">Tell us which one</a> and we’ll fix it.</p>'''}]
+<p>If a link on our site brought you here, that’s our mistake. <a href="{REPO}/issues/new?title=Broken%20link" rel="noopener">Tell Us Which One</a> and we’ll fix it.</p>'''}]
     page = head("Off the map | Wayfinding", "This page isn’t here. Here are the ways back.", "/404")
     page += f'''<header class="cover short" id="top">
 {signhead("/404")}  <div class="grid hero">
