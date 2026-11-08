@@ -186,42 +186,48 @@
   "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "on a team of five, the building often falls to one person"
+  "text": "on a team of five, the building often falls to one person",
+  "q2": "who"
  },
  {
   "q": "what",
   "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the rest advise"
+  "text": "the rest advise",
+  "q2": "who"
  },
  {
   "q": "what",
   "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "for three Cycles, advising and building counted the same"
+  "text": "for three Cycles, advising and building counted the same",
+  "q2": "who"
  },
  {
   "q": "what",
   "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "asking for individual contributions cut across the team’s sense of itself"
+  "text": "asking for individual contributions cut across the team’s sense of itself",
+  "q2": "who"
  },
  {
   "q": "what",
   "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "it was felt as a cost to community and team-building"
+  "text": "it was felt as a cost to community and team-building",
+  "q2": "who"
  },
  {
   "q": "what",
   "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "being an owner means doing the work of ownership, and volunteers have limited hours"
+  "text": "being an owner means doing the work of ownership, and volunteers have limited hours",
+  "q2": "who"
  },
  {
   "q": "what",
@@ -344,87 +350,99 @@
  },
  {
   "q": "what",
-  "theme": "a vote that produced only one pod",
+  "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the voting math created only one pod"
+  "text": "the voting math created only one pod",
+  "q2": "why"
  },
  {
   "q": "what",
-  "theme": "a vote that produced only one pod",
+  "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "at least one still-active participant was disappointed"
+  "text": "at least one still-active participant was disappointed",
+  "q2": "why"
  },
  {
   "q": "what",
-  "theme": "a vote that produced only one pod",
+  "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "edge cases like this throw people for a loop"
+  "text": "edge cases like this throw people for a loop",
+  "q2": "why"
  },
  {
   "q": "what",
-  "theme": "no life outside the Cycle",
+  "theme": "nothing before or after a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "there is no non-Cycle experience at all"
+  "text": "there is no non-Cycle experience at all",
+  "q2": "where"
  },
  {
   "q": "what",
-  "theme": "no life outside the Cycle",
+  "theme": "nothing before or after a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "a profile and an account mean nothing if you’re not in a Cycle"
+  "text": "a profile and an account mean nothing if you’re not in a Cycle",
+  "q2": "where"
  },
  {
   "q": "what",
-  "theme": "no life outside the Cycle",
+  "theme": "nothing before or after a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "leaving the Cycle means leaving The Labs"
+  "text": "leaving the Cycle means leaving The Labs",
+  "q2": "where"
  },
  {
   "q": "what",
-  "theme": "no life outside the Cycle",
+  "theme": "nothing before or after a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "“not ready” has nowhere to go"
+  "text": "“not ready” has nowhere to go",
+  "q2": "where"
  },
  {
   "q": "what",
-  "theme": "no life outside the Cycle",
+  "theme": "nothing before or after a Cycle",
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
-  "text": "everyone sees The Labs through the Cycle; there is no before or after"
+  "text": "everyone sees The Labs through the Cycle; there is no before or after",
+  "q2": "where"
  },
  {
   "q": "what",
   "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the pilot met four hours a week, in person, for twelve weeks"
+  "text": "the pilot met four hours a week, in person, for twelve weeks",
+  "q2": "where"
  },
  {
   "q": "what",
   "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "that momentum let us fix things ad hoc without infrastructure"
+  "text": "that momentum let us fix things ad hoc without infrastructure",
+  "q2": "where"
  },
  {
   "q": "what",
   "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the Cycle no longer has the in-person weekly check-in"
+  "text": "the Cycle no longer has the in-person weekly check-in",
+  "q2": "where"
  },
  {
   "q": "what",
   "theme": "the pilot’s weekly room hasn’t been replaced",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "we haven’t been able to replicate it"
+  "text": "we haven’t been able to replicate it",
+  "q2": "where"
  },
  {
   "q": "who",
@@ -515,42 +533,48 @@
   "theme": "people who came once; not heard from yet",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people who came once and moved on"
+  "text": "people who came once and moved on",
+  "q2": "what"
  },
  {
   "q": "who",
   "theme": "people who came once; not heard from yet",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the person who got lost at the first door"
+  "text": "the person who got lost at the first door",
+  "q2": "what"
  },
  {
   "q": "who",
   "theme": "people who came once; not heard from yet",
   "by": "A",
   "src": "Alumni survey, C01–C03, Sep–Oct 2026",
-  "text": "respondents skew toward people who finished and joined teams"
+  "text": "respondents skew toward people who finished and joined teams",
+  "q2": "what"
  },
  {
   "q": "who",
-  "theme": "a few who build, more who advise",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the people who build"
+  "text": "the people who build",
+  "q2": "what"
  },
  {
   "q": "who",
-  "theme": "a few who build, more who advise",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the people who advise"
+  "text": "the people who advise",
+  "q2": "what"
  },
  {
   "q": "who",
-  "theme": "a few who build, more who advise",
+  "theme": "the building falls to a few",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people who pictured themselves in a pod that never formed"
+  "text": "people who pictured themselves in a pod that never formed",
+  "q2": "what"
  },
  {
   "q": "who",
@@ -624,10 +648,11 @@
  },
  {
   "q": "where",
-  "theme": "the Cycle: twelve weeks and three dated gates",
+  "theme": "a clock everyone can see",
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
-  "text": "the Cycle is the point of entry"
+  "text": "the Cycle is the point of entry",
+  "q2": "how"
  },
  {
   "q": "where",
@@ -711,42 +736,48 @@
   "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the web application"
+  "text": "the web application",
+  "q2": "what"
  },
  {
   "q": "where",
   "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "Slack"
+  "text": "Slack",
+  "q2": "what"
  },
  {
   "q": "where",
   "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "email"
+  "text": "email",
+  "q2": "what"
  },
  {
   "q": "where",
   "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "LinkedIn, our only social account for now"
+  "text": "LinkedIn, our only social account for now",
+  "q2": "what"
  },
  {
   "q": "where",
   "theme": "five channels, and the information lived in Zoom",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "GitHub, where contributors open pull requests"
+  "text": "GitHub, where contributors open pull requests",
+  "q2": "what"
  },
  {
   "q": "where",
   "theme": "five channels, and the information lived in Zoom",
   "by": "O",
   "src": "Record #4, the organizers’ account, Oct 28",
-  "text": "Slack existed, but the information lived in Zoom"
+  "text": "Slack existed, but the information lived in Zoom",
+  "q2": "what"
  },
  {
   "q": "where",
@@ -799,10 +830,11 @@
  },
  {
   "q": "where",
-  "theme": "before and after a Cycle: nothing yet",
+  "theme": "nothing before or after a Cycle",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the route into a workplace and back"
+  "text": "the route into a workplace and back",
+  "q2": "what"
  },
  {
   "q": "where",
@@ -886,133 +918,152 @@
   "theme": "it’s free, and nobody’s job is to guide you",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "we’re not doing coaching; they’re not paying us"
+  "text": "we’re not doing coaching; they’re not paying us",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "it’s free, and nobody’s job is to guide you",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "there is no one whose job it is to help them navigate"
+  "text": "there is no one whose job it is to help them navigate",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "it’s free, and nobody’s job is to guide you",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "we can’t promise to hold anyone’s hand"
+  "text": "we can’t promise to hold anyone’s hand",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "it’s free, and nobody’s job is to guide you",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "we created a sandbox to enter, form teams and build community in"
+  "text": "we created a sandbox to enter, form teams and build community in",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "how it all fits together isn’t written down anywhere"
+  "text": "how it all fits together isn’t written down anywhere",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "nobody has had the job of drawing it out"
+  "text": "nobody has had the job of drawing it out",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "writing down someone else’s picture can feel like claiming authority"
+  "text": "writing down someone else’s picture can feel like claiming authority",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "the big picture isn’t written down",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "documentation doesn’t count as a contribution"
+  "text": "documentation doesn’t count as a contribution",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "built only with volunteer hours",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "any intervention will be built with volunteer hours"
+  "text": "any intervention will be built with volunteer hours",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "built only with volunteer hours",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "managing that work is a wayfinding problem of its own"
+  "text": "managing that work is a wayfinding problem of its own",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "built only with volunteer hours",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "the Cycle needs a really clear vision behind it"
+  "text": "the Cycle needs a really clear vision behind it",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "built only with volunteer hours",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "we depend on an amorphous volunteer community to build it"
+  "text": "we depend on an amorphous volunteer community to build it",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "built only with volunteer hours",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "expectations are anchored on experiences built by billion-dollar companies"
+  "text": "expectations are anchored on experiences built by billion-dollar companies",
+  "q2": "who"
  },
  {
   "q": "why",
   "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "this is the first time working adults are asked to do real creative leadership"
+  "text": "this is the first time working adults are asked to do real creative leadership",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "ideas go into an arena and the ones with traction move forward"
+  "text": "ideas go into an arena and the ones with traction move forward",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "people want one linear experience: one team, all the way through"
+  "text": "people want one linear experience: one team, all the way through",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "that creates a problematic dependency on that team"
+  "text": "that creates a problematic dependency on that team",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "team formation is tied at the hip to problem and project voting"
+  "text": "team formation is tied at the hip to problem and project voting",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "losing the vote means losing your team",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "we want guaranteed results but don’t know what the teams will be"
+  "text": "we want guaranteed results but don’t know what the teams will be",
+  "q2": "what"
  },
  {
   "q": "why",
@@ -1047,49 +1098,56 @@
   "theme": "“pod” doesn’t say what it is",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "“pod” and “project” keep confusing people"
+  "text": "“pod” and “project” keep confusing people",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "“pod” doesn’t say what it is",
   "by": "P",
   "src": "Problem owner, Nov 7 conversation",
-  "text": "a pod should be seen as a much bigger community, a research group"
+  "text": "a pod should be seen as a much bigger community, a research group",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "people navigate by a few fixed landmarks (Lynch)"
+  "text": "people navigate by a few fixed landmarks (Lynch)",
+  "q2": "how"
  },
  {
   "q": "why",
   "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "people keep going only while the scent stays warm (Pirolli & Card)"
+  "text": "people keep going only while the scent stays warm (Pirolli & Card)",
+  "q2": "how"
  },
  {
   "q": "why",
   "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "working memory is small; the cost of “what’s next” is a packaging cost (Sweller)"
+  "text": "working memory is small; the cost of “what’s next” is a packaging cost (Sweller)",
+  "q2": "how"
  },
  {
   "q": "why",
   "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "a map most people can’t read gets replaced by a line (Duolingo, Khan Academy)"
+  "text": "a map most people can’t read gets replaced by a line (Duolingo, Khan Academy)",
+  "q2": "how"
  },
  {
   "q": "why",
   "theme": "people navigate by a few fixed landmarks",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "a visible head start speeds completion; an if-then plan roughly doubles follow-through"
+  "text": "a visible head start speeds completion; an if-then plan roughly doubles follow-through",
+  "q2": "how"
  },
  {
   "q": "why",
@@ -1138,49 +1196,56 @@
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "effort drops as groups grow when contributions can’t be told apart (Ringelmann, Latané)"
+  "text": "effort drops as groups grow when contributions can’t be told apart (Ringelmann, Latané)",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "effort holds up best when work is identifiable and the group matters (Karau & Williams)"
+  "text": "effort holds up best when work is identifiable and the group matters (Karau & Williams)",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "about 15 people wrote 80% of Apache"
+  "text": "about 15 people wrote 80% of Apache",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "preparation and skill mix predicted a project’s survival; intent did not"
+  "text": "preparation and skill mix predicted a project’s survival; intent did not",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "heavy first-week activity raised the chance of stopping"
+  "text": "heavy first-week activity raised the chance of stopping",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "teams set their approach in the first meeting and overhaul it at the midpoint (Gersick)"
+  "text": "teams set their approach in the first meeting and overhaul it at the midpoint (Gersick)",
+  "q2": "what"
  },
  {
   "q": "why",
   "theme": "effort drops in groups",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "designers learn the problem by proposing solutions (Lawson, Cross)"
+  "text": "designers learn the problem by proposing solutions (Lawson, Cross)",
+  "q2": "what"
  },
  {
   "q": "why",
@@ -1226,73 +1291,83 @@
  },
  {
   "q": "why",
-  "theme": "messages work only from a known person",
+  "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "summer-melt texts worked with a counselor behind them and vanished at state scale"
+  "text": "summer-melt texts worked with a counselor behind them and vanished at state scale",
+  "q2": "how"
  },
  {
   "q": "why",
-  "theme": "messages work only from a known person",
+  "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "Wikipedia newcomers met by bots left; those invited to the Teahouse stayed"
+  "text": "Wikipedia newcomers met by bots left; those invited to the Teahouse stayed",
+  "q2": "how"
  },
  {
   "q": "why",
-  "theme": "messages work only from a known person",
+  "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "a single-channel rule broke NaNoWriMo’s local layer"
+  "text": "a single-channel rule broke NaNoWriMo’s local layer",
+  "q2": "how"
  },
  {
   "q": "why",
-  "theme": "messages work only from a known person",
+  "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5",
-  "text": "Scouts’ counselors signed off requirements never completed"
+  "text": "Scouts’ counselors signed off requirements never completed",
+  "q2": "how"
  },
  {
   "q": "how",
   "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5: Wikipedia newcomers",
-  "text": "Wikipedia’s Teahouse: newcomers invited to a room where people answer stayed longer, in a controlled trial"
+  "text": "Wikipedia’s Teahouse: newcomers invited to a room where people answer stayed longer, in a controlled trial",
+  "q2": "why"
  },
  {
   "q": "how",
   "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5: Wikipedia newcomers",
-  "text": "Teahouse answers with fewer rule links and more words kept more newcomers"
+  "text": "Teahouse answers with fewer rule links and more words kept more newcomers",
+  "q2": "why"
  },
  {
   "q": "how",
   "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5: Stack Overflow newcomers",
-  "text": "Stack Overflow: a mentor read your draft question first; those questions scored 50% higher"
+  "text": "Stack Overflow: a mentor read your draft question first; those questions scored 50% higher",
+  "q2": "why"
  },
  {
   "q": "how",
   "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5: Extension and 4-H volunteers",
-  "text": "Master Gardeners: a veteran per 2–4 trainees cut first-year dropout from a quarter to 2%"
+  "text": "Master Gardeners: a veteran per 2–4 trainees cut first-year dropout from a quarter to 2%",
+  "q2": "why"
  },
  {
   "q": "how",
   "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5: Open source newcomer barriers",
-  "text": "open source: a starter task is 71% likelier to be finished when an experienced person is in the thread"
+  "text": "open source: a starter task is 71% likelier to be finished when an experienced person is in the thread",
+  "q2": "why"
  },
  {
   "q": "how",
   "theme": "a person at the first contact",
   "by": "X",
   "src": "Case library, PR #5: P2PU learning circles",
-  "text": "P2PU: new facilitators who co-ran their first circle with a colleague did best, by P2PU’s account"
+  "text": "P2PU: new facilitators who co-ran their first circle with a colleague did best, by P2PU’s account",
+  "q2": "why"
  },
  {
   "q": "how",
@@ -1334,91 +1409,104 @@
   "theme": "a kit a stranger can run",
   "by": "X",
   "src": "Case library, PR #5: Code Club and CoderDojo",
-  "text": "Code Club: step-by-step projects plus notes for the leader; a trial found gains in coding skill and confidence"
+  "text": "Code Club: step-by-step projects plus notes for the leader; a trial found gains in coding skill and confidence",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a kit a stranger can run",
   "by": "X",
   "src": "Case library, PR #5: 4-H lesson kits",
-  "text": "the Carpentries: two days became the unit; 91 workshops reached 4,300 people in a year after week-long courses failed"
+  "text": "the Carpentries: two days became the unit; 91 workshops reached 4,300 people in a year after week-long courses failed",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a kit a stranger can run",
   "by": "X",
   "src": "Case library, PR #5: P2PU learning circles",
-  "text": "P2PU: a guide, a promo kit and recipe cards; about half finished, against 5–10% taking the course alone"
+  "text": "P2PU: a guide, a promo kit and recipe cards; about half finished, against 5–10% taking the course alone",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a kit a stranger can run",
   "by": "X",
   "src": "Case library, PR #5: Indivisible",
-  "text": "Indivisible: a 23-page guide on Google Docs seeded 3,800 groups in seven weeks; most still met in 2019"
+  "text": "Indivisible: a 23-page guide on Google Docs seeded 3,800 groups in seven weeks; most still met in 2019",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a kit a stranger can run",
   "by": "X",
   "src": "Case library, PR #5: Extension and 4-H volunteers",
-  "text": "Idaho 4-H: six-week sessions and a “facilitation coach” role let one or two volunteers serve 10–15 youth"
+  "text": "Idaho 4-H: six-week sessions and a “facilitation coach” role let one or two volunteers serve 10–15 youth",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a clock everyone can see",
   "by": "X",
   "src": "Case library, PR #5: Google Summer of Code",
-  "text": "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code; 1,000+ finished projects a year"
+  "text": "Summer of Code: 4 weeks to propose, 3 to bond, 12 to code; 1,000+ finished projects a year",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a clock everyone can see",
   "by": "X",
   "src": "Case library, PR #5: Google Summer of Code",
-  "text": "Summer of Code: two project sizes and a stretchable deadline brought in people with jobs"
+  "text": "Summer of Code: two project sizes and a stretchable deadline brought in people with jobs",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a clock everyone can see",
   "by": "X",
   "src": "Case library, PR #5: FIRST Robotics",
-  "text": "FIRST: a January kickoff and the same events for every team; 3,000+ teams a year, 91% return"
+  "text": "FIRST: a January kickoff and the same events for every team; 3,000+ teams a year, 91% return",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a clock everyone can see",
   "by": "X",
   "src": "Case library, PR #5: NaNoWriMo",
-  "text": "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party, for 400,000 people a year"
+  "text": "NaNoWriMo: one month, a kickoff, a weekly write-in and an end party, for 400,000 people a year",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "a clock everyone can see",
   "by": "X",
   "src": "Case library, PR #5: NaNoWriMo",
-  "text": "NaNoWriMo: 900 liaisons with a written duty list ran 633 regions"
+  "text": "NaNoWriMo: 900 liaisons with a written duty list ran 633 regions",
+  "q2": "where"
  },
  {
   "q": "how",
   "theme": "show the whole route and where you are",
   "by": "X",
   "src": "Case library, PR #5: GOV.UK step by step",
-  "text": "GOV.UK: every step on one page, the current and next highlighted; task completion and confidence rose"
+  "text": "GOV.UK: every step on one page, the current and next highlighted; task completion and confidence rose",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "show the whole route and where you are",
   "by": "X",
   "src": "Case library, PR #5: GOV.UK step by step",
-  "text": "GOV.UK began with the journeys that had the most drop-off; one was used 1.2 million times in six months"
+  "text": "GOV.UK began with the journeys that had the most drop-off; one was used 1.2 million times in six months",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "show the whole route and where you are",
   "by": "X",
   "src": "Case library, PR #5: GetCalFresh",
-  "text": "GetCalFresh: one question per page, ten minutes on a phone; 7 million people used it"
+  "text": "GetCalFresh: one question per page, ten minutes on a phone; 7 million people used it",
+  "q2": "what"
  },
  {
   "q": "how",
@@ -1439,42 +1527,48 @@
   "theme": "keep the door open after it ends",
   "by": "X",
   "src": "Case library, PR #5: Recurse Center",
-  "text": "Recurse Center: alumni keep the chat, the calendar and the jobs board; they stayed involved for years"
+  "text": "Recurse Center: alumni keep the chat, the calendar and the jobs board; they stayed involved for years",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "keep the door open after it ends",
   "by": "X",
   "src": "Case library, PR #5: NaNoWriMo",
-  "text": "NaNoWriMo’s regions kept going on channels they owned; one night, 148 people wrote 404,500 words"
+  "text": "NaNoWriMo’s regions kept going on channels they owned; one night, 148 people wrote 404,500 words",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "keep the door open after it ends",
   "by": "X",
   "src": "Case library, PR #5: Extension and 4-H volunteers",
-  "text": "Master Gardeners stayed for the local association, five of eight coordinators said"
+  "text": "Master Gardeners stayed for the local association, five of eight coordinators said",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "hand it on instead of letting it end",
   "by": "X",
   "src": "Case library, PR #5: Hackathons and sprints",
-  "text": "the hackathon projects that lived were handed to other units, not kept by their teams"
+  "text": "the hackathon projects that lived were handed to other units, not kept by their teams",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "hand it on instead of letting it end",
   "by": "X",
   "src": "Case library, PR #5: Hackathons and sprints",
-  "text": "hackathon projects with a skill mix and preparation were half as likely to stop; intent didn’t matter"
+  "text": "hackathon projects with a skill mix and preparation were half as likely to stop; intent didn’t matter",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "hand it on instead of letting it end",
   "by": "X",
   "src": "Case library, PR #5: Indivisible",
-  "text": "Indivisible groups that lasted met monthly, split work into subcommittees and replaced leaders as they left"
+  "text": "Indivisible groups that lasted met monthly, split work into subcommittees and replaced leaders as they left",
+  "q2": "what"
  },
  {
   "q": "how",
@@ -1502,13 +1596,15 @@
   "theme": "one source, bundled messages",
   "by": "X",
   "src": "Case library, PR #5: NPR COPE",
-  "text": "NPR: content stored once and drawn by every outlet; requests went from 3.5 to 53 million"
+  "text": "NPR: content stored once and drawn by every outlet; requests went from 3.5 to 53 million",
+  "q2": "what"
  },
  {
   "q": "how",
   "theme": "one source, bundled messages",
   "by": "X",
   "src": "Case library, PR #5: Channel overload",
-  "text": "notifications bundled three times a day made people calmer and more attentive; hourly and none did not"
+  "text": "notifications bundled three times a day made people calmer and more attentive; hourly and none did not",
+  "q2": "what"
  }
 ]
