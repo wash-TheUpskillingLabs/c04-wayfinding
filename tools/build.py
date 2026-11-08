@@ -302,7 +302,7 @@ def map_block():
     asof = date.today().strftime("%b %-d, %Y")
     pic, counts, _ = sitmap.svg(sts, asof, underlay="/assets/proto-labs-map.webp")
     write("map/problem-situation.svg", pic.replace('href="/assets/proto-labs-map.webp"', 'href="https://c04-wayfinding.vercel.app/assets/proto-labs-map.webp"'))
-    total = sum(counts.values())
+    total = len(sts)
     block = f'''<div class="sitmap-wrap">{pic}</div>
 <a class="btn" href="/map/problem-situation.svg"><span class="t">Open the poster</span><span class="tile blue">{ic("a-r")}</span></a>
 <details class="pm-details"><summary><span><span class="t">All {total} statements as a table</span></span>{ic("chev", "chev")}</summary>{sitmap.table(sts)}</details>'''
