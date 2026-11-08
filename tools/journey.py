@@ -260,6 +260,19 @@ def svg(d):
         front.append(f'<rect x="{px_ - 16}" y="{t - 16}" width="32" height="{bm - t + 32}" rx="16" fill="{PAPER}" '
                      f'stroke="{INK}" stroke-width="5"/>')
     capx = {round(c[0]) for c in caps}
+    spans = {}
+    for px_, t, bm, _ in caps:
+        r = spans.setdefault(round(px_), [t, bm])
+        r[0], r[1] = min(r[0], t), max(r[1], bm)
+    for i, c in enumerate(cols):
+        x = cx(i)
+        if round(x) in spans:
+            t, bm = spans[round(x)]
+            ring = (f'<rect x="{x - 26}" y="{t - 26}" width="52" height="{bm - t + 52}" rx="26" fill="none" '
+                    f'stroke="{RED}" stroke-width="6"/>')
+        else:
+            ring = f'<circle cx="{x}" cy="{LINE_Y}" r="29" fill="none" stroke="{RED}" stroke-width="6"/>'
+        front.append(f'<g class="yah yah-{i}" display="none">{ring}</g>')
     for i, c in enumerate(cols):
         x = cx(i)
         if round(x) in capx:
@@ -273,6 +286,16 @@ def svg(d):
         for k, line in enumerate(wrap(c["title"], 19)):
             front.append(f'<text x="{x0(i)}" y="{TITLE_Y + k * 27}" font-size="{TFS}" font-weight="700" fill="{INK}">{esc(line)}</text>')
     front.append(small(LM, STEP_Y, "Step", "start", 700, caps=True))
+    lm = d.get("landmarks", [])
+    if lm:
+        LY = LINE_Y - 172
+        front.append(small(LM, LY, "Landmarks", "start", 700, caps=True))
+        for l in lm:
+            lx = at(l["at"])
+            flag = (f'<path d="M{lx},{LY + 6} V{LY - 16} H{lx + 14} L{lx + 10},{LY - 11} L{lx + 14},{LY - 6} H{lx + 2}" '
+                    f'fill="{INK}" stroke="{INK}" stroke-width="2" stroke-linejoin="round"/>')
+            front.append(flag + small(lx + 20, LY, l["name"], "start", 700)
+                         + (small(lx + 20, LY + 18, l["when"], "start", italic=True) if l.get("when") else ""))
 
     # lanes
     for key, name, y in LANES:
@@ -280,6 +303,7 @@ def svg(d):
                      + small(LM, y, name, "start", 700, caps=True))
     for i, c in enumerate(cols):
         x = x0(i)
+        front.append(f'<g class="lt c{i}">')
         for key, name, y in LANES:
             yy = y
             if key == "told":
@@ -303,6 +327,7 @@ def svg(d):
                 for line in wrap("Planned: " + c["plan"][0], int(cw[i] / 8.8)):
                     front.append(f'<text x="{x}" y="{yy}" font-size="{FS}" font-style="italic" fill="{INK}">{esc(line)}</text>')
                     yy += LH
+        front.append('</g>')
     if sh.get("note"):
         front.append(small(a + 150, BOTTOM - 14, sh["note"], "start", italic=True))
 

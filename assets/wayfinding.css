@@ -461,6 +461,9 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 .flow-show { display:flex; flex-wrap:wrap; gap:8px; align-items:center; position:relative; top:-1.38px; }
 .flow-show > .t { position:relative; top:.7px; margin-right:4px; }
 .flow-show[hidden] { display:none; }
+.journey-wrap .lt { transition:opacity .2s; }
+.here-say[hidden] { display:none; }
+.here-say { font-weight:600; }
 .flow-show .chip { font:inherit; font-size:15px; font-weight:600; padding:8px 14px; border:2px solid var(--ink); background:var(--paper); color:var(--ink); cursor:pointer; }
 .flow-show .chip[aria-pressed="true"] { background:var(--ink); color:var(--paper); }
 .flow-wrap:not([data-show="all"]) .fl { opacity:.12; }

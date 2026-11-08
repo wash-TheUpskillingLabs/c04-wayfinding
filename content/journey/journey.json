@@ -365,5 +365,47 @@
    "label": "Projects Build"
   },
   "note": "How many pods and projects form is decided in the Cycle, not in advance. The dots mean there may be more, or fewer."
- }
+ },
+ "landmarks": [
+  {
+   "at": [
+    "join",
+    0
+   ],
+   "name": "Kickoff",
+   "when": "Oct 24 in C04"
+  },
+  {
+   "at": [
+    "pod",
+    0
+   ],
+   "name": "Sensemaking Day",
+   "when": "Oct 24 in C04"
+  },
+  {
+   "at": [
+    "pod",
+    320
+   ],
+   "name": "Paradox and Frames",
+   "when": "Nov 7 in C04"
+  },
+  {
+   "at": [
+    "team",
+    0
+   ],
+   "name": "Project Vote",
+   "when": "Nov 14 in C04"
+  },
+  {
+   "at": [
+    "show",
+    0
+   ],
+   "name": "Showcase",
+   "when": "Dec 8 in C04"
+  }
+ ]
 }

@@ -323,7 +323,24 @@ def journey_block():
     data = journey.load(os.path.join(C, "journey", "journey.json"))
     pic, w, h = journey.svg(data)
     write("journey/participant-journey.svg", pic)
-    return f'''<div class="journey-wrap">{pic}</div>
+    # Where are you? Pick a step: its station gets a red ring (red is position), and only that
+    # step's rows and the next step's stay at full strength. Hidden until the script runs.
+    cols = data["columns"]
+    def label(i):
+        c = cols[i]
+        return f'{i + 1:02d} {c["title"]}' + (" (Planned)" if c.get("planned") else "")
+    chips = "".join(
+        f'<button type="button" class="chip" data-here="{i}" aria-pressed="false" '
+        f'data-say="You’re at {label(i)}." '
+        f'data-next="{("Next: " + label(i + 1) + ".") if i + 1 < len(cols) else "This is the end of the line, and the start of the next one."}">'
+        f'{i + 1:02d}</button>' for i in range(len(cols)))
+    rules = "".join(f'.journey-wrap[data-here="{i}"] .yah-{i} {{ display:inline; }}'
+                    f'.journey-wrap[data-here="{i}"] .lt.c{i}' + (f', .journey-wrap[data-here="{i}"] .lt.c{i + 1}' if i + 1 < len(cols) else "")
+                    + ' { opacity:1; }' for i in range(len(cols)))
+    return f'''<style>.journey-wrap:not([data-here="all"]) .lt {{ opacity:.18; }}{rules}</style>
+<div class="flow-show journey-here" hidden><span class="t t-small">Where Are You?</span><button type="button" class="chip" data-here="all" aria-pressed="true">All Steps</button>{chips}</div>
+<div class="journey-wrap" data-here="all">{pic}</div>
+<p class="t-small here-say" aria-live="polite" hidden></p>
 <a class="btn" href="/journey/participant-journey.svg"><span class="t">Open the Map</span><span class="tile blue">{ic("a-r")}</span></a>'''
 
 def build_404():
