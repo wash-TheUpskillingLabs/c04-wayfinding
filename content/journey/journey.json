@@ -1,6 +1,6 @@
 {
  "title": "The Participant Journey",
- "subtitle": "One person’s way through The Labs, left to right, and every path beside it. The last row is what people told us at each step.",
+ "subtitle": "Left to right, from first hearing of The Labs to after a Cycle. Proposals share a track; at each vote some end and the chosen ones branch off. The last row is what people told us.",
  "bands": [
   [
    "Learn",
@@ -169,7 +169,7 @@
      "more guidance on what to work on in a given week"
     ]
    ],
-   "w": 680
+   "w": 780
   },
   {
    "id": "team",
@@ -324,33 +324,19 @@
    "label": "Many Ways Out"
   },
   "problem": {
-   "from": [
-    "join",
-    0
-   ],
-   "to": [
-    "pod",
-    0
-   ],
-   "h": 64,
-   "label": [
-    "Problem",
-    "Proposals"
-   ]
+   "label": "Problem Proposals",
+   "note": "As many as people bring"
   },
   "pods": {
-   "n": 3,
-   "gap": 64,
-   "h": 20,
-   "branch": 44,
+   "gap": 90,
    "stages": [
     {
-     "to": 250,
+     "to": 320,
      "label": "Paradox Proposals",
      "close": "A Paradox"
     },
     {
-     "to": 460,
+     "to": 560,
      "label": "Frame Proposals",
      "close": "Frames"
     },
@@ -364,18 +350,8 @@
    ]
   },
   "projects": {
-   "counts": [
-    2,
-    3,
-    2
-   ],
-   "gap": 17,
-   "to": [
-    "show",
-    0
-   ],
    "label": "Projects Build"
   },
-  "note": "Three pods, as in C04. How many projects each pod forms is illustrative."
+  "note": "How many pods and projects form is decided in the Cycle, not in advance. The dots mean there may be more, or fewer."
  }
 }
