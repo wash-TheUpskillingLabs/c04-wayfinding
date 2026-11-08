@@ -25,8 +25,8 @@ STYLE = {
     "support":   (BLUE, 3),
     "leak":      (RED, 7),
 }
-NAMES = [("people", "People"), ("work", "Work and code"), ("knowledge", "Knowledge"),
-         ("support", "Money and support")]
+NAMES = [("people", "People"), ("work", "Work and Code"), ("knowledge", "Knowledge"),
+         ("support", "Money and Support")]
 PAR = 30  # gap between parallel arrows
 
 
@@ -178,8 +178,8 @@ def svg(data):
     head = [f'<text x="56" y="92" font-size="43.987" font-weight="700" fill="{INK}">{esc(data["title"])}</text>',
             f'<text x="56" y="140" font-size="19.244" fill="{INK}">{esc(data["subtitle"])}</text>']
     kx, ky = 56, H - 120
-    key = [f'<text x="{kx}" y="{ky - 28}" font-size="15.118" font-weight="700" fill="{INK}">How to read it</text>']
-    items = NAMES + [("leak", "Where people leave")]
+    key = [f'<text x="{kx}" y="{ky - 28}" font-size="15.118" font-weight="700" fill="{INK}">How to Read It</text>']
+    items = NAMES + [("leak", "Where People Leave")]
     for i, (t, name) in enumerate(items):
         color, sw = STYLE[t]
         x = kx + i * 330

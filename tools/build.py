@@ -317,7 +317,7 @@ def flow_block():
                    for k, n in [("all", "All")] + flow.NAMES)
     return f'''<div class="flow-show" hidden><span class="t t-small">Show</span>{show}</div>
 <div class="flow-wrap" data-show="all">{pic}</div>
-<a class="btn" href="/flow/the-region.svg"><span class="t">Open the chart</span><span class="tile blue">{ic("a-r")}</span></a>'''
+<a class="btn" href="/flow/the-region.svg"><span class="t">Open the Chart</span><span class="tile blue">{ic("a-r")}</span></a>'''
 
 def build_404():
     secs = [{"id": "routes", "title": "Ways back", "short": "Ways back", "icon": "post", "tile": "blue", "body": f'''<ul class="rows routes">
