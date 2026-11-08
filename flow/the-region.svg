@@ -138,17 +138,23 @@
 <text x="716" y="544" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">The Upskilling</text>
 <text x="716" y="564" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Labs of Greater</text>
 <text x="716" y="584" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Washington</text>
-<text x="716" y="604" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Its own fork, site</text>
-<text x="716" y="624" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>and database: a</text>
-<text x="716" y="644" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>place to change</text>
-<text x="716" y="664" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>things without</text>
-<text x="716" y="684" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>touching national</text>
+<text x="716" y="604" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>The regional</text>
+<text x="716" y="624" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>association: its</text>
+<text x="716" y="644" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>own copy of OLOS,</text>
+<text x="716" y="664" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>its own site and</text>
+<text x="716" y="684" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>database, so it can</text>
+<text x="716" y="704" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>change things</text>
+<text x="716" y="724" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>without touching</text>
+<text x="716" y="744" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>national</text>
 <circle cx="854" cy="500" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
-<text x="854" y="392" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">The steering</text>
-<text x="854" y="412" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">committee</text>
-<text x="854" y="432" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Decides what the</text>
-<text x="854" y="452" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>region becomes;</text>
-<text x="854" y="472" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>ends in January</text>
+<text x="854" y="332" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">The steering</text>
+<text x="854" y="352" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">committee</text>
+<text x="854" y="372" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Decides what the</text>
+<text x="854" y="392" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>region becomes and,</text>
+<text x="854" y="412" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>with the regional</text>
+<text x="854" y="432" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>association,</text>
+<text x="854" y="452" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>maintains OLOS, the</text>
+<text x="854" y="472" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Upskilling Labs app</text>
 <circle cx="992" cy="500" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
 <text x="992" y="544" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Pod maintainers</text>
 <text x="992" y="564" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Review every pull</text>
@@ -356,7 +362,7 @@
 <text x="992" y="1740" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>meet newcomers</text>
 <circle cx="1682" cy="1768" r="12" fill="#e5e7de" stroke="#0b3536" stroke-width="5"/>
 <text x="1682" y="1600" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536">Meetups</text>
-<text x="1682" y="1620" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Grown into</text>
+<text x="1682" y="1620" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>Planned as</text>
 <text x="1682" y="1640" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>multi-organization</text>
 <text x="1682" y="1660" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>events, co-hosted</text>
 <text x="1682" y="1680" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76>with civic tech</text>
@@ -413,10 +419,12 @@
 <circle cx="2510" cy="2098" r="8" fill="none" stroke="#0b3536" stroke-width="4"/>
 <text x="2510" y="2142" text-anchor="middle" font-size="16.494" font-weight="800" fill="#0b3536" stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Maintainer</text>
 <text x="2510" y="2162" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">Keeps a part</text>
-<text x="2510" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">healthy over time,</text>
-<text x="2510" y="2202" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and carries it</text>
-<text x="2510" y="2222" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">upstream to</text>
-<text x="2510" y="2242" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">national</text>
+<text x="2510" y="2182" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">healthy over time.</text>
+<text x="2510" y="2202" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">OLOS itself is</text>
+<text x="2510" y="2222" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">maintained by the</text>
+<text x="2510" y="2242" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">steering committee</text>
+<text x="2510" y="2262" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">and the regional</text>
+<text x="2510" y="2282" text-anchor="middle" font-size="13.745" font-weight="400" fill="#0b3536" fill-opacity=0.76 stroke="#e5e7de" stroke-width="6" paint-order="stroke" stroke-linejoin="round">association</text>
 <text x="48" y="88" font-size="54.98" font-weight="800" letter-spacing="-.025em" fill="#0b3536">How the region fits together</text>
 <text x="48" y="128" font-size="16.494" fill="#0b3536">What runs today, in solid lines, and what we’re building next, dashed.</text>
 <text x="48" y="172" font-size="13.745" font-weight="800" fill="#0b3536">How to read it</text>

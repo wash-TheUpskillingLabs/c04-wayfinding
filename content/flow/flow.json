@@ -22,12 +22,12 @@
         {
           "col": 2,
           "name": "The Upskilling Labs of Greater Washington",
-          "note": "Its own fork, site and database: a place to change things without touching national"
+          "note": "The regional association: its own copy of OLOS, its own site and database, so it can change things without touching national"
         },
         {
           "col": 3,
           "name": "The steering committee",
-          "note": "Decides what the region becomes; ends in January"
+          "note": "Decides what the region becomes and, with the regional association, maintains OLOS, the Upskilling Labs app"
         },
         {
           "col": 4,
@@ -247,7 +247,7 @@
         {
           "col": 9,
           "name": "Meetups",
-          "note": "Grown into multi-organization events, co-hosted with civic tech groups, libraries, nonprofits and employers"
+          "note": "Planned as multi-organization events, co-hosted with civic tech groups, libraries, nonprofits and employers"
         },
         {
           "col": 14,
@@ -300,7 +300,7 @@
         {
           "col": 15,
           "name": "Maintainer",
-          "note": "Keeps a part healthy over time, and carries it upstream to national",
+          "note": "Keeps a part healthy over time. OLOS itself is maintained by the steering committee and the regional association",
           "link": "after"
         }
       ],
