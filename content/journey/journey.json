@@ -1,6 +1,6 @@
 {
  "title": "The participant journey",
- "subtitle": "Left to right, from first hearing of The Labs to after a Cycle. The last row is what people told us at each step.",
+ "subtitle": "One person’s way through The Labs, left to right, and every path beside it. The last row is what people told us at each step.",
  "bands": [
   [
    "Learn",
@@ -148,7 +148,7 @@
   {
    "id": "pod",
    "title": "A pod: the problem",
-   "sub": "Vote 1",
+   "sub": "Vote 1: pods form",
    "cycle": true,
    "do": [
     "Vote on problem proposals and join a pod. In it, propose paradoxes, then frames, then projects"
@@ -174,7 +174,7 @@
   {
    "id": "team",
    "title": "A project: the build",
-   "sub": "Vote 2",
+   "sub": "Vote 2: projects form",
    "cycle": true,
    "do": [
     "Vote on project proposals, join a project team, build it"
@@ -286,7 +286,9 @@
    "to": "team",
    "label": "take a stuck team’s question",
    "kind": "people",
-   "lane": 1
+   "lane": 1,
+   "onto": "top",
+   "dx": 232
   },
   {
    "from": "after",
@@ -308,25 +310,17 @@
  ],
  "shape": {
   "in": {
-   "from": [
-    "hear",
-    -18
-   ],
-   "to": [
-    "join",
-    0
-   ],
-   "label": "many ways in, one door: the Cycle"
+   "to": "hear",
+   "ways": [
+    "a friend",
+    "LinkedIn",
+    "Luma",
+    "the map"
+   ]
   },
   "out": {
-   "from": [
-    "show",
-    0
-   ],
-   "to": [
-    "after",
-    240
-   ],
+   "from": "after",
+   "n": 5,
    "label": "many ways out"
   },
   "problem": {
@@ -338,16 +332,16 @@
     "pod",
     0
    ],
+   "h": 64,
    "label": [
     "problem",
     "proposals"
-   ],
-   "close": "Vote 1: pods"
+   ]
   },
   "pods": {
    "n": 3,
    "gap": 64,
-   "h": 22,
+   "h": 20,
    "branch": 44,
    "stages": [
     {
@@ -365,8 +359,7 @@
       "team",
       0
      ],
-     "label": "project proposals",
-     "close": "Vote 2: projects"
+     "label": "project proposals"
     }
    ]
   },
@@ -381,8 +374,7 @@
     "show",
     0
    ],
-   "label": "projects build",
-   "close": "Showcase"
+   "label": "projects build"
   },
   "note": "Three pods, as in C04. How many projects each pod forms is illustrative."
  }
