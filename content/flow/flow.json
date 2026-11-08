@@ -158,7 +158,8 @@
         {
           "col": 1,
           "name": "A first session",
-          "note": "You leave with a tool learned or a thing made, at a library or online"
+          "note": "You leave with a tool learned or a thing made, at a library or online",
+          "link": "first"
         },
         {
           "col": 2,
@@ -168,7 +169,8 @@
         {
           "col": 3,
           "name": "More sessions",
-          "note": "Skills, practised: learn a tool, work a problem with others"
+          "note": "Skills, practised: learn a tool, work a problem with others",
+          "link": "more"
         },
         {
           "col": 4,
@@ -204,7 +206,8 @@
         {
           "col": 12,
           "name": "Three weeks of building",
-          "note": "A change that ships, used by real people"
+          "note": "A change that ships, used by real people",
+          "link": "build"
         },
         {
           "col": 14,
@@ -220,6 +223,89 @@
           "stop": true
         }
       ]
+    },
+    {
+      "id": "gather",
+      "name": "Where people gather",
+      "line": "ink",
+      "end": "none",
+      "planned": true,
+      "gives": "Rooms all over the region, hosted by neighbours, run from a kit",
+      "gets": "People who know each other, before, between and after Cycles",
+      "stations": [
+        {
+          "col": 1,
+          "name": "Neighborhood workshops",
+          "note": "A neighborhood team hosts in person, at their own library, from a kit",
+          "link": "first"
+        },
+        {
+          "col": 4,
+          "name": "Salons",
+          "note": "Small evenings around one question, where past participants meet newcomers"
+        },
+        {
+          "col": 9,
+          "name": "Meetups",
+          "note": "Grown into multi-organization events, co-hosted with civic tech groups, libraries, nonprofits and employers"
+        },
+        {
+          "col": 14,
+          "name": "Summits",
+          "note": "Real DC-style summits: panels, partners, agencies and employers in the room, with the showcase on the program",
+          "link": "showcase"
+        }
+      ],
+      "gap": 500,
+      "labels": "above"
+    },
+    {
+      "id": "commons",
+      "name": "The commons: OLOS, modules and kits",
+      "line": "ink",
+      "end": "stop",
+      "planned": true,
+      "gives": "An open contribution model: anyone can propose a change",
+      "gets": "Kits, modules and code any neighbourhood or region can use",
+      "stations": [
+        {
+          "col": 1,
+          "name": "Kits",
+          "note": "Modular programmatic kits: a session in a box, with agenda, materials, facilitator notes and setup",
+          "link": "first"
+        },
+        {
+          "col": 3,
+          "name": "Learning modules",
+          "note": "What a training teaches, written once, taught by any trainer",
+          "link": "more"
+        },
+        {
+          "col": 6,
+          "name": "Contributor",
+          "note": "Opens an issue or a pull request to OLOS, a module or a kit",
+          "link": "pods"
+        },
+        {
+          "col": 9,
+          "name": "Reviewer",
+          "note": "Reviews other people’s changes; trusted to say what’s ready"
+        },
+        {
+          "col": 12,
+          "name": "Committer",
+          "note": "Can merge: changes the region runs on",
+          "link": "build"
+        },
+        {
+          "col": 15,
+          "name": "Maintainer",
+          "note": "Keeps a part healthy over time, and carries it upstream to national",
+          "link": "after"
+        }
+      ],
+      "gap": 330,
+      "labels": "below"
     }
   ],
   "rails": [
@@ -313,6 +399,78 @@
       "dir": "up",
       "label": "nothing crosses yet",
       "stop": true
+    },
+    {
+      "link": "first",
+      "between": [
+        "commons",
+        "gather"
+      ],
+      "dir": "up",
+      "label": "a kit a stranger can run",
+      "planned": true
+    },
+    {
+      "link": "first",
+      "between": [
+        "gather",
+        "route"
+      ],
+      "dir": "up",
+      "label": "a first session, near you",
+      "planned": true
+    },
+    {
+      "link": "more",
+      "between": [
+        "commons",
+        "route"
+      ],
+      "dir": "up",
+      "label": "a module any trainer can teach",
+      "planned": true
+    },
+    {
+      "link": "pods",
+      "between": [
+        "route",
+        "commons"
+      ],
+      "dir": "down",
+      "label": "your first issue or pull request",
+      "planned": true
+    },
+    {
+      "link": "build",
+      "between": [
+        "route",
+        "commons"
+      ],
+      "dir": "down",
+      "label": "merged changes the region runs on",
+      "planned": true,
+      "side": "left"
+    },
+    {
+      "link": "showcase",
+      "between": [
+        "route",
+        "gather"
+      ],
+      "dir": "down",
+      "label": "the showcase, with employers in the room",
+      "planned": true
+    },
+    {
+      "link": "after",
+      "between": [
+        "route",
+        "commons"
+      ],
+      "dir": "down",
+      "label": "a role that keeps you in",
+      "planned": true
     }
-  ]
+  ],
+  "subtitle": "What runs today, in solid lines, and what we’re building next, dashed."
 }
