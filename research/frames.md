@@ -112,7 +112,7 @@ Dorst: make many frames before choosing. For each paradox we listed every place 
 
 Each frame: the frame; the needs it builds on (★ marks the two it lets a person have at once); where it's done well; what moves; what it opens; a prototype by Nov 13; who has to adopt it; what could go wrong; what it would feel like.
 
-Two frames from the themes post changed: the Station Agent is now the Train Station, and Home Port is the Harbor. Vouching and Rite of Passage were ideas rather than places, so they're not frames here; a vouch can ride on a film credit, and arriving at the end of the Camino is a witnessed crossing.
+The themes post's four frames are all here, developed further: the film credits, the train station, the harbor and the Camino. (Its first draft named two ideas rather than places, vouching and a rite of passage; a vouch now rides on a film credit, and the Camino's stamps make each crossing witnessed.)
 
 ### 1. The Camino (P1)
 
