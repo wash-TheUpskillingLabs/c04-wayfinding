@@ -58,12 +58,13 @@ def svg(fd, td):
     ky = bottom + 96
     H = ky + 250
     out = [f'<svg class="fmap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
-           f'aria-label="{nfr} frames drawn on the five need lines, grouped by the paradox each one moves. A station marks a need the frame builds on; joined stations are the two needs it lets a person have at once. The table below lists every station." '
+           f'aria-label="{nfr} frames drawn on the five need lines: one that holds all five needs, then ten grouped by the paradox each one moves. A station marks a need the frame builds on; joined stations are the needs it lets a person have at once. The table below lists every station." '
            f'font-family="{FONT}"><rect width="{W}" height="{H}" fill="{PAPER}"/>']
     t = out.append
-    t(f'<text x="{LM}" y="{LM + 26}" font-size="{TFS}" font-weight="700" fill="{INK}">{["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"][nfr] if nfr < 13 else nfr} Frames Built From Five Human Needs</text>')
-    t(f'<text x="{LM}" y="{LM + 64}" font-size="{FS}" fill="{INK}">Each row is a frame, an analogy: a place people already know where they get two of these needs at once, without being paid to be there. '
-      f'Rows are grouped by the paradox each frame moves.</text>')
+    title = fd.get("title") or f'{["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"][nfr] if nfr < 13 else nfr} Frames Built From Five Human Needs'
+    t(f'<text x="{LM}" y="{LM + 26}" font-size="{TFS}" font-weight="700" fill="{INK}">{esc(title)}</text>')
+    t(f'<text x="{LM}" y="{LM + 64}" font-size="{FS}" fill="{INK}">Each row is a frame, an analogy: a place people already know where they get these needs at once, without being paid to be there. '
+      f'The first holds all five; the rest are grouped by the paradox each moves.</text>')
     t(f'<text x="{LM}" y="{LM + 90}" font-size="{FS}" fill="{INK}">Dorst’s step 6, Frames. Built {esc(fd["asof"])} from the five needs on the field themes map. '
       f'Hover a station for how the frame builds on that need; every station is in the table below.</text>')
     # need names over their lines, and the two text columns' heads
@@ -91,12 +92,13 @@ def svg(fd, td):
         t(f'<line x1="{LM}" y1="{y + 12}" x2="{LM + NW - 8}" y2="{y + 12}" stroke="{INK}" stroke-width="2"/>'
           f'<line x1="{CD}" y1="{y + 12}" x2="{W - LM}" y2="{y + 12}" stroke="{INK}" stroke-width="2"/>'
           f'<text x="{LM}" y="{y + 40}" font-size="{FS}" font-weight="700" fill="{INK}" letter-spacing=".06em">{esc(g["name"].upper())}</text>'
-          f'<text x="{CD}" y="{y + 40}" font-size="{FS}" fill="{INK}"><tspan font-weight="700">Pulls apart:</tspan> {esc(g["pulls"])}</text>')
+          f'<text x="{CD}" y="{y + 40}" font-size="{FS}" fill="{INK}"><tspan font-weight="700">{esc(g.get("label", "Pulls apart:"))}</tspan> {esc(g["pulls"])}</text>')
         y += GH + RH * len(g["frames"])
     # rows: name, the interchange, stations, then the two text columns
     for cy, f in rows:
         t(f'<a href="{esc(fd["post"])}#{esc(f["id"])}"><text x="{LM}" y="{cy + 5.3}" font-size="{FS}" font-weight="700" fill="{INK}">{esc(f["name"])}</text></a>')
-        a, b = sorted(xs[k] for k in f["holds"])
+        held = sorted(xs[k] for k in f["holds"])
+        a, b = held[0], held[-1]
         t(f'<line x1="{a}" y1="{cy}" x2="{b}" y2="{cy}" stroke="{PAPER}" stroke-width="16"/>'
           f'<line x1="{a}" y1="{cy}" x2="{b}" y2="{cy}" stroke="{INK}" stroke-width="6"/>')
         for th in needs:
@@ -127,7 +129,7 @@ def svg(fd, td):
       f'<line x1="{LM + 420}" y1="{sy}" x2="{LM + 500}" y2="{sy}" stroke="{INK}" stroke-width="6"/>'
       f'<circle cx="{LM + 420}" cy="{sy}" r="9" fill="{INK}" stroke="{INK}" stroke-width="4"/>'
       f'<circle cx="{LM + 500}" cy="{sy}" r="9" fill="{INK}" stroke="{INK}" stroke-width="4"/>'
-      f'<text x="{LM + 524}" y="{sy + 5.3}" font-size="{FS}" fill="{INK}">Joined: the two needs the frame lets a person have at once, like the platforms of an interchange. An open station on the link is a need it also touches.</text>')
+      f'<text x="{LM + 524}" y="{sy + 5.3}" font-size="{FS}" fill="{INK}">Joined: the needs the frame lets a person have at once, like the platforms of an interchange. An open station on the link is a need it also touches.</text>')
     t("</svg>")
     return "".join(out), W, H
 

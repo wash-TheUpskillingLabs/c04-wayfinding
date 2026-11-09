@@ -1,6 +1,6 @@
-# Frames built from the five needs
+# Frames built from the five needs, and the one that holds them
 
-Companion to the post [Ten Frames Built From Five Human Needs](/blog/frames/) and its data, `content/frames/frames.json`. Written Nov 9, 2026, and revised the same day so that every frame is an analogy: a place or system people already know, like a train station, a ski resort or a CrossFit gym. Written for Dorst's step 6: "identifying patterns in the themes to create frames." The themes are the five needs in [the field themes post](/blog/field-themes/) and `research/themes-psychology.md`: Mattering, Coherence, Support, Belonging, Becoming.
+Companion to the post [One Frame for Five Human Needs: The Quilting Bee](/blog/frames/) and its data, `content/frames/frames.json`. Written Nov 9, 2026, and revised the same day so that every frame is an analogy: a place or system people already know, like a train station, a ski resort or a CrossFit gym. Written for Dorst's step 6: "identifying patterns in the themes to create frames." The themes are the five needs in [the field themes post](/blog/field-themes/) and `research/themes-psychology.md`: Mattering, Coherence, Support, Belonging, Becoming.
 
 This is one reading, by one reader, offered as material for the week of prototypes (Nov 8 to 13) and the Nov 14 vote. The paradox and the frames are the pod's to write. The frames the builders took home on Nov 7 aren't in the README yet, so nothing here tests them; hold them up against these.
 
@@ -251,9 +251,46 @@ The themes post's four frames are all here, developed further: the film credits,
 3. **Show the parts, never the ranking.** Credits without order, relay legs with a team time, the tail walker, stamps that record presence not speed. The warnings agree: the whiteboard of scores, first legs that gave less.
 4. **A record the person carries, written by others.** The credencial, a film's credits, a parkrun profile: the pod's own ground.
 5. **Something standing outlasts a season.** parkrun every Saturday, a crew's berth, the same class at the same hour.
-6. **The frames lean away from what the field counts.** The field reaches most for Mattering (27 of 50), almost always with something countable; three of these ten frames build on it. Support carries eight; Becoming, the field's quietest need (9 of 50), carries six. A pattern in the places we chose, not a finding about the world.
+6. **The frames lean away from what the field counts.** The field reaches most for Mattering (27 of 50), almost always with something countable; four of the eleven frames (with the quilting bee) build on it. Support carries nine; Becoming, the field's quietest need (9 of 50), carries seven. A pattern in the places we chose, not a finding about the world.
+
+## One frame that holds everything
+
+The patterns point at one kind of place: one pattern with room for each person, signed parts in a shared whole, help where people already sit, a record people keep, a gathering that outlasts each project. Looking back through the forty, the place that has all of it was already on the list (as "a signature quilt", under P2).
+
+### The Quilting Bee (all four)
+
+**If we treat this as a problem of a quilting bee, then everyone works from one pattern in their own fabric, each block is signed by the person who made it, newcomers learn at the frame beside people who have quilted for years, the finished quilt is given to someone at a threshold in their life, and the bee meets again for the next one.**
+
+- **Needs:** all five, joined.
+- **Done well:** friendship quilts of the 1840s and 1850s: every block the same pattern, each signed, made for wedding couples or as send-offs for migrating families (Northwest Museum of Arts and Culture); album quilts best known as group efforts, each maker contributing blocks (Colonial Williamsburg). Baltimore album quilts, 40 miles from Washington, many with blocks each made and signed by a different person (Wikipedia; the Met). Round robins: each member adds a border to a shared center; one bee of ten worked in pairs on each border of one quilt and draws names so every member ends up with a group-made quilt (American Quilter). In 29 interviews with a quilting group: new skills, flow, strong friendships, affirmation that boosted motivation to improve, and purpose from quilts given away (Burt & Atkinson 2012).
+- **P1:** the pattern is static and visible; fabric and hand are yours. The hunch's worry, that an adaptive experience makes "the value, the learning and the belonging" hard to see, is what a quilt answers: the gift shows the value, each block what its maker learned, the quilt who belonged.
+- **P2:** every block signed; the quilt belongs to everyone.
+- **P3:** help happens at the frame, from whoever sits beside you; not extra hours.
+- **P4:** each quilt is finished and given away; the bee meets again.
+- **It holds the ten:** Camino passport → each member's album; film credits → signatures; relay → round robin; tailor's shop and doula → the frame; train station and ski resort → the pattern on the wall; CrossFit → one pattern in many fabrics; harbor and parkrun → the bee that meets again.
+- **What it opens:** a pattern library (each kind of night or project as a named pattern with a set block size, so any lab can run it and every block fits; national keeps the patterns, regions make their own quilts, patterns that work go back upstream, as the region already does with OLOS); signed blocks and a label on every shipped project (who made it, for whom); the frame (open labs side by side on one team's project, newcomer beside someone who's done it); round robins (projects passed between Cycles, each team adding a border); a member's album; the sashing, the strips between blocks, which is this pod's own ground: the thresholds between parts.
+- **Prototype by Nov 13:** everyone at an open lab makes the same small block (one prompt, fixed size) their own way and signs it; join the blocks and give the result to someone who asked for it; ask three people whether they saw their part, the whole, and who it was for. Separately, lay out one project page as a quilt (signed blocks, handoffs as sashing, a label) for three alumni and one person who hires.
+- **Who adopts it:** organizers (patterns), teams (blocks), experienced members (the frame), national (the library).
+- **Watch for:** the expert who unpicks a newcomer's stitches. A quilter's memoir recalls her mother removing guests' stitches that didn't measure up (Mountain View Today); review at the frame has to be help, never a public redo. A pattern too tight for anyone's fabric. Pace: a quilt takes months, a block has to fit an evening. The quilt goes to someone who asked for it. It can read as quaint.
+- **Feels like:** I made my block my way, and my name is on it. It's part of something bigger we gave away, and next week we start another.
+
+### How the strongest candidates compare
+
+Our judgments, from the evidence above. "Partly" counts as a part.
+
+| Place | Needs | Paradoxes | What it lacks |
+|---|---|---|---|
+| The quilting bee | All five | All four | Nothing structural; risks are the unpicked stitch, the pace, reading as quaint |
+| Community theatre | All five | Two, and parts of two | Auditions and casting rank people; the show goes to an audience, not a person |
+| A jazz jam session | All five | Two, and parts of two | Nothing kept or given; the bandstand can shut people out (Lebert, ASU thesis) |
+| The Camino | Four, and part of Belonging | Two, and part of a third | Walked alone: no team, no project |
+| Summer camp | Four, and part of Mattering | Two, and parts of two | For children; residential |
+| parkrun | Three, and parts of two | One, and parts of two | No team; nothing made |
+| A community garden | Three, and parts of two | Two, and parts of two | Plots worked alone; nothing records who grew what |
 
 ## Four to try first
+
+If the pod takes one frame, take the quilting bee. If it wants one per paradox, these four, each a part of the bee:
 
 | Paradox | Frame | Why this one |
 |---|---|---|
@@ -279,6 +316,9 @@ They compose: one passport could carry the stamps and the credits, and the weekl
 - Bohren, M. A., et al. (2017). Continuous support for women during childbirth. *Cochrane Database of Systematic Reviews*, CD003766. [Fact sheet](https://pmc.ncbi.nlm.nih.gov/articles/PMC6491161). Bohren on the 2019 qualitative review: [Evidently Cochrane](https://evidentlycochrane.net/?p=10626).
 - Burks, S. V., Cowgill, B., Hoffman, M., & Housman, M. (2015). [The value of hiring through employee referrals](https://www.iza.org/publications/dp/7382). *Quarterly Journal of Economics*, 130(2).
 - The Community Guide (CPSTF). [Patient navigation services to increase colorectal cancer screening](https://www.thecommunityguide.org/findings/cancer-screening-patient-navigation-services-to-increase-colorectal-cancer-screening.html).
+- Quilts: [Northwest Museum of Arts and Culture, Block Format Quilts](https://www.northwestmuseum.org/exhibitions/online-exhibitions/quiltscapes/block-format-quilts/); [Colonial Williamsburg, signature album quilt](https://emuseum.history.org/objects/111930/quilt-signature-album); [Baltimore album quilts](https://en.wikipedia.org/wiki/Baltimore_album_quilt) and [a signed example at the Met](https://www.metmuseum.org/art/collection/search/13877); [American Quilter on round robins](https://preview.americanquilter.com/making-the-rounds-with-a-round-robin-quilt); a quilter's memoir, [Mountain View Today](https://www.mountainviewtoday.ca/local-news/quilting-in-the-family-1816626).
+- Burt, E. L., & Atkinson, J. (2012). [The relationship between quilting and wellbeing](https://eprints.gla.ac.uk/52758). *Journal of Public Health*, 34(1).
+- Lebert, R. [Jam sessions as rites of passage: an ethnography of jazz jams in Phoenix, AZ](https://keep.lib.asu.edu/system/files/c7/211845/Lebert_asu_0010N_19007.pdf). Master's thesis, Arizona State University.
 - Bush, M. L., Kaufman, M. R., & Shackleford, T. (2017). [Adherence in the cancer care setting: a systematic review of patient navigation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5711635).
 - Domingo, J. B., et al. (2017). [Characteristics of effective colorectal cancer screening navigation programs in FQHCs](https://pmc.ncbi.nlm.nih.gov/articles/PMC5487219).
 - Dorst, K. (2018). [Mixing practices to create transdisciplinary innovation](https://timreview.ca/article/1179). *Technology Innovation Management Review*.
