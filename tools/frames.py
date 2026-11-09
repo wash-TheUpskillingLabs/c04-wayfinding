@@ -57,14 +57,16 @@ def svg(fd, td):
     bottom = TOP + body - 6
     ky = bottom + 96
     H = ky + 250
+    n0 = len(fd["groups"][0]["frames"])
+    w0 = ["no frames", "one that holds", "two that hold", "three that hold"][n0] if n0 < 4 else f"{n0} that hold"
     out = [f'<svg class="fmap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
-           f'aria-label="{nfr} frames drawn on the five need lines: one that holds all five needs, then ten grouped by the paradox each one moves. A station marks a need the frame builds on; joined stations are the needs it lets a person have at once. The table below lists every station." '
+           f'aria-label="{nfr} frames drawn on the five need lines: {w0} all five needs, then {nfr - n0} grouped by the paradox each one moves. A station marks a need the frame builds on; joined stations are the needs it lets a person have at once. The table below lists every station." '
            f'font-family="{FONT}"><rect width="{W}" height="{H}" fill="{PAPER}"/>']
     t = out.append
     title = fd.get("title") or f'{["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"][nfr] if nfr < 13 else nfr} Frames Built From Five Human Needs'
     t(f'<text x="{LM}" y="{LM + 26}" font-size="{TFS}" font-weight="700" fill="{INK}">{esc(title)}</text>')
     t(f'<text x="{LM}" y="{LM + 64}" font-size="{FS}" fill="{INK}">Each row is a frame, an analogy: a place people already know where they get these needs at once, without being paid to be there. '
-      f'The first holds all five; the rest are grouped by the paradox each moves.</text>')
+      f'{["", "The first holds", "The first two hold", "The first three hold"][n0] if n0 < 4 else f"The first {n0} hold"} all five; the rest are grouped by the paradox each moves.</text>')
     t(f'<text x="{LM}" y="{LM + 90}" font-size="{FS}" fill="{INK}">Dorst’s step 6, Frames. Built {esc(fd["asof"])} from the five needs on the field themes map. '
       f'Hover a station for how the frame builds on that need; every station is in the table below.</text>')
     # need names over their lines, and the two text columns' heads

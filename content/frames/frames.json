@@ -4,7 +4,7 @@
   "post": "/blog/frames/",
   "groups": [
     {
-      "name": "One Frame for All Four",
+      "name": "Two Frames for All Four",
       "pulls": "all five needs, and all four paradoxes, at once",
       "frames": [
         {
@@ -25,6 +25,26 @@
             "B": "newcomers learn at the frame beside people who’ve quilted for years",
             "L": "the bee meets again for the next quilt",
             "N": "from your first block to patterns of your own"
+          }
+        },
+        {
+          "id": "club",
+          "name": "The Trail Club",
+          "holds": [
+            "R",
+            "W",
+            "B",
+            "L",
+            "N"
+          ],
+          "done": "Appalachian Trail clubs, this region’s among them",
+          "gives": "Nothing has to choose: one blaze holds, every stretch has a keeper",
+          "t": {
+            "R": "every stretch has a named overseer, and the work is logged",
+            "W": "one blaze everywhere, and every hiker walks their own hike",
+            "B": "district managers and crew leaders bring newcomers in",
+            "L": "crews disband; the club and the trail go on",
+            "N": "from hiker to overseer to crew leader"
           }
         }
       ],
@@ -204,5 +224,5 @@
       ]
     }
   ],
-  "title": "One Frame, and the Ten It Holds"
+  "title": "Two Frames, and the Ten They Hold"
 }

@@ -1,6 +1,6 @@
-# Frames built from the five needs, and the one that holds them
+# Frames built from the five needs, and the two that hold them
 
-Companion to the post [One Frame for Five Human Needs: The Quilting Bee](/blog/frames/) and its data, `content/frames/frames.json`. Written Nov 9, 2026, and revised the same day so that every frame is an analogy: a place or system people already know, like a train station, a ski resort or a CrossFit gym. Written for Dorst's step 6: "identifying patterns in the themes to create frames." The themes are the five needs in [the field themes post](/blog/field-themes/) and `research/themes-psychology.md`: Mattering, Coherence, Support, Belonging, Becoming.
+Companion to the post [Two Frames for Five Human Needs: The Quilting Bee and the Trail Club](/blog/frames/) and its data, `content/frames/frames.json`. Written Nov 9, 2026, and revised the same day so that every frame is an analogy: a place or system people already know, like a train station, a ski resort or a CrossFit gym. Revised again so that every frame says where its likeness ends, and to add the trail club beside the quilting bee, because a quilt and an open-source project differ in ways that matter. Written for Dorst's step 6: "identifying patterns in the themes to create frames." The themes are the five needs in [the field themes post](/blog/field-themes/) and `research/themes-psychology.md`: Mattering, Coherence, Support, Belonging, Becoming.
 
 This is one reading, by one reader, offered as material for the week of prototypes (Nov 8 to 13) and the Nov 14 vote. The paradox and the frames are the pod's to write. The frames the builders took home on Nov 7 aren't in the README yet, so nothing here tests them; hold them up against these.
 
@@ -10,8 +10,9 @@ This is one reading, by one reader, offered as material for the week of prototyp
 - **Where frames come from.** Dorst: "new frames can be created by linking to practices from other professional fields" (Dorst 2018). His best-known case, Kings Cross in Sydney, had been labelled "alcohol-related violence." Treated as a music festival, a crowd of mostly young people out for a good night, it opened late-night transport out, more toilets, chill-out spaces, varied entertainment, taxi queues, safe places to sober up, and Kings Cross Guides to welcome visitors.
 - **How a frame fails.** The City of Sydney adopted the festival frame. After two young men died in separate attacks, the state government passed laws that cut opening hours, and the City was pushed back to the crime-scene frame. Vermaas, Dorst and Thurgood (2015) call this a frame the client can no longer accept. So a frame has to be one that the people who'd live with it can adopt.
 - **Our method.** We started with the README's hunch and wrote it, and three more candidates, as paradoxes: two needs, or two people's needs, that pull apart. For each, we asked: where else in the world do people get both at once, without being paid to be there? Every answer had to be a place you could walk into. We kept one only when there was evidence its way of working does what we need where it comes from, and when the likeness ran through a need, not just the surface.
-- **The test** (from the themes post, plus one from Kings Cross and one to keep frames analogies):
+- **The test** (from the themes post, plus one to keep frames analogies, one to say where each likeness ends, and one from Kings Cross):
   0. Is it a place or system people already know? If you can't walk into it, it's an idea, not a frame.
+  0b. Where does the likeness end? Name how the place differs from The Labs; that's where a prototype will surprise you.
   1. Which need does the likeness run through, and what research stands behind it?
   2. Do unlike organizations reach for that need, and does someone inside The Labs feel it?
   3. Which side of the paradox gives?
@@ -110,7 +111,7 @@ Dorst: make many frames before choosing. For each paradox we listed every place 
 
 ## Ten frames
 
-Each frame: the frame; the needs it builds on (★ marks the two it lets a person have at once); where it's done well; what moves; what it opens; a prototype by Nov 13; who has to adopt it; what could go wrong; what it would feel like.
+Each frame: the frame; the needs it builds on (★ marks the two it lets a person have at once); where it's done well; what moves; what it opens; a prototype by Nov 13; who has to adopt it; what could go wrong; where it differs from our work; what it would feel like.
 
 The themes post's four frames are all here, developed further: the film credits, the train station, the harbor and the Camino. (Its first draft named two ideas rather than places, vouching and a rite of passage; a vouch now rides on a film credit, and the Camino's stamps make each crossing witnessed.)
 
@@ -125,6 +126,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** a passport with the journey map's thresholds as stamp boxes; a host stamps it at an open lab; three people at different steps say what it should show, and to whom.
 - **Who adopts it:** hosts, who stamp; organizers, who set the marks; libraries, as the albergues.
 - **Watch for:** one destination; The Labs has none, so no stamp reads as a finish line. A stamp book can become a checklist (Scouting's merit badge mills). The Compostela's distance rule is a gate; the passport is a record, never a gate.
+- **Where it differs:** a pilgrimage is usually walked once, mostly alone, toward one place. The Labs is returned to, worked in teams, and has no single destination.
 - **Feels like:** I can see how far I've come and the way on is marked, but the walk is mine.
 
 ### 2. The Ski Resort (P1)
@@ -138,6 +140,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** rate the journey map's thresholds green, blue and black with three alumni; ask three newcomers to pick a first run and say why.
 - **Who adopts it:** organizers, who rate and revise; hosts, as instructors and patrol.
 - **Watch for:** the mountain mostly holds still and The Labs changes every Cycle. A rating rates the run but is read as rating the skier: ratings go on runs, never on people.
+- **Where it differs:** skiers buy a day on a mountain that mostly holds still. Upskillers give their evenings to a place that changes every Cycle.
 - **Feels like:** I can see the whole mountain, and I pick the run that fits me today.
 
 ### 3. The CrossFit Box (P1)
@@ -151,6 +154,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** one open lab with a single prompt on the board in three scales and a coach; three people at different levels say how it felt.
 - **Who adopts it:** hosts and coaches at open labs.
 - **Watch for:** the whiteboard of scores. On one CrossFit podcast, a member describes hearing a full-weight (Rx) score called out and feeling they hadn't done enough. Post the workout, never the scores.
+- **Where it differs:** a workout is over in an hour and leaves nothing behind. A Labs night is meant to leave something built that someone keeps.
 - **Feels like:** we're all doing the same thing tonight, and mine fits me.
 
 ### 4. The Film Credits (P2)
@@ -164,6 +168,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** credits for one finished project, every role agreed by the team; show three alumni and one person who hires; ask what they read first.
 - **Who adopts it:** teams, employers, OLOS maintainers.
 - **Watch for:** in the same Wikipedia study, award winners got more awards from other editors, 12 to 2, which the authors read as prestige rather than merit. Give everyone a line.
+- **Where it differs:** a film is finished and its credits are fixed. Labs work keeps changing after it ships, so its credits have to keep being written.
 - **Feels like:** my name is on what we made, next to what I did.
 
 ### 5. The Relay (P2)
@@ -177,6 +182,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** show each person's part on one project page with a handoff note from the person before; ask three alumni whether it made them feel more part of the team or less.
 - **Who adopts it:** teams.
 - **Watch for:** first legs gave less; make the first handoff count too. Show the legs, never compare the times.
+- **Where it differs:** a race has one clock and a clear finish. Labs work is judged by the people who use it, long after the handoff.
 - **Feels like:** my part was mine, and we did it together.
 
 ### 6. The Train Station (P3)
@@ -190,6 +196,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** a named alum or moderator at each station of the journey map; three people at three stations find their next train.
 - **Who adopts it:** whoever staffs the desk; organizers unless alumni take stations.
 - **Watch for:** the desk as bottleneck; if every desk is an organizer, the organizers' side gives.
+- **Where it differs:** trains run on a timetable whether or not anyone boards. At The Labs, the next train often doesn't exist until someone organizes it.
 - **Feels like:** I always know where I am, and who to ask.
 
 ### 7. The Doula (P3)
@@ -203,6 +210,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** ask three alumni whether they'd companion someone next Cycle and what they'd need; ask one recent joiner what they'd have wanted.
 - **Who adopts it:** alumni.
 - **Watch for:** dependence, uneven companions, burnout; a companion mustn't become unpaid staff.
+- **Where it differs:** a birth lasts hours, and a doula is trained for it. A Labs crossing takes weeks, and the companion is a volunteer.
 - **Feels like:** someone who's done this is walking it with me.
 
 ### 8. The Tailor's Shop (P3)
@@ -216,6 +224,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** three real starter tasks on one live project, given to three people at the edge; see who comes back.
 - **Who adopts it:** project maintainers.
 - **Watch for:** getting stuck at the edge, or free labor; Lave and Wenger tie legitimacy to real access to the community's resources. Gatekeeping. Tests at each step inward lose people: about 57 in 100 Carpentries trainees made it from training to badge in 2018, and the test was shrunk in 2023 (`case-carpentries-instructor-pipeline.md`).
+- **Where it differs:** an apprentice tailor works full time for years. An Upskiller gives a few evenings, so each step inward has to be much smaller.
 - **Feels like:** I'm doing real work from the first night, and I can see how people got further in.
 
 ### 9. The Harbor (P4)
@@ -229,6 +238,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** a standing night and a page where past teams keep their place; ask three alumni whether they'd come.
 - **Who adopts it:** alumni crews, and whoever keeps the night.
 - **Watch for:** berths for teams leave out people who weren't on one; an empty berth is worse than none.
+- **Where it differs:** a ship has a captain and a crew that sails together for years. Labs teams form fresh each Cycle, and nobody commands them.
 - **Feels like:** when the Cycle ends, I still have somewhere to go, and people who expect me.
 
 ### 10. parkrun (P4)
@@ -242,6 +252,7 @@ The themes post's four frames are all here, developed further: the film credits,
 - **Prototype by Nov 13:** one open lab in parkrun's shape (next week's date announced, a named tail walker, every helper credited); ask three people whether they'd come back, and why.
 - **Who adopts it:** hosts, every week.
 - **Watch for:** weekly volunteers; counting attendance edges toward the activity telemetry the constitution rules out, so any count is the person's own, opt-in, never compared.
+- **Where it differs:** a run asks nothing of you but showing up. A Labs night asks for work, which is harder to drop into.
 - **Feels like:** it's on every week, I come when I can, and nobody gets left at the back.
 
 ## What the frames have in common
@@ -251,11 +262,11 @@ The themes post's four frames are all here, developed further: the film credits,
 3. **Show the parts, never the ranking.** Credits without order, relay legs with a team time, the tail walker, stamps that record presence not speed. The warnings agree: the whiteboard of scores, first legs that gave less.
 4. **A record the person carries, written by others.** The credencial, a film's credits, a parkrun profile: the pod's own ground.
 5. **Something standing outlasts a season.** parkrun every Saturday, a crew's berth, the same class at the same hour.
-6. **The frames lean away from what the field counts.** The field reaches most for Mattering (27 of 50), almost always with something countable; four of the eleven frames (with the quilting bee) build on it. Support carries nine; Becoming, the field's quietest need (9 of 50), carries seven. A pattern in the places we chose, not a finding about the world.
+6. **The frames lean away from what the field counts.** The field reaches most for Mattering (27 of 50), almost always with something countable; five of the twelve frames (with the quilting bee and the trail club) build on it. Support carries ten; Becoming, the field's quietest need (9 of 50), carries eight. A pattern in the places we chose, not a finding about the world.
 
-## One frame that holds everything
+## Two frames that hold everything
 
-The patterns point at one kind of place: one pattern with room for each person, signed parts in a shared whole, help where people already sit, a record people keep, a gathering that outlasts each project. Looking back through the forty, the place that has all of it was already on the list (as "a signature quilt", under P2).
+The patterns point at one kind of place: one pattern with room for each person, signed parts in a shared whole, help where people already sit, a record people keep, a gathering that outlasts each project. Looking back through the forty, we found two. Each holds all five needs and all four paradoxes, and each differs from our real situation in ways worth naming. The first was already on the list (as "a signature quilt", under P2). The second, the trail club, starts from where the quilt differs.
 
 ### The Quilting Bee (all four)
 
@@ -272,25 +283,64 @@ The patterns point at one kind of place: one pattern with room for each person, 
 - **Prototype by Nov 13:** everyone at an open lab makes the same small block (one prompt, fixed size) their own way and signs it; join the blocks and give the result to someone who asked for it; ask three people whether they saw their part, the whole, and who it was for. Separately, lay out one project page as a quilt (signed blocks, handoffs as sashing, a label) for three alumni and one person who hires.
 - **Who adopts it:** organizers (patterns), teams (blocks), experienced members (the frame), national (the library).
 - **Watch for:** the expert who unpicks a newcomer's stitches. A quilter's memoir recalls her mother removing guests' stitches that didn't measure up (Mountain View Today); review at the frame has to be help, never a public redo. A pattern too tight for anyone's fabric. Pace: a quilt takes months, a block has to fit an evening. The quilt goes to someone who asked for it. It can read as quaint.
+- **Where it differs:** a quilt is finished, it's one object, its blocks are made apart, and it's made in one room. Our work is none of those things; the table below says what that changes.
 - **Feels like:** I made my block my way, and my name is on it. It's part of something bigger we gave away, and next week we start another.
+
+### Where the quilt differs from our work
+
+Much of what The Labs builds is open-source software: changes to OLOS, made in this region's copy and sent back to the national project, and each proposal has to say who keeps it in January (README). A quilt and an open-source project differ in ways that matter for exactly that work.
+
+| A quilt | An open-source project | What it changes |
+|---|---|---|
+| Finished, and given away | Never finished. Like roads and bridges, it needs upkeep, and most of that labor goes unseen (Eghbal 2016) | Someone has to keep it after the Cycle, and the keeping needs credit |
+| One quilt, one person | Copied freely, adapted, and sent back. This region's OLOS is itself a copy of national's (README) | The gift goes to people you'll never meet |
+| Blocks made apart, meeting at the seams | Parts depend on each other, and a change in one can break another | Joining the parts is real work, not just a border |
+| Every stitch shows | Review, upkeep and fixes rarely show (Eghbal 2016) | Signed blocks would credit what's visible and miss the rest |
+| One room, one frame | Spread out, and mostly not at the same time | Help can't come only from whoever sits beside you |
+| A host who might quietly redo a stitch | Review is built in: core developers check others' contributions before they go in (Crowston et al. 2006) | The gate is part of the work, so it has to be designed as help |
+| About ten people around a frame | A small core and a long tail. In the Apache web server, about 15 developers wrote more than 80% of the code for new features (Mockus, Fielding & Herbsleb 2002) | Most contributors give a little, so design for them |
+| Pull up a chair | Newcomers face many barriers to a first contribution; one model counts 58, 13 of them social (Steinmacher et al. 2015) | The first threshold is far harder than a seat at the frame, and it's this pod's ground |
+
+None of this makes the bee wrong. It holds the people, the evening and the gift better than anything else we found. It just doesn't hold the code, so a team that takes it has to design for these differences.
+
+### The Trail Club (all four)
+
+**If we treat this as a problem of a trail club that keeps a long trail open, then one standard marks the whole trail so anyone can walk it their own way, each local club keeps its own section with a named overseer for every stretch, newcomers learn on work trips beside people who have done it for years, crews form for a season's big project and then disband, and the club and the trail go on.**
+
+- **Needs:** all five, joined.
+- **Done well:** the Appalachian Trail, about 2,200 miles, kept open mostly by volunteers: 4,730 of them gave 170,147 hours in 2023 (ATC 2023 Volunteer Impact Report). About 30 local clubs each maintain an assigned section (ATC, Cooperative Management); the Conservancy's paid staff serves primarily as a support team (Associations Now 2013). This region's own: the Potomac Appalachian Trail Club, formed in 1927 to build a key section, now cares for about 1,200 miles of trail (PATC). Overseers take "ownership" of a section; district managers recruit, train and support them (PATC South District); crews tackle the larger projects the maintainers identify, and maintainers file a report for each day of work (PATC volunteer roles). One standard: a white blaze 2 inches by 6, about 165,000 of them (NPS, archived); clubs choose between two kinds of double blaze and no others, and individual maintainers should not change the blazing on personal preference (ATC policy on Trail Design, Construction and Maintenance). Konnarock and the other ATC crews run 3 to 8 days, no experience needed (ATC, first-time crew volunteers), led by experienced crew leaders, and crew work has led to jobs with the Conservancy (ATC, Trail Crews). Each shelter has a log where hikers comment on the state of the trail (Appalachian Trail Histories); the Conservancy gathers condition reports from the ground and shares them (ATC, Hurricane Helene update). One club's newsletter logs who did what work, where and when (Smoky Mountains Hiking Club, May 2023), and clubs' volunteers and hours are reported each year (ATC 2022 VIP/VIF report).
+- **It answers where the quilt differs.** A trail is never finished, and the overseer keeps it after the season. Most hikers never meet the people who keep their trail open, open source's problem too; the club's answer is a work log and a yearly count. Sections depend on each other, so one closure reroutes everyone. The work is spread out, each overseer on their own schedule, while work trips bring people together. Changes to the standard go through the club. A small core keeps the trail, and a long tail comes for a day. The first threshold is designed: "no experience needed." And it's held the way this region holds OLOS: local clubs keep sections of one trail to one standard, and a national body keeps the standard and carries the whole.
+- **P1:** the blazes are the same everywhere, and every hiker walks their own hike.
+- **P2:** the stretch is yours; the trail is everyone's.
+- **P3:** district managers and crew leaders bring newcomers in, so helping is part of the work, not extra hours.
+- **P4:** crews disband; the club and the trail go on.
+- **It holds the ten:** Camino and ski resort → the marked way; CrossFit → a crew's single project, worked at every level; film credits and relay → the work log and the sections handed on; train station → the shelter and its register; doula and tailor's shop → the crew leader beside a newcomer; harbor → the club; parkrun → the regular work trip. From the quilt, keep two things the trail lacks: the signature where users can see it, and the gift.
+- **What it opens:** one blaze (a small shared mark for the way on at every threshold in OLOS, the same in every region, with a short list of allowed local variations); sections and overseers (every stretch of the route, whether a threshold, a page or a notice, has a named keeper who walks it a few times a season: "who keeps it in January?" by design); work trips (open labs as Saturday work trips, small real fixes, newcomers beside overseers); crews (each Cycle as a crew that takes on one big project and disbands, while the club stays); a register at every threshold; a work log that credits the unseen work.
+- **Prototype by Nov 13:** give three thresholds on the journey map each a named overseer, put a simple register at each, and run one evening's work trip to clear what the registers show; ask three people whether they could tell who keeps the way, and whether they'd take a stretch themselves.
+- **Who adopts it:** regional organizers (district managers), alumni (overseers), national OLOS (keeper of the standard), the people using it (who write in the register).
+- **Watch for:** overseers burning out alone on a stretch nobody visits; an orphaned section; a standard that hardens until nothing can change; unseen work staying unseen. It can read as outdoorsy: the frame is the club, not the hike.
+- **Where it differs:** a trail can't be copied or adapted the way code can, so the copy-and-send-back part of OLOS has no likeness here. You have to be there to work on a trail; much of OLOS can be worked on from anywhere. A trail changes slowly, and a relocation can take years; software changes weekly. And the trail is rooted in one place, while The Labs moves between libraries.
+- **Feels like:** I can find my way because someone marked it, I know who keeps my stretch, and one day that someone might be me.
 
 ### How the strongest candidates compare
 
-Our judgments, from the evidence above. "Partly" counts as a part.
+Our judgments, from the evidence above. "Partly" counts as a part. "Open-source work" asks how much of the open-source side of the quilt table a place shares.
 
-| Place | Needs | Paradoxes | What it lacks |
-|---|---|---|---|
-| The quilting bee | All five | All four | Nothing structural; risks are the unpicked stitch, the pace, reading as quaint |
-| Community theatre | All five | Two, and parts of two | Auditions and casting rank people; the show goes to an audience, not a person |
-| A jazz jam session | All five | Two, and parts of two | Nothing kept or given; the bandstand can shut people out (Lebert, ASU thesis) |
-| The Camino | Four, and part of Belonging | Two, and part of a third | Walked alone: no team, no project |
-| Summer camp | Four, and part of Mattering | Two, and parts of two | For children; residential |
-| parkrun | Three, and parts of two | One, and parts of two | No team; nothing made |
-| A community garden | Three, and parts of two | Two, and parts of two | Plots worked alone; nothing records who grew what |
+| Place | Needs | Paradoxes | Open-source work | What it lacks |
+|---|---|---|---|---|
+| The trail club | All five | All four | Most of it | It can't be copied, it changes slowly, and hikers rarely see the keepers |
+| The quilting bee | All five | All four | Little of it | It holds the people, not the code; risks are the unpicked stitch, the pace, reading as quaint |
+| A cathedral workshop | All five | All four | Most of it | Its crafts are professionals' life work, kept up over centuries (UNESCO 2020) |
+| Community theatre | All five | Two, and parts of two | Some of it | Auditions and casting rank people; the show goes to an audience, not a person |
+| A jazz jam session | All five | Two, and parts of two | Some of it | Nothing kept or given; the bandstand can shut people out (Lebert, ASU thesis) |
+| The Camino | Four, and part of Belonging | Two, and part of a third | Little of it | Walked alone: no team, no project |
+| Summer camp | Four, and part of Mattering | Two, and parts of two | Little of it | For children; residential |
+| parkrun | Three, and parts of two | One, and parts of two | Little of it | No team; nothing made |
+| A community garden | Three, and parts of two | Two, and parts of two | Some of it | Plots worked alone; nothing records who grew what |
 
 ## Four to try first
 
-If the pod takes one frame, take the quilting bee. If it wants one per paradox, these four, each a part of the bee:
+If the pod takes one whole frame, there are two to choose between: the quilting bee holds the people and the evening best, the trail club holds the open-source work best. A team could also take the trail club and borrow the bee's signatures and its gift. If the pod wants one per paradox, these four, each a part of both:
 
 | Paradox | Frame | Why this one |
 |---|---|---|
@@ -299,12 +349,14 @@ If the pod takes one frame, take the quilting bee. If it wants one per paradox, 
 | P3 | The Tailor's Shop | Asks least of organizers, because helping is the helper's next step |
 | P4 | parkrun | Keeps the Cycle a sprint while belonging gets something that doesn't end |
 
-They compose: one passport could carry the stamps and the credits, and the weekly open lab is where hosts stamp it.
+They compose: one passport could carry the stamps and the credits, and the weekly open lab is where hosts stamp it. That could be one proposal for the whole bee or the whole club, or four that share one record.
 
 ## Limits
 
 - This is desk research about other places. The analogies are evidence that a way of working meets a need somewhere else, not that it will work here.
 - The evidence is uneven. Doulas, patient navigation, ASAP, referrals and relay swimming rest on trials or large datasets; the CrossFit finding is one comparison of two gyms; the Camino, the ski resort and parkrun rest mostly on how they run.
+- The quilting bee rests on museum records and one interview study; the trail club on the Conservancy's and the clubs' own accounts.
+- Every frame is an analogy, so every frame breaks somewhere. Each says where its likeness ends; test there first.
 - The paradoxes are candidates. P1 is the pod's hunch rewritten; P2–P4 are ours.
 - The frames the builders wrote on Nov 7 aren't recorded, so we can't say how these compare.
 - One reader chose the places. Someone else would choose others.
@@ -318,6 +370,9 @@ They compose: one passport could carry the stamps and the credits, and the weekl
 - The Community Guide (CPSTF). [Patient navigation services to increase colorectal cancer screening](https://www.thecommunityguide.org/findings/cancer-screening-patient-navigation-services-to-increase-colorectal-cancer-screening.html).
 - Quilts: [Northwest Museum of Arts and Culture, Block Format Quilts](https://www.northwestmuseum.org/exhibitions/online-exhibitions/quiltscapes/block-format-quilts/); [Colonial Williamsburg, signature album quilt](https://emuseum.history.org/objects/111930/quilt-signature-album); [Baltimore album quilts](https://en.wikipedia.org/wiki/Baltimore_album_quilt) and [a signed example at the Met](https://www.metmuseum.org/art/collection/search/13877); [American Quilter on round robins](https://preview.americanquilter.com/making-the-rounds-with-a-round-robin-quilt); a quilter's memoir, [Mountain View Today](https://www.mountainviewtoday.ca/local-news/quilting-in-the-family-1816626).
 - Burt, E. L., & Atkinson, J. (2012). [The relationship between quilting and wellbeing](https://eprints.gla.ac.uk/52758). *Journal of Public Health*, 34(1).
+- Open source: Eghbal, N. (2016). [Roads and bridges: the unseen labor behind our digital infrastructure](https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/). Ford Foundation. Crowston, K., Wei, K., Li, Q., & Howison, J. (2006). [Core and periphery in free/libre and open source software team communications](https://crowston.syr.edu/sites/default/files/CoreAndPeripheryInFreeLibre.pdf). HICSS. Mockus, A., Fielding, R. T., & Herbsleb, J. D. (2002). [Two case studies of open source software development: Apache and Mozilla](https://doi.org/10.1145/567793.567795). *ACM TOSEM*, 11(3). Steinmacher, I., Conte, T., Gerosa, M. A., & Redmiles, D. (2015). [Social barriers faced by newcomers placing their first contribution in open source software projects](https://www.ime.usp.br/~gerosa/papers/CSCW_2015.pdf). CSCW.
+- Trail clubs: Appalachian Trail Conservancy, [2023 Volunteer Impact Report](https://appalachiantrail.org/wp-content/uploads/2023/10/A.T.-2023-Volunteer-Impact-Report.pdf); [Appalachian Trail Cooperative Management](https://appalachiantrail.org/wp-content/uploads/2020/04/cooperative-management.pdf); [policy on Trail Design, Construction and Maintenance](https://appalachiantrail.org/wp-content/uploads/2022/07/Trail-Design-Construction-and-Maintenance.pdf); [First-time crew volunteers](https://appalachiantrail.org/the-register/first-crew-volunteer-experience/); [Trail Crews](https://appalachiantrail.org/get-involved/volunteer/trail-crews/); [Hurricane Helene update](https://appalachiantrail.org/the-register/hurricane-helene-update/); [2022 VIP/VIF report](https://appalachiantrail.org/wp-content/uploads/2022/11/2022-AT-VIP-VIF-Report-Full.pdf). [Associations Now (2013)](https://associationsnow.com/2013/06/into-the-wild-on-the-appalachian-trail-conservancys-beat). Potomac Appalachian Trail Club, [About](https://patc.net/about) and [volunteer roles](https://www.patc.net/trail-maintenance-volunteer-opportunities); [PATC South District, Trail Maintainers](https://www.southshenandoah.net/trail-maintainers.html). National Park Service, [Blazes](https://webarchive.library.unt.edu/eot2008/20090509002048/http://www.nps.gov/appa/parkmgmt/index.htm) (archived 2009). Appalachian Trail Histories, [Manassas Gap Shelter Log](https://appalachiantrailhistory.org/items/show/50). Smoky Mountains Hiking Club, [ATMC newsletter, May 2023](https://www.smhclub.org/resources/Documents/atmc_newsletters/2023/ATMC-0523.pdf).
+- UNESCO (2020). [Decision 15.COM 8.C.3: craft techniques and customary practices of cathedral workshops, or Bauhütten, in Europe](https://ich.unesco.org/en/decisions/15.COM/8.C.3).
 - Lebert, R. [Jam sessions as rites of passage: an ethnography of jazz jams in Phoenix, AZ](https://keep.lib.asu.edu/system/files/c7/211845/Lebert_asu_0010N_19007.pdf). Master's thesis, Arizona State University.
 - Bush, M. L., Kaufman, M. R., & Shackleford, T. (2017). [Adherence in the cancer care setting: a systematic review of patient navigation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5711635).
 - Domingo, J. B., et al. (2017). [Characteristics of effective colorectal cancer screening navigation programs in FQHCs](https://pmc.ncbi.nlm.nih.gov/articles/PMC5487219).
