@@ -1,0 +1,192 @@
+{
+ "about": "Dorst's step 5, Themes, done on the field: the 50 sourced organizations around The Labs (research/players/ in PR #5) and the three voices inside it, read for the human need underneath, and each need named with the term psychologists use for it (research/themes-psychology.md). An organization reaches for a need when what it says it wants, what it has tried, or how it sees the problem answers that need for someone. Each mark has one line of evidence from the organization's file. Desk research: these are needs inferred from what organizations publish, not what a person told us.",
+ "asof": "Nov 9, 2026",
+ "src": "https://github.com/wash-TheUpskillingLabs/c04-wayfinding/blob/main/research/",
+ "themes": [
+  {"id": "R", "name": "Mattering", "colour": "yellow",
+   "is": "I want someone to see what I can do, and for it to count.",
+   "without": "overlooked, screened out, counted but not seen",
+   "roots": "Mattering: Rosenberg and McCullough, 1981; Prilleltensky, 2020"},
+  {"id": "W", "name": "Coherence", "colour": "blue",
+   "is": "I need this to make sense: where I am, what’s next, and that I can handle it.",
+   "without": "lost and guessing, and worn out by the guessing",
+   "roots": "Sense of coherence: Antonovsky, 1987"},
+  {"id": "B", "name": "Support", "colour": "navy",
+   "is": "I don’t want to face the hard part by myself.",
+   "without": "facing the hard part by yourself",
+   "roots": "Social support: Cohen and Wills, 1985; Holt-Lunstad and colleagues, 2010; social baseline theory: Coan and Sbarra, 2015"},
+  {"id": "L", "name": "Belonging", "colour": "silver",
+   "is": "I want a place, and people, that are still mine when this ends.",
+   "without": "dropped when the program ends",
+   "roots": "The need to belong: Baumeister and Leary, 1995"},
+  {"id": "N", "name": "Becoming", "colour": "green",
+   "is": "I want to believe I can become someone new, and that I’m allowed to.",
+   "without": "holding back, not sure you’re allowed",
+   "roots": "Possible selves: Markus and Nurius, 1986; Oyserman and colleagues, 2006; self-efficacy: Bandura, 1977"}
+ ],
+ "groups": [
+  {"name": "Inside The Labs", "inside": true, "players": [
+   {"name": "Alumni, C01–C03", "file": "record-alumni-survey-2026.md", "t": {
+     "W": "asked for a clearer roadmap from individual work into team pods",
+     "B": "“most valuable” was almost entirely the people",
+     "L": "7 of 11 still in touch with their team; one still building a venture from it"}},
+   {"name": "Organizers", "link": "https://github.com/wash-TheUpskillingLabs/c04-wayfinding/issues/4", "t": {
+     "W": "the biggest problem is cognitive load: knowing what’s next, and what’s expected",
+     "B": "organizer delays become participant emergencies",
+     "L": "everyone sees The Labs through the Cycle; no before or after"}},
+   {"name": "The Problem Owner", "link": "/blog/problem-situation/", "t": {
+     "R": "employers judge us against multi-million-dollar institutions",
+     "W": "how it all fits together isn’t written down anywhere",
+     "B": "there is no one whose job it is to help people navigate",
+     "L": "leaving the Cycle means leaving The Labs",
+     "N": "people aren’t sure they’re allowed to go off on their own"}}
+  ]},
+  {"name": "Libraries", "players": [
+   {"name": "DC Public Library", "file": "players/player-dc-public-library.md", "t": {
+     "R": "will track engagement and completion to refine its cohort",
+     "W": "classes tiered basic, intermediate, advanced; orientation before the Labs",
+     "B": "its 2025 AI cohort formed six pods",
+     "N": "from “passive centers of learning” to “active destinations for creativity”"}},
+   {"name": "Arlington Public Library", "file": "players/player-arlington-public-library.md", "t": {
+     "W": "serves “beginning and advanced makers”: a route from one to the other",
+     "N": "a card and an agreement, and you’re a maker"}},
+   {"name": "Montgomery County Libraries", "file": "players/player-montgomery-county-public-libraries.md", "t": {
+     "R": "résumé clinics, LinkedIn reviews and headshots; counted by attendance",
+     "N": "a 2025 focus on federal employees remaking their careers after the cuts"}},
+   {"name": "Fairfax County Library", "file": "players/player-fairfax-county-public-library.md", "t": {
+     "B": "Tech Tutors: one-to-one help"}},
+   {"name": "Prince George’s County Library", "file": "players/player-prince-georges-memorial-library.md", "t": {
+     "R": "librarians certified in the workforce board’s own credential",
+     "B": "librarians trained to help residents find work"}},
+   {"name": "Public Library Association", "file": "players/player-public-library-association.md", "t": {
+     "B": "AI knowledge for all library staff first, so they can help the public"}},
+   {"name": "Urban Libraries Council", "file": "players/player-urban-libraries-council.md", "t": {
+     "R": "libraries as under-recognized workforce institutions; wants them named in law",
+     "L": "concedes most libraries lack dedicated funding for workforce programs"}},
+   {"name": "IMLS", "file": "players/player-imls.md", "t": {
+     "L": "2025: grants stopped and restarted; continuity, not outcomes, was the issue"}}
+  ]},
+  {"name": "Public Workforce Agencies", "players": [
+   {"name": "DC Employment Services", "file": "players/player-dc-does.md", "t": {
+     "R": "measures placements, certifications and employer engagement",
+     "B": "a case-management pipeline of services"}},
+   {"name": "DC Workforce Investment Council", "file": "players/player-dc-workforce-investment-council.md", "t": {
+     "R": "aligns training with employer demand, counted in completions"}},
+   {"name": "Employ Prince George’s", "file": "players/player-employ-prince-georges.md", "t": {
+     "B": "counseling for about 500 federal workers, with about 50 paid slots",
+     "L": "replacing lost revenue; a job center may close",
+     "N": "converts résumés from federal format"}},
+   {"name": "Virginia Career Works Northern", "file": "players/player-virginia-career-works-northern.md", "t": {
+     "W": "reemployment through career navigation",
+     "B": "delivered by case managers"}},
+   {"name": "WorkSource Montgomery", "file": "players/player-worksource-montgomery.md", "t": {
+     "B": "a hub with counselors for federal workers",
+     "N": "encourages specialized federal workers “to consider entrepreneurship”"}},
+   {"name": "US Department of Labor", "file": "players/player-us-department-of-labor.md", "t": {
+     "R": "AI literacy through registered apprenticeships and skills standards",
+     "W": "pilots pathways into entry-level roles"}}
+  ]},
+  {"name": "Coordinators and Standard-Setters", "players": [
+   {"name": "Council of Governments, Talent Capital", "file": "players/player-mwcog.md", "t": {
+     "W": "one platform of listings and AI agents for career navigation"}},
+   {"name": "Greater Washington Board of Trade", "file": "players/player-greater-washington-board-of-trade.md", "t": {
+     "R": "credentials recognized across three jurisdictions",
+     "W": "a resource guide for a system split across three jurisdictions",
+     "L": "measure long-term outcomes, not “short-term placements”"}},
+   {"name": "Federal City Council", "file": "players/player-federal-city-council.md", "t": {}},
+   {"name": "Greater Washington Partnership", "file": "players/player-greater-washington-partnership.md", "t": {
+     "R": "an employer-recognized credential; the region as a global hub"}},
+   {"name": "NSF AI-Ready America", "file": "players/player-nsf-techaccess-ai-ready-america.md", "t": {
+     "W": "state hubs must keep a public inventory of resources"}},
+   {"name": "America Achieves", "file": "players/player-america-achieves.md", "t": {
+     "R": "success is placement and wage data, validated by employers",
+     "W": "a vision that everyone has a clear path to a good job"}},
+   {"name": "Jobs for the Future", "file": "players/player-jobs-for-the-future.md", "t": {
+     "W": "state career-navigation platforms; AI material written too hard to read"}},
+   {"name": "National Skills Coalition", "file": "players/player-national-skills-coalition.md", "t": {
+     "R": "worker voice; AI should strengthen working people, not sideline them"}},
+   {"name": "Burning Glass Institute", "file": "players/player-burning-glass-institute.md", "t": {
+     "R": "workers are visible in its data only through postings and job changes",
+     "W": "the career ladder, losing its lower rungs"}},
+   {"name": "Opportunity@Work", "file": "players/player-opportunity-at-work.md", "t": {
+     "R": "a labor market where “all talent can shine”; the degree screen is the barrier",
+     "N": "only 15% of STARs call themselves a STAR"}},
+   {"name": "Anthropic Economic Futures", "file": "players/player-anthropic-economic-futures.md", "t": {
+     "W": "evidence on what AI is doing to work, at the scale of the economy"}}
+  ]},
+  {"name": "Peer Programs and Colleges", "players": [
+   {"name": "Per Scholas", "file": "players/player-per-scholas.md", "t": {
+     "R": "publishes wage outcomes",
+     "L": "an alumni Career Accelerator after the course"}},
+   {"name": "Per Scholas, National Capital Region", "file": "players/player-per-scholas-ncr.md", "t": {
+     "R": "employers are the customer",
+     "B": "coaching for two years after",
+     "L": "two-year alumni support"}},
+   {"name": "Year Up United", "file": "players/player-year-up-united.md", "t": {
+     "R": "skills-first hiring; its own assessment limits who it can serve",
+     "L": "placement and alumni engagement"}},
+   {"name": "Year Up, National Capital Region", "file": "players/player-year-up-ncr.md", "t": {
+     "W": "lists its training as job postings, where job seekers already look"}},
+   {"name": "Merit America", "file": "players/player-merit-america.md", "t": {
+     "R": "headline metric is cumulative wage gain",
+     "B": "the working adult needs a coach"}},
+   {"name": "Climb Hire", "file": "players/player-climb-hire.md", "t": {
+     "B": "the missing ingredient is relationships; pods are the unit",
+     "L": "the network is the route after the program"}},
+   {"name": "Urban Alliance", "file": "players/player-urban-alliance.md", "t": {
+     "R": "measured by a randomized trial; to level the playing field",
+     "B": "coaching through the last year of school"}},
+   {"name": "UDC Workforce Development", "file": "players/player-udc-wdll.md", "t": {
+     "R": "documents and an assessment at the door",
+     "W": "a “No Wrong Door” policy; sector pathways"}},
+   {"name": "NOVA Workforce (NOVAnext)", "file": "players/player-nova-workforce.md", "t": {
+     "R": "a quick certification, paid by scholarship",
+     "N": "help federal workers “transition to new careers”"}},
+   {"name": "Byte Back (closed 2024)", "file": "players/player-byte-back.md", "t": {
+     "L": "results, but no sustained funding; closed after 27 years",
+     "N": "participants lacked confidence, not computers"}},
+   {"name": "OpenAI Academy", "file": "players/player-openai-academy.md", "t": {
+     "R": "10 million Americans certified by 2030"}}
+  ]},
+  {"name": "Volunteer and Civic Networks", "players": [
+   {"name": "Civic Tech DC", "file": "players/player-civic-tech-dc.md", "t": {
+     "B": "a recurring room, and a name that says what they do",
+     "L": "kept meeting after its national hub withdrew in 2023"}},
+   {"name": "Alliance of Civic Technologists", "file": "players/player-alliance-of-civic-technologists.md", "t": {
+     "B": "a federation of peers",
+     "L": "“brigades need to be able to be stable”"}},
+   {"name": "Code for America", "file": "players/player-code-for-america.md", "t": {
+     "L": "ended its volunteer network in 2023"}},
+   {"name": "Digital Inclusion Alliance", "file": "players/player-ndia.md", "t": {
+     "B": "the digital navigator: a trusted person at the first threshold",
+     "L": "its navigator funding was terminated in 2025"}}
+  ]},
+  {"name": "Funders", "players": [
+   {"name": "Greater Washington Community Foundation", "file": "players/player-greater-washington-community-foundation.md", "t": {
+     "W": "seeded Talent Capital and a regional data dashboard",
+     "L": "nonprofit capacity and resilience"}},
+   {"name": "Meyer Foundation", "file": "players/player-meyer-foundation.md", "t": {
+     "B": "community-centric power building",
+     "L": "organizer sustainability"}},
+   {"name": "Cafritz Foundation", "file": "players/player-cafritz-foundation.md", "t": {}},
+   {"name": "Clark Foundation (spent down)", "file": "players/player-clark-foundation.md", "t": {
+     "L": "spent down to zero in 2025 and left the field",
+     "N": "to help people reach their “full potential”"}},
+   {"name": "Ballmer Group", "file": "players/player-ballmer-group.md", "t": {
+     "R": "economic mobility, measured",
+     "L": "large, flexible, multi-year grants"}},
+   {"name": "Gates Foundation", "file": "players/player-gates-foundation.md", "t": {
+     "R": "credentials of value for millions more learners",
+     "B": "AI to free advisors (some with 400+ students) for personal support"}},
+   {"name": "Google.org", "file": "players/player-google-org.md", "t": {
+     "R": "success counted in people trained"}},
+   {"name": "Lumina Foundation", "file": "players/player-lumina-foundation.md", "t": {
+     "R": "the credential is the unit: 75% by 2040"}},
+   {"name": "Microsoft Elevate", "file": "players/player-microsoft-elevate.md", "t": {
+     "R": "20 million credentials in two years"}},
+   {"name": "Walmart.org", "file": "players/player-walmart-org.md", "t": {
+     "R": "skills-first systems, signaled by worker data",
+     "L": "portable records: “data mobility between systems”"}}
+  ]}
+ ]
+}

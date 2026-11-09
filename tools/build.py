@@ -361,6 +361,21 @@ def build_feed(ps):
 </feed>
 '''
 
+def themes_into(ps):
+    """The field's themes (Dorst's step 5) for any post that asks for {{themes}}: the map, its poster, every station as a table."""
+    import themes
+    data = themes.load(os.path.join(C, "themes", "themes.json"))
+    pic, w, h = themes.svg(data)
+    write("themes/field-themes.svg", pic)
+    n = sum(len(g["players"]) for g in data["groups"] if not g.get("inside"))
+    block = f'''<div class="tmap-wrap">{pic}</div>
+<a class="btn" href="/themes/field-themes.svg"><span class="t">Open the Poster</span><span class="tile blue">{ic("a-r")}</span></a>
+<details class="pm-details"><summary><span><span class="t">All {n} Organizations, as a Table</span></span>{ic("chev", "chev")}</summary>{themes.table(data)}</details>'''
+    for p in ps:
+        for sec in p["secs"]:
+            sec["body"] = sec["body"].replace("{{themes}}", block)
+
+
 def write(rel, text):
     path = os.path.join(ROOT, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -369,6 +384,7 @@ def write(rel, text):
 
 if __name__ == "__main__":
     ps = posts()
+    themes_into(ps)
     write("index.html", build_home(ps))
     write("about/index.html", build_about(ps))
     write("blog/index.html", build_blog(ps))
