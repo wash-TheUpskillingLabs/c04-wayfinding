@@ -376,6 +376,22 @@ def themes_into(ps):
             sec["body"] = sec["body"].replace("{{themes}}", block)
 
 
+def frames_into(ps):
+    """Frames built from the needs (Dorst's step 6) for any post that asks for {{frames}}: the map, its poster, every station as a table."""
+    import themes, frames
+    td = themes.load(os.path.join(C, "themes", "themes.json"))
+    fd = themes.load(os.path.join(C, "frames", "frames.json"))
+    pic, w, h = frames.svg(fd, td)
+    write("frames/frames.svg", pic)
+    n = sum(len(g["frames"]) for g in fd["groups"])
+    block = f'''<div class="fmap-wrap">{pic}</div>
+<a class="btn" href="/frames/frames.svg"><span class="t">Open the Poster</span><span class="tile blue">{ic("a-r")}</span></a>
+<details class="pm-details"><summary><span><span class="t">All {n} Frames, as a Table</span></span>{ic("chev", "chev")}</summary>{frames.table(fd, td)}</details>'''
+    for p in ps:
+        for sec in p["secs"]:
+            sec["body"] = sec["body"].replace("{{frames}}", block)
+
+
 def write(rel, text):
     path = os.path.join(ROOT, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -385,6 +401,7 @@ def write(rel, text):
 if __name__ == "__main__":
     ps = posts()
     themes_into(ps)
+    frames_into(ps)
     write("index.html", build_home(ps))
     write("about/index.html", build_about(ps))
     write("blog/index.html", build_blog(ps))

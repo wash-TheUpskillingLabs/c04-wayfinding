@@ -453,6 +453,9 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 .tmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .tmap-wrap .tmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.85294), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .tmap-wrap .tmap a:focus-visible text { text-decoration:underline; }
+.fmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
+.fmap-wrap .fmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.66176), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
+.fmap-wrap .fmap a:focus-visible text { text-decoration:underline; }
 .sitmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.77869), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
@@ -478,6 +481,6 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 .pm-table th { font-weight:700; }
 @media print {
   .herebar, .sitenav, footer, .pm-details, .ctas { display:none !important; }
-  .sitmap-wrap, .flow-wrap, .tmap-wrap { border:0; overflow:visible; }
+  .sitmap-wrap, .flow-wrap, .tmap-wrap, .fmap-wrap { border:0; overflow:visible; }
   .sitmap-wrap .sitmap, .flow-wrap .fnet { min-width:0; }
 }
