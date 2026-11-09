@@ -5,31 +5,38 @@
   <link href="/blog/" />
   <link rel="self" href="/blog/feed.xml" />
   <id>tag:c04-wayfinding,2026:blog</id>
-  <updated>2026-11-07T12:00:00-05:00</updated>
+  <updated>2026-11-08T12:00:00-05:00</updated>
   <author><name>The Wayfinding pod</name></author>
   <entry>
-    <title>How the region fits together, and where your piece plugs in</title>
+    <title>One Person’s Way Through The Labs, Left to Right</title>
+    <link href="/blog/journey/" />
+    <id>tag:c04-wayfinding,2026-11-08:journey</id>
+    <updated>2026-11-08T12:00:00-05:00</updated>
+    <summary>The region chart shows the parts. This map follows one participant from first hearing of us to after a Cycle, with what people told us at every step.</summary>
+  </entry>
+  <entry>
+    <title>How the Region Fits Together, and Where Your Piece Plugs In</title>
     <link href="/blog/region-chart/" />
     <id>tag:c04-wayfinding,2026-11-07:region-chart</id>
     <updated>2026-11-07T12:00:00-05:00</updated>
     <summary>One map of how The Upskilling Labs of Greater Washington runs today, what’s planned, and four places where value leaks. For the core contributors who will fix them.</summary>
   </entry>
   <entry>
-    <title>Every way we’ve heard of getting lost, on one map</title>
+    <title>Every Way We’ve Heard of Getting Lost, on One Map</title>
     <link href="/blog/problem-situation/" />
     <id>tag:c04-wayfinding,2026-11-07:problem-situation</id>
     <updated>2026-11-07T12:00:00-05:00</updated>
     <summary>We wrote down everything people have told us about trying to find their way around The Labs. Then we drew it. Here’s what we saw, and what we still can’t see.</summary>
   </entry>
   <entry>
-    <title>Our first prototype is a Metro map</title>
+    <title>Our First Prototype Is a Metro Map</title>
     <link href="/blog/metro-map/" />
     <id>tag:c04-wayfinding,2026-11-06:metro-map</id>
     <updated>2026-11-06T12:00:00-05:00</updated>
     <summary>An events list tells you what’s on. A map tells you whether you can get there. So the region put every library on the Metro.</summary>
   </entry>
   <entry>
-    <title>What 54 case studies are teaching us about wayfinding</title>
+    <title>What 54 Case Studies Are Teaching Us About Wayfinding</title>
     <link href="/blog/54-case-studies/" />
     <id>tag:c04-wayfinding,2026-11-06:54-case-studies</id>
     <updated>2026-11-06T12:00:00-05:00</updated>

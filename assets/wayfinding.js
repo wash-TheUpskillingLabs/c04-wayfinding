@@ -15,7 +15,7 @@
   figures();
 
   /* The region chart: show one kind of line at a time. */
-  document.querySelectorAll('.flow-show').forEach(function (bar) {
+  document.querySelectorAll('.flow-show:not(.journey-here)').forEach(function (bar) {
     var wrap = bar.nextElementSibling, chips = bar.querySelectorAll('.chip');
     bar.hidden = false;
     var pick = function (k) {
@@ -23,6 +23,21 @@
       chips.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.show === k ? 'true' : 'false'); });
     };
     chips.forEach(function (c) { c.addEventListener('click', function () { pick(c.dataset.show); }); });
+    pick('all');
+  });
+
+  /* Journey map: Where are you? A red ring on your step; your step and the next stay strong. */
+  document.querySelectorAll('.journey-here').forEach(function (bar) {
+    var wrap = bar.nextElementSibling, say = wrap.nextElementSibling, chips = bar.querySelectorAll('.chip');
+    bar.hidden = false;
+    var pick = function (k) {
+      wrap.dataset.here = k;
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.here === k ? 'true' : 'false'); });
+      var c = bar.querySelector('.chip[data-here="' + k + '"]');
+      say.hidden = k === 'all';
+      say.textContent = k === 'all' ? '' : c.dataset.say + ' ' + c.dataset.next;
+    };
+    chips.forEach(function (c) { c.addEventListener('click', function () { pick(c.dataset.here); }); });
     pick('all');
   });
 

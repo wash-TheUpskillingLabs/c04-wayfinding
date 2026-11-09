@@ -1,0 +1,430 @@
+{
+ "title": "The Participant Journey",
+ "subtitle": "Left to right, from first hearing of The Labs to after a Cycle. Proposals share a track; at each vote some end and the chosen ones branch off. The last row is what people told us.",
+ "bands": [
+  [
+   "Learn",
+   "hear",
+   "prep"
+  ],
+  [
+   "Build",
+   "join",
+   "team"
+  ],
+  [
+   "Share",
+   "show",
+   "after"
+  ]
+ ],
+ "columns": [
+  {
+   "id": "hear",
+   "title": "Hear of It",
+   "do": [
+    "Hear about The Labs from a friend, LinkedIn, Luma or the map"
+   ],
+   "where": [
+    "LinkedIn, Luma, the region’s site, word of mouth"
+   ],
+   "with": [
+    "Nobody yet"
+   ],
+   "told": []
+  },
+  {
+   "id": "sessions",
+   "title": "Upskilling Sessions",
+   "w": 900,
+   "do": [
+    "Come to trainings, workshops, open labs and meetups, in any order, as often as you like"
+   ],
+   "plan": [
+    "A suggested way round, and a record of your sessions so the path makes sense looking back"
+   ],
+   "where": [
+    "Library branches, online, the region’s calendar"
+   ],
+   "with": [
+    "Trainers, facilitators, and the regulars"
+   ],
+   "told": [
+    [
+     "A",
+     "links came from individual trainers, not one place; it felt ad hoc"
+    ],
+    [
+     "A",
+     "content from past Cycles should be in one central place"
+    ],
+    [
+     "A",
+     "map out pathways so people can watch from the sidelines"
+    ]
+   ],
+   "gap": "Only People Who Stayed Have Answered",
+   "loop": {
+    "h": 78,
+    "inside": [
+     "Join anywhere. Go round",
+     "as often as you like."
+    ],
+    "stations": [
+     {
+      "name": "Trainings",
+      "kind": "100% Learn, Taught by Alumni",
+      "at": [
+       0.22,
+       "top"
+      ]
+     },
+     {
+      "name": "Workshops",
+      "kind": "20% Learn, 80% Build",
+      "at": [
+       0.72,
+       "top"
+      ]
+     },
+     {
+      "name": "Open Labs",
+      "kind": "Build together",
+      "at": [
+       0.72,
+       "bot"
+      ]
+     },
+     {
+      "name": "Meetups and Happy Hours",
+      "kind": "Mostly Share",
+      "at": [
+       0.25,
+       "bot"
+      ]
+     }
+    ],
+    "record": "Your Record (Planned): a stamp for every session"
+   }
+  },
+  {
+   "id": "prep",
+   "title": "Get Ready for a Cycle",
+   "planned": true,
+   "do": [
+    "Short prep, run by The Labs, so you start the Cycle running"
+   ],
+   "where": [
+    "Not built yet"
+   ],
+   "with": [
+    "Others about to start"
+   ],
+   "told": [
+    [
+     "A",
+     "improve ‘what to expect’"
+    ],
+    [
+     "O",
+     "everyone sees The Labs through the Cycle; there is no before or after"
+    ]
+   ]
+  },
+  {
+   "id": "join",
+   "title": "Join a Cycle",
+   "cycle": true,
+   "do": [
+    "Sign up, agree your work is public, come to sensemaking and propose problems"
+   ],
+   "where": [
+    "The app, Slack, GitHub, an in-person intensive"
+   ],
+   "with": [
+    "Everyone in the Cycle"
+   ],
+   "told": [
+    [
+     "A",
+     "onboarding was tricky"
+    ],
+    [
+     "O",
+     "participants struggle to know what’s next and what’s expected right now"
+    ],
+    [
+     "O",
+     "important information didn’t flow through Slack"
+    ]
+   ]
+  },
+  {
+   "id": "pod",
+   "title": "A Pod: The Problem",
+   "sub": "Vote 1: Pods Form",
+   "cycle": true,
+   "do": [
+    "Vote on problem proposals and join a pod. In it, propose paradoxes, then frames for each; sensemaking merges them into a few"
+   ],
+   "where": [
+    "The pod’s repo, interviews, Slack"
+   ],
+   "with": [
+    "Your pod"
+   ],
+   "told": [
+    [
+     "A",
+     "a clearer roadmap from individual work into team pods"
+    ],
+    [
+     "A",
+     "more guidance on what to work on in a given week"
+    ]
+   ],
+   "w": 880
+  },
+  {
+   "id": "team",
+   "title": "A Project: The Build",
+   "sub": "Vote 2: Projects Form",
+   "cycle": true,
+   "do": [
+    "Vote on the frames offered as projects, register for one, build it"
+   ],
+   "where": [
+    "GitHub, Claude Code, open lab nights"
+   ],
+   "with": [
+    "Your team, then your pod, then a mentor once both are stuck"
+   ],
+   "told": [
+    [
+     "A",
+     "joining a project was not obvious"
+    ],
+    [
+     "A",
+     "roles and expectations were unclear"
+    ],
+    [
+     "A",
+     "people constantly moving in and out of the project"
+    ],
+    [
+     "A",
+     "course-correcting took a long time, even with Labs experts"
+    ]
+   ]
+  },
+  {
+   "id": "show",
+   "title": "The Showcase",
+   "cycle": true,
+   "do": [
+    "Show what you built and what you learned"
+   ],
+   "where": [
+    "The showcase, your public repo"
+   ],
+   "with": [
+    "The Cycle, and guests"
+   ],
+   "told": [],
+   "gap": "Nothing Heard Yet"
+  },
+  {
+   "id": "after",
+   "title": "After",
+   "do": [
+    "Carry the skill and the record into your work. Some stay to teach, mentor or maintain"
+   ],
+   "plan": [
+    "Projects that outlast a Cycle, and employers who read the record"
+   ],
+   "where": [
+    "Wherever you work next; the region, if you stay"
+   ],
+   "with": [
+    "Your team, if you keep in touch"
+   ],
+   "told": [
+    [
+     "A",
+     "7 of 11 still in touch with their team"
+    ],
+    [
+     "A",
+     "several in new jobs, contracts or job searches"
+    ],
+    [
+     "A",
+     "one is building a venture started in the Cycle"
+    ]
+   ]
+  }
+ ],
+ "leaks": [
+  {
+   "at": [
+    "sessions",
+    280
+   ],
+   "dy": 78,
+   "label": "Came Once"
+  },
+  [
+   "pod",
+   "team",
+   "Not Picked at the Vote"
+  ],
+  [
+   "team",
+   "show",
+   "Steps Out (Allowed)"
+  ],
+  [
+   "show",
+   "after",
+   "The Program Ends; Nothing After"
+  ]
+ ],
+ "arcs": [
+  {
+   "from": "hear",
+   "to": "join",
+   "label": "Today, Most People Start Here",
+   "kind": "people",
+   "lane": 0
+  },
+  {
+   "from": "after",
+   "to": "team",
+   "label": "Take a Stuck Team’s Question",
+   "kind": "people",
+   "lane": 1,
+   "onto": "top",
+   "dx": 232
+  },
+  {
+   "from": "after",
+   "to": "sessions",
+   "label": "Alumni Teach Trainings: Their Share",
+   "kind": "people",
+   "lane": 2,
+   "dx": 150.0,
+   "onto": "top"
+  }
+ ],
+ "voices": [
+  [
+   "A",
+   "Alumni Survey, C01–C03"
+  ],
+  [
+   "O",
+   "Organizers"
+  ]
+ ],
+ "shape": {
+  "in": {
+   "to": "hear",
+   "ways": [
+    "A Friend",
+    "LinkedIn",
+    "Luma",
+    "The Map"
+   ]
+  },
+  "out": {
+   "from": "after",
+   "n": 5,
+   "label": "Many Ways Out",
+   "ends": [
+    "New Job",
+    "Contract Work",
+    "Job Search",
+    "Own Venture",
+    "Teach or Mentor"
+   ]
+  },
+  "problem": {
+   "label": "Problem Proposals",
+   "note": "As many as people bring"
+  },
+  "pods": {
+   "gap": 122,
+   "stages": [
+    {
+     "to": 340,
+     "label": "Paradox Proposals",
+     "close": "Paradoxes Merge"
+    },
+    {
+     "to": 620,
+     "label": "Frame Proposals",
+     "close": "Frames Merge"
+    },
+    {
+     "to": [
+      "team",
+      0
+     ],
+     "label": "Frames Offered as Projects"
+    }
+   ],
+   "letters": [
+    "A",
+    "B",
+    "C"
+   ]
+  },
+  "projects": {
+   "label": "Projects Build"
+  },
+  "note": "How many pods, paradoxes, frames and projects form is decided in the Cycle, not in advance. The dots mean there may be more, or fewer."
+ },
+ "landmarks": [
+  {
+   "at": [
+    "join",
+    0
+   ],
+   "name": "Kickoff",
+   "when": "Oct 24 in C04"
+  },
+  {
+   "at": [
+    "pod",
+    0
+   ],
+   "name": "Sensemaking Day",
+   "when": "Oct 24 in C04"
+  },
+  {
+   "at": [
+    "pod",
+    320
+   ],
+   "name": "Paradox and Frames",
+   "when": "Nov 7 in C04"
+  },
+  {
+   "at": [
+    "team",
+    0
+   ],
+   "name": "Project Vote",
+   "when": "Nov 14 in C04"
+  },
+  {
+   "at": [
+    "show",
+    0
+   ],
+   "name": "Showcase",
+   "when": "Dec 8 in C04"
+  }
+ ]
+}

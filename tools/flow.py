@@ -30,6 +30,24 @@ NAMES = [("people", "People"), ("work", "Work and Code"), ("knowledge", "Knowled
 PAR = 30  # gap between parallel arrows
 
 
+SMALL = {"a", "an", "the", "and", "but", "or", "nor", "for", "at", "by", "in", "of",
+         "on", "to", "up", "as", "per", "via", "vs", "from", "with", "into", "onto"}
+
+
+def title(s):
+    """Title case for map labels and box titles (microtext), keeping words like OLOS or LinkedIn as written."""
+    words, out, start = s.split(" "), [], True
+    for i, w in enumerate(words):
+        last = i == len(words) - 1
+        core = w.lstrip("(“‘\"")
+        lead = w[:len(w) - len(core)]
+        if core and core[0].islower() and (start or last or core.lower().rstrip(",;:.)”’") not in SMALL):
+            core = core[0].upper() + core[1:]
+        out.append(lead + core)
+        start = w.endswith((":", ";"))
+    return " ".join(out)
+
+
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
@@ -119,12 +137,12 @@ def svg(data):
         anc = f.get("anchor", "middle")
         rx = {"middle": lx - tw / 2, "start": lx, "end": lx - tw}[anc]
         tx = {"middle": lx, "start": lx + 8, "end": lx - 8}[anc]
-        lc = INK if f["type"] in ("work", "knowledge") else color
+        lc = INK   # small text is ink, never blue or red (the sign system)
         weight = 600 if sw > 4 else 400
         labels.append(
             f'<g class="{cls}"><rect x="{rx:.1f}" y="{ly - 15:.1f}" width="{tw:.1f}" height="30" fill="{PAPER}"/>'
             f'<text x="{tx:.1f}" y="{ly + 5.5:.1f}" text-anchor="{anc}" font-size="{LABEL_FS}" '
-            f'font-weight="{weight}" fill="{lc}">{esc(text)}</text></g>')
+            f'font-weight="{weight}" fill="{lc}">{esc(title(text))}</text></g>')
         if f.get("owner"):  # who holds a planned line
             ot = f["owner"]
             ow = len(ot) * 13.745 * 0.56 + 16
@@ -168,7 +186,7 @@ def svg(data):
                f'stroke-width="{sw}"{dash}/>']
         ty = y + PAD + 21
         out.append(f'<text x="{x + PAD:.1f}" y="{ty:.1f}" font-size="{TITLE_FS}" font-weight="700" fill="{tc}">'
-                   f'{esc(n["title"])}</text>')
+                   f'{esc(title(n["title"]))}</text>')
         ty += 8
         for line in n.get("body", []):
             ty += BODY_LH
@@ -187,17 +205,17 @@ def svg(data):
     left, right, inner, bot = c[0] - 30, r_[0] + r_[2] + 30, max(c[0] + c[2], g[0] + g[2]) + 30, g[1] + g[3] + 30
     blocks.insert(0, f'<path d="M{left:.1f},{top:.1f} H{right:.1f} V{mid:.1f} H{inner:.1f} V{bot:.1f} H{left:.1f} Z" '
                      f'fill="none" stroke="{INK}" stroke-width="2"/><text x="{c[0] + c[2] / 2 + 96:.1f}" y="{top + 38:.1f}" '
-                     f'font-size="15.118" font-weight="700" fill="{INK}">The region, and what it runs</text>')
+                     f'font-size="15.118" font-weight="700" fill="{INK}">The Region, and What It Runs</text>')
     # national holds the regional association for now: one outline around both
     n_ = boxes["national"]
     otop, oleft, oright = n_[1] - 44, left - 26, right + 26
     blocks.insert(0, f'<path d="M{oleft:.1f},{otop:.1f} H{oright:.1f} V{mid + 14:.1f} H{inner + 14:.1f} V{bot + 14:.1f} '
                      f'H{oleft:.1f} Z" fill="none" stroke="{INK}" stroke-width="4"/><text x="{oleft + 16:.1f}" '
                      f'y="{otop + 30:.1f}" font-size="15.118" font-weight="700" fill="{INK}">The Upskilling Labs: '
-                     f'national, and the region within it</text>')
+                     f'National, and the Region Within It</text>')
 
     # heading and key
-    head = [f'<text x="56" y="92" font-size="43.987" font-weight="700" fill="{INK}">{esc(data["title"])}</text>',
+    head = [f'<text x="56" y="92" font-size="43.987" font-weight="700" fill="{INK}">{esc(title(data["title"]))}</text>',
             f'<text x="56" y="140" font-size="19.244" fill="{INK}">{esc(data["subtitle"])}</text>']
     kx, ky = 56, H - 120
     key = [f'<text x="{kx}" y="{ky - 28}" font-size="15.118" font-weight="700" fill="{INK}">How to Read It</text>']

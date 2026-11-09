@@ -7,6 +7,12 @@
    ink #0b3536, paper #e5e7de, signal blue #0098d8, signal red #f54123.
    Contrast, measured: ink/paper 10.7. ink/blue 4.1. ink/red 3.6. paper/blue 2.6. paper/red 3.0.
    Text is ink on paper or paper on ink, always. Blue and red never carry small text.
+   Maps only may add line colours, to tell one line from another as the Metro does, from the same
+   picker: green #007500 and yellow #e6c700 (scheme 11), silver #a5a6a9 (scheme 3). Each pod is a
+   colour family: its paradoxes branch in its colour and one shade of it, light green #3dbd5d (8),
+   navy #08327d (10), ochre #c7943e (7), and carry names (A1, A2). Lines side by side stay distinct
+   under protanopia, deuteranopia and tritanopia (research/journey-map-colour.md). Lines are flat colour,
+   no outline, as on the Metro; pale lines carry a letter or label too. Never text, never instead of red.
    Blue is direction: where you can go. Red is position: where you are, where people stopped.
    Decoration is arrows, line bullets and wayfinding pictograms, and only those.
 
@@ -452,11 +458,16 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 }
 .sitmap-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .sitmap-wrap .sitmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.77869), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
+.journey-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
+.journey-wrap .jmap { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.49845), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-wrap { container-type:inline-size; border:1px solid var(--ink); background:var(--paper); }
 .flow-wrap .fnet { display:block; width:100%; height:calc(round(down, calc(100cqi * 0.71111), 4px) - 2px); font-family:Inter, system-ui, sans-serif; }
 .flow-show { display:flex; flex-wrap:wrap; gap:8px; align-items:center; position:relative; top:-1.38px; }
 .flow-show > .t { position:relative; top:.7px; margin-right:4px; }
 .flow-show[hidden] { display:none; }
+.journey-wrap .lt { transition:opacity .2s; }
+.here-say[hidden] { display:none; }
+.here-say { font-weight:600; }
 .flow-show .chip { font:inherit; font-size:15px; font-weight:600; padding:8px 14px; border:2px solid var(--ink); background:var(--paper); color:var(--ink); cursor:pointer; }
 .flow-show .chip[aria-pressed="true"] { background:var(--ink); color:var(--paper); }
 .flow-wrap:not([data-show="all"]) .fl { opacity:.12; }
@@ -475,6 +486,6 @@ code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.88
 .pm-table th { font-weight:700; }
 @media print {
   .herebar, .sitenav, footer, .pm-details, .ctas { display:none !important; }
-  .sitmap-wrap, .flow-wrap { border:0; overflow:visible; }
+  .sitmap-wrap, .flow-wrap, .journey-wrap { border:0; overflow:visible; }
   .sitmap-wrap .sitmap, .flow-wrap .fnet { min-width:0; }
 }
