@@ -28,8 +28,8 @@
           }
         },
         {
-          "id": "club",
-          "name": "The Trail Club",
+          "id": "at",
+          "name": "The Appalachian Trail",
           "holds": [
             "R",
             "W",
@@ -37,14 +37,14 @@
             "L",
             "N"
           ],
-          "done": "Appalachian Trail clubs, this region’s among them",
-          "gives": "Nothing has to choose: one blaze holds, every stretch has a keeper",
+          "done": "The A.T.: its hikers, trail angels, trail towns and clubs",
+          "gives": "Nothing has to choose: one blaze holds, and everyone hikes their own hike",
           "t": {
-            "R": "every stretch has a named overseer, and the work is logged",
-            "W": "one blaze everywhere, and every hiker walks their own hike",
-            "B": "district managers and crew leaders bring newcomers in",
-            "L": "crews disband; the club and the trail go on",
-            "N": "from hiker to overseer to crew leader"
+            "R": "a trail name, a 2,000-miler record, and a named overseer for every stretch",
+            "W": "one blaze the whole way, and hike your own hike",
+            "B": "trail angels, trail towns and ridgerunners, many of them former hikers",
+            "L": "a trail family, and Trail Days and the Gathering after the hike ends",
+            "N": "from day hiker to 2,000-miler to trail angel or overseer"
           }
         }
       ],
