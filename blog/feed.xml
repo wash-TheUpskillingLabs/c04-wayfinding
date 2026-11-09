@@ -5,8 +5,15 @@
   <link href="/blog/" />
   <link rel="self" href="/blog/feed.xml" />
   <id>tag:c04-wayfinding,2026:blog</id>
-  <updated>2026-11-07T12:00:00-05:00</updated>
+  <updated>2026-11-09T12:00:00-05:00</updated>
   <author><name>The Wayfinding pod</name></author>
+  <entry>
+    <title>Five Themes Running Through the Field</title>
+    <link href="/blog/field-themes/" />
+    <id>tag:c04-wayfinding,2026-11-09:field-themes</id>
+    <updated>2026-11-09T12:00:00-05:00</updated>
+    <summary>We did Dorst’s fifth step on the 50 organizations around The Labs: what they’re really after, where it meets what alumni and organizers told us, and four frames to test before the Nov 14 vote.</summary>
+  </entry>
   <entry>
     <title>How the region fits together, and where your piece plugs in</title>
     <link href="/blog/region-chart/" />
