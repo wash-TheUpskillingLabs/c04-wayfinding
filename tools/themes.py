@@ -22,8 +22,8 @@ GUT = 88
 W = LM + 2 * PANEL + GUT + LM
 TOP = 318                                     # first group header
 LW = 8
-SPLIT = {"Mattering": ("", "Mattering"), "Coherence": ("", "Coherence"), "Not Alone": ("Not", "Alone"),
-         "Belonging": ("", "Belonging"), "Believing I Can": ("Believing", "I Can")}
+SPLIT = {"Mattering": ("", "Mattering"), "Coherence": ("", "Coherence"), "Support": ("", "Support"),
+         "Belonging": ("", "Belonging"), "Becoming": ("", "Becoming")}
 
 
 def esc(s):

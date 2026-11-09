@@ -11,18 +11,18 @@
    "is": "I need this to make sense: where I am, what’s next, and that I can handle it.",
    "without": "lost and guessing, and worn out by the guessing",
    "roots": "Sense of coherence: Antonovsky, 1987"},
-  {"id": "B", "name": "Not Alone", "colour": "navy",
+  {"id": "B", "name": "Support", "colour": "navy",
    "is": "I don’t want to face the hard part by myself.",
    "without": "facing the hard part by yourself",
-   "roots": "Social support: Cohen and Wills, 1985; social baseline theory: Coan and Sbarra, 2015"},
+   "roots": "Social support: Cohen and Wills, 1985; Holt-Lunstad and colleagues, 2010; social baseline theory: Coan and Sbarra, 2015"},
   {"id": "L", "name": "Belonging", "colour": "silver",
    "is": "I want a place, and people, that are still mine when this ends.",
    "without": "dropped when the program ends",
    "roots": "The need to belong: Baumeister and Leary, 1995"},
-  {"id": "N", "name": "Believing I Can", "colour": "green",
+  {"id": "N", "name": "Becoming", "colour": "green",
    "is": "I want to believe I can become someone new, and that I’m allowed to.",
    "without": "holding back, not sure you’re allowed",
-   "roots": "Self-efficacy: Bandura, 1977; possible selves: Markus and Nurius, 1986"}
+   "roots": "Possible selves: Markus and Nurius, 1986; Oyserman and colleagues, 2006; self-efficacy: Bandura, 1977"}
  ],
  "groups": [
   {"name": "Inside The Labs", "inside": true, "players": [
