@@ -1,7 +1,8 @@
 """The field's themes, drawn as Metro lines (Dorst's step 5).
 
-Each theme is a line running down the page; each player in the field is a row, with a station on
-every line whose theme it carries. A player on several lines is an interchange, the places frames
+Each theme is a human need, named the way a person would feel it, and drawn as a line running down
+the page; each organization in the field is a row, with a station on every line whose need it
+reaches for. A player on several lines is an interchange, the places frames
 come from (step 6). The three voices inside The Labs sit at the top, so you can read across to see
 which themes they share with the field. Data: content/themes/themes.json, one line of evidence per
 station, so anyone can disagree with a mark and say why.
@@ -11,7 +12,7 @@ import html, json
 INK, PAPER, BLUE, RED = "#0b3536", "#e5e7de", "#0098d8", "#f54123"
 # Five line colours from the Swiss palette (schemes 3, 10, 11, 14). Checked like the journey map's:
 # every pair at least 19.6 CAM02-UCS apart under protanopia, deuteranopia and tritanopia, in this
-# order. Blue is direction, so Knowing Where You Are is blue.
+# order. Blue is direction, so Coherence (where I am, what comes next) is blue.
 COLOURS = {"yellow": "#e6c700", "blue": BLUE, "navy": "#08327d", "silver": "#a5a6a9", "green": "#007500"}
 FONT = "Inter, system-ui, sans-serif"
 FS, TFS, HFS = 15.118, 32, 15.118
@@ -21,9 +22,8 @@ GUT = 88
 W = LM + 2 * PANEL + GUT + LM
 TOP = 318                                     # first group header
 LW = 8
-SPLIT = {"Being Recognized": ("Being", "Recognized"), "Knowing Where You Are": ("Knowing Where", "You Are"),
-         "Someone Beside You": ("Someone", "Beside You"), "Lasting Past the End": ("Lasting Past", "the End"),
-         "Becoming Someone New": ("Becoming", "Someone New")}
+SPLIT = {"Mattering": ("", "Mattering"), "Coherence": ("", "Coherence"), "Not Alone": ("Not", "Alone"),
+         "Belonging": ("", "Belonging"), "Believing I Can": ("Believing", "I Can")}
 
 
 def esc(s):
@@ -68,16 +68,16 @@ def svg(d):
     field, inside, nf, ni = counts(d)
     ph = max(panel_height(p) for p in panels(d))
     ky = TOP + ph + 70
-    H = ky + 196
+    H = ky + 340
     out = [f'<svg class="tmap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
-           f'aria-label="Five themes running through the field, drawn as Metro lines, with a station for each player that carries a theme. The table below lists every station and its evidence." '
+           f'aria-label="Five human needs running through the field, drawn as Metro lines, with a station for each organization that reaches for a need. The table below lists every station and its evidence." '
            f'font-family="{FONT}"><rect width="{W}" height="{H}" fill="{PAPER}"/>']
     t = out.append
-    t(f'<text x="{LM}" y="{LM + 26}" font-size="{TFS}" font-weight="700" fill="{INK}">Five Themes Running Through the Field</text>')
-    t(f'<text x="{LM}" y="{LM + 64}" font-size="{FS}" fill="{INK}">What {nf} players around The Labs, and {["no","one","two","three","four","five"][ni] if ni < 6 else ni} voices inside it, are really after. '
-      f'Each line is a theme. Each station is a player who carries it.</text>')
+    t(f'<text x="{LM}" y="{LM + 26}" font-size="{TFS}" font-weight="700" fill="{INK}">Five Human Needs Running Through the Field</text>')
+    t(f'<text x="{LM}" y="{LM + 64}" font-size="{FS}" fill="{INK}">Under everything {nf} organizations around The Labs do, and what {["no","one","two","three","four","five"][ni] if ni < 6 else ni} voices inside it told us, is a person who needs something. '
+      f'Each line is one of those needs, named for the research behind it. Each station is an organization reaching for it.</text>')
     t(f'<text x="{LM}" y="{LM + 90}" font-size="{FS}" font-style="italic" fill="{INK}">Dorst’s step 5, Themes. Field from desk research logged Nov 6; '
-      f'themes read {esc(d["asof"])}. Hover a station for its evidence; every station is in the table below.</text>')
+      f'needs read {esc(d["asof"])}. Hover a station for its evidence; every station is in the table below.</text>')
     for pi, groups in enumerate(panels(d)):
         px = LM + pi * (PANEL + GUT)
         x0 = px + NW + 60
@@ -119,27 +119,36 @@ def svg(d):
                 if th["id"] in p["t"]:
                     t(f'<circle cx="{x}" cy="{cy}" r="9" fill="{PAPER}" stroke="{INK}" stroke-width="4">'
                       f'<title>{esc(p["name"])}, {esc(th["name"])}: {esc(p["t"][th["id"]])}</title></circle>')
-    # key: what each theme is, and how many carry it
+    # key: each need in a person's own words, what it feels like without it, and how many reach for it
     t(f'<line x1="{LM}" y1="{ky - 34}" x2="{W - LM}" y2="{ky - 34}" stroke="{INK}" stroke-width="2"/>')
     kw = (W - 2 * LM) / len(themes)
+
+    def wrap(text, n=44):
+        lines, cur = [], ""
+        for w_ in text.split():
+            if cur and len(cur) + 1 + len(w_) > n:
+                lines.append(cur); cur = w_
+            else:
+                cur = f"{cur} {w_}" if cur else w_
+        return lines + [cur]
     for i, th in enumerate(themes):
         x = LM + i * kw
         t(f'<line x1="{x}" y1="{ky}" x2="{x + 40}" y2="{ky}" stroke="{COLOURS[th["colour"]]}" stroke-width="{LW}"/>'
           f'<text x="{x + 54}" y="{ky + 5.3}" font-size="{FS}" font-weight="700" fill="{INK}">{esc(th["name"])}</text>')
-        words, lines, cur = th["is"].split(), [], ""
-        for w_ in words:
-            if cur and len(cur) + 1 + len(w_) > 46:
-                lines.append(cur); cur = w_
-            else:
-                cur = f"{cur} {w_}" if cur else w_
-        lines.append(cur)
-        for j, ln in enumerate(lines):
-            t(f'<text x="{x}" y="{ky + 36 + 22 * j}" font-size="{FS}" fill="{INK}">{esc(ln)}</text>')
-        t(f'<text x="{x}" y="{ky + 36 + 22 * len(lines) + 8}" font-size="{FS}" font-style="italic" fill="{INK}">'
-          f'{field[th["id"]]} of {nf} in the field; {inside[th["id"]]} of {ni} inside</text>')
-    sy = ky + 150
+        y = ky + 36
+        for ln in wrap(f"“{th['is']}”"):
+            t(f'<text x="{x}" y="{y}" font-size="{FS}" fill="{INK}">{esc(ln)}</text>'); y += 22
+        y += 6
+        for j, ln in enumerate(wrap(f"Without it: {th['without']}.")):
+            t(f'<text x="{x}" y="{y}" font-size="{FS}" fill="{INK}">' + (f'<tspan font-weight="700">Without it:</tspan>{esc(ln[11:])}' if j == 0 else esc(ln)) + '</text>'); y += 22
+        y += 6
+        for j, ln in enumerate(wrap(f"Rooted in: {th['roots']}.")):
+            t(f'<text x="{x}" y="{y}" font-size="{FS}" fill="{INK}">' + (f'<tspan font-weight="700">Rooted in:</tspan>{esc(ln[10:])}' if j == 0 else esc(ln)) + '</text>'); y += 22
+        y += 6
+        t(f'<text x="{x}" y="{y}" font-size="{FS}" fill="{INK}">{field[th["id"]]} of {nf} reach for it; {inside[th["id"]]} of {ni} inside</text>')
+    sy = ky + 294
     t(f'<circle cx="{LM + 9}" cy="{sy}" r="9" fill="{PAPER}" stroke="{INK}" stroke-width="4"/>'
-      f'<text x="{LM + 30}" y="{sy + 5.3}" font-size="{FS}" fill="{INK}">This player carries the theme, by what it says it wants, has tried, or how it sees the problem</text>'
+      f'<text x="{LM + 30}" y="{sy + 5.3}" font-size="{FS}" fill="{INK}">This organization reaches for the need, by what it says it wants, has tried, or how it sees the problem</text>'
       f'<text x="{LM + 900}" y="{sy + 5.3}" font-size="{FS}" font-weight="700" fill="{INK}">Bold:</text>'
       f'<text x="{LM + 948}" y="{sy + 5.3}" font-size="{FS}" fill="{INK}">a voice inside The Labs (alumni survey, organizers’ record, the problem owner)</text>')
     t("</svg>")
@@ -157,5 +166,5 @@ def table(d):
                 who = f'<a href="{esc(href(d, p))}">{esc(p["name"])}</a>' if i == 0 else ""
                 cells = (esc(g["name"]) if i == 0 else "", who, esc(names.get(k, "")), esc(v))
                 rows.append("<tr>" + "".join(f'<td><span class="t t-small">{c}</span></td>' for c in cells) + "</tr>")
-    head = "".join(f'<th><span class="t t-small">{h}</span></th>' for h in ("Group", "Player", "Theme", "Evidence, from its file"))
+    head = "".join(f'<th><span class="t t-small">{h}</span></th>' for h in ("Group", "Organization", "Need", "Evidence, from its file"))
     return f'<table class="pm-table"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table>'

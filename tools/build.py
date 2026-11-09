@@ -370,7 +370,7 @@ def themes_into(ps):
     n = sum(len(g["players"]) for g in data["groups"] if not g.get("inside"))
     block = f'''<div class="tmap-wrap">{pic}</div>
 <a class="btn" href="/themes/field-themes.svg"><span class="t">Open the Poster</span><span class="tile blue">{ic("a-r")}</span></a>
-<details class="pm-details"><summary><span><span class="t">All {n} Players, as a Table</span></span>{ic("chev", "chev")}</summary>{themes.table(data)}</details>'''
+<details class="pm-details"><summary><span><span class="t">All {n} Organizations, as a Table</span></span>{ic("chev", "chev")}</summary>{themes.table(data)}</details>'''
     for p in ps:
         for sec in p["secs"]:
             sec["body"] = sec["body"].replace("{{themes}}", block)
