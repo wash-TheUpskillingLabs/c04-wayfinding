@@ -1,0 +1,228 @@
+{
+  "about": "Dorst's step 6, Frames, built from the five needs in content/themes/themes.json. Every frame is an analogy: a place or system people already know. The first row is the one frame that holds all five needs; the rest are its parts. Each is a row, grouped by the candidate paradox it moves. A station marks a need the frame builds on, with one line on how; 'holds' names the two needs it lets a person have at once. Full reasoning and sources: research/frames.md.",
+  "asof": "Nov 9, 2026",
+  "post": "/blog/frames/",
+  "groups": [
+    {
+      "name": "Two Frames for All Four",
+      "pulls": "all five needs, and all four paradoxes, at once",
+      "frames": [
+        {
+          "id": "bee",
+          "name": "The Quilting Bee",
+          "holds": [
+            "R",
+            "W",
+            "B",
+            "L",
+            "N"
+          ],
+          "done": "Friendship quilts, round robins, the bee at the frame",
+          "gives": "Nothing has to choose: the pattern holds, the fabric and the hand are yours",
+          "t": {
+            "R": "every block signed by its maker, and the quilt given to someone",
+            "W": "one pattern, one block size, for everyone",
+            "B": "newcomers learn at the frame beside people who’ve quilted for years",
+            "L": "the bee meets again for the next quilt",
+            "N": "from your first block to patterns of your own"
+          }
+        },
+        {
+          "id": "at",
+          "name": "The Appalachian Trail",
+          "holds": [
+            "R",
+            "W",
+            "B",
+            "L",
+            "N"
+          ],
+          "done": "The A.T.: its hikers, trail angels, trail towns and clubs",
+          "gives": "Nothing has to choose: one blaze holds, and everyone hikes their own hike",
+          "t": {
+            "R": "a trail name, a 2,000-miler record, and a named overseer for every stretch",
+            "W": "one blaze the whole way, and hike your own hike",
+            "B": "trail angels, trail towns and ridgerunners, many of them former hikers",
+            "L": "a trail family, and Trail Days and the Gathering after the hike ends",
+            "N": "from day hiker to 2,000-miler to trail angel or overseer"
+          }
+        }
+      ],
+      "label": "Holds:"
+    },
+    {
+      "name": "Seeing the Route, Making Your Own",
+      "pulls": "Coherence and Becoming, the README’s hunch",
+      "frames": [
+        {
+          "id": "camino",
+          "name": "The Camino",
+          "holds": [
+            "W",
+            "N"
+          ],
+          "done": "The pilgrimage to Santiago de Compostela",
+          "gives": "The route stops being one path; the marks and the stamps hold still",
+          "t": {
+            "W": "the way is marked and holds still",
+            "N": "your pace, your reasons; a passport records how far you’ve come",
+            "B": "hosts who walked it themselves stamp the passport"
+          }
+        },
+        {
+          "id": "ski",
+          "name": "The Ski Resort",
+          "holds": [
+            "W",
+            "N"
+          ],
+          "done": "Trail ratings, ski school and patrol",
+          "gives": "One path gives way to rated runs you choose between",
+          "t": {
+            "W": "signs at every junction, rated against this mountain",
+            "N": "you choose by skill and mood, and move up",
+            "B": "a ski school and a patrol for when you need them"
+          }
+        },
+        {
+          "id": "crossfit",
+          "name": "The CrossFit Box",
+          "holds": [
+            "W",
+            "N"
+          ],
+          "done": "One workout on the whiteboard, scaled for each person",
+          "gives": "Everyone does the same session; how hard is yours to set",
+          "t": {
+            "W": "one workout, on the whiteboard, for everyone",
+            "N": "scaled to where you are, so you can do it today",
+            "B": "a coach in every class",
+            "L": "the same people at the same hour"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Seen as Yourself, Part of a Team",
+      "pulls": "Mattering and Belonging",
+      "frames": [
+        {
+          "id": "credits",
+          "name": "The Film Credits",
+          "holds": [
+            "R",
+            "L"
+          ],
+          "done": "Film credits; science’s CRediT roles",
+          "gives": "The ranking: every role on one list, no order of names",
+          "t": {
+            "R": "named for what you did, in words an employer can read",
+            "L": "the list belongs to the film, not to any one name"
+          }
+        },
+        {
+          "id": "relay",
+          "name": "The Relay",
+          "holds": [
+            "R",
+            "L"
+          ],
+          "done": "Relay swimming",
+          "gives": "Your leg is timed and seen, and the result is the team’s",
+          "t": {
+            "R": "your leg is yours, timed and seen",
+            "L": "one result, shared by the team",
+            "B": "a teammate hands off to you, and waits at the wall"
+          }
+        }
+      ]
+    },
+    {
+      "name": "A Person at Every Crossing",
+      "pulls": "Support for the newcomer and for the organizer",
+      "frames": [
+        {
+          "id": "station",
+          "name": "The Train Station",
+          "holds": [
+            "W",
+            "B"
+          ],
+          "done": "Departure boards and a staffed desk; patient navigators",
+          "gives": "A person per station, not per traveler",
+          "t": {
+            "W": "the board shows every way on from here",
+            "B": "a staffed desk at every station to ask"
+          }
+        },
+        {
+          "id": "doula",
+          "name": "The Doula",
+          "holds": [
+            "B",
+            "N"
+          ],
+          "done": "Birth companions",
+          "gives": "Continuous support, given by someone who just crossed",
+          "t": {
+            "B": "someone beside you the whole way across",
+            "N": "feeling in control, and more sure you can",
+            "W": "what’s happening, explained in plain words"
+          }
+        },
+        {
+          "id": "tailor",
+          "name": "The Tailor’s Shop",
+          "holds": [
+            "N",
+            "L"
+          ],
+          "done": "Apprenticeship, as Lave and Wenger found it",
+          "gives": "Helping stops being extra hours; it’s the helper’s next step",
+          "t": {
+            "N": "from small real tasks toward the centre",
+            "L": "inside the shop’s real work from the first day",
+            "B": "beside people one step ahead"
+          }
+        }
+      ]
+    },
+    {
+      "name": "When the Cycle Ends",
+      "pulls": "Belonging and the deadline",
+      "frames": [
+        {
+          "id": "harbor",
+          "name": "The Harbor",
+          "holds": [
+            "L",
+            "B"
+          ],
+          "done": "A ship’s home port; Recurse Center; Civic Tech DC",
+          "gives": "The Cycle’s claim to be the whole of The Labs",
+          "t": {
+            "L": "a crew keeps its berth between voyages",
+            "B": "people who expect you, and are there when needed",
+            "N": "a safe harbor is what lets people sail out again"
+          }
+        },
+        {
+          "id": "parkrun",
+          "name": "parkrun",
+          "holds": [
+            "L",
+            "W"
+          ],
+          "done": "The free 5 km, every Saturday morning",
+          "gives": "The Cycle as the only way in",
+          "t": {
+            "L": "the same people, every week, with no season to sign up for",
+            "W": "same time, same place, always on",
+            "R": "every helper counted, and nobody finishes last"
+          }
+        }
+      ]
+    }
+  ],
+  "title": "Two Frames, and the Ten They Hold"
+}
